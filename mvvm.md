@@ -1,81 +1,81 @@
-# �T�v
-	mvvm�p�^�[����knockoutJS���g���AJSON���擾���Ĉꗗ�ɕ\������ꍇ�̂ݎg�p����B
+# 概要
+	mvvmパターンはknockoutJSを使い、JSONを取得して一覧に表示する場合のみ使用する。
 
-# �yComS0111�z�o�^���
-## �ؑփC�x���g
-* ���́E�m�F�E�I���̐ؑ�
-	ko?if?�Őؑ։\�B
+# 【ComS0111】登録画面
+## 切替イベント
+* 入力・確認・終了の切替
+	ko?if?で切替可能。
 
-## ���̓C�x���g
-* [�K�{���� �SOK�Ń{�^���̗L����](http://tips.recatnap.info/sample/?URL=045_form.html)
+## 入力イベント
+* [必須入力 全OKでボタンの有効化](http://tips.recatnap.info/sample/?URL=045_form.html)
 
 
-## �����ݒ胂�[�_���_�C�A���O
-* [ComS0193]������ʂ�\������B
-* �_�C�A���O�\���C�x���g���ŕ\������l��JSON�ɂĎ擾�B
+## 所属設定モーダルダイアログ
+* [ComS0193]所属画面を表示する。
+* ダイアログ表示イベント内で表示する値をJSONにて取得。
 
-# �yComS0193�z����
-	�l��JSON�ɂĎ擾���A�o�C���f�B���O���uKnockoutJS�v�ɂčs���B
+# 【ComS0193】所属
+	値はJSONにて取得し、バインディングを「KnockoutJS」にて行う。
 
-## �ꗗ
-* [bootstrap-treeview](http://jonmiles.github.io/bootstrap-treeview/) �Ɋւ��ẮA�ʎ��ujavascript�v�Q�ƁB
-* val�̒l�ɂ��āAJSON�̕�����ɂĊi�[�B($.stringify(object)�ɂĕ���)
+## 一覧
+* [bootstrap-treeview](http://jonmiles.github.io/bootstrap-treeview/) に関しては、別紙「javascript」参照。
+* valの値について、JSONの文字列にて格納。($.stringify(object)にて復元)
 	1. 
 	2. 
 	3. 
 	4. 
 
-## �`�F�b�N�C�x���g
-### �ꗗ
-1. Bool�l��JSON�ɏo�́B
+## チェックイベント
+### 一覧
+1. Bool値をJSONに出力。
 
-### �及��
-1. �S�Ẵ`�F�b�N�t���A�C�e��������
-2. �及���̃`�F�b�N�t���A�C�e���̗L���m�F
-	* �Ȃ��F��������`���b�Z�[�W�\���B
-3. �L�����Ԃ̏d���m�F
-	* �G���[�F�x�����b�Z�[�W�\���B
-4. Bool�l��JSON�ɏo�́B
+### 主所属
+1. 全てのチェック付きアイテムを検索
+2. 主所属のチェック付きアイテムの有無確認
+	* なし：所属する～メッセージ表示。
+3. 有効期間の重複確認
+	* エラー：警告メッセージ表示。
+4. Bool値をJSONに出力。
 
-## �I���C�x���g
-### �ꗗ
-1. �I����e()�ɍ��킹�����͗�(�e���v���[�g)��\���B
+## 選択イベント
+### 一覧
+1. 選択内容()に合わせた入力欄(テンプレート)を表示。
 
-## ���̓C�x���g
-### �J�n�E�I����
-1. �o���f�[�V�����F���t�`��
-2. �l��JSON�ɏo�́B
-### ��E
-1. �l��JSON�ɏo�́B
+## 入力イベント
+### 開始・終了日
+1. バリデーション：日付形式
+2. 値をJSONに出力。
+### 役職
+1. 値をJSONに出力。
 
-## �o�^�C�x���g
-1. �I����e�����[�U�[�\�����(�ʂ�JSON)�֔��f������B
+## 登録イベント
+1. 選択内容をユーザー申請情報(別のJSON)へ反映させる。
 
-## �c���[�̍i��
-* �]�T������΁B
-## �c���[�̊J��
-* �]�T������΁B
+## ツリーの絞込
+* 余裕があれば。
+## ツリーの開閉
+* 余裕があれば。
 
 
-# �yComS0194�z���F�\���I��
-	�l��JSON�ɂĎ擾���A�o�C���f�B���O���uKnockoutJS�v�ɂčs���B
+# 【ComS0194】承認申請選択
+	値はJSONにて取得し、バインディングを「KnockoutJS」にて行う。
 
-## �g�D�ꗗ
-1. ���O�C�����[�U�[����������g�D���I�����ꂽ��Ԃɂď����\���B
+## 組織一覧
+1. ログインユーザーが所属する組織が選択された状態にて初期表示。
 
-## �I���C�x���g
-### �ꗗ
-1. �I����e�ɍ��킹���I��(�e���v���[�g)��\���B
-	- text:�g�D����, val:�g�D�R�[�h
-2. �I�������g�D�R�[�h����A�g�D�֌W�҈ꗗ��\������B
+## 選択イベント
+### 一覧
+1. 選択内容に合わせた選択欄(テンプレート)を表示。
+	- text:組織名称, val:組織コード
+2. 選択した組織コードから、組織関係者一覧を表示する。
 
-### �g�D�֌W�҈ꗗ
-1. �g�D�̕���Ǘ��҂̂ݕ\���B
-2. �l��JSON�ɂĎ擾�B
-3. �\���Ώێ҂͈�l�����B
+### 組織関係者一覧
+1. 組織の部門管理者のみ表示。
+2. 値をJSONにて取得。
+3. 申請対象者は一人だけ。
 
-## �o�^�C�x���g
-* ��ʂ�Submit�B
-* �I����e�����[�U�[�\�����(�ʂ�JSON)�֔��f������B
-	- ���[�U�[ID����K�v���ڂ��f�[�^�x�[�X���擾����B
-	- �Ώێ҂փ��[�����M�B
+## 登録イベント
+* 画面をSubmit。
+* 選択内容をユーザー申請情報(別のJSON)へ反映させる。
+	- ユーザーIDから必要項目をデータベースより取得する。
+	- 対象者へメール送信。
