@@ -1,19 +1,19 @@
 # jQuery
-## ”õ–Y˜^
+## å‚™å¿˜éŒ²
 * $(document).ready
-	- $(function(){  //‚È‚É‚©‚µ‚ç‚Ìˆ—});@‚Æ“¯‚¶B
+	- $(function(){  //ãªã«ã‹ã—ã‚‰ã®å‡¦ç†});ã€€ã¨åŒã˜ã€‚
 
 * $.getJSON(url, [,object] [function])
-	jQuery.getƒƒ\ƒbƒh‚ğjson‚ÉŒÀ’è‚µ‚½‚¾‚¯‚Ìƒƒ\ƒbƒhB
-	ˆÈ‰ºA‰ºˆÊ‚É‚È‚é‚Ù‚Ç”Ä—p“IiÚ×‚Èİ’è‚ª‰Â”\j‚É‚È‚éB
+	jQuery.getãƒ¡ã‚½ãƒƒãƒ‰ã‚’jsonã«é™å®šã—ãŸã ã‘ã®ãƒ¡ã‚½ãƒƒãƒ‰ã€‚
+	ä»¥ä¸‹ã€ä¸‹ä½ã«ãªã‚‹ã»ã©æ±ç”¨çš„ï¼ˆè©³ç´°ãªè¨­å®šãŒå¯èƒ½ï¼‰ã«ãªã‚‹ã€‚
 	- $.get(url, [,object] [function])
-		jQuery.ajaxƒƒ\ƒbƒh‚ğŠÈ’P‚É—˜—p‚Å‚«‚é‚æ‚¤‚É‚µ‚½ƒƒ\ƒbƒh
+		jQuery.ajaxãƒ¡ã‚½ãƒƒãƒ‰ã‚’ç°¡å˜ã«åˆ©ç”¨ã§ãã‚‹ã‚ˆã†ã«ã—ãŸãƒ¡ã‚½ãƒƒãƒ‰
 	- $.ajax( url [,object] )
 
 * $.stringify(object)
 
 
-## QlƒŠƒ“ƒN
-[jQuery‚ÌŠî–{](http://qiita.com/8845musign/items/88a8c693c84ba63cea1d)
-[jQuery“ü–å](http://www.jquerystudy.info/tutorial/intro/ready.html)
-[JavaScript “ú–{ŒêƒŠƒtƒ@ƒŒƒ“ƒX ](http://js.studio-kingdom.com/)
+## å‚è€ƒãƒªãƒ³ã‚¯
+[jQueryã®åŸºæœ¬](http://qiita.com/8845musign/items/88a8c693c84ba63cea1d)
+[jQueryå…¥é–€](http://www.jquerystudy.info/tutorial/intro/ready.html)
+[JavaScript æ—¥æœ¬èªãƒªãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ ](http://js.studio-kingdom.com/)

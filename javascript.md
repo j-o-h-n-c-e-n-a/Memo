@@ -1,4 +1,4 @@
-# DOM‘€ì
+# DOMæ“ä½œ
 ## jQuery
 * [Addel](https://www.google.co.jp/search?q=Addel&ie=&oe=#q=jquery+Addel)
 * [TableExport](https://www.google.co.jp/search?q=TableExport&ie=&oe=#q=jquery+TableExport)
@@ -7,17 +7,17 @@
 * [Inputmask](https://www.google.co.jp/search?q=jquery+Inputmask&ie=&oe=)
 * [LazeeMenu](https://www.google.co.jp/search?q=LazeeMenu&ie=&oe=)
 
-# CSSƒvƒŠƒvƒƒZƒbƒT[
-	CSSƒƒ^Œ¾ŒêB
+# CSSãƒ—ãƒªãƒ—ãƒ­ã‚»ãƒƒã‚µãƒ¼
+	CSSãƒ¡ã‚¿è¨€èªã€‚
 ## Sass
 ---
-# UIƒ‰ƒCƒuƒ‰ƒŠ
+# UIãƒ©ã‚¤ãƒ–ãƒ©ãƒª
 ## jQuery UI
 ## Bootstrap
 1. [bootstrap-treeview](http://jonmiles.github.io/bootstrap-treeview/)
-	* textF•\¦ƒeƒLƒXƒg
-	* nodes:ƒlƒXƒg•\Œ»
-	* val:’l
+	* textï¼šè¡¨ç¤ºãƒ†ã‚­ã‚¹ãƒˆ
+	* nodes:ãƒã‚¹ãƒˆè¡¨ç¾
+	* val:å€¤
 	* href
 	* icon
 	* tags
@@ -26,17 +26,17 @@
 
 
 ---
-# MV*‚È‚Ç‚ÌŠeíƒtƒŒ[ƒ€ƒ[ƒN
+# MV*ãªã©ã®å„ç¨®ãƒ•ãƒ¬ãƒ¼ãƒ ãƒ¯ãƒ¼ã‚¯
 ## React
 ## AngularJS
 ## KnockoutJS
-### ƒvƒ‰ƒOƒCƒ“
+### ãƒ—ãƒ©ã‚°ã‚¤ãƒ³
 1. knockout.mapping
 2. knockout-validation
 3. ko.editables
 
 # altJS
-	JavaScript‘ã‘ÖB
+	JavaScriptä»£æ›¿ã€‚
 ## TypeScript
 * DefinitelyTyped
 	1. Bootstrap

@@ -1,5 +1,5 @@
 # angular2
 
-## g‚¢•û
+## ä½¿ã„æ–¹
 
 ## angular2+ng2-bootstrap
