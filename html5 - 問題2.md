@@ -11,7 +11,8 @@ $CATEGORY: HTML5レベル1
 ::問題2::HTTP で使用されるヘッダフィールドの名前と説明の組み合わせのうち、間違っているものを 1 つ選びなさい。{
     ~A.Authorization 認証情報
     ~B. Referer リクエストの送信元
-    ~C.User-Agent クライアントの識別情報（ブラウザなど）~D.Content-Encoding コンテンツの文字コード
+    ~C.User-Agent クライアントの識別情報（ブラウザなど）
+    ~D.Content-Encoding コンテンツの文字コード
     =E.Cookie クライアントにクッキーを設定する
 }
 
@@ -38,13 +39,15 @@ $CATEGORY: HTML5レベル1
 ::問題5::「http://example.com?a=b」という URL を例に取り、URL について述べた説明のうち 、 間違っているものを1つ選びなさい 。{
     ~A.URLの先頭（例では「http」）は「スキーム名」と呼ばれ、URLを扱うプロトコルによって異なる。
     ~B.この例におけるドメイン名は「example.com」である。
-    =C.URLにおいてポート番号が省略された際、常に80番として解釈される。~D.URLでは、特定の記号やマルチバイト文字列をそのまま扱う事ができないため、URLエンコードと呼ばれる変換処理が必要となる。
+    =C.URLにおいてポート番号が省略された際、常に80番として解釈される。
+    ~D.URLでは、特定の記号やマルチバイト文字列をそのまま扱う事ができないため、URLエンコードと呼ばれる変換処理が必要となる。
     ~E.URLパラメータが複数ある場合は、「&」で区切る。
 }
 
 ::問題6::IP アドレスについて述べた文章のうち、間違っているものを 1 つ選びなさい。{
     ~A.127.0.0.1は、自身の端末と通信するためのアドレスである。
-    ~B.同じネットワークに属する端末で、IPアドレスは重複してはならない。~C.所属するネットワークは、サブネットマスクを使って識別する事ができる。
+    ~B.同じネットワークに属する端末で、IPアドレスは重複してはならない。
+    ~C.所属するネットワークは、サブネットマスクを使って識別する事ができる。
     ~D.IPv4は、32ビットのアドレス空間しか持たないため、IPアドレスは不足している。
     =E.IPv6は、256ビットのアドレス空間を持つ。
 }
@@ -52,7 +55,8 @@ $CATEGORY: HTML5レベル1
 ::問題7::Web ページ上で画像を扱う際によく使用される技術とその特徴について、正しく説明しているものを全て選びなさい。{
     ~A.JPGは、写真などのように色数の多い画像で高い圧縮率を持つ画像ファイル形式。透過も可能
     =B.PNGは、フルカラー（1677万色）の画像を扱う事ができる画像ファイル形式。透過も可能
-    ~C.GIFは、256色以下の画像を扱える画像ファイル形式。透過は不可能~D.SVGは、ベクターグラフィックスを扱う事のできるバイナリデータによる画像ファイル形式
+    ~C.GIFは、256色以下の画像を扱える画像ファイル形式。透過は不可能
+    ~D.SVGは、ベクターグラフィックスを扱う事のできるバイナリデータによる画像ファイル形式
     =E.canvasは、JavaScriptによって描画可能なビットマップの画像領域
 }
 
@@ -61,7 +65,9 @@ $CATEGORY: HTML5レベル1
 ::問題9::以下の（      ）を埋める単語を答えなさい。JavaScript は標準化団体による仕様策定が進められている言語であり、その仕様は（      ）という名称で呼ばれている。
 
 ::問題10::XHTML について述べた以下の文章のうち、間違っているものを 1 つ選びなさい。{
-    ~A.XHTMLは、HTMLをXMLの文法で定義し直したマークアップ言語である。~B.HTML5の語彙を扱うXHTMLの事を、特に「XHTML5」と呼ぶ事がある。~C.XHTMLは、HTMLに比べると文法が厳格である。
+    ~A.XHTMLは、HTMLをXMLの文法で定義し直したマークアップ言語である。
+    ~B.HTML5の語彙を扱うXHTMLの事を、特に「XHTML5」と呼ぶ事がある。
+    ~C.XHTMLは、HTMLに比べると文法が厳格である。
     =D.XHTML5の先頭には「<?xhtml version="5.0"?>と記述する。
     ~E.XHTMLはXMLファイルの一種なので、XML関連の様々な技術と相性がよい。
 }
@@ -80,7 +86,8 @@ $CATEGORY: HTML5レベル1
     ~A.リレーショナルデータベース（RDB）は、データを複数の表形式で保持するタイプのデータベースである。
     ~B.昨今、キーと値のペアで構成されるキーバリューストア（KVS）という形式のデータベースも増えてきている。
     =C.KVSは、SQLという言語を用いてデータを操作する事ができる。
-    ~D.SQLは、ANSIやISOといった団体によって標準化が進められている。~E.Webアプリケーションのバックエンドにおいて、データベースは一般的に利用されている。
+    ~D.SQLは、ANSIやISOといった団体によって標準化が進められている。
+    ~E.Webアプリケーションのバックエンドにおいて、データベースは一般的に利用されている。
 }
 
 ::問題14::ドメイン名について述べた説明のうち、 間違っているものを 1 つ 選びなさい。{
@@ -118,10 +125,13 @@ $CATEGORY: HTML5レベル1
 ::問題18::Web ページ内で CSS を使用するための方法について述べた以下の記述のうち、間違っているものを選びなさい。{
     ~A.style要素を用いて、HTML文書内にCSSを直接記述する事ができる。
     =B. style要素は、head要素内に記述しなくてはならない。
-    ~C.style属性を用いて、要素に適用するCSSを記述する事ができる。~D.link要素を用いて外部のスタイルシートを読み込む事ができる。~E.link要素でスタイルシートを読み込む場合、type属性は省略する事ができる。
+    ~C.style属性を用いて、要素に適用するCSSを記述する事ができる。
+    ~D.link要素を用いて外部のスタイルシートを読み込む事ができる。
+    ~E.link要素でスタイルシートを読み込む場合、type属性は省略する事ができる。
 }
 
-::問題19::以下の HTML において、2 番目の li 要素（内容として "b" を持つもの）を選択できないセレクタはどれか。<ul id="list">  <li>a</li>  <li class="active">b</li>  <li>c</li></ul>{
+::問題19::以下の HTML において、2 番目の li 要素（内容として "b" を持つもの）を選択できないセレクタはどれか。<pre>
+<ul id="list">  <li>a</li>  <li class="active">b</li>  <li>c</li></ul></pre>{
     ~A..active
     =B.#list:nth-child(2)
     ~C.#list li:nth-child(2)
@@ -129,7 +139,8 @@ $CATEGORY: HTML5レベル1
     ~E.li[class="active"]
 }
 
-::問題20::以下の HTML において、「段落 2」という内容を持つ p 要素を選択できないセレクタはどれか。<div>  <p>段落1</p>  <section>    <h2>見出し</h2>    <p>段落2</p>  </section>  <p>段落3</p></div>{
+::問題20::以下の HTML において、「段落 2」という内容を持つ p 要素を選択できないセレクタはどれか。<pre>
+<div>  <p>段落1</p>  <section>    <h2>見出し</h2>    <p>段落2</p>  </section>  <p>段落3</p></div></pre>{
     ~A.h2 ~ p
     ~B.h2 + p
     ~C.section > p
@@ -137,15 +148,17 @@ $CATEGORY: HTML5レベル1
     =E.p:nth-of-type(2)
 }
 
-::問題21::以下の h2 要素を選択できる CSS セレクタを全て選びなさい。<h2 class="chap-title">章タイトル</h2>{
+::問題21::以下の h2 要素を選択できる CSS セレクタを全て選びなさい。<pre><h2 class="chap-title">章タイトル</h2></pre>{
     =A..chap-title
     ~B.[.c hap-title]
     =C.[class^="chap"]
-    =~D.[class]
+    =D.[class]
     ~E.[*]
 }
 
-::問題22::以下の CSS を指定された div 要素が、実際に画面上で占める幅（マージンを含む）は何ピクセルになるか。適切な値を選択肢から選びなさい。#box {  width: 150px;  padding: 10px 10px 10px 20px;  border: 5px solid gray;  margin: 0;  margin-right: 20px;}{
+::問題22::以下の CSS を指定された div 要素が、実際に画面上で占める幅（マージンを含む）は何ピクセルになるか。適切な値を選択肢から選びなさい。<pre>
+    #box {  width: 150px;  padding: 10px 10px 10px 20px;  border: 5px solid gray;  margin: 0;  margin-right: 20px;}
+</pre>{
     ~A.150px
     ~B.170px
     ~C.190px
@@ -153,7 +166,9 @@ $CATEGORY: HTML5レベル1
     ~E.230px
 }
 
-::問題23::以下の CSS を指定された div 要素が、実際に画面上で占める幅（マージンを含む）は何ピクセルになるでしょうか？#box {  width: 150px;  padding: 10px 10px 10px 20px;  border: 5px solid gray;  margin: 0;  margin-right: 20px;  box-sizing: border-box;} {
+::問題23::以下の CSS を指定された div 要素が、実際に画面上で占める幅（マージンを含む）は何ピクセルになるでしょうか？<pre>
+    #box {  width: 150px;  padding: 10px 10px 10px 20px;  border: 5px solid gray;  margin: 0;  margin-right: 20px;  box-sizing: border-box;} 
+</pre>{
     ~A.150px
     =B.170px
     ~C.190px
@@ -161,15 +176,19 @@ $CATEGORY: HTML5レベル1
     ~E.230px
 }
 
-::問題24::以下の HTML において、「猫」を囲む li 要素を選択する事のできる CSS セレクタを全て選びなさい。<ul id="fruits">  <li class="dog pet">犬</li>  <li class="cat pet">猫</li>  <li class="bird pet">鳥</li></ul>{
+::問題24::以下の HTML において、「猫」を囲む li 要素を選択する事のできる CSS セレクタを全て選びなさい。<pre>
+<ul id="fruits">  <li class="dog pet">犬</li>  <li class="cat pet">猫</li>  <li class="bird pet">鳥</li></ul>
+</pre>{
     ~A..pet:first-child
     =B..cat
-    =C..cat.pe
-    ~tD..cat .pet
+    =C..cat.pet
+    ~D..cat .pet
     ~E.#cat
 }
 
-::問題25::以下のコードをブラウザで表示すると、実行結果はどうなるか？ 正しいものを 1 つ選びなさい。<ul id="list1">  <li>おはよう<br>ございます</li>  <li>こんにちは</li>  <li>こんばんは</li>  <li>おやすみ<br>なさい</li></ul><style>#list1 {  display: flex;}#list1 li {  width: 25%;}</style>{
+::問題25::以下のコードをブラウザで表示すると、実行結果はどうなるか？ 正しいものを 1 つ選びなさい。<pre>
+<ul id="list1">  <li>おはよう<br>ございます</li>  <li>こんにちは</li>  <li>こんばんは</li>  <li>おやすみ<br>なさい</li></ul><style>#list1 {  display: flex;}#list1 li {  width: 25%;}</style>
+</pre>{
     ~A.全てのli要素が縦並びになる。
     ~B.全てのli要素が横並びになる。li要素の高さはそれぞれ異なる。
     =C.全てのli要素が横並びになる。li要素の高さは全て揃えられる。
@@ -185,7 +204,9 @@ $CATEGORY: HTML5レベル1
     ~E.a：%         b：ch        c：rch
 }
 
-::問題27::以下のソースコードをブラウザで確認すると、どのような結果が得られるか？ 正しいものを 1 つ選びなさい。<style>#para {    color: red;    background-color: red;    border: 1px solid red;  }  p {    color: black !important;    background-color: pink;  }</style><p id="para"   style="color: blue; border: 1px solid blue;">こんにちは</p>{
+::問題27::以下のソースコードをブラウザで確認すると、どのような結果が得られるか？ 正しいものを 1 つ選びなさい。<pre>
+<style>#para {    color: red;    background-color: red;    border: 1px solid red;  }  p {    color: black !important;    background-color: pink;  }</style><p id="para"   style="color: blue; border: 1px solid blue;">こんにちは</p>
+</pre>{
     ~A. 文字色：黒背景色：赤ボーダー：赤
     =B. 文字色：黒背景色：赤ボーダー：青
     ~C. 文字色：黒背景色：ピンクボーダー：赤
@@ -217,7 +238,9 @@ $CATEGORY: HTML5レベル1
     ~E. トランジションに関わるプロパティは、transitionというプロパティでまとめて指定できる。
 }
 
-::問題31::以下のソースコードを実行した結果について述べた文章のうち、正しいものを全て選びなさい。<div id="animate-box"></div><style>#animate-box {    border: 1px solid gray;    width: 100px;    height: 100px;    animation: box-anim 3s infinite;  }  @keyframes box-anim {    0% {      transform: rotate(0deg) scale(1);    }    50% {      transform: rotate(360deg) scale(1.5);    }    100% {      transform: rotate(0deg) scale(2);    }  }</style> {
+::問題31::以下のソースコードを実行した結果について述べた文章のうち、正しいものを全て選びなさい。<pre>
+<div id="animate-box"></div><style>#animate-box {    border: 1px solid gray;    width: 100px;    height: 100px;    animation: box-anim 3s infinite;  }  @keyframes box-anim {    0% {      transform: rotate(0deg) scale(1);    }    50% {      transform: rotate(360deg) scale(1.5);    }    100% {      transform: rotate(0deg) scale(2);    }  }</style> 
+</pre>{
     =A.ボックスに対する回転と拡大のアニメーションが同時に行われる。
     =B.アニメーションは無限に実行される。
     ~C.ボックスは1.5秒かけて回転し、その後1.5秒間そのまま静止する。
@@ -236,7 +259,8 @@ $CATEGORY: HTML5レベル1
 ::問題33::HTML5 のソースファイルに関する基本的なルールについて述べた以下の文章のうち、正しいものを 1 つ選びなさい。{
     ~A.ファイル名の拡張子を必ず.html5にする必要がある。
     ~B.ファイルの先頭に<?xml version="1.0"?>と記述する必要がある。
-    ~C.ソースコードの文字エンコーディングはUTF-8にしなくてはならない。=D.ファイルの先頭にDOCTYPE宣言を記述する必要がある。
+    ~C.ソースコードの文字エンコーディングはUTF-8にしなくてはならない。
+    =D.ファイルの先頭にDOCTYPE宣言を記述する必要がある。
     ~E.html要素を必ず記述しなくてはならない。
 }
 
@@ -282,12 +306,15 @@ $CATEGORY: HTML5レベル1
 
 ::問題39::main 要素に関して、次の中から正しい記述を選びなさい。{
     ~A.main要素は、セクショニング・コンテンツとして分類される要素で、文書のアウトラインを構成する。
-    =B.main要素は、1つのHTML文書中で一度しか使用する事ができない。~C.main要素は、article要素の内部で使用しなくてはならない。
+    =B.main要素は、1つのHTML文書中で一度しか使用する事ができない。
+    ~C.main要素は、article要素の内部で使用しなくてはならない。
     ~D.main要素は、body要素の代わりに用いる事ができる。
     ~E.main要素は、HTML4.01から存在したが、HTML5になって意味が変更された要素である。
 }
 
-::問題40::以下のコードから生成されるアウトラインを正しく表したものを選びなさい。<body>  <h1>1</h1>  <article>    <h1>2</h1>    <h2>3</h2>    <h2>4</h2>  </article></body> {
+::問題40::以下のコードから生成されるアウトラインを正しく表したものを選びなさい。<pre>
+<body>  <h1>1</h1>  <article>    <h1>2</h1>    <h2>3</h2>    <h2>4</h2>  </article></body> 
+</pre>{
     ~A.  1    2      3    4
     ~B.  1    2    3      4
     =C.  1    2      3      4
@@ -311,7 +338,9 @@ $CATEGORY: HTML5レベル1
     ~E. ［a］rb ［b］rp ［c］rt
 }
 
-::問題43::以下のマークアップを実行した結果について、正しい事を述べている選択肢を選びなさい（複数選択可）。<video>  <source src="video.ogv" type="video/ogg">  <source src="video.mp4" type="video/mp4">この動画を再生するには、HTML5に対応したブラウザを使用してください。</video>{
+::問題43::以下のマークアップを実行した結果について、正しい事を述べている選択肢を選びなさい（複数選択可）。<pre>
+<video>  <source src="video.ogv" type="video/ogg">  <source src="video.mp4" type="video/mp4">この動画を再生するには、HTML5に対応したブラウザを使用してください。</video>
+</pre>{
     =A.ブラウザがmp4に対応しておらず、ogvに対応している場合、video.ogvが表示される。
     =B.ブラウザがogvに対応しておらず、mp4に対応している場合、video.mp4が表示される。
     ~C.ブラウザがogvにもmp4に対応している場合、video.mp4が表示される。
@@ -339,7 +368,8 @@ $CATEGORY: HTML5レベル1
     ~A.dl要素は、用語の定義リストを表す。
     =B.dl要素内では、dd要素が表す値に対する、キーとなる文字列（名前やタイトル、ラベルなど）をdt要素で表す。
     ~C.1つのdt要素に対し、対応するdd要素がない場合はエラーになる。
-    ~D.1つのdt要素に対し、対応するdd要素が複数ある場合はエラーになる。~E.dl要素は、順序付きリストとしても扱う事ができる。
+    ~D.1つのdt要素に対し、対応するdd要素が複数ある場合はエラーになる。
+    ~E.dl要素は、順序付きリストとしても扱う事ができる。
 }
 
 ::問題47::次の要素のうち、HTML 文書に必ず記述しなくてはならない要素を選びなさい（複数回答可）。{
@@ -430,7 +460,9 @@ $CATEGORY: HTML5レベル1
     ~E.画像や要素の横幅を%単位で指定する事で、親要素に対して相対的なサイズを指定でき、スクリーンサイズに応じて自動的に伸縮するようになる。
 }
 
-::問題58::メディアクエリを使用して、「幅 768px 以下のデバイス上では、メインコンテンツ（以下の main 要素）を画面いっぱいに表示したい」という要件を満たしたい。どのようなメディアクエリを記述すればよいか。以下の＿＿＿＿にあてはまるものを 1 つ選びなさい。<main>...</main><style>main {  width: 960px;}@media screen and ＿＿＿＿ {  main {    width: 100%;  }}</style> { 
+::問題58::メディアクエリを使用して、「幅 768px 以下のデバイス上では、メインコンテンツ（以下の main 要素）を画面いっぱいに表示したい」という要件を満たしたい。どのようなメディアクエリを記述すればよいか。以下の＿＿＿＿にあてはまるものを 1 つ選びなさい。<pre>
+<main>...</main><style>main {  width: 960px;}@media screen and ＿＿＿＿ {  main {    width: 100%;  }}</style> 
+</pre>{ 
     ~A.(max-width: 768px)]
     ~B.(max-width: 769px)
     =C.(max-device-width: 768px)
@@ -438,7 +470,9 @@ $CATEGORY: HTML5レベル1
     ~E.(max-screen-width: 768px)
 }
 
-::問題59::デバイスが横向きの状態で viewport（ビューポート）の幅が 600px の場合、適用される CSS ファイルはどれか。あてはまるものを全て選びなさい。<link rel="stylesheet" href="1.css"><link rel="stylesheet" href="2.css" media="(min-width: 481px)"><link rel="stylesheet" href="3.css" media="(min-width: 481px)   and (orientation: portrait)"><link rel="stylesheet" href="4.css" media="(min-width: 481px)   and (orientation: landscape)"><link rel="stylesheet" href="5.css" media="(min-width: 769px)">{
+::問題59::デバイスが横向きの状態で viewport（ビューポート）の幅が 600px の場合、適用される CSS ファイルはどれか。あてはまるものを全て選びなさい。<pre>
+<link rel="stylesheet" href="1.css"><link rel="stylesheet" href="2.css" media="(min-width: 481px)"><link rel="stylesheet" href="3.css" media="(min-width: 481px)   and (orientation: portrait)"><link rel="stylesheet" href="4.css" media="(min-width: 481px)   and (orientation: landscape)"><link rel="stylesheet" href="5.css" media="(min-width: 769px)">
+</pre>{
     =A.1.css
     =B.2.css
     ~C.3.css
@@ -456,7 +490,9 @@ $CATEGORY: HTML5レベル1
     ~E.文字コードはUTF-8である必要がある。
 }
 
-::問題62::以下のキャッシュマニフェストファイルについて述べた文章のうち、間違っているものを1つ選びなさい。CACHE MANIFEST# Timestamp: 201409011000hello.htmlFALLBACK:/ fallback.htmlCACHE:hello.cssSETTINGS:prefer-onlineNETWORK:*{
+::問題62::以下のキャッシュマニフェストファイルについて述べた文章のうち、間違っているものを1つ選びなさい。
+CACHE MANIFEST# Timestamp: 201409011000hello.htmlFALLBACK:/ fallback.htmlCACHE:hello.cssSETTINGS:prefer-onlineNETWORK:*
+{
     ~A.hello.htmlが書かれた行はどのセクションにも属していないため、CACHEセクションに属しているとみなされる。
     =B.このキャッシュマニフェストファイルの更新チェックに失敗すると、fallback.htmlが表示される。
     ~C.hello.html,  fallback.html,  hello.cssはいずれもローカルにキャッシュされる。
