@@ -1,627 +1,75 @@
-<h2>HTML5プロフェッショナル認定試験レベル1 サンプル問題</h2>
-<section>
-<div class="section-inner">
-<div class="sample-box">
-  <p class="lead">例題解説とその内容については、例題提供者の監修です。内容や試験問題に関わるお問い合わせにつきましては、LPI-Japan事務局ではお応えできませんのでご了承ください。<br>例題解説のご提供者さまを募集中です。<a href="mailto:&#109;&#97;&#105;&#108;&#64;&#108;&#112;&#105;&#46;&#111;&#114;&#46;&#106;&#112;">LPI-Japan事務局</a>までぜひご投稿ください。選ばれた方の例題解説は本サイトに掲載させていただきます。</p>
-<h3 id="lv1_2">1.2 CSS</h3>
-<!--
-<div class="question">
-<dl>
-<dt>例題2.★「★」</dt>
-<dd>
-★
-</dd>
-<dd>
-<ul class="option">
-	<li>★</li>
-</ul>
-</dd>
-</dl>
-  <p class="notice">※この例題は実際のHTML5プロフェッショナル認定試験とは異なります。</p>
-    <p class="answer_check"><a href="lv1_2_★.html"><img width="5" height="8" src="../images/common/arrow-right2.png" alt="" /> 答えはこちら</a></p>
-</div>
--->
-         <div class="question">
-          <dl>
-            <dt>例題2.22「1.2.2 CSSデザイン」</dt>
-            <dd class="lead">レベル1の出題範囲「<a href="/outline/objectives_lv1_v2.html#lv1_122">1.2.2 CSSデザイン</a>」からの出題です。<br>
-            親要素のCSSプロパティの設定を子要素に強制的に継承する際に指定する値は次のうちどれか。
-            </dd>
-            <dd>
-              <ul class="option">
-                <li>clone</li>
-                <li>derived</li>
-                <li>fork</li>
-                <li>inherit</li>
-              </ul>
-            </dd>
-          </dl>
-          <p class="notice">※この例題は実際のHTML5プロフェッショナル認定試験とは異なります。</p>
-          <p class="answer_check"><span>答えはこちら</span></p>
-					<div class="answer">
-						<dl>
-							<dt>答えは<span> D</span>です。</dt>
-							<dd>
-CSS のプロパティには親要素から子要素に設定が継承されるものとされないものがありますが、inherit を指定することで強制的に継承することができます。<br>
-例えば長子要素にのみ指定する場合は疑似セレクタを使用して下記のように行います。<br>
-<pre>
-<code>
-div:first-child {
-    border: inherit;
-    float: inherit;
-}
-</code>
-</pre>
+$CATEGORY: 1.2 CSS
 
-逆に all, initial, unset で継承を回避することも可能です。allを使用するとすべてのプロパティ（例外を除く）を対象にでき、値に initial を指定すると初期値が適用できます。unset を指定すると上書きされた値がクリアされ、初期値または継承値を適用できます。<br>
-継承はプログラミングの効率化のための技術ですのでマスターすることで効率的なコードを書くことができます。<br><br>
-例題の選択肢には、他の分野での継承に似た効率化の手法です。<br>
-Aのclone は生物学や仮想化技術で使用される複製に関する用語です。<br>
-Bのderived は派生の意でC++, C#などの継承で使用されます。<br>
-Cのfork はLinuxのプロセス遷移の最初の手続きです。			
-							</dd>	
-								</dl>
-						<p class="detail"><a href="/outline/objectives_lv1_v2.html#lv1_122">出題範囲の詳細</a></p>
-                        <div class="present">
-    						<p>LPI-Japan<br>中谷　徹</p>
-						</div>
-					</div>
-        </div>          
-	<div class="question">
-          <dl>
-            <dt>例題2.21「1.2.2 CSSデザイン」</dt>
-            <dd class="lead">レベル1の出題範囲「<a href="/outline/objectives_lv1_v2.html#lv1_122">1.2.2 CSSデザイン</a>」からの出題です。<br>
-            データベースに登録された英語住所が大文字小文字混在しているため、CSSを用い、すべて大文字で表示したい。text-transform プロパティで指定する値として適切なのは次のうちどれか。
-            </dd>
-            <dd>
-              <ul class="option">
-                <li>uppercase</li>
-                <li>lowercase</li>
-                <li>capitalize</li>
-                <li>acronym</li>
-                <li>abbreviation</li>
-              </ul>
-            </dd>
-          </dl>
-          <p class="notice">※この例題は実際のHTML5プロフェッショナル認定試験とは異なります。</p>
-          <p class="answer_check"><span>答えはこちら</span></p>
-					<div class="answer">
-						<dl>
-							<dt>答えは<span> A</span>です。</dt>
-							<dd>
-Aの uppercaseは文字をすべて大文字に変換します。これが正解になります。<br>
-例: Home Page → HOME PAGE<br><br>
-Bの lowercaseは文字をすべて小文字に変換します。<br>
-	例: Home Page → home page<br><br>
-Cの capitalizeは単語の先頭の文字を大文字に変換します。先頭以外の文字はそのままです。<br>
-	例: home page → Home Page, HOME PAGE → HOME PAGE<br><br>
-Dの acronymは単語の頭文字からなる略語を意味する英単語ですが、text-transformの値としては無効です。<br>
-もし、機能するとしたら、Home Page → HP となるでしょう。<br><br>
-Eの abbreviationは短縮/省略を意味する英単語ですが、text-transformの値としては無効です。<br>
-もし、機能するとしたら、これも Home Page → HP となるのでしょうか。<br>
-日本語の略語「パソコン」や「スマホ」などは、acronymではなくabbreviation方式ですね。<br><br>
-なお、text-transform はオングストローム（ångström,Å）などのアクセント付き文字を含むアルファベットのみに有効で、日本語の漢字やひらがなには無効です。また、カタカナや英数字の全角半角の変換もできません。
-なので、lowercaseを指定しても「つ」は「っ（小さいつ）」には変換できないので注意しましょう。<br><br>
-text-transformとは関係ありませんが、ケースには他にも、camelCase、snake_case、PascalCase、kebab-caseといったケースがあるようです。								
-							</dd>	
-								</dl>
-						<p class="detail"><a href="/outline/objectives_lv1_v2.html#lv1_122">出題範囲の詳細</a></p>
-                        <div class="present">
-    						<p>LPI-Japan<br>中谷　徹</p>
-						</div>
-					</div>
-        </div> 
-         <div class="question">
-          <dl>
-            <dt>例題2.20「1.2.2 CSSデザイン」</dt>
-            <dd class="lead">レベル1の出題範囲「<a href="/outline/objectives_lv1_v2.html#lv1_122">1.2.2 CSSデザイン</a>」からの出題です。<br>
-            下記のHTML/CSSコードにおける transition についての説明として正しいのは次のうちどれか。３つ選びなさい。
-            </dd>
-            <dd>
-<div class="box">
-<pre>
-<code>
-【HTML】
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;meta charset="utf-8"&gt;
-&lt;title&gt;transition&lt;/title&gt;
-&lt;style type="text/css"&gt;
-button {
-    background-color: #00f;
-    margin:  10px;
-    width:  100px;
-    height: 50px;
-    transition: transform 1s ease 0.2s,
-                color 1s cubic-bezier(0,0,1,1) 0s,
-                background-color 1s linear;
+::問題２．２２::親要素のCSSプロパティの設定を子要素に強制的に継承する際に指定する値は次のうちどれか。{
+    ~clone
+    ~derived
+    ~fork
+    =inherit
 }
-button:hover {
-    transform: translate(20px,20px) scale(1.5) rotate(360deg); /* 変形 */
-    color: #ff0;               /* 文字色*/
-}
-button:active {
-    color: #00f;               /* 文字色*/
-    background-color: #f00;    /* 背景色 */
-}
-&lt;/style&gt;
 
-&lt;/head&gt;
-   &lt;body&gt;
-       &lt;button&gt;ボタン&lt;/button&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code>
-</pre>
-</div>
-            </dd>
-            <dd>
-              <ul class="option">
-                <li>マウスポインタをボタン上に置いた時、ボタンの変形と文字色の変化は同時に開始する。</li>
-                <li>マウスポインタをボタン上に置いた時、ボタンの変形は文字色の変化完了の0.2秒後に完了する。</li>
-                <li>ボタンをクリックした時、文字色の変化と背景色の変化は同じ時間経過で遷移する。</li>
-                <li>ボタンのクリックを解除した時、瞬時にボタンは初期状態になる。</li>
-                <li>ボタンはクリックしたままマウスポインタを遠ざけた時、ボタン形状は元に戻るが色は変わらない。</li>
-              </ul>
-            </dd>
-          </dl>
-          <p class="notice">※この例題は実際のHTML5プロフェッショナル認定試験とは異なります。</p>
-          <p class="answer_check"><span>答えはこちら</span></p>
-					<div class="answer">
-						<dl>
-							<dt>答えは<span> B、C、E</span>です。</dt>
-							<dd>
-transition は状態遷移の詳細を指定するプロパティで下記の４つをこの順序で同時に指定できます。<br>
-・transition-duration: 状態遷移にかける時間<br>
-・transition-timing-function: ３次ベジェ(cubic-bezier)関数での経時変化<br>
-・transition-delay: 状態遷移を開始するまでの時間<br>
-transition-timing-functionの３次ベジェのcubic-bezier(P0, P1, P2, P3) は、P0(始点)からP3(終点)をP1,P2のハンドル指定でつなぐ曲線で、下記の既定値があります。<br><br>
-ease : cubic-bezier(0.25,0.1,0.25,1)<br>
-linear : cubic-bezier(0,0,1,1) (直線)<br>
-ease-in : cubic-bezier(0.42,0,1,1)<br>
-ease-out : cubic-bezier(0,0,0.58,1)<br>
-ease-in-out: cubic-bezier(0.42,0,0.58,1)<br><br>
-
-transition の省略時のデフォルト値はそれぞれ、all, 0s, ease,0sで、複数の対象がある場合は、例題のようにコンマ(,)で区切って指定します。<br><br>
-
-例題では、ボタンの変形のdelayは0.2秒に対し、文字色変化のdelayは0秒なので同時に開始せず、Aは不正解です。<br>
-ボタンの変形と文字色変化のdurationは共に1秒のため、ボタンの変形はdelayの分の0.2秒後に完了するので、Bは正解です。<br>
-文字色も背景色も共に0秒のdelayで1秒かけて直線的(linear)に遷移し、Cは正解です。<br>
-クリックを解除しても、マウスがボタン上にあれば button:hover が効いて初期状態には戻らず、Dは不正解です。<br>
-クリックしたままマウスを遠ざけると button:hover は解除され、ボタンの変形のみ元に戻るので、Eは正解です。								</dd>	
-								</dl>
-						<p class="detail"><a href="/outline/objectives_lv1_v2.html#lv1_122">出題範囲の詳細</a></p>
-                        <div class="present">
-    						<p>LPI-Japan<br>中谷　徹</p>
-						</div>
-					</div>
-        </div> 
-         <div class="question">
-          <dl>
-            <dt>例題2.19「1.2.2 CSSデザイン」</dt>
-            <dd class="lead">レベル1の出題範囲「<a href="/outline/objectives_lv1_v2.html#lv1_122">1.2.2 CSSデザイン</a>」からの出題です。<br>
-            長い間大きな変更をしてなかったホームページを急遽レスポンシブWEBデザインに対応するよう依頼され、下記のように最小限の変更で対応した。【１】〜【３】に入る文字列の組み合わせとして最適なのは次のうちどれか。            </dd>
-            <dd>
-<div class="box">
-<pre>
-<code>
-【HTML】
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
-&lt;meta name="viewport" content="width=device-width,initial-scale=1" /&gt;
-&lt;style type="text/css"&gt;
-div { 
-    text-align: center;
-    }
-.default {
-    background-color: #ccc;
-    }
-@media screen and (max-width: 600px) {	/* for mobile - narrow */
-.pc {
-   【  １  】: 【  ２  】; 
-    }	/* PC で非表示 *
-.mobile {
-   【  １  】: 【  ３  】; 
-    }	/* スマホで表示 */
-    }
-@media screen and (min-width: 601px) {	/* for pc - wide */
-.mobile {
-   【  １  】: 【  ２  】; 
-    }	/* スマホで非表示 */
-.pc { 
-   【  １  】: 【  ３  】; 
-    }	/* PC で表示 */
-    }
-#footer {
-     position: fixed;
-     bottom: 0;
-	 width: 100%;
-    }
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div class="default pc"&gt;
-	&lt;p&gt;PC Menu&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="default mobile"&gt;
-	&lt;p&gt;Mobile Menu(New)&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="default"&gt;
-	&lt;p&gt;Main Contents&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="default pc"&gt;
-	&lt;p&gt;Rich Contents&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id="footer" class="default"&gt;
-	&lt;p&gt;Footer&lt;/p&gt;
-&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code>
-</pre>
-</div>
-            </dd>
-            <dd>
-              <ul class="option">
-                <li>hide, true, false</li>
-                <li>visibility, hidden, visible</li>
-                <li>display, invisible, visible</li>
-                <li>display, none, block</li>
-                <li>opacity, 0, 1</li>
-              </ul>
-            </dd>
-          </dl>
-          <p class="notice">※この例題は実際のHTML5プロフェッショナル認定試験とは異なります。</p>
-          <p class="answer_check"><span>答えはこちら</span></p>
-					<div class="answer">
-						<dl>
-							<dt>答えは<span> D</span>です。</dt>
-							<dd>
-ウェブサイトのスマートフォンによるアクセスシェアが急速に高まるに連れ、ウェブサイトのスマートフォン対応化の要求が急激に高まっています。<br><br>
-手っ取り早くスマホに対応するには、従来のサイトをそのままに、スマホでの表示に耐えられる変更が必要になります。<br><br>
-最初に行うのが viewport の指定です。meta要素のcontent 属性には例題で指定した値の他に、コンテンツの拡大縮小の可否を制御する user-scalable=yes/no がありますが、近くの文字が見えにくくなったおじさん達のためにもデフォルトのままで、no にしない配慮をしていただきたいものです。<br><br>
-次に画面のサイズ等の条件に合わせて表示を制御する記述を行います。<br>
-条件分岐は HTML内に記述して異なるCSSファイルを利用する方法と、同一のCSS内に記述する方法があり、例題ではCSS内に記述しています。<br>
-要素の表示/非表示の制御は、display プロパティと visibility プロパティで指定できますが、visibilityでは表示領域を確保したまま要素を非表示にするため、今回の目的にあったレイアウトで表示できません。<br>
-期待するレイアウトを実現するには display を使用するのが適していると言え、非表示には none を指定します。<br>
-この例題では、opacity プロパティで透明度を指定しても表示/非表示を実現できますが、visibilyと同様の効果となり、レイアウトを満足できません。また、hide というプロパティは存在しません。<br><br>
-従って、正解は D になります。
-								</dd>	
-								</dl>
-						<p class="detail"><a href="/outline/objectives_lv1_v2.html#lv1_122">出題範囲の詳細</a></p>
-                        <div class="present">
-    						<p>LPI-Japan<br>中谷　徹</p>
-						</div>
-					</div>
-        </div>                          
-         <div class="question">
-          <dl>
-            <dt>例題2.18「1.2.2 CSSデザイン」</dt>
-            <dd class="lead">レベル1の出題範囲「<a href="/outline/objectives_lv1_v2.html#lv1_122">1.2.2 CSSデザイン</a>」からの出題です。<br>
-            以下は、ボタンにアニメーションを設定した例である。説明として間違っているのは次のうちどれか。２つ選びなさい。 
-            </dd>
-            <dd>
-<div class="box">
-<pre>
-<code>
-【HTML】
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;meta charset="utf-8"&gt;
-&lt;title&gt;jinni effect like&lt;/title&gt;
-&lt;style type="text/css"&gt;
-button {
-        background-color: #00f;
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-        transition: transform 0.8s;
+::問題２．２１::データベースに登録された英語住所が大文字小文字混在しているため、CSSを用い、すべて大文字で表示したい。text-transform プロパティで指定する値として適切なのは次のうちどれか。
+{
+    =uppercase
+    ~lowercase
+    ~capitalize
+    ~acronym
+    ~abbreviation
 }
-button:hover {
-        transform: translate(0,-10px) scale(1.3);
-        color: #ff0;
-        background-color: #00a;
-}
-button:active {
-        background-color: #f00;
-}
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;table&gt;
-&lt;tr&gt;&lt;th colspan=3&gt;ジニーイフェクト風ボタン&lt;/th&gt;&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;button&gt;ボタン1&lt;/button&gt;&lt;/td&gt;
-&lt;td&gt;&lt;button&gt;ボタン2&lt;/button&gt;&lt;/td&gt;
-&lt;td&gt;&lt;button&gt;ボタン3&lt;/button&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;    
-&lt;/body&gt;
-&lt;/html&gt;
-</code>
-</pre>
-</div>
-            </dd>
-            <dd>
-              <ul class="option">
-                <li>ボタンの形状は、正方形である。</li>
-                <li>マウスがボタン上に来ると、ボタンが大きくなる。</li>
-                <li>マウスがボタン上に来ると、ボタンの色が薄い青になる。</li>
-                <li>マウスがボタン上に来ると、0.8秒かけて変形する。</li>
-                <li>ボタンを押すと、ボタンの背景色が赤に変わる。</li>
-              </ul>
-            </dd>
-          </dl>
-          <p class="notice">※この例題は実際のHTML5プロフェッショナル認定試験とは異なります。</p>
-          <p class="answer_check"><span>答えはこちら</span></p>
-					<div class="answer">
-						<dl>
-							<dt>答えは<span> A と C</span>です。</dt>
-							<dd>
-A. ボタンサイズは縦横(width,height)共に100pxで、角の丸み(border-radius)50pxの指定があるのでボタン形状は丸になり、説明としては間違いです。<br>
-B. マウスがボタン上に来た時(hover)に、大きく(scale 1.3)変形(transform)する指定があるので、説明として正しいです。<br>
-C. マウスがボタン上に来た時(hover)に、背景色(background-color)を濃いの青(#00a) にする指定があるので、説明としては間違いです。<br>
-D. マウスがボタン上に来た時(hover)に、0.8秒かけて変形(transition: transform 0.8s)する指定があるので、説明として正しいです。<br>
-E. ボタンを押す(activate)と、ボタンの背景色が赤(background-color: #f00)に変わる指定があるので、説明として正しいです。
-						</dd>
-						</dl>
-						<p class="detail"><a href="/outline/objectives_lv1_v2.html#lv1_122">出題範囲の詳細</a></p>
-                        <div class="present">
-    						<p>LPI-Japan<br>中谷　徹</p>
-						</div>
-					</div>
-        </div>         
-         <div class="question">
-          <dl>
-            <dt>例題2.17「1.2.2 CSSデザイン」</dt>
-            <dd class="lead">レベル1の出題範囲「<a href="/outline/objectives_lv1_v2.html#lv1_122">1.2.2 CSSデザイン</a>」からの出題です。<br>
-            HTMLファイルをブラウザで表示したところ、下記のように表示された。HTMLファイルの下線部に入るCSSのプロパティ名を2つ選びなさい。 
-            </dd>
-            <dd>
-            <div class="box">
-            【表示画面】<br>
-            I Am A Cat.<br>
-            As Yet I Have No Name.
-			</div>
-<div class="box">
-<pre>
-<code>
-【HTML】
-&lt;html&gt;
-&lt;head&gt;
-&lt;meta charset="utf-8"/&gt;
-&lt;style type="text/css"&gt;
-        p.test {
-		_____________: capitalize;
-		_____________: pre;
-	}
-&lt;/style&gt;
-&lt;/head&gt;
-    &lt;body&gt;
-        &lt;p class="test"&gt;
-        I am a cat.&lt;br /&gt;
-        As yet I have no name.
-	&lt;/p&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</code>
-</pre>
-</div>
-            </dd>
-            <dd>
-              <ul class="option">
-                <li>case-transform</li>
-                <li>text-transform</li>
-                <li>word-wrap</li>
-                <li>word-break</li>
-                <li>white-space</li>
-              </ul>
-            </dd>
-          </dl>
-          <p class="notice">※この例題は実際のHTML5プロフェッショナル認定試験とは異なります。</p>
-          <p class="answer_check"><span>答えはこちら</span></p>
-					<div class="answer">
-						<dl>
-							<dt>答えは<span> B と E</span>です。</dt>
-							<dd>
-選択肢Bのtext-transform プロパティは、テキストの大文字小文字を変換します。<br>
-主な有効値は次のとおりです。<br>
-・lowercase: テキストを全て小文字に変換します。<br>
-・uppercase: テキストを全て大文字に変換します。<br>
-・capitalize: 単語の1文字目を大文字にします。<br>
-なお、日本語にはこれに該当する大文字小文字の区別はないので日本語は変換はされません。<br><br>
-選択肢Eのwhite-space プロパティは、テキストのwhitespace（空白: タブ、スペース、改行）の表示方法を指定します。<br>
-主な有効値は次のとおりです。<br>
-・normal: スペース、タブ、改行を1つの空白に置換して表示します。<br>
-・pre: スペース、タブ、改行をそのまま表示します。<br>
-・nowrap:スペース、タブ、改行を1つの空白に置換して表示します。nowrapの、normalとの違いは、表示するボックス幅が小さくても改行されない点です。<br><br>
-なお、スペースは、半角のスペースのみで、全角のスペースは漢字１文字として処理され、white-spaceの処理対象にはなりません。<br><br>
-扱うテキストが英語の場合、単語と単語がスペースで区切られるため、何も指定しなければ、表示領域に到達する手前のスペースで自動的に改行され、単語の途中で改行されることはありません。<br>
-しかし、日本語にはそのような都合の良いスペースがなく、逆にどこでも改行でき、幅が極端に狭い場合、縦一列で表示されることもあります。<br>句読点（。、）や、閉じ括弧（」）が行の先頭に来ないよう、ブラウザには禁則処理機能がありますが、ブラウザにより動作は異なるようです。<br><br>
-選択肢Aのcase-transform は、存在しません。<br>
-選択肢Cのword-wrap は、単語の途中の改行に関するプロパティです。<br>
-選択肢Dのword-break は、改行位置を厳格に扱うプロパティで、CJK（Chinese, Japanese, Korean)に対応しています。<br><br>
-								その他、英語には改行しないスペースとして「&amp;nbsp;（non-breaking space)」という特殊な文字もあります。							
-						</dd>
-						</dl>
-						<p class="detail"><a href="/outline/objectives_lv1_v2.html#lv1_122">出題範囲の詳細</a></p>
-                        <div class="present">
-    						<p>LPI-Japan<br>中谷　徹</p>
-						</div>
-					</div>
-        </div>         
-        <div class="question">
-          <dl>
-            <dt>例題2.16「1.2.1 スタイルシートの基本」</dt>
-            <dd class="lead">レベル1の出題範囲「<a href="/outline/objectives_lv1_v2.html#lv1_121">1.2.1 スタイルシートの基本</a>」からの出題です。<br>
-            下記のHTMLファイルについて、ブラウザに表示される6行のリストのうち橙色(Orange)で表示される行は何行あるか。行数を数字1文字で記述しなさい。 
- </dd>
-            <dd>
-<div class="box">
-<pre>
-<code>
-&lt;html&gt;
-&lt;head&gt;
-&lt;meta charset="utf-8"/&gt;
-&lt;style type="text/css"&gt;
-ol       { color: brown; }
-li#red   { color: red;   }
-.red     { color: red;   }
-li.blue  { color: blue;  }
-#green   { color: green; }
-.orange  { color: orange;}
-li:nth-child(even)
-         { color: orange;}
-&lt;/style&gt;
-&lt;/head&gt;
-    &lt;body&gt;
-    &lt;ol&gt;
-        &lt;li id   ="red"   &gt;red    &lt;/li&gt;
-        &lt;li id   ="green" &gt;green  &lt;/li&gt;
-        &lt;li class="blue"  &gt;blue   &lt;/li&gt;
-        &lt;li class="red"   &gt;red    &lt;/li&gt;
-        &lt;li class="green" &gt;green  &lt;/li&gt;
-        &lt;li id   ="orange"&gt;orange &lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</code>
-</pre>
-</div>
-            </dd>
-          </dl>
-          <p class="notice">※この例題は実際のHTML5プロフェッショナル認定試験とは異なります。</p>
-          <p class="answer_check"><span>答えはこちら</span></p>
-					<div class="answer">
-						<dl>
-							<dt>答えは<span> 2</span>です。</dt>
-							<dd>
-								基本的なCSSの設定方法とHTMLでの指定方法、およびセレクタの優先順位に関する問題です。<br /> ブラウザでの表示は以下のようになり、4行目と6行目の2つが橙色で表示されるので、答えは「２」となります。<br />
-1. red		.. 赤<br>
-2. green	.. 緑<br>
-3. blue		.. 青<br>
-4. red		.. 橙<br>
-5. green	.. 茶<br>
-6. orange	.. 橙<br><br /> 
-						まず、CSSパートの設定を確認します。<br />
-(a) ol要素内の色を茶色<br />
-(b) li要素のID名redを赤色<br />
-(c) クラス名redを赤色<br />
-(d) li要素のクラス名blueを青色<br />
-(e) ID名greenを緑色<br />
-(f) クラス名orangeを橙色<br />
-(g) li要素の偶数番目を橙色<br /><br /> HTMLのol要素内での指定とCSSの対応を確認すると下記のようになります。<br>
-1. id=redの(b)が、(a)より優先され、赤<br>
-2. id=greenの(e)が、(a)(g)より優先され、緑<br>
-3. class=blueの(d)が、(a)より優先され、青<br>
-4. class=redの(c)より、(g)が優先されるため、橙<br>
-5. class=greenの設定がCSSに無いので、(a)の茶<br>
-6. id=orangeの設定がCSSに無いが、6行目で(g)により、橙<br><br /> 実際のファイルでは、このようなわかりにくいコーディングはないと思いますが、すごく複雑なものは存在します。思った通りの体裁にならないときに、基本的なセレクタとそれらの優先順位を計算して、原因を追求できるようにしておきましょう。
 
-							</dd>
-						</dl>
-						<p class="detail"><a href="/outline/objectives_lv1_v2.html#lv1_121">出題範囲の詳細</a></p>
-                        <div class="present">
-    						<p>LPI-Japan<br>中谷　徹</p>
-						</div>
-					</div>
-        </div>
+::問題２．２０::下記のHTML/CSSコードにおける transition についての説明として正しいのは次のうちどれか。３つ選びなさい。
+{
+    ~マウスポインタをボタン上に置いた時、ボタンの変形と文字色の変化は同時に開始する。
+    =マウスポインタをボタン上に置いた時、ボタンの変形は文字色の変化完了の0.2秒後に完了する。
+    =ボタンをクリックした時、文字色の変化と背景色の変化は同じ時間経過で遷移する。
+    ~ボタンのクリックを解除した時、瞬時にボタンは初期状態になる。
+    =ボタンはクリックしたままマウスポインタを遠ざけた時、ボタン形状は元に戻るが色は変わらない。
+}
 
-              <div class="question">
-          <dl>
-            <dt>例題2.15「1.2.1 スタイルシートの基本」</dt>
-            <dd class="lead">レベル1の出題範囲「<a href="/outline/objectives_lv1_v2.html#lv1_121">1.2.1 スタイルシートの基本</a>」からの出題です。<br>
-            HTML5のstyle要素にtype属性が指定されていない場合の、type属性のデフォルト値を記述しなさい。</dd>
-            <dd>
-            </dd>
-          </dl>
-          <p class="notice">※この例題は実際のHTML5プロフェッショナル認定試験とは異なります。</p>
-          <p class="answer_check"><span>答えはこちら</span></p>
-					<div class="answer">
-						<dl>
-							<dt>答えは<span> text/css  </span>です。</dt>
-							<dd>
-								HTML5よりも前のHTML/XHTMLでは、style要素のtype属性にはデフォルト値が設定されていなかったため、type属性は必ず指定する必要がありました。type属性にはスタイルシート言語の種類をMIMEタイプで指定することになっており、CSSであればその値は「text/css」となります。HTML5では、この「text/css」がデフォルト値として設定されたため、CSSを使用するのであればtype属性は省略可能となっています。
-							</dd>
-						</dl>
-						<p class="detail"><a href="/outline/objectives_lv1_v2.html#lv1_121">出題範囲の詳細</a></p>
-					<div class="present">
-						<p>例題解説の提供：<a href="/measures/learning.html">HTML5アカデミック認定校</a>　<a href="/measures/learning_03.html">株式会社クリーク・アンド・リバー社</a><br>HTML5レベル１認定者　大藤 幹 氏</p>
-					</div>
-					</div>
-        </div>
-              <div class="question">
-          <dl>
-            <dt>例題2.14「1.2.1 スタイルシートの基本」</dt>
-            <dd class="lead">レベル1の出題範囲「<a href="/outline/objectives_lv1_v2.html#lv1_121">1.2.1 スタイルシートの基本</a>」からの出題です。<br>
-            1つめのtr要素にのみスタイルを適用するセレクタをすべて選びなさい。 </dd>
-            <dd>
-            </dd>
-            <dd>
-              <ul class="option">
-                <li>tr:first-child</li>
-                <li>tr:nth-child(1) </li>
-                <li>tr:nth-child(0n+1) </li>
-                <li>tr:nth-child(1n)</li>
-                <li>tr:nth-child(1n+0)</li>
-              </ul>
-            </dd>
-          </dl>
-          <p class="notice">※この例題は実際のHTML5プロフェッショナル認定試験とは異なります。</p>
-          <p class="answer_check"><span>答えはこちら</span></p>
-					<div class="answer">
-						<dl>
-							<dt>答えは<span> A,B,C </span>です。</dt>
-							<dd>
-								Aの「:first-child」は、要素内容の先頭にある要素を適用対象とするセレクタです。よって、まずはこれが答えの1つとなります。<br><br> 
-残りのB〜Eのセレクタは、すべて (an+b) 形式の式を持っています。 (an+b) 形式の式において、aが0の場合はanは省略できます。上の選択肢Cの (0n+1) ではaが0なので、0nは省略できます。省略するとBの (1) と同じになります。つまり、BとCの式は同じもので、両方とも1番目の要素を適用対象としますので、これらも答えに含まれることになります。 
-<br><br>
-また、(an+b) 形式の式において、an+bのbが0の場合には+bが省略できます。上の選択肢Eの (1n+0) ではbが0なので、+bは省略でき、省略するとDの (1n) と同じになります。これらは1つめだけでなく、すべてのtr要素にスタイルを適用します。よって答えは A、B、C となります。 
-							</dd>
-						</dl>
-						<p class="detail"><a href="/outline/objectives_lv1_v2.html#lv1_121">出題範囲の詳細</a></p>
-					<div class="present">
-						<p>例題解説の提供：<a href="/measures/learning.html">HTML5アカデミック認定校</a>　<a href="/measures/learning_03.html">株式会社クリーク・アンド・リバー社</a><br>HTML5レベル１認定者　大藤 幹 氏</p>
-					</div>
-					</div>
-        </div>
-              <div class="question">
-          <dl>
-            <dt>例題2.21「1.2.2 CSSデザイン」</dt>
-            <dd class="lead">レベル1の出題範囲「<a href="/outline/objectives_lv1_v2.html#lv1_122">1.2.2 CSSデザイン</a>」からの出題です。<br>
-            transformプロパティで指定できない関数を1つ選びなさい。</dd>
-            <dd>
-              <ul class="option">
-                <li>perspective</li>
-                <li>rotate3d</li>
-                <li>scale3d</li>
-                <li>translate3d</li>
-                <li>opacity</li>
-              </ul>
-            </dd>
-          </dl>
-          <p class="notice">※この例題は実際のHTML5プロフェッショナル認定試験とは異なります。</p>
-          <p class="answer_check"><span>答えはこちら</span></p>
-					<div class="answer">
-						<dl>
-							<dt>答えは<span> E </span>です。</dt>
-							<dd>
-A：3D変形の奥行感を指定することが出来る関数です。<br>
-B：要素を回転表示することが出来る関数です。<br>
-C：要素の3D縮尺比率を指定することが出来る関数です。<br>
-D：要素を3D方向に移動させることが出来る関数です。<br>
-E：透明度を指定するプロパティです。transformプロパティでは指定できません。
-							</dd>
-						</dl>
-						<p class="detail"><a href="/outline/objectives_lv1_v2.html#lv1_122">出題範囲の詳細</a></p>
-					<div class="present">
-						<p>例題解説の提供：豊田 健次 氏</p>
-					</div>
-					</div>
+::問題２．１９::長い間大きな変更をしてなかったホームページを急遽レスポンシブWEBデザインに対応するよう依頼され、下記のように最小限の変更で対応した。【１】〜【３】に入る文字列の組み合わせとして最適なのは次のうちどれか。
+{
+    ~hide, true, false
+    ~visibility, hidden, visible
+    ~display, invisible, visible
+    =display, none, block
+    ~opacity, 0, 1
+}
+
+::問題２．１８::以下は、ボタンにアニメーションを設定した例である。説明として間違っているのは次のうちどれか。２つ選びなさい。
+{
+    =ボタンの形状は、正方形である。
+    ~マウスがボタン上に来ると、ボタンが大きくなる。
+    =マウスがボタン上に来ると、ボタンの色が薄い青になる。
+    ~マウスがボタン上に来ると、0.8秒かけて変形する。
+    ~ボタンを押すと、ボタンの背景色が赤に変わる。
+}
+
+::問題２．１７::HTMLファイルをブラウザで表示したところ、下記のように表示された。HTMLファイルの下線部に入るCSSのプロパティ名を2つ選びなさい。
+{
+    ~case-transform
+    =text-transform
+    ~word-wrap
+    ~word-break
+    =white-space
+}
+
+::問題２．１４::1つめのtr要素にのみスタイルを適用するセレクタをすべて選びなさい。
+{
+    =tr:first-child
+    =tr:nth-child(1) 
+    =tr:nth-child(0n+1) 
+    ~tr:nth-child(1n)
+    ~tr:nth-child(1n+0)
+}
+
+::問題２：１３::transformプロパティで指定できない関数を1つ選びなさい。
+{
+    ~perspective
+    ~rotate3d
+    ~scale3d
+    ~translate3d
+    =opacity
+}
+
 
         </div>
               <div class="question">
@@ -633,11 +81,11 @@ E：透明度を指定するプロパティです。transformプロパティで�
             </dd>
             <dd>
               <ul class="option">
-                <li>ucfirst</li>
-                <li>capitalize</li>
-                <li>uppercase</li>
-                <li>camelcase</li>
-                <li>proper</li>
+                ~ucfirst
+                ~capitalize
+                ~uppercase
+                ~camelcase
+                ~proper
               </ul>
             </dd>
           </dl>
@@ -668,11 +116,11 @@ E：表計算アプリケーション等で用いられる、先頭を大文字�
             </dd>
             <dd>
               <ul class="option">
-                <li>to</li>
-                <li>end</li>
-                <li>over</li>
-                <li>last</li>
-                <li>finished</li>
+                ~to
+                ~end
+                ~over
+                ~last
+                ~finished
               </ul>
             </dd>
           </dl>
@@ -699,11 +147,11 @@ E：表計算アプリケーション等で用いられる、先頭を大文字�
             </dd>
             <dd>
               <ul class="option">
-                <li>すべての背景関連プロパティは、カンマ区切りで複数の値を指定できる。</li>
-                <li>background-colorプロパティにはカンマ区切りの値を指定できない。</li>
-                <li>カンマ区切りで先（左側）に指定した背景画像ほど上（画面上で手前）に表示される。</li>
-                <li>カンマ区切りで後（右側）に指定した背景画像ほど上（画面上で手前）に表示される。 </li>
-                <li>backgroundプロパティにカンマ区切りの値を指定する際、背景色は先頭（一番左）に指定する値の１つとして指定する。</li>
+                ~すべての背景関連プロパティは、カンマ区切りで複数の値を指定できる。
+                ~background-colorプロパティにはカンマ区切りの値を指定できない。
+                ~カンマ区切りで先（左側）に指定した背景画像ほど上（画面上で手前）に表示される。
+                ~カンマ区切りで後（右側）に指定した背景画像ほど上（画面上で手前）に表示される。 
+                ~backgroundプロパティにカンマ区切りの値を指定する際、背景色は先頭（一番左）に指定する値の１つとして指定する。
               </ul>
             </dd>
           </dl>
@@ -731,11 +179,11 @@ CSS3からは、1つのボックスに複数の背景画像を指定できるよ
             </dd>
             <dd>
               <ul class="option">
-                <li>box-shadow: 1px;</li>
-                <li>box-shadow: 1px 1px;</li>
-                <li>box-shadow: 3px 3px 6px 2px;</li>
-                <li>box-shadow: 3px 3px 6px 2px inset;</li>
-                <li>box-shadow: rgba(0,0,0,0.5) 3px 3px 6px 2px inset;</li>
+                ~box-shadow: 1px;
+                ~box-shadow: 1px 1px;
+                ~box-shadow: 3px 3px 6px 2px;
+                ~box-shadow: 3px 3px 6px 2px inset;
+                ~box-shadow: rgba(0,0,0,0.5) 3px 3px 6px 2px inset;
               </ul>
             </dd>
           </dl>
@@ -786,11 +234,11 @@ CSS3からは、1つのボックスに複数の背景画像を指定できるよ
             </dd>
             <dd>
               <ul class="option">
-                <li>h3 p </li>
-                <li>h3 ~ p</li>
-                <li>h3 + p</li>
-                <li>h3 &lt; p</li>
-                <li>h3 &gt; p</li>
+                ~h3 p 
+                ~h3 ~ p
+                ~h3 + p
+                ~h3 &lt; p
+                ~h3 &gt; p
               </ul>
             </dd>
           </dl>
@@ -842,11 +290,11 @@ CSS3からは、1つのボックスに複数の背景画像を指定できるよ
             </dd>
             <dd>
               <ul class="option">
-                <li>tr:first-child</li>
-                <li>tr:nth-child(1) </li>
-                <li>tr:nth-child(0n+1) </li>
-                <li>tr:nth-child(1n)</li>
-                <li>tr:nth-child(1n+0)</li>
+                ~tr:first-child
+                ~tr:nth-child(1) 
+                ~tr:nth-child(0n+1) 
+                ~tr:nth-child(1n)
+                ~tr:nth-child(1n+0)
               </ul>
             </dd>
           </dl>
@@ -896,11 +344,11 @@ background-color:‪#‎CCC‬;
             <dd>10番目のtr要素の背景色は何色になるか、次の選択肢から1つ選びなさい。</dd>
             <dd>
               <ul class="option">
-                <li>白</li>
-                <li>グレー</li>
-                <li>薄黄色</li>
-                <li>薄ピンク</li>
-                <li>薄緑</li>
+                ~白
+                ~グレー
+                ~薄黄色
+                ~薄ピンク
+                ~薄緑
               </ul>
             </dd>
           </dl>
@@ -928,10 +376,10 @@ background-color:‪#‎CCC‬;
             Web制作においてCSSの設定が複雑化し、ともすれば破綻しかねないケースがある。近年、Web制作のシーンでCSSを効率的に運用するための、運用・管理・命名規則などのルールや指針がいくつも発表されている。次の中で、CSSの効率的な運用方法のルール・指針と最も関係が薄いものはどれか。1つ選びなさい。</dd>
             <dd>
               <ul class="option">
-                <li>SMACSS</li>
-                <li>DOM</li>
-                <li>OOCSS</li>
-                <li>BEM</li>
+                ~SMACSS
+                ~DOM
+                ~OOCSS
+                ~BEM
               </ul>
             </dd>
           </dl>
@@ -976,11 +424,11 @@ p { font-size: 15pt }
 </pre>
 							</div>
 							<ul class="option">
-								<li>11ポイント</li>
-								<li>12ポイント</li>
-								<li>13ポイント</li>
-								<li>14ポイント</li>
-								<li>15ポイント</li>
+								~11ポイント
+								~12ポイント
+								~13ポイント
+								~14ポイント
+								~15ポイント
 							</ul>
 						</dd>
 				</dl>
@@ -1007,11 +455,11 @@ p { font-size: 15pt }
 						CSSのセレクタのうち、書式が間違っているものをすべて選びなさい。</dd>
 						<dd>
 							<ul class="option">
-								<li>::root</li>
-								<li>::before</li>
-								<li>::after</li>
-								<li>::first-child</li>
-								<li>::last-child</li>
+								~::root
+								~::before
+								~::after
+								~::first-child
+								~::last-child
 							</ul>
 						</dd>
 				</dl>
@@ -1119,10 +567,10 @@ div {
 なお「ブラウザのウィンドウ幅＝div要素の幅」と考えて構わないものとする。</dd>
 <dd>
   <ul>
-	<li style="list-style-type: decimal;">450ピクセル：3つ／1200ピクセル：3つ</li>
-	<li style="list-style-type: decimal;">450ピクセル：3つ／1200ピクセル：7つ</li>
-	<li style="list-style-type: decimal;">450ピクセル：2つ／1200ピクセル：3つ</li>
-	<li style="list-style-type: decimal;">450ピクセル：2つ／1200ピクセル：7つ</li>
+	<li style="list-style-type: decimal;">450ピクセル：3つ／1200ピクセル：3つ
+	<li style="list-style-type: decimal;">450ピクセル：3つ／1200ピクセル：7つ
+	<li style="list-style-type: decimal;">450ピクセル：2つ／1200ピクセル：3つ
+	<li style="list-style-type: decimal;">450ピクセル：2つ／1200ピクセル：7つ
   </ul>
 </dd>
 </dl>
@@ -1152,11 +600,11 @@ div {
 次のlink要素のうち、style.css を正しく読み込む書き方をしているものはどれか。2つ選びなさい。</dd>
 <dd>
   <ul class="option">
-    <li>&lt;link href=&quot;style.css&quot;&gt;</li>
-    <li>&lt;link href=&quot;style.css&quot; type=&quot;text/css&quot;&gt;</li>
-    <li>&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;</li>
-    <li>&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; type=&quot;text/css&quot;&gt;</li>
-    <li>&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; type=&quot;text/plain&quot;&gt; </li>
+    ~&lt;link href=&quot;style.css&quot;&gt;
+    ~&lt;link href=&quot;style.css&quot; type=&quot;text/css&quot;&gt;
+    ~&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+    ~&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; type=&quot;text/css&quot;&gt;
+    ~&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; type=&quot;text/plain&quot;&gt; 
   </ul>
 </dd>
 </dl>
@@ -1203,11 +651,11 @@ CSSのwhite-spaceプロパティにおいて、ブラウザで表示させる際
 </dd>
 <dd>
 <ul class="option">
-	<li>normal</li>
-	<li>pre</li>
-	<li>nowrap</li>
-	<li>pre-wrap</li>
-	<li>pre-line</li>
+	~normal
+	~pre
+	~nowrap
+	~pre-wrap
+	~pre-line
 </ul>
 </dd>
 </dl>
@@ -1284,11 +732,11 @@ CSSのwhite-spaceプロパティにおいて、ブラウザで表示させる際
 </dd>
 <dd>
 <ul class="option">
-	<li>*#abc ul</li>
-	<li>#abc #def ul</li>
-	<li>body#abc ul</li>
-	<li>#ab.cd.ef.gi.hj.kl.mn.op.qr.st.uv.wx.yz ul</li>
-	<li>*#ab.cd.ef.gi.hj.kl.mn.op.qr.st.uv.wx.yz ul</li>
+	~*#abc ul
+	~#abc #def ul
+	~body#abc ul
+	~#ab.cd.ef.gi.hj.kl.mn.op.qr.st.uv.wx.yz ul
+	~*#ab.cd.ef.gi.hj.kl.mn.op.qr.st.uv.wx.yz ul
 </ul>
 </dd>
 </dl>
@@ -1317,11 +765,11 @@ CSSのwhite-spaceプロパティにおいて、ブラウザで表示させる際
 </dd>
 <dd>
 <ul class="option">
-	<li>ドット(.)を~=の代わりとして利用し、クラス属性における特定の属性値を持つ要素を示す。</li>
-	<li>アスタリスク(*)を用いて表記され、全ての型の要素を示す。</li>
-	<li>タッシュタグ(#)の後にID型属性の値を記述し、特定のID属性を持つ要素を示す。</li>
-	<li>要素名を記述し特定の要素型の要素を示す。</li>
-	<li>任意の属性名と属性値を指定することで、その属性を指定している要素およびその属性値を持つ要素を示す。</li>
+	~ドット(.)を~=の代わりとして利用し、クラス属性における特定の属性値を持つ要素を示す。
+	~アスタリスク(*)を用いて表記され、全ての型の要素を示す。
+	~タッシュタグ(#)の後にID型属性の値を記述し、特定のID属性を持つ要素を示す。
+	~要素名を記述し特定の要素型の要素を示す。
+	~任意の属性名と属性値を指定することで、その属性を指定している要素およびその属性値を持つ要素を示す。
 </ul>
 </dd>
 </dl>
@@ -1353,11 +801,11 @@ Eは属性セレクタに関する説明なので間違いです。</dd>
 </dd>
 <dd>
 <ul class="option">
-	<li>div {background-color: rgba(255,0,0,128);}</li>
-	<li>div {background-color: #FF000088;}</li>
-	<li>div {background-color: rgba(255,0,0,0.5);}</li>
-	<li>div {background-color: transparent;}</li>
-	<li>div {background-color: rgba(100%,0%,0%,50%);}</li>
+	~div {background-color: rgba(255,0,0,128);}
+	~div {background-color: #FF000088;}
+	~div {background-color: rgba(255,0,0,0.5);}
+	~div {background-color: transparent;}
+	~div {background-color: rgba(100%,0%,0%,50%);}
 </ul>
 </dd>
 </dl>
@@ -1427,11 +875,11 @@ Eは、アルファ値を%で指定しているので半透明にならず不正
 </dd>
 <dd>
   <ul class="option">
-    <li>tr{caption-virtical: bottom;}</li>
-    <li>caption{caption-virtical: bottom;}</li>
-    <li>caption{caption-align: bottom;}</li>
-    <li>caption{caption-side: bottom;}</li>
-    <li>caption{caption-bottm: yes;}</li>
+    ~tr{caption-virtical: bottom;}
+    ~caption{caption-virtical: bottom;}
+    ~caption{caption-align: bottom;}
+    ~caption{caption-side: bottom;}
+    ~caption{caption-bottm: yes;}
   </ul>
 </dd>
 </dl>
@@ -1456,7 +904,7 @@ Eは、アルファ値を%で指定しているので半透明にならず不正
 <section>
   <div class="section-inner">
     <ul class="banner clearfix">
-      <li class="index"> <a href="/measures/sample.html"> <img src="../images/common/arrow-right2.png" height="8" width="5" alt="" />HTML5プロフェッショナル認定試験レベル1 サンプル問題</a> </li>
+      <li class="index"> <a href="/measures/sample.html"> <img src="../images/common/arrow-right2.png" height="8" width="5" alt="" />HTML5プロフェッショナル認定試験レベル1 サンプル問題</a> 
     </ul>
   </div>
 </section>
