@@ -21,3 +21,6 @@
 ## Watson API
 # 音声認識
 # 文字認識
+# ローレベルAPI
+## IndexedDB
+## Web Authentication
