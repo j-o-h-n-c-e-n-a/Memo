@@ -5,3 +5,15 @@
 * [開発環境のスピード構築のために](https://www.altus5.co.jp/blog/docker/2017/05/29/letsencript/)
 
 ## Azureで構築
+
+
+## LDAP
+* LDAP://muro.jsw.co.jp
+* LSS ADMIN
+* LSSNISCO
+
+## Domain
+	WindowsIdentity.GetCurrent で windows ユーザ情報を取得する
+* samaccountname
+* displayname
+* description

@@ -1,4 +1,6 @@
+## 参考
 * [](https://www.webprofessional.jp/retrofit-your-website-as-a-progressive-web-app/undefined)
+* [はじめてのプログレッシブ ウェブアプリ](https://codelabs.developers.google.com/codelabs/your-first-pwapp-ja/#0)
 ### ステップ
 1. HTTPSを有効にする
 2. Webアプリのマニュフェストを作る
@@ -40,4 +42,4 @@
 * バックグラウンドにいるときはコードを実行できない
 * キャッシュ管理が大変
 
-
+## 利用アイデア
