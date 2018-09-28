@@ -5,6 +5,9 @@
 * [開発環境のスピード構築のために](https://www.altus5.co.jp/blog/docker/2017/05/29/letsencript/)
 
 ## Azureで構築
+* Azure AD
+	+ Office 365
+* Microsoft Authenticator
 
 
 ## LDAP
