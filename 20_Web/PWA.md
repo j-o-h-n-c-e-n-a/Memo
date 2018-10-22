@@ -1,6 +1,7 @@
 ## 参考
-* [](https://www.webprofessional.jp/retrofit-your-website-as-a-progressive-web-app/undefined)
 * [はじめてのプログレッシブ ウェブアプリ](https://codelabs.developers.google.com/codelabs/your-first-pwapp-ja/#0)
+* [GitHubを使って3分でHPを公開する。](https://qiita.com/budougumi0617/items/221bb946d1c90d6769e9)
+* 
 ### ステップ
 1. HTTPSを有効にする
 2. Webアプリのマニュフェストを作る
@@ -41,5 +42,8 @@
 ### 注意点
 * バックグラウンドにいるときはコードを実行できない
 * キャッシュ管理が大変
-
+### サンプル
+* [シンプルなPWAサンプルここに置いておきますね](https://qiita.com/kazaoki/items/e93b88556fcd05d28ddc)
+* [サンプルコードで学ぶPWA](https://qiita.com/radiocat/items/034904a094d07c389a4f)
+* [PWAをもっと簡単に初めてみる](https://qiita.com/poster-keisuke/items/6651140fa20c7aa18474)
 ## 利用アイデア
