@@ -33,6 +33,9 @@
 		+ ClickOnceと似たのやり方で配布ができる
 		+ Windows10のバージョンを1803以降にする必要がある
 		+ https://blog.okazuki.jp/entry/2018/09/27/182936
-8. WinFormsでも作る
-* 材料番号を手入力
+8. WinFormsでも作る(WinFormsの説明ファイルを参照)
+* 番号を手入力
 * ズーム機能が欲しい
+
+### 通知領域への通知
+* https://book.mynavi.jp/manatee/detail/id=75974
