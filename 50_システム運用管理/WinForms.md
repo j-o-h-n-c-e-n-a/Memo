@@ -9,7 +9,7 @@
 		- デバイスが小さくても 大丈夫です。最小サイズの Windows デバイスでも、ズーム、拡大、パンを使用して、アプリケーション内を簡単にナビゲートできます。
 
 
-* BarCode for WinForms でバーコードとQRコードに対応
+* BarCode for WinForms でバーコードとQRコードの読込に対応
 
 
 ### ClickOnce
@@ -30,3 +30,11 @@
 * 回転への対応
 * ダブルタップで標準サイズに戻る方が良い？
 * テキスト入力のモードについて、英数字のみにしたい
+* カメラは使える？
+	+ Windows10標準APIのMediaCaptureが上手く動作しない（カメラが起動しない）とのこと
+		- https://dobon.net/cgi-bin/vbbbs/srch.cgi?mode=srch&logs=./vb/vb.dat&page=140&no=0&word=%82%C5%82%CD&andor=and&KYO=&PAGE=20
+	+ WPFなら別のツールがある模様
+
+### WPF
+	WPFでUWPもどきのアプリケーションを作成するために、UwpDesktopを使う
+* https://www.nuget.org/packages/UwpDesktop/
