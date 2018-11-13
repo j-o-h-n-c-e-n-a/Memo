@@ -12,3 +12,5 @@
 #### 運用部門
 	いわゆる情報子会社だが、技術力が十分かというと…
 #### インフラ部門
+### Rocro
+	https://qiita.com/hikoy/items/a7f0e012c141d4c8e71f
