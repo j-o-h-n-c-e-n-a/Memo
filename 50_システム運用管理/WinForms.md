@@ -35,6 +35,24 @@
 		- https://dobon.net/cgi-bin/vbbbs/srch.cgi?mode=srch&logs=./vb/vb.dat&page=140&no=0&word=%82%C5%82%CD&andor=and&KYO=&PAGE=20
 	+ WPFなら別のツールがある模様
 
+### Framework
+* 判定方法
+	reg query "HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" | find "Release"
+* 4.6.x
+	+ Visual Studio 2015
+* 4.7.x
+	+ Visual Studio 2017
+	+ 4.7.0:Windows 10 ver.1703←ｲﾏｺｺ
+	+ 4.7.1:Windows 10 ver.1709
+	+ 4.7.2:Windows 10 ver.1803、ver.1809
+		- 下位バージョンのWindowsでもインストール可能
+* 4.8.x
+	+ Visual Studio 2019
+	+ Windows 10 ver.1903?
+
 ### WPF
 	WPFでUWPもどきのアプリケーションを作成するために、UwpDesktopを使う
 * https://www.nuget.org/packages/UwpDesktop/
+* CaptureElementが使えず、プレビューが動作しない
+	+ 替わりにイメージ変換してから表示するが、変換処理に時間と負荷が掛かる
+* CameraCaptureUI
