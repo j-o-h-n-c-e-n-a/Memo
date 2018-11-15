@@ -16,8 +16,16 @@
 	* SQL Client
 		+ https://docs.microsoft.com/ja-jp/windows/uwp/data-access/sql-server-databases
 	* .NET Standard2.0
+		+ エンタープライズ認証の宣言が必要
+		+ Windows認証が必要（AD認証済であること）
+		+ SQLServer側にタブレット用ADユーザを登録して、読み書き権限のロールを与える
+		+ 問題点：タブレット用ADユーザの取り扱いが不透明
+	* LocalDB
+		+ 使用できない
+		+ ローカルでやりたい場合、SQLiteデータベースを使用する
 6. WebAPIを通したデータのやり取り
-	* 
+	* Webサーバーが必要
+		+ 問題点：サーバーメンテナンス中はサービスが停止する
 7. 更新プログラムの再配布方法についての調査
 	* 現行のWindows環境では、サイドローディングで手動インストールする方法しか取れない
 		+ 【対策】携帯端末のバージョンを1803以降にする
