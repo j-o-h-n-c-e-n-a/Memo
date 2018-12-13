@@ -1,9 +1,23 @@
 ### 新機能
-* vCenter Server のバックアップ・リストア
-* Proactive HAの機能
-* Predictive DRSの機能
+* vCenter Server 
+    + バックアップ・リストア
+    + アプライアンス
 * vSphere 6.5 へのバージョンアップ
-* vCenter ConverterによるP2Vやマイグレーション要件
+    + vSphere Update Manager
+    + ConverterによるP2Vやマイグレーション要件
+* 自動化インターフェイスについて
+* セキュリティ
+    + 仮想マシンの暗号化
+    + セキュアブート
+    + ログ機能の強化
+    + 仮想マシンサンドボックス
+* 可用性の向上
+    + Proactive HAの機能
+    + Predictive DRSの機能
+        - リソース使用率の急上昇が発生する前に、仮想マシンのワークロードのバランスをとる
+        - 実行されるしきい値のアルゴリズムに基づいてリソースの使用率を調整
+* ストレージの機能強化
+* ネットワークの機能強化
 
 ### vSphere 6.7
 

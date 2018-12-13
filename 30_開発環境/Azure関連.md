@@ -12,6 +12,8 @@
 * Computer Vision
 	https://azure.microsoft.com/ja-jp/services/cognitive-services/computer-vision/
 
+### Docker Compose
+* [qiita](https://qiita.com/zembutsu/items/9e9d80e05e36e882caaa)
 
 docker run -d -p 28939:80 --name moodle_0 -e WEBSITES_ENABLE_APP_SERVICE_STORAGE=false -e WEBSITE_SITE_NAME=moodle -e WEBSITE_AUTH_ENABLED=False -e PORT=80 -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_INSTANCE_ID=3916373d45caa6ffedc64207efc38e9026ce64d967b5e3e43b9c7e27102c584d jauer/moodle
 
@@ -29,3 +31,7 @@ docker run -d -p 28939:80 --name moodle_0 -e WEBSITES_ENABLE_APP_SERVICE_STORAGE
 </publishData>
 
 $con=mysqli_init(); mysqli_ssl_set($con, NULL, NULL, {ca-cert filename}, NULL, NULL); mysqli_real_connect($con, "moodle-mysqldbserver.mysql.database.azure.com", "mysqldbuser@moodle-mysqldbserver", {your_password}, {your_database}, 3306);
+
+
+docker run -d --name DB -p 3306:3306 -e MYSQL_DATABASE=moodle -e MYSQL_USER=moodle -e MYSQL_PASSWORD=moodle centurylink/mysql
+
