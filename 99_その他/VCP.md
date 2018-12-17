@@ -1,23 +1,64 @@
 ### 新機能
-* vCenter Server 
-    + バックアップ・リストア
-    + アプライアンス
-* vSphere 6.5 へのバージョンアップ
-    + vSphere Update Manager
-    + ConverterによるP2Vやマイグレーション要件
-* 自動化インターフェイスについて
-* セキュリティ
-    + 仮想マシンの暗号化
-    + セキュアブート
-    + ログ機能の強化
-    + 仮想マシンサンドボックス
+#### vCenter Server 
+* アプライアンス（VCSA）
+    + Photon OS(Linux)
+    + キャパシティ(ホスト数、仮想マシン数)は6.0の約2倍
+    + vSphere Update Manager, Auto Deploy, Host Profilesの機能を統合
+* バックアップ・リストア
+    + ファイルベースで実行可能
 * 可用性の向上
-    + Proactive HAの機能
-    + Predictive DRSの機能
-        - リソース使用率の急上昇が発生する前に、仮想マシンのワークロードのバランスをとる
-        - 実行されるしきい値のアルゴリズムに基づいてリソースの使用率を調整
-* ストレージの機能強化
-* ネットワークの機能強化
+    + vCenter HA
+* 多要素認証ログイン
+    + SSO
+* vCenter間の連携
+    + Platform Services Controller(PSC)
+        - 外部構成
+        - 組込構成
+#### Web ClientのHTML5対応
+#### REST API
+#### 自動化インターフェイスについて
+#### ESXi
+* 論理CPUを400⇒576個、物理メモリを最大12TBまで拡張し、ホストあたり最大1024 VM（vCPU 合計4096個）までサポート
+* 仮想ハードウェアバージョン13は、4096⇒6128GBメモリまで拡張を可能とすると共に、NVMe対応のストレージをサポート
+* 新たなファイルシステムであるVMFS 6は512バイトエミュレーションをサポートし、ストレージの容量効率、可用性ならびにパフォーマンスを向上
+#### ストレージの機能強化
+#### ネットワークの機能強化
+* Cross-CloudなVM移行機能（Cross-Cloud vMotion）
+    + オンプレ-オフプレクラウド間のvMotionに対応
+#### セキュリティ
+* 仮想マシンの暗号化（VM Encryption）
+    + VMを暗号化
+    + VMotionの通信暗号化
+* セキュアブート(UEFI)
+    + ブートイメージの改ざん防止
+* ログ機能の強化
+    + セキュリティ監査にも対応（誰が、何を、どこで、何時実行したかを追跡可能）
+* 仮想マシンサンドボックス
+#### 可用性の向上
+* Proactive HAの機能
+    + 各ハードウェアベンダーが提供している専用の監視ソフトウェアと連携。ハードウェア障害の兆しを事前に察知した場合、影響範囲にある仮想マシンをvMotionで健全なホストに移動（VM稼働時間の最大化）
+    + DRSの有効化が必要（Enterprise Plusのライセンスが必要）
+* Predictive DRSの機能
+    + リソース使用率の急上昇が発生する前に、仮想マシンのワークロードのバランスをとる
+    + 実行されるしきい値のアルゴリズムに基づいてリソースの使用率を調整
+#### VMware vSphere Integrated Containers
+    + Docker サポート
+#### vSphere 6.5 へのバージョンアップ
+* vSphere Update Manager
+* ConverterによるP2Vやマイグレーション要件
+* vCenter Server Appliance Migration Tool
+    + 既存のvCenter Server からVCSAへの移行およびアップグレード
+#### 参考サイト
+* [qiita](https://qiita.com/ymunemasa/items/039fc1ba330e133a8176)
+* [IT価値創造塾](https://vmware-juku.jp/solutions/vsphere6-5-offering/)
+* [VMware BLOGS](https://blogs.vmware.com/jp-cim/2017/06/vexpert-nakagawa-vmware-vsphere-6-5-part2.html)
+
+### Veeam Backup & Replication
+1. アプリケーション対応
+    * 独自VSSを利用したバックアップ
+2. 柔軟なリカバリ
+3. ストレージ連携
+* [Veeam Backup & Replication](https://blogs.vmware.com/jp-cim/2018/05/vsan_veeam_backup02.html)
 
 ### vSphere 6.7
 
