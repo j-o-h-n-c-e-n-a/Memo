@@ -42,7 +42,7 @@
     + リソース使用率の急上昇が発生する前に、仮想マシンのワークロードのバランスをとる
     + 実行されるしきい値のアルゴリズムに基づいてリソースの使用率を調整
 #### VMware vSphere Integrated Containers
-    + Docker サポート
+* Docker サポート
 #### vSphere 6.5 へのバージョンアップ
 * vSphere Update Manager
 * ConverterによるP2Vやマイグレーション要件
@@ -60,8 +60,58 @@
 3. ストレージ連携
 * [Veeam Backup & Replication](https://blogs.vmware.com/jp-cim/2018/05/vsan_veeam_backup02.html)
 
-### vSphere 6.7
+### その他機能
+#### VM Component Protection (VMCP)
+  データストアでAPLまたはPDLの障害が発生したときに挙動を制御できる
+* APL
+    + All path down:全パスが切れた場合
+* PDL
+    + Permanent device loss:LUNがぶっ壊れて認識できなくなった場合など
+* 参考：https://kb.vmware.com/s/article/2081089
 
+#### Storage DRS
+  ストレージリソースの自動最適化を行う
+* 有効となるコンポーネント
+    1. データストアクラスタ内のデータストア間の空間負荷分散
+    2. ペースおよびI / Oワークロードに基づく仮想ディスクの初期配置
+    3. データストアクラスタ内のデータストア間のI / Oロードバランシング
+* 参考：http://www.fujitsu.com/jp/products/computing/storage/lib-f/tech/beginner/vmware-sdrs/
+
+#### CPUオーバーコミットメント
+  クラスタ内で仮想CPUと物理CPUの比率を設定し、オーバーコミットを制御します。オプションで定義された値に達すると、追加の仮想マシンをパワーオンことはできません。
+
+#### vCenter Converter Standalone
+* LinuxマシンはSSHデーモンが起動している必要がある
+
+#### multi-processor Fault Tolerance (SMP-FT)
+* vCPUの割り当てが不足していると有効化できない
+* 仮想マシンのスナップショットが残っていると有効化できない
+
+#### NPIV（N_Port ID Virtualization）
+　1つのHBAに対して複数のID(WWPN)を割り当てることで、1つのHBAポートを複数のHBAポートに見せる ための技術
+　RDMのディスクを持つ仮想マシンについて、 アクセス制御, QoSなどのために使われる
+* 制限事項
+    1. スイッチ側でNPIVを有効化
+    2. ホストのHBAがNPIVをサポートしている
+    3. 利用できる仮想マシンは、RDMディスクを持つもののみ
+    4. 1台の仮想マシンに対して、最大4つの仮想ポートを割り当てられる(つまり、最大4つのWWPNが割り当てられる)
+
+#### AutoDeploy
+* PXE(Preboot eXecution Environment)ブートをサポートする必要がある
+* TFTPサーバをセットアップして実行する必要があります
+* 参考：http://docs.hol.vmware.com/HOL-2012/HOL-INF-03_JA/HOL-INF-03-m1/lessons/Automate_Your_vSphere_Deployment_with_Auto_Deploy_-_Introduction.html
+
+### ログ
+#### vpxa.log
+  vCenter ServerとESXi 6.5ホスト間の通信ログ
+#### hosted.log
+  管理エージェントのログ
+
+### ESXCLIコマンド
+* ESXiホストのアップグレードができる
+
+### vSphere 6.7
+  
 ### バージョンアップ
     例えば、vCenter 5.0, ESXi 5.0 から 一気に vCenter 6.5 まであげてしまうとESXi5.0 が管理できなくなる。（一度5.5に引き上げる必要がある。）
 
