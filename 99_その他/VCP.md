@@ -25,10 +25,15 @@
 #### ネットワークの機能強化
 * Cross-CloudなVM移行機能（Cross-Cloud vMotion）
     + オンプレ-オフプレクラウド間のvMotionに対応
+* vSphere Network I/O Control バージョン 3
+    + 参考：     https://docs.vmware.com/jp/VMware-vSphere/6.0/com.vmware.vsphere.networking.doc/GUID-98E0B3C2-52A7-4CAB-A839-4DA82A9F6D3A.html
+    + https://blogs.vmware.com/jp-cim/2018/07/vexpert-nakagawa-vmware-vs-part6-html.html
+
 #### セキュリティ
 * 仮想マシンの暗号化（VM Encryption）
     + VMを暗号化
     + VMotionの通信暗号化
+    + 暗号化キーの管理サーバー(KMS)の障害後、KMSへ接続がない間は暗号化VMは起動できない
 * セキュアブート(UEFI)
     + ブートイメージの改ざん防止
 * ログ機能の強化
@@ -48,6 +53,8 @@
 * ConverterによるP2Vやマイグレーション要件
 * vCenter Server Appliance Migration Tool
     + 既存のvCenter Server からVCSAへの移行およびアップグレード
+* アップグレードベースライン
+    + 参考：https://www.school.ctc-g.co.jp/vmware/columns/noda/noda35.html
 #### 参考サイト
 * [qiita](https://qiita.com/ymunemasa/items/039fc1ba330e133a8176)
 * [IT価値創造塾](https://vmware-juku.jp/solutions/vsphere6-5-offering/)
@@ -99,6 +106,8 @@
 #### AutoDeploy
 * PXE(Preboot eXecution Environment)ブートをサポートする必要がある
 * TFTPサーバをセットアップして実行する必要があります
+* レガシーOSのプロビジョニングにはIPv4アドレスが必要
+* ホストのカスタマイズによって固定IPアドレスを提供するため、アドレス割り当てにDHCP予約を使用することは推奨されない
 * 参考：http://docs.hol.vmware.com/HOL-2012/HOL-INF-03_JA/HOL-INF-03-m1/lessons/Automate_Your_vSphere_Deployment_with_Auto_Deploy_-_Introduction.html
 
 ### ログ
@@ -116,3 +125,8 @@
     例えば、vCenter 5.0, ESXi 5.0 から 一気に vCenter 6.5 まであげてしまうとESXi5.0 が管理できなくなる。（一度5.5に引き上げる必要がある。）
 
 * [互換性表](https://www.vmware.com/resources/compatibility/sim/interop_matrix.php)
+
+### 用語集
+* NUMA
+* vCPU hot add
+* vApp と DRS enabled
