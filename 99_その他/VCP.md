@@ -14,6 +14,7 @@
     + Platform Services Controller(PSC)
         - 外部構成
         - 組込構成
+    + 異なるバージョンの連携はサポート外(vMotionなどができない)
 #### Web ClientのHTML5対応
 #### REST API
 #### 自動化インターフェイスについて
@@ -46,6 +47,8 @@
 * Predictive DRSの機能
     + リソース使用率の急上昇が発生する前に、仮想マシンのワークロードのバランスをとる
     + 実行されるしきい値のアルゴリズムに基づいてリソースの使用率を調整
+#### vSphere Web Client
+* 従来のvSphere Client はサポート廃止
 #### VMware vSphere Integrated Containers
 * Docker サポート
 #### vSphere 6.5 へのバージョンアップ
