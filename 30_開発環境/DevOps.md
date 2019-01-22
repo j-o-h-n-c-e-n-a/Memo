@@ -1,4 +1,7 @@
 ## ツール活用
+### Git
+* nisco2008, Nisco@2008
+* nisco20183730, Nisco@20183730
 ### Chef
 	構成管理の自動化
 ### Jenkins
