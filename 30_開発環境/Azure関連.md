@@ -35,3 +35,6 @@ $con=mysqli_init(); mysqli_ssl_set($con, NULL, NULL, {ca-cert filename}, NULL, N
 
 docker run -d --name DB -p 3306:3306 -e MYSQL_DATABASE=moodle -e MYSQL_USER=moodle -e MYSQL_PASSWORD=moodle centurylink/mysql
 
+Test Server
+ID:nisco083730
+Pass:Passw0rd2019
