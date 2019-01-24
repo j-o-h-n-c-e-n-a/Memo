@@ -2,4 +2,9 @@
 
 ## 使い方
 
-## angular+ng-bootstrap
+### コンポーネントの追加
+	ng generate component hoge
+
+### ルーティング
+
+### angular+materials
