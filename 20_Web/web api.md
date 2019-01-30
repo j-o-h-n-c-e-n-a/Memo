@@ -25,3 +25,10 @@
 ## IndexedDB
 ## Web Authentication
 ### Windows Hello
+## 設計
+### エラー処理
+### ログ出力
+* 端末識別番号
+	+ IMEI
+### ユーザ認証
+* アクセストークン
