@@ -1,4 +1,6 @@
 # jQuery
+	2018年時点において、TypeScript が主流となりjQueryによる記述よりも
+	javascript本来の記述の方が好まれるようになった。
 ## 備忘録
 * $(document).ready
 	- $(function(){  //なにかしらの処理});　と同じ。
