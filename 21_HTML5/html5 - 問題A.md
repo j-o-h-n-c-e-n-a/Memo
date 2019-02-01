@@ -1,4 +1,4 @@
-$CATEGORY: HTML5レベル1
+$CATEGORY: HTML5レベル1-A
 
 ::問題１．１::HTMLに準拠したHTML文書に関するDOCTYPE宣言として、正しいものを一つ選びなさい。 {
 	~<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">

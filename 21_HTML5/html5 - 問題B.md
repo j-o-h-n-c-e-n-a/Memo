@@ -1,4 +1,4 @@
-$CATEGORY: HTML5レベル1
+$CATEGORY: HTML5レベル1-B
 
 ::問題1::以下にあげる HTTP のメソッドのうち、実際には存在しないものはどれか。1 つ選びなさい。 {
     ~A.GET
@@ -130,8 +130,8 @@ $CATEGORY: HTML5レベル1
     ~E.link要素でスタイルシートを読み込む場合、type属性は省略する事ができる。
 }
 
-::問題19::以下の HTML において、2 番目の li 要素（内容として "b" を持つもの）を選択できないセレクタはどれか。<pre>
-<ul id="list">  <li>a</li>  <li class="active">b</li>  <li>c</li></ul></pre>{
+::問題19::以下の HTML において、2 番目の li 要素（内容として "b" を持つもの）を選択できないセレクタはどれか。
+<pre><ul id="list">  <li>a</li>  <li class="active">b</li>  <li>c</li></ul></pre> {
     ~A..active
     =B.#list:nth-child(2)
     ~C.#list li:nth-child(2)
@@ -139,8 +139,8 @@ $CATEGORY: HTML5レベル1
     ~E.li[class="active"]
 }
 
-::問題20::以下の HTML において、「段落 2」という内容を持つ p 要素を選択できないセレクタはどれか。<pre>
-<div>  <p>段落1</p>  <section>    <h2>見出し</h2>    <p>段落2</p>  </section>  <p>段落3</p></div></pre>{
+::問題20::以下の HTML において、「段落 2」という内容を持つ p 要素を選択できないセレクタはどれか。
+<pre><div>  <p>段落1</p>  <section>    <h2>見出し</h2>    <p>段落2</p>  </section>  <p>段落3</p></div></pre> {
     ~A.h2 ~ p
     ~B.h2 + p
     ~C.section > p
@@ -148,7 +148,8 @@ $CATEGORY: HTML5レベル1
     =E.p:nth-of-type(2)
 }
 
-::問題21::以下の h2 要素を選択できる CSS セレクタを全て選びなさい。<pre><h2 class="chap-title">章タイトル</h2></pre>{
+::問題21::以下の h2 要素を選択できる CSS セレクタを全て選びなさい。
+<pre><h2 class="chap-title">章タイトル</h2></pre> {
     =A..chap-title
     ~B.[.c hap-title]
     =C.[class^="chap"]
@@ -156,9 +157,8 @@ $CATEGORY: HTML5レベル1
     ~E.[*]
 }
 
-::問題22::以下の CSS を指定された div 要素が、実際に画面上で占める幅（マージンを含む）は何ピクセルになるか。適切な値を選択肢から選びなさい。<pre>
-    #box {  width: 150px;  padding: 10px 10px 10px 20px;  border: 5px solid gray;  margin: 0;  margin-right: 20px;}
-</pre>{
+::問題22::以下の CSS を指定された div 要素が、実際に画面上で占める幅（マージンを含む）は何ピクセルになるか。適切な値を選択肢から選びなさい。
+<pre> #box {  width: 150px;  padding: 10px 10px 10px 20px;  border: 5px solid gray;  margin: 0;  margin-right: 20px;}</pre> {
     ~A.150px
     ~B.170px
     ~C.190px
