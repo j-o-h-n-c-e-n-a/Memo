@@ -1,11 +1,11 @@
 $CATEGORY: 1.3 要素に関して
 
 ::例題3.20::ページのメイン・コンテンツを示すmain要素の説明として正しいのは次のうちどれか。{
-  ~main要素はアウトラインを構成する。
-  ~main要素の子要素subはサブ・コンテンツを表す。
-  =main要素はrole属性を併用することが推奨されている。
-  ~main要素はbody要素と同じ意味・役割である。
-  =main要素はWHATWGとW3Cで仕様に違いがある。
+  ~%-50%main要素はアウトラインを構成する。
+  ~%-50%main要素の子要素subはサブ・コンテンツを表す。
+  =%50%main要素はrole属性を併用することが推奨されている。
+  ~%-50%main要素はbody要素と同じ意味・役割である。
+  =%50%main要素はWHATWGとW3Cで仕様に違いがある。
 } #### ページは通常 header, footer, nav 等のページが遷移してもいつも表示され るアイテムとそのページでだけ表示されるメインのコンテンツで構成されますが、main要素はその領域を示すためにbody要素内で使用されます。<br>
 また、main要素は WAI-ARIA (Web Accessibility Initiative - Accessible Rich Internet Applications)というアクセシビリティを目的とした仕様と関わりがあります。<br><br>
 アクセシビリティは、バリアフリーに似た意味で、たとえばスクリーンリーダー（画面読み上げソフト）などの人ではなく機械が文章のrole(役割)を識別して視覚障害者にもその旨が伝わるように利用されます。<br><br>
@@ -22,7 +22,7 @@ ARIAを取り入れ、バリアフリーなWebアプリケーションを制作�
   ~series
   =legend
   ~folklore
-} #### 				<p>HTML5 には、対で使用してはじめて機能する要素があります。<br>
+} #### <p>HTML5 には、対で使用してはじめて機能する要素があります。<br>
 A. caption 要素は table 要素の子要素として機能します。<br>
 B. summary 要素は details 要素の子要素として機能します。<br>
 fieldset はフォームの入力項目をグループ化する際に使用し、項目を枠で囲みます。<br>
@@ -32,7 +32,7 @@ legend は辞書で調べると最初に「伝説」と出てきますが、こ�
 の意味となります。<br>
 C. series は、legend と同様、グラフの凡例の意味で使用される英単語で不正解です。<br>
 E. folklore は、伝説、民話といった意味の英単語で不正解です。</p> 
-                <p>以下に table/caption, fieldset/legend, details/summary を使用した例を記載します。<br>
+				<p>以下に table/caption, fieldset/legend, details/summary を使用した例を記載します。<br>
 label要素はラベルをクリックすると対応する入力ボックスにフォーカスが当たります。
 下記のラジオボタンでは、指先で押しやすいサイズにするメリットもあります。
 label と inputの対応付けもマスターしましょう。</p>
@@ -46,8 +46,8 @@ label と inputの対応付けもマスターしましょう。</p>
 　&lt;/head&gt;
 &lt;body&gt;
 &lt;video src=help.mov poster=help.png width=800 height=600 controls muted&gt;
-       &lt;track kind="subtitles" src="ja.vtt" label="日本語"&gt;
-       &lt;track kind="captions"  src="en.vtt" label="English"&gt;
+	   &lt;track kind="subtitles" src="ja.vtt" label="日本語"&gt;
+	   &lt;track kind="captions"  src="en.vtt" label="English"&gt;
 &lt;/video&gt;
 &lt;/body&gt;
 &lt;/html&gt;
@@ -144,7 +144,7 @@ del要素、ins要素ともにdatetime属性で修正日時を、cite属性で�
 
 ::例題3.15::object要素は、画像、音声、HTML文書など様々な外部リソースを文書内に取り込む際に使用しますが、次のうち指定方法として適切なものを1つ選べ。{
   ~&lt;object href="sample.svg" …&gt;
-  =~&lt;object data="sample.mpg" …&gt;
+  =&lt;object data="sample.mpg" …&gt;
   ~&lt;object embed="sample.swf"  …&gt;
   ~&lt;object src="sample.gif" …&gt;
 } #### object要素は、data属性でファイルを指定し、type属性でMIMEタイプを指定することで文書内に外部リソースを埋め込んで表示することができます。したがって正解は B です。<br><br>
@@ -182,11 +182,11 @@ D.のsrc属性は、embed要素やimg要素で参照先を指定するときな�
 
 ::例題3.13::次の要素のうち、セクションに分類される要素をすべて選びなさい。
 {
-  ~header
-  =nav
-  ~main
-  =aside
-  ~footer
+  ~%-50%header
+  ~%50%nav
+  ~%-50%main
+  ~%50%aside
+  ~%-50%footer
 } #### HTML5の要素のうち、セクションに分類される要素（Sectioning content）は、「section」「article」「aside」「nav」の4種類のみです。<br>HTML5プロフェッショナル認定試験を受験するのであれば、この4種類の要素については、しっかりと確実に覚えておく必要があります。headerとfooterは、それらを含むもっとも近いセクション（またはセクショニング・ルート）のヘッダーとフッターとなります。<br>mainは（セクションではなく）文書全体におけるメインコンテンツの範囲を示す要素です。header・footer・mainは、要素のカテゴリーとしては Flow content に含まれます。
 
 ::例題3.12::videoタグを使って動画圧縮規格がh.264の映像を表示する場合、sourceタグに設定する適切なtype属性を選びなさい。{
@@ -211,16 +211,16 @@ E：sourceタグのtype属性に設定できるものに、「video/264」は存
 Aはカスタムデータ（data-*属性）属性の説明です。BとDのような属性はHTML5にはありません。Eは、role属性と同じくWAI-ARIA 1.0の仕様書で定義されているaria-*属性の説明です。
 
 ::例題3.10::次のうち、mark要素としてマークアップするのにふさわしいものをすべて選びなさい。{
-  ~製品名やキーワード 
-  ~中国語の固有名詞
-  =検索結果の表示における検索語
-  ~スペルが間違っている単語
-  =引用文の中で読者に注目してもらいたい部分
+  ~%-50%製品名やキーワード 
+  ~%-50%中国語の固有名詞
+  ~%50%検索結果の表示における検索語
+  ~%-50%スペルが間違っている単語
+  ~%50%引用文の中で読者に注目してもらいたい部分
 } #### mark要素は、一般的なブラウザでは蛍光ペンでマークしたような表示となります。このことからもわかるように、オリジナルでは通常のテキストである部分を、そのWebページの読者に注目してもらうためにハイライト表示させるのがmark要素の役割です。<br><br> 
 Aの製品名やキーワードについては、HTML5ではb要素を使用します。Bの「中国語の固有名詞」とDの「スペルが間違っている単語」については、HTML5ではu要素を使用することになっています。<br><br> 
 テキスト関連の要素とその代表的な用途はしっかりと覚えておきましょう。</dd>
 
-::例題3.9::time要素で指定する日時の書式として間違っているものを1つ選びなさい。{
+::例題3.9::time要素で指定する日時の書式として<u>間違っているもの</u>を1つ選びなさい。{
   ~&lt;time&gt;02:50&lt;/time&gt;
   =&lt;time&gt;2時50分&lt;/time&gt;
   ~&lt;time datetime="02:50"&gt;真夜中&lt;/time&gt;
@@ -259,14 +259,14 @@ ruby要素自体はタグを省略することはできませんが、その内�
 } #### HTML5の要素のうち、セクションを示す要素（カテゴリーが「Sectioning content」に該当する要素）は、nav・aside・article・sectionの4種類のみです。main はセクションとはならず、文書のアウトラインにも影響を与えない要素です。
 
 ::例題3.5::動画ファイルの埋め込みに関係するHTML要素を次の選択肢から全て選びなさい。{
-  =source要素
-  =video要素
-  ~movie要素
-  ~control要素
-  ~volume要素
+  ~%50%source要素
+  ~%50%video要素
+  ~%-50%movie要素
+  ~%-50%control要素
+  ~%-50%volume要素
 } #### 動画ファイルの埋め込みは、video要素単独で記述する書式と、video要素とsource要素を組み合わせて記述する書式があります。<br>
-    source要素を使う場合には、video要素の子として複数の動画ファイルを再生候補として指定できます。その場合、Webブラウザは上から順に利用可能なファイルをチェックします。<br>
-    なお、他の選択肢は存在しない架空のものです。
+	source要素を使う場合には、video要素の子として複数の動画ファイルを再生候補として指定できます。その場合、Webブラウザは上から順に利用可能なファイルをチェックします。<br>
+	なお、他の選択肢は存在しない架空のものです。
 
 ::例題3.4::ページのタイトルおよび本文に対してエンコードの種類を指定するcharset属性の記述位置として最も適切なものを選びなさい。
 <pre>
