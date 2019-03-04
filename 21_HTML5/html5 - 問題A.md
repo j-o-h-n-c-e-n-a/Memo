@@ -8,7 +8,7 @@ $CATEGORY: HTML5レベル1-A
 	~<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http:www.w3.org/TR/html4/strict.dtd">
 }
 
-::問題１．２:以下のマークアップのうち、HTML5のマークアップとして妥当なものをすべて選びなさい。 {
+::問題１．２::以下のマークアップのうち、HTML5のマークアップとして妥当なものをすべて選びなさい。{
 	~%-50%<p><span>新着のお知らせ</p></span>
 	~%50%<p><span>新着のお知らせ</span>
 	~%-50%<p><span>新着のお知らせ</p>
