@@ -36,6 +36,7 @@
 	- 
 	- 
 * animate.css
+* ping-t
 
 # Web Components
 * webcomponents.js
