@@ -1,4 +1,40 @@
-$CATEGORY: 1.4 スマホサイト最適化に関して
+$CATEGORY: 1.4 レスポンシブWebデザイン
+
+::例題4.20::次のmeta要素のうち、アクセシビリティやユーザビリティ上の問題が発生することがあるため、通常は指定すべきではないとされているものはどれか。該当する選択肢をすべて選びなさい。{
+  ~%-50%<meta name="viewport" content="initial-scale=1.0">
+  ~%50%<meta name="viewport" content="maximum-scale=1.0">
+  ~%50%<meta name="viewport" content="user-scalable=no">
+  ~%-50%<meta name="viewport" content="user-scalable=yes">
+  ~%-50%<meta name="viewport" content="width=device-width">
+}
+
+::例題4.19::次のメディアクエリの構文のうち文法的に正しいものをすべて選びなさい。 {
+  ~%20%@media { ... }
+  ~%20%@media all { ... }
+  ~%20%@media (min-width: 500px) { ... }
+  ~%20%@media all and (min-width: 500px) { ... }
+  ~%20%@media (min-width: 500px) and (max-width: 800px) { ... }
+}
+
+::例題4.18::img要素とsource要素に指定可能なsrcset属性の「ピクセル密度記述子（pixel density descriptor）」に関する説明として間違っているものをすべて選びなさい。{
+  ~%-33.3%数値の直後に小文字の「x」をつけて指定する
+  ~%33.3%数値の直後に大文字小文字は関係なく「x」または「X」をつけて指定する
+  ~%33.3%指定可能な数値は「正の整数」のみである
+  ~%-33.3%指定可能な数値は「0より大きな浮動小数点数」である
+  ~%33.3%この記述子を省略した場合のデフォルト値は定義されていない
+}
+
+::例題4.17::メディアクエリのメディアタイプとメディア特性の指定方法として間違っているのは次のうちどれか。{
+  ~@media print and (max-width:600px) { . . . }
+  ~@media screen and (min-color:1) { . . . }
+  =@media all and (orientation:vertical) { . . . }
+  ~@media screen and (min-resolution:600dpcm) { . . . }
+  ~@media tv and (aspect-ratio:4/3) { . . . }
+}
+
+::例題4.16::スマートフォンのブラウザではスマートフォンの機能を活かすための拡張、例えば数字列を自動的に電話番号として検出しリンクに変換する機能があるが、下記はその機能を無効にする指定である。空欄に入るのは何か。{
+    format-detection
+}
 
 ::例題4.15::ブラウザのブックマークやタブに表示するアイコンの設定として正しいものを２つ選びなさい。{
   ~%50%&lt;link rel="icon" href="/favicon.png"&gt;
