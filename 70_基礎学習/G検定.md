@@ -1,6 +1,10 @@
 * [シラバス](https://www.jdla.org/business/certificate/?id=certificate_No03#)
 * [Qitta](https://qiita.com/ea-yasuda/items/9831f11c189de43cb0be)
 * [Study-ai](http://study-ai.com/generalist/)
+	http://ai999.careers/tools/:oF)DgV3IP*I)pgiY9K3zpo*)
+* https://www.shoeisha.co.jp/book/present/9784798157559
+* https://deeplearning.sakura.ne.jp/general/
+	5kaku0mede10
 ### 人工知能（AI）とは（人工知能の定義）
 ### 人工知能をめぐる動向
 * 歴史
