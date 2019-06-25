@@ -5,6 +5,7 @@
 * https://www.shoeisha.co.jp/book/present/9784798157559
 * https://deeplearning.sakura.ne.jp/general/
 	5kaku0mede10
+	
 ### 人工知能（AI）とは（人工知能の定義）
 ### 人工知能をめぐる動向
 * 歴史
