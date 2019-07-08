@@ -1,3 +1,47 @@
+## スタイルシートの基本
+	大規模なサイトやコンテンツにおいても、見やすく効率的なコードを記述し、複数のページで共有させるために必要な記述を適切に行うことができる。
+### 主要な知識範囲
+#### 要件やデザイン仕様に合わせて、HTMLから利用したいスタイルシートを指定する際の記述方法
+#### 要件やデザイン仕様に合わせて、スタイルシートに正しいセレクタを指定しプロパティ値を指定する際の記述方法
+### 重要な技術要素
+#### <link>, @import, <style>, style属性
+#### セレクタ, タイプセレクタ, クラスセレクタ, IDセレクタ, ユニバーサルセレクタ, 属性セレクタ
+#### シンプルセレクタ（疑似クラス）, 疑似要素, 結合子, グループ化
+
+## CSSデザイン
+	要件に沿ったデザインをCSSを利用して実現する際に、どのような実現方法が適切か判断でき、仕様に沿った正しいコードを記述する事ができる。
+### 主要な知識範囲
+#### コンテンツのレイアウトに関する記述方法
+#### 色、背景、罫線に関する記述方法
+#### テキスト、リスト、テーブルに関する記述方法
+#### コンテンツの変形、アニメーションに関する記述方法
+### 重要な技術要素
+#### ボックス(display, margin, padding, width, height, max-width, min-width, max-height, min-height, float, clear, overflow, visibility) 
+#### マルチカラムレイアウト(column-count, column-width, columns, column-gap, column-rule, column-rule-style, column-rule-width, column-rule-color, column-span) 
+#### flex, z-index,clip
+#### 色指定（color, opacity）
+#### 背景指定（background, background-color, background-image, background-repeat, background-position, background-attachment, background-clip, background-origin, background-size） 
+#### 罫線（border, border-style, border-width, border-color, border-radius, box-shadow, liner-gradient, radial-gradient） 
+#### フォント（font, font-size, font-weight, font-style, font-variant, font-family, Webフォント(@font-face)） 
+#### テキスト（text-transform, white-space, word-break, hyphens, text-align, word-spacing, letter-spacing, text-indent） 
+#### テキスト装飾（text-decoration, text-decoration-line, text-decoration-style, text-decoration-color, text-shadow, line-height, vertical-align, direction, unicode-bidi, quotes） 
+#### リスト（list-style, list-style-type, list-style-image, list-style-position, content:counter, counter-increment, counter-reset） 
+#### テーブル（caption-side, table-layout, border-collapse, border-spacing, empty-cells） 
+#### 変形（transform, transform-origin）, 移動, 拡大, 縮小, 回転
+#### トランジション（transition, transition-duration, transition-property, transition-timing-function, transition-delay） 
+#### アニメーション（@keyframes, animation, animation-name, animation-delay, animation-duration, animation-iteration-count, animation-timing-function, animation-direction, animation-play-state, animation-fill-mode） 
+
+## カスケード（優先順位）
+	大規模なサイトを作成する場合や、外部から提供されたスタイルシートを利用する場合に起こりやすい、HTMLの一つの要素に対して複数の記述が対象となる事象（プロパティの衝突）が発生した場合における適用の優先順位を理解している。
+### 主要な知識範囲
+#### 外部・内部スタイルシート、インラインスタイルシートの指定に関して記述場所による優先順位
+#### セレクタの優先順位に関する計算方法
+### 重要な技術要素
+#### カスケード
+#### 外部スタイルシート, 内部スタイルシート, インラインスタイルシート
+#### !important
+
+
 $CATEGORY: 1.2 CSSに関して
 
 ::例題2.26::次のようなHTML文書と3つの外部スタイルシート（s1〜s3.css）があったとき、h1要素のテキストは何色で表示されるか。以下の選択肢から1つ選びなさい。 {
