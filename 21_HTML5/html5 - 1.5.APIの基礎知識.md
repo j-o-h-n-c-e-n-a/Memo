@@ -5,17 +5,37 @@
 ### 主要な知識範囲
 #### メディア関連要素のAPIが提供する機能
 #### ストリーミング
-#### DRM
+#### DRM：デジタル著作権管理
 #### ビットマップグラフィックスの知識
 #### ベクターグラフィックスの知識
 ### 重要な技術要素
 #### メディア再生に関するAPI機能
-#### HLS
+#### HLS(HTTP Live Streaming) 
+	HTTP を通してストリーミング配信をできるようにしたもの
+* 開発：Apple
+* 仕様：IETF
+* 配信される映像を記録したプレイリスト (m3u8) とメディアセグメント (ts) を使って、映像を届ける
+* マスタプレイリストにメディアプレイリスト含めることで複数のビットレートを扱うことが出来たり、DRM 対応などもできる（Fairplay）
+* HTTP なので Apache や Nginx からでもライブ配信することが出来る (= CDN と親和性が高い)
+* 映像は AVC(H.264)/H.265 のコーデック、音声は MP3/AAC のコーデックという制限がある
+#### RTMP (Real Time Messaging Protocol) 
+	その名の通りリアルタイムにメッセージをやり取りするために開発されたプロトコル
+* [Flash Player] での利用を想定されている、映像や音声を通信させることができる
+* 持続接続のプロトコルで、状態を持つ
+* 映像は JPEG/H.263/VP6/AVC(H.264) のコーデック、音声は Linear PCM/ADPCM/MP3/AAC/speex のコーデックに対応
 #### MPEG-DASH
+	MPEG-Dynamic Adaptive Streaming over HTTP
+* 開発：DASH-IF
+* 仕様：ISO
+* HLSと違い、コーデックの縛りはない
+* DRMは、WidevineとPalyReadyに対応
 #### Media Source Extensions
+	HTTPダウンロードを利用してストリーミング再生する
+
 #### Encrypted Media Extensions
 #### Canvasの機能
 #### SVGのマークアップとAPIの基礎知識
+	SVGはXML形式なのでマークアップ可能
 
 ## デバイスアクセス系API概要
 	スマートフォンやパソコンに備え付けられているセンサーなどのデバイスに関する技術を理解し、それらをJavaScriptからAPIを使って何ができるのかを理解している。
@@ -54,6 +74,7 @@
 #### AJAX
 #### 双方向データリアルタイム通信
 #### サーバープッシュ
+	Notifications API
 ### 重要な技術要素
 #### XMLHttpRequest
 #### WebSocket API
@@ -64,6 +85,7 @@
 
 ## そのほかのAPI
 #### Payment Request API
+#### Notifications API
 
 $CATEGORY: 1.5 APIの基礎知識
 
