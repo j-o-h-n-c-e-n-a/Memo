@@ -30,9 +30,10 @@
 * HLSと違い、コーデックの縛りはない
 * DRMは、WidevineとPalyReadyに対応
 #### Media Source Extensions
-	HTTPダウンロードを利用してストリーミング再生する
-
+	MSEとは、video要素などをプラグインなしでストリーミング再生可能とするjavascriptAPI。
+* HTTPダウンロードを利用してストリーミング再生する
 #### Encrypted Media Extensions
+	EMEとは、著作権保護されたコンテンツをストリーミング再生可能にするAPI。
 #### Canvasの機能
 #### SVGのマークアップとAPIの基礎知識
 	SVGはXML形式なのでマークアップ可能

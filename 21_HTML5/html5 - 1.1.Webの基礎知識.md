@@ -11,11 +11,50 @@
 ### 重要な技術要素
 #### HTTP, HTTPS, SSL/TLS
 #### リクエストメソッド（GET, POST, HEAD, PUT, DELETEなど）
+* GET：リソースの要求
+* POST：リソースの送信
+* PUT：リソースの更新
+* DELETE：リソースの削除
+* HEAD：リソースの要求（GETと異なり、レスポンスボディを返さない）
+* OPTIONS：サーバの調査
+* CONNECT：トンネルを開く
+* TRACE：ネットワーク経路の調査
 #### URI, URL
+* オリジン：スキーマ：//ホスト名（：ポート番号）/ディレクトリ/ファイル名
+* 同一オリジンポリシー：異なるオリジンのリソースにアクセスできないようにする制限のコト
+* フラグメント：同一Webページ内のリンクを作成する為に使われる
 #### ステータスコード, リダイレクト
+* 情報：101：プロトコルの切り替え
+* 成功：200：成功
+* リダイレクト：301：永続的なリダイレクト
+* リダイレクト：304：変更なし。キャッシュしたファイルが使用される
+* リダイレクト：307：一時的なリダイレクト
+* クライアントエラー：401：認証が必要
+* クライアントエラー：403：アクセス権が必要
+* クライアントエラー：404：リソースが見つからない
+* サーバエラー：500：サーバ側でエラーが発生
 #### HTTP Header Fields（Accept, Authorization, Cache-Control,Content-Language, Expiresなど） 
+* Accept-Language：ブラウザが受け入れ可能な言語
+* Accept：クライアントが受け入れ可能なコンテンツタイプ（json：application/json）
+* Authorization：認証情報
+* Cookie：クッキーの送受信
+* Content-Encoding：圧縮アルゴリズム
+* Content-Length：メッセージボディのサイズ
+* Content-Language：
+* Content-Type：コンテンツのメディアタイプ
+* Last-Modified：リソースの最終更新情報
+* Location：リダイレクト先のURL
+* Referer：前ページのURL（セッション情報のろうえい問題、対策：POSTする）
+* User-Agent：リクエストをしたブラウザを表す文字列
+* キャッシュの制御
+	+ Age：プロキシにキャッシュする秒数
+	+ Cache-Control：キャッシュを制御
+	+ Expires：リソースの有効期限
 #### Basic認証、Digest認証
+* Digest認証は、ユーザ名とパスワードをMD5またはSHA2でハッシュ化したうえでサーバへ送信する
 #### HTTP cookie
+* 容量は4kb
+* javascriptで操作が可能。ブロックするためには、secureとHTTPOnly設定が必要
 
 ## HTMLの書式
 	正しくブラウザにコンテンツを表示させるために、HTMLの仕様に沿った書式でHTMLコードを記述する事ができる。
@@ -41,6 +80,8 @@
 ### 重要な技術要素
 #### セッション
 #### Ajax
+* AjaxはJavascriptの組込オブジェクトであるXMLHttpRequestを利用して、Webサーバに非同期のリクエストを行う。
+* Webサーバから返却されるデータの形式としては主にJSONやXMLが用いられる。
 #### インタレース, 画像ファイルフォーマット(BMP, PNG, JPEG, GIFなど)
 #### MVCアーキテクチャ
 #### Base64
