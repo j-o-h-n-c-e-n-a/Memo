@@ -28,8 +28,12 @@
 #### リスト（list-style, list-style-type, list-style-image, list-style-position, content:counter, counter-increment, counter-reset） 
 #### テーブル（caption-side, table-layout, border-collapse, border-spacing, empty-cells） 
 #### 変形（transform, transform-origin）, 移動, 拡大, 縮小, 回転
-#### トランジション（transition, transition-duration, transition-property, transition-timing-function, transition-delay） 
+#### トランジション（transition, transition-duration, transition-property, transition-timing-function, transition-delay）
+* transition の時間指定は、変化にかける時間を表しており、遅延時間ではない。
+* ease-inは、ゆっくり開始を表しており、等速ではない。
+
 #### アニメーション（@keyframes, animation, animation-name, animation-delay, animation-duration, animation-iteration-count, animation-timing-function, animation-direction, animation-play-state, animation-fill-mode） 
+* @keyframes規則での100%は、開始から3秒後を表す。
 
 ## カスケード（優先順位）
 	大規模なサイトを作成する場合や、外部から提供されたスタイルシートを利用する場合に起こりやすい、HTMLの一つの要素に対して複数の記述が対象となる事象（プロパティの衝突）が発生した場合における適用の優先順位を理解している。
