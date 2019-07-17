@@ -13,7 +13,7 @@
 * details
 * menu
 * summary
-
+　
 
 ## 難しかったことが簡単になった
 ### 標準での対応
@@ -306,6 +306,14 @@ https://tokyoappwork.shop/ebooks/exam1/test/
 
 # 問題解答
 ## 問題A
+01.B 	02.BE 	03.B 	04.A 	05.D 	06.BE 	07.ABD 	08.ABDE	09.AD 	10.BCE 	
+11. 	12.D 	13.D 	14.CE 	15.D 	16.A 	17.E 	18.BCD 	19.AB 	20.CE 	
+21.BCE 	22.C 	23.D 	24.BCE 	25.B 	26.BE 	27.D 	28.A 	29.D 	30. 	
+31.E 	32.C 	33.BC 	34.A 	35.D 	36.B 	37.A 	38.D 	39.E 	40.E 	
+41.C 	42.D 	43.BC 	44.ACE 	45.E 	46.CDE 	47.A 	48.D 	49.ABE 	50.ABD 	
+51.B 	52.D 	53.BC 	54.B 	55.D 	56.ACD 	57.BCD 	58.D 	59.E 	60.B 	
+61.C 	62.A 	
+
 ## 問題B
 01.C	02.E 	03.B 	04.E 	05.C 	06.E 	07.BE 	08. 	09. 	10.D 	
 11. 	12.ACE 	13.C 	14.B 	15.A 	16.D 	17.E 	18.B 	19.B 	20.E 	
