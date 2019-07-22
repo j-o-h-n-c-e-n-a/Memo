@@ -5,6 +5,7 @@
 * https://www.shoeisha.co.jp/book/present/9784798157559
 * https://deeplearning.sakura.ne.jp/general/
 	5kaku0mede10
+* [データ解析の実務プロセス入門](https://www.amazon.co.jp/データ解析の実務プロセス入門-あんちべ/dp/4627817711)
 
 ## 最新動向
 ### 技術関連
