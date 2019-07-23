@@ -133,7 +133,3 @@
 * NUMA
 * vCPU hot add
 * vApp と DRS enabled
-
-
-johncena
-Akt4cds2a666
