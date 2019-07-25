@@ -34,3 +34,62 @@ E；照明や騒音、温度、湿度など環境に関わること
 ④その作業を遂行する能力、技量が不足、能力不足　　　　　　　　　　　　　
 ⑤すべきことを知らない知識不足
 ⑥手抜きや怠慢などの違反　　
+
+* 情報処理技術者
+* [この1冊で合格! AWS認定ソリューションアーキテクト - アソシエイト テキスト&問題集](https://www.amazon.co.jp/gp/product/4046042036?ie=UTF8&tag=ascii-akiba-22)
+* [東京大学のデータサイエンティスト育成講座](https://www.amazon.co.jp/exec/obidos/ASIN/B07PD237GQ/impresswatch-18-22/ref=nosim)
+* [最強の英語力](https://www.amazon.co.jp/exec/obidos/ASIN/B07K6YVDR3/impresswatch-18-22/ref=nosim)
+* [SQL 第2版 ゼロからはじめるデータベース操作](https://www.amazon.co.jp/exec/obidos/ASIN/B01HD5VWWO/impresswatch-18-22/ref=nosim)
+* [マンガでわかる統計学入]()
+* [受かる人はここが違う！転職面接　採用を勝ち取る技術]()
+* [受かる人はここが違う！履歴書・職務経歴書　採用される書き方]()
+* [ディープラーニング活用の教科書]()
+* [よくわかる最新SAPの導入と運用]()
+* [Linux教科書 LPICレベル2 スピードマスター問題集]()
+* [サイトの改善と目標達成のための　Web分析の教科書]()
+* [スマートフォンアプリマーケティング　現場の教科書]()
+* [uGUIではじめるUnity UIデザインの教科書 ]()
+* [会社、仕事、人間関係が「もうイヤだ！」と思ったとき読む本]()
+* [もっと仕事は数字で考えなきゃ！黒字社員の言葉　赤字社員の発想]()
+* [会社は無駄が9割―――会社に巣食う３つのムダ]()
+* [UX × Biz Book 顧客志向のビジネス・アプローチとしてのUXデザイン（リフロー版）]()
+* [部下を育て、自ら結果を出す！上司の手帳]()
+* [](https://www.techbookrank.com/)
+* [](https://bookhack.org/)
+
+AI
+https://www.techbookrank.com/books/5ab6c68c30e8410004197198
+https://www.techbookrank.com/books/5c96679e7078b50004491bae
+https://www.techbookrank.com/books/5c4226e88d67e80004bdf06f
+https://www.techbookrank.com/books/5b0b2f8c0db56600049cb285
+https://www.techbookrank.com/books/5ab6dd6530e841000419e271
+https://www.techbookrank.com/books/5b38f9250666d500046c4707
+
+AWS
+https://www.techbookrank.com/books/5ab6c8b930e8410004198256
+
+統計
+https://www.techbookrank.com/books/5ab6c3f230e8410004195d93
+https://www.techbookrank.com/books/5ab6c3f730e8410004195e57
+
+ストラテジ
+https://www.techbookrank.com/books/5cec2f4b5b12830004aae69a
+https://www.techbookrank.com/books/5ab6c3de30e8410004195c10
+
+Rust
+https://www.techbookrank.com/books/5c043c92f53e800004838a27
+
+マイクロサービス
+https://www.techbookrank.com/books/5ab6c6a430e84100041973f6
+https://www.techbookrank.com/books/5c043163f53e8000048387db
+
+k8s
+https://www.techbookrank.com/books/5c043e93f53e800004839171
+https://www.techbookrank.com/books/5c043e93f53e80000483916e
+
+Web
+https://www.techbookrank.com/books/5ab6c39830e8410004195be1
+https://www.techbookrank.com/books/5ab6f20530e84100041a3c5e
+
+SQL
+https://www.techbookrank.com/books/5ab6c69730e84100041972a1
