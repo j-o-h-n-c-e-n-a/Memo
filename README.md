@@ -56,6 +56,7 @@ E；照明や騒音、温度、湿度など環境に関わること
 * [部下を育て、自ら結果を出す！上司の手帳]()
 * [](https://www.techbookrank.com/)
 * [](https://bookhack.org/)
+* [データ分析のためのSQL/R/Python実践テクニック]()
 
 AI
 https://www.techbookrank.com/books/5ab6c68c30e8410004197198
@@ -75,6 +76,7 @@ https://www.techbookrank.com/books/5ab6c3f730e8410004195e57
 ストラテジ
 https://www.techbookrank.com/books/5cec2f4b5b12830004aae69a
 https://www.techbookrank.com/books/5ab6c3de30e8410004195c10
+https://kotori-blog.com/qualification/st/
 
 Rust
 https://www.techbookrank.com/books/5c043c92f53e800004838a27
@@ -93,3 +95,6 @@ https://www.techbookrank.com/books/5ab6f20530e84100041a3c5e
 
 SQL
 https://www.techbookrank.com/books/5ab6c69730e84100041972a1
+
+パワポ
+http://blog.re-presentation.jp/powerpoint/
