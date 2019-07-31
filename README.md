@@ -35,28 +35,8 @@ E；照明や騒音、温度、湿度など環境に関わること
 ⑤すべきことを知らない知識不足
 ⑥手抜きや怠慢などの違反　　
 
-* 情報処理技術者
-* [この1冊で合格! AWS認定ソリューションアーキテクト - アソシエイト テキスト&問題集](https://www.amazon.co.jp/gp/product/4046042036?ie=UTF8&tag=ascii-akiba-22)
-* [東京大学のデータサイエンティスト育成講座](https://www.amazon.co.jp/exec/obidos/ASIN/B07PD237GQ/impresswatch-18-22/ref=nosim)
-* [最強の英語力](https://www.amazon.co.jp/exec/obidos/ASIN/B07K6YVDR3/impresswatch-18-22/ref=nosim)
-* [SQL 第2版 ゼロからはじめるデータベース操作](https://www.amazon.co.jp/exec/obidos/ASIN/B01HD5VWWO/impresswatch-18-22/ref=nosim)
-* [マンガでわかる統計学入]()
-* [受かる人はここが違う！転職面接　採用を勝ち取る技術]()
-* [受かる人はここが違う！履歴書・職務経歴書　採用される書き方]()
-* [ディープラーニング活用の教科書]()
-* [よくわかる最新SAPの導入と運用]()
-* [Linux教科書 LPICレベル2 スピードマスター問題集]()
-* [サイトの改善と目標達成のための　Web分析の教科書]()
-* [スマートフォンアプリマーケティング　現場の教科書]()
-* [uGUIではじめるUnity UIデザインの教科書 ]()
-* [会社、仕事、人間関係が「もうイヤだ！」と思ったとき読む本]()
-* [もっと仕事は数字で考えなきゃ！黒字社員の言葉　赤字社員の発想]()
-* [会社は無駄が9割―――会社に巣食う３つのムダ]()
-* [UX × Biz Book 顧客志向のビジネス・アプローチとしてのUXデザイン（リフロー版）]()
-* [部下を育て、自ら結果を出す！上司の手帳]()
 * [](https://www.techbookrank.com/)
 * [](https://bookhack.org/)
-* [データ分析のためのSQL/R/Python実践テクニック]()
 
 AI
 https://www.techbookrank.com/books/5ab6c68c30e8410004197198
@@ -98,3 +78,5 @@ https://www.techbookrank.com/books/5ab6c69730e84100041972a1
 
 パワポ
 http://blog.re-presentation.jp/powerpoint/
+
+* Colaboratory 
