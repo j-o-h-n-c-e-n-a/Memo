@@ -4,8 +4,8 @@
 ### データベースサーバ構築 【重要度：2】
     サーバ構築における容量見積もり、およびデータベースセキュリティに関する知識を問う
 #### 主要な知識範囲：
-* テーブル・インデックス容量見積もり
-* セキュリティ
+* テーブル・インデックス容量見積もり [!]
+* セキュリティ [!]
     + 通信経路暗号化（SSL)
     + データ暗号化
         - crypt関数：パスワードのハッシュ処理を行う
@@ -27,7 +27,7 @@
 * pg_twophase
 * 【追加】ssl
 * 【追加】pg_stat_ssl
-* 【追加】pgcrypto
+* 【追加】pgcrypto [●]
 * ALTER ROLE
 * ALTER DATABASE
 * initdb -data-checksums (-k)
@@ -39,32 +39,32 @@
     データベースの運用管理に関する高度な知識を問う
 #### 主要な知識範囲：
 * バックアップ、PITR
-* VACUUM、ANALYZE、REINDEX
-* 自動バキューム
+* VACUUM、ANALYZE、REINDEX [!]
+* 自動バキューム [!]
 * 【追加】チェックポイント
 * サーバログ管理
-* ディスク容量監視
+* ディスク容量監視 [!]
 * 自動VACUUMと手動VACUUM/ANALYZEの違い
     + 自動バキュームデーモンはVACUUMだけではなくANALYZEも実行する場合があります。
 #### 重要な用語、コマンド、パラメータなど：
 * ALTER SYSTEM
-* ANALYZE
+* ANALYZE [●]
     + ANALYZEでは、SHARE UPDATE EXCLUSIVEロックが取得されます。ANALYZEによって、SELECT文やINSERT文などの処理が阻害されることはありません。
 * CLUSTER
     + テーブルデータが物理的に再編成され、読み込み性能が向上する可能性がある
     + 実行されているテーブルに対する読み込みは待機される
     + maintenance_work_memの値を大きくするとCLUSTERコマンドの性能が向上する可能性がある
     + テーブルおよびインデックスサイズを削減できる可能性がある
-* REINDEX
-* VACUUM
+* REINDEX [●]
+* VACUUM [●]
     + VERBOSEオプションを付加すると、VACUUM処理の進行状況などの詳細な情報が出力されます
     + ANALYZEオプションを付加すると、VACUUM処理後に統計情報も更新されます
 * 【追加】CHECKPOINT
-* PITR
+* PITR [●]
 * WAL
 * pg_dump 
 * pg_dumpall
-* pg_basebackup
+* pg_basebackup [●]
     + 別サーバで動作しているPostgreSQLデータベースクラスタのベースバックアップを取得できる
     + fetch方式の場合、max_wal_sendersパラメータを少なくとも1以上に設定する必要がある
     + オプションを明示的に指定しないで実行した場合は、WALはバックアップに含まれない
@@ -84,29 +84,29 @@
 ### データベースの構造 【重要度：2】
     データベースの物理的な構造に関する知識を問う
 #### 主要な知識範囲：
-* データベースクラスタの構造
-* プロセス構造
+* データベースクラスタの構造 [!]
+* プロセス構造 [!]
 * データの格納方法
 #### 重要な用語、コマンド、パラメータなど：
-* autovacuum [!]
+* autovacuum [●]
 * TOAST
 * FILLFACTOR
 * アーカイブログ
 * ページヘッダ
 * タプルヘッダ
-* postmasterプロセス[!]
+* postmasterプロセス [●]
     + PostgreSQLの親プロセス。接続を待ち受ける。
 * postgresプロセス
 * バックグラウンドプロセス
 * SQL実行のキャンセル
 * シグナル(TERM/INT/HUP)によるサーバプロセスへの影響
-* checkpointer [!]
+* checkpointer [●]
     + チェックポイント処理を行うプロセス
 
 ### ホット・スタンバイ運用 【重要度：1】
     レプリケーション構成を組むための設定や構築手順、およびレプリケーションの仕組み(プロセスやフロー)、状態の監視などに関する知識を問う
 #### 主要な知識範囲：
-* 【変更】ストリーミングレプリケーション機能とロジカルレプリケーション機能の概要
+* 【変更】ストリーミングレプリケーション機能とロジカルレプリケーション機能の概要 [!]
 * 【変更】同期レプリケーションと非同期レプリケーション
 * postgresql.conf、recovery.confの設定
     + スレーブ側でrecovery.confのtrigger_fileパラメータで設定したトリガファイルを作成
@@ -128,8 +128,8 @@
 * max_standby_streaming_delay
 * pg_wal_replay_pause()
 * pg_wal_replay_resume()
-* 【変更】wal sender プロセス [!]
-* 【変更】wal receiver プロセス [!]
+* 【変更】wal sender プロセス [●]
+* 【変更】wal receiver プロセス [●]
 * 【変更】pg_receivewal
 * トランザクションログ(WAL)
 * スタンバイへ伝搬される処理とされない処理
@@ -142,18 +142,18 @@
 #### 主要な知識範囲：
 * pg_locks：ロック待ちとなっているトランザクションや対象のテーブルを確認する
 	+ relation、 extend、 page、 tuple、 transactionid、 virtualxid、 object、userlock、 advisory
-* pg_stat_activity：サーバプロセス毎にプロセスの活動に関する情報を表示する
+* pg_stat_activity：サーバプロセス毎にプロセスの活動に関する情報を表示する [!]
 	+ query_startカラム：現在の問い合わせの実行開始時刻
 	+ xact_startカラム：トランザクションの開始時刻
-* pg_stat_database：データベースあたり1行の形式でデータベース全体の情報を表示する
-* pg_stat_all_tables 等、行レベル統計情報
+* pg_stat_database：データベースあたり1行の形式でデータベース全体の情報を表示する [!]
+* pg_stat_all_tables 等、行レベル統計情報 [!]
 	+ pg_stat_all_tables：現在のデータベースの各テーブルごとに1行の形で、テーブルへのアクセス統計情報を表示する
 	+ heap_blks_hitカラム：対象テーブルのバッファヒット数
 	+ blks_readカラム：ディスクから読み込んだブロック数が格納される
-* pg_statio_all_tables 等、ブロックレベル統計情報
+* pg_statio_all_tables 等、ブロックレベル統計情報 [!]
 #### 重要な用語、コマンド、パラメータなど：
 * pg_stat_archiver
-* pg_stat_bgwriter：バックグラウンドライタに関する情報を表示する
+* pg_stat_bgwriter：バックグラウンドライタに関する情報を表示する [●]
 * 【追加】待機イベント(pg_stat_activity.wait_event)
 * 【追加】pg_stat_progress_vacuum
 
@@ -189,13 +189,13 @@
 ### クエリ実行計画 【重要度：3】
     EXPLAINが出力する実行計画を読み取り、チューニングを行う。
 #### 主要な知識範囲：
-* EXPLAIN / EXPLAIN ANALYZE 出力
+* EXPLAIN / EXPLAIN ANALYZE 出力 [!]
 	+ 出力フォーマット：TEXT（デフォルト）、XML、JSON、YAML
 	+ SQLコマンド：SELECT、INSERT、UPDATE、DELETE、VALUES、EXECUTE、DECLARE、CREATE TABLE AS、CREATE MATERIARIZED VIEW、REFRESH MATERIALIZED VIEW
 * 計画型
 * EXPLAINからのチューニング
-* 結合の種類(Nested Loop、Hash、Merge)と性能特性
-* SQL構文(JOIN/GROUP BY/ORDER BY/LIMIT)に対応する実行計画
+* 結合の種類(Nested Loop、Hash、Merge)と性能特性 [!]
+* SQL構文(JOIN/GROUP BY/ORDER BY/LIMIT)に対応する実行計画 [!]
 * 集約関数(sum/count)を伴うSQLに対応する実行計画
 * 【追加】パーティションに対するSQLの実行計画
 * 【追加】パラレルクエリに対応する実行計画
@@ -206,7 +206,7 @@
 ### その他の性能監視 【重要度：1】
     性能監視に関するその他の手法
 #### 主要な知識範囲：
-* スロークエリの検出
+* スロークエリの検出 [!]
 * 付属ツールによる解析
 * 性能劣化要因(リソース枯渇、ロック競合)
 #### 重要な用語、コマンド、パラメータなど：
@@ -229,14 +229,15 @@
 * ログ先行書き込み (WRITE AHEAD LOG)
 * 問い合わせ計画 (QUERY TUNING)
 * 実行時統計情報 (RUNTIME STATISTICS)
-* ロック管理 (LOCK MANAGEMENT)
+* ロック管理 (LOCK MANAGEMENT) [!]
 * 軽量ロックと重量ロック
 #### 重要な用語、コマンド、パラメータなど：
 * shared_buffers：共有バッファのサイズを設定。推奨値はサーバ実メモリの25%
 * wal_bufferes：WALバッファのサイズを設定
 * 【追加】huge_pages
-* effective_cache_size
-* work_mem：問い合わせ時のソートやハッシュデータ格納時に使用するメモリのサイズ
+* effective_cache_size [●]
+    + 
+* work_mem：問い合わせ時のソートやハッシュデータ格納時に使用するメモリのサイズ [●]
 * 【追加】maintenance_work_mem：Vacuum文やALTER TABLEなどのメンテナンス操作時に使用するメモリのサイズ
 * 【追加】autovacuum_work_mem
 * 【追加】wal_level
@@ -253,18 +254,18 @@
 ### チューニングの実施 【重要度：2】
     データベース、およびSQLのチューニングに関する理解を問う
 #### 主要な知識範囲：
-* パラメータのチューニング
+* パラメータのチューニング [!]
     + CPU
     + メモリ
     + 共有メモリ
     + ディスク
-* 実行計画のチューニング
+* 実行計画のチューニング [!]
 * SQL のチューニング
 * 【追加】テーブル構成のチューニング
-* ディスクI/Oの分散
+* ディスクI/Oの分散 [!]
 * パラメータの反映方法(パラメータ有効化のために必要なアクション)
 * インデックスがSQLの性能に与える影響
-* Index Only Scan とVisibility Map
+* Index Only Scan と Visibility Map
 #### 重要な用語、コマンド、パラメータなど：
 * Index Only Scan
 
@@ -273,8 +274,8 @@
 ### 起こりうる障害のパターン 【重要度：3】 
     データベースでのSQL実行タイムアウトやサーバダウン、動作不良、データ消失、OSリソース枯渇などの故障が発生した場合について、エラーメッセージの内容から原因を特定し、適切な対応ができるかを問う
 #### 主要な知識範囲：
-* サーバダウン、動作不良、データ消失への対処
-* OS リソース枯渇
+* サーバダウン、動作不良、データ消失への対処 [!]
+* OS リソース枯渇 [!]
 * OSのパラメータ
 * サーバプロセスの状態(idle、idle in transaction、active)
 * シグナル(TERM/INT/HUP)によるサーバプロセスへの影響
@@ -301,8 +302,8 @@
 ### 破損クラスタ復旧 【重要度：2】
     データファイルやトランザクションログファイルが破損した場合について、エラーメッセージの内容から原因を特定し、適切な対応ができるかを問う
 #### 主要な知識範囲：
-* 【追加】トランザクションログ復旧
-* システムテーブルのインデックス復旧
+* 【追加】トランザクションログ復旧 [!]
+* システムテーブルのインデックス復旧 [!]
 * 開発者向けオプション
 * テーブル・インデックスの実ファイルとパス
 * Relfilenode と OID
@@ -316,6 +317,7 @@
     + 最後のWALログ位置まで
     + 任意の時刻まで
 * pg_resetwal
+    + pg_resetxlog
 * ignore_system_indexes
 * ignore_checksum_failure
 * コミットログ(pg_xact)
