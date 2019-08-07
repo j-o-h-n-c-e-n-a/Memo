@@ -9,6 +9,7 @@
     PostgreSQLの機能概要、ライセンス、OSSのコミュニティの役割などに関する理解を問う
 #### 主要な知識範囲：
 * PostgreSQLの機能全般、OSS-DBおよびOSS一般のライセンス、OSS-DBのコミュニティ、活動内容、参加方法など
+    + BSDライセンス：著作権表示は必要
 * 【追加】メジャーバージョン / マイナーバージョン
     + バージョン：x.y
     + メジャーバージョン(x)：機能追加を含んだもの
@@ -35,9 +36,11 @@
     + 最新の標準規格：SQL:2016
     + Postgresの対応状況：SQL:2011の一部まで（SQL:2008には完全準拠）
 * SQLの 分類 (DDL / DML / DCL)
-    + DDL（CREATE TEBLE）
-    + DML（UPDATE/DELETE/INSERT）
+    + DDL(Data Definition Language)：CREATE TEBLE
+    + DML(Data Manipulation Language)：UPDATE/DELETE/INSERT
+    + DCL(Data Control Language)：GRANT/REVOKE/COMMIT/ROLLBACK
 * データベースの設計と正規化
+    + 目的：データの重複を排除することで、データ保守を容易にする
     + 第１正規形：繰り返し項目の除去
     + 第２正規形：主キーに対してすべての非キー属性が完全関数従属
     + 第３正規形：すべての非キー属性がどの候補キーに対しても推移的に関数従属していない
@@ -56,6 +59,8 @@
     + バイナリ値を基準にしたい場合、initdb --locale=C または、--no-locale を指定する
 * 文字エンコーディングの指定
     + デフォルトは、sql_ascii
+    + クライアントの文字セットとして、Shift-JISをサポートしている
+    + データベース毎に異なる文字セットを使うことができる（createdbまたはCREATE DATABASE文のオプションで指定）
     + ターミナルでマルチバイト文字を扱えないので、明示的にUTF-8辺りを指定するべき
 * アクセス制限の指定
     + pg_hba.conf
@@ -116,6 +121,7 @@
 * 各種バックアップコマンドの使い方
 * ファイルシステムレベルのバックアップとリストア
 * ポイントインタイムリカバリ(PITR)の概念と手順
+    + データベースクラスタ全体で動作（特定のデータベースのみをバックアップすることはできない）
     + 無停止でデータファイルとWALアーカイブをコピーする
     + 最新状態までの任意の時点に戻せるが、運用コストは高くなる
 * 【追加】トランザクションログ(WAL)とWALアーカイブ [!]
@@ -247,6 +253,7 @@
 * CHECK
 * DEFAULT
 * 【追加】CREATE/ALTER/DROP INDEX/VIEW/MATERIALIZED VIEW/RULE/TRIGGER/SCHEMA/SEQUENCE/TABLESPACE/FUNCTION/PROCEDURE
+    + TABLESPACE：表領域の作成
 * 【追加】CREATE TABLE PARTITION BY/OF
 * 【追加】ALTER TABLE ATTACH/DETACH PARTITION
 
@@ -374,3 +381,8 @@
 * ダーティーページのデータファイルへの書き込みはライタプロセスおよびチェックポインタで行われる 
     + 書き込み時はI/Oが発生するので、問い合わせが遅くなる原因にもなる
 
+### 表領域
+#### tablespace
+* 表と索引を別のディスクに配置することでパフォーマンス向上を図ることができる。
+* 表領域としてはディレクトリ名を指定し、そのディレクトリ内に表や索引がファイルとして作成される。
+* 表領域を作成していない状態では、すべての表や索引は、データベースクラスタ内の base ディレクトリの下に作成される。
