@@ -32,6 +32,8 @@
 * ALTER DATABASE
 * initdb -data-checksums (-k)
 * log_statement
+    + 実行したSQLのうち、どの種別のものをログ出力するかについて設定する
+        - none, ddl, mod, all
 * track_functions
 * track_activities
 
@@ -79,7 +81,8 @@
 * pg_isready
 * log_connections
 * log_disconnections
-* log_duration
+* log_duration [●]
+    + true/falseの論理値を設定し、trueに設定するとSQL文の実行に要した時間を出力する
  
 ### データベースの構造 【重要度：2】
     データベースの物理的な構造に関する知識を問う
@@ -161,7 +164,7 @@
 ### テーブル / カラム統計情報 【重要度：2】
     プランナが利用するテーブル・カラムの統計情報についての理解を問う
 #### 主要な知識範囲：
-* pg_class：システムカタログで、名称・所有者・テーブル空間といった多くの列を保有している
+* pg_class：システムカタログで、名称・所有者・テーブル空間といった多くの列を保有している [!]
 	+ relpages列にはテーブル内のページ数が格納されている
 	+ reltuples列にはテーブル内の行数が格納されている
 	+ 格納されている統計情報は推測値であり、VACUUMやANALYZEおよびCREATE INDEXなどにより更新される
@@ -174,6 +177,7 @@
 	+ ライタプロセスやチェックポインタによって共有バッファのデータが書き込まれる
 * 実行計画時に利用される統計情報やパラメータ
 #### 重要な用語、コマンド、パラメータなど：
+* pg_attribute：テーブルの列情報
 * pg_statistic
 * pg_stats
 * null_frac
@@ -214,6 +218,9 @@
 * auto_explain
 * auto_explain.*
 * log_min_duration_statement
+    + 整数値を設定し、指定したミリ秒以上を要したSQL文と実行時間を出力する
+    + 0に設定すれば、すべてのSQL文について出力される [●]
+    + -1に設定すると、出力しない
 * pg_stat_statements：実行された全てのSQL文の実行時の統計情報を記録する
 * 【追加】log_autovacuum_min_duration
 * 【追加】log_lock_waits
@@ -373,3 +380,19 @@
 無停止で運用する専用サーバや，大規模な冗長構成のシステムやハードウェアが必要になり，急激にコストが高くなる
 #### ネットワーク接続設定
 * IPv6の無効化
+#### 関数
+* generate_series
+#### contrib 
+    contrib モジュール (追加で提供されるモジュール) を紹介します。
+* dblink  
+    + 他の PostgreSQL データベースを SQL から直接操作できるモジュールである "dblink" の使い方を紹介します。dblink を使うと、分散環境で複数のデータベースをまたがる処理を行ったり、同じサーバ内の別のデータベースを操作することができます。
+* pgbenchの使いこなし  
+    + pgbenchはPostgreSQLに同梱されているシンプルなベンチマークツールです。 pgbenchを利用することにより、自分の使っているPostgreSQLの性能を数値で把握することができるようになり、チューニングの結果を確認したり、ハードウェアをアップグレードしたときの効果を客観的に見ることが可能です。
+* pgcrypto [●]
+    + contribモジュールのpgcryptoを使うとデータベース内のデータを暗号化できます。特定のカラムごとに暗号化でき、ディスクの盗難だけでなく、データベースにログインされてしまった場合にも機密データを守ることができます。
+* pg_upgrade [●]
+    + PostgreSQLのアップグレードを容易に実施可能とするサポートツール「pg_upgrade」がPostgreSQL9.0のcontribモジュールとして開発されました。どのようにアップグレードをサポートしてくれるのかを紹介します。
+* file_fdw  
+    + file_fdwは、PostgreSQL 9.1のSQL/MED機能を利用し、外部のタブ区切りまたはCSVファイルを直接テーブルの形で参照するためのモジュールです。COPYコマンドに似ていますが、データの複製を避けたり、加工しながら取り込む場合に便利です。
+* passwordcheck 
+    + passwordcheckは、PostgreSQLのユーザやロールに指定するパスワードに対して検査を行い、弱い(推測されやすい)文字列を弾く仕組みを提供するcontribモジュールです。本記事では、passwordcheckモジュールの概要と使い方、およびその拡張について解説します。
