@@ -26,7 +26,7 @@
 * 10系：ロジカルレプリケーションとネイティブのパーティション
     + パラレルクエリの強化
     + プッシュダウン
-    + パーティション
+    + パーティション（宣言的パーティショニング）
 * 11系：Window関数とパーティションの強化
     + パラレルクエリの強化
     + JITコンパイラ
@@ -155,6 +155,7 @@
         - listen_addresses
     + テーブルスキーマの設定
         - search_path：デフォルトは "$user", public
+        - スキーマ検索パスの設定によって、SQL文のオブジェクト名の指定でスキーマ名を省略した場合、どのスキーマのオブジェクトを使うかを特定する
     + 再起動が必要な設定
         - port
         - max_connection
@@ -258,7 +259,9 @@
 * システム情報関数
 * 情報スキーマとシステムカタログ
     + 情報スキーマ：データベース内のオブジェクトに関する様々な情報を提供する
-    + information_schema：情報スキーマは information_schema というスキーマ内のビューとして実現されています。標準SQLの機能として定義されているため、PostgreSQL 以外の RDBMS でも利用でき、ビューの名前、および多くのカラム名は他の RDBMS でも同じ
+        - information_schema
+        - 標準SQLの機能として定義されているため、PostgreSQL 以外の RDBMS でも利用でき、ビューの名前、および多くのカラム名は他の RDBMS でも同じ
+        - スキーマ検索パスにユーザ名が使われるように、スキーマ名とユーザ名には緩いつながりがありますが、実装上はこれらは独立していて、スキーマはユーザ名と無関係に作成できます
     + pg_tables：テーブルに関する情報（テーブル名、スキーマ名、所有者）を表示するシステムビューで、一般ユーザでも利用することができる
     + pg_views：ビューに関する情報を表示するシステムビュー
 * テーブル単位の権限（GRANT/REVOKE） [!]
@@ -288,7 +291,7 @@
 * 【追加】autovacuum
 * current_user：現在のユーザ名を取得 [●]
 * version
-* information_schema
+* information_schema：情報スキーマは information_schema というスキーマ内のビューとして実現されている
 * GRANT：アクセスを許可する
 * REVOKE：許可したアクセス権限を取り消す
 
@@ -308,18 +311,30 @@
 * テーブル定義
 * インデックス
 * ビュー
+    + ビューからSELECTするときは、ビューに対するSELECT権限だけがあれば良い
+    + ビューを既存のテーブルと同じ名前にすることはできない
 * 【追加】マテリアライズドビュー
 * ルール
 * トリガー
+    + TRIGGER型の関数を作成する
+    + CREATE TRIGGER トリガー名 トリガー ON テーブル名 処理 関数名;
+    + 複数のトリガーがある場合、実行順はトリガー名でソートした順序なので、トリガー名に依存する
+    + ビューにINSTEAD OFトリガーを定義することで、ビューを更新することもできる（更新したいビューが更新可能ビューでない場合に使用する）
 * シーケンス
     + CREATE SEQUENCE
     + テーブルに格納されるデータが連番になるとは限らない
+    + データが1行だけのシーケンスのSELECTは特殊なテーブルを返却する
 * スキーマ
 * 【追加】テーブルスペース
+    + 下記を作成する際の場所をデフォルトとは異なる場所に指定できる
+        - データベース
+        - テーブル
+        - インデックス
 * 【追加】パーティション [!]
     + 条件（日や月単位、地域など）によって、データを複数に分割して格納することができる
     + 頻繁に使うレコードが存在するパーティションをキャッシュ出来る
     + グローバルインデックスはできない
+    + INSERT実行時の格納先となるパーティションは、事前に作成しておく必要がある
 * 関数定義 / 【追加】プロシージャ定義
 * PL/pgSQL
 * 引用符
@@ -330,6 +345,12 @@
 * SELECT/INSERT/UPDATE/DELETE
 * FROM
 * JOIN
+    + INNER JOIN
+    + LEFT OUTER JOIN
+    + RIGHT JOIN
+    + FULL JOIN：LEFTとRIGHT、両方のJOINを適用する
+    + USING：結合に使用する列名が2つのテーブルで同じときにのみ使用できる簡略記法で、USINGの後に結合に使用する列のリストをかっこで囲んで記述する
+    + NATURAL JOIN：USINGを省略できる
 * WHERE
 * INTO
 * VALUES
@@ -343,10 +364,10 @@
 * EXISTS
 * IN
 * NOT
-* INTEGER：数値型
-* SMALLINT：数値型
-* BIGINT：数値型
-* NUMERIC：数値型
+* INTEGER：数値型（４バイト整数）
+* SMALLINT：数値型（２バイト整数）
+* BIGINT：数値型（８バイト整数）
+* NUMERIC：数値型（１０進数の整数または小数）
 * DECIMAL：数値型
 * REAL [?]：数値型
 * DOUBLE PRECISION [?]：数値型
@@ -355,28 +376,53 @@
 * VARCHAR：文字列型
 * CHARACTER VARYING：文字列型
 * TEXT：文字列型
-* BOOLEAN
+* BOOLEAN：論理値型
+    + 文字列の’true’,‘t’, ‘yes’, ‘y’, ‘on’, ‘1’をTRUEの代わりに、’false’, ‘f’, ‘no’, ‘n’, ‘off’,‘0’をFALSEの代わりに使うことができる
+    + ’1’と’0’も文字列であって、整数の1と0は使えない
+    + SELECT文で値を表示する場合、TRUEならばt、FALSEならばfの1文字だけが表示される
 * DATE：日付型
 * TIME：日付型
 * TIMESTAMP：日付型
-* INTERVAL [?]
-* SERIAL [?]：シーケンス
+* INTERVAL：日時計算の際に期間を表す
+* SERIAL：シーケンス
+    + NOT NULL 制約が自動設定される
+    + 列の値を指定しないか、DEFAULTを指定することで自動採番となる
 * BIGSERIAL [?]：シーケンス
 * 【追加】BYTEA
 * NULL
 * CREATE/ALTER/DROP TABLE [●]
+    + CREATE TABLE
+        - テーブルを作成するには、作成先のスキーマへのCREATE権限が必要
+    + ALTER TABLE
+        - ALTER COLUMNにより列の属性(データ型、デフォルト値など)を変更することはできるが、UNIQUE制約を追加することはできない
+        - ADDによりテーブルの制約を追加できる
 * PRIMARY KEY
 * FOREIGN KEY
-* REFERENCES [?]
+* REFERENCES：外部キー制約
+    + FOREIGN KEY (自テーブルの列) REFERENCES参照先テーブル名 (参照列)
 * UNIQUE
 * NOT NULL
 * CHECK
 * DEFAULT
-* 【追加】CREATE/ALTER/DROP INDEX/VIEW/MATERIALIZED VIEW/RULE/TRIGGER/SCHEMA/SEQUENCE/TABLESPACE/FUNCTION/PROCEDURE
+* 【追加】CREATE |ALTER/DROP INDEX/VIEW/MATERIALIZED VIEW/RULE/TRIGGER/SCHEMA/SEQUENCE/TABLESPACE/FUNCTION/PROCEDURE
     + TABLESPACE：表領域の作成 [●]
     + FUNCTION：ユーザ定義関数の作成
+    + PROCEDURE：ストアドプロシージャの作成
+    + MATERIALIZED VIEW：マテリアライズドビューの作成
+    + VIEW：ビューの作成
+        - CREATE OR REPLACE VIEWコマンドでビューの定義を変更するとき、ビューに列を追加することはできるが、減らすことはできない
+    + INDEX
+        - PRIMARY KEY、UNIQUEの制約がある列については自動的に作成される
+        - デフォルトでは、B-Treeのインデックスが作成される（他はハッシュやGiST）
+    + UNIQUE INDEX：一意のインデックスの作成
 * 【追加】CREATE TABLE PARTITION BY/OF [●]
+    + 
 * 【追加】ALTER TABLE ATTACH/DETACH PARTITION
+* 制御
+    + FOR LOOP ~ END LOOP 
+    + WHILE
+    + FOREACH
+* UNION：和集合
 
 ### 組み込み関数 【重要度：2】
     データベースで標準的に利用できる関数および演算子に関する知識を問う
@@ -391,25 +437,35 @@
 * 集約関数：count
 * 算術関数：sum
 * 算術関数：avg
+    + 平均値はNUMERIC型で返却される
 * 算術関数：max
 * 算術関数：min
 * 文字列関数：char(character)_length
+    + 文字列の長さを調べる
 * 文字列関数：lower
 * 文字列関数：upper
 * 文字列関数：substring
+    + substring(対象文字列 from 開始位置 for 長さ)：標準SQL指定
+    + substring(対象文字列,開始位置 [, 長さ]) 
 * 文字列関数：replace
 * 文字列関数：trim
 * 文字列演算子：||
 * 文字列演算子：~
+    + PostgreSQL関数：正規表現とのマッチングが可能となる
 * 文字列演算子：LIKE
+    + PostgreSQL関数：ILIKE、LIKE演算子の大文字と小文字を区別しないバージョン
 * 文字列演算子：SIMILAR TO
-* 時間関数：age
-* 時間関数：now
+* 時間関数：age、2つの日付の間の期間を年月日で求める
+* 時間関数：now、現在日時を取得する
 * current_date：現在日付のみ取得 [●]
 * current_timestamp / 【追加】statement_timestamp / 【追加】clock_timestamp [●]
+    + 同じトランザクション内では、同じ時刻を返す
 * current_time：現在時刻のみ取得 [●]
-* extract
-* to_char
+* extract：日時型の年月日指定部分を取得
+    + PostgreSQL関数：date_part
+* to_char：目的のフォーマットに合わせて出力する
+* abs：絶対値を求める関数
+    + @演算子でも同じ
 
 ### トランザクションの概念 【重要度：1】
     トランザクション機能に関する知識を問う
@@ -436,10 +492,13 @@
     + トランザクション中に発生しているロックのため、メンテナンス系のコマンドはトランザクション完了まで待たされることになります。
 #### 主要な知識範囲：
 * トランザクションの構文
+    + PostgreSQLのトランザクション機能では、途中のSQL文がエラーを起こすと、トランザクション自体がエラーになったとみなされ、以後のSQL文がすべてエラーになる
 * 【変更】トランザクション分離レベル
     + リードアンコミッティド：未コミット状態のデータであっても読み込む
-    + リードコミッティド：コミットされたデータのみを読み込む
-    + リピータブルリード：トランザクション中は他のトランザクションでコミットされた更新を参照しないことで、同じレコードを繰り返し読んでも常に同じ結果が得られることを保証する
+        - PostgreSQLではRead Committedとして動作するので、ダーティーリードは発生しません。
+    + リードコミッティド：コミットされたデータのみを読み込む（ダーティーリードの禁止）
+    + リピータブルリード：トランザクション中は他のトランザクションでコミットされた更新を参照しないことで、同じレコードを繰り返し読んでも常に同じ結果が得られることを保証する（反復不能読み取りの禁止）
+        - PostgreSQLのRepeatable Readはファントムリードが起こらない実装になっています。
     + シリアライザブル：トランザクションの逐次実行をエミュレートし、直列的に実行した場合と同じ結果になることを保証する
 * LOCK 文
 * 行ロックとテーブルロック
