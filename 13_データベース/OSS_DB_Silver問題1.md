@@ -535,7 +535,7 @@ boolean型の指定として整数の1と0は使用できません。指定す�
 5. あるテーブルについてINSERT権限がGRANTされているが、SELECT権限がGRANTされていないという場合、他のユーザがINSERTしたデータはSELECTできないが、自分がINSERTしたデータはSELECTできる。
 
 ### Q．自動バキュームの説明として正しいものを3つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_05/88_180807)
+* [詳細 [●]](https://oss-db.jp/sample/silver_management_05/88_180807)
 1. 削除済みのタプル領域を回収する。
 2. テーブルの統計情報を取得する。
 3. 大量のタプルの挿入・削除・更新が行われたテーブルを検査する。
@@ -543,7 +543,7 @@ boolean型の指定として整数の1と0は使用できません。指定す�
 5. データベースの負荷が大きいときは起動が抑制される。
 
 ### Q．ALTER USERコマンドで変更できないユーザ属性はどれか。1つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_05/86_180611)
+* [詳細 [●]](https://oss-db.jp/sample/silver_management_05/86_180611)
 1. ユーザのパスワード
 2. ユーザのパスワードが無効になる日時
 3. 新しいユーザを作成する権限の有無
@@ -551,7 +551,7 @@ boolean型の指定として整数の1と0は使用できません。指定す�
 5. データベース内に新しいテーブルを作成する権限の有無
 
 ### Q．ファイルシステムレベルの物理的なバックアップとリストアを行う手順について適切なものを2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_05/83_180313)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_05/83_180313)
 1. ファイルのコピーなどでバックアップを作成する前に、必ずデータベースを停止する必要がある。
 2. ログアーカイブの運用をしているのであれば、バックアップ作成時に、データベースは停止してもしなくても良い。
 3. ファイルシステムのレイアウトを正確に理解すれば、テーブル単位でバックアップとリストアを実行できる。
@@ -559,7 +559,7 @@ boolean型の指定として整数の1と0は使用できません。指定す�
 5. テーブルやデータベース単位でバックアップすることはできず、必ずデータベースクラスタ全体のバックアップとリストアを実行することになる。
 
 ### Q．SQLのSETコマンドの説明として適切なものを２つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_05/81_180115)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_05/81_180115)
 1. 変数の値を設定し、SQLから変数値を参照することができる。
 2. スキーマ検索パスや時間帯などの実行時パラメータを変更することができる。
 3. 設定した値は、デフォルトでは、そのユーザにとって永続的に有効である。
@@ -567,14 +567,14 @@ boolean型の指定として整数の1と0は使用できません。指定す�
 5. 設定した値は、デフォルトでは、そのトランザクション内でのみ有効である
 
 ### Q．データベースのパフォーマンスについて調べるため、SQL文とその実行に要した時間をログ出力したい。適切な方法を１つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_04/79_171113)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_04/79_171113)
 1. log_durationをtrueに設定すれば、SQL文と実行に要した時間がログ出力される。
 2. log_min_duration_statementを0に設定すれば、SQL文と実行に要した時間がログ出力される。
 3. log_statementをallに設定すれば、SQL文と実行に要した時間がログ出力される。
 4. log_statement_durationをtrueに設定すれば、SQL文と実行に要した時間がログ出力される。
 
 ### Q．パラメータ search_path の説明として適切なものを1つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_04/78_171016)
+* [詳細 [●]](https://oss-db.jp/sample/silver_management_04/78_171016)
 1. コマンドが検索されるディレクトリを設定する。
 2. テーブルが作成されるスキーマを設定する。
 3. ビューが作成されるテーブル空間を設定する。
@@ -582,7 +582,7 @@ boolean型の指定として整数の1と0は使用できません。指定す�
 5. ストアドファンクションが検索されるデータベースを設定する。
 
 ### Q．createuserコマンドで新規にユーザを作成するときについて、正しい説明を2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_04/75_170714)
+* [詳細 [●]](https://oss-db.jp/sample/silver_management_04/75_170714)
 1. データベースのサーバプロセスを実行中のユーザと同じユーザアカウントで実行する必要がある。
 2. データベースのサーバプロセスが実行されているのと同じサーバ上のユーザアカウントで実行する必要がある。
 3. データベース上でCREATEROLE権限を持っているユーザに接続可能なユーザアカウントで実行する必要がある。
@@ -590,7 +590,7 @@ boolean型の指定として整数の1と0は使用できません。指定す�
 5. 新規に作成されるユーザ名は、OS上のユーザアカウント名とは無関係に決めて良い。
 
 ### Q．pg_ctlコマンドの説明として、正しいものを3つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_04/74_170619)
+* [詳細 [●]](https://oss-db.jp/sample/silver_management_04/74_170619)
 1. データベースクラスタを新規作成するには pg_ctl initdb を実行する。
 2. データベースを停止するには pg_ctl shutdown を実行する。
 3. データベースを再起動するには pg_ctl restart を実行する。
@@ -598,7 +598,7 @@ boolean型の指定として整数の1と0は使用できません。指定す�
 5. 停止時にデータベース接続中のセッションの処理をどうするかを -m オプションで指定する。
 
 ### Q．PostgreSQLのデータベースクラスタについて、適切な説明を2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_04/72_170417)
+* [詳細 [●]](https://oss-db.jp/sample/silver_management_04/72_170417)
 1. デフォルトでは、template0とpostgresの2つのデータベースが存在している。
 2. デフォルトでは、template0とtemplate1の2つのデータベースが存在している。
 3. デフォルトでは、template0とtemplate1とpostgresの3つのデータベースが存在している。
@@ -606,7 +606,7 @@ boolean型の指定として整数の1と0は使用できません。指定す�
 5. データベースpostgresは削除できない。
 
 ### Q．initdbコマンドに関する説明として適切なものを3つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_04/71_170313)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_04/71_170313)
 1. Linux/Unixではrootユーザで実行する。
 2. 指定のディレクトリにデータベースクラスタが存在していたら、初期化されてしまうので、注意して実行する必要がある。
 3. データベースのデフォルトの文字セットが指定できる。
@@ -614,7 +614,7 @@ boolean型の指定として整数の1と0は使用できません。指定す�
 5. データベースのスーパーユーザのパスワードが設定できる。
 
 ### Q．GRANTにより付与できる権限として、間違っているものを1つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_04/70_161205)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_04/70_161205)
 1. テーブルの行を検索(SELECT)する権限
 2. テーブルの特定の列を更新(UPDATE)する権限
 3. テーブルのすべての行を削除(DELETE)する権限
@@ -622,7 +622,7 @@ boolean型の指定として整数の1と0は使用できません。指定す�
 5. テーブルに関する権限を他のユーザに付与(GRANT)する権限
 
 ### Q．データベース内のテーブルと列に関する情報を格納するシステムカタログについて、正しい説明を1つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_04/69_161031)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_04/69_161031)
 1. テーブルの情報はpg_tables、列の情報はpg_columnsに格納されている。
 2. テーブルの情報はpg_relations、列の情報はpg_relcolumnsに格納されている。
 3. テーブルの情報はpg_class、列の情報はpg_attributeに格納されている。
@@ -630,7 +630,7 @@ boolean型の指定として整数の1と0は使用できません。指定す�
 5. テーブルの情報はpg_rel_info、列の情報はpg_col_infoに格納されている。
 
 ### Q．自動バキュームの説明として適切なものを2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_04/67_160905)
+* [詳細 [●]](https://oss-db.jp/sample/silver_management_04/67_160905)
 1. 一定時間ごとに自動的にバキュームが実行される。
 2. システムの負荷が低い時に自動的にバキュームが実行される。
 3. 大量のデータの挿入・更新・削除があったテーブルに対して、自動的にバキュームが実行される。
@@ -638,7 +638,7 @@ boolean型の指定として整数の1と0は使用できません。指定す�
 5. バキュームが実行されるタイミングが予測できないため、デフォルトでは実行されないようになっている。
 
 ### Q．データベースを作成する権限のあるユーザfooを追加する方法として適切なものを2つ選びなさい。なお、以下の選択肢で、$はOSのコマンドプロンプト、=>はpsqlのコマンドプロンプトであり、コマンドを実行しているユーザには必要な権限が与えられているものとする。
-* [詳細 []](https://oss-db.jp/sample/silver_management_04/65_160711)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_04/65_160711)
 1. $ createuser -c foo
 2. $ createuser -d foo
 3. $ createuser -D foo
@@ -646,7 +646,7 @@ boolean型の指定として整数の1と0は使用できません。指定す�
 5. => create user foo createdb;
 
 ### Q．データベースを構成するファイルシステムを物理的にコピーすることでバックアップを作成したい。最も適切な記述を1つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_04/62_160322)
+* [詳細 [●]](https://oss-db.jp/sample/silver_management_04/62_160322)
 1. データベースファイルは上位互換性があるので、PostgreSQL 10の環境でコピーしたファイルをPostgreSQL 11の環境にリストアして使用できる。
 2. 例えば、testというテーブルを構成する物理ファイルの名前が10001だったとすると、このファイルを別のデータベース環境にコピーすれば、同じテーブルを使用できる。
 3. pg_dumpで取得する論理バックアップに比べると、ファイルシステムのコピーによるバックアップは一般的に高速である。
@@ -657,7 +657,7 @@ boolean型の指定として整数の1と0は使用できません。指定す�
 ```
 	pg_dump -s -U abc -f def ghi
 ```
-* [詳細 []](https://oss-db.jp/sample/silver_management_04/61_160222)
+* [詳細 [●]](https://oss-db.jp/sample/silver_management_04/61_160222)
 1. スーパーユーザーabcでデータベースに接続する。データベースファイルは上位互換性があるので、PostgreSQL 10の環境でコピーしたファイルをPostgreSQL 11の環境にリストアして使用できる。
 2. データベース内のデータはダンプされない。
 3. ダンプは標準出力に出力される。
@@ -665,7 +665,7 @@ boolean型の指定として整数の1と0は使用できません。指定す�
 5. データベースghiに接続する。
 
 ### Q．テンプレートデータベースの説明として適切なものを2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_03/56_150904)
+* [詳細 [●]](https://oss-db.jp/sample/silver_management_03/56_150904)
 1. テンプレートデータベースtemplate0内には通常のデータベースと同様にテーブルを追加できる。
 2. テンプレートデータベースtemplate1内には通常のデータベースと同様にテーブルを追加できる。
 3. CREATE DATABASEでデータベースを新規に作成するとき、オプションで指定しなければ、template0がテンプレートデータベースとして使用される。
@@ -673,7 +673,7 @@ boolean型の指定として整数の1と0は使用できません。指定す�
 5. デフォルトでは、テンプレートデータベースtemplate0には誰も接続できない。
 
 ### Q．Linux上でinitdbコマンドでデータベースクラスタを作成する際の注意事項として、適切なものを2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_03/55_150724)
+* [詳細 [●]](https://oss-db.jp/sample/silver_management_03/55_150724)
 1. initdbは管理者ユーザで実行する必要があるので、rootユーザで実行する。
 2. データベースクラスタのディレクトリは、新規のディレクトリか、既存の空のディレクトリか、のいずれかを指定する。
 3. データベースクラスタのディレクトリに既存のファイルがあると、削除されてしまう。
@@ -687,7 +687,7 @@ GRANT UPDATE ON test TO foo;
 REVOKE SELECT ON test FROM foo;
 ```
 ユーザfooがテーブルtestに関して操作する権限について適切なものを1つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_03)
+* [詳細 [●]](https://oss-db.jp/sample/silver_management_03/54_150629)
 
 1. テーブルtestを更新できるが、参照することはできない。
 2. テーブルtestを参照することも更新することもできない。
@@ -695,7 +695,7 @@ REVOKE SELECT ON test FROM foo;
 4. テーブルtestを参照することも更新することもできる。
 
 ### Q．ANALYZEに関する記述として適切なものを2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_03/50_150128)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_03/50_150128)
 1. テーブルの全データを解析するので、テーブルが大きいと時間が掛かる。
 2. テーブルの排他ロックを取得するため、実行中はデータへのアクセスができなくなる。
 3. ANALYZEコマンドあるいはVACUUMコマンドにより実行する。
@@ -703,7 +703,7 @@ REVOKE SELECT ON test FROM foo;
 5. オプション指定により、対象を、データベース内の全テーブル、あるいは、データベース内の特定のテーブルのみ、特定のテーブルの特定の列のみ、などに制限できる。
 
 ### Q．SQLのCOPY文について、最も適切な記述を2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_03/48_141119)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_03/48_141119)
 1. 標準SQLで定義されており、PostgreSQLをはじめとして、多くのRDBMSで利用できる。
 2. psqlの\copyメタコマンドは、内部的にSQLのCOPY文を実行する。
 3. COPY文を実行するには、データベースの管理者権限が必ず必要となる。
@@ -711,7 +711,7 @@ REVOKE SELECT ON test FROM foo;
 5. pg_dumpコマンドで作成したテキスト形式のバックアップからリストアするとき、デフォルトではCOPY文が利用される。
 
 ### Q．pg_dumpを使ったバックアップについて、適切な説明を2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_03/45_140903)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_03/45_140903)
 1. pg_dumpの実行にはデータベースのスーパーユーザー権限が必要である。
 2. テーブルのデータだけでなく、CREATE USERやCREATE ROLEで作成したユーザやロールのデータもバックアップできる。
 3. テーブルのデータだけでなく、GRANTやREVOKEで付与・剥奪したテーブルへのアクセス権限もバックアップできる。
@@ -719,7 +719,7 @@ REVOKE SELECT ON test FROM foo;
 5. バイナリ形式でバックアップを作成した場合、データのリストア先は同じアーキテクチャのサーバに制限される。
 
 ### Q．postgresql.confで設定する以下のパラメータのうち、変更を反映させるためにサーバの再起動が必要となるものを2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_03/43_140703)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_03/43_140703)
 1. port
 2. max_connections
 3. log_connections
@@ -727,7 +727,7 @@ REVOKE SELECT ON test FROM foo;
 5. search_path
 
 ### Q．PostgreSQLのユーザやロールの作成をOSのコマンドラインから実行する場合について、適切な記述を2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_03/42_140519)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_03/42_140519)
 1. ユーザの作成にはcreateuser、ロールの作成にはcreateroleコマンドを使う。
 2. createuserコマンドを実行するには、CREATEUSER権限が必要である。
 3. -d オプション付きで実行すると、新しいユーザにデータベース作成の権限が付与される。
@@ -735,7 +735,7 @@ REVOKE SELECT ON test FROM foo;
 5. -s オプション付きで実行すると、新しいユーザにスーパユーザ権限が付与される。
 
 ### Q．データベースクラスタの新規作成について、正しい記述をすべて選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_03/41_140415)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_03/41_140415)
 1. psqlコマンドから、CREATE CLUSTER文を実行することで作成できる。
 2. OSのコマンドプロンプトからinitdbコマンドを実行することで作成できる。
 3. OSのコマンドプロンプトからpg_ctl initdbコマンドを実行することで作成できる。
@@ -743,7 +743,7 @@ REVOKE SELECT ON test FROM foo;
 5. セキュリティ上の理由から、OSの管理者ユーザ(Linuxならroot)が作成すべきである。
 
 ### Q．テーブルのアクセス権について最も適切な説明を1つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_02/40_140414)
+* [詳細 [●]](https://oss-db.jp/sample/silver_management_02/40_140414)
 1. CREATE TABLEで作成された直後のテーブルにアクセス権があるのは、テーブルの所有者、つまりCREATE TABLEを実行したユーザだけである。
 2. テーブルのアクセス権をユーザに付与するにはALTER TABLE文を使う。
 3. テーブルのアクセス権をユーザに付与できるのはテーブルの所有者だけである。
@@ -751,7 +751,7 @@ REVOKE SELECT ON test FROM foo;
 5. テーブルの所有者であるにも関わらず、そのテーブルへのアクセス権がなく、SELECTできない、ということもあり得る。
 
 ### Q．pg_basebackupコマンドによるバックアップについて述べたものから、適切なものを2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_02/37_140120)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_02/37_140120)
 1. リストアするにはpg_restoreコマンドを利用する。
 2. バックアップ作成前にデータベースを停止する。
 3. ポイントインタイムリカバリ(PITR)用のベースバックアップとして利用できる。
@@ -759,16 +759,18 @@ REVOKE SELECT ON test FROM foo;
 5. データベース単位でのバックアップを取得できる。
 
 ### Q．ANALYZEについて適切な記述を2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_02/32_130806)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_02/32_130806)
 1. データベース全体を ANALYZE するには、OSのコマンドラインから pg_analyze コマンドを実行する。
 2. テーブル foo について ANALYZE するには、データベースに接続して以下のコマンドを実行する。
-3. ALTER TABLE foo ANALYZE;
-4. OSのコマンドラインから vacuumdb コマンドを実行することでデータベース全体をANALYZEすることができる。
-5. ANALYZEはテーブル内にどのようなデータが入っているかを調べる。
-6. ANALYZEはテーブルが何回SELECTされ、何回UPDATEされたか、といったアクセス頻度の情報を調べる。
+```
+ALTER TABLE foo ANALYZE;
+```
+3. OSのコマンドラインから vacuumdb コマンドを実行することでデータベース全体をANALYZEすることができる。
+4. ANALYZEはテーブル内にどのようなデータが入っているかを調べる。
+5. ANALYZEはテーブルが何回SELECTされ、何回UPDATEされたか、といったアクセス頻度の情報を調べる。
 
 ### Q．pg_dumpコマンドによるデータベースのバックアップについて、誤っているものを1つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_02/30_130422)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_02/30_130422)
 1. データベースクラスタ内の1つのデータベースのバックアップを取得できるが、データベースクラスタ全体のバックアップは取得できない。
 2. テーブルの定義だけ、テーブル内のデータだけ、テーブル定義とデータの両方、などバックアップの内容をオプションで指定できる。
 3. バックアップファイルのフォーマットはテキスト形式とバイナリ形式があり、バイナリ形式にもTAR形式や圧縮アーカイブ形式など複数種類がある。
@@ -776,7 +778,7 @@ REVOKE SELECT ON test FROM foo;
 5. pg_dumpで作成したバックアップファイルからリストアするには、ファイル形式に関わらずpg_restoreコマンドを使う。
 
 ### Q．SETコマンドで実行する設定の変更について、正しい記述を2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_02/27_130213)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_02/27_130213)
 1. postgresql.conf で設定するすべてのパラメータについて、SETコマンドで値を変更できる。
 2. SETコマンドでパラメータの値を変更した時、それがすぐに有効になるものと、pg_ctl reload などの追加処理をしなければ有効にならないものとがある。
 3. SETコマンドでパラメータの値を変更しても、psql のセッションを終了すると、値はすべて元に戻る。
@@ -784,7 +786,7 @@ REVOKE SELECT ON test FROM foo;
 5. SETコマンドによるパラメータ値の変更はシステムに重大な影響があるため、データベースのスーパーユーザだけが実行できる。
 
 ### Q．ポイントインタイムリカバリ(PITR)のベースバックアップの取得方法について正しいものを1つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_02/26_130130)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_02/26_130130)
 1. pg_dump コマンドを実行する
 2. pg_dumpall コマンドを実行する
 3. psql でデータベースに接続し、COPY コマンドを実行する
@@ -792,7 +794,7 @@ REVOKE SELECT ON test FROM foo;
 5. データベースを停止せずに、データベースクラスタ全体を tar コマンドなど OS 付属のコマンドを使ってコピーする
 
 ### Q．データベースの終了方法について適切なものを2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_02/24_121220)
+* [詳細 [●]](https://oss-db.jp/sample/silver_management_02/24_121220)
 1. コマンドラインから pg_ctl shutdown を実行することによりデータベースを終了できる
 2. コマンドラインから pg_ctl stop を実行することによりデータベースを終了できる
 3. psql でデータベースに接続し、\shutdown メタコマンドを実行することにより、データベースを終了できる
@@ -800,7 +802,7 @@ REVOKE SELECT ON test FROM foo;
 5. データベースの終了は、データベースの管理者ユーザ(多くの環境ではpostgres)のみが実行可能で、OSの管理者ユーザ(Linuxのroot)の権限では実行できない
 
 ### Q．postgresql.conf で設定するパラメータについて、正しい説明を2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_01/19_120815)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_01/19_120815)
 1. log_destination には、ログ出力先となるファイル名を指定する。
 2. logging_collector を on にすることで、標準エラー出力に送られたログメッセージをログファイルにリダイレクトできる。
 3. log_connections を on にすることで、クライアントからサーバへの接続試行がログに出力される。
@@ -808,7 +810,7 @@ REVOKE SELECT ON test FROM foo;
 5. log_line_prefix を on にすることで、ログ情報の出力時刻、ユーザ名、プロセスIDなど様々な付加情報がログファイルに出力される。
 
 ### Q．データベースクラスタ内のデータベースの一覧を調べたい。適切な方法をすべて選びなさい。なお、$ は OS のコマンドプロンプト、=> は psql のプロンプトである。
-* [詳細 []](https://oss-db.jp/sample/silver_management_01/15_120502)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_01/15_120502)
 1. $ psql --list
 2. $ pg_lsdb
 3. => SELECT datname FROM pg_database;
@@ -816,7 +818,7 @@ REVOKE SELECT ON test FROM foo;
 5. => \list
 
 ### Q．PostgreSQLサーバはIPアドレス 192.168.1.10 のサーバで動作しており、 pg_hba.conf の内容が以下である。
-* [詳細 []](https://oss-db.jp/sample/silver_management_01/14_120418)
+* [詳細 [●]](https://oss-db.jp/sample/silver_management_01/14_120418)
 ```
 local all all ident
 host all all 127.0.0.1/32 ident
@@ -832,7 +834,7 @@ host foo all 192.168.1.0/24 trust
 5. ユーザ hoge はデータベース foo にパスワードなしでアクセスできる
 
 ### Q．バキューム(VACUUM)機能に関する説明について、正しいものを2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_01/12_120215)
+* [詳細 [●]](https://oss-db.jp/sample/silver_management_01/12_120215)
 1. バキュームを実行するには、コマンドラインから vacuumdb コマンドを実行する
 2. 自動バキュームを実行するには、コマンドラインから autovacuumdb コマンドを実行する
 3. バキュームにより削除領域が回収されると、通常はデータベースファイルのサイズが小さくなる
@@ -840,19 +842,15 @@ host foo all 192.168.1.0/24 trust
 5. 自動バキュームでは、指定した時間おきに、すべてのテーブルに対してバキュームを実行する
 
 ### Q．データベースの管理者ユーザ postgres のパスワードを忘れてしまったため、postgres ユーザでデータベースに接続できなくなった。postgres ユーザのパスワードを再設定したいがどうしたら良いか。
-* [詳細 []](https://oss-db.jp/sample/silver_management_01/10_111222)
+* [詳細 [●]](https://oss-db.jp/sample/silver_management_01/10_111222)
 1. そのような手段はないので、データベースを新規に作成するしかない。
 2. データベースの実行ファイルを再インストールすれば、パスワードはデフォルト値に戻る。
 3. OS の管理者ユーザ(root)であれば、パスワードなしに postgres として接続できるので、接続後にパスワードを再設定すれば良い。
-postgresql.conf の先頭に
-no_password = 1
-という設定を追加すれば、パスワードなしに postgres として接続できるので、接続後にパスワードを再設定すれば良い。
-4. pg_hba.conf の先頭に
-local all postgres ident
-という設定を追加すれば、パスワードなしに postgres として接続できるので、接続後にパスワードを再設定すれば良い。
+4. postgresql.conf の先頭に no_password = 1 という設定を追加すれば、パスワードなしに postgres として接続できるので、接続後にパスワードを再設定すれば良い。
+5. pg_hba.conf の先頭に local all postgres ident という設定を追加すれば、パスワードなしに postgres として接続できるので、接続後にパスワードを再設定すれば良い。
 
 ### Q．PostgreSQL のバックアップ方法について適切なものを2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_management_01/06_110928)
+* [詳細 [●]](https://oss-db.jp/sample/silver_management_01/06_110928)
 1. pg_dumpall コマンドで作成したバックアップファイルは、pg_restore コマンドでリストアできる。
 2. pg_dump コマンドで作成したバックアップをリストアするときに使うコマンドは、バックアップ作成時のオプションによって異なる。
 3. pg_dumpall コマンドでバックアップを作成する前に、データベースサーバを停止する必要がある。
@@ -860,7 +858,7 @@ local all postgres ident
 5. ポイントインタイムリカバリ(PITR)で使用するバックアップを作成するには、データベースサーバを停止する必要がある。
 
 ### Q．psql でデータベースに接続している。テーブル foo の列名および列属性の一覧を表示するための適切な方法はどれか。
-* [詳細 []](https://oss-db.jp/sample/silver_management_01/05_110912)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_01/05_110912)
 1. desc foo;
 2. \d foo
 3. \! foo
@@ -868,12 +866,13 @@ local all postgres ident
 5. select * from pg_tables where tablename = 'foo';
 
 ### Q．データベースlpijapanのバックアップをテキスト形式でbackup.sqlに取得したい。適切なコマンドを2つ選びなさい。ただし、postgresはデータベースの管理者ユーザである。
-* [詳細 []](https://oss-db.jp/sample/silver_management_01/02_120210)
+* [詳細 [×]](https://oss-db.jp/sample/silver_management_01/02_120210)
 1. pg_dump -U postgres lpijapan > backup.sql
 2. pg_dump -U postgres -f backup.sql lpijapan
 3. pg_dump -U postgres -Ft lpijapan > backup.sql
 4. psql -U postgres lpijapan > backup.sql
 5. psql -U postgres --dump lpijapan > backup.sql
+
 
 ## ３．開発/SQL（32％）
 ### Q．PostgreSQLのバージョン10からサポートされた宣言的パーティショニングと、従来のバージョンからサポートされている継承を利用したパーティショニングの説明として、適切なものを３つ選びなさい。なお、親テーブルの名前は parent、パーティションの名前は partition1, partition2, partition3… だとします。
