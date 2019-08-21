@@ -1,8 +1,3 @@
-# 参照
-* [サンプル問題](https://oss-db.jp/sample)
-* [OSS-DB入門](https://oss-db.jp/dojo#dojo_nyumon)
-* [オススメ！OSS-DB情報](https://oss-db.jp/dojo#dojo_column)
-
 # OSS-DB Silver
 ## 一般知識（16％）
 ### OSS-DBの一般的特徴　【重要度：4】
