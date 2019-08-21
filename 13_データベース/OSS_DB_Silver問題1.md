@@ -1,3 +1,9 @@
+# 参照
+* [サンプル問題](https://oss-db.jp/sample)
+* [OSS-DB入門](https://oss-db.jp/dojo#dojo_nyumon)
+* [オススメ！OSS-DB情報](https://oss-db.jp/dojo#dojo_column)
+
+# OSS-DB Silver問題
 ## １．概要 
 ### Q．データモデリングの一般的な手順はどれか
 1. ［対象世界］→＜変換＞→［論理データモデル］→＜抽象化＞→［概念データモデル］
@@ -876,7 +882,7 @@ host foo all 192.168.1.0/24 trust
 
 ## ３．開発/SQL（32％）
 ### Q．PostgreSQLのバージョン10からサポートされた宣言的パーティショニングと、従来のバージョンからサポートされている継承を利用したパーティショニングの説明として、適切なものを３つ選びなさい。なお、親テーブルの名前は parent、パーティションの名前は partition1, partition2, partition3… だとします。
-* [詳細 []](https://oss-db.jp/sample/silver_development_06/105_190731)
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_06/105_190731)
 1. どちらの方法でも、親テーブルの作成は通常の CREATE TABLE parent… で行い、パーティションを使うための特別なオプション指定は必要ない。
 2. パーティションを作成するときのコマンドは、宣言的パーティショニングでは CREATE TABLE partition1 PARTITION OF parent… 継承を利用する場合は CREATE TABLE partition1 () INHERITS (parent) で、どちらもCREATE TABLEを使用する。
 3. どちらの方法でも、INSERT文の実行時にデータの格納先となるパーティションが自動的に作成することはなく、事前にパーティションを作成しておく必要がある。
@@ -884,7 +890,7 @@ host foo all 192.168.1.0/24 trust
 5. 宣言的パーティショニングではすべてのパーティションは同じ列を持っていて、異なる列を追加できないが、継承を利用したパーティショニングでは、パーティションごとに異なる列を追加できる。
 
 ### Q．PostgreSQLのバージョン11で追加されたプロシージャ(PROCEDURE)と、従来のバージョンからサポートされている関数(FUNCTION)の違いの説明として適切なものを2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_06/103_190626)
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_06/103_190626)
 1. PROCEDURE は CREATE PROCEDURE コマンドで、FUNCTION は CREATE FUNCTION コマンドで作成する。
 2. PROCEDURE は標準 SQL で定義されているが、FUNCTION は PostgreSQL 独自の拡張機能である。
 3. void型の FUNCTION は廃止予定であり、PROCEDURE に置き換えることが推奨されている。
@@ -898,23 +904,21 @@ select current_timestamp;
 select current_timestamp;
 ```
 * このとき、2回とも同じ値が返った。考えられる理由として最も適切なものを選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_06/102_190612)
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_06/102_190612)
 1. サーバマシンのハードウェアクロックが故障している。
 2. サーバマシンで timed を実行していないため、時刻が正確に保たれていない。
 3. 2つのSELECT文を間を空けず、連続して素早く実行したため、同じ時刻が返った。
 4. これらのSELECTを実行する直前に BEGIN コマンドを実行していた。
 5. 同じセッション内から実行すれば、current_timestamp は必ず同じ値を返す。
 
-### Q．
-* [詳細 []](https://oss-db.jp/sample/silver_development_06/101_190529)
+### Q．下記の手順でパーティションテーブルを作成した。このときの動作として正しいものを1つ選びなさい。
 ```
 CREATE TABLE table1(列定義)  PARTITION BY…
 CREATE TABLE partition1 PARTITION OF table1 FOR VALUES…
 CREATE TABLE partition2 PARTITION OF table1 FOR VALUES…
 …
 ```
-の手順でパーティションテーブルを作成した。このときの動作として正しいものを1つ選びなさい。
-
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_06/101_190529)
 1. テーブルへのINSERTで適切な挿入先となるパーティションが作成されていない場合、自動的に新しいパーティションが作成され、そこにデータが挿入される。
 2. UPDATEの結果、そのデータが別のパーティションに移ることになる場合は、エラーとなって実行されない。
 3. table1にインデックスを作成すれば、それがすべてのパーティションに適用される。
@@ -922,7 +926,7 @@ CREATE TABLE partition2 PARTITION OF table1 FOR VALUES…
 5. 一旦作成したパーティションpartition1は、パーティションが空でなければ削除できない。
 
 ### Q．テーブルのパーティショニングを使うことで得られる可能性のある利点として、適切なものを選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_05/100_190515)
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_05/100_190515)
 1. データが占めるディスク容量を削減する。
 2. 問い合わせの性能を大幅に向上させる。
 3. 頻繁にアクセスする行と、そうでない行を、別のディスク領域に配置する。
@@ -930,7 +934,7 @@ CREATE TABLE partition2 PARTITION OF table1 FOR VALUES…
 5. DELETEの代わりにDROP TABLEを実行して、大量データの一括削除を高速化する。
 
 ### Q．テーブルスペース(tablespace)の使用方法として正しいものを３つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_05/99_190423)
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_05/99_190423)
 1. CREATE DATABASE で作成する新しいデータベースを、デフォルトとは異なるテーブルスペースに配置する。
 2. CREATE SCHEMA で作成する新しいスキーマを、デフォルトとは異なるテーブルスペースに配置する。
 3. CREATE TABLE で作成する新しいテーブルを、デフォルトとは異なるテーブルスペースに配置する。
@@ -938,24 +942,23 @@ CREATE TABLE partition2 PARTITION OF table1 FOR VALUES…
 5. CREATE INDEX で作成する新しいインデックスを、元となるテーブルとは異なるテーブルスペースに配置する。
 
 ### Q．テーブルxxxの主キー列はinteger型のid、テーブルyyyの主キー列はinteger型のidである。xxxとyyyの両方に同じidの行がある場合に、それらの行をすべてxxxから削除したい。例えば、select id from xxx  が1と2と3、select id from yyy が2と3と4を返したとして、idが2の行と3の行をxxxから削除する。これを実現するSQLはどれか。
-* [詳細 []](https://oss-db.jp/sample/silver_development_05/97_190328)
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_05/97_190328)
 1. DELETE FROM xxx, yyy WHERE xxx.id = yyy.id;
 2. DELETE FROM xxx, yyy WHERE xxx.id IN (yyy.id);
 3. DELETE FROM xxx JOIN yyy USING xxx.id = yyy.id;
 4. DELETE FROM xxx WHERE id IN (SELECT id FROM yyy);
 5. DELETE FROM xxx WHERE EXISTS (SELECT id FROM yyy);
 
-### Q．以下のSQLを順次実行した。
-* [詳細 []](https://oss-db.jp/sample/silver_development_05/95_190129)
+### Q．以下のSQLを順次実行した。このとき、テーブルfooには何行のデータが含まれるか。
 ```
 CREATE TABLE foo (id INTEGER PRIMARY KEY, val VARCHAR);
 INSERT INTO foo (id, val) VALUES (1, 'a'), (2, 'b'), (3, 'c');
 INSERT INTO foo (id, val) VALUES (3, 'x'), (4, 'y'), (5, 'z');
 ```
-* このとき、テーブルfooには何行のデータが含まれるか。
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_05/95_190129)
 
 ### Q．トランザクション内でLOCK TABLE sample;を実行し、テーブルsampleの排他ロックを取得した。このロックが解放されるのはどういう場合か。正しいものを3つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_05/91_180925)
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_05/91_180925)
 1. COMMIT; を実行したとき。
 2. RELEASE TABLE sample; を実行したとき。
 3. ROLLBACK; を実行したとき。
@@ -963,7 +966,7 @@ INSERT INTO foo (id, val) VALUES (3, 'x'), (4, 'y'), (5, 'z');
 5. Ctrl+Dあるいは \q を入力して psql のセッションを終了したとき。
 
 ### Q．反復不能読み取り(nonrepeatable read)の説明として適切なものを2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_05/90_180828)
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_05/90_180828)
 1. 他のトランザクションがまだコミットしていないデータを読み取る。
 2. 同じ問い合わせを繰り返し実行したときに、返される行の数が前と異なる。
 3. 同じデータを繰り返し読んだときに、データの内容が前と異なる。
@@ -971,7 +974,7 @@ INSERT INTO foo (id, val) VALUES (3, 'x'), (4, 'y'), (5, 'z');
 5. トランザクション分離レベルをリードコミッティド(read committed)にしたら発生しない。
 
 ### Q．トランザクションの開始、終了に使用される文として間違っているものを1つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_05/89_180724)
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_05/89_180724)
 1. BEGIN
 2. COMMIT
 3. ROLLBACK
@@ -979,7 +982,7 @@ INSERT INTO foo (id, val) VALUES (3, 'x'), (4, 'y'), (5, 'z');
 5. STOP TRANSACTION
 
 ### Q．テーブルxxの文字列型の列aaの3文字目から6文字目までの4文字を取得するSQL文として適切なものをすべて選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_05/87_180528)
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_05/87_180528)
 1. SELECT substring(aa, 3, 4) FROM xx;
 2. SELECT substring(aa, 3, 6) FROM xx;
 3. SELECT substring(aa from 3 to 6) FROM xx;
@@ -987,7 +990,7 @@ INSERT INTO foo (id, val) VALUES (3, 'x'), (4, 'y'), (5, 'z');
 5. SELECT substring(aa, 4 from 3) FROM xx;
 
 ### Q．次のPL/pgSQLの関数は、テーブルtestのsome_columnの値が引数valより大きい行の数を返すものである。空欄（ _____ ）に入るキーワードは何か。
-* [詳細 []](https://oss-db.jp/sample/silver_development_05/84_180226)
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_05/84_180226)
 ```
 CREATE FUNCTION count_test(val INTEGER) RETURNS INTEGER AS
 DECLARE
@@ -1004,15 +1007,18 @@ LANGUAGE plpgsql;
 ```
 
 ### Q．DROP SCHEMA foo の結果として適切なものを１つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_05/83_180129)
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_05/83_180129)
 1. PostgreSQLには DROP SCHEMA コマンドが存在しないのでエラーになる。スキーマを削除するにはDROP USER foo を実行する。
 2. ユーザ foo が存在していたらエラーになる。
 3. スキーマ foo 内にオブジェクトが存在していたら、エラーになる。
 4. スキーマ foo 内にオブジェクトが存在していたら、自動的に publicに移動される。
 5. スキーマ foo と、その中に存在するオブジェクトすべてが削除される。
 
-### Q．以下のSQL文を実行した。CREATE TABLE test (id SERIAL, val TEXT); これについて正しい説明をすべて選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_05/82_171225)
+### Q．以下のSQL文を実行した。これについて正しい説明をすべて選びなさい。
+```
+CREATE TABLE test (id SERIAL, val TEXT);
+```
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_05/82_171225)
 1. id列には自動的にNOT NULL制約が付与される。
 2. id列には自動的にUNIQUE制約が付与される。
 3. id列には自動的にインデックスが作成される。
@@ -1020,7 +1026,7 @@ LANGUAGE plpgsql;
 5. INSERT文でid列の値をNULLと指定するとエラーになる。
 
 ### Q．あるテーブルに、文レベルのBEFORE INSERTトリガーを2つ定義した。この場合の動作について正しいものを選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_05/81_171127)
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_05/81_171127)
 1. 1つ目のトリガーのみが実行される。
 2. 2つ目のトリガーのみが実行される。
 3. 1つ目のトリガー、2つ目のトリガーの順で両方が実行される。
@@ -1028,14 +1034,15 @@ LANGUAGE plpgsql;
 5. 両方のトリガーが実行されるが、どちらが先かは場合による。
 
 ### Q．id列を主キーとするテーブルを作成する正しい方法を2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_04/79_171002)
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_04/79_171002)
 1. CREATE TABLE test (PRIMARY KEY id INTEGER, value TEXT);
 2. CREATE TABLE test (id INTEGER PRIMARY KEY, value TEXT);
 3. CREATE TABLE test (id INTEGER, value TEXT, PRIMARY KEY=id);
 4. CREATE TABLE test (id INTEGER, value TEXT, PRIMARY KEY id);
 4. CREATE TABLE test (id INTEGER, value TEXT, PRIMARY KEY (id));
 
-### Q．以下の一連のSQL文でテーブルを作成し、データを挿入、更新した。
+### Q．以下の一連のSQL文でテーブルを作成し、データを挿入、更新した。最後のSELECT文が返す値は何か。
+* [詳細 []](https://oss-db.jp/sample/silver_development_04/76_170703)
 ```
 create table sample (id integer, vali integer, vals text);
 insert into sample (id, vali, vals) values (1, null, 'a'), (2, 2, 'b'), (3, 3, 'c'), (4, 4, 'd'), (5, 5, null);
@@ -1044,62 +1051,52 @@ update sample set vals = 'x' where vali <= 2;
 update sample set vali = 10 where vals <> 'x';
 select sum(vali) from sample;
 ```
-* 最後のSELECT文が返す値は何か。
 
 ### Q．PostgreSQLのトランザクション分離レベルの説明として、適切なものを2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_04/73_170403)
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_04/73_170403)
 1. Read Uncommittedでは、他のトランザクションが更新した後、まだcommitしていないデータを読めてしまう。
 2. Read Committedでは、トランザクション内で同じSELECT文を2回続けて実行しても、異なる結果が返されることがある。
 3. Repeatable Readでは、トランザクション内で同じSELECT文を2回続けて実行したら、必ず同じ結果が返される。
 4. Serializableは読み取りトランザクション専用の分離レベルである。
 
-### Q．テーブルtblの列str1とstr2はいずれもTEXT型である。str1の先頭の1文字とstr2を結合する、例えばstr1が’ABC’、str2が’XYZ’なら’AXYZ’という文字列を取得するには、次のSQLの空欄に何を入れれば良いか。
-```
-SELECT ________ FROM tbl;
-```
-* 適切なものを2つ選びなさい。
-1. substring(str1,1,1) + str2
-2. substring(str1,1) || str2
-3. concat(substring(str1 from 1 for 1), str2)
-4. substring(str1 from 1) + str2
-5. concat(substring(str1 for 1), str2)
-
 ### Q．10を3で割り算した時の剰余(余り、この場合は1になる)を求めるものとして、適切なものをすべて選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_04/68_161017)
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_04/68_161017)
 1. select 10 mod 3;
 2. select mod(10, 3);
 3. select 10 % 3;
 4. select %(10, 3);
 
-### Q．以下の一連のSQL文を実行した。
-* [詳細 []](https://oss-db.jp/sample/silver_development_04/67_160920)
+### Q．以下の一連のSQL文を実行した。最後のSELECT文が返す値は何か。数値を答えよ。
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_04/67_160920)
 ```
 CREATE TABLE test (x INTEGER);
 INSERT INTO test(x) VALUES (null), (1), (2), (3);
 SELECT sum(2) FROM test;
 ```
-* 最後のSELECT文が返す値は何か。数値を答えよ。
 
 ### Q．次のコマンドで新しいシーケンスを作成した。
-* [詳細 []](https://oss-db.jp/sample/silver_development_04/64_160627)
 ```
 CREATE SEQUENCE seq_test MINVALUE 1;
 ```
-* ここで、次のSELECT文を実行したら何が起きるか。
+ここで、次のSELECT文を実行したら何が起きるか。
 ```
 SELECT * FROM seq_test;
 ```
-* 適切なものを1つ選びなさい。
+適切なものを1つ選びなさい。
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_04/64_160627)
 1. seq_testはテーブルではなくてシーケンスなので、エラーとなる。
 2. 既存のテーブルseq_testが存在すればその内容が表示され、なければテーブルが見つからないというエラーになる。
 3. シーケンスseq_testの現在値である1が返される。
 4. シーケンスseq_testに関する様々な属性値が返される。
 
-### Q．INSERT INTO foo (n) VALUES (3);というINSERT文が実行された時に、テーブルfooではなく、テーブルbarにINSERTされる、つまり内部的に　INSERT INTO bar (n) VALUES (3);が実行されるようにしたい。CREATE RULE foobar AS ON INSERT TO foo DO INSTEAD INSERT INTO bar (n) VALUES (___.n);というルールを作成することで、これが実現できるが、下線部に入る文字列は何か。
-* [詳細 []](https://oss-db.jp/sample/silver_development_04/63_160516)
+### Q．INSERT INTO foo (n) VALUES (3); というINSERT文が実行された時に、テーブルfooではなく、テーブルbarにINSERTされる、つまり内部的に　INSERT INTO bar (n) VALUES (3); が実行されるようにしたい。下記のルールを作成することで、これが実現できるが、下線部に入る文字列は何か。
+```
+CREATE RULE foobar AS ON INSERT TO foo DO INSTEAD INSERT INTO bar (n) VALUES (___.n); 
+```
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_04/63_160516)
 
 ### Q．更新可能ビューの説明として間違っているものを1つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_04/62_160406)
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_04/62_160406)
 1. 元となるSELECT文のFROM句に複数のテーブルが記述されているビューは更新できない。
 2. 元となるSELECT文のFROM句に記述されているテーブルに主キーが定義されていない場合、そのビューは更新できない。
 3. 元となるSELECT文がSUMなどの集約関数を使っているビューは更新できない。
@@ -1107,7 +1104,7 @@ SELECT * FROM seq_test;
 5. ビューにINSERTできた行が、SELECTで参照できるとは限らない。
 
 ### Q．インデックスについて間違った説明を1つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_04/61_160307)
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_04/61_160307)
 1. 列にPRIMARY KEYの制約をつけると、自動的にインデックスが作成される。
 2. 列にUNIQUEの制約をつけると、自動的にインデックスが作成される。
 3. 列にNOT NULLの制約をつけると、自動的にインデックスが作成される。
@@ -1115,7 +1112,7 @@ SELECT * FROM seq_test;
 5. デフォルトではB-treeインデックスが作成される。
 
 ### Q．行やテーブルのロックに関して、適切な記述を1つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_03/57_151029)
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_03/57_151029)
 1. トランザクションブロック内でUPDATE文を実行すると、更新対象の行は自動的にロックされる。
 2. トランザクションブロック内で、テーブル内のすべての行を更新するUPDATE文を実行すると、自動的にテーブルロックがかかる。
 3. テーブルロックは行ロックより優先するので、別のユーザがテーブル内のデータに行ロックをしていても、LOCK TABLEでテーブル全体をロックすることができる。
@@ -1123,7 +1120,7 @@ SELECT * FROM seq_test;
 5. 2人のユーザが同じテーブルの同じ行を同時に更新しようとすると、デッドロックが発生する。
 
 ### Q．テーブルhumanの列heightには身長、weightには体重がそれぞれNUMERIC型で入っている。 それぞれの行のデータについてBMIを求めるSELECT文として正しいものをすべて選びなさい。なお、BMIは体重を身長の2乗で割ったものです。
-* [詳細 []](https://oss-db.jp/sample/silver_development_03/53_150612)
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_03/53_150612)
 1. SELECT weight / height / height FROM human;
 2. SELECT weght / height * height FROM human;
 3. SELECT weight / height ^ 2 FROM human;
@@ -1131,7 +1128,7 @@ SELECT * FROM seq_test;
 5. SELECT weight / power(height, 2) FROM human;
 
 ### Q．関数定義について適切な記述を2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_03/51_150324)
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_03/51_150324)
 1. 値を返す関数のプログラムを定義する時はCREATE FUNCTION文を使う。
 2. 値を返さない関数のプログラムを定義する時はCREATE PROCEDURE文を使う。
 3. 定義済みの関数のプログラムを変更する時は、新しいプログラムをALTER FUNCTION文により設定する。
@@ -1139,7 +1136,7 @@ SELECT * FROM seq_test;
 5. 関数は必ずしもPL/pgSQLのような手続き言語で作成する必要はなく、SELECT文やUPDATE文などのSQLで記述することもできる。
 
 ### Q．PostgreSQLにおけるスキーマについて、適切な記述を2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_03/50_150128)
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_03/50_150128)
 1. テーブル名の指定などでスキーマ名を省略すると、defaultという名前のスキーマを指定したものとみなされる。
 2. あるスキーマにテーブルを新規に作成するには、そのスキーマに対するCREATE権限が必要である。
 3. スキーマを新規に作成するには、データベースに対するCREATE権限が必要である。
@@ -1147,7 +1144,7 @@ SELECT * FROM seq_test;
 5. スキーマの下にスキーマを作成することで、最大32階層までのスキーマを作成できる。
 
 ### Q．PostgreSQLのトリガー機能について、適切な記述を2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_03/48_141030)
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_03/48_141030)
 1. SELECT文やINSERT文の実行の前に、トリガーとして定義したプログラムが実行される。
 2. CREATE TRIGGER文の中で、PL/pgSQLを使ってトリガーのコードを定義する。
 3. PL/pgSQLに限らず、PL/Perlなど、他の手続き言語でもトリガーを定義できる。
@@ -1155,19 +1152,18 @@ SELECT * FROM seq_test;
 5. 1つのテーブルの1つのイベント(例えば、BEFORE INSERT FOR EACH ROW)に定義できるトリガーは1つだけである。
 
 ### Q．ビュー(view)に関する説明として最も適切なものを2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_03/47_141030)
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_03/47_141030)
 1. ビューに対するSELECT権限があっても、そのビューを構成するテーブルに対するSELECT権限がなければ、ビューからデータをSELECTすることはできない。
 2. ビューを作成するには、そのビューを構成するテーブルあるいはテーブルの列に対するCREATE VIEW権限が必要である。
 3. 既存のテーブルと同じ名前のビューを作ることはできない。
 4. PostgreSQLの以前のバージョンでは、ビューの更新にはトリガー(trigger)あるいはルール(rule)を定義する必要があったが、バージョン9.3以降では、(ビューの定義によっては)トリガーやルールが定義されていないくても更新が可能である。
 5. ビューからの検索を高速にするために、ビューに対してインデックスを作成することができる。
 
-### Q．以下のSQL文でテーブルを作成した。
+### Q．以下のSQL文でテーブルを作成した。このテーブルのid列に一意のインデックスを作成したい。以下のSQL文で適切なものを2つ選びなさい。
 ```
 CREATE TABLE sample (id INTEGER, val TEXT);
 ```
-* このテーブルのid列に一意のインデックスを作成したい。以下のSQL文で適切なものを2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_03/46_141001)
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_03/46_141001)
 1. ALTER TABLE sample ADD UNIQUE INDEX ON id;
 2. ALTER TABLE sample ALTER COLUMN id UNIQUE;
 3. ALTER TABLE sample ADD UNIQUE(id);
@@ -1175,7 +1171,7 @@ CREATE TABLE sample (id INTEGER, val TEXT);
 5. CREATE INDEX sample_id_unique ON sample(id);
 
 ### Q．論理値型(BOOLEAN型)に関する適切な記述を2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_03/44_140812)
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_03/44_140812)
 1. 論理値型の列の値としては、キーワードのTRUEとFALSEの他に、文字列の’YES’と’NO’、整数の1と0などを設定することができる。
 2. FALSEとNULLは同等である。
 3. SELECT文で値を表示すると、INSERTやUPDATEでの設定で使った値に関わらず、tあるいはfと表示される。
@@ -1185,7 +1181,7 @@ SELECT * FROM table_name WHERE bo;
 と書けば良い。
 
 ### Q．次のDDLでテーブルtestを作成した。このテーブルのval列についての説明から適切なものを1つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_02/33_131008)
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_02/33_131008)
 ```
 CREATE TABLE test(id INTEGER, val VARCHAR(10));
 ```
@@ -1195,17 +1191,18 @@ CREATE TABLE test(id INTEGER, val VARCHAR(10));
 を実行したが、11文字目以降は自動的に切り捨てられ、val列には’ABCDEFGHIJ’という値が保存された。
 3. INSERT INTO test(val) VALUES(’あいうえお’);
 を実行したが、サーバの文字コードがUTF8であり、これは15バイトの長さだったため、val列には’あいう’(9バイト)という値が保存された。
-4. INSERT INTO test(val) VALUES(123); を実行したら、val列には’123’という文字列が保存された。
-5. UPDATE test SET val = id; を実行したが、文法エラーとなった。
+4. INSERT INTO test(val) VALUES(123); 
+を実行したら、val列には’123’という文字列が保存された。
+5. UPDATE test SET val = id; 
+を実行したが、文法エラーとなった。
 
-### Q．以下の一連のSQL文を実行した。
-* [詳細 []](https://oss-db.jp/sample/silver_development_02/29_130227)
+### Q．以下の一連のSQL文を実行した。最後のSELECT文が返すデータについて、以下の説明から正しいものを1つ選びなさい。
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_02/29_130227)
 ```
 CREATE TABLE test(id INTEGER, val TEXT);
 INSERT INTO test VALUES (1, ‘あいうえお’);
 SELECT char_length(val) FROM test WHERE id = 1;
 ```
-* 最後のSELECT文が返すデータについて、以下の説明から正しいものを1つ選びなさい。
 1. 関数の使い方が正しくないのでエラーになる。
 2. WHERE条件にマッチする行がないので、何も返らない。
 3. char_length関数は文字数を返すので5が返る。
@@ -1213,7 +1210,7 @@ SELECT char_length(val) FROM test WHERE id = 1;
 5. char_length関数はクライアント側の文字列のバイト数を返すので、クライアントの文字セットがEUCやSJISであれば10が、UTF8であれば15が返る。
 
 ### Q．テーブルに関する以下の説明について正しいものを2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_02/28_130227)
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_02/28_130227)
 1. テーブルを新しく作成するにはCREATETABLE権限が必要である。
 2. ALTER TABLEでテーブルにUNIQUE制約を追加することはできるが、PRIMARY KEY制約を追加することはできない。
 3. ALTER TABLEでテーブルの列にデフォルト値(DEFAULT)を設定あるいは変更することができるが、これにより既存のデータの列の値が変更されることはない。
@@ -1221,7 +1218,7 @@ SELECT char_length(val) FROM test WHERE id = 1;
 5. テーブルの所有者はそのテーブルに関するすべての権限を有しているので、自分自身についてテーブルのSELECT権を剥奪(REVOKE)しても、引き続き、そのテーブルからSELECTすることができる。
 
 ### Q．PostgreSQLのデータ型について正しい説明を2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_02/27_130227)
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_02/27_130227)
 1. 整数型には2バイトのSHORT、4バイトのINT、8バイトのLONGがある。
 2. 整数あるいは小数を10進数で表すには、NUMBER型あるいはNUMERIC型を利用できる。
 3. 可変長の文字列を表すVARCHAR型およびCHARACTER VARYING型では、その最大長をバイト単位で指定する。
@@ -1229,14 +1226,14 @@ SELECT char_length(val) FROM test WHERE id = 1;
 5. 論理値型のBOOLEANでは真偽を表すのにTRUE、FALSEというキーワードを利用できるほか、'y', 'n', 't', 'f', '1', '0' といった文字列も利用できる。
 
 ### Q．PostgreSQLのスキーマについて、最も適切な記述を2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_02/25_130220)
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_02/25_130220)
 1. すべてのテーブルはいずれかのスキーマに所属する。
 2. スキーマは階層化できるので、SELECT * FROM schemax.subschema1.subschema2.tablename;のように深いスキーマのテーブルからSELECTすることもあり得る。
 3. SELECT * FROM tablename; のようにスキーマ名を指定せずにテーブル名を指定すると、publicスキーマを指定したものと見なされる。
 4. SELECT * FROM tablename; のようにスキーマ名を指定せずにテーブル名を指定すると、ユーザ名と同じ名前のスキーマを指定したものと見なされる。
 5. ALTER SCHEMA文でスキーマの名前や所有者を変更することができる。
 
-### Q．次のような2つのテーブル t1 と t2 がある。
+### Q．次のような2つのテーブル t1 と t2 がある。いずれも、id列はINTEGER型、val列はTEXT型である。
 ```
 => select * from t1;
 
@@ -1253,20 +1250,19 @@ id	|	val
 1	|	yyy
 3	|	zzz
 (3 行)
-いずれも、id列はINTEGER型、val列はTEXT型である。
+```
 次のSELECT文を実行した時に返される行数はいくつか。
-
+```
 select * from t1 full join t2 using (id);
 ```
-* [詳細 []](https://oss-db.jp/sample/silver_development_02/24_130124)
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_02/24_130124)
 1. 1行
 2. 2行
 3. 3行
 4. 4行
 5. 5行
 
-### Q．psqlでデータベースに接続し、次の一連のSQLを実行した。
-* [詳細 []](https://oss-db.jp/sample/silver_development_02/23_130110)
+### Q．psqlでデータベースに接続し、次の一連のSQLを実行した。2つ目のINSERTで、id とすべきところを間違って idd としてしまったため、エラーになった。最後のCOMMITを実行した後の状態について正しく述べているものを2つ選びなさい。
 ```
 CREATE TABLE test (id INTEGER, val TEXT);
 START TRANSACTION;
@@ -1274,9 +1270,8 @@ INSERT INTO test (id, val) VALUES (1, ‘abc’);
 INSERT INTO test (idd, val) VALUES (2, ‘pqr’);
 INSERT INTO test (id, val) VALUES (3, ‘xyz’);
 COMMIT;
-
-2つ目のINSERTで、id とすべきところを間違って idd としてしまったため、エラーになった。最後のCOMMITを実行した後の状態について正しく述べているものを2つ選びなさい。
 ```
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_02/23_130110)
 1. test表にはデータが1行もない
 2. test表にはデータが1行だけある
 3. test表にはデータが2行ある
@@ -1284,24 +1279,22 @@ COMMIT;
 5. COMMITは正常終了する
 
 ### Q．2つのクライアント(AとBとします)が同じテーブルTを更新するためにロックを取得しようとしています。以下の記述から正しいものを2つ選択しなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_01/19_121011)
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_01/19_121011)
 1. クライアントAは行Xを更新するために行ロックを取得した。クライアントBも同じ行Xを更新したいが、行ロックを取得できないのでクライアントAの処理が終わるまで待たされる。
 2. クライアントAは行Xを更新するために行ロックを取得した。クライアントBはこれと異なる行Yを更新したいが、YがたまたまXと同じデータブロックにあったので、行ロックは取得できず、クライアントAの処理が終わるまで待たされた。log_connections を on にすることで、クライアントからサーバへの接続試行がログに出力される。
 3. クライアントAはテーブルTの50％の行を更新するために、それらの行のロックを取得したところ、ロックエスカレーションが発生して自動的にテーブルロックに移行した。このためクライアントBは同じテーブルTのどの行も更新できなくなった。
 4. クライアントAはテーブルTのすべての行を独占的に更新するため LOCK TABLE T;により、ACCESS EXCLUSIVEモードでのロックを取得した。このロックが解放されるまで、クライアントBはテーブルTを更新できないが、SELECTだけなら実行できる。
 5. クライアントAはテーブルTの行Xを更新するためにロックを取得した。クライアントBは同じテーブルTのテーブルロックを取得するために LOCK TABLE T; を実行したが、これはAが取得した行ロックが解放されるまで待たされる。
 
-### Q．あるクライアントで次の一連のSQLを実行する。
-* [詳細 []](https://oss-db.jp/sample/silver_development_01/15_120405)
+### Q．あるクライアントで次の一連のSQLを実行する。別のクライアントから、これとほぼ同時に実行したときに、デッドロックが発生する可能性のあるトランザクションはどれか。A～Eの選択肢から2つ選択せよ。
 ```
 BEGIN;
 UPDATE table1 SET val1 = 100 WHERE id1 = 1;
 UPDATE table1 SET val1 = 200 WHERE id1 = 2;
 UPDATE table2 SET val2 = 300 WHERE id2 = 3;
 COMMIT;
-
-別のクライアントから、これとほぼ同時に実行したときに、デッドロックが発生する可能性のあるトランザクションはどれか。A～Eの選択肢から2つ選択せよ。
 ```
+* [詳細 []](https://oss-db.jp/sample/silver_development_01/15_120405)
 1. 
 ```
 BEGIN;
@@ -1339,35 +1332,29 @@ COMMIT;
 ```
 
 ### Q．次の SQL 文のうち、エラーにならないものを2つ選びなさい。
-* [詳細 []](https://oss-db.jp/sample/silver_development_01/14_120223)
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_01/14_120223)
 1. SELECT current_date();
 2. SELECT current_time();
 3. SELECT current_time(2);
 4. SELECT current_timestamp();
 5. SELECT now();
 
-### Q．以下の SQL 文でテーブルを作成し、多数の行を挿入した。
-* [詳細 []](https://oss-db.jp/sample/silver_development_01/09_111125)
+### Q．以下の SQL 文でテーブルを作成し、多数の行を挿入した。ここで、id が 30 以下のすべてのデータについて、sales の値を NULL にしたい。正しい SQL 文を選びなさい。
 ```
 CREATE TABLE table1 (id INTEGER, name VARCHAR(20), sales INTEGER);
-
-ここで、id が 30 以下のすべてのデータについて、sales の値を NULL にしたい。
-正しい SQL 文を選びなさい。
 ```
+* [詳細 [●]](https://oss-db.jp/sample/silver_development_01/09_111125)
 1. SELECT sales = NULL FROM table1 WHERE id <= 30;
 2. UPDATE sales = NULL FROM table1 WHERE id < 31;
 3. DELETE sales FROM table1 WHERE id <= 30;
 4. UPDATE table1 SET sales = NULL WHERE id < 31;
 5. UPDATE table1.sales = NULL WHERE id <= 30;
 
-### Q．次のSQL文で表を作成した後、多数の行をINSERTした。
-* [詳細 []](https://oss-db.jp/sample/silver_development_01/06_111005)
+### Q．次のSQL文で表を作成した後、多数の行をINSERTした。この表で val 列の2文字目と3文字目がいずれも A である行をすべて検索したい。誤っているものを1つ選びなさい。
 ```
 CREATE TABLE foo (id INTEGER, val VARCHAR(50));
-
-この表で val 列の2文字目と3文字目がいずれも A である行をすべて検索したい。
-誤っているものを1つ選びなさい。
 ```
+* [詳細 [×]](https://oss-db.jp/sample/silver_development_01/06_111005)
 1. SELECT * FROM foo WHERE val LIKE '_AA%';
 2. SELECT * FROM foo WHERE val ~ '^.AA';
 3. SELECT * FROM foo WHERE substring(val, 2, 2) = 'AA';
