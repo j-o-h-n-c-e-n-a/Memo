@@ -6,6 +6,7 @@
     + NTTテクノクロス株式会社　佐伯 昌樹
     + NTTテクノクロス株式会社　原田 登志
 * 株式会社メトロシステムズ　岡野 慎也
+* 株式会社メトロシステムズ　佐藤 千佳
 * 株式会社デージーネット OSS研究室 奥原 章太
 * 株式会社デージーネット OSS研究室 大野 公善
 
@@ -110,6 +111,130 @@ CREATE TABLE registration (
 
 
 ## ２．性能監視（30％）
+### Q．下記のEXPLAINの実行結果について、正しい記述を３つ選んでください。
+```
+postgres=# EXPLAIN SELECT relname,nspname FROM pg_class left join pg_namespace ON (pg_class.relnamespace = pg_namespace.oid);
+                               QUERY PLAN
+-------------------------------------------------------------------------
+ Hash Left Join  (cost=1.14..15.97 rows=288 width=128)
+   Hash Cond: (pg_class.relnamespace = pg_namespace.oid)
+   ->  Seq Scan on pg_class  (cost=0.00..10.88 rows=288 width=68)
+   ->  Hash  (cost=1.06..1.06 rows=6 width=68)
+         ->  Seq Scan on pg_namespace  (cost=0.00..1.06 rows=6 width=68)
+(5 行)
+```
+* [詳細 []](https://oss-db.jp/sample/gold_monitoring_01/16_190626)
+1. このEXPLAINコマンドを実行すると、引数に指定したSQL文が実際に実行される
+2. 計画ノードの「Hash Left Join」、「Seq Scan on pg_class」、「Seq Scan on pg_namespace」の記述
+3. 「cost=〜」の部分は、処理にかかる実際の時間を示している
+4. 「rows=〜」の部分は、それぞれの計画ノードを実行した際の推定の処理行数を示している
+5. 「width=〜」の部分は、統計情報をもとに推測される1行あたりの平均のバイトサイズを示している
+
+### Q．pg_stat_statementsの説明として正しいものは次のうちどれか。
+* [詳細 []](https://oss-db.jp/sample/gold_monitoring_01/15_190529)
+1. SQL文の実行に指定した時間以上かかった場合、それぞれのSQL文の実行に要した時間を記録する
+2. ロック待ちとなっているトランザクションや対象のテーブルを確認する
+3. 実行された全てのSQL文の実行時の統計情報を記録する
+4. データベースあたり1行の形式でデータベース全体の情報を表示する
+5. 現在のデータベースの各テーブルごとに1行の形で、テーブルへのアクセス統計情報を表示する
+
+### Q．
+```
+EXPLAIN ANALYZE SELECT * FROM pgbench_accounts a
+JOIN pgbench_branches b ON (a.bid = b.bid) WHERE a.aid = 10000;
+```
+上記問い合わせの実行計画(EXPLAIN ANALYZE)を確認したところ、下記の出力であった。
+```
+QUERY PLAN
+----------------------------------------------------------------------------------------------
+Nested Loop (cost=0.00..2891.02 rows=1 width=461) (actual time=4.589..64.393 rows=1 loops=1)
+   Join Filter: (a.bid = b.bid)
+   -> Seq Scan on pgbench_accounts a (cost=0.00..2890.00 rows=1 width=97) (actual time=4.555..64.356 rows=1 loops=1)
+         Filter: (aid = 10000)
+         Rows Removed by Filter: 99999
+   -> Seq Scan on pgbench_branches b (cost=0.00..1.01 rows=1 width=364) (actual time=0.007..0.008 rows=1 loops=1)
+Total runtime: 64.557 ms
+(7 rows)
+```
+上記問い合わせをより高速にするために行うこととして最も適切なものをひとつ選びなさい。
+なお、各テーブルの構成は下記のようになっている。
+----------------------------------------------------
+Table "public.pgbench_accounts"
+| Column   | Type          | Modifiers |
+|:---------|--------------:|:---------:|
+| aid      | integer       | not null  |
+| bid      | integer       |           |
+| abalance | integer       |           |
+| filler   | character(84) |           |
+----------------------------------------------------
+----------------------------------------------------
+Table "public.pgbench_branches"
+| Column   | Type          | Modifiers |
+|:---------|--------------:|:---------:|
+| bid      | integer       | not null  |
+| bbalance | integer       |           |
+| filler   | character(88) |           |
+
+Indexes:
+    "pgbench_branches_pkey" PRIMARY KEY, btree (bid)
+----------------------------------------------------
+* [詳細 []](https://oss-db.jp/sample/gold_monitoring_01/11_150324)
+1. pgbench_accountsのabalance列にインデックスを作成する
+2. pgbench_branchesのbid列にインデックスを作成する
+3. pgbench_accountsを対象にANALYZEを実行する
+4. pgbench_accountsのaid列にインデックスを作成する
+5. pgbench_branchesを対象にANALYZEを実行する
+
+### Q．EXPLAINコマンドで指定可能な出力形式のうち誤っているものを全て選択しなさい。
+* [詳細 []](https://oss-db.jp/sample/gold_monitoring_01/10_140812)
+1. JSON
+2. HTML
+3. CSV
+4. YAML
+5. XML
+
+### Q．標準統計情報ビューに関して正しいものを全て選択しなさい。
+* [詳細 []](https://oss-db.jp/sample/gold_monitoring_01/08_140530)
+1. pg_stat_all_tablesから、TOASTテーブルから読み取られたディスクブロック数を取得することができる。
+2. pg_stat_activityから、現在の問い合わせの実行開始時刻を取得することができる。
+3. pg_stat_databaseから、対象データベースのエラー発生数を取得することができる。
+4. pg_statio_all_tablesから、対象テーブルのバッファヒット数を取得することができる。
+
+### Q．pg_stat_databaseに関する記述で誤っているものを全て選択しなさい。
+* [詳細 []](https://oss-db.jp/sample/gold_monitoring_01/07_140417)
+1. データベースクラスタ全体の稼働統計情報が1行だけ格納される。
+2. blks_hitはバッファキャッシュにヒットしたブロック数が格納される。
+3. blks_readはディスクから読み込んだブロック数とバッファキャッシュから読み込んだブロック数の合計である。
+4. デフォルトではtrack_countsパラメータがoffであるため、稼働統計情報が収集されない。
+5. tup_fetchedはインデックススキャンを使用して読み取った行数が格納される。
+
+### Q．EXPLAINコマンドを用いて問い合わせを実行させ、結果が出力された。
+```
+EXPLAIN ANALYZE SELECT *
+FROM table1 t1, table2 t2
+WHERE t1.unique1 < 100 AND t1.unique2 = t2.unique2;
+```
+```
+QUERY PLAN
+-----------------------------------------------------------------------------------------------
+Nested Loop (cost=0.00..352.17 rows=97 width=16) (actual time=0.033..1.875 rows=100 loops=1)
+   -> Index Scan using table1_i1 on table1 t1 (cost=0.00..24.05 rows=97 width=8) (actual time=0.016..0.218 rows=100 loops=1)
+         Index Cond: (unique1 < 100)
+   -> Index Scan using table2_i2 on table2 t2 (cost=0.00..3.27 rows=1 width=8) (actual time=0.004..0.006 rows=1 loops=100)
+         Index Cond: (t2.unique2 = t1.unique2)
+Total runtime: 2.065 ms
+```
+この結果言えることとして、誤っているものを2つ選択せよ。
+* [詳細 []](https://oss-db.jp/sample/gold_monitoring_01/02_130402)
+1. この問い合わせにより出力される行数は97行であった。
+2. Total runtime には、結果行を操作するための時間の他に、エクゼキュータの起動、停止時間も含まれている。
+3. table2_i2 という名前のインデックスを用いて検索をしている。
+4. Nested Loop の cost と actual time の値が大きく異なっているので、統計情報の再収集が必要である。
+5. table1 が外側、table2 が内側になるネステッドループで結合をしている。
+
+### Q．
+### Q．
+### Q．
 ### Q．
 ### Q．
 
