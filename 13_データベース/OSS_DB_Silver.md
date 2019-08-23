@@ -4,8 +4,15 @@
     PostgreSQLの機能概要、ライセンス、OSSのコミュニティの役割などに関する理解を問う
 #### 主要な知識範囲：
 ##### PostgreSQLの機能全般、OSS-DBおよびOSS一般のライセンス、OSS-DBのコミュニティ、活動内容、参加方法など
+* ライセンスはPostgreSQL（BSDスタイルのライセンス）
+* メジャーバージョンアップは互換性がない
+* メモリ容量の制限なし
+* ファイルシステムレベルのI/Oアクセス
+* 追記型の性能特性(INSERT,DELETEは速いが、VACUUMが必要、同時実行でロック待ち少ない)
+* マルチプロセス
 ##### 【追加】メジャーバージョン / マイナーバージョン
 ##### 【追加】リリースサイクル / サポートポリシー / バグ報告
+
 #### 重要な用語、コマンド、パラメータなど：
 ##### BSDライセンス
 * 著作権表示は必要
@@ -78,6 +85,10 @@
 ### インストール方法　【重要度：2】
     PostgreSQLのインストール方法、データベースクラスタの作成方法などに関する理解を問う
 #### 主要な知識範囲：
+##### インストール
+1. yumやapt-get等のパッケージ管理システムからインストール
+2. rpmやexeなどのパッケージからインストール
+3. ソースからインストール
 ##### initdbコマンドの使い方 [!]
 * https://www.postgresql.jp/document/11/html/app-initdb.html
 * ロケール：--locale
@@ -138,11 +149,17 @@
 
 #### 重要な用語、コマンド、パラメータなど：
 ##### pg_ctl [●]
-* サーバーの初期化
-* データベースの起動・停止
-* 設定ファイルの再読み込み
+* start:サービス起動
+* stop:サービス停止
+* restart:サービス再起動
+* reload:設定再読込
+* status:状態表示
+* promote:スタンバイ昇格
+* kill:強制終了
+* register:Winサービス登録
+* unregister:Winサービス解除
 ##### pg_isready
-* データベース稼働状態の確認（死活監視）
+    データベース稼働状態の確認（死活監視）
 ##### createuser [●]
     データベースユーザの作成
 * 初期ユーザ(一般にpostgresユーザと表記される)はスーパーユーザ
@@ -156,7 +173,7 @@
     + -r: ユーザ（ロール）作成の権限を与える
     + -s: スーパユーザ権限を与える
 ##### dropuser
-
+    データベースユーザの削除
 ##### createdb
     データベースの作成
 ##### dropdb
@@ -165,10 +182,13 @@
     データベースに接続、SQL発行
 * --list：データベースの一覧を表示（pg_databaseというシステムカタログからも取得可能）
 ##### メタコマンド
-* \で始まる（\hなどがある）
+    \で始まる（\hなどがある）
+* \l database：データベース表示
+* \c database：データベース切替
+* \q：psql接続の終了
 * \list：データベースの一覧を表示
-* \d テーブル名：テーブルの列名と列属性の一覧を表示
 * \d：テーブル、ビュー、およびシーケンスの一覧を表示
+    + \d <テーブル名>：テーブルの列名と列属性の一覧を表示
 
 ### 設定ファイル 【重要度：5】
     設定ファイルの使い方、基本的な設定パラメータに関する知識を問う
@@ -280,16 +300,95 @@
     データベースに接続、SQL発行
 * テキスト形式のバックアップの場合に使用する
 ##### pg_basebackup
-    物理バックアップの取得
+    物理バックアップにはレプリケーションプロトコルが用いられ、リモートで動作している別サーバからもベースバックアップを取得することができます。
+    max_wal_sendersを、バックアップ用に少なくとも１つのセッションを残すように十分高く設定する必要があります。
 * wal_level
 * archive_mode
 * archive_command
 ##### PITR
-
+    PITRはPoint In Time Recoveryで、バックアップをもとに任意の時点へ復元させれます。
+    ストリーミングレプリケーションと合わせて利用し、復元には、任意のリストアポイント・任意のトランザクションID・最後のWALログ位置・任意の時刻)を指定します。
+    recovery_target_timelineをデフォルト値の場合、ベースバックアップ取得時の最新のタイムラインに回復します。
+1. postgresql.conf設定
+```
+wal_level = archive or host_standby
+#archiveはログをを追加します。hot_standbyは更にスタンバイ上の読取専用の問い合わせが可能です。
+archive_mode = on
+#archive_commandとセットで設定します。
+archive_command = 'cp %p /tmp/postgres/%f'
+#WALファイルを退避させるアーカイブコマンドを設定します。
+```
+2. postgresql再起動
+```
+# service postgresql-9.6 restart
+```
+3. ベースバックアップの開始
+```
+postgres=# select pg_start_backup('base.tar.gz')
+```
+4. ファイルコピー
+```
+# mkdir /tmp/postgres/
+# mkdir /tmp/postgres/base
+# chown -R postgres:postgres /tmp/postgres
+# tar czf /tmp/postgres/base/base.tar.gz /var/lib/pgsql/9.6/data
+```
+5. ベースバックアップの終了
+```
+postgres=# select pg_stop_backup();
+```
+6. アーカイブログの確認
+```
+# /usr/pgsql-9.6/bin/pgbench -i -s 3
+# /usr/pgsql-9.6/bin/pgbench
+# ls -l /tmp/postgres/
+```
 ##### 【追加】recovery.conf
+    PITRを利用したリストアの流れを次に記載します。
+1. postgresqlサービス停止
+```
+# service postgresql-9.6 stop
+```
+2. ベースファイルの解凍
+```
+# cd /
+# tar zxf /tmp/postgres/base/base.tar.gz
+```
+3. リカバリ設定
+```
+# rm -fr /var/lib/pgsql/9.6/data/pg_xlog/*
+# vi /var/lib/pgsql/9.6/data/recovery.conf
+```
+4. recovery.confの設定
+```
+restore_command = 'cp /tmp/postgres/%f %p'
+#archive_commandの逆を設定します。
+#recovery_target_name =
+#今回は設定しませんが、リストアポイントを設定します。
+#recovery_target_time =
+#今回は設定しませんが、リカバリしたい時刻を設定します。
+#recovery_target_xid =
+#今回は設定しませんが、リカバリしたいxidを設定します。
+#リカバリ設定をしない場合、最後のWAL位置までリカバリします。
+#設定を２つ以上指定したた場合、最後に指定されたものが使われます。
+#初期状態では最後までリストアします。
 * restore_command
 * recovery_target_time
 * archivecleanup_command
+```
+5. postgresqlサービス起動
+```
+# chown postgres:postgres /var/lib/pgsql/9.6/data/recovery.conf
+# service postgresql-9.6 start
+※/var/lib/pgsql/9.6/data/recovery.doneが存在すればリカバリ完了です。
+```
+##### リカバリ制御関数
+###### pg_is_xlog_replay_paused()
+    リカバリが停止中であれば真を返す
+###### pg_xlog_replay_pause()
+    即座にリカバリを停止する(スーパーユーザに限定)
+###### pg_xlog_replay_resume()
+    もしリカバリ停止中であれば再開する(スーパーユーザに限定)
 ##### COPY
 * COPY テーブル名 TO 出力先; 
 * サーバで処理される
@@ -324,7 +423,7 @@
 * デフォルトで有効
 * VACUUMは通常の更新を妨げないよう、該当行にのみ弱いロックを必要とする 
     + VACUUMと競合する処理が明示された場合、VACUUMがキャンセルされる 
-    + VACUUMのオプションとして、ロック強度が強く、効果が高いコマンドも存在 
+    + VACUUMのオプションとして、ロック強度が強く、効果が高いコマンドも存在（VACUUM FULL）
 * データ更新量に依存して起動され、経過時間やデータベース負荷は関係が無い
 ##### システム情報関数
 
@@ -386,9 +485,7 @@
 ##### UPDATE 文
 ##### DELETE 文
 ##### データ型
-* 数値型
-* 文字列型
-* 日付型
+    PostgreSQLのデータ型には数値データ型、通貨型、文字型、バイナリ列データ型、日付/時刻データ型、論理値データ型、 列挙型、幾何データ型、ネットワークアドレス型、ビット列データ型、テキスト検索に関する型、UUID型、XML型、JSONデータ型、 配列、複合型、範囲型、オブジェクト識別子データ型、疑似データ型があります。
 ##### テーブル定義
 
 ##### インデックス
@@ -469,34 +566,38 @@
 
 ##### NOT
 
-##### 数値型
-* INTEGER：４バイト整数
+##### 数値データ型
 * SMALLINT：２バイト整数
+* INTEGER：４バイト整数
 * BIGINT：８バイト整数
-* NUMERIC：１０進数の整数または小数
-* DECIMAL
-* REAL
-* DOUBLE PRECISION
+* NUMERIC：４バイト１０進数の整数または小数、正確
+* DECIMAL：可変長ユーザ指定精度、正確
+* REAL：４バイト可変精度、不正確
+* DOUBLE PRECISION：８バイト可変精度、不正確
+##### シーケンス（数値データ型）
+* SMALLSERIAL：２バイト狭範囲自動増分整数
+* SERIAL：４バイト自動増分整数
+    + NOT NULL 制約が自動設定される
+    + 列の値を指定しないか、DEFAULTを指定することで自動採番となる
+* BIGSERIAL：８バイト広範囲自動増分整数
+##### 通貨型
+* MONEY：８バイト貨幣金額
 ##### 文字列型
-* CHAR
-* CHARACTER
-* VARCHAR
-* CHARACTER VARYING
-* TEXT
+* CHAR：空白で埋められた固定長(TOAST圧縮有)
+* VARCHAR：4バイト+上限付き可変長(TOAST圧縮有)
+* TEXT：4バイト+制限なし可変長(TOAST圧縮有)
+* CHARACTER：4バイト+上限付き可変長
+* CHARACTER VARYING：4バイト+空白で埋められた固定長
+##### 日付型
+* DATE：4バイト 日付（時刻なし）
+* TIME：8バイト 時刻（日付なし）
+* TIMESTAMP：8バイト 日付と時刻両方、時間帯付き
+* INTERVAL：12バイト 時間間隔
+    + 日時計算の際に期間を表す
 ##### 論理値型：BOOLEAN
 * 文字列の’true’,‘t’, ‘yes’, ‘y’, ‘on’, ‘1’をTRUEの代わりに、’false’, ‘f’, ‘no’, ‘n’, ‘off’,‘0’をFALSEの代わりに使うことができる
 * ’1’と’0’も文字列であって、整数の1と0は使えない
 * SELECT文で値を表示する場合、TRUEならばt、FALSEならばfの1文字だけが表示される
-##### 日付型
-* DATE
-* TIME
-* TIMESTAMP
-* INTERVAL：日時計算の際に期間を表す
-##### シーケンス
-* SERIAL
-    + NOT NULL 制約が自動設定される
-    + 列の値を指定しないか、DEFAULTを指定することで自動採番となる
-* BIGSERIAL [?]
 ##### 【追加】BYTEA
 
 ##### NULL
@@ -742,4 +843,50 @@
 * 表と索引を別のディスクに配置することでパフォーマンス向上を図ることができる。
 * 表領域としてはディレクトリ名を指定し、そのディレクトリ内に表や索引がファイルとして作成される。
 * 表領域を作成していない状態では、すべての表や索引は、データベースクラスタ内の base ディレクトリの下に作成される。
+
+### 用語
 #### tablespace
+    データをBASEとは別の場所に保存　
+#### TPS　 
+    1秒間に実行できたトランザクションの数(Transactions Per Second)
+#### カレントスキーマ　 
+    publicスキーマ(スキーマ名を指定せずに作られるときに入る)
+#### libpqプロトコル　
+    共通ライブラリでこれがバックエンドとの通信(クライアント)
+#### FILLFACTOR
+    ブロックに確保する空き領域指定
+#### WAL　
+    トランザクションログ(先行書き込み)
+    walファイルはメモリ上の内容がファイルに反映された時点で不要
+#### PITR　
+    ポイント・イン・タイム・リカバリでWALログ(アーカイブ含む)で最新まで復元可能
+#### coreファイル　
+    プロセスが異常終了したときのメモリ内容ダンプ
+#### gdbコマンド　 
+    プログラムが異常終了したときに何が行われたかの調査
+#### checkpoint
+    ログ内の情報を反映するために全てのデータファイルを更新、トランザクションログのある一時点。
+#### アクセス統計情報　
+    稼働統計情報
+#### 統計情報　
+    プランナが使用する(検索などにindexの利用判断)レコード数など。
+#### GUC　
+    Grand Unified Configuration の略で、PostgreSQLの動的に変更できるパラメータを管理するモジュール。postgresql.conf ファイルやPGOPTIONS環境変数、SETコマンドなどで設定できるパラメータを管理しているモジュール。
+#### pgAdmin4　
+    こちらはPostgreSQLをGUIで操作するアプリ。
+#### GEQO 
+    遺伝的問い合わせ最適化といいFROM句の項目数が増加すると結合の組み合せがそれにより増加し解析にかかる時間が指数的に増加するため、それを軽減するためのものです。
+#### Visibility Map　
+    ページ内にトランザクションによって更新され参照することができなくなったタプルがあるかの管理。
+#### カーディナリティ　
+    カラム内のユニーク性が高いかどうかの判断。
+#### FSM　
+    Free Space Mapで再利用可能領域。
+#### プリペアド　
+    性能を最適化するために利用可能なサーバ側のオブジェクト。
+#### Heap　
+    テーブルデータ。
+#### HOT　
+    Heap Only TupleでHeapのみのTuple。
+#### ファストパス　
+    サーバへの簡単な関数呼び出しを送信する近道 
