@@ -157,7 +157,7 @@ log_disconnections = on
 ##### 【追加】ssl
 
 ##### 【追加】pg_stat_ssl
-    
+    接続（通常およびレプリケーション）あたり1行の形式で、接続に使われるSSLの情報を表示します。
 ##### 【追加】pgcrypto [●]
     データベース内のデータを暗号化する
 ##### ALTER ROLE
@@ -283,11 +283,11 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
 ##### pg_terminate_backend()
 
 ##### pg_isready
-
+    サーバプロセスの状態を確認する
 ##### log_connections
-
+    postgresql.conf：接続ログを取りたい場合に設定します
 ##### log_disconnections
-
+    postgresql.conf：切断ログを取りたい場合に設定します
 ##### log_duration [●]
     true/falseの論理値を設定し、trueに設定するとSQL文の実行に要した時間を出力する
  
@@ -295,8 +295,75 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
     データベースの物理的な構造に関する知識を問う
 #### 主要な知識範囲：
 ##### データベースクラスタの構造 [!]
+###### base
+    データベース群
+###### pg_log
+    基本ログ
+###### pg_stat
+    統計情報の永続ファイルを保有するサブディレクトリ 
+###### pg_stat_tmp
+    統計情報の一時ファイルを保有するサブディレクトリ
+###### pg_xlog(pg_wal)
+    WALファイルを格納するファイル
+###### global
+    グローバルデータ
+###### pg_multixact
+    マルチトランザクション状態のデータ
+###### pg_subtrans
+    サブトランザクションの状態のデータ
+###### postgresql.conf　
+    基本設定ファイル
+###### pg_clog(pg_xact)
+    コミットログ
+###### pg_notify
+    通知送信用関数
+###### pg_tblspc
+    テーブル空間のシンボリックリンク
+###### postmaster.opts　
+    最後に起動したコマンドラインオプション
+###### pg_hba.conf　
+    アクセス設定ファイル
+###### pg_serial
+    コミットされたシリアライザブルトランザクションに関する情報
+###### pg_twophase
+    プリペアドトランザクション用の状態ファイル
+###### postmaster.pid　
+    実行中のPID
+###### pg_ident.conf　
+    クライアント認証方式でidentを利用するときに記述
+###### pg_snapshots
+    エキスポートされたスナップショット
+###### PG_VERSION　
+    バージョン番号
 
 ##### プロセス構造 [!]
+###### Postmaster
+    サービス起動時に待ち受けるプロセス
+###### Postgres
+    接続ごとに起動するプロセス
+###### Autovacuum worker
+    自動VACCUMを実行するプロセス
+###### Autovacuum launcher
+    不要領域を監視するプロセス
+###### Stats collector
+    統計情報を取集するプロセス
+###### Logger
+    ログをファイルに書き出すプロセス
+* postgresql.confのlogging_collectorパラメータが無効だとloggerプロセスは起動しません。
+###### Writer
+    Shared bufferに書き出すプロセス(ダーティバッファをディスク書出)
+###### Wal writer
+    WAL書き込みを行うプロセス(トランザクションログ書出)
+###### checkpointer
+    checkpoint処理を行うプロセス
+###### Archiver
+    WAL・トランザクションログをアーカイブするプロセス
+###### Wal sender
+    WALをスタンバイサーバへ転送するプロセス(マスタ側に存在)
+###### Wal receiver
+    WALをマスターサーバへ受信するプロセス
+###### parallel worker
+    パラレルクエリを実施するプロセス
 
 ##### データの格納方法
 #### 重要な用語、コマンド、パラメータなど：
@@ -310,21 +377,50 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
 ##### アーカイブログ
 
 ##### ページヘッダ
+    24バイト
+| フィールド        | 型     | バイト長        | 説明 |
+|:-----------------|-----|---------------:|:---------:|
+| pd_lsn | PageXLogRecPtr | 8 バイト | いわゆるLSN(Log Sequence Number)を記録するフィールド。
+このページに対する更新内容を XLogInsert(rmid, info, rdata) を使い WAL レコードとして書き出した後に、PageSetLSN(page, lsn) を呼び出して記録する。このフィールドはチェックポインティング処理で参照される。|
+| pd_checksum | uint16 | 2 バイト | このページのチェックサムを記録する。|
+| pd_flags | uint16 | 2 バイト | フラグビット。 | 
+| pd_lower | LocationIndex | 2 バイト | 空き領域の始まりに対するオフセット。 | 
+| pd_upper | LocationIndex | 2 バイト | 空き領域の終わりに対するオフセット。 | 
+| pd_special | LocationIndex 2 バイト | 特別な空間の始まりに対するオフセット。 | 
+| pd_pagesize_version | uint16 | 2 バイト | ページサイズおよびレイアウトのバージョン番号の情報。 | 
+| pd_prune_xid | TransactionId | 4 バイト | ページ上でもっとも古い切り詰められていないXMAX。存在しなければゼロ。 | 
 
 ##### タプルヘッダ
+| フィールド  | 型              | バイト長 | 説明 |
+|:-----------|-----------------|---------:|:---------:|
+| t_xmin     | TransactionId   | 4バイト  | 挿入XIDスタンプ | 
+| t_cmin     | CommandId       | 4バイト  | 挿入CIDスタンプ | 
+| t_xmax     | TransactionId   | 4バイト  | 削除XIDスタンプ | 
+| t_cmax     | CommandId       | 4バイト  | 削除CIDスタンプ（t_xvacと共有） | 
+| t_xvac     | TransactionId   | 4バイト  | 行バージョンを移すVACUUM操作用XID | 
+| t_ctid     | ItemPointerData | 6バイト  | この行または最新バージョンの行の現在のTID | 
+| t_natts    | int16           | 2バイト  | 属性の数 | 
+| t_infomask | uint16          | 2バイト  | 様々なフラグビット | 
+| t_hoff     | uint8           | 1バイト  | ユーザデータに対するオフセット | 
 
 ##### postmasterプロセス [●]
     PostgreSQLの親プロセス。接続を待ち受ける。
+    サービス起動時にデータベースクラスタに対して、postmasterが1つ動作して、postgres・wal writer・checkpointerなどのプロセスが起動します。
 ##### postgresプロセス
-
+    1接続につき1つのpostgresプロセスが起動します。
 ##### バックグラウンドプロセス
-
+    PostgreSQLはユーザ提供のコードを別のプロセスとして実行できるように拡張することができます。
+    このプロセスはpostgresによって起動、終了、監視され、サーバの状態に密接にリンクした寿命を持つことができます。
+    これらのプロセスはPostgreSQLの共有メモリ領域にアタッチしたり、データベースの内部に接続するオプションを持ちます。
+    これらはまた、通常のクライアントに接続された実際のサーバプロセスのように複数のトランザクションを連続して実行することができます。
+    また、アプリケーションはlibpqとリンクすることにより通常のクライアントアプリケーションのようにサーバに接続して動作することができます。
 ##### SQL実行のキャンセル
 
 ##### シグナル(TERM/INT/HUP)によるサーバプロセスへの影響
 
 ##### checkpointer [●]
     チェックポイント処理を行うプロセス
+
 
 ### ホット・スタンバイ運用 【重要度：1】
     レプリケーション構成を組むための設定や構築手順、およびレプリケーションの仕組み(プロセスやフロー)、状態の監視などに関する知識を問う
@@ -349,40 +445,40 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
 * スタンバイサーバでの設定
     + postgresql.confのhot_standbyをonに設定
 ##### 【変更】同期レプリケーションと非同期レプリケーション
-
+    同期方式と非同期方式があり、同期方式ではスタンバイ側が停止するとレプリケーションが停止し、復旧するまで更新処理も行えなくなります。また、同期・非同期に関わらず、レプリケーション停止してもマスタサーバ及びスタンバイサーバでの参照系クエリは実行可能です。
 ##### postgresql.conf、recovery.confの設定
     スレーブ側でrecovery.confのtrigger_fileパラメータで設定したトリガファイルを作成
 ##### 【追加】パブリケーションとサブスクリプションの定義
 
 #### 重要な用語、コマンド、パラメータなど：
 ##### 【追加】wal_level
-
+    マスタ側のpostgresql.conf設定：スタンバイでもselect等の参照可能に設定します。（hot_standby）
 ##### 【追加】max_wal_senders
-
+    マスタ側のpostgresql.conf設定：スタンバイDBの数 + 1（2）
 ##### 【追加】wal_sender_timeout
-
+    postgresql.conf：レプリケーション接続のタイムアウトを設定します
 ##### 【追加】wal_receiver_timeout
-
+    postgresql.conf：レプリケーション接続のタイムアウトを設定します。
 ##### 【追加】synchronous_standby_names
-
+    postgresql.conf：同期レプリケーション時のスタンバイ側の名称を設定します。
 ##### 【追加】synchronous_commit
-
+    postgresql.conf：同期方式を設定します。
 ##### 【追加】max_logical_replication_workers
 
 ##### 【追加】CREATE/ALTER/DROP PUBLICATION/SUBSCRIPTION
 
 ##### 【追加】pg_stat_replication
-
+    レプリケーションの詳細情報を確認できます
 ##### 【追加】pg_stat_wal_receiver
-
+    １行の形式で、受信サーバが接続したサーバからWALレシーバに関する統計情報を表示します。
 ##### recovery_min_apply_delay
-
+    誤操作防止などの理由で、レプリケーションを遅延させたい場合、recovery.confにrecovery_min_apply_delayを設定すると遅延できます
 ##### 【追加】スタンバイでの問い合わせのコンフリクト(衝突)
 
 ##### 【追加】hot_standby_feedback
-
+    postgresql.conf：スタンバイ上で現在処理を行っている問い合わせについて、フィードバックするか設定します。
 ##### max_standby_streaming_delay
-
+    スレーブ側のpostgresql.conf設定：WALエントリと衝突するスタンバイサーバの問い合わせをキャンセルするにはどれだけ待機しなければならないかを設定します。（30s）
 ##### pg_wal_replay_pause()
 
 ##### pg_wal_replay_resume()
@@ -401,10 +497,25 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
 
 ##### 【追加】ロジカルレプリケーションのサブスクライバ―へ伝搬される処理とされない処理
 
+
 ## 性能監視（30％）
 ### アクセス統計情報 【重要度：3】 
     データベースの利用状況を示す稼働統計情報の内容や見方、収集方法に関する知識を問う
 #### 主要な知識範囲：
+##### リセットコマンド
+###### pg_stat_reset()
+    現在のデータベースに関する統計カウンタすべてをゼロにリセットします。（スーパーユーザ権限必要）
+###### pg_stat_reset_shared(text)
+    クラスタ全体の統計情報カウンタの一部をゼロに戻します。
+###### pg_stat_reset_shared('bgwriter')
+    pg_stat_bgwriterビューで示される値すべてがゼロになります。
+###### pg_stat_reset_shared('archiver')
+    pg_stat_archiverビューで示される値すべてがゼロになります。
+###### pg_stat_reset_single_table_counters(oid)
+    データベース内のテーブルあるいはインデックスの統計情報をゼロにリセットします。（スーパーユーザ権限必要）
+###### pg_stat_reset_single_function_counters(oid) 
+    データベース内の関数の統計情報をゼロにリセットします。（スーパーユーザ権限必要）
+
 ##### pg_locks
     ロック待ちとなっているトランザクションや対象のテーブルを確認する
 * ロック対象となるオブジェクト（locktype列）
@@ -424,17 +535,19 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
 * blks_readカラム：ディスクから読み込んだブロック数が格納される
 ##### pg_statio_all_tables 等、ブロックレベル統計情報 [!]
 ###### pg_statio_all_tables
+    現在のデータベース内のテーブルごとに１行の形で、特定のテーブルに対するI/Oに関する統計情報を示します。
 * toast_blks_readカラム：TOASTテーブルから読み取られたディスクブロック数
 * heap_blks_hitカラム：対象テーブルのバッファヒット数
 
 #### 重要な用語、コマンド、パラメータなど：
 ##### pg_stat_archiver
-
+    WALアーカイバプロセスの活動状況に関する統計情報を１行のみで表示します 
 ##### pg_stat_bgwriter [●]
     バックグラウンドライタに関する情報(buffers_backend、buffers_clean)を表示する
 ##### 【追加】待機イベント(pg_stat_activity.wait_event)
 
 ##### 【追加】pg_stat_progress_vacuum
+    VACUUMを実行している（自動バキュームワーカプロセスを含んだ）それぞれのバックエンドごとに１行の形で、現在の進捗を示します
 
 ### テーブル / カラム統計情報 【重要度：2】
     プランナが利用するテーブル・カラムの統計情報についての理解を問う
@@ -463,18 +576,30 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
 ##### pg_stats
     pg_statisticのかわりに一般ユーザが参照しても問題ない範囲に限定したビュー
 ##### null_frac
-
+    NULLとなっている列項目の割合
 ##### n_distinct
-
+    ゼロより大きい値は列内の個別値の推定数
 ##### most_common_freqs
-
+    最も一般的な値の出現頻度のリストで、つまり行の総数で出現数を割算した数字
 ##### histogram_bounds
-
+    列の値を満遍なく似たような数でグループに分配した値のリスト
 ##### correlation
-
+    物理的な[訳注：ディスク上の]行の並び順と論理的な列の値の並び順に関する統計的相関
 ##### default_statistics_target
     default_statistics_targetの値を大きくすると、ANALYZEの所要時間は長くなり、プランナの予測の品質は向上します。
 ##### effective_cache_size
+    プランナが単一の問合せで利用するOSのディスクキャッシュ容量に対する参考値を設定します。
+##### track_counts(boolean)
+    データベースの活動についての統計情報の収集を有効にします。
+    offの場合、analyzeによる統計情報は更新されない。 収集される情報を自動バキュームデーモンが必要とします。
+##### track_activities(boolean)
+    各セッションで実行中のコマンドに関する情報とそのコマンドの実行開始時刻の収集を有効にします。
+##### stats_temp_directory(string)
+    統計情報データを一時的に格納するディレクトリを設定します。
+    これをデータディレクトリからの相対パスとすることも絶対パスとすることもできます。 
+    一時ファイルの格納場所としてRPMベースのファイルシステムを指定することで物理IOの要求が減らせます。
+##### pg_settings
+    サーバの実行時パラメータへのアクセスを提供します。
 
 ### クエリ実行計画 【重要度：3】
     EXPLAINが出力する実行計画を読み取り、チューニングを行う。
@@ -518,34 +643,55 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
     性能監視に関するその他の手法
 #### 主要な知識範囲：
 ##### スロークエリの検出 [!]
-
+    長時間発生したクエリのこと
 ##### 付属ツールによる解析
-
+    pg_stat_statements、pgbench、auto_explainを利用して性能の解析が行えます
 ##### 性能劣化要因(リソース枯渇、ロック競合)
+1. メモリ不足によるディスク利用による性能低下
+2. データ量増加による処理遅延
+    + 大量のINSERTを発行するとWALファイルへの書込で競合が発生することによる影響
+3. ロック競合による処理遅延
+4. チェックポイント多発による性能低下
+5. 不要領域が増加による性能低下
+6. ディスク領域枯渇による性能低下
+7. postgresql.confの誤った設定による性能低下
+    + shared_buffersの値を大きくすると、チェックポイント中のデータ増大による影響
+    + maintenance_work_memの値を大きくしすぎてVACUUMプロセスが多重実行によるメモリ消費
 
 #### 重要な用語、コマンド、パラメータなど：
 ##### shared_preload_libraries
-
+    postgresql.confのパラメータ
+```
+shared_preload_libraries = 'pg_stat_statements'
+```
 ##### auto_explain
-
+    スロークエリの実行計画を自動的にログに書き出します。
+    スロークエリだけではクエリ文だったのに対してauto_explainでは実行計画を書き出します。
+    その時の実行計画を得ることにより、vaccumの周期・設定のメモリ不足(ソート時にメモリが利用されていないことにより)などが判断できます。
 ##### auto_explain.*
-
+    postgresql.confのパラメータ
+```
+    shared_preload_libraries = 'auto_explain'
+    auto_explain.log_min_duration = 200
+    #基本はスロークエリのlog_min_durationと同じ設定
+```
 ##### log_min_duration_statement
     SQL文の実行に指定した時間以上かかった場合、それぞれのSQL文の実行に要した時間を記録する
 * 整数値を設定し、指定したミリ秒以上を要したSQL文と実行時間を出力する
 * 0に設定すれば、すべてのSQL文について出力される [●]
 * -1に設定すると、出力しない
+* インデックスを張るなどの対策を検討する
 ##### pg_stat_statements
     実行された全てのSQL文の実行時の統計情報を記録する
 * スロークエリの解析に利用
 ##### 【追加】log_autovacuum_min_duration
-
+    postgresql.conf：ログに記録する実行時の最小値を設定します。
 ##### 【追加】log_lock_waits
-
+    postgresql.conf：deadlock_timeoutよりも時間がかかった場合にログに記録するか設定します。
 ##### 【追加】log_checkpoints
-
+    postgresql.conf：チェックポイントまたはリスタートポイントをログに記録するか設定します。
 ##### 【追加】log_temp_files
-
+    一時ファイルでメモリを利用しない場合、log_temp_filesの設定を大きくすることでメモリを利用して性能が向上することが考えられます。
 
 ## パフォーマンスチューニング（20％）
 ### 性能に関係するパラメータ 【重要度：4】 
@@ -572,7 +718,14 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
     デッドロックの検出はそれ自体が CPU 負荷の高い処理なので、できる限り実行しないで済むようにすべきです。
     デッドロックが頻繁に発生するような環境では、deadlock_timeout を小さくすることで、デッドロックを早く解決できるかもしれませんが、なるべくデッドロックが発生しないようにアプリケーション側で工夫し、CPU 負荷の高いデッドロック検出処理が不必要に実行されないように deadlock_timeout を大きくする、というのが正しいやり方です。
 ##### 軽量ロックと重量ロック
- 
+    ロックには重量ロックと軽量ロックがあります。
+    Postgresqlでのロックはテーブルのみです。
+    自身のプロセスでのロックでは競合を起こしません。
+    デッドロックが重量ロックに辺り、次のテーブルレベルロックモードがあります。
+    軽量ロックは，内部的な共有管理リソースアクセスで使用されます。
+    SHAREDとEXCLUSIVEのテーブルレベルロックモードがあり、対象リソースに対する処理が完了後開放されます。
+    開発モードのパラメータ設定でログ出力可能です。
+
 #### 重要な用語、コマンド、パラメータなど：
 ##### shared_buffers
     共有バッファのサイズを設定。推奨値はサーバ実メモリの25%
@@ -582,7 +735,7 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
 * wal_buffersを数キロバイトの小さなデフォルトより増加させることは書き込みが激しいシステムで役に立ちます。 ベンチマークでは通常、多少大規模なシステムでは1MBまで増やすだけで十分であると提案します。 またWALセグメント全体（16MB、ここでは有用な上限）を割り当てる最近のサーバでメモリを提供することが合理的です。 wal_buffersの変更はデータベースの再起動が必要です。 
 * PostgreSQL 9.1から、wal_buffersはデフォルトでshared_buffersの容量の1/32になり、また上限は16MB（shared_buffersが512MBの時に達する値）になりました。
 ##### 【追加】huge_pages
-
+    huge pageを使うと、ページテーブルが小さくなり、メモリ管理に使用されるCPU時間が少なくなり、性能が向上します。Linuxのみサポートされており、メモリの大きな連続チャンクを使用するときにhuge pagesを使用すると、オーバーヘッドが減少します。
 ##### effective_cache_size [●]
 * オペレーティングシステム自体と他のアプリケーションが使用するメモリを考慮した後に、OSおよびデータベース自体の内部でディスクキャッシュとして利用可能なメモリ量の推定値に設定されなければなりません
 * この値はPostgreSQL問い合わせプランナが生成した計画の内いずれがメモリに合うかどうかを推定するためだけに使用されます。
@@ -598,11 +751,10 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
 * 基本的にバキュームが始まる時にそのメモリを確保する必要がありますので、より有用な目的で使用できなくなります。 体験に基づくものですが、256MB程度で十分な大きさです。 
 ##### 【追加】autovacuum_work_mem
     自動VACUUMで使用するメモリ量
-
 ##### 【追加】wal_level
-
+    postgresql.conf：どれだけの情報がWALに書かれるかを設定します。
 ##### fsync
-
+    postgresql.conf：ディスクへの同期書き込みの有効無効を設定します。
 ##### synchronous_commit
     レプリケーション構成における同期レベルを制御する
 ###### remote_apply
@@ -633,7 +785,7 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
 ##### 【追加】checkpoint_completion_target
 * PostgreSQLはデータベースにおける新しいトランザクションをWALセグメントという名前の16MBサイズのファイルに書き出します。 checkpoint_segments個のファイルが書き出される度（デフォルトは3）に、チェックポイントが発生します。 チェックポイントはリソースを激しく消費することがあり得ます。 最近のシステムでは48MBごとにこれを行うと、性能上深刻なボトルネックとなります。 checkpoint_segmentsをより大きく設定することでこれを改善することができます。 非常に小規模な設定で実行していない限り、最低10に設定することで確実に改善されます。 これにより通常目標の完成度を増大させます。
 ##### deadlock_timeout
- 
+    deadlock_timeoutを大きくすることで検出を減らして(CPU負荷軽減)性能が向上することが考えられます。
 ##### buffers_backend
     新しいバッファを割り当てるためにバックエンドプロセスにより書き出されたdirtyバッファ数を表示する。
 * 新しいバッファを割り当てようとして空きがない場合に、バックエンドプロセスが書き出しを行うことで増加
@@ -675,7 +827,7 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
 ##### 【追加】テーブル構成のチューニング
 
 ##### ディスクI/Oの分散 [!]
-
+    テーブルスペース機能で、複数のディスクをりようさせることで、データ読み書きの性能が向上することが考えられます。
 ##### パラメータの反映方法(パラメータ有効化のために必要なアクション)
     問い合わせ等の処理全般が一時的に遅くなる原因として推測されるのは、チェックポイントまたはVACUUM処理との競合です。
 * チェックポイントとの競合の場合は、チェックポイント処理を負荷分散させる対策が有効です。
@@ -688,6 +840,10 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
 * 定期的にインデックスの再作成を行うことで、インデックスの肥大化を抑止できる
 
 ##### Index Only Scan と Visibility Map
+    インデックスのみを利用して必要行必要行を検索します。
+    Visibility Mapを参照します。
+    Visibility Mapが更新されるときは、バキューム処理とcreate indexなどの一部のDDL実行時です。
+    バキュームフル実行時は、Filenodeが変更されて、vmファイルがなくなることを確認しています。
 
 #### 重要な用語、コマンド、パラメータなど：
 ##### Index Only Scan
@@ -707,7 +863,9 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
 * ヘッダ情報が破損している場合、該当のテーブルに対して全てのページをスキャンする必要のあるSQLコマンドを実行することができない
 * zero_damaged_pages を on に設定して再度テーブルを参照することで、破損があると判断されるページを０埋めして動作を継続する。このとき当該のページに含まれるデータは消失する。
 ##### OS リソース枯渇 [!]
-
+###### メモリ不足
+    サーバを再起動する
+    また、postgresql.confのメモリ設定を少なくして起動を試します
 ##### OSのパラメータ
 ###### FATAL: sorry, too many clients already
     スーパーユーザの場合に同時接続数がmax_connectionsに設定した値を超えた
@@ -716,42 +874,58 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
 ##### サーバプロセスの状態(idle、idle in transaction、active)
 
 ##### シグナル(TERM/INT/HUP)によるサーバプロセスへの影響
+    データベースサーバをシャットダウンする方法は複数あります。 
+    マスターpostgresプロセスに異なるシグナルを送ることで、シャットダウンの方法を制御します。
 
 ##### サーバプロセスのクラッシュ(セグメンテーションフォルトなど)と影響範囲
 
 #### 重要な用語、コマンド、パラメータなど：
 ##### 【追加】statement_timeout
-
+    postgresql.conf：クライアントからサーバに届いたコマンドが停止されるまでのタイムアウトを設定します。
 ##### 【追加】lock_timeout
-
+    postgresql.conf：ロック時のタイムアウトを設定します。
 ##### 【追加】idle_in_transaction_session_timeout
-
+    postgresql.conf：開いたトランザクションが、指定された時間（単位はミリ秒）を超えてアイドルだった場合のタイムアウトを設定します。
 ##### 【追加】スタンバイでの問い合わせのコンフリクト(衝突)
 
 ##### 【追加】hot_standby_feedback
-
+    postgresql.conf：スタンバイ上で現在処理を行っている問い合わせについて、フィードバックするか設定します。
 ##### vacuum_defer_cleanup_age
-
+    postgresql.conf：VACUUM および HOT更新が不要行バージョンの回収を決めるのを延期するトランザクションの数を設定します。
 ##### max_standby_archive_delay
-
+    postgresql.conf：スタンバイがアーカイブ処理しているときにクエリをキャンセルするまでの最大遅延間隔を設定します。
 ##### max_standby_streaming_delay
-
+    postgresql.conf：スタンバイがストリームされた処理しているときにクエリをキャンセルするまでの最大遅延間隔を設定します。
 ##### fsync
-
+    postgresql.conf：ディスクへの同期書き込みの有効無効を設定します。
 ##### 【追加】synchronous_commit
-
+    postgresql.conf：同期方式を設定します。
 ##### 【追加】restart_after_crash
-
+    postgresql.conf：PostgreSQLがバックエンドのクラッシュ時に自動的に再初期化するか設定します。
 ##### pg_cancel_backend()
-    ユーザ要求によりクエリがキャンセルされる場合、発行される関数
+    ユーザ要求によりクエリがキャンセルされる場合、発行される関数。(SIGINTと同等)
 ##### pg_terminate_backend()
-
+    セッションを終了させます。(SIGTERMと同等)
 ##### pg_ctl kill
 
 ##### max_locks_per_transaction
-
+    共有ロックテーブルは、max_locks_per_transaction * （max_connections + max_prepared_transactions）オブジェクト（例えばテーブル）上のロック追跡します。 したがって、ある時点でこの数以上の個々のオブジェクトをロックすることはできません。 このパラメータは各トランザクションで割り当てられるオブジェクトロックの平均値を制御します。 個々のトランザクションでは、このロックテーブルにすべてのトランザクションのロックが収まる限りオブジェクトのロックを獲得できます。 これは、ロックできる行数ではありません。この値には制限がありません。 デフォルトの64は、経験的に十分であると証明されていますが、単一のトランザクションで数多くの異なるテーブルをいじるクライアントがいる場合、この値を大きくする必要があるかも知れません。 このパラメータはサーバ起動時のみ設定されます。
 ##### max_files_per_process
-
+    カーネルは個々のプロセスがシステムが実際にサポートできるファイル数より多くを開くことを許しています。 "Too many open files"エラーが発生した場合は小さく設定する必要があります。
+##### SIGTERM
+    スマートシャットダウンモードです。
+    新しい接続を禁止しますが、既に存在するセッションは通常通り動作させます。 
+    全てのセッションが通常に終了するまではシャットダウンしません。
+    バックアップは待ちますので、正常に完了します。
+    pg_ctlのモードはsmart
+##### SIGINT
+    高速シャットダウンモードです。 サーバは新しい接続を禁止し全ての存在するサーバプロセスにSIGTERMを送り、この結果サーバプロセスは現在のトランザクションをアボートし、即座に終了します。 そして サーバはサーバプロセスの終了を待って、最後にシャットダウンします。 オンラインバックアップモードも終了させる。
+    pg_ctlのモードはfast
+##### SIGQUIT
+    即時シャットダウンです。 マスターpostgresプロセスは、全ての子プロセスに SIGQUITを送り、即座に終了します。
+    子プロセスは同様にSIGQUITを受け取ると即座に終了します。
+    次回起動時に（WALログを再実行することで）リカバリをすることになります。 
+    pg_ctlのモードはimmadiate
 ##### SIGSEGV
     ユーザ定義関数等で誤ったメモリ操作を行いセグメンテーション違反が発生した際にログ出力される
 
@@ -760,7 +934,7 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
     データファイルやトランザクションログファイルが破損した場合について、エラーメッセージの内容から原因を特定し、適切な対応ができるかを問う
 #### 主要な知識範囲：
 ##### 【追加】トランザクションログ復旧 [!]
-
+    データベースクラスタの内容が壊れている場合は、pg_restxlogを実行します
 ##### システムテーブルのインデックス復旧 [!]
     システムカタログのインデックスが破損している場合、サーバプロセスが起動時に強制終了する可能性があります。
 ##### 開発者向けオプション
@@ -773,7 +947,8 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
 ###### REINDEX SYSTEM
     共有システムカタログも含めたシステムカタログに対する全てのインデックスが再作成されます。
 ##### チェックサムによる破損検知と復旧
-
+    読み込み過程でチェックサム障害が検出されると、通常PostgreSQLはエラーを報告し、現時点のトランザクションを停止します。
+    開発者向けオプションとして、ignore_checksum_failureを有効にするとエラーを無視します。
 ##### トランザクションIDの周回エラー
 
 #### 重要な用語、コマンド、パラメータなど：
@@ -787,6 +962,7 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
 * -x オプション
     + トランザクションIDを指定する場合は、pg_clogディレクトリ内のファイル名で最も大きな数字に1を加えて、1048576で乗算した値を用いる
 * pg_resetxlog
+    + データベースクラスタのトランザクションログやその他の制御情報を初期化します。
 ##### ignore_system_indexes
     GUCパラメータのignore_system_indexesをONにすると、システムカタログの読み込み時にインデックスが読み込まれないようになります。このパラメータはinitdb時に作成されるpostgresql.confには記載されていないため、新たに追記する必要があります。
 ##### ignore_checksum_failure
@@ -806,6 +982,57 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
     + スタンバイでは送られてきたWALを実行することで、プライマリと同じ状態を保つことができる。
 	+ 実際にはプライマリ側のwalsenderプロセスと、スタンバイ側のwalreceiverプロセスでやりとりを行う
 ##### ログファイル内のエラーメッセージ
+###### LOG: checkpoints are occurring too frequently
+    本エラーが多発している場合、チェックポイントがmax_wal_sizeのチューニングが必要です。
+###### LOG: archive command failed with exit code 1
+    archiveコマンドが失敗しているため、ディスク容量の確認またはコマンドの確認または権限の確認が必要です。
+###### LOG: number of page slots needed (12345) exceeds max_fsm_pages (20000)
+    max_fsm_pagesが不足しているため、チューニングが必要です。
+###### LOG: server process (PID 12345) was terminated by signal 9: Killed
+	Out of Memory KillerによりSIGKILLが発生しました。
+###### LOG: server process (PID 12345) was terminated by signal 11: Segmentation fault
+	該当のPIDに対して、ユーザ定義関数がに誤りがあるため問題が発生しました。
+###### LOG: redirecting log output to logging collector process
+	ログを出力しました。
+###### LOG: database system is ready to accept connections
+	データベースが接続できるようになりました。
+###### LOG: standby "db2" is now a synchronous standby with priority 1
+	優先順位1で、同期スタンバイになりました。
+###### LOG: database system was interrupted; last known up at 2019-02-03 08:40:51.794 JST
+	2019-02-03 08:40:51.794以降にデータベースシステムが中断しました。
+###### FATAL: sorry, too many clients already
+	すべてのユーザで接続数を超過しましたので、ユーザ数のチューニングが必要です。
+###### FATAL: remaining connection slots are reserved for non-replication superuser connections
+	スーパーユーザ以外のユーザで接続数を超過しましたので、max_connectionsのチューニングが必要です。
+###### FATAL: connection limit exceeded for non-superusers
+	スーパーユーザ以外のユーザで接続数を超過しましたので、max_connectionsのチューニングが必要です。
+###### FATAL: incorrect checksum in control file
+	32bitと64bitなどOS違いなどで起動した可能性があります。データの再移設を検討する必要があります。
+    pg_controlの異常のため、pg_resetxlogで修復できる可能性があります。
+###### FATAL: terminating connection due to administrator
+	pg_terminate_backend関数が発行されました。
+###### FATAL: could not open lock file "1234": Permission denied
+	ファイルへのアクセス権限がありません。対象のファイルにアクセス権を与えます。
+###### FATAL: could not open file "aaa": Too many open files in system
+	OSで開けるファイルをオーバーしています。max_files_per_processのチューニングが必要です。
+###### FATAL: lock file "postmaster.pid" already exists
+	サーバが起動中または、前回の停止時にpostmaster.pidが残ってます。停止中の場合、postmaster.pid削除してから再起動してください。
+###### FATAL: terminating connection due to conflict with recovery
+    リカバリーとの競合でキャンセイルしているため、キャンセルいないようにvacuum_defer_cleanup_age・max_standby_streaming_delay・hot_standby_feedbackを設定します。
+###### FATAL: could not map anonymous shared memory: Cannot allocate memory
+	カーネルで取得できるshared memoryの量が不足しています。
+###### ERROR: canceling statement due to user request
+	ユーザの要求で、クエリがキャンセル(pg_cancel_backend)されました。
+###### ERROR: invalid page header in block 0 of relation base/12345/23456
+	base/12345/23456のテーブルが破損しています。zero_damaged_pagesをonにに設定することでテーブルが参照できる可能性がございます。
+###### ERROR: out of shared memory
+	ロックのための共有メモリの不足しています。max_locks_per_transactionのチューニングが必要です。
+###### ERROR: canceling statement due to conflict with recovery
+    リカバリーとの競合でキャンセイルしているため、キャンセルいないようにmax_standby_streaming_delay・hot_standby_feedbackを設定します。
+###### PANIC: could not locate a valid checkpoint recor
+	WALファイルが破損しています。pg_resetxlogで修復する必要があります。
+###### PANIC: could not access status of transaction 12345
+	管理用ファイルが破損している可能性が高いです。OSのDDコマンドなどでの修復する必要があります。
 
 ##### スタンバイへ伝搬される処理とされない処理
 * レプリケーションの方式が同期か非同期かにかかわらず、通信が遮断中でも、マスタおよびスタンバイサーバのいずれでも、参照系クエリは実行可能
@@ -820,7 +1047,7 @@ ALTER DATABASE name [ [ WITH ] option [ オプション名 ] ]
 
 #### 重要な用語、コマンド、パラメータなど：
 ##### pg_ctl promote
-
+    指定したデータディレクトリで稼動中のスタンバイサーバにリカバリを終了し読み書き操作を始めるようコマンドを送ります。
 ##### 【変更】pg_receivewal
 
 ##### 【追加】pg_rewind
