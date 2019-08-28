@@ -765,7 +765,7 @@ CREATE TABLE sample (id INTEGER, val TEXT);
 5. 論理値型のBOOLEANでは真偽を表すのにTRUE、FALSEというキーワードを利用できるほか、'y', 'n', 't', 'f', '1', '0' といった文字列も利用できる。
 
 ### Q．PostgreSQLのスキーマについて、最も適切な記述を2つ選びなさい。
-* [詳細 [×]](https://oss-db.jp/sample/silver_development_02/25_130220)
+* [詳細 [××]](https://oss-db.jp/sample/silver_development_02/25_130220)
 1. すべてのテーブルはいずれかのスキーマに所属する。
 2. スキーマは階層化できるので、SELECT * FROM schemax.subschema1.subschema2.tablename;のように深いスキーマのテーブルからSELECTすることもあり得る。
 3. SELECT * FROM tablename; のようにスキーマ名を指定せずにテーブル名を指定すると、publicスキーマを指定したものと見なされる。
@@ -794,106 +794,18 @@ id	|	val
 ```
 select * from t1 full join t2 using (id);
 ```
-* [詳細 [×]](https://oss-db.jp/sample/silver_development_02/24_130124)
+* [詳細 [×●]](https://oss-db.jp/sample/silver_development_02/24_130124)
 1. 1行
 2. 2行
 3. 3行
 4. 4行
 5. 5行
 
-### Q．psqlでデータベースに接続し、次の一連のSQLを実行した。2つ目のINSERTで、id とすべきところを間違って idd としてしまったため、エラーになった。最後のCOMMITを実行した後の状態について正しく述べているものを2つ選びなさい。
-```
-CREATE TABLE test (id INTEGER, val TEXT);
-START TRANSACTION;
-INSERT INTO test (id, val) VALUES (1, ‘abc’);
-INSERT INTO test (idd, val) VALUES (2, ‘pqr’);
-INSERT INTO test (id, val) VALUES (3, ‘xyz’);
-COMMIT;
-```
-* [詳細 [●]](https://oss-db.jp/sample/silver_development_02/23_130110)
-1. test表にはデータが1行もない
-2. test表にはデータが1行だけある
-3. test表にはデータが2行ある
-4. COMMITはエラーを起こす
-5. COMMITは正常終了する
-
-### Q．2つのクライアント(AとBとします)が同じテーブルTを更新するためにロックを取得しようとしています。以下の記述から正しいものを2つ選択しなさい。
-* [詳細 [●]](https://oss-db.jp/sample/silver_development_01/19_121011)
-1. クライアントAは行Xを更新するために行ロックを取得した。クライアントBも同じ行Xを更新したいが、行ロックを取得できないのでクライアントAの処理が終わるまで待たされる。
-2. クライアントAは行Xを更新するために行ロックを取得した。クライアントBはこれと異なる行Yを更新したいが、YがたまたまXと同じデータブロックにあったので、行ロックは取得できず、クライアントAの処理が終わるまで待たされた。log_connections を on にすることで、クライアントからサーバへの接続試行がログに出力される。
-3. クライアントAはテーブルTの50％の行を更新するために、それらの行のロックを取得したところ、ロックエスカレーションが発生して自動的にテーブルロックに移行した。このためクライアントBは同じテーブルTのどの行も更新できなくなった。
-4. クライアントAはテーブルTのすべての行を独占的に更新するため LOCK TABLE T;により、ACCESS EXCLUSIVEモードでのロックを取得した。このロックが解放されるまで、クライアントBはテーブルTを更新できないが、SELECTだけなら実行できる。
-5. クライアントAはテーブルTの行Xを更新するためにロックを取得した。クライアントBは同じテーブルTのテーブルロックを取得するために LOCK TABLE T; を実行したが、これはAが取得した行ロックが解放されるまで待たされる。
-
-### Q．あるクライアントで次の一連のSQLを実行する。別のクライアントから、これとほぼ同時に実行したときに、デッドロックが発生する可能性のあるトランザクションはどれか。A～Eの選択肢から2つ選択せよ。
-```
-BEGIN;
-UPDATE table1 SET val1 = 100 WHERE id1 = 1;
-UPDATE table1 SET val1 = 200 WHERE id1 = 2;
-UPDATE table2 SET val2 = 300 WHERE id2 = 3;
-COMMIT;
-```
-* [詳細 []](https://oss-db.jp/sample/silver_development_01/15_120405)
-1. 
-```
-BEGIN;
-INSERT INTO table2 (id2, val2) VALUES (4, 40);
-UPDATE table1 SET val1 = 1000 WHERE id1 = 1;
-COMMIT;
-```
-2. 
-```
-BEGIN;
-UPDATE table1 SET val1 = 1000 WHERE id1 = 1;
-UPDATE table2 SET val2 = 3000 WHERE id2 = 3;
-COMMIT;
-```
-3. 
-```
-BEGIN;
-UPDATE table2 SET val2 = 3000 WHERE id2 = 3;
-UPDATE table1 SET val1 = 1000 WHERE id1 = 1;
-COMMIT;
-```
-4. 
-```
-BEGIN;
-UPDATE table1 SET val1 = 1000 WHERE id1 = 1;
-UPDATE table1 SET val1 = 2000 WHERE id1 = 2;
-COMMIT;
-```
-5. 
-```
-BEGIN;
-UPDATE table1 SET val1 = 2000 WHERE id1 = 2;
-DELETE FROM table1 WHERE id1 = 1;
-COMMIT;
-```
-
-### Q．次の SQL 文のうち、エラーにならないものを2つ選びなさい。
-* [詳細 [●]](https://oss-db.jp/sample/silver_development_01/14_120223)
-1. SELECT current_date();
-2. SELECT current_time();
-3. SELECT current_time(2);
-4. SELECT current_timestamp();
-5. SELECT now();
-
-### Q．以下の SQL 文でテーブルを作成し、多数の行を挿入した。ここで、id が 30 以下のすべてのデータについて、sales の値を NULL にしたい。正しい SQL 文を選びなさい。
-```
-CREATE TABLE table1 (id INTEGER, name VARCHAR(20), sales INTEGER);
-```
-* [詳細 [●]](https://oss-db.jp/sample/silver_development_01/09_111125)
-1. SELECT sales = NULL FROM table1 WHERE id <= 30;
-2. UPDATE sales = NULL FROM table1 WHERE id < 31;
-3. DELETE sales FROM table1 WHERE id <= 30;
-4. UPDATE table1 SET sales = NULL WHERE id < 31;
-5. UPDATE table1.sales = NULL WHERE id <= 30;
-
 ### Q．次のSQL文で表を作成した後、多数の行をINSERTした。この表で val 列の2文字目と3文字目がいずれも A である行をすべて検索したい。誤っているものを1つ選びなさい。
 ```
 CREATE TABLE foo (id INTEGER, val VARCHAR(50));
 ```
-* [詳細 [×]](https://oss-db.jp/sample/silver_development_01/06_111005)
+* [詳細 [×●]](https://oss-db.jp/sample/silver_development_01/06_111005)
 1. SELECT * FROM foo WHERE val LIKE '_AA%';
 2. SELECT * FROM foo WHERE val ~ '^.AA';
 3. SELECT * FROM foo WHERE substring(val, 2, 2) = 'AA';
