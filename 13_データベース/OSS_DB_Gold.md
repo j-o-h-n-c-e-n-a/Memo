@@ -1049,7 +1049,8 @@ shared_preload_libraries = 'pg_stat_statements'
 * 通信が遮断してから大量の更新がマスタサーバ側で行われ、その後に通信が復旧した場合、再同期処理に必要なWALが既にアーカイブ化されている可能性があります。このような場合は再同期処理にアーカイブWALが必要となりますが、更新量が少なく、アーカイブ化されていないWALのみで再同期処理が完了する場合は、必ずしもアーカイブWALは必須とはなりません。
 ##### スタンバイ側PostgreSQLの停止・故障と再開(再起動)の方法
 ##### 【追加】ロジカルレプリケーションのサブスクライバ―へ伝搬される処理とされない処理
-
+    対象：DMLのINSERT/UPDATE/DELETE、ただし、UPDATE/DELETEはREPLACA IDENTITYを事前に設定する必要がある
+    対象外：DDL、シーケンス、TRUNCATE
 ##### 【追加】ロジカルレプリケーションのサブスクライバ―でのコンフリクト
     PostgreSQLはSELECTでもロックを取ります。 なのでSELECT中にプライマリ側で対象行に更新があるとロック競合してWALの反映が待たされます。 するとWALがいつまで経っても反映されないのでmax_standby_streaming_delayの時間（Default 30秒）が過ぎてWALの更新が待たされてる場合にクエリが殺されます
 #### 重要な用語、コマンド、パラメータなど：
@@ -1058,6 +1059,13 @@ shared_preload_libraries = 'pg_stat_statements'
 ##### 【変更】pg_receivewal
 
 ##### 【追加】pg_rewind
+
+##### REPLACA IDENTITY
+* DEFAULT：主キー
+* USING INDEX：指定したインデックス
+* FULL：行全体
+* NOTHING：キー指定なし
+
 
 ### おまけ
 #### リストアの設計

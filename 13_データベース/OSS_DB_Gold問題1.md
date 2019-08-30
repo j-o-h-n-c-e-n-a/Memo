@@ -14,7 +14,7 @@
 # OSS-DB Gold問題
 ## １．運用管理（30％）
 ### Q.レプリケーション構成において、フェールオーバを実施する方法として正しいものは次のうちどれか。
-* [詳細 [××]](https://oss-db.jp/sample/gold_management_01/20_190515)
+* [詳細 [××●]](https://oss-db.jp/sample/gold_management_01/20_190515)
 1. スレーブ側でrecovery.confのtrigger_fileパラメータで設定したトリガファイルを作成する
 2. マスタ側でrecovery.confのtrigger_fileパラメータで設定したトリガファイルを作成する
 3. postgresql.confで自動フェールオーバの設定をする
@@ -24,7 +24,7 @@
 host    replication    postgres    192.168.1.2/32    trust
 ```
 ### Q．バックアップに関して正しいものをすべて選択しなさい。
-* [詳細 [××]](https://oss-db.jp/sample/gold_management_01/16_170313)
+* [詳細 [××●]](https://oss-db.jp/sample/gold_management_01/16_170313)
 1. 通常はフルバックアップを取得するよりも、pg_basebackupによって更新差分を取得する方が処理時間は短い。
 2. recovery_target_timelineをデフォルト値で使用すると、ベースバックアップが取得された際のタイムラインへ回復する。
 3. pg_dumpコマンドによってpsqlコマンドでリストア可能な形式 として出力したバックアップファイルには、データベースを作成する SQLコマンドが含まれる場合がある。
@@ -32,7 +32,7 @@ host    replication    postgres    192.168.1.2/32    trust
 5. pg_restoreコマンドで--encodingオプションを使用すると、sjisで作成したダンプファイルをUTF8でリストアすることができる。
 
 ### Q．pg_basebackupコマンドに関する説明として、適切でないものを2つ選びなさい。
-* [詳細 [××]](https://oss-db.jp/sample/gold_management_01/11_150123)
+* [詳細 [××●]](https://oss-db.jp/sample/gold_management_01/11_150123)
 1. 別サーバで動作しているPostgreSQLデータベースクラスタのベースバックアップを取得できる
 2. pg_basebackupコマンドの実行前にpg_start_backupコマンドを実行する必要がある
 3. fetch方式の場合、max_wal_sendersパラメータを少なくとも1以上に設定する必要がある
@@ -40,38 +40,15 @@ host    replication    postgres    192.168.1.2/32    trust
 5. テーブル空間が追加で作成されている場合は、テーブル空間内のデータはバックアップに含まれない
 
 ### Q．VACUUMに関して正しいものを全て選択しなさい。
-* [詳細 [××]](https://oss-db.jp/sample/gold_management_01/10_141027)
+* [詳細 [××●]](https://oss-db.jp/sample/gold_management_01/10_141027)
 1. FULLオプションを付加すると、データベース全体の不要領域が回収される。
 2. VERBOSEオプションを付加すると、VACUUM処理の詳細な情報を取得することができる。
 3. AUTOオプションを付加すると、autovacuumの設定を用いてVACUUMが行われる。
 4. ANALYZEオプションを付加すると、統計情報の更新も行われる。
 5. 一つのVACUUMコマンドに複数のテーブルを指定して実行することができる。
 
-### Q．VACUUMに関して正しいものを全て選択しなさい。
-* [詳細 [×●]](https://oss-db.jp/sample/gold_management_01/08_140702)
-1. VACUUMを実行するユーザが対象テーブルに対するVACUUMの実行権限を持っていない場合はエラーとなる。
-2. トランザクションブロック内でVACUUMを実施すれば、ROLLBACKによって処理を取り消すことができる。
-3. オプションが指定されていない通常のVACUUMでも、不要領域をOSに返還することがある。
-4. 多数の行を追加または削除した場合は、VACUUM ANALYZEを実施すべきである。
-
-### Q．ANALYZEに関して正しいものを全て選択しなさい。
-* [詳細 [×●]](https://oss-db.jp/sample/gold_management_01/07_140307)
-1. 整列されたデータを昇順にロードした場合、ANALYZEを実施しなくとも最適なプランが作成される。
-2. 自動バキュームデーモンがANALYZEを実施する場合がある。
-3. default_statistics_targetの値を大きくすると、ANALYZEの所要時間は短くなるがプランナの予測の品質は低下する。
-4. 対象とするテーブルへのSHARE UPDATE EXCLUSIVEロックが取得される。
-5. PostgreSQLのANALYZE文は、標準SQLに準拠している。
-
-### Q．2台のサーバ(プライマリサーバ、スタンバイサーバ)でストリーミングレプリケーションを行い、スタンバイサーバをホットスタンバイとして運用する。 この環境を構築する際に各サーバで設定するパラメータとして誤っているものを1つ選びなさい。
-* [詳細 [×●]](https://oss-db.jp/sample/gold_management_01/06_130619)
-1. プライマリサーバのpg_hba.confに、データベースフィールドを"replication"と指定した項目を設定する
-2. プライマリサーバのpostgresql.confに、"wal_level = hot_standby"を設定する
-3. スタンバイサーバのpostgresql.confに、"hot_standby = on"を設定する
-4. スタンバイサーバのpostgresql.confに、"standby_mode = 'on'"を設定する
-5. スタンバイサーバのrecovery.confの"primary_conninfo"に、プライマリサーバへの接続情報(libpq接続文字列)を設定する
-
 ### Q．データベースクラスタ配下の各サブディレクトリに保有されるデータの説明として、適切ではないものを1つ選びなさい。
-* [詳細 [××]](https://oss-db.jp/sample/gold_management_01/05_130510)
+* [詳細 [××●]](https://oss-db.jp/sample/gold_management_01/05_130510)
 1. globalディレクトリにはデータベースクラスタ全体で共有するテーブルが保有される。
 2. pg_tblspcディレクトリにはテーブル空間により管理されるテーブルが保有される。
 3. pg_xactディレクトリにはトランザクションのコミット状態のデータが保有される。
@@ -88,14 +65,6 @@ CREATE INDEX member_index ON member_table (team_id, birthday);
 3. 19メガバイト
 4. 23メガバイト
 5. 29メガバイト
-
-### Q．PostgreSQL のプロセス構造について、適切なものをすべて選びなさい。
-* [詳細 [●×]](https://oss-db.jp/sample/gold_management_01/02_111130)
-1. データベースに接続するクライアント一つ一つについて、別々のサーバプロセスが起動する。
-2. データベースクラスタ内のそれぞれのデータベースについて、別々のサーバプロセスが起動する。
-3. WAL ライタ、自動バキュームランチャ、統計情報コレクタなどいくつかのプロセスが動作しているが、いずれも postgres という同一の実行ファイルから作られるプロセスである。
-4. クライアントが接続していないときは、通常は postmaster というプロセスだけが動作している。
-5. データベースクラスタ1つに対して、postmaster というプロセスが1つ動作している。
 
 ### Q．以下のSQL分でテーブルを定義し、50万行を挿入する。テーブルのファイルサイズ見積りとして最も適切なものを1つ選びなさい。1ブロックは8192バイトとし、インデックスのファイルサイズは含めないものとする。
 ```
