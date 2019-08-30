@@ -13,16 +13,8 @@
 
 # OSS-DB Gold問題
 ## １．運用管理（30％）
-### Q．crypt関数の意味として、正しいものは次のうちどれか。
-* [詳細 [●]](https://oss-db.jp/sample/gold_management_01/22_190731)
-1. 対称鍵を指定して、データを暗号化する
-2. データのバイナリハッシュを計算する
-3. パスワードのハッシュ処理を行う
-4. データのハッシュ化MACを計算する
-5. パスワードハッシュ時に使用するランダムなソルト文字列を新規に作成する
-
 ### Q.レプリケーション構成において、フェールオーバを実施する方法として正しいものは次のうちどれか。
-* [詳細 [×]](https://oss-db.jp/sample/gold_management_01/20_190515)
+* [詳細 [××]](https://oss-db.jp/sample/gold_management_01/20_190515)
 1. スレーブ側でrecovery.confのtrigger_fileパラメータで設定したトリガファイルを作成する
 2. マスタ側でrecovery.confのtrigger_fileパラメータで設定したトリガファイルを作成する
 3. postgresql.confで自動フェールオーバの設定をする
@@ -32,7 +24,7 @@
 host    replication    postgres    192.168.1.2/32    trust
 ```
 ### Q．バックアップに関して正しいものをすべて選択しなさい。
-* [詳細 [×]](https://oss-db.jp/sample/gold_management_01/16_170313)
+* [詳細 [××]](https://oss-db.jp/sample/gold_management_01/16_170313)
 1. 通常はフルバックアップを取得するよりも、pg_basebackupによって更新差分を取得する方が処理時間は短い。
 2. recovery_target_timelineをデフォルト値で使用すると、ベースバックアップが取得された際のタイムラインへ回復する。
 3. pg_dumpコマンドによってpsqlコマンドでリストア可能な形式 として出力したバックアップファイルには、データベースを作成する SQLコマンドが含まれる場合がある。
@@ -40,7 +32,7 @@ host    replication    postgres    192.168.1.2/32    trust
 5. pg_restoreコマンドで--encodingオプションを使用すると、sjisで作成したダンプファイルをUTF8でリストアすることができる。
 
 ### Q．pg_basebackupコマンドに関する説明として、適切でないものを2つ選びなさい。
-* [詳細 [×]](https://oss-db.jp/sample/gold_management_01/11_150123)
+* [詳細 [××]](https://oss-db.jp/sample/gold_management_01/11_150123)
 1. 別サーバで動作しているPostgreSQLデータベースクラスタのベースバックアップを取得できる
 2. pg_basebackupコマンドの実行前にpg_start_backupコマンドを実行する必要がある
 3. fetch方式の場合、max_wal_sendersパラメータを少なくとも1以上に設定する必要がある
@@ -48,7 +40,7 @@ host    replication    postgres    192.168.1.2/32    trust
 5. テーブル空間が追加で作成されている場合は、テーブル空間内のデータはバックアップに含まれない
 
 ### Q．VACUUMに関して正しいものを全て選択しなさい。
-* [詳細 [×]](https://oss-db.jp/sample/gold_management_01/10_141027)
+* [詳細 [××]](https://oss-db.jp/sample/gold_management_01/10_141027)
 1. FULLオプションを付加すると、データベース全体の不要領域が回収される。
 2. VERBOSEオプションを付加すると、VACUUM処理の詳細な情報を取得することができる。
 3. AUTOオプションを付加すると、autovacuumの設定を用いてVACUUMが行われる。
@@ -56,14 +48,14 @@ host    replication    postgres    192.168.1.2/32    trust
 5. 一つのVACUUMコマンドに複数のテーブルを指定して実行することができる。
 
 ### Q．VACUUMに関して正しいものを全て選択しなさい。
-* [詳細 [×]](https://oss-db.jp/sample/gold_management_01/08_140702)
+* [詳細 [×●]](https://oss-db.jp/sample/gold_management_01/08_140702)
 1. VACUUMを実行するユーザが対象テーブルに対するVACUUMの実行権限を持っていない場合はエラーとなる。
 2. トランザクションブロック内でVACUUMを実施すれば、ROLLBACKによって処理を取り消すことができる。
 3. オプションが指定されていない通常のVACUUMでも、不要領域をOSに返還することがある。
 4. 多数の行を追加または削除した場合は、VACUUM ANALYZEを実施すべきである。
 
 ### Q．ANALYZEに関して正しいものを全て選択しなさい。
-* [詳細 [×]](https://oss-db.jp/sample/gold_management_01/07_140307)
+* [詳細 [×●]](https://oss-db.jp/sample/gold_management_01/07_140307)
 1. 整列されたデータを昇順にロードした場合、ANALYZEを実施しなくとも最適なプランが作成される。
 2. 自動バキュームデーモンがANALYZEを実施する場合がある。
 3. default_statistics_targetの値を大きくすると、ANALYZEの所要時間は短くなるがプランナの予測の品質は低下する。
@@ -71,7 +63,7 @@ host    replication    postgres    192.168.1.2/32    trust
 5. PostgreSQLのANALYZE文は、標準SQLに準拠している。
 
 ### Q．2台のサーバ(プライマリサーバ、スタンバイサーバ)でストリーミングレプリケーションを行い、スタンバイサーバをホットスタンバイとして運用する。 この環境を構築する際に各サーバで設定するパラメータとして誤っているものを1つ選びなさい。
-* [詳細 [×]](https://oss-db.jp/sample/gold_management_01/06_130619)
+* [詳細 [×●]](https://oss-db.jp/sample/gold_management_01/06_130619)
 1. プライマリサーバのpg_hba.confに、データベースフィールドを"replication"と指定した項目を設定する
 2. プライマリサーバのpostgresql.confに、"wal_level = hot_standby"を設定する
 3. スタンバイサーバのpostgresql.confに、"hot_standby = on"を設定する
@@ -79,7 +71,7 @@ host    replication    postgres    192.168.1.2/32    trust
 5. スタンバイサーバのrecovery.confの"primary_conninfo"に、プライマリサーバへの接続情報(libpq接続文字列)を設定する
 
 ### Q．データベースクラスタ配下の各サブディレクトリに保有されるデータの説明として、適切ではないものを1つ選びなさい。
-* [詳細 [×]](https://oss-db.jp/sample/gold_management_01/05_130510)
+* [詳細 [××]](https://oss-db.jp/sample/gold_management_01/05_130510)
 1. globalディレクトリにはデータベースクラスタ全体で共有するテーブルが保有される。
 2. pg_tblspcディレクトリにはテーブル空間により管理されるテーブルが保有される。
 3. pg_xactディレクトリにはトランザクションのコミット状態のデータが保有される。
@@ -98,7 +90,7 @@ CREATE INDEX member_index ON member_table (team_id, birthday);
 5. 29メガバイト
 
 ### Q．PostgreSQL のプロセス構造について、適切なものをすべて選びなさい。
-* [詳細 [●]](https://oss-db.jp/sample/gold_management_01/02_111130)
+* [詳細 [●×]](https://oss-db.jp/sample/gold_management_01/02_111130)
 1. データベースに接続するクライアント一つ一つについて、別々のサーバプロセスが起動する。
 2. データベースクラスタ内のそれぞれのデータベースについて、別々のサーバプロセスが起動する。
 3. WAL ライタ、自動バキュームランチャ、統計情報コレクタなどいくつかのプロセスが動作しているが、いずれも postgres という同一の実行ファイルから作られるプロセスである。
@@ -143,7 +135,7 @@ postgres=# EXPLAIN SELECT relname,nspname FROM pg_class left join pg_namespace O
 5. 「width=〜」の部分は、統計情報をもとに推測される1行あたりの平均のバイトサイズを示している
 
 ### Q．pg_stat_statementsの説明として正しいものは次のうちどれか。
-* [詳細 [●]](https://oss-db.jp/sample/gold_monitoring_01/15_190529)
+* [詳細 [●×]](https://oss-db.jp/sample/gold_monitoring_01/15_190529)
 1. SQL文の実行に指定した時間以上かかった場合、それぞれのSQL文の実行に要した時間を記録する
 2. ロック待ちとなっているトランザクションや対象のテーブルを確認する
 3. 実行された全てのSQL文の実行時の統計情報を記録する
@@ -198,7 +190,7 @@ Indexes:
 5. pgbench_branchesを対象にANALYZEを実行する
 
 ### Q．EXPLAINコマンドで指定可能な出力形式のうち誤っているものを全て選択しなさい。
-* [詳細 [×]](https://oss-db.jp/sample/gold_monitoring_01/10_140812)
+* [詳細 [×●]](https://oss-db.jp/sample/gold_monitoring_01/10_140812)
 1. JSON
 2. HTML
 3. CSV
@@ -206,14 +198,14 @@ Indexes:
 5. XML
 
 ### Q．標準統計情報ビューに関して正しいものを全て選択しなさい。
-* [詳細 [●]](https://oss-db.jp/sample/gold_monitoring_01/08_140530)
+* [詳細 [●●]](https://oss-db.jp/sample/gold_monitoring_01/08_140530)
 1. pg_stat_all_tablesから、TOASTテーブルから読み取られたディスクブロック数を取得することができる。
 2. pg_stat_activityから、現在の問い合わせの実行開始時刻を取得することができる。
 3. pg_stat_databaseから、対象データベースのエラー発生数を取得することができる。
 4. pg_statio_all_tablesから、対象テーブルのバッファヒット数を取得することができる。
 
 ### Q．pg_stat_databaseに関する記述で誤っているものを全て選択しなさい。
-* [詳細 [×]](https://oss-db.jp/sample/gold_monitoring_01/07_140417)
+* [詳細 [××]](https://oss-db.jp/sample/gold_monitoring_01/07_140417)
 1. データベースクラスタ全体の稼働統計情報が1行だけ格納される。
 2. blks_hitはバッファキャッシュにヒットしたブロック数が格納される。
 3. blks_readはディスクから読み込んだブロック数とバッファキャッシュから読み込んだブロック数の合計である。
@@ -237,7 +229,7 @@ Nested Loop (cost=0.00..352.17 rows=97 width=16) (actual time=0.033..1.875 rows=
 Total runtime: 2.065 ms
 ```
 この結果言えることとして、誤っているものを2つ選択せよ。
-* [詳細 [×]](https://oss-db.jp/sample/gold_monitoring_01/02_130402)
+* [詳細 [××]](https://oss-db.jp/sample/gold_monitoring_01/02_130402)
 1. この問い合わせにより出力される行数は97行であった。
 2. Total runtime には、結果行を操作するための時間の他に、エクゼキュータの起動、停止時間も含まれている。
 3. table2_i2 という名前のインデックスを用いて検索をしている。
@@ -249,7 +241,7 @@ Total runtime: 2.065 ms
 
 ## ３．パフォーマンスチューニング（20％）
 ### Q．問い合わせ計画に関する以下の内容のうち、正しいものを全て選択しなさい。
-* [詳細 [×]](https://oss-db.jp/sample/gold_performance_01/13_171016)
+* [詳細 [××]](https://oss-db.jp/sample/gold_performance_01/13_171016)
 1. enable_indexscanを無効に設定すると、インデックススキャンは完全に行われなくなる。
 2. enable_seqscanを無効に設定すると、シーケンシャルスキャンは完全に行われなくなる。
 3. random_page_costをseq_page_costと比較して小さく設定すると、よりインデックススキャンが使用されるようになる。
@@ -257,7 +249,7 @@ Total runtime: 2.065 ms
 5. default_statistics_targetをより小さく設定すると、より細かく統計情報を収集するようになるため、プランナの予測の品質が向上する。 
 
 ### Q．work_memをチューニングすることによって、性能が向上すると考えられる処理を全て選択しなさい。
-* [詳細 [×]](https://oss-db.jp/sample/gold_performance_01/12_170403)
+* [詳細 [×●]](https://oss-db.jp/sample/gold_performance_01/12_170403)
 1. ORDER BY
 2. CREATE INDEX
 3. マージ結合
@@ -265,7 +257,7 @@ Total runtime: 2.065 ms
 5. 自動VACUUM
 
 ### Q．インデックスの作成に関する説明として、適切なものを2つ選びなさい。
-* [詳細 [×]](https://oss-db.jp/sample/gold_performance_01/11_151116)
+* [詳細 [××]](https://oss-db.jp/sample/gold_performance_01/11_151116)
 1. FILLFACTORの指定が省略された場合、デフォルト値として対象テーブルのFILLFACTORと同じ値が設定される
 2. UNLOGGEDパラメータが指定された場合、インデックスの更新時にWALログが取られなくなり、更新処理が高速化する
 3. PARALLELパラメータが指定された場合、複数のプロセスによりインデックスが作成され、作成時間が短縮する
@@ -273,7 +265,7 @@ Total runtime: 2.065 ms
 5. インデックスの定義で使用される関数と演算子は、immutableでなければならない 
 
 ### Q．GUCパラメータのenable_seqscanをonからoffに変更する前後で、同一のクエリに対してEXPLAIN ANALYZE文で実行計画を取得する。実行計画の変化の説明として、最も適切ではないものを１つ選びなさい。この時、enable_seqscan以外の条件はすべて同一とする。
-* [詳細 [×]](https://oss-db.jp/sample/gold_performance_01/10_150421)
+* [詳細 [××]](https://oss-db.jp/sample/gold_performance_01/10_150421)
 1. Total runtimeの値が大きくなる可能性がある
 2. Total runtimeの値が小さくなる可能性がある
 3. 最上位ノードの全体推定コストが大きくなる可能性がある
@@ -281,30 +273,22 @@ Total runtime: 2.065 ms
 5. 全く同一の実行計画が選択される可能性がある
 
 ### Q．インデックスの再作成について正しい記述を2つ選びなさい。
-* [詳細 [×]](https://oss-db.jp/sample/gold_performance_01/09_150205)
+* [詳細 [×●]](https://oss-db.jp/sample/gold_performance_01/09_150205)
 1. インデックスの再作成はサービスを停止して行う必要がある。
 2. REINDEXはインデックスの元となるテーブルの読み込みをロックしないため、サービス稼働中に実行しても参照処理への影響はない。
 3. CREATE INDEX CONCURRENTLYは、同時挿入、更新、削除と競合するロックを獲得せずにインデックスを作成できる。
 4. CREATE INDEX CONCURRENTLYでは、プライマリキーの作成も可能である。
 5. 定期的にインデックスの再作成を行うことで、インデックスの肥大化を抑止できる。
 
-### Q．PostgreSQLの処理全般が定期的に遅くなる現象が発生した。この場合のチューニングで効果が期待できる対策を2つ選びなさい。
-* [詳細 [●]](https://oss-db.jp/sample/gold_performance_01/08_150205)
-1. 遅くなったSQLを見直し、負荷の原因となっている記述を修正する。
-2. checkpoint_completion_targetを調整して、チェックポイントの負荷分散を図る。
-3. autovacuum_cost_limitまたはvacuum_cost_limit値を大きくし、VACUUM処理の負荷低減を図る。
-4. ストリーミングレプリケーション構成に変更し負荷分散を図る。
-5. PostgreSQLの特性であり対策はない。
-
 ### Q．性能低下の原因に関して正しいものをすべて選択しなさい。
-* [詳細 [×]](https://oss-db.jp/sample/gold_performance_01/06_141027)
+* [詳細 [××]](https://oss-db.jp/sample/gold_performance_01/06_141027)
 1. shared_buffersの値を大きく設定しすぎたことによって、チェックポイント中の問い合わせの性能が低下した。
 2. maintenance_work_memをwork_memよりも大きく設定したことによって、VACUUM処理の性能が低下した。
 3. 複数のセッションが多量のINSERTを発行したことによって、WALファイルへの書き込みで競合が発生し、INSERTの性能が低下した。
 4. pgstattupleを用いて定期的にタプルレベルの統計情報を取得しなかったため、PostgreSQLが最適な実行計画を作成できずに問い合わせの性能が低下した。
 
 ### Q．データベースに大量データを投入する際の性能を向上させるために、一時的に講じることとして、適切とは言えないものを2つ選びなさい。
-* [詳細 [×]](https://oss-db.jp/sample/gold_performance_01/03_130704)
+* [詳細 [××]](https://oss-db.jp/sample/gold_performance_01/03_130704)
 1. 自動コミットをオフにする
 2. インデックスや外部キー制約を削除する
 3. maintenance_work_memを増やす
@@ -312,7 +296,7 @@ Total runtime: 2.065 ms
 5. checkpoint_timeoutを増やす
 
 ### Q．デッドロックに関する GUC パラメータ deadlock_timeout の説明として、正しいものをすべて選びなさい。
-* [詳細 [×]](https://oss-db.jp/sample/gold_performance_01/02_111115)
+* [詳細 [×●]](https://oss-db.jp/sample/gold_performance_01/02_111115)
 1. deadlock_timeout で指定された時間を経過してもロックが獲得できなければ、デッドロックが発生していると判断される。
 2. deadlock_timeout の値を調整することで、デッドロックの発生を回避できる。
 3. deadlock_timeout の値を小さくすると、ロック待ちのプロセスが減るので、結果的にCPU負荷を小さくすることができると考えられる。
@@ -350,31 +334,19 @@ Total runtime: 2.065 ms
 * 3. deadlock_timeoutの値を大きくすると、デッドロックが検出されるまでの時間が長くなる
 * 4. deadlock_timeoutの値を大きくすると、デッドロックの誤検知の発生確率が高くなる
 * 5. トランザクションが並列実行される状態において、パラメータチューニングによりデッドロックの発生を防止する方法はない
-
+<details>A．1,5</details>
 
 ## ４．障害対応（20％）
 ### Q．操作ミスによってリレーションが消失することを想定した対策または復旧を行う際に、実施すべき内容として正しいものを全て選択しなさい。
-* [詳細 [×]](https://oss-db.jp/sample/gold_trouble_01/07_171031)
+* [詳細 [××]](https://oss-db.jp/sample/gold_trouble_01/07_171031)
 1. ミラーリングによって、ディスクの複製を作成しておく。
 2. pg_basebackupによって、定期的に論理バックアップを取得しておく。
 3. PITRによって、操作ミス直前の時間まで巻き戻しを行う。
 4. pg_dumpallによって、操作ミス直前の時間まで巻き戻しを行う。
 5. wal_levelをminimalからhot_standbyに変更しておく。
 
-### Q．以下のサーバログに関する説明として、適切なものを1つ選びなさい。
-```
-LOG: server process (PID 21334) was terminated by signal 11: Segmentation fault
-DETAIL: Failed process was running: SELECT user_func();
-```
-* [詳細 [●]](https://oss-db.jp/sample/gold_trouble_01/06_150904)
-1. ユーザ要求によりクエリがキャンセルされた
-2. プロセスに対してpg_cancel_backend関数が発行された
-3. プロセスに対してpg_terminate_backend関数が発行された
-4. OOM KillerによりSIGKILLが発生した
-5. user_funcユーザ定義関数によりSIGSEGVが発生した
-
 ### Q．2台のサーバでレプリケーションを行い、スタンバイサーバをホットスタンバイとして稼動させる。サーバ間の通信が一時的に遮断し、その後に復旧した場合の説明として、適切ではないものを2つ選びなさい。
-* [詳細 [×]](https://oss-db.jp/sample/gold_trouble_01/05_150612)
+* [詳細 [××]](https://oss-db.jp/sample/gold_trouble_01/05_150612)
 1. レプリケーションの方式が同期か非同期かにかかわらず、通信が遮断中でも、マスタサーバでの参照系クエリは実行可能である
 2. レプリケーションの方式が同期か非同期かにかかわらず、通信が遮断中でも、スタンバイサーバでの参照系クエリは実行可能である
 3. 同期レプリケーションの場合は、通信が遮断中は、マスタサーバでの更新系クエリは待機させられる
@@ -385,18 +357,10 @@ DETAIL: Failed process was running: SELECT user_func();
 ```
 「ERROR: invalid page header in block 0 of relation base/16408/16421」
 ```
-* [詳細 [×]](https://oss-db.jp/sample/gold_trouble_01/03_130910)
+* [詳細 [×●]](https://oss-db.jp/sample/gold_trouble_01/03_130910)
 1. データベース全体に対してVACUUMを実行する
 2. 該当のテーブルファイルを削除し、PostgreSQLを再起動する
 3. zero_damaged_pages を on に設定して再度テーブルを参照する
 4. 該当のシステムテーブルに対してCLUSTERを実行する
 5. PostgreSQLをシングルユーザ状態で起動し、該当のテーブルに定義されたインデックスに対してREINDEX INDEXを実行する
-
-### Q．システムカタログのインデックスに関する説明として、適切ではないものを1つ選びなさい。
-* [詳細 [●]](https://oss-db.jp/sample/gold_trouble_01/01_130510)
-1. 共有システムカタログのインデックスは$PGDATA/global内に作成される。
-2. システムカタログのインデックスが破損している場合、サーバプロセスが起動時に強制終了する可能性がある。
-3. システムカタログの読み込み時にシステムインデックスを無視するにはGUCパラメータのignore_system_indexesを利用する。
-4. インデックスの破損範囲が不明な場合に、データベースの全てのシステムインデックスを再構成するためのSQLコマンドはREINDEX SYSTEMである。
-5. 共有システムカタログのいずれかのインデックスが破損した可能性がある場合は、必ずスタンドアロンサーバを使用して修復しなければいけない。
 
