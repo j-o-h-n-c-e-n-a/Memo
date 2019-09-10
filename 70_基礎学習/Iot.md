@@ -1,6 +1,6 @@
 * 参考リンク
-    - http://iot-jp.com/
-    - 
+    - [Iot](http://iot-jp.com/)
+    - [IoTシステム技術検定　基礎編](http://www.mcpc-jp.org/iotkentei/text.html)
 * 3DCG(3次元コンピュータグラフィック)
     - 産業用ロボットに対して、オフラインティーチングを行うために使用する。
 * 3GPP(Third Generation Partnership Project)
