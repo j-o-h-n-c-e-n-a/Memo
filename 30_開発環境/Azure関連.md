@@ -35,3 +35,8 @@
 6. HTTPS対応
 *	a. https://black-techmemo.net/tfs/azure-devops-server-2019/1467/
 *	b. オレオレ証明書、openssl
+
+### WVD
+https://cloud.nissho-ele.co.jp/blog/microsoft_windows-virtual-desktop/
+
+google ドキュメントで音声入力
