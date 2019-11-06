@@ -149,6 +149,8 @@
 	stub を用意して上記のインタフェースを実装する
 	facade と実際のシステムをつなぐ
 
+## GraphQL
+
 ## エラー処理
 ## ログ出力
 * 端末識別番号
@@ -159,6 +161,7 @@
 # 参考URL
 * [](http://smsurf.app-rox.com/api/)
 * [共通語彙基盤](https://imi.go.jp/)
+* [Postman](http://kageura.hatenadiary.jp/entry/hazimetepostman)
 
 # 外部ＡＰＩ
 ## 地図
