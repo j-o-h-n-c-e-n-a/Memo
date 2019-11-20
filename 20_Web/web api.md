@@ -158,6 +158,38 @@
 ## ユーザ認証
 * アクセストークン
 
+## PDF		
+### PDF出力ツール	
+#### iTextSharp	
+		枯れたツールなので、信頼性はある
+		ライセンスに注意が必要とのことで使用しない
+		https://hnys.jp/develop/itextsharp/
+		https://codezine.jp/article/detail/462
+#### PDFSharp	
+		上記のライセンス問題を解消
+* [](http://2ndgd.blogspot.com/2018/07/pdfsharp-migradoc-cpdf.html)
+* [](www.pdfsharp.net/wiki/MainPage.ashx?AspxAutoDetectCookieSupport=1)
+### PDF編集ツール	
+#### MigraDoc	
+	上記PDFSharpと組み合わせて使用
+### 他	
+#### PanDoc	
+* [](https://pandoc.org/)
+		クリスタルレポート	
+			[ダウンロード](https://www.crystalreports.com/crystal-reports-visual-studio/)
+			[ライセンス](https://crystalreports.jp/sap-crystal-solutions/licence)
+			[開発者ページ](https://help.sap.com/viewer/product/SAP_CRYSTAL_REPORTS,_DEVELOPER_VERSION_FOR_MICROSOFT_VISUAL_STUDIO/SP21/ja-JP)
+			
+			
+	・	PDFビューア	
+		https://www.nedia.ne.jp/blog/2019/04/23/14048	
+		【推奨】AndroidのChromeでは開けないので、Acrobatをインストールする	
+		【非推奨】Cordova-Plugin-Documant-Viewer を使う	
+			https://www.npmjs.com/package/cordova-plugin-document-viewer
+		【非推奨】PDF.JS を使う	
+			https://mozilla.github.io/pdf.js/
+
+
 # 参考URL
 * [](http://smsurf.app-rox.com/api/)
 * [共通語彙基盤](https://imi.go.jp/)
