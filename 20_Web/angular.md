@@ -95,3 +95,26 @@
 
   ・  インストールされたphonegapに対応した、android SDK をインストールする
       例）ver.9は、APIレベル28のSDKが必要
+
+
+
+
+https://lacolaco.hatenablog.com/entry/2019/04/10/235400
+https://lacolaco.hatenablog.com/entry/2019/05/10/005829
+
+
+phonegap のバージョンがｖ８からｖ９に更新される。（AndroidAPIレベル２８対応）																					
+	https://docs.monaca.io/ja/release_notes/20190627_cordova9/																				
+typescript の変更点（参考）																					
+	https://qiita.com/vvakame/items/e7bbaff54db8fbf986bb																				
+angular/cli の変更点																					
+	https://codezine.jp/article/detail/11665																				
+angular の変更点																					
+	https://www.publickey1.jp/blog/19/angular_8ivyjsdifferential_loading.html																				
+＜おまけ：新機能の検証＞																					
+【高速化】レンダリングエンジンをIvyに変更する																					←動作があやしい
+	https://dev.classmethod.jp/client-side/angular-v8-release/																				
+【高速化】ビルド高速化ツールのインストール																					←動作せず
+	https://angular.jp/guide/bazel																				
+【高速化】web worker を使用する																					←動作せず
+	https://angular.jp/guide/web-worker																				
