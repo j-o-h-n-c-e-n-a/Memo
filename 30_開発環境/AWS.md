@@ -17,6 +17,8 @@
 * Amazon DynamoDB
 * Amazon CloudWatch
 * Amazon API Gateway
+* Route53
+* ELB
 
 ## 出題範囲
 ### 分野 1: 回復性の高いアーキテクチャを設計する 34% 
@@ -38,48 +40,52 @@
 ### 分野 5: オペレーショナルエクセレンスを備えたアーキテクチャを定義する 6%
 * 5.1 オペレーショナルエクセレンスを実現するソリューションの設計特性を選択する
 
+## 1．AWS概要
+### AWSの仕組み
+### AWSの操作
+### アソシエイト試験概要
+### AWSの全体像
+### サポート体制と料金プラン
+* サポート：ベーシック/開発者/ビジネス/エンタープライズ
+* プラン毎の制限
+  + VPC数
+  + IAMユーザ数
+  + TrustedAdvisorの機能
 
-## AWSの仕組み
-## AWSの操作
-## アソシエイト試験概要
-## AWSの全体像
+### AWSアーキテクチャ設計の基礎
+* Well-Architected Framework
+  1. 運用上の優秀性
+  2. セキュリティ
+  3. 信頼性
+  4. パフォーマンス効率
+  5. コスト最適化
+* AWSベストプラクティス
+* AWS設計ケーススタディ
+* Well-Architected Frameworkのまとめ
+* 信頼性の確保
+* 高可用性の確保
+* 信頼性の高いアーキテクチャ構築の実践
 
-## IAMの概要
-### IAM設計
-### IAMグループへのポリシー適用(ハンズオン) ポリシー、グループ、ロール
-### IAMケーススタディ：自社組織に必要な権限設定
-* IT管理者：フルアクセス＋MFA：管理ポリシーAdministrator
-* 運用管理者：運用ツール全般＋開発環境(DevOps)：ツール ELB/EC2/RDS/S3/Auto-Scaling/VPC Config/CloudTrail/CloudWathch
-* アプリ開発者：担当しているアプリの開発範囲のみ：ツール ELB/EC2/RDS/S3/Auto-Scaling/VPC 
-
-## EC2の概要
+## 2．コンピューティングとストレージ
+### EC2の概要
+  コンピューティング能力の提供
 * EC2でWEBサーバーを立ち上げる(ハンズオン)
 * Elastic IPの設定(ハンズオン)
+  + 再起動してもIPアドレスが維持される
+  + 他には、パブリックとプライベートがある
+  + 利用していない場合に課金される
 * Bashコマンドによる設定
-  
-* EC2からバッチでS3にデータ保存
-* S3のみへアクセスできるポリシーを作成
-* EC2にそのポリシーを割り当てる
-
-* EBSの概要
-* AMIとsnapshotの活用(ハンズオン)
-* EC2のまとめ
-
-## VPCの概要
-* VPCとの接続
-* VPCの設計
-* VPCとサブネットを設定する（ハンズオン）
-
-## VPC関連のハンズオン
-* VPC/サブネットにサーバーを設定する(ハンズオン)
-* ネットワークACL(ハンズオン)
-* VPCエンドポイント(ハンズオン)
-* VPC Flow logs
-* VPCのまとめ
-* 小テスト VPCテスト
-
-## S3の概要
+  + 外部DNSホスト名
+  + ユーザ名とメタデータ
+* ハードウェア占有インスタンスとDedicatedHosts
+  + 専用ハードウェアが提供される
+  + ハードウェア占有インスタンスはホストコンピューターを指定できないが、DedicatedHostsはできる
+  + 課金単位も異なる
+### S3(SimpleStorageService)の概要
 * S3の用途
+  + EC2からバッチでS3にデータ保存
+  + S3のみへアクセスできるポリシーを作成
+  + EC2にそのポリシーを割り当てる
 * S3ハンズオン
   + S3パケットの作成と操作（ハンズオン）
   + S3のバージョン管理（ハンズオン)
@@ -90,24 +96,99 @@
 * S3の外部接続
 * S3のまとめ
 * S3小テスト
+### EBS(ElasticBlockStore)
+* EBSの概要
+  + インスタンスに接続するとOSから認識されるブロックストレージ
+* AMIとsnapshotの活用(ハンズオン)
+* EC2のまとめ
+  + 支払方法：通常はオンデマンドだが、リザーブドやスポットといった割引利用の方法もある
+### Lambda
+### EFS
 
-## AWSアーキテクチャ設計の基礎
-* Well-Architected Framework
-* AWSベストプラクティス
-* AWS設計ケーススタディ
-* Well-Architected Frameworkのまとめ
-* 信頼性の確保
-* 高可用性の確保
-* 信頼性の高いアーキテクチャ構築の実践
-
-## ELBの概要
+## 3．セキュリティとネットワーキング
+### IAMの概要
+### IAM設計
+#### IAMグループへのポリシー適用(ハンズオン) ポリシー、グループ、ロール
+#### IAMケーススタディ：自社組織に必要な権限設定
+* IT管理者：フルアクセス＋MFA：管理ポリシーAdministrator
+* 運用管理者：運用ツール全般＋開発環境(DevOps)：ツール ELB/EC2/RDS/S3/Auto-Scaling/VPC Config/CloudTrail/CloudWathch
+* アプリ開発者：担当しているアプリの開発範囲のみ：ツール ELB/EC2/RDS/S3/Auto-Scaling/VPC 
+### VPCの概要
+* VPCとの接続
+* VPCの設計
+* VPCとサブネットを設定する（ハンズオン）
+### VPC関連のハンズオン
+* VPC/サブネットにサーバーを設定する(ハンズオン)
+* ネットワークACL(ハンズオン)
+* VPCエンドポイント(ハンズオン)
+* VPC Flow logs
+* VPCのまとめ
+* 小テスト VPCテスト
+### ELB(Elastic Load Balancing)の概要
 * ELBによる冗長構成(ハンズオン)
 * ELBによる冗長構成(ハンズオン)
 * Auto-Scalingの概要
 * Auto-Scalingの設定(ハンズオン)
 * RDSの概要
+### Auto Scaling
+### Route53
+  フルマネージドのネームサーバー、トラフィックルーティング、ヘルスチェックとDNSフェイルオーバー
+#### ネームサーバー
+* ルートを起点にすべてのFQDNを探索できるように構成された分散データベース
+* NSレコードとGlueによる親ゾーンから子ゾーンへの権限移譲の仕組み
+* レコードを構成する5つの要素
+  + NAME
+  + TTL
+  + CLASS
+  + TYPE
+  + RDATA
+* 用途に応じたリソースレコードタイプ
+* CNAMEレコードタイプの制約とZoneApex
+* 正常応答のキャッシュ、不存在応答のネガティブキャッシュ
+### Direct Connect
+### CloudFront
+### セキュリティサービス
+
+## 4．データベース
+### RDS
+### DyanamoDB
+
+## 5．管理とガバナンス
+### CloudWatch
+### CloudTail
+### Config
+### TrustedAdvisor
+### オペレーション自動化サービス
+
+## 6．アプリケーション統合
+### SQS/SNS/SES
+### SWF
+
+## 7．分析サービス
+### 分析のためのサービス
+### Redshift
+
+## 8. 移行とコスト管理のサービス
+### 移行のためのサービス
+### コスト管理のためのサービス
+
+## 用語集
+* AZ(AvailabilityZone)：互いに隣接しているデータセンターの集まり
+* エッジローケーション
+* ENI(ElasticNecworkInterface)：仮想ネットワークインターフェース
+* SLA
+* AMI(AmazonMachineImage)
+* キーペア
+* セキュリティグループ
+* プレイスメントグループ
+* メトリクスの監視：CloudWatch
+  + プッシュ通知：SNS（SimpleNotificationService）
+* AutoRecovery：異常検知後のアクション
+  + 再起動により別ハードウェアで起動されるため、ハードウェア起因の障害は回避できる可能性が高くなる
+* Marketplace：AMIを購入できる
 
 ## 参考
+AWS活用資料集
 https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS%20Certified%20Solutions%20Architect%20-%20Associate_Exam%20Sample_v1.5_FINALJP.pdf
 https://aws.amazon.com/jp/about-aws/events/aws-innovate/
 https://aws.amazon.com/jp/aws-jp-introduction/aws-jp-webinar-service-cut/
