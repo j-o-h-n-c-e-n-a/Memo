@@ -20,3 +20,11 @@
 * samaccountname
 * displayname
 * description
+
+* ASP.NET Identify 2.x
+* 生体認証
+	- Windows Hello
+
+* [OSSによるアイデンティティ管理](http://www.atmarkit.co.jp/ait/series/1179/)
+* [OpenAM最新情報](http://kfep.jp/openam-news)
+* [オープンソース活用のメリット OpenAMによるシングルサインオン 第1回](http://www.ogis-ri.co.jp/pickup/themistruct/note/note_sso01.html)

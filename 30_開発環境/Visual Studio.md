@@ -202,3 +202,13 @@
 *	.net Core
 	-	今回の検証では、VB.NETを使用したので .net Coreを利用できなかった。
 		今後、最新環境への更新を考えると.net Coreへと置き換えたいが、互換性がないため簡単に移行できるのかは再度検証を要する。
+
+## 近未来
+* .NET Framework Core
+	- .NET MVC Core 1.0(ASP.NET MVC 6.0)
+	- Entity Framework Core 1.0(Entity Framework v7) ※
+* 導入フレームワークで重複している機能のどちらを採用すべきか？
+	- 今回は比較検討する時間が無かったため、今後改めて検討する。
+
+# 参考
+* [NpgsqlとEntityFramework Coreを使ってPostgreSQLをCRUDする](http://ohke.hateblo.jp/entry/2017/03/03/000000)
