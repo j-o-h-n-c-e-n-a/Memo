@@ -43,7 +43,6 @@
 ## 1．AWS概要
 ### AWSの仕組み
 ### AWSの操作
-### 責任共有モデル
 ### アソシエイト試験概要
 ### AWSの全体像
 ### サポート体制と料金プラン
@@ -82,7 +81,6 @@
   + 専用ハードウェアが提供される
   + ハードウェア占有インスタンスはホストコンピューターを指定できないが、DedicatedHostsはできる
   + 課金単位も異なる
-### Lambda
 ### Auto Scaling
 * Auto-Scalingの概要
 * Auto-Scalingの設定(ハンズオン)
@@ -92,7 +90,6 @@
 * AMIとsnapshotの活用(ハンズオン)
 * EC2のまとめ
   + 支払方法：通常はオンデマンドだが、リザーブドやスポットといった割引利用の方法もある
-### EFS
 ### S3(Simple Storage Service)の概要
 * S3の用途
   + EC2からバッチでS3にデータ保存
@@ -107,9 +104,19 @@
 * S3プロパティの活用(ハンズオン)
 * S3の外部接続
 * S3のまとめ
+  + バージョニング
+  + ライフサイクル
+  + 静的ウェブホスティング
+  + 暗号化
 * S3小テスト
 ### Glacier
   低コストアーカイブ向けストレージ
+### ECS/EKS/Fargate
+  コンテナに関するサービス
+### Lambda
+### APIGateway
+### Strage Gateway/EFS
+  Strage Gatewayはオンプレミス環境からの接続用アプライアンス。EFSは分散ストレージ
 
 ## 3．セキュリティとネットワーキング
 ### IAM
@@ -124,9 +131,11 @@
 * アプリ開発者
   + 担当しているアプリの開発範囲のみ
   + ツール ELB/EC2/RDS/S3/Auto-Scaling/VPC
-### Shield
+### セキュリティサービス
+#### 責任共有モデル
+#### Shield
   DDos対策
-### WAF
+#### WAF
 ### VPCの概要
 * VPCとの接続
 * VPCの設計
@@ -138,6 +147,9 @@
 * VPC Flow logs
 * VPCのまとめ
 * 小テスト VPCテスト
+### ELB(Elastic Load Balancing)の概要
+* ELBによる冗長構成(ハンズオン)
+* ELBによる冗長構成(ハンズオン)  
 ### Route53
   フルマネージドのネームサーバー、トラフィックルーティング、ヘルスチェックとDNSフェイルオーバー
 #### ネームサーバー
@@ -154,19 +166,15 @@
 * 正常応答のキャッシュ、不存在応答のネガティブキャッシュ
 ### Direct Connect
   オンプレとの専用線
-### APIGateway
 ### CloudFront
   コンテンツ配信ネットワーク
-### ELB(Elastic Load Balancing)の概要
-* ELBによる冗長構成(ハンズオン)
-* ELBによる冗長構成(ハンズオン)  
 
 ## 4．データベース
-### Aurora
 ### RDS
+### Aurora
+### DyanamoDB
 ### ElastiCache
   インメモリキャッシュ
-### DyanamoDB
 ### Redshift
 
 ## 5．管理とガバナンス
@@ -176,21 +184,24 @@
   ユーザの操作履歴
 ### Config
   リソースの操作履歴
-### CloudFormation
-  テンプレートによるインフラ構築
 ### TrustedAdvisor
   パフォーマンス・セキュリティ最適化
 ### オペレーション自動化サービス
+#### CloudFormation
+  テンプレートによるインフラ構築
 
 ## 6．アプリケーション統合
 ### SQS/SNS/SES
 ### SWF
 
 ## 7．分析サービス
-### EMR
-### Kinesis
 ### Redshift
+### Kinesis
+### EMR
 ### Data Pipeline
+### Glue
+### Athna
+### QuickSight
 
 ## 8. 移行とコスト管理のサービス
 ### 移行のためのサービス
