@@ -43,6 +43,7 @@
 ## 1．AWS概要
 ### AWSの仕組み
 ### AWSの操作
+### 責任共有モデル
 ### アソシエイト試験概要
 ### AWSの全体像
 ### サポート体制と料金プラン
@@ -81,7 +82,18 @@
   + 専用ハードウェアが提供される
   + ハードウェア占有インスタンスはホストコンピューターを指定できないが、DedicatedHostsはできる
   + 課金単位も異なる
-### S3(SimpleStorageService)の概要
+### Lambda
+### Auto Scaling
+* Auto-Scalingの概要
+* Auto-Scalingの設定(ハンズオン)
+### EBS(Elastic Block Store)
+* EBSの概要
+  + インスタンスに接続するとOSから認識されるブロックストレージ
+* AMIとsnapshotの活用(ハンズオン)
+* EC2のまとめ
+  + 支払方法：通常はオンデマンドだが、リザーブドやスポットといった割引利用の方法もある
+### EFS
+### S3(Simple Storage Service)の概要
 * S3の用途
   + EC2からバッチでS3にデータ保存
   + S3のみへアクセスできるポリシーを作成
@@ -96,23 +108,25 @@
 * S3の外部接続
 * S3のまとめ
 * S3小テスト
-### EBS(ElasticBlockStore)
-* EBSの概要
-  + インスタンスに接続するとOSから認識されるブロックストレージ
-* AMIとsnapshotの活用(ハンズオン)
-* EC2のまとめ
-  + 支払方法：通常はオンデマンドだが、リザーブドやスポットといった割引利用の方法もある
-### Lambda
-### EFS
+### Glacier
+  低コストアーカイブ向けストレージ
 
 ## 3．セキュリティとネットワーキング
-### IAMの概要
-### IAM設計
+### IAM
+  ユーザ権限管理
 #### IAMグループへのポリシー適用(ハンズオン) ポリシー、グループ、ロール
 #### IAMケーススタディ：自社組織に必要な権限設定
-* IT管理者：フルアクセス＋MFA：管理ポリシーAdministrator
-* 運用管理者：運用ツール全般＋開発環境(DevOps)：ツール ELB/EC2/RDS/S3/Auto-Scaling/VPC Config/CloudTrail/CloudWathch
-* アプリ開発者：担当しているアプリの開発範囲のみ：ツール ELB/EC2/RDS/S3/Auto-Scaling/VPC 
+* IT管理者
+  + フルアクセス＋MFA：管理ポリシーAdministrator
+* 運用管理者
+  + 運用ツール全般＋開発環境(DevOps)
+  + ツール ELB/EC2/RDS/S3/Auto-Scaling/VPC Config/CloudTrail/CloudWathch
+* アプリ開発者
+  + 担当しているアプリの開発範囲のみ
+  + ツール ELB/EC2/RDS/S3/Auto-Scaling/VPC
+### Shield
+  DDos対策
+### WAF
 ### VPCの概要
 * VPCとの接続
 * VPCの設計
@@ -124,13 +138,6 @@
 * VPC Flow logs
 * VPCのまとめ
 * 小テスト VPCテスト
-### ELB(Elastic Load Balancing)の概要
-* ELBによる冗長構成(ハンズオン)
-* ELBによる冗長構成(ハンズオン)
-* Auto-Scalingの概要
-* Auto-Scalingの設定(ハンズオン)
-* RDSの概要
-### Auto Scaling
 ### Route53
   フルマネージドのネームサーバー、トラフィックルーティング、ヘルスチェックとDNSフェイルオーバー
 #### ネームサーバー
@@ -146,18 +153,33 @@
 * CNAMEレコードタイプの制約とZoneApex
 * 正常応答のキャッシュ、不存在応答のネガティブキャッシュ
 ### Direct Connect
+  オンプレとの専用線
+### APIGateway
 ### CloudFront
-### セキュリティサービス
+  コンテンツ配信ネットワーク
+### ELB(Elastic Load Balancing)の概要
+* ELBによる冗長構成(ハンズオン)
+* ELBによる冗長構成(ハンズオン)  
 
 ## 4．データベース
+### Aurora
 ### RDS
+### ElastiCache
+  インメモリキャッシュ
 ### DyanamoDB
+### Redshift
 
 ## 5．管理とガバナンス
 ### CloudWatch
+  モニタリング
 ### CloudTail
+  ユーザの操作履歴
 ### Config
+  リソースの操作履歴
+### CloudFormation
+  テンプレートによるインフラ構築
 ### TrustedAdvisor
+  パフォーマンス・セキュリティ最適化
 ### オペレーション自動化サービス
 
 ## 6．アプリケーション統合
@@ -165,8 +187,10 @@
 ### SWF
 
 ## 7．分析サービス
-### 分析のためのサービス
+### EMR
+### Kinesis
 ### Redshift
+### Data Pipeline
 
 ## 8. 移行とコスト管理のサービス
 ### 移行のためのサービス
@@ -188,11 +212,13 @@
 * Marketplace：AMIを購入できる
 
 ## 参考
-AWS活用資料集
+### AWS活用資料集
 https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS%20Certified%20Solutions%20Architect%20-%20Associate_Exam%20Sample_v1.5_FINALJP.pdf
 https://aws.amazon.com/jp/about-aws/events/aws-innovate/
 https://aws.amazon.com/jp/aws-jp-introduction/aws-jp-webinar-service-cut/
 https://aws.amazon.com/jp/whitepapers/?whitepapers-main.sort-by=item.additionalFields.sortDate&whitepapers-main.sort-order=desc
 https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/
-
+### その他
+https://dev.classmethod.jp/cloud/aws/2018-aws-re-entering-security/
 http://aws.clouddesignpattern.org/index.php/メインページ
+https://aws-exam.net/saa/
