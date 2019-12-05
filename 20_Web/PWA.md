@@ -61,3 +61,29 @@
 * [PWAをもっと簡単に初めてみる](https://qiita.com/poster-keisuke/items/6651140fa20c7aa18474)
 
 ## 利用アイデア
+
+
+	参考												
+	①	[Cordova Angular6のアプリをPWA化してみる](https://qiita.com/beholder/items/925f523c6ae276e4a495)											
+	②	[Angular CLI v8でPWAを作ってみよう](https://qiita.com/puku0x/items/a6db78cc67d1eb960384)											
+	③	[サービスワーカーを始める](https://angular.jp/guide/service-worker-getting-started)											
+													
+	＜プロジェクトのフォルダ内で実行＞												
+	1	PWAのモジュールをインストール											
+			ng add @angular/pwa										
+													
+		・	インストールがうまくいかない場合、下記も実行										
+			A.	npm i @angular/service-worker									
+			B.	angular.json の編集									※
+			C.	app.moduel.ts の編集									※
+													※：②のリンクにあるGitHubを参照のこと
+	2	ビルド実行											
+			ng build --prod										
+													
+	3	ビルド先にファイルができていることを確認											
+													
+	4	アプリケーションを実行するためにサーバーを用意											
+			npm install -g http-server										
+													
+	5	サーバーを起動して、アプリケーション実行											
+			http-server -p 8080 -c-1 dist/<project-name>										
