@@ -234,6 +234,9 @@
   + 再起動により別ハードウェアで起動されるため、ハードウェア起因の障害は回避できる可能性が高くなる
 * Marketplace：AMIを購入できる
 
+## 機械学習
+### SageMaker
+
 ## 参考
 ### AWS活用資料集
 https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS%20Certified%20Solutions%20Architect%20-%20Associate_Exam%20Sample_v1.5_FINALJP.pdf
