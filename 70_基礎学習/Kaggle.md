@@ -26,3 +26,6 @@
 #### SageMaker
 ### Git
 ### k8s
+
+## コンペ
+  過去のNotebookを確認する
