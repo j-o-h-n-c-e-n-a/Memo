@@ -4,6 +4,9 @@
 * [1 行でわかる Google Cloud Platform](https://cloud.google.com/blog/ja/products/gcp/google-cloud-platform-paperprint?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:%2BGoogleCloudPlatformJapanBlog%2B(Google%2BCloud%2BPlatform%2BJapan%2BBlog))
 
 
+* Colaboratory
+* Google Research Football Environment
+
 * Cloud Console
 * Cloud Identity-Aware Proxy(IAP)
 
