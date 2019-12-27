@@ -29,3 +29,21 @@
 
 ## コンペ
   過去のNotebookを確認する
+
+## リンク
+### Kaggler
+* [u++](https://upura.hatenablog.com/archive)
+* https://qiita.com/upura/items/3c10ff6fed4e7c3d70f0
+* https://www.st-hakky-blog.com/
+### codexa
+* [ml-dataset-list](https://www.codexa.net/ml-dataset-list/)
+* [amazon-sagemaker-tutorial](https://www.codexa.net/amazon-sagemaker-tutorial-marketing-offers/)
+* [amazon-sagamaker-xgboost](https://www.codexa.net/amazon-sagamaker-xgboost-game-sales-predictions/)
+* [lightgbm](https://www.codexa.net/lightgbm-beginner/)
+* [what-is-kaggle](https://www.codexa.net/what-is-kaggle/)
+* [what-is-ensemble-learning](https://www.codexa.net/what-is-ensemble-learning/)
+* []()
+### ガイド
+* [youtube解説](https://www.youtube.com/watch?v=NHQTw-ORcSQ&vl=ja)
+* [wiki](https://kaggler-ja-wiki.herokuapp.com/kaggle初心者ガイド)
+* []()
