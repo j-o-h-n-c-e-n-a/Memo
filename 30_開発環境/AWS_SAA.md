@@ -495,7 +495,7 @@
   SQSは、CloudWatchと連携してオートスケーリングによる負荷軽減を行えます。
 </div></details>
 
-### Q. Amazon SNSで亜ポートしている通知エンドポイントやクライアントはどれですか
+### Q. Amazon SNSでサポートしている通知エンドポイントやクライアントはどれですか
 1. Email
 2. CloudFrontディストリビューション
 3. FTP
