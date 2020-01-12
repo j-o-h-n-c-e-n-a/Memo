@@ -350,3 +350,4 @@ https://aws-exam.net/saa/
 https://dev.classmethod.jp/cloud/aws/aws-summary-2020/
 Qwiklabs
 https://dev.classmethod.jp/cloud/aws/saa-exam-usecase-training-in-qwiklabs/
+https://dev.classmethod.jp/cloud/aws/mesoko-r53-cdn/
