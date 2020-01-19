@@ -1,0 +1,171 @@
+Access permissions are I am.
+
+We already saw that you can defend the permissions or access permissions at.
+
+Let me go back to storage.
+
+Cloud storage you can define access permissions here on the bucket level right.
+
+I can add gold and add member
+
+okay
+
+I mean it goes predator
+
+okay and select a role I can say storage and if we were
+
+policy field okay maybe some issue in my email lately.
+
+But anyway so you can add members multiple members and then you can provide the permissions to them.
+
+You can do the permissions at the level of the bucket but at this at the level of objects also you can
+
+go ahead and do the permissions.
+
+You can set the permissions in the permissions and you can add the emulators.
+
+I'm just queuing one.
+
+Okay.
+
+I don't know.
+
+So you can go ahead and create the permissions on the object level as well as you can do that under
+
+look at level.
+
+Let me see if I see a lead bucket.
+
+Access permissions set out object clearly I should be able to do it okay in a high level.
+
+If you look at the permissions the way it works is on the bucket level you you can set the owner you
+
+read the viewer and all of those rules at the I am level so you can set this as a project level at the
+
+bucket level if you want fine granular level control then that is where you can use access control list.
+
+And these are the list which you can I use it to define the permissions for your object at the next
+
+level of access is you if you want to provide access to some users and through a defined period right
+
+only for say once you send the link to the user like password right.
+
+You want to keep that link for parts a one day or 10 minutes or 20 minutes only that particular period
+
+they will be able to access that's where you can create signed you are all after that particular time
+
+that you are in will not not be valid ah you can have a signed policy document.
+
+So these are multiple they will have access permissions which you can use it.
+
+The question for any certification that may arise is if you want to say provide access to a particular
+
+object or the image of the photo to a particular user for a defined time.
+
+So how you can do that and programmatically so signed you are ill should be your answer if you want
+
+to define access permission granted well at the level of objects then how you define it right you can
+
+use a shield to that.
+
+So there is I am which you can use it.
+
+Bucket level or the project level you can have a as you can defend the permissions at the object level
+
+you can how signed you are ill which is quite string at on location you can how policy documents are
+
+flyable security rules in a high level that's it for cloud storage guys if you have any questions let
+
+us know we are going to get into details of a different fight where security rules in its own section
+
+and not in here but in natural you need to remember that I am works on a project and bucket and then
+
+ACL works on object and sign you are works on for object basis that's it if you have any questions let
+
+us know otherwise you can move to the next lecture thank you.
+
+アクセス許可は私です。
+
+既にアクセス許可またはアクセス許可を守ることができることを確認しました。
+
+ストレージに戻りましょう。
+
+クラウドストレージでは、ここでバケットレベルでアクセス許可を定義できます。
+
+ゴールドとメンバーを追加できます
+
+はい
+
+捕食者になる
+
+さて、ストレージと言うことができる役割を選択します
+
+ポリシーフィールドは、最近の私のメールに問題があるかもしれません。
+
+ただし、とにかくメンバーに複数のメンバーを追加してから、それらのメンバーに許可を与えることができます。
+
+バケットのレベルで権限を行うことができますが、これはオブジェクトのレベルでもできます
+
+先に進み、許可を行います。
+
+許可で許可を設定し、エミュレーターを追加できます。
+
+待ち行列に入れています。
+
+はい。
+
+知りません。
+
+そのため、先に進み、オブジェクトレベルで権限を作成できます。
+
+レベルを見てください。
+
+鉛のバケツが見えるかどうか見てみましょう。
+
+アクセス許可がオブジェクトを明確に設定しているので、高レベルで問題なく実行できるはずです。
+
+パーミッションを見ると、バケットレベルでの動作になります。所有者を設定できます。
+
+I amレベルでビューアとそれらのルールをすべて読んで、これをプロジェクトレベルとして設定できるようにします。
+
+バケットレベル。きめ細かなレベルの制御が必要な場合は、アクセス制御リストを使用できます。
+
+これらは、次のときにオブジェクトの権限を定義するために使用できるリストです
+
+一部のユーザーにアクセスを提供し、定義された期間の権利を通じてアクセスする場合、アクセスのレベルはあなたです
+
+たとえば、パスワードのようなユーザーにリンクを送信した場合に限ります。
+
+特定の期間のみ、1日または10分または20分間、パーツのリンクを保持したい
+
+彼らはあなたが署名されたあなたがその特定の時間の後にすべてを作成することができる場所にアクセスすることができます
+
+あなたがいることは有効ではありませんああ、あなたは署名されたポリシー文書を持つことができます。
+
+したがって、これらは複数あり、アクセス許可を使用できます。
+
+発生する可能性のある認証に対する質問は、特定のアクセスを提供したい場合です。
+
+定義された時間の特定のユーザーに対する写真のオブジェクトまたは画像。
+
+どうすればそれを行うことができ、プログラムで署名されているので病気になっているのであれば、あなたの答えはあなたの答えになるはずです
+
+オブジェクトのレベルで適切に付与されるアクセス許可を定義し、それを適切に定義する方法
+
+それにシールドを使用してください。
+
+だから私はあなたがそれを使うことができるのです。
+
+オブジェクトレベルで権限を守ることができるバケットレベルまたはプロジェクトレベル
+
+あなたはどのようにあなたが病気であるか署名することができます
+
+高レベルのフライアブルセキュリティルールは、クラウドストレージのユーザー向けです。質問がある場合は、
+
+セキュリティルールが独自のセクションにある別の戦いの詳細に入ることを知っています
+
+ここではなく、自然にあなたは私がプロジェクトとバケツで働いていることを覚えておく必要があります
+
+ACLはオブジェクトに作用し、あなたが質問がある場合はそれであるオブジェクトベースで動作している署名
+
+それ以外の場合は、次の講義に移動できることを知っています。ありがとうございます。

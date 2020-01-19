@@ -1,0 +1,107 @@
+Network and point of presence.
+
+If you imagine there are you know the data centers which are located across the globe right.
+
+You need to have some connectivity to connect those data centers together.
+
+And that is where the network comes into play.
+
+If I go back to the same page again and if I click on networks there are these fiber optic cables which
+
+you can see it right.
+
+So what it says it's like submarine cable investments.
+
+So there are the cables which are owned by someone else but they have investment made into those cables
+
+and there are current network which is like blue line if you see it all these lines are Google's own
+
+fiber optic network.
+
+So they had laid this network across the globe so that they can so you better.
+
+OK.
+
+So it is connecting all your all the data centers and as well as the point of presence.
+
+So what do you mean by point or presence point of presence is the location where you can get connected
+
+to the Google Cloud Platform.
+
+You know having their presence so you can vertically inject or have a connection between your data center
+
+and they are a point of presence there are Syrian locations as well and these are the Syrian Syrian
+
+liquid locations wherein you cash you are content.
+
+It is typical Syrian concept that we have it.
+
+And currently it is sold by so many other vendors too.
+
+It's not only the Google but Google have you one partnership with them to serve your content and cash
+
+the data near to your user.
+
+We are going to look at all those concepts in detail as a Syrian but this is just an overview for the
+
+network
+
+that's it guys as a network you just need to remember that this is the network which is used by by you
+
+know the Google Cloud Platform services and you can pay premium charges to use this network and travel
+
+your data between the regions and across the globe.
+
+ネットワークとプレゼンスポイント。
+
+あなたが想像するなら、あなたは世界中にあるデータセンターを知っています。
+
+これらのデータセンターを接続するには、何らかの接続性が必要です。
+
+そして、そこがネットワークの出番です。
+
+同じページに戻ってネットワークをクリックすると、これらの光ファイバーケーブルがあります。
+
+あなたはそれを正しく見ることができます。
+
+つまり、海底ケーブルへの投資のようなものです。
+
+他の人が所有しているケーブルもありますが、それらのケーブルには投資があります
+
+そして、あなたがそれを見るならば青い線のような現在のネットワークがあります、これらの線はすべてグーグルのものです
+
+光ファイバーネットワーク。
+
+そのため、彼らはこのネットワークを世界中に敷設して、あなたがより良くできるようにしたのです。
+
+OK。
+
+したがって、すべてのデータセンターと存在ポイントをすべて接続しています。
+
+ポイントまたはプレゼンスポイントとはどういう意味ですか？
+
+Google Cloud Platformへ。
+
+データセンター間の垂直注入または接続を可能にするために、それらの存在を知っている
+
+そして、彼らは存在のポイントであり、シリアの場所もあります、これらはシリアのシリアです
+
+あなたが現金である液体の場所は満足です。
+
+私たちが持っているのは典型的なシリアの概念です。
+
+そして現在、他の多くのベンダーでも販売されています。
+
+Googleだけでなく、Googleがあなたとコンテンツとキャッシュを提供するためのパートナーシップを1つ持っています
+
+ユーザーの近くのデータ。
+
+これらすべての概念をシリア人として詳細に見ていきますが、これは単に
+
+通信網
+
+それは、あなたが使用するネットワークであることを覚えておく必要があるネットワークとしての皆さんです
+
+Google Cloud Platformサービスを知っていれば、このネットワークを使用して旅行するためにプレミアム料金を支払うことができます
+
+地域間および世界中のデータ。

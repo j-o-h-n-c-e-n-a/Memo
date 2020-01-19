@@ -1,0 +1,112 @@
+Labels and selectors in Cabinet is.
+
+This concept would only from Cabinet is in itself.
+
+So it is available if you install it on premises.
+
+There is nothing new but I just thought of going through it.
+
+What is labels.
+
+Labels typically as you just label it to you know all your other objects whether it is table or whatever
+
+in in Cuban it is engine you can literally do and objects any objects in your cabinet is cluster.
+
+You can label no you can label parts you can label deployment and all that and the purpose here is the
+
+same labeling or different objects incorporated into the way you do is you have a key and value pair.
+
+So the key defines as an example here.
+
+Environment.
+
+Easy that it's a real product Q way harder you can see a business unit is marketing and hard production
+
+so that's a label the way you label it in your deployment is a label environment is equal to production
+
+is equal to engine x and something like that how you use it how.
+
+So once you create the labels how you use in your life you know that the deployment order in your application
+
+right in component is so the way you use it is selectors selectors allow you to allow you the way for
+
+you to select a different kind of objects based on the labels which you have created already.
+
+So as an example here you can see a specific selector is component colon radius or you can say selector.
+
+This is very complex selector you have match levels the component is radius and match expression.
+
+That here is our dear operator and all of that so you can mix and match this ones you can use labels
+
+while using it in the in the cube it come out so you can see a cube CDL get parts where the environment
+
+is equal to production and there is a cold front end ah you can use selectors in your rest api call
+
+that just an example is here selector is equal to component Israelis.
+
+So there are varieties of ways you can use labels to label your objects different objects in communities
+
+and you can use selectors and selector will use labels to use a particular object.
+
+So that's the labels and selector guys.
+
+If you have any questions on those let us know otherwise you can move to the next lecture.
+
+Thank you.
+
+
+キャビネットのラベルとセレクターは。
+
+この概念は、内閣からのみそれ自体になります。
+
+したがって、オンプレミスにインストールすれば利用できます。
+
+新しいことは何もありませんが、私はそれを経験することを考えました。
+
+ラベルとは何ですか。
+
+通常、ラベルを付けるだけでラベルが付けられます。テーブルであるかどうかにかかわらず、他のすべてのオブジェクトを知っています。
+
+キューバでは、文字通り実行できるエンジンであり、キャビネット内のオブジェクトはすべてクラスターです。
+
+ラベルを付けることができます。展開にラベルを付けることができる部品にラベルを付けることができます。そのすべてと目的は、
+
+あなたがする方法に組み込まれた同じラベル付けまたは異なるオブジェクトは、キーと値のペアを持っているということです。
+
+したがって、キーはここで例として定義します。
+
+環境。
+
+それが本物の製品であることは簡単ですQビジネスユニットがマーケティングとハードプロダクションであることがわかります
+
+ラベルは展開環境でラベルを付ける方法です。ラベル環境は本番環境と同じです
+
+は、エンジンxに等しく、その使用方法はそのようになります。
+
+したがって、あなたがあなたの人生でどのように使用するかをラベルを作成したら、あなたのアプリケーションでの展開順序
+
+コンポーネント内にあるため、使用方法はセレクタです。セレクタを使用すると、
+
+すでに作成したラベルに基づいて、異なる種類のオブジェクトを選択します。
+
+したがって、ここでの例として、特定のセレクターはコンポーネントのコロン半径であるか、セレクターと言うことができます。
+
+これは、コンポーネントが半径と一致表現である一致レベルを持つ非常に複雑なセレクターです。
+
+これが私たちの親愛なる演算子であり、そのすべてがあなたがラベルを使用することができるこのものをミックスして一致させることができます
+
+キューブ内で使用しているときに出てくるので、キューブCDLが環境の一部を取得するのを見ることができます
+
+本番環境と同等であり、残りのAPI呼び出しでセレクターを使用できるコールドフロントエンドがあります
+
+ほんの一例は、セレクターがコンポーネントイスラエル人に等しいことです。
+
+そのため、ラベルを使用してオブジェクトにコミュニティのさまざまなオブジェクトにラベルを付けることができるさまざまな方法があります
+
+セレクタを使用でき、セレクタはラベルを使用して特定のオブジェクトを使用します。
+
+それがラベルとセレクターです。
+
+質問がある場合はお知らせください。それ以外の場合は、次の講義に移動できます。
+
+ありがとうございました。

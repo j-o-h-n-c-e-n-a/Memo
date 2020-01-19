@@ -1,0 +1,296 @@
+Federal rules in VPC let's go in and understand what our federal rules federal rules actually district
+
+deny or allow traffic within your subnet works or within your network so you can restrict traffic.
+
+Are you going to allow traffic so that are both way communication actions.
+
+You can either allow traffic or you can deny traffic.
+
+You can have conditions which is like destinations.
+
+I would say there are IP ranges.
+
+Source IP ranges in case of injuries I you can defend the protocol which protocol you want to either
+
+allow or deny the traffic.
+
+You can defend the ports for the firewall so each UPC and network implement distributed firewall our
+
+firewall rules allow you to control which packet can travel to which destination every CPC network has
+
+to.
+
+Implied firewall does that block all incoming connections and this is really very important.
+
+This can be exam question for 3 or 4 I can name those and you know certifications like cloud architect
+
+can cloud engineer network engineer and security as well.
+
+So each CPC network has two employed for all that block all incoming connections and allow all outgoing
+
+connections.
+
+And this is really important.
+
+His network has its own firewall controlling access to and from the instance you can either of how allow
+
+rules are denied ls the default network has automatically added firewalls that is shown in default federal
+
+rules.
+
+Now that's the link I am not going to go that I'm just going to go to default network.
+
+This is default towards and if you look at firewall rules so all these firewall rules are created let's
+
+understand what are those.
+
+So this is Ingres traffic incoming allowed I simply traffic all allowed internal from these ranges allow
+
+IDP from these ranges allow and is the sage from these ranges allow.
+
+So this is based on the tags.
+
+So unless and until you apply the tags to the VM it will not be applicable to your VM.
+
+So keep that in mind.
+
+You can work and create additional federal rules if you want to write create at least no federal rules
+
+and then allow us to DP.
+
+If I say that now you can enable logging on firewall rules.
+
+You can choose the network which network you want to create federal rules.
+
+You can defend the priorities and that priority can be one to sixty five thousand and higher the number
+
+lower of the priorities direction of the firewall is increased traffic or egress traffic action on the
+
+match allow or deny
+
+target specific target tax.
+
+All instance in the network specific target tags or specific specified service account so I'm glad I'm
+
+going to say is I'm going to say specific target back.
+
+So I say Lao GDP okay then if you want to fill the IP ranges or so as tag I am going to say all round
+
+the Internet
+
+and protocol all port specific port a.
+
+I go on to say say 80
+
+I can see it hit silver for getting DCP
+
+so the rule is getting created.
+
+Meaning meantime we'll just go in and click on this one.
+
+It says I'm going to click on it.
+
+It says all instance in the network and these are like allowed firewall.
+
+OK so I said wrongly I think earlier.
+
+So it is applied to all it will be all.
+
+Otherwise you can.
+
+You need to specify which tag.
+
+You know when you are creating an VM you need to specify this tax.
+
+If I go back and say I want to create a VM in show you the firewall to
+
+click Create and then in the network I can choose network tag.
+
+And if I specify the network tag I need to choose my custom UPC done and what is missing.
+
+OK I need to choose
+
+okay.
+
+And then I can see the network tag here.
+
+Are you going to have any other network tag which you can assign it.
+
+So that's the firewall rule guys.
+
+You can allow and put forward denials no manually created network has automatically created firewalls
+
+except the default allowed all outgoing traffic and default like incoming traffic tags you can apply
+
+to tag and you can create the tag and all matching instances having that particular tag will use that
+
+tag either you're gonna have tag based assignment or you can apply to all the VM in a particular network.
+
+Connection control and default and custom network default in all in.
+
+As I said default allow all egress in great firewall rules and deny.
+
+And second source filter allowed the source reign just know from which location your you want to deny
+
+the traffic and that's where you can configure egress you can how destination.
+
+And then you can say allow or deny for egress tough traffic and you can define and of priority for each
+
+and every firewall rule.
+
+He put all that on matching firewall rule for the same destination then based on the priority the firewall
+
+rules will be applied that's it.
+
+Guys as a firewall rules if you have any questions on firewall rules let me know otherwise you can move
+
+to the next lecture that is shared VPC.
+
+
+VPCの連邦規則では、連邦規則、連邦規則が実際に地区となるものを理解してみましょう
+
+サブネットの機能内またはネットワーク内のトラフィックを拒否または許可して、トラフィックを制限できます。
+
+双方向の通信アクションであるようにトラフィックを許可するつもりですか。
+
+トラフィックを許可するか、トラフィックを拒否することができます。
+
+目的地のような条件を設定できます。
+
+IP範囲があると思います。
+
+怪我の場合のソースIP範囲プロトコルを守ることができます
+
+トラフィックを許可または拒否します。
+
+ファイアウォールのポートを保護して、各UPCとネットワークが分散ファイアウォールを実装できるようにします。
+
+ファイアウォールルールにより、すべてのCPCネットワークがどの宛先にどのパケットを送信できるかを制御できます。
+
+に。
+
+暗黙のファイアウォールは、すべての着信接続をブロックします。これは非常に重要です。
+
+これは3または4の試験問題になる可能性があります。それらに名前を付けることができ、クラウドアーキテクトのような認定を知っています。
+
+ネットワークエンジニアとセキュリティもクラウドエンジニアできます。
+
+したがって、各CPCネットワークには、すべての着信接続をブロックし、すべての発信を許可する2つの
+
+接続。
+
+そして、これは本当に重要です。
+
+彼のネットワークには、インスタンスへのアクセスとインスタンスからのアクセスを制御する独自のファイアウォールがあります。
+
+デフォルトのネットワークがデフォルトの連邦政府に表示されるファイアウォールを自動的に追加したため、ルールは拒否されます
+
+ルール。
+
+これがリンクではなく、デフォルトのネットワークに移動するだけです。
+
+これはデフォルトであり、ファイアウォールルールを見ると、これらすべてのファイアウォールルールが作成されます。
+
+それらが何であるかを理解してください。
+
+これは、許可されたIngresトラフィック着信です。
+
+これらの範囲からのIDPは許可され、これらの範囲からの賢人です。
+
+したがって、これはタグに基づいています。
+
+したがって、タグをVMに適用しない限り、それをVMに適用することはできません。
+
+それを覚えておいてください。
+
+少なくとも連邦規則を作成しないで作成する場合は、追加の連邦規則を作成して作業することができます
+
+その後、DPを許可します。
+
+今言うと、ファイアウォールルールでのログ記録を有効にできます。
+
+連邦規則を作成するネットワークを選択できます。
+
+あなたは優先順位を守ることができ、その優先順位は1から65000以上の数字にすることができます
+
+ファイアウォールの優先順位の低い方は、トラフィックの増加または
+
+一致または拒否
+
+特定のターゲット税をターゲットにします。
+
+ネットワーク固有のターゲットタグまたは特定の指定されたサービスアカウントのすべてのインスタンスなので、私はうれしいです
+
+言いたいのは、具体的な目標を言い返します。
+
+ラオスのGDPは大丈夫だと思います。IPの範囲を埋めたい場合は、タグとしてすべてのラウンドを言います。
+
+インターネット
+
+およびプロトコルすべてのポート固有のポートa。
+
+私は続けて80と言います
+
+DCPを取得したことでシルバーになったことがわかります
+
+ルールが作成されています。
+
+その間、私たちは入って、これをクリックするだけです。
+
+クリックすると言います。
+
+ネットワーク内のすべてのインスタンスを示し、これらは許可されたファイアウォールのようなものです。
+
+わかりましたので、私は誤って言った私は以前考えています。
+
+したがって、すべてに適用されます。
+
+それ以外は可能です。
+
+どのタグを指定する必要があります。
+
+VMを作成するときに、この税を指定する必要があることを知っています。
+
+戻って仮想マシンを作成したいと言ったら、ファイアウォールを表示します
+
+[作成]をクリックすると、ネットワークでネットワークタグを選択できます。
+
+また、ネットワークタグを指定する場合は、完了したカスタムUPCと不足しているものを選択する必要があります。
+
+OK
+
+はい。
+
+そして、ここでネットワークタグを確認できます。
+
+他のネットワークタグを割り当てることができますか。
+
+これがファイアウォールルールの連中です。
+
+手動で作成されたネットワークが自動的にファイアウォールを作成していないので、拒否を許可および転送できます
+
+デフォルトがすべての発信トラフィックを許可し、適用できる着信トラフィックタグのようなデフォルトを除く
+
+タグを作成すると、タグを作成でき、その特定のタグを持つすべての一致するインスタンスはそれを使用します
+
+タグベースの割り当てを行うか、特定のネットワークのすべてのVMに適用できます。
+
+すべての接続制御とデフォルトおよびカスタムネットワークのデフォルト。
+
+私が言ったように、デフォルトでは優れたファイアウォールルールですべての出力を許可し、拒否します。
+
+そして、2番目のソースフィルターは、あなたが拒否したい場所を知るだけでソース統治を可能にしました
+
+トラフィックとそれはあなたがどのように宛先することができます出口を設定できる場所です。
+
+そして、出口の厳しいトラフィックを許可または拒否することができ、それぞれに対して優先順位を定義できます
+
+すべてのファイアウォールルール。
+
+彼はすべてを同じ宛先の一致するファイアウォールルールに配置し、ファイアウォールの優先度に基づいて
+
+ルールが適用されます。
+
+ファイアウォールルールについて質問がある場合は、ファイアウォールルールとしてのGuysに連絡してください。
+
+共有VPCである次の講義へ。

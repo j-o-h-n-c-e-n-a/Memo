@@ -1,0 +1,199 @@
+GSP resources when we look at the cloud platform right.
+
+What are resources the resources could be anything.
+
+Anything which is you can think of.
+
+You know if I go here.
+
+Anything which you created.
+
+So if you go ahead and create virtual machine.
+
+If you go ahead and create App Engine instance or if you create a goal and create my skill database
+
+then all of these are the resources in Google Cloud Platform.
+
+Even if you create a network you want if you create a firewall rules order out all of those are resources
+
+in Google Cloud Platform.
+
+OK so having that understanding what is resource Iraqi.
+
+So here are the keys as the company and if you want to map it you know any of your company where you
+
+work are the department if you are still in high school then you can consider the top company is your
+
+school or if you are working in a company top companies your company the company has got to departments
+
+and these are the folders in G suite.
+
+This is not a part of Google Cloud Platform.
+
+This part the folders and automation is a part of G suite configuration.
+
+And so once you define this you can go ahead and create a project inside those departments or folders.
+
+Okay.
+
+And this is where the Google Cloud Platform start.
+
+It's a scoop so you have a project which is created and then you create resources inside the project
+
+and that is what it is called laser DCP resource are cloud resources so the resources the resources
+
+can be global in nature.
+
+The resource can be regional in nature or it can be a zonal in nature.
+
+So the global means that does not have any global local association or regional association that is
+
+those are the global resources the regional means.
+
+They are specific to that particular region maybe one of the feature which is available within the within
+
+the region like how you have static IP address that is associated to a region.
+
+There are resources which are essentially nature like actual physical things right which are like virtual
+
+machines are this can something like that.
+
+And those are the only sources.
+
+So there is a hierarchy which you can create.
+
+There is a global resource and the examples are images snapshots and network regional resources.
+
+There are.
+
+That is external IP address that's additional resource instances actually instances because those instances
+
+are located within your data center and that's why it is a donor resource.
+
+There are disk associated to are attached to the instance.
+
+Those are like zonal resource.
+
+All of those charging happens at that level of project.
+
+So you can help project one out project or project three and reporting of all even though you if you
+
+create a global resource regional or zonal all of those resources are associated to a project and you
+
+get a bill for a project.
+
+So everything rolled up to the project level so the resource manager features centrally managed hierarchy
+
+centrally manage and track all your projects manage an across organization manage organization and organization
+
+policy create manage cloud I am policies cloud consultant I am access you can define it and cloud manage
+
+cloud folder so even though this manage cloud folder is not in scope up Google Cloud Platform it is
+
+part of G suite but you need to have an understanding how you create a department and then you can create
+
+an associate project to that particular department that's it guys is a high level resource manager we
+
+are going to create lots and lots of resources in our exercises going further but do we have any questions
+
+or gently questions let me know otherwise you can move to the next lecture thank you.
+
+クラウドプラットフォームを正しく見るときのGSPリソース。
+
+リソースとは何でもよいリソース。
+
+あなたが考えることができるものは何でも。
+
+ここに行ったら
+
+作成したもの。
+
+そのため、仮想マシンを作成する場合。
+
+App Engineインスタンスを作成する場合、または目標を作成してスキルデータベースを作成する場合
+
+これらはすべてGoogle Cloud Platformのリソースです。
+
+ファイアウォールルールを作成する場合、必要なネットワークを作成する場合でも、それらはすべてリソースです
+
+Google Cloud Platformで。
+
+わかりましたので、リソースイラク人とは何かを理解してください。
+
+だからここに会社としての鍵があり、それをマップしたいなら、あなたはあなたの会社のどこかを知っている
+
+まだ高校生の場合、仕事は学科であり、トップ企業はあなたの会社であると考えることができます
+
+学校、または会社のトップ企業で働いている場合、会社は部門に持っています
+
+これらはGスイートのフォルダーです。
+
+これはGoogle Cloud Platformの一部ではありません。
+
+この部分のフォルダーと自動化は、Gスイートの構成の一部です。
+
+したがって、これを定義したら、先に進み、それらの部門またはフォルダー内にプロジェクトを作成できます。
+
+はい。
+
+そして、これがGoogle Cloud Platformの始まりです。
+
+スクープなので、作成されたプロジェクトがあり、プロジェクト内でリソースを作成します
+
+それがレーザーDCPリソースと呼ばれるものです。クラウドリソースなので、リソースは
+
+本質的にグローバルにすることができます。
+
+リソースは、本質的に地域的なものでも、本質的に地域的なものでもかまいません。
+
+したがって、グローバルとは、グローバルなローカル協会または地域協会が存在しないことを意味します
+
+これらは、地域が意味するグローバルリソースです。
+
+それらはその特定の地域に固有のものであり、おそらく
+
+リージョンに関連付けられている静的IPアドレスの使用方法などのリージョン。
+
+仮想のような実際の物理的なもののような本質的に本質的なリソースがあります
+
+マシンは、このようなことができます。
+
+そして、それらは唯一のソースです。
+
+そのため、作成できる階層があります。
+
+グローバルリソースがあり、その例はイメージスナップショットとネットワーク地域リソースです。
+
+がある。
+
+それは追加のリソースインスタンスである外部IPアドレスです
+
+データセンター内にあり、それがドナーリソースである理由です。
+
+インスタンスに関連付けられているディスクが関連付けられています。
+
+それらはゾーンリソースのようなものです。
+
+それらの充電はすべて、プロジェクトのそのレベルで行われます。
+
+だから、もしあなたがあなたがそうであったとしても、あなたはプロジェクトを1つまたは3つのプロジェクトとすべてを報告するのを助けることができます
+
+グローバルリソースを作成します地域またはゾーンこれらのリソースはすべてプロジェクトに関連付けられており、
+
+プロジェクトの請求書を取得します。
+
+したがって、すべてがプロジェクトレベルにロールアップされたため、リソースマネージャーは集中管理された階層を備えています
+
+すべてのプロジェクトを集中管理および追跡し、組織全体を管理し、組織と組織を管理します
+
+ポリシー作成管理クラウド私はポリシークラウドコンサルタント私はアクセスできますあなたはそれを定義し、クラウド管理します
+
+クラウドフォルダーなので、この管理クラウドフォルダーはGoogle Cloud Platformのスコープ内にありませんが
+
+Gスイートの一部ですが、部門を作成する方法を理解してから作成することができます
+
+その特定の部門の関連プロジェクトは、高レベルのリソースマネージャーです。
+
+エクササイズでさらに多くのリソースを作成しますが、質問がありますか
+
+または穏やかに質問してください。そうでない場合は、次の講義に移動できます。ありがとうございます。

@@ -1,0 +1,167 @@
+Migration from HBC to big table.
+
+So why why.
+
+There is a migration why you think of that big table is you know better than its base implementation.
+
+There are three few reasons you know very very basic reasons scalability.
+
+You do not need to provision hardware.
+
+Everything is provision for you because it's in Google Cloud Platform and you do not need to plan the
+
+hardware addition.
+
+So if at all you need much more hardware you can just add north and then it will be provision for you
+
+and you don't need to procure it.
+
+Simple administration.
+
+It is in the cloud.
+
+You do not need to worry about or need to plan about you know how you can do administration and you
+
+can do cluster resizing without downtime.
+
+So the way you can do it is if I go back to our console.
+
+I can go here a lit instance I can click on it and then I can say now I need six nodes and save so we
+
+just ask for our wish list and then cluster will be sized.
+
+If I click on it.
+
+So instance is running currently six nodes so so that so you know that's the way you manage the big
+
+table.
+
+It is very flexible than your base resizing how you migrate from HP so you feel consider a case wherein
+
+you have the implementation done on existing each base and on premises you want to move that to big
+
+table so you take your data into big table the way you want to use it and you can check the return migration
+
+tools.
+
+But once you migrate the data you don't have to change much.
+
+There are two methods which exist to change the way you access each base which is the way you will be
+
+accessing big tables.
+
+So the first one is the change in your application so the connection is a call the connection and connection
+
+factory create configuration.
+
+This was your database configuration what you need to do is in it in import database libraries and then
+
+modify the connection parameter and use big table configuration dot Connect project data and the instance
+
+80 instead of this configuration the method 2 is age based site dot similar.
+
+You just go in and change.
+
+So if this is your best configuration right include bomb dot symbol and in that bombed out symbol you
+
+will need to make sure that you you enable filtering through and in each base side or attack you need
+
+to include H with libraries.
+
+So that is the important distinction so it is really really easy migration to big table.
+
+It is not too much complex if you look at an order if your data was developed are in our application
+
+developer you know this method very well.
+
+That's it guys as a base.
+
+Too big table migration.
+
+If you have any questions let us know otherwise you can move to the next lecture.
+
+Today's scheme of designing.
+
+HBCから大きなテーブルへの移行。
+
+なぜだろう。
+
+その大きなテーブルについて、その基本実装よりもよく知っていると思う理由は移行があります。
+
+スケーラビリティを非常に基本的な理由として知っている3つの理由があります。
+
+ハードウェアをプロビジョニングする必要はありません。
+
+Google Cloud Platformにあり、計画を立てる必要がないため、すべてがプロビジョニングされます。
+
+ハードウェアの追加。
+
+したがって、はるかに多くのハードウェアが必要な場合は、北を追加するだけで、プロビジョニングされます
+
+調達する必要はありません。
+
+シンプルな管理。
+
+クラウド内にあります。
+
+どうやって管理できるかを知っているので、心配する必要も計画する必要もない
+
+ダウンタイムなしでクラスターのサイズ変更を行うことができます。
+
+だからあなたがそれを行うことができる方法は、私たちのコンソールに戻った場合です。
+
+ここに点灯したインスタンスをクリックしてクリックすると、6つのノードが必要になり、保存できるようになります。
+
+ウィッシュリストを要求すると、クラスターのサイズが決まります。
+
+クリックすると。
+
+インスタンスが現在6つのノードを実行しているので、それが大規模な管理方法であることがわかります
+
+テーブル。
+
+HPからの移行方法をベースのサイズ変更よりも非常に柔軟であるため、
+
+既存の各ベースとオンプレミスで実装を完了し、それを大規模に移行します
+
+テーブルを使用して、データを使用したい方法で大きなテーブルに取り込み、戻りの移行を確認できます
+
+ツール。
+
+ただし、データを移行したら、あまり変更する必要はありません。
+
+各ベースへのアクセス方法を変更するために存在する2つの方法があります。
+
+大きなテーブルにアクセスします。
+
+最初の1つはアプリケーションの変更で、接続は接続と接続の呼び出しです
+
+工場で構成を作成します。
+
+これは、データベースの設定でした。データベースライブラリをインポートしてから、
+
+接続パラメーターを変更し、大きなテーブル構成ドットを使用しますプロジェクトデータとインスタンスを接続します
+
+80この構成の代わりに、方法2は年齢ベースのサイトドットに似ています。
+
+あなたはただ入って変化します。
+
+これが最適な構成である場合は、爆弾ドット記号を含め、その爆撃された記号に
+
+必要な各ベースサイドまたは攻撃のフィルタリングを有効にする必要があります
+
+Hをライブラリに含める。
+
+それが重要な違いなので、大きなテーブルへの移行は本当に簡単です。
+
+データが開発されている場合に注文を確認すれば、それほど複雑ではありません。
+
+この方法をよく知っている開発者。
+
+それはベースとしてみんなです。
+
+テーブルの移行が大きすぎます。
+
+質問がある場合はお知らせください。それ以外の場合は、次の講義に進むことができます。
+
+今日の設計スキーム。

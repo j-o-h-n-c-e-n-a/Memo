@@ -1,0 +1,295 @@
+It strategically odd I would say state CPS load balancer as well.
+
+We are waiting to see how to get into details suggested to be load balancing to get so what is a steady
+
+load balancer and how do we configure.
+
+We saw this immediately.
+
+Right.
+
+So what do you need to do is you need to configure multiple entities here.
+
+So you need to start with the instance template if you're distributing your lord into the backend compute
+
+engine so you can trigger the instance template you create instance group out of it and then you assign
+
+the instance group as a back in service of when you're contributing load balancer.
+
+You need to make sure that you are configuring cloud DNS a fertile you want to translate the DNS name
+
+or use that DNS name or if you are just giving the traffic on the IP address then they better should
+
+we find unique you can use cloud DNS to distribute your different backend load balancers.
+
+Then you have the users which are there in Asia Europe and U.S. West.
+
+You can define all of that whether you can name the region whether you can define these as a East-West
+
+and central regions inside inside the US itself.
+
+And we already saw this how the traffic gets distributed in the back end instances but that is too deeply
+
+you if you focus on the issue to be load balancer here it takes issue to deeply request or issue to
+
+be s request and offload sit here and then the request get transferred to the back end instances.
+
+So I'm not going again in details but let's look at high level terminologies for Israel to be load balancer.
+
+So instead we load balancer uses low distribution algorithm to distribute the traffic coming back in
+
+instances to use a session ability to send the traffic for a particular station to the same backend
+
+and there are some consideration which you need to make if your load balancer instance is running in
+
+public operating system which is like you used the existing operating system or image from computing
+
+gene then the firewalls are already opened.
+
+You don't have to open it but if you say if you use your own custom image and then you do take it to
+
+will our platform we saw how you can create image and take it to Google Cloud Platform and if you use
+
+that then you need to make sure that your firewall rules are accepting the connections from their CTP
+
+load balance.
+
+This is like internal firewall rules for that operating system accepting the connection from a strategic
+
+load balancers
+
+so load balancer does not keep the instance in a sync.
+
+You need to make sure that you are aware a load balancer does not support sending the issue to delete
+
+its GDP with the delete request with the body to the load balancer then that's a very important next
+
+point is the Web socket.
+
+And if you understand what is web socket right we try to create a connection persistent connection between
+
+your the backend server and the user and we use multiple methods right.
+
+Like piggyback method like continuously go ahead and pull the information from the back end or you can
+
+implement Ajax and all those.
+
+There are certain things which you can configure or you can use directly with socket which is again
+
+a new concept and widely used nowadays you can configure the website code so that the instance of the
+
+server is always connected to the user and then you can update the content in the browser continuously.
+
+All right synchronicity I would say so.
+
+Web socket is supported by is GDP or its GDP base load balancer the good the global load balancer as
+
+any to support the backend that users Web get to communicate with the client can use a strict load balancer
+
+as a front end for scale and availability.
+
+If your service wires longer connections light up the customer is staying there in that particular UI
+
+for a longer time you can configure timeout seeking your API configuration as a backend and that's how
+
+the the connection will stay for a longer period there are some illegal request time link and how is
+
+true to be its load balancer block or a suitable load balancer block.
+
+Some request straight as an example here.
+
+The combination of requests that you add all headers longer than 15.
+
+Maybe it will treat this is not really a legitimate request and the request method that does not allow
+
+body but the request has one and request contents upgraded to a stipulation is unknown.
+
+Some of that is a legal handling of the request it cannot pass the first line here that is missing.
+
+That our first line contains invalid characters content length is not valid.
+
+So all of those are like it should be.
+
+Load balancer we treat these as a legal request.
+
+Logging.
+
+Logging you can use a standard track private logging and I can tell you how you can enable that.
+
+If I go back here and I say continue
+
+you can see I can service and click here.
+
+And this is where you can enable a logging load balancer or logging and you can give the sampling rate
+
+as well.
+
+So this is a strike.
+
+They were logging which you can enable it
+
+so that's there's no logging you can incorporate timeouts and retrain.
+
+So it should be load balancer has a default response time of 30 seconds straight it will load balancer
+
+has DCP time out of 10 minutes and that is by default a rate rise field request but does not re post
+
+requests and that is by design.
+
+Another thing to tell you is that you can have premium net you know the network.
+
+You can have standard you know the network tier which you can use it and we order.
+
+So what do we mean by premium and a standard network tier which will be used by the load balancer.
+
+That said as a steady load balancer guys we have any questions let me know otherwise you can move to
+
+the next load balancer in the configuration that is DCP and SSL load balancers.
+
+州のCPSロードバランサーも同様に戦略的に奇妙です。
+
+安定するために、ロードバランシングを行うことが提案されている詳細を取得する方法を確認するのを待っています。
+
+ロードバランサーと設定方法。
+
+これはすぐに見ました。
+
+正しい。
+
+したがって、ここで複数のエンティティを構成する必要があります。
+
+したがって、ロードをバックエンドコンピューティングに配布する場合は、インスタンステンプレートから開始する必要があります
+
+エンジンを使用すると、インスタンスグループを作成してそこからインスタンスグループを作成し、次に割り当てることができます
+
+ロードバランサーを提供するときのサービスのバックとしてのインスタンスグループ。
+
+クラウドDNSを、DNS名を変換したい肥沃なものに設定していることを確認する必要があります
+
+またはそのDNS名を使用するか、IPアドレスでトラフィックを提供している場合は、
+
+クラウドDNSを使用してさまざまなバックエンドロードバランサーを分散できるというユニークなものが見つかりました。
+
+次に、アジア、ヨーロッパ、米国西部にいるユーザーがいます。
+
+これらのすべてを、地域に名前を付けることができるかどうか、またはこれらを東西として定義できるかどうかを定義できます。
+
+そして、米国自体の中の中央地域。
+
+そして、バックエンドインスタンスでトラフィックがどのように分散されるかをすでに見ましたが、それは深すぎます
+
+ここでロードバランサーとなる問題に焦点を合わせると、深くリクエストするか、または
+
+ここにリクエストとオフロードを配置すると、リクエストはバックエンドインスタンスに転送されます。
+
+それで、私は再び詳細に行くつもりはありませんが、イスラエルがロードバランサーになるための高レベルの用語を見てみましょう。
+
+そのため、代わりにロードバランサーは低分散アルゴリズムを使用して、戻ってくるトラフィックを分散します。
+
+特定のステーションのトラフィックを同じバックエンドに送信するセッション機能を使用するインスタンス
+
+ロードバランサーインスタンスが実行されている場合に考慮する必要があるいくつかの考慮事項があります
+
+既存のオペレーティングシステムまたはコンピューティングのイメージを使用したようなパブリックオペレーティングシステム
+
+それから、ファイアウォールはすでに開かれています。
+
+開く必要はありませんが、独自のカスタム画像を使用してから、
+
+プラットフォームを使用して、画像を作成してGoogle Cloud Platformに持ち込む方法を確認しました。
+
+ファイアウォールルールがCTPからの接続を受け入れていることを確認する必要があります
+
+負荷平衡。
+
+これは、戦略的ネットワークからの接続を受け入れるオペレーティングシステムの内部ファイアウォールルールのようなものです
+
+ロードバランサー
+
+そのため、ロードバランサーはインスタンスの同期を維持しません。
+
+ロードバランサーが削除する問題の送信をサポートしていないことに注意する必要があります。
+
+ロードバランサーへの本文を含む削除リクエストを含むGDPは、次に非常に重要です
+
+ポイントはWebソケットです。
+
+そして、あなたが正しいWebソケットとは何かを理解しているのであれば、
+
+バックエンドサーバーとユーザーが複数のメソッドを使用します。
+
+継続的に先に進み、バックエンドから情報を取得するようなおんぶの方法のように
+
+Ajaxおよびそれらすべてを実装します。
+
+あなたが設定できる特定の事柄があります、または再びソケットで直接使用できます
+
+新しいコンセプトと広く使用されている今日では、ウェブサイトのコードを設定して、
+
+サーバーは常にユーザーに接続されているため、ブラウザのコンテンツを継続的に更新できます。
+
+私はそう言うだろうすべての権利の同時性。
+
+Webソケットは、GDPまたはそのGDPベースロードバランサーによってサポートされます。
+
+ユーザーWebがクライアントと通信できるようにするバックエンドをサポートするために、厳密なロードバランサーを使用できます。
+
+規模と可用性のフロントエンドとして。
+
+サービスがより長い接続をワイヤリングする場合、顧客はその特定のUIにとどまっています
+
+より長い時間、バックエンドとしてAPI構成を探してタイムアウトを構成できます。
+
+接続はより長い期間とどまります、いくつかの違法なリクエスト時間リンクがあり、どのように
+
+ロードバランサーブロックまたは適切なロードバランサーブロックである場合はtrue。
+
+ここでは、例としていくつかの要求があります。
+
+15を超えるすべてのヘッダーを追加する要求の組み合わせ。
+
+たぶん、これは実際には正当なリクエストではなく、許可されていないリクエストメソッドとして扱われます
+
+ボディがリクエストに1つあり、リクエストの内容が規定にアップグレードされているかどうかは不明です。
+
+そのうちのいくつかは、リクエストの正当な処理であり、欠落している最初の行をここに渡すことはできません。
+
+最初の行に無効な文字が含まれていることは、コンテンツの長さが無効です。
+
+したがって、それらはすべて、あるべき姿です。
+
+ロードバランサーはこれらを法的要求として扱います。
+
+ロギング。
+
+ロギングには、標準のトラックプライベートロギングを使用できます。それを有効にする方法を説明します。
+
+ここに戻って続けると言ったら
+
+あなたが私がサービスできることを見ることができます、そして、ここをクリックしてください。
+
+そして、ここでロギングロードバランサーまたはロギングを有効にし、サンプリングレートを指定できます
+
+同様に。
+
+これはストライキです。
+
+彼らはあなたがそれを有効にできるログを記録していました
+
+そのため、タイムアウトを組み込んで再トレーニングできるロギングはありません。
+
+ロードバランサーのデフォルトの応答時間は30秒であり、ロードバランサーになります。
+
+DCPタイムアウトが10分であり、これはデフォルトでレート上昇フィールドリクエストですが、再ポストしません
+
+リクエストであり、それは仕様です。
+
+もう1つ伝えたいことは、ネットワークを知っているプレミアムネットを使用できることです。
+
+使用できるネットワーク層を知っている標準を持つことができ、注文します。
+
+プレミアムとロードバランサーによって使用される標準ネットワーク層とはどういう意味ですか。
+
+それは、安定したロードバランサーの人として、私たちに質問があります
+
+構成内の次のロードバランサーは、DCPおよびSSLロードバランサーです。

@@ -1,0 +1,227 @@
+Extra in Liberia's so it is aside from food.
+
+If you model it can we treat you Pimentel as well as it can be like.
+
+Results static.
+
+If you Rizzo an IP address and if you are not attached to a VM then Google is going to charge you.
+
+Because if you're using it for your VM then it is assumed that the cost of that particular IP is included
+
+into your VM but if at all VM is not running then Google is going to charge you and doesn't know external
+
+ip address it is mapped to an internal IP.
+
+So and this is important fact which you need to remember external IP addresses external to the VM it
+
+is not at all internal to the VM it is so it is assigned from external entity.
+
+So if at all you are running some program and trying to use an internal IP address definitely internal
+
+IP address is not as a local IP address on that particular box so it is assigned by the the network
+
+is Dean and it is not.
+
+So it is not at all known to your virtual machine.
+
+So but what is your machine can still go ahead and get the external ip address using G Cloud command
+
+G Cloud come on and then using f Cudi in our internal IP.
+
+So you just need to remember that if at all you want to do it you want to know it.
+
+You can get it.
+
+So the instance with external light the IP address can allow connections from the horse outside the
+
+project can network.
+
+And this is very important and that's the use of external IP address.
+
+So if you want your instance to be accessible from outside the network then you should have external
+
+IP address and using external ip address you can connect to that particular instance.
+
+All cloud resources.
+
+I would say and for that you need external IP address.
+
+Admin can also publish public being in records pointing to the instance public business records are
+
+not published automatically DNS an external IP.
+
+This is so ultimately when you say cloud DNS are you have your own domain name service you want to you
+
+know point it to your cloud resources as an example.
+
+What is your machine then you need to have external ip address internal IP.
+
+This cannot be resolved outside your network or in the public Internet and that is important distinction.
+
+The way you configure external IP are the same on the same page that I am in the networking I can go
+
+here.
+
+And I can say if you want an IP address which is external ip address are you know I can create a static
+
+at.
+
+I can see if you model IP address which service it should ideally should use.
+
+We only saw as a high level of what we do.
+
+So the premium to it is that the year where you know until it reaches to the customer near to that Google
+
+is going to use its own paper optic backbone if at all you want to have cost effective way of travel
+
+you know delivering the traffic and you know that you know there are services that the cloud services
+
+which are very local to your customer the back end is reciting to any area customer then you can straightaway
+
+go out and use a standard service because it's like free.
+
+It is very minimum cost.
+
+So that's that's 30 at which you can use it for their communication so you can go ahead and create an
+
+IP address.
+
+I can say my IP
+
+IP address and I can see it result so it is going to result in me an IP address so my ip addresses result.
+
+So the IP address is there.
+
+Alternatively you can go to
+
+I think he is and I can say IP address so I resolved this particular IP address and I can say he did
+
+release the static IP address additional details so I can just say release from here.
+
+So that is all you can use external ip address it is once you resolve it.
+
+It is going to stay with you forever and you just need to keep that right.
+
+It is not going to change if at all there are cloud resources which you want to access it without the
+
+name from outside your network.
+
+Then you need to use external IP address
+
+that's it guys as external ip address if you have any questions let me know otherwise you can move to
+
+the next lecture that is roots.
+
+リベリアのエキストラなので、食べ物は別です。
+
+あなたがそれをモデル化すれば、私たちはあなたと同じようにピメンテルを扱うことができます。
+
+結果は静的です。
+
+IPアドレスをRizzoし、VMに接続していない場合、Googleが料金を請求します。
+
+VMに使用している場合、その特定のIPのコストが含まれていると想定されるため
+
+VMに入力しますが、VMがまったく実行されていない場合、Googleが料金を請求し、外部を認識しません
+
+内部IPにマッピングされるIPアドレス。
+
+これは重要な事実であり、VMの外部の外部IPアドレスを覚えておく必要があります。
+
+VMの内部にはまったくないため、外部エンティティから割り当てられます。
+
+したがって、何らかのプログラムを実行していて、間違いなく内部IPアドレスを使用しようとしている場合
+
+IPアドレスはその特定のボックスのローカルIPアドレスではないため、ネットワークによって割り当てられます
+
+ディーンであり、そうではありません。
+
+そのため、仮想マシンにはまったく知られていません。
+
+しかし、G Cloudコマンドを使用して、あなたのマシンはまだ先に進み、外部IPアドレスを取得できます
+
+G Cloudが起動し、内部IPでf Cudiを使用します。
+
+ですから、あなたがそれをやりたいのなら、それを知りたいということを覚えておく必要があります。
+
+がんばって。
+
+したがって、外部ライトを使用するインスタンスは、IPアドレスにより、外部の馬からの接続を許可できます。
+
+プロジェクトはネットワーク化できます。
+
+そして、これは非常に重要であり、それは外部IPアドレスの使用です。
+
+したがって、ネットワークの外部からインスタンスにアクセスできるようにするには、外部が必要です
+
+IPアドレスと外部IPアドレスを使用すると、その特定のインスタンスに接続できます。
+
+すべてのクラウドリソース。
+
+私は言うだろうし、そのためには外部IPアドレスが必要です。
+
+管理者は、公開ビジネスレコードがインスタンスを指すレコードに公開されている公開もできます。
+
+外部IPのDNSを自動的に公開しません。
+
+これは最終的に、クラウドDNSがあなたが望むあなた自身のドメイン名サービスを持っていると言うときです
+
+例として、クラウドリソースを指すようにしてください。
+
+お使いのマシンは、外部IPアドレスと内部IPが必要です。
+
+これは、ネットワークの外部またはパブリックインターネットで解決することはできません。これは重要な違いです。
+
+外部IPを構成する方法は、私が行くことができるネットワークにいるのと同じページで同じです
+
+ここに。
+
+そして、外部IPアドレスであるIPアドレスが必要な場合は、静的を作成できることを知っていると言うことができます
+
+で。
+
+IPアドレスをモデル化し、理想的にはどのサービスを使用すべきかを確認できます。
+
+私たちは、私たちがしていることの高レベルだと考えていました。
+
+大切なのは、そのGoogleの近くの顧客に到達するまであなたが知っている年
+
+費用対効果の高い旅行方法が必要な場合は、独自のペーパーオプティックバックボーンを使用します。
+
+トラフィックの配信を知っており、クラウドサービスのサービスがあることを知っている
+
+顧客にとって非常にローカルであり、バックエンドはあらゆる地域の顧客を暗唱しています。
+
+外出して、無料のような標準サービスを使用します。
+
+非常に低コストです。
+
+それはあなたが彼らのコミュニケーションのためにそれを使用できる30ですので、先に進み、作成することができます
+
+IPアドレス。
+
+私は私のIPを言うことができます
+
+IPアドレスと私はそれが結果を見ることができるので、それは私のIPアドレスの結果になるように私にIPアドレスになります。
+
+IPアドレスはそこにあります。
+
+または、に行くことができます
+
+私は彼だと思うし、IPアドレスを言うことができるので、この特定のIPアドレスを解決し、彼がやったと言うことができます
+
+静的IPアドレスの追加の詳細をリリースするので、ここからリリースできます。
+
+したがって、解決したら外部IPアドレスを使用できます。
+
+それはあなたと永遠にとどまるでしょう、そしてあなたはそれを正しく保つ必要があります。
+
+クラウドリソースがまったくなくても、アクセスすることはできません。
+
+ネットワーク外からの名前。
+
+次に、外部IPアドレスを使用する必要があります
+
+質問がある場合は、外部IPアドレスとしてそれ以外の人に教えてください。
+
+次の講義はルーツです。

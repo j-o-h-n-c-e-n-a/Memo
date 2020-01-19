@@ -1,0 +1,151 @@
+Clouds kind of architecture.
+
+So if you look at the instant you know the architecture architecture has got.
+
+So what we created we created an instance and in that instance we create we specified the nodes and
+
+that's the architecture of it.
+
+So if you look at high level what is that you create you create instance and you create a node inside
+
+the instance when you create instance you can choose where the data is stored and how many nodes who
+
+are used what the data node in this spanner has to process the data.
+
+Those are like actual instances node provides up to 10000 queries per second treats and 2000 queries
+
+per second right now with a single row of one key B.
+
+And that is that assumption and 2 terabyte of storage a node account defined the number of node in the
+
+instance for additional performance you can just add the node.
+
+So node is what you know the proponent factor and we are going to see that in the later section later
+
+chapter but instance has gotten multiple nodes in it.
+
+So typically if you look at the way it's architecture and the CS you can think of this as a regional
+
+instance.
+
+So you head's on one's own two ends on three and when you create under DB one like my day with that
+
+is what I created it is span across multiple zones.
+
+Okay.
+
+And there is the replications which is maintained by spanner you don't have to do anything else but
+
+these databases are global in nature.
+
+So for that particular region it is spread across multiple zones and you in in the context of multi
+
+regional these databases can be spread across multiple regions
+
+so if you consider say there is a bit coming in and abilities is.
+
+So it has chosen that one two is you are the instance like the B one don't do is your chosen instance
+
+based on the wording we don't know to get into details but you can think of it as like it is chosen
+
+because there are multiple tables and anyone can take a read or anyone can take a write query but assume
+
+that this is chosen what it will happen is it will take the right request and then it will write it
+
+to other two tones as well.
+
+OK.
+
+And then once it is confirmed right to other locations then it will you know the customer will get it
+
+back that it is committed now and this is what it is called as a strongly consistent.
+
+It is not that this particular zone 2 is taking your right request writing it and then you know you
+
+initially it will be available in two days be in the other zones it is not like that.
+
+So this is strongly consistent data was designed Okay so consider the case we are in a safe zone to
+
+goes out because of some reason your instance corrupt or something something is wrong with that zone
+
+too then what it will do is it will rule out the real you know real queries to other zones as well and
+
+you can still get the highly consistent data
+
+let's look at for payments in the next lecture.
+
+クラウドのようなアーキテクチャ。
+
+したがって、その瞬間を見れば、アーキテクチャアーキテクチャが持っていることがわかります。
+
+作成したものはインスタンスを作成し、そのインスタンスでノードを指定して作成しました
+
+それがそのアーキテクチャです。
+
+したがって、作成するものを高レベルで見ると、インスタンスを作成し、内部にノードを作成します
+
+インスタンスを作成するときに、データを保存する場所とノードの数を選択できます
+
+このスパナのデータノードがデータを処理するために必要なものが使用されます。
+
+これらは、実際のインスタンスノードが1秒あたり最大10000件のクエリと2000件のクエリを提供するようなものです
+
+1秒あたり1キーBの単一行
+
+そして、それはその仮定と2テラバイトのストレージであり、ノードアカウントはノードの数を定義しました
+
+パフォーマンスを向上させるために、ノードを追加するだけです。
+
+そのため、ノードは支持因子を知っているものであり、後のセクションで後ほど確認します
+
+章ですが、インスタンスには複数のノードが含まれています。
+
+したがって、通常、アーキテクチャとCSの方法を見ると、これを地域的なものと考えることができます。
+
+インスタンス。
+
+だから、あなたは自分自身の3つの2つの端にあり、あなたがそれの下で私のようなDBの下で1つを作成するとき
+
+私が作成したのは、複数のゾーンにまたがるスパンです。
+
+はい。
+
+そして、スパナによって維持されるレプリケーションがあります。他に何もする必要はありませんが、
+
+これらのデータベースは本質的にグローバルです。
+
+その特定の地域では、それは複数のゾーンにまたがっており、マルチのコンテキストで
+
+これらのデータベースは複数の地域に分散できます
+
+だからあなたが少し入って来て能力があると言うなら。
+
+だから、2つはあなたが選択したインスタンスであるBのようにあなたがインスタンスであるということを選択しました
+
+詳細を知ることはできませんが、選択されたように考えることができます。
+
+複数のテーブルがあり、誰でも読み取りまたは書き込みクエリを取得できるが、
+
+これが起こることを選択することは、正しい要求を受け取り、それを書き込むことです
+
+他の2つのトーンにも。
+
+OK。
+
+そして、それが他の場所で正しく確認されると、顧客がそれを取得することがわかります
+
+これは現在コミットされており、これが強力な一貫性と呼ばれていることです。
+
+この特定のゾーン2があなたの正しいリクエストを書いてそれを書いているわけではなく、あなたはあなたを知っています
+
+最初は2日以内に利用可能になりますが、他のゾーンではそうではありません。
+
+したがって、これは非常に一貫性のあるデータです。
+
+何らかの理由でインスタンスが壊れているか、そのゾーンに何か問題があるために消えます
+
+それから、それがすることは、あなたが知っている本当の他のゾーンへの実際のクエリも除外することです
+
+あなたはまだ非常に一貫したデータを得ることができます
+
+次の講義で支払いを見てみましょう。

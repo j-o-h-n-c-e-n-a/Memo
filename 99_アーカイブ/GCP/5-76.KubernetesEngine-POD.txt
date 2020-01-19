@@ -1,0 +1,261 @@
+Boarding component is engine.
+
+So what is part part if we look at it runs multiple container inside it and it is you can think up smallest
+
+our unit in the coordinate is cluster.
+
+You can take this particular unit apart and run it in any node and at the lifecycle is managed for this
+
+particular part not on the individual container.
+
+So part contains maybe say multiple containers in it and you do not manage actual container lifecycle
+
+but you manage the lifecycle apart and that's where you know the concept up part is coming.
+
+So a party's obstruction to represent an application.
+
+You can think of it holds one or more containers the containers in Port share a single IP address which
+
+is like IP and the namespace which is like an example like local host data can be shared using cloud
+
+storage bucket.
+
+Are there desk between these containers.
+
+So that is.
+
+So that is the part it is the smallest unit which can be deployed in two covenants.
+
+Engine typically poor lifecycle.
+
+You can create part or deploy it.
+
+You know sometimes it doesn't get started very quickly.
+
+It takes some time because if at all no does not have much space left our resources slipped.
+
+So it will wait for additional load to be created I need to be deployed so part LifeCycle has got a
+
+pending lifecycle which is like just created and audited not yet running.
+
+If it is in draining state it will turn into a running state if it is like succeeded.
+
+All containers are terminated successfully if it failed.
+
+One of the container is terminated it with failure.
+
+Ah the port can be an unknown state.
+
+That's where you know the master is not able to connect to the border port has got some issues and then
+
+that needs to be destructed or wiped out.
+
+Okay so so that's the part.
+
+Support is the smallest you need in which you can have multiple containers and you can manage the lifecycle
+
+apart and you can schedule the part to get deployed or you can on the part you can have multiple instances
+
+of the port running inside components cluster.
+
+It is an application abstract as it is said earlier so that you can say group multiple containers of
+
+same application into the port so that it can be scared without interfering any other application and
+
+it can be skilled with its resources.
+
+As an example here there is an Unix server along with that is a main cache container and this can go
+
+and get deployed and you can help.
+
+Based on the load our traffic you can have multiple instances of this part running.
+
+So that's the concept of Cuban it is part we are going to see service in the next lecture
+
+let us just go ahead and deploy another application.
+
+Okay.
+
+We may have some sample applications here.
+
+Existing container.
+
+What do I have.
+
+Okay.
+
+There is an opinion but I think in your next letters that I have it I can just go ahead and reply that
+
+so the workload has been deployed and I can click on this one and then I can see the details and you
+
+can see the managed ports.
+
+So these are like individual units which is running that engine ICS application.
+
+OK you can go ahead and see the traffic on the your next application if there are any events logs and
+
+Yemen files.
+
+This is like configuration file for that particular board you can do a scale expose a rolling update
+
+and scale.
+
+Let me click on ata scale
+
+so currently minimum number of parties one maximum number of port is five and this is all dipole configuration.
+
+I can say minimum number of board which is running should be five and maximum should be 18.
+
+I don't have any other concept yet but I'm just putting forward that so this has been deployed.
+
+It worked but it has got some errors and errors as like unskilled delay will because I think the resources
+
+which we have it is we realize it's a small machine right now what do what do you have it and it is
+
+not able to do scale with it.
+
+So that's how you provide these hired state off your cluster and if the resources are there it will
+
+schedule it otherwise it will not.
+
+We will see eight says five day data five really three available and two unavailable but we are going
+
+to see the details in subsequent lectures Gates but this is a way you can independently you know scale
+
+the part you can have applications running inside the party.
+
+Thank you very much we are going to see the service in the next lecture.
+
+Thank you.
+
+搭乗コンポーネントはエンジンです。
+
+それを見てみると、その中の複数のコンテナを実行している部分とは何ですか？
+
+座標内のユニットはクラスターです。
+
+この特定のユニットを分解して任意のノードで実行し、ライフサイクルでこれを管理できます
+
+個々のコンテナにはない特定の部分。
+
+したがって、一部には複数のコンテナが含まれている可能性があり、実際のコンテナライフサイクルを管理していません
+
+しかし、ライフサイクルを個別に管理することで、コンセプトアップの部分が近づいていることがわかります。
+
+したがって、アプリケーションを表すための当事者の障害。
+
+Portのコンテナが単一のIPアドレスを共有する1つ以上のコンテナを保持していると考えることができます。
+
+IPのようなもので、ローカルホストデータのような例のような名前空間はクラウドを使用して共有できます
+
+ストレージバケット。
+
+これらのコンテナ間に机はありますか。
+
+そうです。
+
+それが、2つの契約で展開できる最小ユニットである部分です。
+
+通常、エンジンのライフサイクルは貧弱です。
+
+パーツを作成するか、展開できます。
+
+あなたは時々それが非常に迅速に開始されないことを知っています。
+
+少しでもスペースがあまりない場合、リソースが不足するため、時間がかかります。
+
+そのため、追加の負荷が作成されるのを待つことになります。一部のLifeCycleには、
+
+まだ実行されていない、作成および監査されたばかりのような保留中のライフサイクル。
+
+それが排出状態にある場合、それが成功したようであれば実行状態に変わります。
+
+失敗した場合、すべてのコンテナは正常に終了します。
+
+コンテナの1つが失敗して終了しました。
+
+ああ、ポートは不明な状態になる可能性があります。
+
+ここで、マスターが境界ポートに接続できないことがわかっているので、いくつかの問題があります。
+
+それを破壊するか一掃する必要があります。
+
+わかりましたので、それは一部です。
+
+サポートは、複数のコンテナを使用でき、ライフサイクルを管理できる、必要最小限のサポートです
+
+離れて、展開する部分をスケジュールしたり、複数のインスタンスを持つことができます
+
+コンポーネントクラスタ内で実行されているポートの。
+
+先に述べたように、これはアプリケーションの要約です。
+
+同じアプリケーションをポートに追加して、他のアプリケーションに干渉することなく怖がらせることができます。
+
+そのリソースに熟練することができます。
+
+ここの例として、Unixサーバーとメインキャッシュコンテナーがあります。
+
+展開され、あなたが助けることができます。
+
+トラフィックの負荷に基づいて、この部分の複数のインスタンスを実行できます。
+
+それがキューバのコンセプトです。次の講義でサービスを見ることになる部分です。
+
+先に進んで別のアプリケーションをデプロイしましょう。
+
+はい。
+
+ここにサンプルアプリケーションがあります。
+
+既存のコンテナ。
+
+私は何を持っていますか。
+
+はい。
+
+意見はありますが、私はあなたの次の手紙で私はそれを持っていると思います。
+
+ワークロードが展開されているので、これをクリックして詳細を確認できます
+
+管理ポートを見ることができます。
+
+したがって、これらは、そのエンジンICSアプリケーションを実行している個々のユニットのようなものです。
+
+イベントログがある場合は、次のアプリケーションのトラフィックを確認して、
+
+イエメンファイル。
+
+これは、特定のボードの構成ファイルのようなもので、スケールを実行してローリング更新を公開できます
+
+とスケール。
+
+スケールをクリックしてみましょう
+
+そのため、現在、最小パーティ数は1ポート、最大ポート数は5であり、これはすべてダイポール構成です。
+
+実行中のボードの最小数は5、最大は18である必要があります。
+
+私はまだ他のコンセプトは持っていませんが、それを展開しているのでそれを提案しています。
+
+それは機能しましたが、いくつかのエラーがあります。
+
+私たちが持っているものは、それが小さな機械であることに気づいていることです。
+
+それに応じてスケールすることはできません。
+
+そのため、これらの雇われた状態をクラスターから提供し、リソースがある場合はそれが提供されます
+
+それ以外の場合はスケジュールしません。
+
+8つは5日間のデータ、5つは実際には3つ、2つは使用不可であると表示されますが、
+
+後続の講義で詳細を確認しますが、これは独立してスケールを知ることができる方法です
+
+パーティ内でアプリケーションを実行できる部分。
+
+次回の講義でこのサービスをご覧いただきありがとうございます。
+
+ありがとうございました。
+
+

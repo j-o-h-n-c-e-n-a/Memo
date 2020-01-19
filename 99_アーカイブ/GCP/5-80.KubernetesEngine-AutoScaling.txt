@@ -1,0 +1,231 @@
+Are just killing in carbon at its engine.
+
+There are two different kinds of particles killing that is I believe in Coburn and his one is your number
+
+of nodes in the cluster are the work up north in the cluster but at the same time you want to have additional
+
+parts running inside those machines or the nodes work nodes based on specific application requirements.
+
+So there are these two different scaling configurations one auto scaling is add deployment well that's
+
+where you can see I want to run say 10 minimum 10 parts for so and so application and it can go up to
+
+100 instances for the bar based on the traffic.
+
+Additionally you can say I can have say three nodes running inside the cluster but based on the demand
+
+I can go from three node 210 node in one particular node pool.
+
+So one configuration is at deployment level and which is for your parts are work load.
+
+The second configuration is the number up nodes which component this cluster is managing or I will send
+
+work or switch the cluster is managing
+
+let us replicate on the concept here.
+
+The first is I took it out of scalar I'm just putting that in a highly well terminology and not on the
+
+cluster so that the scalar is enabled for deployments and Tuscaloosa enabled for notables.
+
+OK so consider a case where there are two nodes running and inside two nodes that are food for parts
+
+each and I will country.
+
+Right now I'm assuming that equal parts same parts running inside those two nodes.
+
+So there are two parts to consider there are two parts which are waiting to be running in and there
+
+are when Master checks there are resources available on the nodes and it finds that there is no available
+
+resources computing resources available in the nodes or what it will do is it to check the node pool
+
+configuration if there are the scalar just getting it enabled for it.
+
+It will launch additional node for that node pool and it will schedule those two ports to run inside
+
+it.
+
+But additionally what it will do is it will check to balance the workload between the notes and it will
+
+not take one of the part running inside to nodes and then Bell tried to balance the work load between
+
+the nodes.
+
+So you have now the Node 1 running three parts Node 2 running 3 parts.
+
+Node you know 3 running 3 parts what it will happen is C after say work load gets reduced.
+
+Consider that case right.
+
+And if the workload gets reduced there are the number of parts.
+
+We also be reduced on what it will happen to that is now the Node 2 is running very less resources.
+
+No one is three resource and a Node 2 no 3 is 3 parts.
+
+What it will do is it will balance out the workload again and it will take out the Node 2 from X cluster
+
+and that is again scaled or managed by at the normal level.
+
+Okay.
+
+So now you have two nodes running one running for blocks and the second one running two parts.
+
+That is auto scaling configuration guys and balancing that I would say in cluster balancing in a nutshell
+
+if you needed the services which are continuously running and you do not want any disruption of auto
+
+scaling then definitely you want to switch off the auto scaling at the node pull they will use it our
+
+administrator sort of manually not manually managing the nodes it me or right or the manual node management
+
+operation by pump by you.
+
+So as an example if you are extending or adding additional nodes then you know the automatic configuration
+
+will go off all the nodes in the single node will have the same labels on the cluster of scalar consider
+
+related cost for each instance type and Node pull and attempt to explain least expensive possible node
+
+pool.
+
+And this is very very very important to save your cost limitation.
+
+Does the alert should not yet be used with the large clusters more than under 100 people in North End.
+
+I'm not sure whether these constraints still valid because this platform also expanding very fast but
+
+you do want to check if these numbers are still valid that's it guys as a node pool are you know the
+
+deployment that's scaling in Cuba tonight is next.
+
+We are going to see higher liability and load balancing.
+
+We already saw high availability.
+
+Just to talk about it.
+
+But as because it comes inside the load balancing as well with the resources required you need to how
+
+additional resources.
+
+I think the point says how reliability and load balancing.
+
+It is broadly in load balancing lecture next.
+
+エンジンで炭素を殺しているだけです。
+
+コバーンには2つの異なる種類の粒子殺害がありますが、彼はあなたの数です
+
+クラスター内のノードの数はクラスター内の北にありますが、同時に追加したい
+
+それらのマシンまたはノード内で実行される部品は、特定のアプリケーション要件に基づいてノードを動作させます。
+
+したがって、これらの2つの異なるスケーリング構成があります。1つの自動スケーリングは展開を追加します。
+
+あなたが見ることができる場所で、私はそのために10個の最小10個の部品を実行したいと思います
+
+トラフィックに基づいたバーの100インスタンス。
+
+さらに、クラスター内で実行されている3つのノードが、需要に基づいていると言うことができます
+
+1つの特定のノードプールの3つのノード210ノードから移動できます。
+
+そのため、1つの構成は展開レベルであり、ユーザーのパーツは作業負荷です。
+
+2番目の構成は、このクラスターが管理しているコンポーネントまたは送信するノードの数です。
+
+クラスターが管理している作業またはスイッチ
+
+ここで概念を繰り返しましょう。
+
+1つ目は、スカラーからそれを取り出したということです。
+
+スカラーがデプロイメントに対して有効になり、Tuscaloosaが注目に値するようにクラスターを設定します。
+
+わかりましたので、2つのノードが実行されており、部品の餌となる2つのノードの内側にある場合を考えます
+
+それぞれと私は国になります。
+
+今は、これらの2つのノード内で同じパーツが同じパーツで実行されていると仮定しています。
+
+考慮すべき2つの部分があります。実行されるのを待っている2つの部分があります。
+
+マスターがノード上で利用可能なリソースがあるかどうかをチェックし、利用可能なリソースがないことがわかったとき
+
+リソースは、ノードで利用可能なコンピューティングリソースまたはノードプールをチェックすることです
+
+スカラーが有効になっているスカラーがある場合の構成。
+
+そのノードプールの追加ノードを起動し、これらの2つのポートを内部で実行するようにスケジュールします
+
+それ。
+
+しかし、さらにそれが行うことは、ノート間のワークロードのバランスをチェックし、それが
+
+内部で実行されている部分の1つをノードに使用せず、ベルは作業負荷のバランスをとろうとしました
+
+ノード。
+
+これで、3つの部分を実行するノード1ができました。3つの部分を実行するノード2です。
+
+あなたが知っているノードは、作業負荷が減少した後、Cが3つの部分を実行していることを知っています。
+
+その場合を考慮してください。
+
+そして、ワークロードが減少した場合、部品の数があります。
+
+また、ノード2で実行されるリソースが非常に少なくなったため、何が起こるかについても削減されます。
+
+誰も3つのリソースではなく、ノード2の3は3つの部分です。
+
+ワークロードのバランスを取り直し、Xクラスターからノード2を取り出します
+
+また、通常のレベルでスケーリングまたは管理されます。
+
+はい。
+
+したがって、2つのノードで1つのブロックを実行し、2つ目のノードで2つの部分を実行しています。
+
+これは、構成の自動スケーリングとバランシングです。つまり、簡単に言えばクラスターバランシングで言えます。
+
+継続的に実行されているサービスが必要であり、自動中断を望まない場合
+
+スケーリングし、間違いなくあなたは彼らがそれを使用するノードプルで自動スケーリングをオフにしたい
+
+管理者が手動でノードを管理するのではなく、手動でノードを管理する
+
+あなたによるポンプによる操作。
+
+例として、追加のノードを拡張または追加する場合、自動構成を知っています
+
+単一ノード内のすべてのノードがオフになり、スカラーのクラスター上で同じラベルが考慮されます
+
+各インスタンスタイプとノードのプルに関連するコストと、可能な限り安価なノードの説明の試み
+
+プール。
+
+そして、これはコスト制限を節約するために非常に非常に重要です。
+
+アラートは、ノースエンドの100人未満の大規模クラスターではまだ使用しないでください。
+
+このプラットフォームも非常に急速に拡大するため、これらの制約がまだ有効かどうかはわかりませんが、
+
+これらの数値がまだ有効であるかどうかを確認する必要があります。ノードプールとして知っているのは
+
+今夜キューバで拡大する展開が次です。
+
+より高い責任と負荷分散が見られるでしょう。
+
+すでに高可用性を確認しました。
+
+それについて話をするだけです。
+
+ただし、必要なリソースとともに負荷分散の内部にあるため、どのように
+
+追加のリソース。
+
+ポイントは、どのように信頼性と負荷分散が行われるかということです。
+
+次に負荷分散講座で広く行っています。

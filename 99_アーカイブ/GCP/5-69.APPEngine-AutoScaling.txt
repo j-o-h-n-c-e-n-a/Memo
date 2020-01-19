@@ -1,0 +1,87 @@
+Happened in pricing again.
+
+Depends on what type of that particular machine is whether it is a flexible standard your pricing mechanism
+
+gets changed.
+
+So as an example if you're you know the environment or App Engine is a standard environment then instance
+
+class makes a difference.
+
+OK.
+
+If your App Engine is flexible in what I mean then you will be charged based on the CB use and memory
+
+and posits and disk which you use it.
+
+So it makes difference if you use standard environment versus flexible environment at the time of pricing
+
+you will be charged for cloud data store calls.
+
+You'll be charged for search API is any idea other any other resource which you use it in.
+
+We will cloud platform.
+
+You'll be charged for network traffic in jeebies Mame Cassidy in cash in jeebies blob storing jeebies
+
+all if you use logs API that it as a basic concept and you know what is flexible what is standard environment
+
+and what is App Engine in nutshell guys if you have any questions on App Engine let us know otherwise
+
+you can get into a demo of the labs and the labs you have actually the document which you can follow
+
+through those and then execute the labs.
+
+Okay we will get into details for app in June for developer we have different aspect altogether to cover
+
+for engineers you have different aspect but most of the engineers part is already covered in this particular
+
+section itself.
+
+If you have any questions let us know otherwise you can move to the next lecture.
+
+Thank you.
+
+再び価格設定が行われました。
+
+その特定のマシンのタイプが、価格設定メカニズムの柔軟な標準であるかどうかによって異なります
+
+変更されます。
+
+例として、環境またはApp Engineが標準環境であることがわかっている場合は、インスタンス
+
+クラスが違いを生みます。
+
+OK。
+
+App Engineの柔軟性が高い場合、CBの使用とメモリに基づいて課金されます
+
+そして、あなたがそれを使用するポジとディスク。
+
+したがって、価格設定時に標準環境と柔軟な環境を使用すると違いが生じます
+
+クラウドデータストアの呼び出しに対して課金されます。
+
+検索APIは、それを使用する他のリソースとは別のアイデアとして請求されます。
+
+プラットフォームをクラウド化します。
+
+ジービーのネットワークトラフィックに対して課金されます。マミーキャシディはジービーを保存しているジービーBLOBの現金で請求されます。
+
+ログAPIを基本概念として使用し、何が柔軟で、何が標準環境かを知っている場合
+
+App Engineについて質問がある場合は、簡単に言えばApp Engineとは何ですか
+
+ラボのデモを見ることができ、実際にあなたが従うことができるドキュメントを持っているラボ
+
+それらを介して、ラボを実行します。
+
+さて、6月にアプリの詳細に入ります。デベロッパーの場合は、カバーする側面がまったく異なります。
+
+エンジニアにとっては異なる側面がありますが、エンジニア部分の大部分はこの特定の部分ですでにカバーされています
+
+セクション自体。
+
+質問がある場合はお知らせください。それ以外の場合は、次の講義に進むことができます。
+
+ありがとうございました。

@@ -1,0 +1,416 @@
+Cloud data proc using loaded up rock.
+
+You can launch out open spark clusters in Google Cloud Platform.
+
+We are not going and getting in details of what is out open what is public.
+
+You can actually check it online but you can launch those clusters inside.
+
+We will cloud platform data proc is a part of database and storage service and it is a part of big data
+
+service and not the data was in storage.
+
+We are ready so be query and this is the second service in the Big Data Services
+
+so using data Brooke you can have faster easier and more cost effective way to run your SPARC and Hadoop
+
+clusters in Google Cloud Platform.
+
+So it supports Hadoop spark and the common use cases which you can think of is like EDL job or bad job
+
+and analytics job some of the features automatic cluster management resides it will cluster integrate
+
+with other JCP services image worsening highly available developer tools you can actually use it in
+
+installation actions automatic and manual configurations flexible virtual machine which you can use
+
+from the configuration and there are features which were added on 2018 customer images plus cluster
+
+data proc workflows and Atos killing.
+
+If we had to launch example cluster let's call and see how complex it is to launch an example cluster.
+
+This is my home page.
+
+I can go to big data services
+
+and in big data you can find this number too.
+
+That is data clusters
+
+I can click on create clusters so this will ask me whole lot up information and if we know already you
+
+know the Hadoop has got a master and the work of nodes work nodes actually stores the data show for
+
+that data and take part in executing the jobs.
+
+Okay so that is the overall architecture of Hadoop as well as the spark when you are providing the information
+
+for the cluster to insecurity that started right.
+
+It is going to ask you the cluster name and I'm going to keep as a default and it is going to ask you
+
+the reason I am seeing us is 2 1 and that's all I can say.
+
+One particular tone if I help reference and then you have cluster moles so cluster.
+
+There are three moles single node so Master we learn everything means actual data processing and the
+
+master in the single node standard means it has got to one master and then multiple workloads nodes
+
+and then highly available you'll have three master nodes running if at all say someone goes some something
+
+is a problem in the master node you can have a little master node who can actually take that request
+
+and start executing it with multiple work nodes.
+
+So if I gives a first and then it will not ask you it will not ask me you know what are the work Kernel
+
+Configuration if I'm going to give a different configuration then it is going to ask me what is the
+
+worker node configuration and what is the master node configurations.
+
+Let us look at what are those configurations.
+
+So first one is the machine type which machine.
+
+Do I want.
+
+Right.
+
+So I can select say two CPE use I can select one CPE use an appropriate memory will be selected.
+
+These are the existing machine type you can selected right by general purpose high memory Hi CPE.
+
+Like those machines you can go in and you and customize those numbers.
+
+Right.
+
+You can select the GP use if at all you want to have it some I'm going to select vs one GP you with
+
+three point seventy jeebies of memory for my master.
+
+Okay with 500 because of persistent disk I'm going to select just 52 piece of persistent disk I'm not
+
+expecting to add anything here right now.
+
+The worker notes for CPO ones appear to be I am going to select once a you and then the data processing
+
+so I'm going to select hundred G.B. a persistent disk you can say that persistent disk or SSD so you
+
+have option you can even select your SSD or persistent disk and then knows how many nodes I want to
+
+run it.
+
+So minimum is two that's what it is seeing for their standard cluster if at all.
+
+I need the local storage right if at all you understand the spot I got her to a shuffles the data and
+
+using the local storage and that's where you can configure local SSD if you want.
+
+Otherwise it can go to the persistent is can it really use persistent disk as a local shuffling data
+
+as well as it can even use you are the cloud storage for your local to troubling then you on course.
+
+So this is another process which manages to cluster yin and yang memories to GP I can go and click on
+
+Add once options
+
+along with the main workout nodes I have say to work at nodes here.
+
+Right.
+
+I can spin up additional premium I will work till machines supreme.
+
+I will watch your machine as you know.
+
+If you collect it so cost effective you will get around 80 percent of your 80 percent discount running
+
+those DFS nodes and those nodes are like you know it can.
+
+Google can take those nodes anytime but you can actually run you know very good bad job inside the worker
+
+nodes and if at all it goes up you don't have any problem.
+
+So you just added adding some capacity as in when it is available you can use it otherwise you can just
+
+leave it and then you can choose the network subnet work.
+
+You can apply network tax which we saw in network section if you want to have only internal IP addresses
+
+like you want to have access by only internal IP addresses like from your VM or any other you know machine
+
+you can give that you can go to storage cloud storage as an additional backup for your data.
+
+I can say browse and I can give one of the I can create the bucket.
+
+Let me just create it.
+
+My bucket
+
+data rock already taken
+
+and it should be regional standard
+
+I can actually set the bucket load permissions for this particular kind of work load and we will manage
+
+keys.
+
+I can create
+
+and I can take this one
+
+so this is the bucket which will be used to store the data if at all I have some insulation component
+
+I can give it here I can give the project access whether you want to have project wide access certain
+
+API is all your own to this tactic I can provide you with that data I can provide cables for help secure
+
+or insecure mode if at all you want to check you want to see what is that in detail you can go and check.
+
+Use google I can go ahead and click cluster so the cluster is being created now.
+
+So that is very simple if you want to create a cluster.
+
+Let's head back to the theory best practices.
+
+This keeps the data in a separate storage vs. the compute.
+
+If you look at the heart of you know our traditional mode.
+
+It uses the local storage to store the data but as a best practices in Google Cloud Platform it can
+
+use persistent disk to store your data.
+
+You have ephemeral clusters which are like which will come and go based on if you are planning say two
+
+or three jobs only which will takes a five to 10 minutes in a typical day.
+
+You can just launch everyone one customer for the job and then you can let it go because you lot.
+
+You don't want to have those charges but if you have continued job running and that is your use case
+
+you can use long lived clusters you can create and delete clusters of one and you don't have any problem.
+
+You don't have any issues with that because you know that's how you can save your cost and you can use
+
+HIPPA and we are going to look at what other jobs in the next subsequent lectures but that's in a highly
+
+will educate approx.
+
+So what we did we check you know we saw high level features and we launch the instances the cluster
+
+is currently being created which we can you know use it further to launch a job.
+
+Let's go ahead and take a look at the architectural aspect of data rock how you can use it in your EDL
+
+are analytics job requirement.
+
+
+ロードされた岩を使用したクラウドデータプロシージャ。
+
+Google Cloud Platformでオープンスパーククラスターを起動できます。
+
+公開されているものの詳細を公開するつもりはありません。
+
+実際にオンラインで確認できますが、それらのクラスターを内部で起動できます。
+
+クラウドプラットフォームのデータプロシージャは、データベースとストレージサービスの一部であり、ビッグデータの一部です
+
+サービスではなく、データがストレージにありました。
+
+私たちは準備ができているので、クエリであり、これはビッグデータサービスの2番目のサービスです
+
+データブルックを使用すると、SPARCとHadoopをより速く、より費用対効果の高い方法で実行できます。
+
+Google Cloud Platformのクラスター。
+
+そのため、Hadoop sparkをサポートしており、考えられる一般的なユースケースはEDLジョブまたは悪いジョブのようなものです。
+
+分析ジョブ自動クラスター管理に存在するいくつかの機能がクラスター統合されます
+
+他のJCPサービスイメージを使用すると、可用性の高い開発者ツールが悪化し、実際に使用できます
+
+インストールアクション自動および手動構成使用可能な柔軟な仮想マシン
+
+構成から、2018顧客イメージとクラスターに追加された機能があります
+
+データプロシージャワークフローとAtosの強制終了。
+
+サンプルクラスターを起動する必要がある場合は、サンプルクラスターを起動することがどれほど複雑であるかを確認してみましょう。
+
+これは私のホームページです。
+
+ビッグデータサービスに行くことができます
+
+ビッグデータでは、この数値も見つけることができます。
+
+それがデータクラスターです
+
+[クラスターの作成]をクリックすると、たくさんの情報が表示されます。
+
+Hadoopにマスターがあり、ノードの作業ノードが実際にデータショーを保存していることを知っている
+
+そのデータとジョブの実行に参加します。
+
+さて、これがHadoopの全体的なアーキテクチャであり、情報を提供するときの火花です
+
+クラスターが適切に開始された不安定な状態に。
+
+それはあなたにクラスタ名を尋ねるつもりです、そして私はデフォルトとして保持するつもりです、そしてそれはあなたに尋ねるつもりです
+
+私が見ている理由は2 1であり、それは私が言うことができるすべてです。
+
+私が参照するのを手伝ってから、あなたがクラスタモグラを持っている場合、特定のトーンがあります。
+
+3つのほくろの単一ノードがあるので、マスターはすべてが実際のデータ処理と
+
+単一ノード標準のマスターは、1つのマスターと複数のワークロードノードに到達していることを意味します
+
+可用性が高い場合、誰かが何かをしたと言ったら、3つのマスターノードが実行されます。
+
+マスターノードの問題です。実際にそのリクエストを受け取ることができる小さなマスターノードを持つことができます
+
+複数の作業ノードで実行を開始します。
+
+だから私が最初に与えて、それからあなたに尋ねないなら、それはあなたに仕事カーネルが何であるかを知っている私に尋ねません
+
+構成異なる構成を提供する場合、それは何であるかを尋ねます
+
+ワーカーノードの構成とマスターノードの構成は何ですか。
+
+それらの構成を見てみましょう。
+
+そのため、最初の1つは、マシンの種類です。
+
+欲しい？
+
+正しい。
+
+したがって、2つのCPEの使用を選択できます。1つのCPEの使用を選択すると、適切なメモリが選択されます。
+
+これらは、汎用の高メモリHi CPEで適切に選択できる既存のマシンタイプです。
+
+それらのマシンと同様に、あなたもあなたと一緒に行き、それらの番号をカスタマイズできます。
+
+正しい。
+
+GPを選択するには、GPを1つ選択します。
+
+私の主人の記憶の三十七ジービー。
+
+永続ディスクのために500で大丈夫です。永続ディスクは52個だけ選択します。
+
+ここに何かを追加することを期待しています。
+
+CPOのワーカーのメモは、一度選択してからデータ処理を選択するようです
+
+そこで、100 G.Bを選択します。永続ディスクまたは永続ディスクと言うことができるので、
+
+SSDまたは永続ディスクを選択できるオプションがあり、必要なノード数を把握できます
+
+それを実行します。
+
+そのため、最小は2であり、標準クラスターで見られる場合はそれがあります。
+
+私が彼女を取得した場所がデータをシャッフルし、
+
+ローカルストレージを使用して、必要に応じてローカルSSDを構成できます。
+
+そうでなければ、永続的なディスクにローカルシャッフルデータとして実際に使用できますか
+
+また、あなたを悩ますことからあなたのローカルのクラウドストレージとして使用することもできます。
+
+これは、陰陽の記憶をGPにクラスター化する別のプロセスです。
+
+一度追加するオプション
+
+メインのワークアウトノードと一緒に、ここでノードで作業すると言いました。
+
+正しい。
+
+マシンが最高になるまで仕事をします。
+
+あなたが知っているように、私はあなたの機械を見ます。
+
+費用対効果が高い場合は、80％割引の約80％が実行されます
+
+それらのDFSノードとそれらのノードは、あなたが知っているようなものです。
+
+Googleはいつでもこれらのノードを使用できますが、実際には実行できます。
+
+ノードがあり、それが上がっても問題はありません。
+
+そのため、利用可能になったときのように、容量を追加するだけで使用できます。
+
+そのままにしておくと、ネットワークサブネットの作業を選択できます。
+
+内部IPアドレスのみが必要な場合は、ネットワークセクションで確認したネットワーク税を適用できます
+
+VMや他のマシンからのような内部IPアドレスのみでアクセスしたい
+
+データの追加のバックアップとしてストレージクラウドストレージにアクセスできるようにすることができます。
+
+ブラウズと言うことができ、バケットを作成できるものの1つを与えることができます。
+
+作成してみましょう。
+
+私のバケツ
+
+データロック済み
+
+そして、それは地域の標準であるべきです
+
+この特定の種類の作業負荷にバケットの負荷許可を実際に設定でき、管理します
+
+キー。
+
+作成できます
+
+私はこれを取ることができます
+
+だからこれは、もし私が何らかの断熱コンポーネントを持っている場合、データを保存するために使用されるバケットです
+
+私はここでそれを与えることができます私はあなたがプロジェクト全体のアクセスを特定にしたいかどうか
+
+APIはすべてこの戦術に独自のものです。そのデータを提供できます。セキュリティで保護されたケーブルを提供できます。
+
+または安全モードでは、チェックしたい場合は、詳細を確認して確認できます。
+
+Googleを使用して先に進み、クラスターをクリックして、クラスターを作成します。
+
+したがって、クラスターを作成する場合は非常に簡単です。
+
+理論のベストプラクティスに戻りましょう。
+
+これにより、データはコンピューティングとは別のストレージに保持されます。
+
+あなたの心を見るなら、私たちの伝統的なモードを知っています。
+
+ローカルストレージを使用してデータを保存しますが、Google Cloud Platformのベストプラクティスとして
+
+永続ディスクを使用してデータを保存します。
+
+一時的なクラスターがあります。これは、2つと言うことを計画している場合に基づいて、行き来するものです
+
+または3つのジョブのみで、通常は5〜10分かかります。
+
+仕事のために1人の顧客だけを立ち上げることができます。そして、あなたがたくさんいるので手放すことができます。
+
+これらの料金は必要ありませんが、継続してジョブを実行しており、それがユースケースである場合
+
+長期間有効なクラスターを使用でき、1つのクラスターを作成および削除でき、問題はありません。
+
+あなたはそれがあなたのコストを節約し、あなたが使用できる方法であることがわかっているので、あなたはそれについて何の問題もありません
+
+HIPPAと私たちは次の講義で他の仕事を見ますが、それは非常に
+
+約教育します。
+
+そこで、高レベルの機能を確認し、クラスターのインスタンスを起動することを確認しました
+
+現在作成されており、ジョブを起動するためにさらに使用することができます。
+
+先に進んで、EDLでデータロックを使用する方法のデータロックのアーキテクチャの側面を見てみましょう。
+
+分析ジョブの要件です。

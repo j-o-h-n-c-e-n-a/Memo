@@ -1,0 +1,365 @@
+Case studies for cloud architect examination.
+
+There are total pre-K studies as we saw which are available for you to understand the case studies before
+
+you go to the exam.
+
+Okay.
+
+And this is very important.
+
+Okay.
+
+And this is a bootstrap I will say for you.
+
+Once you understand the case studies and once you understand the solution for all their problems and
+
+this is very important.
+
+So you do a study of any any case studies right.
+
+So the case really has got a bag around it has got a problem straight make it has got a solution concept
+
+and there are statement which is given either CFO looking at the financial angle CTO how you manage
+
+your application at search and then see your statement.
+
+OK.
+
+And then the current landscape.
+
+So all of that is given for you to understand these case studies and once you understand this case study
+
+you come up with the solution and that is what you need to do right before you appear for the exam.
+
+Okay.
+
+And this is very important.
+
+Let us understand the first use case or history and that is good games.
+
+It's an online gaming platform.
+
+User have a multi player game sessions.
+
+It builds on the the games with the server side and integration and has historically used cloud providers
+
+to lease the servers.
+
+Currently right game statistics to a file and ultimately that get loaded into my escalate.
+
+I was reporting.
+
+So the problem statement is very important.
+
+A few of their games were most popular than expected and they had a problem in scaling their applications
+
+are words.
+
+My skill database is an analytical tool and this is your problem statement which is given the solution
+
+concept.
+
+Monica game is building a new game which they expect it to be very popular.
+
+They plan to deploy the game back in on Google compute engine so that they can capture streaming mattresses
+
+prices only intensify analytics and take advantage of Atos killing Sylvan environment integrate with
+
+manage noise cool database.
+
+So this is the solution concept they have it.
+
+You need to understand what is happening and work problems they are currently facing.
+
+What's your sense.
+
+I would love a successful game did not scale well with our previous cloud provider resulting lower user
+
+adoption and affecting games reputation.
+
+Our investor wants more key performance KPI is to evaluate the speed and stability of game and if you
+
+look at the critical information here is they have multiplayer games and almost all the mobile platforms
+
+and the server.
+
+You know the back end is running in the operating system which is customized for the Games to collect
+
+the data and then propose different thing in the game inside okay.
+
+Because you cannot handle everything in Mobile so everything comes from the back end here and the problem
+
+with that.
+
+The earlier game which was supposed to be popular that had contention because of the hardware and backend
+
+it was not able to skill properly.
+
+So that is the.
+
+He was concerned
+
+as well as other mattresses to provide deeper inside up the usage patterns so that we can add up the
+
+game to target users.
+
+So that's what you need to understand CTO statement.
+
+He is our current technology stack cannot provide the scale we need.
+
+We want to replace my skill to move to environment that provide auto scaling low latency load balancing
+
+and free up US from managing critical servers.
+
+And what this means is see to what comes from the technical background right.
+
+So he is he's owning those technical assets and you need to understand his concern he is now you want
+
+to move away from the wide scale you want something out of scale environment low latency load balancer
+
+and he does not want to take care much into a hard physical hardware management aspect.
+
+So you want to be focused towards more software focused here and without looking at any physical limitations
+
+see a full statement from the finance perspective we are not capturing enough user Democrat graphic
+
+data usage mattresses other KPI.
+
+As a result we do not engage right users.
+
+We are more confident that our marketing is targeting great users and we are not selling in premium.
+
+Blast ups inside the game which dramatically impact on new.
+
+And this is from the financing.
+
+So this is this is all a statement which they are given.
+
+They argue in the the game backend dynamically scalable down based on the game activity connect to manage
+
+noise school and database service.
+
+Then on customized Linux distribution.
+
+So this is a requirement which they are given game analytical platform that dynamically scale up or
+
+down on the game activity process incoming data on the fly directly from the game server process the
+
+data that I was late because of slow mobile connection.
+
+Because if mobile is connect mobile is connected to your back and so this is why the telephony service
+
+and if the signal is low then it will catch the data and ultimately send it in a batch allowing school
+
+queries to access at least in terabyte of historical data process files that are regularly uploaded
+
+by users.
+
+Mobile devices use only fully managed services and this is you can think of from the idealistic schools
+
+concern.
+
+So these are the requirements which you need to meet.
+
+Okay.
+
+Understanding the problem statement.
+
+Understanding the consensus that they have it in different levels in C X organization and then you come
+
+up with the solution.
+
+So these are the minimal requirement that you have from the business angle and from the technical angle
+
+and then you need to come up with the solution.
+
+This is Mount good game.
+
+The second gear study that we have is that I'm Art Tatum art is mining and farming heavy equipment company
+
+and we are going to see that in the next lecture.
+
+
+クラウドアーキテクト試験のケーススタディ。
+
+過去のケーススタディを理解するために利用できる、K全体のpre-Kスタディがあります
+
+あなたは試験に行きます。
+
+はい。
+
+これは非常に重要です。
+
+はい。
+
+そして、これは私があなたのために言うブートストラップです。
+
+ケーススタディを理解し、すべての問題の解決策を理解したら、
+
+これはとても重要です。
+
+だから、あなたはどんなケーススタディの正しい研究もします。
+
+そのため、ケースには本当にバッグがあり、問題があり、ソリューションのコンセプトがあります
+
+そして、あなたがどのように管理するかについて財務的角度CTOを見ているCFOに与えられた声明があります
+
+検索時にアプリケーションを作成してから、ステートメントを確認します。
+
+OK。
+
+そして、現在の風景。
+
+そのため、これらのケーススタディを理解し、このケーススタディを理解したら、そのすべてが提供されます。
+
+あなたは解決策を思いつき、それがあなたが試験に現れる直前にあなたがする必要があることです。
+
+はい。
+
+これは非常に重要です。
+
+最初のユースケースや歴史を理解しましょう。これは良いゲームです。
+
+それはオンラインゲームプラットフォームです。
+
+ユーザーはマルチプレイヤーゲームセッションを持っています。
+
+サーバー側と統合されたゲーム上に構築され、これまでクラウドプロバイダーを使用してきました
+
+サーバーをリースします。
+
+現在、ファイルに対する正しいゲーム統計情報、最終的には私のエスカレートにロードされます。
+
+報告していました。
+
+したがって、問題の記述は非常に重要です。
+
+彼らのゲームのいくつかは予想よりも最も人気があり、アプリケーションのスケーリングに問題がありました
+
+言葉です。
+
+私のスキルデータベースは分析ツールであり、これはあなたの問題ステートメントであり、解決策が与えられます
+
+概念。
+
+モニカのゲームは、非常に人気があると期待している新しいゲームを構築しています。
+
+彼らは、ストリーミングマットレスをキャプチャできるように、ゲームをGoogleコンピューティングエンジンにデプロイすることを計画しています。
+
+価格は分析を強化するだけで、アトスを殺すSylvan環境との統合
+
+ノイズクールデータベースを管理します。
+
+これが彼らが持っているソリューションの概念です。
+
+何が起きているのかを理解し、現在直面している問題を解決する必要があります。
+
+あなたの感覚は何ですか。
+
+成功したゲームが以前のクラウドプロバイダーではうまく機能しなかったため、ユーザーが減少したいと思います
+
+採用およびゲームの評判への影響。
+
+私たちの投資家は、KPIがより重要なパフォーマンスを求めています。ゲームの速度と安定性を評価することです。
+
+ここで重要な情報を見てください。マルチプレイヤーゲームとほとんどすべてのモバイルプラットフォームがあります。
+
+およびサーバー。
+
+ゲームを収集するためにカスタマイズされたオペレーティングシステムでバックエンドが実行されていることを知っている
+
+データを作成してから、ゲーム内で別のことを提案します。
+
+あなたはすべてをモバイルで処理できないので、すべてがここのバックエンドと問題から来ます
+
+それと。
+
+ハードウェアとバックエンドのために競合していた人気があるはずの初期のゲーム
+
+適切にスキルを発揮できませんでした。
+
+そうです。
+
+彼は心配していた
+
+他のマットレスと同様に、使用パターンの奥深くを提供して、
+
+ユーザーをターゲットにするゲーム。
+
+それが、CTOステートメントを理解するために必要なことです。
+
+彼は私たちの現在の技術スタックが私たちが必要とする規模を提供できないことです。
+
+自動スケーリングの低遅延ロードバランシングを提供する環境に移行するためにスキルを置き換えたい
+
+重要なサーバーの管理から米国を解放します。
+
+そして、これが意味することは、技術的背景の右から来るものを見ることです。
+
+彼はそれらの技術資産を所有しているので、彼が今あなたが望んでいる懸念を理解する必要があります
+
+広いスケールから離れるには、スケールアウト環境の低遅延ロードバランサーが必要です。
+
+そして、彼はハードなハードウェア管理の側面にあまり注意を払いたくありません。
+
+したがって、物理的な制限を考慮せずに、ここで焦点を絞ったより多くのソフトウェアに焦点を合わせたい
+
+財務の観点から完全な声明を見る
+
+データ使用マットレスは他のKPI。
+
+その結果、適切なユーザーを引き付けません。
+
+マーケティングは優れたユーザーをターゲットにしており、プレミアムで販売しているわけではないと確信しています。
+
+ゲーム内で爆発的に盛り上がり、新しいものに劇的な影響を与えます。
+
+これは資金調達によるものです。
+
+これは、これがすべて彼らが与えられた声明であるということです。
+
+ゲームバックエンドで、管理するために接続するゲームアクティビティに基づいて動的にスケーラブルにダウンすることを主張します。
+
+ノイズスクールとデータベースサービス。
+
+次に、カスタマイズされたLinuxディストリビューションで。
+
+したがって、これは、動的にスケールアップするゲーム分析プラットフォームを与えられる要件です。
+
+ゲームアクティビティでダウンして、ゲームサーバーから直接着信データを直接処理します。
+
+モバイル接続が遅いために遅れたデータ。
+
+モバイルが接続されている場合、モバイルは背中に接続されているため、テレフォニーサービスは
+
+信号が低い場合は、データをキャッチし、最終的に学校に通すことができるバッチで送信します
+
+定期的にアップロードされる履歴データプロセスファイルの少なくともテラバイト単位でアクセスするクエリ
+
+ユーザーによって。
+
+モバイルデバイスは完全に管理されたサービスのみを使用しますが、これは理想主義的な学校から考えることができます
+
+懸念。
+
+したがって、これらはあなたが満たす必要がある要件です。
+
+はい。
+
+問題文を理解する。
+
+C X組織のさまざまなレベルで彼らが持っているコンセンサスを理解してから、あなたが来る
+
+ソリューションについて説明します。
+
+これらは、ビジネスの観点と技術的な観点からの最小限の要件です
+
+そして解決策を考え出す必要があります。
+
+これはMount good gameです。
+
+私たちが持っている2番目のギアの研究は、私がArt Tatumであるということです。
+
+次の講義でそれを見るつもりです。
+

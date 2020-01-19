@@ -1,0 +1,120 @@
+Ski mount is ending in cloud firestorm.
+
+As we know it is a data store.
+
+What region of next was an object a store.
+
+So you can how data store data model as well as you can how far to store a new natively data model as
+
+well.
+
+If you look at if you want to map it to the relational database management system and that is in the
+
+middle.
+
+So all your tape will become kind in your data store and collection in your file store mode all your
+
+rows inside that they will become entity in cloud data store and become document in five store inside
+
+the road.
+
+There are fields in relational database right.
+
+Those are property in the cloud data store and actually data or actual field in five store.
+
+So the document has got to you know multiple data elements and in relational database you are your primary
+
+key you have key in documents stored as well as you Hokie in five store.
+
+If you look at the way find a store tomorrow it'll look like is you how your guidance.
+
+These are tables and then you have the record.
+
+These records are entities so that they will records out entities and the individual keys are keys and
+
+individual attributes inside the records are the properties of that particular entity if you look at
+
+firestorm model you have collection that is the envelope inside which you can put the document in and
+
+each and every document has got the data.
+
+So as an example here rooms are like collections and there is room a and Room B.
+
+And in that the name of that particular room is say my chat room or some other room right.
+
+So there are multiple rooms inside the room.
+
+OK.
+
+And this is the fight store data model.
+
+I don't have anything else but there are very very good youtube channel videos which I am going to just
+
+put the link here so you can go through these videos and I'm going to put this in the resource section
+
+as well.
+
+But these are very very good videos.
+
+If you want to understand five store five store data model how Piestewa works right for the details.
+
+
+スキーマウントは、クラウドファイヤーストームで終了しています。
+
+私たちが知っているように、それはデータストアです。
+
+次の領域はオブジェクトであり、ストアでした。
+
+したがって、データモデルのデータの保存方法と、新しいネイティブデータモデルの保存方法を次のように指定できます。
+
+上手。
+
+リレーショナルデータベース管理システムにマップするかどうかを確認すると、それは
+
+中間。
+
+したがって、すべてのテープはデータストアで親切になり、ファイルストアモードでのコレクションはすべて
+
+内部の行は、クラウドデータストアのエンティティになり、内部の5つのストアのドキュメントになります
+
+道路。
+
+リレーショナルデータベースの権利にはフィールドがあります。
+
+これらは、クラウドデータストアのプロパティであり、5つのストアの実際のデータまたは実際のフィールドです。
+
+したがって、ドキュメントは複数のデータ要素を知っており、リレーショナルデータベースではあなたがあなたの主要な
+
+5つのストアのHokieと同様に、保存されたドキュメントのキーを持っています。
+
+明日店を見つける方法を見ると、どのようにあなたのガイダンスが見えます。
+
+これらはテーブルであり、レコードがあります。
+
+これらのレコードはエンティティであるため、エンティティを記録し、個々のキーはキーと
+
+レコード内の個々の属性は、特定のエンティティのプロパティです
+
+ファイヤーストームモデルには、ドキュメントを入れることができるエンベロープであるコレクションがあります。
+
+すべてのドキュメントにデータがあります。
+
+ここでの例として、部屋はコレクションのようなもので、部屋aと部屋Bがあります。
+
+そして、その特定の部屋の名前は、私のチャットルームまたは他の部屋の権利です。
+
+そのため、部屋の中には複数の部屋があります。
+
+OK。
+
+そして、これがファイトストアデータモデルです。
+
+他には何もありませんが、非常に良いYouTubeチャンネルビデオがあります。
+
+ここにリンクを配置して、これらのビデオを確認できるようにします。これをリソースセクションに配置します
+
+同様に。
+
+しかし、これらは非常に良いビデオです。
+
+5店舗5店舗のデータモデルを理解する場合は、Piestewaが詳細にどのように機能するかを理解してください。

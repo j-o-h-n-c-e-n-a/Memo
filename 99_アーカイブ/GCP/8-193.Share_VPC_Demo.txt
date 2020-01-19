@@ -1,0 +1,431 @@
+Let's go ahead and set up shared VPC in this section.
+
+We are going to go ahead and said this should be P.C. but to have this enabled you will need to do some
+
+task and the task are first thing first.
+
+You will need to have g sweet domain to have this particular G suite.
+
+You'll have 14 days of trial which you can subscribe for it.
+
+The way you can so you just can just log in now but you can actually go for trial G suite and Google
+
+and then you will get to the link and you can subscribe for it.
+
+Once you log in and create the G suite you will have organization created.
+
+So this is your I mean page you can create you can manage devices billing company profile and all that
+
+but let me go ahead and show you what it is that I have.
+
+I just have the company name so stick that ANC in for that DCP train is my domain.
+
+Jupiter page.
+
+This is the freedom in which I got it from Google itself away listening you'll get to know how to get
+
+the free domain but this is what I have and everything is as you can think of as a default.
+
+I have not done anything beyond what I have it here.
+
+Next thing is you need to log in.
+
+Ah get into console with the same user password if we look at the user password info at GC between dot
+
+page and then you will need.
+
+You can actually go in and create multiple projects there but you should go here into organization.
+
+So that's how you'll see the you'll be able to see the organization.
+
+This will take some time.
+
+So we know what you are creating.
+
+G suite you'll need to wait for at least one hour.
+
+I think I was waiting for one hour.
+
+I did not actually train in between but you can you can get it really faster.
+
+So yeah you need to wait for some moment or some time to get this reflector what you need to do is you
+
+need to delicate the permissions to some user.
+
+OK so that's what I have done it.
+
+I have actually this particular user which I'm using it for my trainings so I given share VPC.
+
+You can just the way you can do it is you can just add and you can.
+
+As an example
+
+I can just give you one of you can go ahead and you share of UPC
+
+share with UPC I mean but at the same time you will need to go to the network admin as well.
+
+That's what I did.
+
+OK.
+
+But we'll we'll talk about that.
+
+So here you need to give shared VPC I mean.
+
+OK.
+
+So I argue we need for this particular user and folder admin as well for this user then logged in with
+
+that user and I can see the whole project.
+
+OK I can go here and now I can set up share
+
+so I'm just enabling sharing UPC
+
+now it is asking me whether you want to share all the sub subnets are individual subnets.
+
+So what I can actually go in and dois I have because I mean us w I can just select us West and U.S.
+
+Central.
+
+Only these two pieces with the service service projects.
+
+So you had that understanding where there is a host project which hosted the shared PPC and there are
+
+service projects which can access or utilize that particular network.
+
+So I'm sharing this particular default U.S. Central and U.S. West and I can just see continue I created
+
+at the place where it looks like a service project and service project to I am just giving it to these
+
+two projects those network access and what they can actually do compute instance add me network admin
+
+or nerves I need it.
+
+So all of that those permissions I'm giving it if at all cooperatives access is required I can just
+
+go in and enable coupon it is and I can say see so it says quote coupon it is indeed enabled host project
+
+showed how open it is access.
+
+Let me go ahead and disable it for now.
+
+I'll show that in the networking some
+
+because in that case I can.
+
+I need to go to I am and I need to add here another rule and I should say Cuban it is in United win
+
+then only I will be able to do that side.
+
+But anyway I am not doing it right now.
+
+So now share VPC is there.
+
+OK.
+
+Which other project can go in and use it.
+
+Let me go here and I can go to service project and in network
+
+UPC
+
+so it is taking some time to get it ready.
+
+I'll pass the video
+
+project host resource was not fun resource was not fun.
+
+Okay let me just go ahead and share it with only one project can see you can do
+
+I think I have some problem with the project too but I will take that instead of this project you have
+
+already attached that and you hardly ever level so
+
+I can go here and my set of this project and in my account
+
+and go to BPC
+
+network show to my project
+
+so this is where you can actually see it.
+
+Okay so the project already who has shared the
+
+2 3 4 4 1 3
+
+was Project 2 3 4 4 1 3.
+
+And you can see the sheer network here.
+
+Okay I can go in and manage that.
+
+I can see detach
+
+and they can attach and while they're touching I can see now
+
+individual subnet and I can select these two and two so only those two subnets should be available in
+
+the shared
+
+so let's go in and create somewhat chill machines there.
+
+Computer engine
+
+and I should be able to select the shared networking
+
+network so like any other say in this project or I can say network share with me from those project.
+
+Now if you go year the default network was shared and there are multiple options here.
+
+So if I go back and say
+
+10 dot 142 dot set or dot 0 slash 20 and this is for u s e 1 and 2 on one and
+
+so I was able to select the sub network which is the other location and I was able to create it.
+
+So in a nutshell what we have done is we have we have created G suite account then we have given the
+
+permissions to this particular user this user to create share we UPC and manage share we P.S. you can
+
+think of this particular user is now network administrator for your share of UPC and then we shared
+
+the VPC with other projects.
+
+I tried to share it with two projects but it was I think it was giving us some euros on Project 2 I
+
+think Project 2 has got some problems in it but yes we were able to share that particular network with
+
+the other service projects so if I look at if I go back we have created the instance and that instances
+
+created in service project using the shared share of UPC.
+
+That's all guys on share we.
+
+If you have any questions on share VPC let me know.
+
+I'm going to put forward a list of items which you need to do like getting the admin console providing
+
+the permissions or giving the permissions for the user to create the share with B C and then managing
+
+those share UPC in the UI itself.
+
+If you have any questions on this one let me know otherwise you can move to the next lecture.
+
+Thank you.
+
+このセクションで共有VPCをセットアップしてみましょう。
+
+私たちは先に進んで、これがP.Cであるべきだと言いました。しかし、これを有効にするには、いくつかを行う必要があります
+
+タスクとタスクは最初に最初のものです。
+
+この特定のGスイートを使用するには、gスイートドメインが必要です。
+
+14日間の試用期間があり、購読できます。
+
+今すぐログインできるだけの方法ですが、実際には試用版GスイートとGoogleに行くことができます
+
+その後、リンクにアクセスして、購読することができます。
+
+ログインしてGスイートを作成すると、組織が作成されます。
+
+つまり、これはあなたが作成できるページです。デバイス請求会社のプロファイルを管理できます。
+
+しかし、先に進んで、私が持っていることをお見せしましょう。
+
+会社名を持っているので、そのDCPトレインのANCが私のドメインになるようにします。
+
+木星ページ。
+
+これは、Google自体から取得した自由で、取得方法を知ることができます。
+
+無料のドメインですが、これは私が持っているものであり、すべてがデフォルトと考えることができるものです。
+
+ここにあるもの以外に何もしていません。
+
+次に、ログインする必要があります。
+
+ドット間のGCでユーザーパスワード情報を見ると、同じユーザーパスワードでコンソールに入る
+
+ページしてから、必要になります。
+
+実際にそこに行って複数のプロジェクトを作成することもできますが、ここで組織に参加する必要があります。
+
+だから、組織を見ることができるようになります。
+
+これには時間がかかります。
+
+したがって、私たちはあなたが作成しているものを知っています。
+
+少なくとも1時間待つ必要があるGスイート。
+
+私は1時間待っていたと思います。
+
+私は実際に間に訓練しませんでしたが、あなたはそれを本当に速く得ることができます。
+
+だから、あなたはこのリフレクターを手に入れるのにしばらく待つ必要があります
+
+一部のユーザーに権限を微調整する必要があります。
+
+OK、それが私がやったことです。
+
+私は実際にこの特定のユーザーをトレーニングに使用しているので、共有VPCを提供しました。
+
+できるのは、追加するだけでできることです。
+
+例として
+
+私はあなたにあなたの一人を先に進ませることができ、あなたはUPCを共有することができます
+
+UPCと共有しますが、同時にネットワーク管理者にもアクセスする必要があります。
+
+それが私がしたことです。
+
+OK。
+
+しかし、私たちはそれについて話します。
+
+したがって、ここでは共有VPCを提供する必要があります。
+
+OK。
+
+そのため、この特定のユーザーとフォルダの管理者もこのユーザーに必要であり、その後でログインする必要があると私は主張します
+
+そのユーザーと私はプロジェクト全体を見ることができます。
+
+OKここに行って共有を設定できます
+
+したがって、UPCの共有を有効にしているだけです。
+
+今、すべてのサブサブネットを個別のサブネットとして共有するかどうかを尋ねられます。
+
+実際に私が入ることができるのは、私たちが私たちを意味するからです。
+
+セントラル。
+
+サービスサービスプロジェクトのこれら2つの部分のみ。
+
+そのため、共有PPCをホストするホストプロジェクトがどこにあるかを理解しました。
+
+特定のネットワークにアクセスまたは利用できるサービスプロジェクト。
+
+だから私はこの特定のデフォルトのU.S. CentralとU.S. Westを共有しています。
+
+奉仕プロジェクトと奉仕プロジェクトのように見える場所で
+
+これらのネットワークアクセスと、実際にコンピューティングインスタンスを実行できることの2つのプロジェクトは、ネットワーク管理者を追加します。
+
+または神経が必要です。
+
+協同組合へのアクセスが必要な場合に許可するすべての許可
+
+入ってクーポンを有効にします。実際にホストプロジェクトが有効になっていることを引用クーポンと言います
+
+アクセスがどれだけ開いているかを示しました。
+
+とりあえず、今のところ無効にします。
+
+私はそれをいくつかのネットワーキングで示します
+
+その場合、私はできるからです。
+
+私は私に行く必要があり、ここに別のルールを追加する必要があり、キューバはユナイテッドの勝利であると言う必要があります
+
+それから私だけがその側を行うことができます。
+
+しかし、とにかく私は今それをしていません。
+
+共有VPCがあります。
+
+OK。
+
+他のどのプロジェクトに参加して使用できるか。
+
+ここに行かせてください。サービスプロジェクトとネットワークに行くことができます
+
+UPC
+
+そのため、準備に時間がかかります。
+
+ビデオを渡します
+
+プロジェクトのホストリソースは楽しくありませんでしたリソースは楽しくありませんでした。
+
+さて、先に進んで、あなたができることを見ることができる1つのプロジェクトだけでそれを共有させてください
+
+私もプロジェクトに問題があると思うが、あなたが持っているこのプロジェクトの代わりにそれを取る
+
+すでにそれを添付しているので、あなたはほとんど水平になりません
+
+こことこのプロジェクトのセットとアカウントに行くことができます
+
+そしてBPCに行きます
+
+私のプロジェクトへのネットワークショー
+
+これが実際に見ることができる場所です。
+
+さて、すでに共有しているプロジェクトは
+
+2 3 4 4 1 3
+
+Project 2 3 4 4 1 3でした。
+
+そして、あなたはここで完全なネットワークを見ることができます。
+
+さて、それを管理することができます。
+
+私はデタッチを見ることができます
+
+そして彼らは添付することができ、彼らが触れている間、私は今見ることができます
+
+個々のサブネットと私はこれらの2つと2つを選択できるので、これらの2つのサブネットのみが
+
+共有
+
+それでは、そこに行き、少し冷ややかなマシンを作りましょう。
+
+コンピューターエンジン
+
+共有ネットワークを選択できるはずです
+
+ネットワークは、このプロジェクトの他の発言と同じように、またはそれらのプロジェクトから私とネットワーク共有を言うことができます。
+
+今、あなたが年に行く場合、デフォルトのネットワークが共有され、ここに複数のオプションがあります。
+
+だから戻って言ったら
+
+10ドット142ドットセットまたはドット0スラッシュ20。これは、1と2の1つと
+
+そのため、他の場所であるサブネットワークを選択することができ、作成することができました。
+
+簡単に言えば、Gスイートアカウントを作成してから、
+
+この特定のユーザーへのアクセス許可このユーザーは共有UPCを作成し、共有を管理しますP.S.あなたはできる
+
+この特定のユーザーがUPCの共有のネットワーク管理者になったと考え、共有しました
+
+VPCと他のプロジェクト。
+
+私は2つのプロジェクトでそれを共有しようとしましたが、プロジェクト2 Iで私たちにいくつかのユーロを与えていたと思いました
+
+プロジェクト2にはいくつか問題があると思いますが、はい、その特定のネットワークを共有できました
+
+他のサービスプロジェクトです。戻って見ると、インスタンスとそのインスタンスが作成されています
+
+UPCの共有共有を使用してサービスプロジェクトで作成されます。
+
+それは私たちを共有するすべての人です。
+
+共有VPCに関するご質問がある場合はお知らせください。
+
+管理コンソールを提供するなど、あなたがする必要がある項目のリストを提示します
+
+ユーザーがB Cで共有を作成し、管理するためのアクセス許可またはアクセス許可を与える
+
+これらはUI自体でUPCを共有します。
+
+この質問について質問がある場合はお知らせください。それ以外の場合は、次の講義に進むことができます。
+
+ありがとうございました。

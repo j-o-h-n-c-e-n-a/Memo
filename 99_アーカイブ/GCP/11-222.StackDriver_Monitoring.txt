@@ -1,0 +1,1131 @@
+Straggler monitoring.
+
+You can monitor cloud resources using straggler our monitoring.
+
+So what it does.
+
+You can do uptime monitoring using central monitoring you can set alerts so that you will get notified
+
+if something is of something that's failed in stride.
+
+Whether you can define you can get actually the existing mattresses but you can.
+
+On top of what you can do find your own mattresses you can configure a health check for the instances
+
+or the cloud resources.
+
+Some of the features it is full stack monitoring that is available you can monitor each and every resource
+
+out of Google Cloud Platform for the cloud platform like a WAC are DCP or you can actually configure
+
+it for hybrid deployments as well.
+
+You can identify trends and prevent issues where really you can reduce the monitoring where it alerts
+
+you can improve signal to noise ratio.
+
+You can fix the problem faster.
+
+Some of the features you can how smart before switch are reconfigured and if you Lance the cloud resources
+
+you will start getting monitoring you can just click enable a structured account and you can start monitoring
+
+those resources without any configuration at such what you can.
+
+How your dynamic configuration as well for you need.
+
+You can monitor almost all the components of DCP.
+
+You can have matrices which is just the data and you can generate the Inside Out of those data.
+
+You can do uptime and health check.
+
+You can do.
+
+You can customize your own map process and get the alerts out of it and it has got integration with
+
+straightforward logging as well so you can switch back and forth or you can drill down and look at the
+
+logs if at all some failures are happening.
+
+Some of the basic terminologies that are my trick type based on CCP relations the way you want to choose
+
+them addresses you can have time series and label mattresses and you can have labels as well for those
+
+mattresses.
+
+You can use cloud monitoring as well based on the JCP resource labels and if you remember where you
+
+can actually attach label to virtual machine you can attach labels to GK or cloud functions right and
+
+this is where you can pull the mattresses based on the labels as well monitor the resources the resources
+
+which you have put forward monitoring on top of it.
+
+That's the monitoring resource you can do a different kind of aggregation for those mattresses so you
+
+can say average CPC utilization and you can define Allard or some of instances and then you can define
+
+similar to so typically metric data hold up to six weeks and get deleted afterwards when all the points
+
+in time say it is have expired straggler monitoring delete the time series data so you can think of.
+
+If you have a mattress is the data which is created and if all the points if if at all we see say time
+
+city data right and time city data is a sequential data based on your time whether it is our whether
+
+it is data right.
+
+If a last name update is expired then monitoring will delete the data deleted time series do not appear
+
+in stagnant water monitoring chart are strict about monitoring API so it will not be available once
+
+it is deleted.
+
+Cloud Platform collects stipulation my prices for computing in instances every minute and you can access
+
+the data in three to four minutes after it is being recorded.
+
+So that is you can think of lead time which it will take.
+
+There are additional delays before you can access the first data point in the times it is based on the
+
+network latency or where it is configured.
+
+When you use straggler monitoring API write a new data point to an existing time series you can access
+
+the data in few seconds and those those are actually some of the thoughts which you can think of referred
+
+all you are waiting for the data to come.
+
+When you write the first data point to a new time series you might have to wait a couple of minutes
+
+before you can access.
+
+So if you are creating a completely new time series data then probably you need to wait for a couple
+
+of minutes.
+
+But if it does existing times it is that you are just injecting two data points.
+
+Then I think it should be available in some seconds.
+
+Typically you can actually do finding analogue anomalies.
+
+You can investigate transient performance of anomalies.
+
+You can reconfigure unbalanced clustering at all that is what the issue is.
+
+You can replace contained instances.
+
+You can upsize busy instances if at all.
+
+You know how vertical scaling is required for a cloud.
+
+School instances you can pre even prevent the resource exhaustion and in case of there are no resource
+
+are getting exhausted continuously.
+
+You can have many more resources on top of it and then you can best you know make best use of straggler
+
+monitoring.
+
+Before we getting into too much of details right now let's go in and get into console
+
+okay.
+
+Here we are in the console.
+
+Let me go to the frag driver and walk you through different services that are available.
+
+I instruct ever you how monitoring debug players logging error reporting and profiler and profiler is
+
+fresh new service that are available right now in 2018.
+
+Let's go ahead and get started with the monitoring
+
+so if you look at when you click on monitoring you will get routed to the different link altogether.
+
+And that's where you need to have the workspace created for your DCP project.
+
+This is my DCP project.
+
+If I go back and say toggle my project to say the new project which is very fresh and if I click on
+
+stagger I would monitoring
+
+so the workspace is not created.
+
+You can either create the new workspace for the new project or you can add it to an existing workspace.
+
+OK so I have this particular project DCP project as my existing project.
+
+I can just go ahead and continue
+
+and add my all new resources into the existing strike driver account.
+
+OK.
+
+And that's how it works.
+
+Let me switch back again to DCP project and going here.
+
+So if you look at there are multiple aspects that are available for you.
+
+The first one is the is where you can do uptime monitoring.
+
+You can set the alerts for the policies you can create different dashboards for you to monitor it.
+
+You can how uptime check.
+
+So I created this poor opinion and it is currently down and that is what it says.
+
+But we can go ahead and delete this OK.
+
+That is the only country going in delivering instance but I can go in and configure our different policies
+
+are together currently the instance is down
+
+App Engine your monitoring app Indian resources groups if at all I have created the groups and then
+
+incident if there are any incidents which are reported and yesterday I think there were there is one
+
+incident which is creator and evens right.
+
+You can actually see the events where if it is all it is created.
+
+What you can do is you can you can switch between one hour last one hour to six hours one day when we
+
+are six weeks like that later you can define the custom time and you can get the details out of it in
+
+resources section that's where you see matrix explorer.
+
+Let me go here
+
+and what you can do is you can have GC VM instances.
+
+So that is my resource.
+
+And know what you can do you want to say do CPR utilization
+
+compute engine and let me put one month and you can actually find there are multiple instances which
+
+I have it last several days now so you can find that are 20 person crossed sometime right.
+
+All these machine instances and you can who are on these points and you can get the details of what
+
+has happened on that particular day or that particular incident.
+
+OK.
+
+And I can apply a filter based on the project 30 instance 80 hour zone so I can see instance 80 I can't.
+
+So these these were actually so many
+
+so many instances that I had it you can find the instance utilization here let me put day like this
+
+particular instance 80
+
+you can do group by based on the instance name Project tidy and like that.
+
+Let me take out all that and I can say good bye based on instance name and you can find that
+
+for one month you can find this group by let me just go ahead and do group by based on the project data
+
+so you will have for my project what was the utilization on in outrage then you can do aggregation What
+
+is that you want to do mean count some Max if I say Max you will see Max utilization at that particular
+
+point in time I can give you.
+
+Let me go out and just choose the counties will not give us because that will just add up all the super
+
+utilization I would say I mean
+
+so you can how this particular metric you can add additional metric to your same dashboard so I can
+
+say again
+
+we m instance I can say C.P. you know memory
+
+our memory relation is not available with this one.
+
+Let me see disk I will discrete operations
+
+okay as well as I can say
+
+I can do all of that the same.
+
+So you can find this additional graph also added
+
+you can do different colors for the charts right.
+
+So stats more you can enable different ratios which you can put it and then you can say
+
+500 so you can put this ratio or
+
+and you can save the chart.
+
+So the dashboard where you want to put the dashboard I can say in New dashboard I can give William instance
+
+monitoring
+
+and if you go here
+
+dashboards you can see a
+
+oh that this looks like.
+
+That was not created.
+
+Let me go back again
+
+sources metric separate.
+
+Explorer we options
+
+so I have this particular dashboard created yesterday.
+
+But let me go in and create the new one quickly we are the same team I am going to choose it.
+
+C.P. you utilization and I'm going to do it for one month
+
+I want to group by based on project 30
+
+AD again I want to do rare instances and this time I'm going to read operations because that is impacting
+
+for Parliament's and again the same group by
+
+because I already have a group by on the project.
+
+Again it is the same one and you can go and options you can do that play shows compared with past.
+
+Right.
+
+So I can put forward the threshold which is like 500 and then you can choose different mode colors
+
+okay.
+
+And I see a chart I can see.
+
+Okay.
+
+Yeah it is.
+
+I think it was their reminiscence monitoring age I should Howard it take some time I guess
+
+I have it.
+
+So you can find this dashboards that are available for you
+
+okay.
+
+So that was dashboard so we can create dashboard sort of your own configuration or you can just use
+
+metric explorer and create it.
+
+The next thing is you can actually do monitoring based on the instances directly if I click here.
+
+If I click here as an example say app engine I can pull the metrics related to app engine directly
+
+right.
+
+So if there are any problems with the app engine it will give you some logs out of it.
+
+You can click here and radically switch to struggling with logging and that is where we shared you know
+
+there is a integration and you don't have to worry about integrating it again monitoring where it says
+
+that
+
+you can actually go ahead and put forward alerts for all you are.
+
+You can defend the policy and define alerts and I can go so ahead if you look at this one it says this
+
+was today's it says super utilization went really bad and it will fire an alert.
+
+We can go in and configure one of Ballard and see
+
+I can say uptime monitoring I have to.
+
+So let me go ahead and enable my JCP service because currently it is disabled
+
+the app engine is enabled right now.
+
+So we should be able to monitor app engine and point to get the endpoint.
+
+We saw this already.
+
+I can click on here so I just copied it.
+
+And then I can go and create uptime check.
+
+So here I don't have to queue this one and nor do one.
+
+This one I did just this end point tested
+
+so it says two hundred.
+
+Okay so this is good.
+
+ENGINE uptime
+
+I'm going to save it.
+
+It says create a learning policy.
+
+I can go in and click Create alerts if red alert goes down.
+
+So
+
+app engine uptime check conditions trigger a percentage series world the number of times series are
+
+our time series y alerts.
+
+So what is that dial to the first one at least 1 5.
+
+Gates failed get me alert.
+
+Okay
+
+I'll just say it.
+
+So that is the condition which we have configured.
+
+And then it will say which.
+
+What do you want right.
+
+I want e-mail and I should get the e-mail
+
+for those I had no duplication.
+
+So this is my email.
+
+I can say hi please look into
+
+engine service.
+
+This is the message which that person will get their name on this particular policy.
+
+I say Gee app engine instance
+
+check
+
+so I have created the uptime check policy.
+
+Let me go ahead and
+
+disable application
+
+so obligation is disabled.
+
+Okay.
+
+So after some time I should get the email
+
+after some time I should get an email from strike I would.
+
+Okay let's wait for the email
+
+so you can actually see here.
+
+The instance has been created.
+
+The machine is off means the service is off from last some time like around 10 minutes.
+
+You can find this instance
+
+right.
+
+So you go ahead and to acknowledge so that he understood.
+
+So others will get to know that.
+
+Yeah.
+
+You acknowledge someone is working on it.
+
+So I cannot list by whom.
+
+Right.
+
+You can actually create the event by yourself that the work is going on.
+
+Maintenance window.
+
+Right
+
+and let's actually go in and explore more about alerting uptime check and dashboards in the next demo.
+
+Thank you so let's go in and finish ours.
+
+TERRY So in and monitoring or straggler what I can't actually provides control to structure our features
+
+and billing account.
+
+My straggler account can be a single JCP project or it can contain multiple DCP project and we saw that
+
+you can connect multiple JCP project to it.
+
+BRYAN DAWE s account well you can have any number of structure I what account if you want.
+
+There is no limit on it.
+
+Usually tracked over our first basic and premium service two years for each fact.
+
+What account.
+
+There is no charge for basic tier but there is some limit on the straggler what functionality that we
+
+that you can use it.
+
+But Premier is chargeable the resources that are chargeable only if they are running are in training
+
+will state.
+
+Okay so GCSE results which are chargeable each average in standard environment instance running are
+
+not ideal.
+
+Each compute engine VM instant each continuous engine nought instance in the cluster each cloud school
+
+instance in a W as you have easy to VM instances elastic load balancer is elastic cluster are these
+
+instance Eskew s QS are s in it's topic or dynamic TB table if we look at the pricing of only force
+
+tracked our monitoring I have the detailed map for all the services price basic tier free premium player
+
+tier you have eight per chargeable resource per month pro-rated hourly so if you are using strike driver
+
+monitoring premium tier for say two hour you will be pro-rated only for 2 2 hours and it will be somebody
+
+that own a fraction of seconds supported clouds disappear only for the basic tier 4 premium you can
+
+have GSP as well as a W S log allotment 50 GBP project per month in premium output TGP per project per
+
+month plus 10 GP per chargeable resource per month log retention period audit log thirty days other
+
+logs seven days in case of premium at the audit log you can store it for 30 days afterwards the logs
+
+also you can store it for 30 dates metric collect meant you do not have any metric allotment defined
+
+but in premium tier you have 500 series per chargeable resources and 250 metric type project metric
+
+data retention in basic tier you have six weeks in premium also you are six week and then after you
+
+can eat those stories in cloud storage all you can enjoy then in be quitting learning policy some limitations
+
+are there there are no limitations in Premier premium tier strike I we image and you can actually have
+
+we originally installed here in in premium tier you going to have logging agent as well as monitoring
+
+agent so strike driver data reporting debugger and press is for DCP services and in premium tier you
+
+have DCP as well as AWB as if supported that particular service.
+
+Okay.
+
+Mobile application included and I have a you know put forward one UI screen that I got it for instance.
+
+So in my application what it says is uptime it has been breached check DCP project this Okay so this
+
+particular app instance G is failing it says continuous continuously eight minutes now and this is particular
+
+you are.
+
+So this is from my mobile.
+
+The instant which was created sometime back so you will have mobile support as well.
+
+You can have monitoring filters which you can incorporate or you can create the incident reporting.
+
+So you put forward conditions and that's what we did it.
+
+You will have instant creator then you will get the notifications or you can take actions like acknowledged
+
+and you can restart the app engine or take any other actions you three using monitoring fee if it does
+
+you can retrieve time series data you can define resources in a group list group members so you can
+
+create a specific group and monitor that particular resources and you can define multiple resource in
+
+that particular group you can list a metric descriptors you can list monitored resources descriptor
+
+I think that's it for strict monitoring if you have any question on State Road monitoring let me know
+
+we can we can get in details of all those in common they section where we will go through monitoring
+
+logging all of that service together.
+
+Okay but to hear you any questions on what they will be covered on fact were monitoring.
+
+Let me know that works you can move to the next service.
+
+Thank you.
+
+ストラグラー監視。
+
+ストラグラーの監視を使用して、クラウドリソースを監視できます。
+
+それが何をするのか。
+
+集中監視を使用して稼働時間の監視を行うことができ、通知を受け取るようにアラートを設定できます
+
+何かが大股で失敗したものである場合。
+
+定義できるかどうかによって、実際に既存のマットレスを入手できますが、可能です。
+
+独自のマットレスを見つけることができることに加えて、インスタンスのヘルスチェックを設定できます
+
+またはクラウドリソース。
+
+すべてのリソースを監視できるフルスタック監視機能です。
+
+WACなどのクラウドプラットフォーム用のGoogleクラウドプラットフォームのうちDCPであるか、実際に設定することができます
+
+ハイブリッド展開でも同様です。
+
+アラートを発する場所での監視を実際に減らすことができる場合、傾向を特定して問題を防ぐことができます
+
+信号対雑音比を改善できます。
+
+問題をより迅速に修正できます。
+
+スイッチの前にどのようにスマートにできるいくつかの機能が再構成され、クラウドリソースをランスする場合
+
+監視を開始します。構造化アカウントを有効にするをクリックするだけで、監視を開始できます。
+
+これらのリソースは、構成可能なものではありません。
+
+動的構成も必要です。
+
+DCPのほぼすべてのコンポーネントを監視できます。
+
+単なるデータである行列を作成し、それらのデータのインサイドアウトを生成できます。
+
+稼働時間とヘルスチェックを行うことができます。
+
+できるよ。
+
+独自のマッププロセスをカスタマイズしてアラートを取得することができます。
+
+簡単なロギングもできるので、前後に切り替えたり、ドリルダウンして
+
+何らかの障害が発生した場合にログに記録します。
+
+CCPの関係に基づいた私のトリックタイプである基本的な用語のいくつかは、あなたが選択したい方法です
+
+それらはあなたが時系列とラベルマットレスを持つことができ、それらのために同様にラベルを持つことができるアドレス
+
+マットレス。
+
+JCPリソースラベルに基づいてクラウドモニタリングを使用することもできます。
+
+実際にラベルを仮想マシンに添付できます。GKまたはクラウド機能にラベルを正しく添付できます。
+
+これは、ラベルに基づいてマットレスを引き出し、リソースを監視できる場所です
+
+その上で監視を進めました。
+
+これは、これらのマットレスに対して異なる種類の集約を行うことができる監視リソースです。
+
+平均CPC使用率と言うことができ、Allardまたはいくつかのインスタンスを定義してから、定義することができます
+
+通常、メトリックデータは最大6週間保持され、その後すべてのポイントが削除されると削除されます
+
+ストラグラーモニタリングが期限切れになったと言うと、時系列データを削除して考えることができます。
+
+あなたがマットレスを持っている場合、作成されたデータであり、すべてのポイントがあれば
+
+都市データの権利と時間都市データは、あなたの時間に基づいたシーケンシャルデータです。
+
+データが正しい。
+
+姓の更新の有効期限が切れている場合、監視は削除されたデータを削除し、時系列は表示されません
+
+停滞水監視チャートではAPIの監視が厳密であるため、一度は利用できません
+
+削除されます。
+
+Cloud Platformは、インスタンスのコンピューティングの価格を1分ごとに収集し、アクセスできます
+
+記録されてから3〜4分後にデータが記録されます。
+
+だから、それはあなたがそれがかかるリードタイムを考えることができるということです。
+
+に基づいた時間で最初のデータポイントにアクセスするには、さらに遅延があります
+
+ネットワーク遅延または構成されている場所。
+
+ストラグラー監視APIを使用する場合、アクセス可能な既存の時系列に新しいデータポイントを書き込みます
+
+数秒でデータを取得し、それらは実際にあなたが参照できると思うことができる考えの一部です
+
+データが来るのを待っています。
+
+最初のデータポイントを新しい時系列に書き込むとき、数分待たなければならない場合があります
+
+アクセスする前に。
+
+したがって、まったく新しい時系列データを作成している場合は、おそらく2、3を待つ必要があります
+
+分の。
+
+しかし、既存の時間を実行する場合、2つのデータポイントを注入しているだけです。
+
+その後、数秒で利用可能になるはずです。
+
+通常、アナログ異常を実際に見つけることができます。
+
+異常の一時的なパフォーマンスを調査できます。
+
+不均衡なクラスタリングを再構成できます。それが問題です。
+
+含まれているインスタンスを置き換えることができます。
+
+ビジーなインスタンスをアップサイズできます。
+
+クラウドに垂直スケーリングがどのように必要かを知っています。
+
+学校のインスタンスでは、リソースの枯渇を事前に防ぐこともできます。リソースがない場合
+
+継続的に消耗している。
+
+その上にさらに多くのリソースを持つことができ、ストラグラーを最大限に活用することであなたが知ることができます
+
+モニタリング。
+
+詳細を説明する前に、コンソールに入りましょう
+
+はい。
+
+ここにコンソールがあります。
+
+fragドライバーに移動して、利用可能なさまざまなサービスについて説明します。
+
+エラー報告とプロファイラーとプロファイラーを記録するデバッグプレーヤーの監視方法を教えてください
+
+2018年に現在利用可能な新鮮な新しいサービス。
+
+さあ、監視を始めましょう
+
+そのため、監視をクリックすると、すべて別のリンクにルーティングされます。
+
+そして、DCPプロジェクト用にワークスペースを作成する必要があります。
+
+これは私のDCPプロジェクトです。
+
+戻ってプロジェクトを切り替えて、非常に新鮮な新しいプロジェクトを言うと、クリックすると
+
+監視するよろめき
+
+そのため、ワークスペースは作成されません。
+
+新しいプロジェクト用の新しいワークスペースを作成するか、既存のワークスペースに追加できます。
+
+わかりましたので、この特定のプロジェクトDCPプロジェクトを既存のプロジェクトとして持っています。
+
+先に進んで続けることができます
+
+すべての新しいリソースを既存のストライクドライバーアカウントに追加します。
+
+OK。
+
+そして、それがどのように機能するかです。
+
+DCPプロジェクトに戻り、ここに戻りましょう。
+
+それで、あなたが見ることができるならば、あなたのために利用できる複数の側面があります。
+
+1つ目は、稼働時間の監視を行える場所です。
+
+ポリシーのアラートを設定して、さまざまなダッシュボードを作成して監視することができます。
+
+稼働時間の確認方法ができます。
+
+だから私はこの貧しい意見を作成し、それは現在ダウンしており、それはそれが言うことです。
+
+しかし、先に進んで、このOKを削除できます。
+
+これはインスタンスを配信する唯一の国ですが、さまざまなポリシーを設定できます
+
+現在、インスタンスはダウンしています
+
+App Engineは、モニタリングアプリインドリソースグループを作成します。
+
+報告されたインシデントがある場合、そして昨日、インシデントがあったと思います
+
+作成者であり偶然である事件。
+
+実際にイベントを見ることができ、すべてのイベントが作成されます。
+
+あなたができることは、私たちが1時間前の1時間を6時間に切り替えることができるということです
+
+6週間後、カスタム時間を定義して、詳細を取得することができます。
+
+マトリックスエクスプローラーが表示されるリソースセクション。
+
+ここに行かせて
+
+そして、できることは、GC VMインスタンスを持つことができるということです。
+
+それが私のリソースです。
+
+そして、あなたが何ができるかを知って、あなたはCPR利用をしたいと言いたいです
+
+コンピューティングエンジンを使用して、1か月置くと、実際に複数のインスタンスがあることがわかります
+
+私はそれを数日最後に持っているので、いつか20人が交差していることがわかります。
+
+これらすべてのマシンインスタンスと、これらのポイントにいるユーザーと、何の詳細を取得できます。
+
+その特定の日またはその特定の事件に起こった。
+
+OK。
+
+また、プロジェクト30インスタンス80時間ゾーンに基づいてフィルターを適用できるため、インスタンス80を表示できません。
+
+これらは実際には非常に多かった
+
+非常に多くのインスタンスがあったので、ここでインスタンスの使用率を確認できます。
+
+特定のインスタンス80
+
+インスタンス名Project tidyなどに基づいてグループ化できます。
+
+それをすべて取り出してみましょう。インスタンス名に基づいて別れを告げることができます。
+
+1か月間、このグループを見つけることができます。先に進み、プロジェクトデータに基づいてグループ化を行います。
+
+あなたは私のプロジェクトのために怒りで利用されていたものを持っているでしょう、そしてあなたは集約を行うことができます
+
+Maxがその特定の最大使用率を見ると言うなら、いくつかのMaxを数えたいということです
+
+私はあなたにあげることができます。
+
+外に出て、郡を選択するだけで、私たちに与えられません
+
+使用率
+
+この特定のメトリックを使用して、同じダッシュボードにメトリックを追加して、
+
+もう一回言って
+
+私たちはインスタンスですC.P.あなたは記憶を知っています
+
+私たちの記憶関係はこれでは利用できません。
+
+ディスクを表示させて、個別の操作を行います
+
+大丈夫と言うことができます
+
+私はすべて同じことをすることができます。
+
+この追加のグラフも追加されています
+
+チャートに異なる色を使用できます。
+
+したがって、統計を使用すると、さまざまな比率を有効にできます。
+
+500なので、この比率を入れることができます
+
+チャートを保存できます。
+
+ダッシュボードを配置するダッシュボード新しいダッシュボードで言うことができますWilliamインスタンスを与えることができます
+
+モニタリング
+
+そしてここに行くと
+
+あなたが見ることができるダッシュボード
+
+これは次のように見えます。
+
+それは作成されませんでした。
+
+もう一度行かせて
+
+ソースメトリックは個別。
+
+エクスプローラーのオプション
+
+昨日作成したこの特定のダッシュボードがあります。
+
+しかし、すぐに新しいものを作成します。私たちは私が選択しようとしているのと同じチームです。
+
+C.P.あなたの使用率と私は1ヶ月間それをするつもりです
+
+プロジェクト30に基づいてグループ化したい
+
+ADまれなインスタンスをやりたいのですが、今回は操作を読み取ります。
+
+議会と再び同じグループのために
+
+私はすでにプロジェクトにグループを持っているからです。
+
+繰り返しますが、これは同じものであり、過去に比べてプレイショーを行うことができます。
+
+正しい。
+
+だから私は500のようなしきい値を提言することができ、その後、あなたは異なるモードの色を選択することができます
+
+はい。
+
+そして、私は私が見ることができるチャートを見ます。
+
+はい。
+
+そうですよ。
+
+私はそれが彼らの回想監視時代だったと思う
+
+私はそれを持ってます。
+
+そのため、利用可能なこのダッシュボードを見つけることができます
+
+はい。
+
+ダッシュボードでしたので、独自の構成のダッシュボードを作成することも、単に使用することもできます
+
+メトリックエクスプローラーを作成します。
+
+次に、ここをクリックすると、実際にインスタンスに基づいて直接監視を行うことができます。
+
+アプリエンジンと言う例としてこちらをクリックすると、アプリエンジンに関連するメトリックを直接プルできます
+
+正しい。
+
+そのため、アプリエンジンに問題がある場合は、そこからログが記録されます。
+
+ここをクリックして、ロギングと格闘することに根本的に切り替えることができます。
+
+統合があり、それを再度統合することを心配する必要はありません
+
+それ
+
+実際に先に進み、あなたがいるすべての人に警告を送ることができます。
+
+ポリシーを守ることができ、アラートを定義することができます。これを見ると、これを言うなら先に進むことができます
+
+今日は、スーパー使用率が非常に悪くなり、アラートが発生するということです。
+
+Ballardの1つを設定して、確認できます。
+
+稼働時間の監視が必要だと言えます。
+
+それでは、現在は無効になっているため、JCPサービスを有効にします
+
+App Engineは現在有効になっています。
+
+そのため、アプリエンジンを監視し、エンドポイントを取得するようにポイントできる必要があります。
+
+これはすでに見ました。
+
+ここをクリックして、コピーしました。
+
+そして、稼働時間チェックを作成できます。
+
+したがって、ここでこれをキューに入れる必要はありません。
+
+これは私がテストしたこのエンドポイントだけでした
+
+それで200と言います
+
+さて、これは良いことです。
+
+エンジン稼働時間
+
+保存します。
+
+学習ポリシーを作成するという。
+
+赤いアラートがダウンしたら、アラートを作成をクリックします。
+
+そう
+
+App Engineの稼働時間のチェック条件は、シリーズが存在する回数のパーセンテージシリーズの世界をトリガーします
+
+時系列とアラート。
+
+それで、最初のダイヤルへのダイヤルは少なくとも15です。
+
+ゲイツに失敗するとアラートが表示されます。
+
+はい
+
+言うだけです。
+
+これが設定した条件です。
+
+そして、それはどれを言うでしょう。
+
+あなたは何が正しいことを望みます。
+
+電子メールが欲しいので、電子メールを取得する必要があります
+
+それらのために私は重複していませんでした。
+
+これが私のメールです。
+
+こんにちはと言って見てください
+
+エンジンサービス。
+
+これは、その人がこの特定のポリシーで名前を取得するメッセージです。
+
+Gee App Engineインスタンスと言う
+
+小切手
+
+稼働時間チェックポリシーを作成しました。
+
+先に行かせて
+
+アプリケーションを無効にする
+
+義務が無効になります。
+
+はい。
+
+しばらくしてからメールを受け取るべきです
+
+しばらくすると、ストライキからメールを受け取るはずです。
+
+さて、メールを待ちましょう
+
+実際にここで見ることができます。
+
+インスタンスが作成されました。
+
+マシンがオフになっているということは、サービスが約10分ほど前からオフになっていることを意味します。
+
+このインスタンスを見つけることができます
+
+正しい。
+
+だからあなたは先に進み、彼が理解するように認める。
+
+だから他の人はそれを知るようになるでしょう。
+
+うん。
+
+誰かがそれに取り組んでいることを認めます。
+
+だから私は誰によってリストすることはできません。
+
+正しい。
+
+実際に自分で作業を行うイベントを作成できます。
+
+メンテナンスウィンドウ。
+
+正しい
+
+次のデモでは、稼働時間の確認とダッシュボードのアラートについて詳しく見ていきましょう。
+
+よろしくお願いします。
+
+TERRYでは、機能を構成するために実際に制御できないものを監視またはストラグラーします
+
+および請求先アカウント。
+
+私のストラグラーアカウントは、単一のJCPプロジェクトにすることも、複数のDCPプロジェクトを含めることもできます。
+
+複数のJCPプロジェクトをそれに接続できます。
+
+BRYAN DAWEのアカウントは、必要に応じてどのようなアカウントでも構いません。
+
+制限はありません。
+
+通常、各事実について2年間の最初の基本サービスとプレミアムサービスを追跡します。
+
+どのアカウント。
+
+基本層には無料ですが、ストラグラーにはどのような機能があるのか​​制限があります
+
+あなたがそれを使用できること。
+
+ただし、Premierは有料です。実行中の場合にのみ有料のリソースはトレーニング中です。
+
+状態になります。
+
+わかりましたので、実行中の標準環境インスタンスの各平均で請求可能なGCSE結果は
+
+理想的ではありません。
+
+各コンピューティングエンジンVMは、各クラウドスクールのクラスター内の各連続エンジンノーインスタンスをインスタント化します
+
+VMインスタンスに簡単にアクセスできるWのインスタンスElastic Load BalancerはElastic Clusterです
+
+インスタンスEskewのQSは、トピックまたは動的TBテーブルにあります。
+
+モニタリングを追跡しました。すべてのサービス価格の基本ティア無料プレミアムプレーヤーの詳細なマップがあります。
+
+階層1時間ごとに比例配分された月ごとに課金可能なリソースごとに8つあるため、ストライクドライバーを使用している場合
+
+プレミアムティアを2時間監視すると、2 2時間だけhours分され、誰かになります
+
+ほんの数秒のサポートされたクラウドを所有しているのは、基本的なTier 4プレミアムの場合のみです。
+
+プロジェクトごとにプレミアム出力TGPで月ごとにGSPおよびW Sログ割り当て50ポンドプロジェクトがあります。
+
+月+ 1か月あたりの有料リソースあたり10 GPログ保持期間監査ログ30日間その他
+
+監査ログでプレミアムの場合は7日間ログに記録し、その後30日間ログを保存できます
+
+また、メトリック収集を30日間保存することもできます。つまり、メトリック割り当ては定義されていません。
+
+ただし、プレミアムレベルでは、有料リソースごとに500シリーズと250メトリックタイプのプロジェクトメトリックがあります
+
+基本階層でのデータ保持期間が6週間あり、さらに6週間後です。
+
+クラウドストレージでこれらのストーリーを食べることができ、学習ポリシーを終了する際に楽しむことができるすべての制限があります
+
+私がイメージしているプレミアプレミアムティアストライキに制限はありませんか？
+
+最初にここにインストールしたのはプレミアムティアで、ログエージェントとモニタリングを使用します
+
+エージェントは、ドライバーデータレポートデバッガーを押して、DCPサービスとプレミアム層のプレスを報告します
+
+その特定のサービスをサポートしているかのように、DCPとAWBがあります。
+
+はい。
+
+モバイルアプリケーションが含まれており、たとえば、私がそれを手に入れた1つのUI画面を提示しました。
+
+私のアプリケーションでは、アップタイムとはDCPプロジェクトをチェックすることです
+
+特定のアプリインスタンスGが失敗しています
+
+あなたは。
+
+これは私の携帯からです。
+
+いつか前に作成されたインスタントなので、モバイルサポートも利用できます。
+
+組み込むことができる監視フィルターを使用するか、インシデントレポートを作成できます。
+
+それで、あなたは条件を提示し、それが私たちがやったことです。
+
+インスタントクリエイターが作成され、通知を受け取るか、承認済みなどのアクションを実行できます
+
+アプリエンジンを再起動するか、監視料金を使用して他の3つのアクションを実行できます
+
+時系列データを取得できます。グループリストのグループメンバーでリソースを定義できるため、
+
+特定のグループを作成し、その特定のリソースを監視すると、複数のリソースを定義できます
+
+特定のグループは、メトリック記述子をリストできます。監視対象リソース記述子をリストできます。
+
+州道の監視について質問がある場合は、厳密な監視のためだと思います
+
+共通のセクションで詳細を確認できます
+
+すべてのサービスを一緒に記録します。
+
+わかりましたが、実際に何がカバーされるかについての質問を聞くのは監視でした。
+
+次のサービスに移行できることをお知らせください。
+
+ありがとうございました。

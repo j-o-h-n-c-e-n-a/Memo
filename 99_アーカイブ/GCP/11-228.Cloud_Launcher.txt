@@ -1,0 +1,408 @@
+Cloud launcher in this particular lecture.
+
+We will go in and browse some of the properties of cloud launcher cloud launcher is a part of infrastructure
+
+automation and it is not a part of actual core services but using cloud until you can launch a different
+
+core core services that are available our.
+
+We will cloud platform but it is more importantly a marketplace.
+
+So let's go out and understand using cloud launcher you can explore launch and manage production.
+
+Great solution in just a few clicks right.
+
+How you want to do that will just go out and do it.
+
+You can deploy a production great solutions in a few clicks you can have a single bill for all your
+
+DCP and third party services.
+
+It manages solutions using Deployment Manager notifications when a security update is available that
+
+it access to your partner support.
+
+Yeah and all of this actually you can consolidate that into one particular lecture and it is not too
+
+much.
+
+We just go out and launch these services in console.
+
+The syllabus that we have it is deploying solution using cloud launcher brass cloud launcher catalogue
+
+and weaving solution details deploying a cloud launcher marketplace solution.
+
+Let's go to the console and try to explore
+
+some of the options that we have it
+
+so this is cloud launcher for Google Cloud Platform and you can find there are different combination
+
+of services that are available for us to use it.
+
+You can browse different services like you can see a LAMP stack if you want to launch it you will get
+
+a considerable amount of information here.
+
+If you want to launch a school server I'll just pick one of that skills or on Suzy Lanark so this one
+
+so what it uses it gives you estimated monthly cost is like two hundred and twenty three dollars and
+
+31 cents per month.
+
+This is the provider for this.
+
+What's your machine.
+
+It runs on Google compute engine type.
+
+It's a virtual machine.
+
+It is again a single virtual machine.
+
+It's not a multiple machines.
+
+Last Updated date category developers tag their little tools was an operating system and you will get
+
+all the details about this particular instance what.
+
+It contains the pricing information.
+
+OK.
+
+Documentation support and more importantly what it contains is.
+
+It contains all the software.
+
+Majority of the software licenses which are there so usually they will market here and you can see image
+
+usage fees okay.
+
+So all of that information is there so 80 dollars for Suzy Linux Enterprise then secure server Linux
+
+online SQL Server on Linux.
+
+Forty dollars per month.
+
+And then this is actually your Google compute resources information and this contains 138 dollar is
+
+your monthly bill for false appeal 15 GP machine but system disk is five dollars and you help sustain
+
+use discount for those services which comes to forty on dollar and total of this is two hundred and
+
+twenty three dollars.
+
+So likewise if you go to any of those machines like I chose lamp say this one you can see there is no
+
+license fee or cost for lamp stack it's open source you have one and one standard and this is the dollar
+
+amount so and then sustain users content twenty four dollars per month you will have my high school
+
+documentation page manual and the support information all of that information is available and if you
+
+click on this one the instance will get launched I'll give you some of the information like like me
+
+type Oracle here.
+
+Okay
+
+so typically you do not have anything for Oracle at such as instance.
+
+But we can go ahead and see one of the option here.
+
+Okay so let me click on here.
+
+What it says.
+
+So this is as we show sky usage fees and this sees a different kind of licensing model which you have
+
+it as you say is b y oil.
+
+What.
+
+What does it mean is Bring Your Own licenses here and based on what is that you want to charge it.
+
+You can go to these guys and get the license fees and that will that that is not included here.
+
+You can go ahead and launch the instance but you need to have your own license purchased already from
+
+this company to have it right.
+
+Let me go ahead and launch LAMP stack
+
+or do I have just Apache
+
+launch competing in essence so it will give you the details of what it is configured.
+
+And that's what the the dollar amount which you have it.
+
+So I am saying install BHP might mean one CPO and you can go ahead and change this and then your cost
+
+will vary.
+
+As an example here if you look at if I change that your cost actually gets ready and then the disk or
+
+disk networking data networking are default networking sub network where you want to create it depends
+
+on which location you have it if you want to enable tracked logging and want to see you can do that
+
+and so that's the all information which you can you can give it.
+
+I tell you on a customized more you can go and do that.
+
+But that's what it is required.
+
+And I'm saying deploy so this will they should create the virtual machine
+
+and you'll see Deployment Manager kicked in.
+
+So.
+
+And we're going to talk about Deployment Manager shortly.
+
+Okay.
+
+So Lambie's getting deployed.
+
+Let me go back here.
+
+And it should be in compute Ram instance
+
+so lamp instance is getting deployed right now so we'll wait for some more moment to get it deployed.
+
+Instances getting deployed
+
+saw instances lady.
+
+Let us go ahead and check this one.
+
+Okay so our instance is really we can use it.
+
+We can go ahead and SSA to the instance
+
+and you can go to Deployment Manager
+
+and see your deployments.
+
+Okay.
+
+So this is what your deployment is.
+
+That's it for cloud launch guys.
+
+If you have any questions let me know.
+
+In a nutshell it is actually there are templates which are which you can use it to launch the instances
+
+and in some instances there there are license cost or included into the DCP charges but there are some
+
+instances where you will need to get your license first to use it in Google Cloud Platform.
+
+We are going to get into the next thing which is Deployment Manager in the next lecture.
+
+Thank you.
+
+
+この特定の講義のクラウドランチャー。
+
+クラウドランチャーのプロパティの一部を参照します。クラウドランチャーはインフラストラクチャの一部です
+
+自動化であり、実際のコアサービスの一部ではありませんが、別の
+
+利用可能なコアコアサービス。
+
+プラットフォームをクラウド化しますが、より重要なのは市場です。
+
+それでは、クラウドランチャーを使用して、ローンチとプロダクションの管理について説明します。
+
+数回クリックするだけで素晴らしいソリューション。
+
+あなたがそれをやりたい方法は、外に出てそれをするだけです。
+
+数回クリックするだけでプロダクションの優れたソリューションを展開できます。
+
+DCPおよびサードパーティサービス。
+
+セキュリティアップデートが利用可能な場合、Deployment Manager通知を使用してソリューションを管理します。
+
+パートナーサポートにアクセスします。
+
+ええ、これらすべてを実際に特定の講義に統合することができます。
+
+ずっと。
+
+外に出てこれらのサービスをコンソールで起動するだけです。
+
+私たちが持っているシラバスは、クラウドランチャー真鍮クラウドランチャーカタログを使用してソリューションを展開しています
+
+また、ウィービングソリューションの詳細は、クラウドランチャーマーケットプレイスソリューションの展開です。
+
+コンソールに行って探索してみましょう
+
+私たちが持っているいくつかのオプション
+
+これはGoogle Cloud Platformのクラウドランチャーであり、さまざまな組み合わせがあります
+
+使用できるサービスの数。
+
+起動したい場合は、LAMPスタックを見ることができるように、さまざまなサービスを参照できます。
+
+ここにかなりの量の情報があります。
+
+学校のサーバーを起動したい場合は、そのスキルの1つを選択するか、Suzy Lanarkで選択します。
+
+それを使用すると、推定月額費用は232ドルになり、
+
+1か月あたり31セント。
+
+これは、このプロバイダーです。
+
+あなたのマシンは何ですか。
+
+Googleコンピューティングエンジンタイプで実行されます。
+
+これは仮想マシンです。
+
+これも単一の仮想マシンです。
+
+複数のマシンではありません。
+
+最終更新日カテゴリの開発者は、彼らの小さなツールがオペレーティングシステムであったことをタグ付けし、
+
+この特定のインスタンスに関するすべての詳細は何ですか。
+
+価格情報が含まれています。
+
+OK。
+
+ドキュメントのサポートと、さらに重要なことは、ドキュメントのサポートです。
+
+すべてのソフトウェアが含まれています。
+
+そこにあるソフトウェアライセンスの大半は、通常ここで販売され、画像を見ることができます。
+
+使用料は大丈夫です。
+
+そのため、すべての情報がそこにあるので、Suzy Linux Enterpriseには80ドル、それからサーバーLinuxを保護します。
+
+Linux上のオンラインSQL Server。
+
+1か月あたり40ドル。
+
+そして、これは実際にあなたのGoogle計算リソース情報であり、これには138ドルが含まれています
+
+偽アピール15 GPマシンの毎月の請求書。ただし、システムディスクは5ドルであり、維持に役立ちます。
+
+ドルで40になるサービスの割引を使用します。この合計は200です。
+
+23ドル。
+
+同様に、私がランプを選んだようにそれらのマシンのいずれかに行った場合、あなたが見ることができるこの1つはないと言います
+
+ライセンス料またはランプスタックのコストはオープンソースであり、1つの標準があります。これはドルです
+
+そうすることで、ユーザーコンテンツを1か月あたり24ドル維持できます。
+
+ドキュメントページのマニュアルとサポート情報
+
+インスタンスをクリックすると、インスタンスが起動します。私のような情報をいくつか提供します。
+
+ここにOracleと入力します。
+
+はい
+
+そのため、通常、インスタンスなどでOracleに必要なものは何もありません。
+
+しかし、ここでオプションの1つを見ることができます。
+
+では、ここをクリックしてください。
+
+それが言うこと。
+
+これは、空の使用料を示したものであり、これはあなたが持っている異なる種類のライセンスモデルを見るものです
+
+あなたが言うように、それはb yオイルです。
+
+何。
+
+それはどういう意味ですか？ここにあなた自身のライセンスを持ってきて、あなたがそれを請求したいものに基づいています。
+
+これらの人に行ってライセンス料をもらうことができますが、それはここには含まれていません。
+
+先に進んでインスタンスを起動できますが、独自のライセンスを既に購入している必要があります
+
+この会社はそれを正しく持っています。
+
+先に進み、LAMPスタックを起動します
+
+または私はApacheだけを持っていますか
+
+本質的に競合するものを起動して、設定内容の詳細を提供します。
+
+そして、それはあなたが持っているドル額です。
+
+したがって、BHPのインストールは1つのCPOを意味する可能性があり、これを変更してからコストを変更できると言っています
+
+変化します。
+
+ここでの例として、コストを実際に準備してからディスクまたは
+
+ディスクネットワーキングデータネットワーキングは、作成するデフォルトのネットワークサブネットワークです
+
+追跡されたログを有効にし、それを実行できることを確認したい場合は、その場所
+
+そして、それはあなたがあなたがそれを与えることができるすべての情報です。
+
+私はあなたがそれを行ってそれを行うことができるカスタマイズされたより多くを伝えます。
+
+しかし、それが必要なことです。
+
+そして、私はこれを展開すると言っているので、仮想マシンを作成する必要があります
+
+Deployment Managerが起動されます。
+
+そう。
+
+また、Deployment Managerについてもすぐに説明します。
+
+はい。
+
+それで、Lambieが展開されています。
+
+ここに戻りましょう。
+
+そして、それはコンピューティングRamインスタンスにあるはずです
+
+ランプインスタンスは現在展開されているので、展開されるまでしばらくお待ちください。
+
+デプロイされるインスタンス
+
+インスタンスの女性を見た。
+
+これを確認してみましょう。
+
+わかりましたので、インスタンスは実際に使用できます。
+
+インスタンスにSSAを進めます
+
+Deployment Managerにアクセスできます
+
+展開を確認します。
+
+はい。
+
+これがあなたの展開です。
+
+クラウドをローンチする人は以上です。
+
+ご質問がある場合はお知らせください。
+
+簡単に言えば、実際にはインスタンスを起動するために使用できるテンプレートがあります
+
+場合によっては、ライセンス費用が含まれているか、DCP料金に含まれていますが、
+
+Google Cloud Platformで使用するために最初にライセンスを取得する必要がある場合。
+
+次の講義では、次の項目であるDeployment Managerについて説明します。
+
+ありがとうございました。

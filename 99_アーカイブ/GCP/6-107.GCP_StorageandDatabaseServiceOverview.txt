@@ -1,0 +1,139 @@
+Data and storage solutions Google Cloud data and storage says is very much required for you when Google
+
+Cloud or any other cloud platform because you want to store your data you want under storage detain
+
+the way you are doing it in on your own data center and that's where you know the data and storage services
+
+is there in Google Cloud Platform that's what data storage is one of the three core services that are
+
+available in any public cloud or platform in Google they are divided into three different categories.
+
+One is they and their service which is like you can think of it's a traditional IDB miss a requirement.
+
+Or you want to sort of file videos pictures and all that.
+
+So that is typical service that is available for you to use it.
+
+The second one is big data solutions like your Hadoop machines or clusters spar clusters are data flow
+
+or pub so boring eff that data are you can even use A.I. Artificial Intelligence.
+
+That's where you really get the machine learning speech region natural language API is out of the platform
+
+really made for you to use it.
+
+So if we how to talk about what are those data and storage services the cloud is cool.
+
+The first one is you are my your school are progressive school instances and managed instances in Google
+
+Cloud Platform right.
+
+And this is you can think of RDA business option available as open source and you can use it.
+
+The second one is the cloud span clouds penalties homegrown.
+
+So Google developed this relational database system it is a global scale scalable it is not you know
+
+it is not in my school are Postgres obscure or Oracle I instance it is its own all their own you know
+
+the database service.
+
+The next one is cloud.
+
+Big Table it is its based implementation inside Google Cloud Platform cloud data store it is again the
+
+document TB you can think of but it is available in Google cloud storage it does seem like Mongo to
+
+be kind of use gets the requirements of cloud storage it is just a file stories or object storage inside
+
+Google Cloud Platform Big Data Services ubiquity it is enterprises yet I will see inside Google Cloud
+
+Platform fully managed you do not manage any infrastructure components are the storage component it
+
+scales according to a requirement once you start pulling pushing in the data inside the big query data
+
+flow it is a but you be me implementation.
+
+You can think of we can build the EDL jobs out of data flow it's Apogee being implementation Intel Google
+
+Cloud Platform the data rock you can have a Hadoop on Spark cluster using data proc so it is managed
+
+Hadoop and SPARC cluster inside of Google Cloud Platform.
+
+Cloud Data Lambie's analytical tool you can see I wouldn't say analytical it's a regulation tool to
+
+explore the data inside B query right are the storage cloud pops up is integration framework and this
+
+is you can map it to your tip go or any other integration services in Google Cloud Platform.
+
+So this is just to all you guys let's get into more of all these services you know one by one.
+
+Google Cloudのデータとストレージのソリューションは、Googleが
+
+クラウドまたはその他のクラウドプラットフォームは、必要なデータをストレージに保存するために保持します
+
+自分のデータセンターでそれをやっている方法、それはあなたがデータとストレージサービスを知っているところです
+
+Google Cloud Platformにはデータストレージが存在する3つのコアサービスの1つです
+
+Googleの任意のパブリッククラウドまたはプラットフォームで利用可能です。これらは3つの異なるカテゴリに分類されます。
+
+1つは、彼らと彼らのサービスであり、従来のIDBが要件を見逃していると考えることができます。
+
+または、ファイルビデオの写真などを並べ替えたい場合もあります。
+
+したがって、それはあなたがそれを使用するために利用できる典型的なサービスです。
+
+2つ目は、Hadoopマシンまたはクラスターのようなビッグデータソリューションです。スパークラスターはデータフローです。
+
+またはパブはデータがあなたがA.Iを使用することができるほど退屈な効果人工知能。
+
+そこから、機械学習の音声領域の自然言語APIがプラットフォームから外れます。
+
+本当にそれを使用するために作られました。
+
+したがって、これらのデータおよびストレージサービスとは何かを話す方法があれば、クラウドはクールです。
+
+最初の1つは、あなたが私の学校であるということです。Googleの進歩的な学校のインスタンスとマネージドインスタンスです。
+
+クラウドプラットフォームの権利。
+
+そして、これはあなたがオープンソースとして利用可能なRDAビジネスオプションを考えることができて、あなたがそれを使うことができるということです。
+
+2つ目は、クラウドスパンクラウドペナルティが自家製です。
+
+Googleはこのリレーショナルデータベースシステムを開発しました
+
+私の学校ではPostgresが不明瞭またはオラクルではありません。インスタンスです。
+
+データベースサービス。
+
+次はクラウドです。
+
+Big Tableそれは、Google Cloud Platformクラウドデータストア内のそのベースの実装です。
+
+あなたが考えることができるTBを文書化しますが、Googleクラウドストレージで利用可能であり、Mongoのように見えます
+
+一種の使用は、クラウドストレージの要件を取得します。それは単なるファイルストーリーまたは内部のオブジェクトストレージです
+
+Googleクラウドプラットフォームビッグデータサービスユビキタスはまだ企業ですが、Googleクラウド内で見ることができます
+
+インフラストラクチャコンポーネントを管理しない完全に管理されたプラットフォームは、ストレージコンポーネントです
+
+ビッグクエリデータ内のデータのプッシュを開始すると、要件に従ってスケーリングします
+
+それはフローですが、あなたは私実装です。
+
+データフローからEDLジョブを構築できると考えることができます。ApogeeがIntel Googleを実装しています
+
+Cloud Platformは、データprocを使用してSparkクラスターでHadoopを使用できるため、管理されます
+
+Google Cloud Platform内のHadoopおよびSPARCクラスター。
+
+Cloud Data Lambieの分析ツールを見ることができます。分析とは言えませんが、分析ツールは
+
+Bクエリ内のデータを探索する権利は、ストレージクラウドがポップアップする統合フレームワークであり、これは
+
+チップゴーまたはGoogle Cloud Platformの他の統合サービスにマッピングできますか。
+
+これは、皆さんだけのことです。皆さんが知っているこれらすべてのサービスを、少しずつ詳しく見ていきましょう。

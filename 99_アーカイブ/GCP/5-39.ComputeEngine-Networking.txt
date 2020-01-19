@@ -1,0 +1,63 @@
+Computing and networking.
+
+So if you look at what you two connect to that particular computing gene are the words your machine
+
+which you created.
+
+You need a connection you need a network port so that you can connect to.
+
+Right.
+
+So there has to be a networking which is available for you to use it.
+
+He failed callback to the instances which I have it.
+
+Let me just start this instance are I can go here.
+
+In this particular instance and if I go down to network if you look at this particular network right.
+
+So this is the network which is by default creating your project and you can you can use it.
+
+And this will be used I would say by default to all your cloud resources to connect to.
+
+So this is the network and we are going to talk about what are those who are actual private networks
+
+are and how we get connected how you get the primary internal IP address and the external ip address
+
+what is premium tier and all of that in the networking section.
+
+But this is the network which he is used for you to connect to your virtual machine instance as well
+
+as for your virtual machine to talk to any other or communicate to any other cloud resources.
+
+コンピューティングとネットワーキング。
+
+その特定のコンピューティング遺伝子に接続するものを見てみると、あなたのマシンの言葉です
+
+作成しました。
+
+接続するには、ネットワークポートが必要な接続が必要です。
+
+正しい。
+
+したがって、それを使用するために利用可能なネットワークが必要です。
+
+彼は私が持っているインスタンスへのコールバックに失敗しました。
+
+このインスタンスを開始するだけで、ここに行くことができます。
+
+この特定のインスタンスで、もしこの特定のネットワークの権利を見るなら、私がネットワークに行くと。
+
+これがデフォルトでプロジェクトを作成するネットワークであり、使用できます。
+
+そして、これはデフォルトで、接続するすべてのクラウドリソースに使用されます。
+
+これがネットワークであり、私たちは実際のプライベートネットワークである人々について話します
+
+プライマリ内部IPアドレスと外部IPアドレスを取得する方法と接続方法
+
+プレミアムレベルとは何ですか。それはすべてネットワーキングセクションにあります。
+
+しかし、これは彼があなたがあなたの仮想マシンインスタンスに接続するために使用するネットワークです
+
+仮想マシンが他のクラウドリソースと通信したり、他のクラウドリソースと通信したりするように。

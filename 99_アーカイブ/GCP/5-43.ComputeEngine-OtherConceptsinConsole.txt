@@ -1,0 +1,227 @@
+Before I go to the next chapter let me show you some of the remaining concepts of computing.
+
+Like we completed disk snapshot sold in and I showed you what do you mean by that.
+
+But you can go in and create the group here but there is no template which you can create.
+
+I can just delete the existing one to create any one
+
+right.
+
+I'm just going to create no template.
+
+So I want this particular physical hardware in USD to run the node type.
+
+I can either choose the smallest available in that particular zone or I can see the standard one and
+
+you can create an affinity labels as well.
+
+I'm not going to create it I'm just creating it
+
+and once you create the node template you can create a node group and that's where it will look at your
+
+physical hardware for you to use it.
+
+So I mean in n you want to use it.
+
+Template you can define the template which we have created and you can create the node template and
+
+this no template will be used in what your machine instance creation type and this particular machine
+
+if you look at sort of tendency it will we use it.
+
+I'm not going to create that because Google will charge me and it is not so important for you to go
+
+in and do it but you can just map the sole tenancy here with with that with the group which you create
+
+and not group which are created.
+
+The other thing on compute engine let me go back here sold and in n discrete source snapshots we saw
+
+images we saw you
+
+so to launch cloud type you instance this is like tribute instance and if you want to understand more
+
+what do we mean by.
+
+DP You you can go in and understand Google cabinet is engine machine learning and all these are specific
+
+machines which you needed for your specific purpose not going in details but you can just launch it
+
+using here computer to use just gone this will get into details of
+
+this discounting subsequent section metadata so matter it means the instance metadata like for a particular
+
+instance like this instances in running statewide all the information which you see it you will get
+
+the instance information but when you create the instance you can even attach metadata information to
+
+it
+
+okay where do I do that like labels you can attach additional label here like name
+
+name does not make any sense usage I would say Web you can add this right.
+
+And this is you can pull this information OK.
+
+Made that information easier.
+
+You can actually say it.
+
+Uh uh meta data
+
+and you can pull all the data about that particular instance.
+
+You can create your own meta data but you can actually pull all the information about the instance.
+
+As I said if the instance is in low migration state you can actually pull that information and that's
+
+the instance meta data that is that Hilda chick you can create a health check for what is your machine
+
+and it will continuously send destructively request that to that instance and he'll check typically
+
+happens via a strategic link if at all you do not have any resting point which has a GDP then you will
+
+not be able to configure the health check the zones.
+
+This will show you the zones which are in currently accessible and green state means.
+
+These zones are available and connectivity is in fact
+
+network in point groups.
+
+So this is in beta I am not sure whether this will be applicable to you.
+
+I'm not buying details.
+
+Operation it will kind of uh you know give you the current state of your current state of your DCP resources
+
+security scan if you want to execute security scan you can actually do it
+
+and usage export right.
+
+That's it.
+
+We are going to get into details of you when Mike marketplace in cloud launcher not right now but that's
+
+the that's all on computing and we are there are different aspects which we have not gone through like
+
+starting and stopping instances connecting where's the search order your terminal we are going to look
+
+at that in detail demo next if you have any questions on this one let me know otherwise you can actually
+
+hold your some of your questions for the retail demo thank you.
+
+次の章に進む前に、コンピューティングの残りの概念のいくつかを紹介します。
+
+販売済みのディスクスナップショットを完成させ、それがどういう意味かをお見せしました。
+
+ただし、ここに移動してグループを作成できますが、作成できるテンプレートはありません。
+
+既存のものを削除して任意のものを作成できます
+
+正しい。
+
+テンプレートは作成しません。
+
+そのため、USDのこの特定の物理ハードウェアでノードタイプを実行する必要があります。
+
+その特定のゾーンで利用可能な最小のものを選択するか、標準ゾーンを表示して
+
+アフィニティラベルも作成できます。
+
+私はそれを作成するつもりはありません
+
+そして、ノードテンプレートを作成したら、ノードグループを作成できます。
+
+あなたがそれを使用するための物理的なハードウェア。
+
+だから、nでそれを使いたいということです。
+
+テンプレートは、作成したテンプレートを定義でき、ノードテンプレートを作成できます。
+
+このテンプレートは、マシンインスタンス作成タイプおよびこの特定のマシンで使用されません。
+
+傾向を見ると、それを使用します。
+
+Googleが私に請求し、あなたが行くことはそれほど重要ではないので、私はそれを作成するつもりはありません
+
+でそれを行いますが、あなたがここであなたが作成したグループとそれで唯一のテナントをマップすることができます
+
+作成されるグループではありません。
+
+コンピューティングエンジンに関するもう1つのことは、ここで販売されたものに戻りましょう。
+
+あなたに会った画像
+
+インスタンスのクラウドタイプを起動するには、これはトリビュートインスタンスのようなものです。
+
+どういう意味ですか。
+
+DP Googleのキャビネットはエンジンの機械学習であり、これらはすべて具体的なものです。
+
+特定の目的に必要なマシンは詳細に説明しませんが、起動するだけです
+
+ここでコンピュータを使用して、ただ行って、これは詳細になります
+
+これは後続のセクションメタデータを割り引くため、特定の
+
+州全体で実行されているこのインスタンスのようなインスタンス
+
+インスタンス情報ですが、インスタンスを作成するときに、メタデータ情報を添付することもできます
+
+それ
+
+さて、ラベルのようにどこでそれをしますか名前のような追加のラベルをここに添付できます
+
+nameは意味のある使用法ではありません。Webでこの権利を追加できると思います。
+
+そして、これはあなたがこの情報をプルすることができるということです。
+
+その情報を簡単にしました。
+
+あなたは実際にそれを言うことができます。
+
+ええとメタデータ
+
+その特定のインスタンスに関するすべてのデータを取得できます。
+
+独自のメタデータを作成できますが、実際にはインスタンスに関するすべての情報を引き出すことができます。
+
+インスタンスが低移行状態にある場合、私が言ったように、実際にその情報を引き出すことができ、それは
+
+ヒルダのひよこであるインスタンスメタデータは、マシンのヘルスチェックを作成できます
+
+そして、そのインスタンスに破壊的にリクエストを継続的に送信し、彼は通常チェックします
+
+戦略的リンクを介して行われます。GDPを持つ安静点がまったくない場合は、
+
+ゾーンのヘルスチェックを設定できません。
+
+これにより、現在アクセス可能な緑の状態のゾーンが表示されます。
+
+これらのゾーンは利用可能であり、実際には接続性があります
+
+ポイントグループのネットワーク。
+
+したがって、これはベータ版です。これがあなたに当てはまるかどうかはわかりません。
+
+詳細を購入していません。
+
+操作は、DCPリソースの現在の状態の現在の状態を示します。
+
+セキュリティスキャンセキュリティスキャンを実行する場合、実際に実行できます
+
+および使用法のエクスポート権。
+
+それでおしまい。
+
+クラウドランチャーのマイクマーケットプレイスが今ではないときに、詳細を確認しますが、
+
+それはすべてコンピューティングにあり、私たちは経験していないさまざまな側面があります
+
+インスタンスを開始および停止し、検索する端末の場所を接続します
+
+この詳細なデモで質問がありましたら教えてください
+
+小売デモについての質問をいくつかお寄せいただきありがとうございます。

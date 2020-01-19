@@ -1,0 +1,219 @@
+Crowds in VPC are Google Cloud Platform and hotel VM instances and other VPC network how to send the
+
+traffic from one instance to the destination either inside the network or outside the VPC or JCP each
+
+PPC network comes with system generated out to drown the traffic among its subnets and send the traffic
+
+from eligible instance to the Internet and we already saw crowds.
+
+And that's why I'm just reading the content of the slides.
+
+But if you look at we start out in here.
+
+So there are these default routes which are created for your default network.
+
+Let me go to a specific network.
+
+I go on here.
+
+And if you click on routes.
+
+So there are these routes which are created including that out to the Internet.
+
+So all of these roads are created.
+
+So what does this mean.
+
+This is like direction for William too that the traffic if at all they are accessing the VM from this
+
+particular subnet to these subnet then that is that out which is created and they can use this hour
+
+to reach out to a particular resources.
+
+So that's that out default routes and typically these are the outs which are created a default to the
+
+Gateway as well.
+
+If I go to the auto network and click on route to network creates a default cloud and if I go to WI
+
+bases and droughts you see these roads that also created and these routes which are like created for
+
+the subnet you cannot irritate or you cannot delete it but you can go in and add additional hours if
+
+at all you want to have it so you can do name
+
+and for this particular network destination.
+
+And this is where you can apply different rules here.
+
+Right.
+
+Either you can create tags and you can at times the tax instance tag
+
+but you can go to say for all
+
+zero dot to slash 16.
+
+I'll these kind of IP addresses I want to send the traffic.
+
+Right.
+
+And what is the next top.
+
+Next up means weird I want to send the traffic whether it is instance specific instance specific IP
+
+address VPN tunnel we are not seeing VPN to URL here but this is where you can connect to your data
+
+center with Google Cloud Platform that's whether you use VPN and we've been tunnel in Nashville you
+
+can specify forwarding rule for internal DPR European load balancer okay.
+
+So if at all you are using say IP address load balancer and you want to use that you can specify a specific
+
+IP address so as an example if I have my load balance that IP addresses this then it can be a next up
+
+so for all your routing needs for this particular IP addresses if you go to this party in next cloud
+
+okay you can add you can create a instance tag here like my without to L.B. load balancers right.
+
+And whenever you tag the instance with the this particular instance tag then it will without using this
+
+particular tag the traffic will get out.
+
+So that's that out guys.
+
+To talk more on that our social network domestically created out to the Internet an IP range in the
+
+network the subnet outlet the instance in the traffic to a dirty instance or other resource in the same
+
+VPC default it out later the instance in the traffic outside of PPC which is like Internet gateway name
+
+automatically generated a place for traffic existing VM forward the traffic to most specific routing
+
+there are multiple routes matching traffic is delivered only if it is matched well like using the file
+
+firewall rule created when the subnet is created where we are going to talk about firewall ruling next
+
+lecture created when subnet is created applies to tagged we place protect VM as well enable VM on the
+
+same subnet to communicate I if you look at the routing table this is what it will get applied a whenever
+
+you create an subnet work that out gets created.
+
+So in this particular network you have to sub network and then that out is created to the Internet as
+
+well.
+
+So three hours in each routing table that's it guys as it out if you have any questions let me know
+
+otherwise you can move to the next lecture that is firewall rules.
+
+VPCの群衆は、Google Cloud PlatformとホテルのVMインスタンス、および他のVPCネットワークであり、
+
+1つのインスタンスから、ネットワーク内またはVPCまたはJCPの外部の宛先へのトラフィック
+
+PPCネットワークには、サブネット間でトラフィックをdrれさせてトラフィックを送信するために生成されたシステムが付属しています
+
+対象となるインスタンスからインターネットまで、すでに群衆が見られました。
+
+そして、それが私がただスライドの内容を読んでいる理由です。
+
+しかし、見てみると、ここから始めます。
+
+そのため、デフォルトネットワーク用に作成されたこれらのデフォルトルートがあります。
+
+特定のネットワークに行きましょう。
+
+ここに行きます。
+
+そして、ルートをクリックすると。
+
+そのため、作成されたこれらのルートには、インターネットへのルートも含まれます。
+
+したがって、これらの道路はすべて作成されます。
+
+これはどういう意味ですか。
+
+これは、ウィリアムからの指示に似ています
+
+これらのサブネットへの特定のサブネットは、作成されたものであり、彼らはこの時間を使用することができます
+
+特定のリソースに手を差し伸べる。
+
+これがデフォルトのルートであり、通常これらはデフォルトで作成されるアウトです
+
+ゲートウェイも。
+
+自動ネットワークに移動してネットワークへのルートをクリックすると、デフォルトのクラウドが作成され、WIに移動すると
+
+基地と干ばつは、これらの道路も作成し、これらのルートは
+
+刺激できないサブネット、または削除できないサブネットですが、次の場合は時間を追加できます
+
+あなたはそれを持ちたいので、あなたは名前を付けることができます
+
+この特定のネットワーク宛先に対して。
+
+ここで異なるルールを適用できます。
+
+正しい。
+
+タグを作成することも、税金インスタンスタグを作成することもできます
+
+しかし、あなたはすべてを言いに行くことができます
+
+スラッシュ16にゼロドット。
+
+トラフィックを送信するこれらの種類のIPアドレスを指定します。
+
+正しい。
+
+そして次のトップは何ですか。
+
+次に、インスタンス固有のインスタンス固有のIPであるかどうかにかかわらず、トラフィックを送信したいという奇妙なことを意味します
+
+ここではURLへのVPNは表示されていませんが、ここでデータに接続できます。
+
+VPNを使用しているかどうかに関係なく、Google Cloud Platformを中心に、ナッシュビルのトンネルを利用しています
+
+内部DPRヨーロッパロードバランサーの転送ルールを指定できます。
+
+たとえば、IPアドレスロードバランサーを使用していて、それを使用する場合は、特定の
+
+IPアドレスですので、例として、これにIPアドレスを設定するロードバランスがある場合、次のIPアドレスになります。
+
+次のクラウドでこのパーティに行くと、この特定のIPアドレスに対するすべてのルーティングニーズに対応できます。
+
+追加できます。ここで、私のようにL.Bにインスタンスタグを作成できます。ロードバランサーの権利。
+
+そして、この特定のインスタンスタグでインスタンスにタグを付けると、これを使用せずに
+
+トラフィックが取得する特定のタグ。
+
+これで終わりです。
+
+私たちのソーシャルネットワークが国内でインターネットにIP範囲を作成したことについて詳しく説明します。
+
+サブネットアウトレットトラフィックのインスタンスをダーティインスタンスまたは同じ内の他のリソースにネットワーク化する
+
+VPCは、インターネットゲートウェイ名のようなPPCの外部のトラフィックのインスタンスを後でデフォルト設定します
+
+既存のVMがトラフィックを最も特定のルーティングに転送する場所を自動的に生成します
+
+ファイルを使用するようにトラフィックが一致する場合にのみ、トラフィックに一致する複数のルートが配信されます
+
+次にファイアウォールのルールについて説明するサブネットが作成されたときに作成されたファイアウォールルール
+
+サブネットの作成時に作成された講義は、保護されたVMを配置するタグ付けされたVMに適用されます。
+
+ルーティングテーブルを見ると、通信するサブネットと同じです。これはいつでも適用されます
+
+作成されるサブネットワークを作成します。
+
+したがって、この特定のネットワークでは、サブネットワークにする必要があり、それがインターネットに作成されます
+
+上手。
+
+質問がある場合は、各ルーティングテーブルで3時間で終了します。
+
+それ以外の場合は、ファイアウォールルールである次の講義に移動できます。

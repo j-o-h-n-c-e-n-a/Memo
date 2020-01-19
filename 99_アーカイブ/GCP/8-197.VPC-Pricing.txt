@@ -1,0 +1,139 @@
+Pricing for VPC
+
+if you look at the pricing for VPC they do not charge you for the network which you create.
+
+And this is an important important aspect to understand.
+
+So there is no charge when you create a network but that is a charge when the traffic is flowing through
+
+that network.
+
+And that is what you need to understand.
+
+So you are billed for the traffic egress which is the data leaving from your cloud resources to the
+
+Internet from one region to another region between the zones within the same region.
+
+And the pricing structure is different for different kind of egress traffics.
+
+You're not built for ingress like traffic in Greece.
+
+We aim to VM in a single zone traffic to DCP services.
+
+There is limited supply traffic to DCP services.
+
+There is limit apply but you can go in and check the pricing here in the below link in 2019.
+
+January.
+
+They came with the idea that there is a standard tier and then there is a premium tier just to differentiate
+
+themselves from other cloud providers because ordinarily they only had premium tier.
+
+Okay.
+
+So what what do we mean by premium tier and what do we mean by standard tier.
+
+We already saw this in the concept initial concept but in a nutshell if you are traffic a year off your
+
+back in services are in the US east and someone from U.S. West is accessing those services and if the
+
+service series standard tier the traffic from the service from your hosting sir will leave that traffic
+
+in the US East region itself and it will use public Internet to reach to or to service to the customer
+
+in the U.S. West in case of premium to your though the traffic will be our data via google fiber optic
+
+network near to nearest possible location to your customer and then it is so premium tier will give
+
+you advantage of high speed or low latency service to your customer it depends on how the business you
+
+know our business and is located if you are say you are based out of Los Angeles your website is serving
+
+Los Angeles area are the Southern California area and your son serves our whole study in Southern California
+
+somewhere then you do not need to use premium tier and pay the charges you can just use standard here
+
+and that's it.
+
+Right so it depends on the business case how much is the cost and what is the tradeoff for your choosing
+
+your services.
+
+That's it guys.
+
+As a VPC pricing if you have any questions let me know.
+
+Otherwise you can move to the next lecture.
+
+Thank you.
+
+VPCの価格
+
+VPCの価格を見ると、作成したネットワークの料金は請求されません。
+
+そして、これは理解すべき重要な重要な側面です。
+
+したがって、ネットワークを作成するときは無料ですが、トラフィックが流れているときは無料です
+
+そのネットワーク。
+
+そして、それはあなたが理解する必要があるものです。
+
+そのため、クラウドリソースからのトラフィックの出方に対して課金されます。
+
+同じ地域内のゾーン間のある地域から別の地域へのインターネット。
+
+また、出力トラフィックの種類によって料金体系が異なります。
+
+あなたはギリシャの交通のような進入のために構築されていません。
+
+DCPサービスへの単一ゾーントラフィックでのVMを目指しています。
+
+DCPサービスへの供給トラフィックは限られています。
+
+制限が適用されますが、2019年の以下のリンクで価格を確認することができます。
+
+1月。
+
+彼らは標準的な階層があり、それから差別化するためにプレミアムな階層があるという考えを持って来ました
+
+通常、彼らはプレミアムティアしか持っていないため、他のクラウドプロバイダーから自分自身。
+
+はい。
+
+プレミアムティアとはどういう意味で、スタンダードティアとはどういう意味ですか。
+
+コンセプトの最初のコンセプトですでにこれを見ましたが、トラフィックが1年オフの場合は簡単に
+
+バックインサービスは米国東部にあり、米国西部の誰かがそれらのサービスにアクセスしており、
+
+サービスシリーズの標準層ホスティングサーからのサービスからのトラフィックは、そのトラフィックを残す
+
+米国東部地域自体では、公共のインターネットを使用して顧客に連絡するか、顧客にサービスを提供します
+
+トラフィックがグーグル光ファイバーを介して私たちのデータになりますが、あなたのプレミアムの場合、米国西部で
+
+あなたの顧客に最も近い可能な場所の近くのネットワーク、そしてそれはプレミアム層が与えるようにです
+
+お客様への高速または低遅延サービスの利点は、ビジネスの方法に依存します
+
+私たちのビジネスを知っており、あなたがあなたのウェブサイトが提供しているロサンゼルスを拠点にしていると言われている場合に位置しています
+
+ロサンゼルス地域は南カリフォルニア地域であり、あなたの息子は南カリフォルニアで私たちの研究全体を提供しています
+
+どこかでプレミアムティアを使用する必要はなく、ここで標準を使用するだけで料金を支払うことができます
+
+以上です。
+
+正しいので、ビジネスケースに応じて、費用はいくらで、選択するためのトレードオフは何ですか
+
+あなたのサービス。
+
+それはみんなです。
+
+ご質問がある場合は、VPCの価格設定としてお知らせください。
+
+それ以外の場合は、次の講義に移動できます。
+
+ありがとうございました。

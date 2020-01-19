@@ -1,0 +1,352 @@
+Happened in flexible environment.
+
+This is another kind of environment which you can use it in App Engine as a flexible environment.
+
+Other than the sandbox environment which is created for predefined programming languages so the beauty
+
+of flexible environment is it supports Dockery majors.
+
+You can run your own container your own container inside the flexible environment and that's the beauty
+
+of flexible environment you can bring your own programming language to apply your application into Google
+
+Cloud Platform.
+
+So infrastructure customization you can do infrastructure customization customization because you can
+
+choose.
+
+I've been in the computing in any of the computer engine predefined machine types or you can have your
+
+own CPO and ram.
+
+You can even SSD to the VM where your application is deployed and you can customize ICP use and memory
+
+configuration the way you want to have it.
+
+Typically if you look at App Engine manages your virtual machines as necessary right and you don't have
+
+to worry about any hell checking if at all the instance is running or it is corrupted.
+
+Ah it needs you know the security.
+
+You know security patches installation on those machines.
+
+It is located at dramatically for you based on your project settings these VM instances that is started
+
+weekly during Google's management services which are getting applied.
+
+Any security apply security patches which needs to be applied.
+
+You always have to access to the compute engine VM and this is very important in case of Standard environment
+
+you do not have access to the route access to your site.
+
+You know the environment is running some of the differences app engine works as compute engine while
+
+flexible enviroment runs services instance inside the compute engine.
+
+There are some differences and those differences are VM instances used in flexible environment restarted
+
+on a weekly basis during the restart.
+
+Google managed security patches.
+
+You always have to access to the VM instances default of default it is disabled and I'll tell you you
+
+can go in and enable that a geographical region for the VM instances using flexible environment is determined
+
+by location of your app engine location right.
+
+So and we can do that.
+
+We can just check before I dive into the differences.
+
+Let me go ahead and create App Engine
+
+so let me go back.
+
+So I have created another project and that way I can create another App Engine.
+
+I can see us w now I can yeah I can choose you a central create app and this time I want to create flexible
+
+environment maybe anything right so I can create flexible environment.
+
+Okay.
+
+I will do this later.
+
+Your app is being created and I can follow the similar instruction to apply the application.
+
+So let's go ahead and apply or try App Engine inflexible flexible environment now so the flexible environment
+
+which are available here is for python as a guided tour.
+
+We are going to do that okay on the steps I've same that are going to download and then we are going
+
+to go inside a flexible environment and then you can go ahead and see have dirty amplifiers and you
+
+can find here the detailed information about your runtime environment is flexible.
+
+And then we are asking them what to pull it manual scaling CPO and of them and disk all of that you
+
+can provided in flexible environment which is not a level in the standard environment so use the same
+
+command and deploy.
+
+If you go year
+
+I don't want to do that.
+
+I'm just going to go ahead and deep lie
+
+so it's being deployed
+
+so you can find the majority of the log is creating deducted content of what in content and in which
+
+and then pushing or deploying that ultimately image into App Engine
+
+application is now ready.
+
+It took somewhere around 15 minutes or more than 15 minutes to get it deployed.
+
+OK let's go ahead and browse the application.
+
+And if you remember this was not the time which was taken by the sandbox hello world.
+
+Okay so that's the application let's call it an and browse the application you have to work.
+
+Uh
+
+washrooms and there is no data yet.
+
+I don't know why.
+
+OK we have the data and if I view the configuration here
+
+so it says the environment is flexible environment traineeship true manual scaling is instances one
+
+and the instance configuration is one you have G.B. of memory and NGV of danger of disk space.
+
+OK.
+
+And it's again supports the traffic splitting and all that you can find this instance and you can do
+
+SS which
+
+we will identify some of the differences here.
+
+The start up time in minutes and we saw that took somewhere around 15 minutes to launch in first instance
+
+we're in a standard and what may need to adjust quickly a maximum request time out is 60 Minutes where
+
+the 60 seconds background 30 years back on process yes SSA debugging yes and all of this background
+
+there is no background process or as such as debugging that is allowed in standard environment other
+
+scaling we have is manual and automatic scaling in standard environment it's a manual basic and adamant
+
+again we are going to see the different scaling that I think to the local disk yes you can write to
+
+the local disk then specify the size of the disk but in case of Standard environment you do not have
+
+access to it modifying the runtime yes you can do it while Docker file automatic in place security is
+
+exclude in which runtime network access you definitely have network access and because you are ultimately
+
+launching those instances inside which machine supports installing third party binaries as well with
+
+the delegate fight and there are multiple locations in which it supports network access in standard
+
+environment is why I opinion services because you cannot do as research you have limited services or
+
+APIs which are available out up app engine binaries or libraries which you can use it and you cannot
+
+install third party libraries here in the standard environment store is that standard environment is
+
+this just a sandbox sandbox which is available for you to use it and this is the oldest environment
+
+see I think they launched the App Engine in 2008 09 and was just made available to the public for use
+
+it and the standard it environment was there when they launched it we are going to get into details
+
+of other things like pricing and deployment I'm not ammo in the next lecture but if you have any questions
+
+on flexible environment let me know.
+
+
+柔軟な環境で起こった。
+
+これは、App Engineで柔軟な環境として使用できる別の種類の環境です。
+
+定義済みプログラミング言語用に作成されたサンドボックス環境以外の美しさ
+
+Dockeryメジャーをサポートするのは柔軟な環境です。
+
+柔軟な環境内で独自のコンテナを実行でき、それが美しさです
+
+独自のプログラミング言語を使用してアプリケーションをGoogleに適用できる柔軟な環境
+
+クラウドプラットフォーム。
+
+インフラストラクチャのカスタマイズはインフラストラクチャのカスタマイズを行うことができます
+
+選択してください。
+
+コンピューターエンジンの定義済みのマシンタイプのいずれかでコンピューティングを行ってきましたが、
+
+自分のCPOとRAM。
+
+アプリケーションがデプロイされているVMにSSDで接続し、ICPの使用とメモリをカスタマイズできます。
+
+あなたが望むように設定します。
+
+通常、App Engineを見ると、必要に応じて仮想マシンを管理していて、
+
+インスタンスが実行されているか破損している場合、地獄チェックを心配する。
+
+ああ、セキュリティを知っている必要があります。
+
+これらのマシンへのセキュリティパッチのインストールを知っています。
+
+プロジェクトの設定に基づいて、これらの開始されたVMインスタンスに劇的に配置されます。
+
+Googleの管理サービス中に毎週適用されます。
+
+セキュリティは、適用する必要があるセキュリティパッチを適用します。
+
+常にコンピューティングエンジンVMにアクセスする必要があり、これは標準環境の場合に非常に重要です
+
+サイトへのルートアクセスにアクセスできません。
+
+環境がアプリエンジンが計算エンジンとして機能するいくつかの違いを実行していることを知っています
+
+柔軟な環境は、コンピューティングエンジン内でサービスインスタンスを実行します。
+
+いくつかの違いがあり、それらの違いは、再起動された柔軟な環境で使用されるVMインスタンスです
+
+再起動中に毎週。
+
+Googleが管理するセキュリティパッチ。
+
+常にデフォルトのVMインスタンスにアクセスする必要があり、デフォルトでは無効になっています。
+
+柔軟な環境を使用してVMインスタンスの地理的地域を決定できるようにします。
+
+App Engineの場所の場所によって。
+
+それで、私たちはそれをすることができます。
+
+違いに飛び込む前に確認するだけです。
+
+先に進んでApp Engineを作成します
+
+それで私に戻りましょう。
+
+そのため、別のプロジェクトを作成し、その方法で別のApp Engineを作成できます。
+
+私たちは今すぐ見ることができます。私はあなたに中央の作成アプリを選択することができます。今回は柔軟な作成をしたいです。
+
+環境多分適切なので、柔軟な環境を作成できます。
+
+はい。
+
+これは後で行います。
+
+アプリが作成されています。同様の手順に従ってアプリケーションを適用できます。
+
+では、App Engineの柔軟性のない柔軟な環境を今すぐ適用または試してみましょう。
+
+ここで利用できるのは、ガイド付きツアーとしてのpythonです。
+
+私たちはダウンロードしようとしている同じステップでそれを大丈夫にするつもりです。
+
+柔軟な環境の中に行くと、先に進んで汚れたアンプを見ることができます
+
+ランタイム環境に関する詳細な情報はここで見つけることができます。
+
+そして、CPOを手動でスケーリングし、そのすべてをディスク化して、そのすべてをディスクに格納する方法を尋ねています。
+
+標準環境のレベルではない柔軟な環境で提供できるため、同じ環境を使用する
+
+コマンドとデプロイ。
+
+あなたが年に行くなら
+
+私はそれをしたくありません。
+
+私は先に進み、深い嘘をつくつもりです
+
+展開されています
+
+そのため、ログの大部分は、コンテンツ内のコンテンツと
+
+そして最終的にそのイメージをApp Engineにプッシュまたはデプロイします
+
+アプリケーションの準備ができました。
+
+展開するのに約15分または15分以上かかりました。
+
+OKでは、アプリケーションを閲覧してみましょう。
+
+そして、あなたが覚えているなら、これはサンドボックスのハローワールドが取った時間ではなかった。
+
+さて、これがアプリケーションです。それを呼び出して、作業する必要のあるアプリケーションを参照しましょう。
+
+うん
+
+洗面所とデータはまだありません。
+
+理由はわかりません。
+
+データがあります。ここで設定を表示すると
+
+そのため、環境は柔軟な環境の研修生であると言います
+
+インスタンス構成はG.Bを持っているものです。メモリとディスクスペースの危険性のNGV。
+
+OK。
+
+また、トラフィックの分割と、このインスタンスを見つけることができるすべてのことを行うことができます
+
+SS
+
+ここでいくつかの違いを特定します。
+
+起動時間は数分で、最初の起動には約15分かかりました
+
+私たちは標準であり、最大リクエストタイムアウトを迅速に調整する必要があるかもしれないものは60分です
+
+プロセスの30年前の60秒のバックグラウンドyes SSAデバッグyesおよびこのバックグラウンドのすべて
+
+バックグラウンドプロセスや、標準環境で許可されているデバッグなどはありません。
+
+私たちが持っているスケーリングは、標準環境での手動および自動スケーリングです。
+
+繰り返しますが、ローカルディスクに対して異なるスケーリングを確認します
+
+ローカルディスクはディスクのサイズを指定しますが、標準環境の場合は持っていません
+
+ランタイムを変更するためにアクセスしますはい、Dockerファイルの自動インプレースセキュリティ中に実行できます
+
+どのランタイムネットワークアクセスで確実にネットワークにアクセスできるかを除外します。
+
+マシンがサードパーティのバイナリのインストールをサポートするインスタンスを起動します
+
+代表者の戦いと標準でネットワークアクセスをサポートする複数の場所があります
+
+あなたが研究としてあなたが制限されたサービスを持っているか、
+
+利用可能なアプリエンジンバイナリまたはライブラリで利用可能なAPIと使用できないAPI
+
+ここで標準環境ストアにサードパーティライブラリをインストールすると、標準環境が
+
+これは、使用できるサンドボックスサンドボックスであり、これが最も古い環境です
+
+2008 09にApp Engineを開始し、一般公開されたばかりだと思います
+
+それと、それを起動したときに標準のit環境があったので、詳細を説明します。
+
+価格設定や展開など、次の講義では弾薬ではありませんが、質問がある場合は
+
+柔軟な環境について教えてください。

@@ -1,0 +1,419 @@
+Cloud storage in DCP.
+
+We already saw our debate miss which is cloud squirrel as a part of my school and a prosthesis skill
+
+you want to install that audio and to have it as already be missing Google Cloud Platform.
+
+The second storage is your cloud storage and this is the object storage in DCP.
+
+What do we mean by object storage.
+
+If you want to store any files whether it is backup file image file video file your CSP file any any
+
+kind of file you want to store it in a file system you can use cloud storage.
+
+This is not to be compared with our not to be replaced with the one which we saw which is a persistent
+
+disk.
+
+OK so you cannot install any any operating system or program into cloud storage so it cannot be used
+
+as a storage for your operating system.
+
+OK but you can store any files you can store there and the file and you can pull the file out.
+
+So that's the only purpose.
+
+It is a file you can think of file system or file storage wherein you can store the object and you can
+
+build object so storage is a part of database and storage service and it is one of the critical servers
+
+which is available out of Google Cloud Platform out of cloud is great another argument miss.
+
+So in a nutshell.
+
+Cloud storage is scalable durable multi regional object storage which as you can store files you can
+
+store custom data analytics or any any of that you can archive backup and do disaster recovery.
+
+You can store and stream multimedia file.
+
+You can host to our website static website as well.
+
+And you nutshell what it means is you can store any any file into cloud storage but you cannot install
+
+operating system into cloud storage.
+
+So in a high level cloud storage is a file storage and it is highly durable reliable system.
+
+It has got the durability of lower nines and you can think of what is the durability of those files
+
+are with multi regional storage your data is maintained geographically distinct locations you do not
+
+need to take a copy or backup.
+
+It is by design.
+
+You are your data is available in multiple location.
+
+It is highly scalable better bite you can petabytes are infinite practically in finance scalable so
+
+you just ask for.
+
+You don't have to ask for it sorry you just stole your file continuously onto it and Google will charge
+
+you based on the EU.
+
+You stole your data.
+
+Okay.
+
+Whether there are some storage as you attract read access fees and there are some storage like attracts
+
+more storage cost than the rate and access fees.
+
+I will Liberty's multi regional offers ninety nine point nine file and this is like a silly.
+
+Okay if you look at the actual availability in those regions it is ninety nine point nine nine that
+
+is an availability.
+
+But if you talk about the legal bindings that say a silly that is ninety nine point nine file formal
+
+divisional and for regional storage it is ninety nine point nine and these get changed.
+
+You want to look at what are of those numbers when you are accessing your storage.
+
+There are multiple storage classes and that is how you can categorize or define the way you want to
+
+use cloud storage.
+
+So there are total there used to be I would say for storage classes but they are simply divided into
+
+three storage classes.
+
+The first one is the standard one which contains either it is multi regional storage class or regional
+
+storage is and near line and core line.
+
+So these are the three storage classes that you will have it in your UI but if you look at and in the
+
+back end you are you are choosing whether it is regional or multitudinous storage for the standard storage
+
+class.
+
+This was introduced really lately as a standard storage class.
+
+In fact standard was there as a hidden and whenever you create a bucket without any storage class specified
+
+date or object then the standard storage class will get applied based on how you choose it.
+
+Like if you choose multi regional locations then it will attract to a multi regional otherwise it is
+
+just the regional storage.
+
+So that is how it used to be there but now they have simplified it to a standard storage class.
+
+This you can use as a deficit is it is just compliant if at all say you are using these defense file
+
+systems in your program our API calls.
+
+You just need to take out these dubious part and just replace it with Jesus.
+
+So that is all you can have.
+
+Cloud storage unit APIs compliant.
+
+It solves the problem of high visibility scale management or and persistent outside the cluster.
+
+Then I will level for all the users where you want to use it as a cloud storage so it could be as devious
+
+as a file system.
+
+You can use it or you can use it for all the different purposes like streaming the data.
+
+And like that before we get into a consistency model I'll just go ahead and show you the storage.
+
+This is the cloud storage you can go here into storage and you can go to cloud storage.
+
+Click on browse.
+
+This is where you can go ahead and create the object and store the object but first thing first you
+
+need to create a bucket which will be a container for your objects.
+
+You can say click on bucket.
+
+I can see my bucket
+
+exams continue and then I can specify whether it is regional multi regional dual regional.
+
+I can just call and see regional and then it will ask me which region you want to store it.
+
+So let me put this one continue and then I can choose access permissions.
+
+I want to maintain all the extra permissions at the local level
+
+encryption whether it is Google manager managed or customer to manage a fatality as a customer manage
+
+we need to provide the key and then you want to have retention policy to protect any any object from
+
+deletion.
+
+Once it is creator so I can say it should be at least there for 10 minutes to our accident deletion.
+
+Okay.
+
+It's in seconds so I need to provide 600 seconds.
+
+I can provide any labels if heard all say I want to manage them.
+
+Giving marketing as a
+
+I can see marketing on I can create multiple levels and I can just go and click on it.
+
+So the book is he's created.
+
+I can just drag and drop out I can upload files or I can upload folders I can create folders inside
+
+it.
+
+Well those are just logical names in it.
+
+I can just drag and drop one of the file one screenshot here
+
+so it's uploaded.
+
+You can set permissions you can edit permissions because this object will take the permission from the
+
+bucket.
+
+You can edit metadata you can download you can copy.
+
+You can move and rename it can export to pops up and scan for data loss prevention.
+
+So these are activities which can we can do.
+
+You can go and see the overview of the bucket when it is created.
+
+What is the default storage class permissions permissions if there are any if you want to enable it.
+
+And we are going to see that in later chapters and then bucket log.
+
+You can go ahead and add lifecycle rules to manage the bucket where we are going to see that in the
+
+next lecture.
+
+Now that she does do you guys as a cloud storage you have any questions let.
+
+There's no other ways you can move to the next lecture that is consistency.
+
+DCPのクラウドストレージ。
+
+私たちの議論の失敗はすでに見られました。これは私の学校の一部としてのクラウドリスであり、補綴スキルです
+
+その音声をインストールし、既にGoogle Cloud Platformが欠落しているようにする必要があります。
+
+2番目のストレージはクラウドストレージであり、これはDCPのオブジェクトストレージです。
+
+オブジェクトストレージとはどういう意味ですか。
+
+バックアップファイル、イメージファイル、ビデオファイル、CSPファイルなど、ファイルを保存する場合は、
+
+クラウドストレージを使用できるファイルシステムに保存するファイルの種類。
+
+これは、私たちが見た永続的なものに置き換えられないものと比較されるべきではありません
+
+ディスク。
+
+クラウドストレージにオペレーティングシステムまたはプログラムをインストールできないため、使用できません
+
+オペレーティングシステムのストレージとして。
+
+わかりましたが、そこに保存できるファイルとファイルを保存でき、ファイルを引き出すことができます。
+
+それが唯一の目的です。
+
+これは、ファイルシステムまたはファイルストレージと考えることができるファイルであり、オブジェクトを保存して、
+
+ストレージがデータベースおよびストレージサービスの一部であり、重要なサーバーの1つであるようにオブジェクトを構築する
+
+クラウドからGoogle Cloud Platformで利用できることは、もう1つの大きな間違いです。
+
+簡単に言えば。
+
+クラウドストレージはスケーラブルで耐久性のあるマルチリージョンオブジェクトストレージであり、ファイルを保存できるため、
+
+カスタムデータ分析、またはバックアップをアーカイブして災害復旧を実行できるものを保存します。
+
+マルチメディアファイルを保存およびストリーミングできます。
+
+私たちのウェブサイトの静的ウェブサイトにもホストできます。
+
+要するに、どんなファイルでもクラウドストレージに保存できますが、インストールはできません
+
+クラウドストレージへのオペレーティングシステム。
+
+そのため、高レベルのクラウドストレージはファイルストレージであり、非常に耐久性のある信頼性の高いシステムです。
+
+ローワーナインの耐久性があり、これらのファイルの耐久性を考えることができます
+
+複数の地域のストレージを使用している場合、データは地理的に異なる場所に保持されます
+
+コピーまたはバックアップを取る必要があります。
+
+これは仕様です。
+
+あなたのデータは複数の場所で利用可能です。
+
+それは非常にスケーラブルであり、ペタバイトは金融でスケーラブルであり、実質的にスケーラブルです
+
+あなただけを求めます。
+
+申し訳ありませんが、ファイルを継続的に盗むだけで申し訳ありません。Googleが請求します
+
+あなたはEUに基づいています。
+
+データを盗みました。
+
+はい。
+
+読み取りアクセス料金を引き付けるためのストレージがあり、引き付けのようなストレージがあるかどうか
+
+料金とアクセス料金よりも多くのストレージコスト。
+
+Libertyのマルチリージョナルオファーは99ポイント9ファイルで、これはばかげているようです。
+
+これらの地域の実際の可用性を見ると、99ポイント9ナインです
+
+可用性です。
+
+しかし、あなたが正式な99ポイント9ファイルである愚かなと言う法的拘束力について話すなら
+
+部門および地域のストレージの場合、99ポイント9であり、これらは変更されます。
+
+ストレージにアクセスしているときに、これらの数値を調べたいと思います。
+
+複数のストレージクラスがあり、それがあなたがしたい方法を分類または定義する方法です
+
+クラウドストレージを使用します。
+
+そのため、以前はストレージクラスの合計がありますが、それらは単に
+
+3つのストレージクラス。
+
+最初のものは、マルチリージョナルストレージクラスまたはリージョナルのいずれかを含む標準のものです
+
+ストレージは、ラインおよびコアラインの近くです。
+
+これらはUIに3つのストレージクラスがありますが、
+
+バックエンドは、標準ストレージに対して地域ストレージか多元ストレージかを選択しています
+
+クラス。
+
+これは最近、標準のストレージクラスとして導入されました。
+
+実際、標準は非表示としてあり、ストレージクラスを指定せずにバケットを作成するたびに
+
+日付またはオブジェクトを選択すると、選択した方法に基づいて標準ストレージクラスが適用されます。
+
+あなたが複数の地域の場所を選択した場合、それは複数の地域に引き付けます
+
+ちょうど地域のストレージ。
+
+そのため、以前はそこにありましたが、現在では標準のストレージクラスに単純化されています。
+
+赤字として使用できるこれは、これらの防御ファイルを使用していると言っても、準拠しているだけです
+
+プログラム内のシステムがAPIを呼び出します。
+
+これらの疑わしい部分を取り出して、それをイエスに置き換えるだけです。
+
+だからそれはあなたが持つことができるすべてです。
+
+クラウドストレージユニットAPIに準拠。
+
+視認性の高いスケール管理の問題や、クラスター外での永続的な問題を解決します。
+
+次に、クラウドストレージとして使用するすべてのユーザーのレベルを調整します。
+
+ファイルシステムとして。
+
+これを使用することも、データのストリーミングなどのさまざまな目的に使用することもできます。
+
+このように、一貫性モデルに入る前に、ストレージを紹介します。
+
+これはクラウドストレージであり、ここでストレージに移動でき、クラウドストレージに移動できます。
+
+参照をクリックします。
+
+これは、先に進んでオブジェクトを作成し、オブジェクトを保存できる場所ですが、まず最初にあなたが
+
+オブジェクトのコンテナとなるバケットを作成する必要があります。
+
+バケツをクリックすると言うことができます。
+
+バケツが見える
+
+試験は継続され、その後、地域、多地域、二地域のいずれであるかを指定できます。
+
+電話して地域を見るだけで、保存する地域を尋ねられます。
+
+これを続けて、アクセス許可を選択できます。
+
+ローカルレベルですべての追加のアクセス許可を維持したい
+
+顧客管理者として致命的な事態を管理するために、Googleマネージャーが管理するか顧客であるかにかかわらず、暗号化
+
+キーを提供する必要があり、その後、オブジェクトを保護するための保持ポリシーが必要です
+
+削除。
+
+作成者であるため、偶発的な削除まで少なくとも10分間は存在するはずです。
+
+はい。
+
+秒単位なので、600秒を指定する必要があります。
+
+すべてのラベルを管理したいという声が聞かれたら、ラベルを提供できます。
+
+としてマーケティングを与える
+
+マーケティングを見て、複数のレベルを作成し、クリックするだけです。
+
+それで本は彼が作成したものです。
+
+ドラッグアンドドロップするだけでファイルをアップロードしたり、フォルダーをアップロードしたりして、フォルダーを作成したりできます。
+
+それ。
+
+まあ、それらは単なる論理名です。
+
+ここにファイルのスクリーンショットをドラッグアンドドロップするだけです
+
+アップロードされました。
+
+このオブジェクトは権限を取得するため、権限を編集できる権限を設定できます
+
+バケツ。
+
+ダウンロード可能なメタデータを編集してコピーできます。
+
+移動して名前を変更したり、ポップアップにエクスポートしたり、データ損失防止のためにスキャンしたりできます。
+
+これらは私たちにできる活動です。
+
+バケットの作成時に、バケットの概要を確認できます。
+
+有効にしたい場合、デフォルトのストレージクラスのアクセス許可がある場合、それは何ですか。
+
+そして、後の章でそれを確認し、次にバケットログを確認します。
+
+先に進み、ライフサイクルルールを追加して、バケットを管理します。
+
+次の講義。
+
+彼女がクラウドストレージとしてやってくれるようになったので、質問があれば聞かせてください。
+
+一貫性のある次の講義に進む方法は他にありません。

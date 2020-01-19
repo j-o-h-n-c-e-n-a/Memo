@@ -1,0 +1,659 @@
+The full scale study which we have is mt good games.
+
+So what is my game MT Cal game makes online version Myst multiplayer games for most of the popular game
+
+platform mancala games.
+
+Bayles all their games with some server side integration and has historically used cloud providers Leighs
+
+physical servers on our current model is to right game started sticks to file and send them through
+
+e-tail tool that lured them into the scentless my ass.
+
+I was for reporting the problem statement which we have run them a few of their games we most popular
+
+or more popular than expected and they had a problem upskilling their application servers.
+
+I was on an analytical tools the solution concept and this is given to us by them mancala games is building
+
+a new game which they expect to be very popular.
+
+They plan to deploy the games back and on Google's computer engine so they are even getting what they
+
+want to deploy their backend so that they can capture streaming mattresses are running then-CEO analytics
+
+and they got a one day job killing killing with environment and degrader with managed noise qu'il database
+
+your statement our last successful game did not scale well with our previous cloud provider resulting
+
+in lower user corruption and affecting the game's reputation in the market.
+
+Our investors want more people Pullmans indicator KPI is to with the speed and stability of the game
+
+as well as other mercilessness that provides deeper insight into usage patterns so we can adapt the
+
+game to target users CTO statement.
+
+Our current technology cannot provide the scale that we need.
+
+We want to replace my skills to move on to environment that provides scaling low latency load balancing
+
+and free up of free us from managing physical servers.
+
+See a full statement.
+
+We are not capturing enough user demographic data usage mattresses and other key pieces as a result
+
+we do not engage right users.
+
+We are not confident that our marketing is targeting the right users and we are not selling in a premium
+
+blast ups inside the games which are dramatically in Baghdad revenue.
+
+So you how different concerns and you can very well think that the first guns first and foremost concern
+
+is the game back and did not scale well.
+
+The second concern is they want to move somewhere.
+
+So my school did not scale.
+
+They wanted to move somewhere where you have a scaling based on the usage low latency and load balancing
+
+and they don't want to manage these individuals or worse.
+
+And another one is they want to capture analytics and those other things they can use it so that they
+
+can upscale the services inside the game.
+
+So requirements typical requirements are dynamically scale up or scale down based on the game activity
+
+connect to manage noise.
+
+There are ways around customize Linux distro dynamic to scale up or scale down based on the game activity.
+
+So this is analytical PAC platform.
+
+Incoming data on the fly directly from the games or worse process the data arrives late because of slow
+
+mobile network allowing school to access at least under the weight of historical data but also the files
+
+that are regularly uploaded by the user of mobile devices use only fully managed devices.
+
+How useful you managed.
+
+Certainly So they are.
+
+Their preference is to use monetarist So in summary what we need to do is we need to design a solution
+
+for non-cricket games.
+
+And then what do we need to do is we have seen that you know these are the aspect for you to design
+
+a solution you are to unit to define a set of ways you have to define what the data architecture resiliency
+
+scalability availability ha security compliance capacity planning and cost optimization Asare deployment
+
+monitoring alerting incident management service Major and rentes who Israelis and key indicators.
+
+Let's understand what they are saying.
+
+They want to own their data center as existing because they are saying that they are using the current
+
+cloud provider which did not scale well for their last two games and that's their opinion which we wanted
+
+to solve for.
+
+So what do you what options we are left with we have GCP AWOS as you are.
+
+And in fact we are Google Cloud now or Alibaba.
+
+Those are the options which we have to use.
+
+The best choice for us will choose is GCP for this particular case study.
+
+Let's understand there always lies and SLAC as the lawyers will object which he will be you know put
+
+forward by the business so let's understand let's think that there is ninety eight point zero percent
+
+that with celebrities what we want it.
+
+And how do we measure this.
+
+Ninety eight point zero.
+
+So if your game application is able to connect to your back and server for that percentage of time that's
+
+what we want to measure that are as slow and as silly as the law is.
+
+Your back and application is available for your print and games.
+
+We also need to think about if there is anyone supporting your back and services in case of there are
+
+any problems whether the services will be accessed from all the continents on all the regions or the
+
+zones.
+
+And if it is 24 by 7 at a specific time of day the users will be accessing our users will be running
+
+the games.
+
+So all of those parameters are there we just need to make some assumptions to start with and then move
+
+forward on your design in a high level what we are understood as a requirement is there are games which
+
+are used on mobile as well as we are assuming that you will it will be used as a Steimle if you or any
+
+other interface from the desktop and that is that connects to the backend service which is computer
+
+service and then there is our database where it you know data gets uploaded and then they have some
+
+analytics running on it.
+
+So this is high level architecture if they are to take you know their application onto cloud provider
+
+any cloud provider so lets get into details of how you want to design all all of these individual pieces
+
+computer is a computer whiz you have multiple options.
+
+What is your machine what you can do for the machine you can customize or is that the way you want it.
+
+You can use that scaling load balancing you know how silly and support.
+
+The only problem with this machine is you need to manage a virtual machine on your own.
+
+You need to define our scaling policy for what your machine and other option for the computers that
+
+you have is App Engine You can have infinite scalable application back and it's an office platform or
+
+just write the code and apply it.
+
+You can use standards and sandbox environment or a flexible environment as an option.
+
+But you can actually go out and modify a operating system an App Engine and then an engine you can run
+
+binaries on GCP Plus it is platforming.
+
+It is specifically for that piggishness which can be can be raised.
+
+You have smart default and no control on how much you want to where you want to look at applications
+
+should be.
+
+And you need to manage the cluster.
+
+And the last option from the computer is you have is that the cloud function that is un based no ops
+
+and so that with less involvement you have limited choice for programming environment and all that and
+
+see this is because once you call up function or even function day it is going to start the computer
+
+service and then whatever the computer is you are you know your application is asking.
+
+And it will run and execute and then a response will be going to the game.
+
+So it is not a low latency application so we have decided in fact here is we are going to use computers.
+
+That's because they said that I know they have to and they wanted to use a custom Linux distribution
+
+and you can do custom lenses distribution in all other services.
+
+So compute in a compute engine is the only option which you have left.
+
+So let's design or identify what it is you can use the cloud as well as a relational database.
+
+You can do as well and pose as a school that is what it is available my skills.
+
+Second generation you can go up to 10 terabytes or you can have multiple replicas for scaling but you
+
+cannot go the mean for the mean instance here do you want right.
+
+The instance you cannot go beyond certain limit because it does work because killing and not D'Argenton
+
+is killing us.
+
+This is typical of what we saw was our CMS financing the e-commerce.
+
+There are some limitations that has got a strict scale because this is all a relational database and
+
+limitation on horizontal scalability.
+
+Let us start.
+
+This is a managed document oriented noise that was originally scalable anyway and truly consistent low
+
+latency work for same is structured it as well use cases user profile state storage.
+
+You don't have option to customize operating system so you don't have access to the operating system
+
+in case of well cloud is well you can say to the VM in which it is my school is running or the school
+
+is running close friend of his or her skill level high level level relational database use case related
+
+to RDBMS and ardently scalable works with structure that only big table it is fully manage low latency
+
+Collamer in the database use case I'd take finance priority.
+
+But this is mainly used for a structure that as well as analytical purpose and the main advantage of
+
+this is analytics and column would enter database
+
+and then we have a query query is our data warehouse.
+
+We saw know these two images of earlier in which how you can go ahead and choose a different storage
+
+mechanism so high level manager Terry W. all up or Plourde up to about scale use cases EGW analytics
+
+data science big data are using as well and blah blah blah.
+
+Many other you know use cases which you can use.
+
+So it's ultimately enterprise data warehouse and it is monitored from Google story option if you want
+
+to store some data onto the back and some math as objects to what we saw was there a persistent disk
+
+local SSD and ram disk persists and this is a network or to store the storage localizes these stories
+
+which is from your virtual machine environment so your hardware.
+
+This is your RAM.
+
+Will be used for your storage.
+
+You can actually use this for IBM story sharing between the Reems scale with the size install software
+
+and block storage as well only with the computer.
+
+That's the only limitation which we have at our next storage services cloud storage.
+
+It is an object storage like a file system highly durable available in multi-regional forms for our
+
+requirement that you can go ahead and use your line and near line storage for your archiving needs.
+
+Use Cases non-sexually time it just radios.
+
+You can already install lawyers or software into the storage.
+
+You can not nest there directories.
+
+Mobile cloud storage for firebase.
+
+It is again documented as it is or isn't it will eventually consist and platform applications should
+
+be content.
+
+There is no need to manage cluster.
+
+And then you will have cloud storage for firebase as well as well as firebase earned B-B or hosting
+
+mobile application later synchronization with all users use a specific.
+
+So what is that we are going to select.
+
+We are we have selected data storage for your session storage the use cases which we saw was users session
+
+and Game data.
+
+It is madness that you don't have to manage any hardware for this one or you are.
+
+You don't have to spin up any worse.
+
+It is low latency isn't scaleable you can use it for same structured document a database we are selecting
+
+cloud storage as your images audio and product will do as a backup for long term archival.
+
+And then we are going to select a big query for analytics as are which
+
+so we have a data store as a session data storage and then you have a query for you.
+
+If you are massaging your data and then you can put forward any relation to like Date Lab W or any other
+
+relations tool are to use or process the data.
+
+What we do not have here is they said that you know there are cases where in your there are devices
+
+mobile application.
+
+They do not have internet and then if you are pleased that they upload the data in one shot when the
+
+internet connection is available and that's what we do not have it right now but we'll do that in subsequent
+
+phases.
+
+Let's focus on this computer with data stored and be quiet.
+
+As of now
+
+blithesome our design principles like definition will be that architecture resiliency scalability security
+
+capacity planning or Asare are other measurements.
+
+私たちが行っている本格的な研究は、mt good gamesです。
+
+私のゲームは何ですかMT Calゲームは、ほとんどの人気ゲームのオンライン版Mystマルチプレイヤーゲームです
+
+プラットフォームマンカラゲーム。
+
+Baylesはすべてのゲームをサーバーサイドに統合しており、歴史的にクラウドプロバイダーのLeighsを使用してきました
+
+私たちの現在のモデルの物理サーバーは、ゲームを開始し、ファイルに貼り付けて送信することです
+
+それらを無臭の私のお尻に誘い込んだe-tailツール。
+
+私は彼らに最も人気のあるゲームのいくつかを実行した問題の声明を報告した
+
+または予想よりも人気があり、アプリケーションサーバーのスキルアップに問題がありました。
+
+私は分析ツールでソリューションのコンセプトを考えていましたが、これは彼らによって与えられたものです。
+
+彼らは非常に人気があると期待している新しいゲーム。
+
+彼らは、ゲームをGoogleのコンピューターエンジンに展開して戻すことを計画しており、
+
+バックエンドを展開して、当時実行中のストリーミングマットレスをキャプチャできるようにします。
+
+そして、管理されたノイズキルデータベースを使用して、環境とデグレーダーによる殺害を殺す1日の仕事を得た
+
+前回の成功したゲームは、以前のクラウドプロバイダーとうまくスケールしませんでした
+
+ユーザーの破損を減らし、市場でのゲームの評判に影響を与えます。
+
+投資家は、プルマンの指標KPIがゲームの速度と安定性に優れていることを求めています
+
+使用パターンに対するより深い洞察を提供する他の容赦ないものと同様に、
+
+ユーザーをターゲットにするゲームのCTOステートメント。
+
+現在の技術では、必要な規模を提供できません。
+
+私のスキルを置き換えて、低遅延の負荷分散のスケーリングを提供する環境に移行したい
+
+物理サーバーの管理から解放されます。
+
+完全なステートメントを参照してください。
+
+その結果、ユーザーの人口統計データ使用マットレスやその他の重要な部分を十分にキャプチャしていない
+
+適切なユーザーを引き付けません。
+
+マーケティングが適切なユーザーをターゲットにしていると確信しておらず、プレミアムで販売していない
+
+バグダッドの収益に劇的に影響するゲーム内の爆発。
+
+だからあなたはどのように異なる懸念とあなたは非常によく最初の銃が何よりも重要だと考えることができます
+
+ゲームバックであり、うまくスケールしませんでした。
+
+2番目の懸念は、彼らがどこかに移動したいということです。
+
+それで、私の学校は拡大しませんでした。
+
+彼らは、低レイテンシーと負荷分散の使用に基づくスケーリングがある場所に移動したかった
+
+そして、彼らはこれらの個人またはそれ以上を管理したくない。
+
+そしてもう1つは、アナリティクスとそれを使用できるその他のものをキャプチャして、
+
+ゲーム内のサービスをアップスケールできます。
+
+そのため、典型的な要件は、ゲームアクティビティに基づいて動的に拡大または縮小します。
+
+接続してノイズを管理します。
+
+Linuxディストリビューションを動的にカスタマイズして、ゲームアクティビティに基づいてスケールアップまたはスケールダウンする方法があります。
+
+これが分析PACプラットフォームです。
+
+ゲームから直接オンザフライで着信データを送信するか、処理が遅いためにデータが遅れて到着する
+
+学校が少なくとも履歴データだけでなくファイルにもアクセスできるモバイルネットワーク
+
+モバイルデバイスのユーザーによって定期的にアップロードされるものは、完全に管理されたデバイスのみを使用します。
+
+どれほど役立つか。
+
+確かにそうです。
+
+彼らの好みはマネタリストを使用することです。したがって、要約すると、ソリューションを設計する必要があります。
+
+クリケット以外のゲーム用。
+
+そして、私たちがする必要があるのは、これらがあなたが設計するための側面であることを知っているということです
+
+データアーキテクチャの回復力を定義するために必要な一連の方法を定義するために統合するソリューション
+
+スケーラビリティの可用性haセキュリティコンプライアンスキャパシティプランニングとコスト最適化Asare展開
+
+アラートインシデント管理サービスの監視イスラエル人と主要な指標である賃貸人。
+
+彼らが言っていることを理解しましょう。
+
+彼らは既存のものとしてデータセンターを所有したいと考えています
+
+クラウドプロバイダーは、最後の2つのゲームにうまく対応できませんでした。
+
+解決するために。
+
+GCP AWOSには、どのようなオプションがありますか。
+
+そして実際、私たちは現在Google CloudまたはAlibabaです。
+
+これらは私たちが使用しなければならないオプションです。
+
+私たちにとって最良の選択は、この特定のケーススタディのGCPです。
+
+弁護士が異議を唱えるので、常に嘘とSLACがあることを理解しましょう。
+
+ビジネスで前進しているので、98ポイント0パーセントがあると考えてみましょう。
+
+有名人と一緒に欲しいもの。
+
+そして、これをどのように測定しますか。
+
+98ポイントゼロ。
+
+そのため、ゲームアプリケーションがその時間の割合でバックとサーバーに接続できる場合、
+
+私たちが測定したいものは、法律と同じくらい遅くてばかげています。
+
+あなたの背中とアプリケーションは、プリントとゲームで利用できます。
+
+また、あなたの背中とサービスがある場合にあなたの背中とサービスをサポートする人がいるかどうかを考える必要があります
+
+すべての地域のすべての大陸からサービスにアクセスするか、または
+
+ゾーン。
+
+また、特定の時刻に24 x 7である場合、ユーザーがアクセスしているユーザーは実行されています
+
+ゲーム。
+
+これらのパラメータはすべてそこにあるので、最初にいくつかの仮定をしてから移動する必要があります
+
+要件として理解されているのは、高レベルでデザインを進めることです。
+
+モバイルで使用されているのと同様に、もしあなたまたは誰かがSteimleとして使用されると仮定している
+
+デスクトップからの他のインターフェイス、つまりコンピューターであるバックエンドサービスに接続するインターフェイス
+
+サービスがあり、データがアップロードされていることがわかっているデータベースがあります
+
+分析が実行されています。
+
+そのため、アプリケーションをクラウドプロバイダーに伝えるための高レベルのアーキテクチャです。
+
+クラウドプロバイダーは、これらすべての個々の要素をすべて設計する方法の詳細を把握できます。
+
+computerは、複数のオプションがあるコンピューターです。
+
+あなたがカスタマイズできるマシンのためにあなたができることはあなたのマシンとは何ですか、それはあなたが望む方法です。
+
+そのスケーリングロードバランシングを使用して、どれほど愚かでサポートがあるかを理解できます。
+
+このマシンの唯一の問題は、仮想マシンを自分で管理する必要があることです。
+
+使用するマシンと、コンピューターのその他のオプションについて、スケーリングポリシーを定義する必要があります。
+
+App Engineがあります。無限にスケーラブルなアプリケーションを戻すことができ、それはオフィスプラットフォームまたは
+
+コードを書いて適用するだけです。
+
+標準およびサンドボックス環境または柔軟な環境をオプションとして使用できます。
+
+ただし、実際に外に出て、オペレーティングシステムをApp Engineに変更してから、実行できるエンジンを変更することができます
+
+GCP Plusのバイナリはプラットフォーム化されています。
+
+それは特に、できうるおかしさを高めることができるためです。
+
+スマートなデフォルトがあり、アプリケーションをどこに見たいかを制御することはできません
+
+あるべきです。
+
+そして、クラスターを管理する必要があります。
+
+そしてコンピューターからの最後の選択肢はあなたが持っているということです。
+
+そして、より少ない関与で、あなたはプログラミング環境とそのすべてのために限られた選択肢を持っているように
+
+これは、関数または関数の日を呼び出すと、コンピューターが起動するためです。
+
+サービス、そしてコンピュータが何であれ、あなたはあなたのアプリケーションが尋ねていることを知っています。
+
+そして、実行されて実行され、応答がゲームに送られます。
+
+したがって、これは低遅延アプリケーションではないため、ここでは実際にコンピューターを使用することにしました。
+
+それは、彼らが私が彼らがしなければならないと知っている、そして彼らがカスタムLinuxディストリビューションを使いたいと言ったからです
+
+他のすべてのサービスでカスタムレンズの配布を行うことができます。
+
+したがって、コンピューティングエンジンでのコンピューティングは、残した唯一のオプションです。
+
+それでは、クラウドとリレーショナルデータベースを使用できるものを設計または特定しましょう。
+
+あなたも同様に行うことができ、それは私のスキルが利用可能なものである学校を装います。
+
+第二世代では、最大10テラバイトまで拡張できます。または、スケーリングのために複数のレプリカを持つことができますが、
+
+ここで平均インスタンスの平均を行くことはできません。
+
+ダージェントンではなく殺すために動作するため、特定の制限を超えることはできません
+
+私たちを殺しています。
+
+これは、CMSが電子商取引に資金を提供しているのを見た典型的な例です。
+
+これはすべてリレーショナルデータベースであるため、厳密なスケールを持ついくつかの制限があり、
+
+水平スケーラビリティの制限。
+
+始めましょう。
+
+これは、管理されたドキュメント指向のノイズであり、もともとスケーラブルであり、一貫して低い
+
+同じレイテンシーの作業は、ユーザープロファイルの状態のストレージのユースケースと同様に構造化されています。
+
+オペレーティングシステムにアクセスできないように、オペレーティングシステムをカスタマイズするオプションがない
+
+クラウドがうまくいっていれば、私の学校が実行されているVMまたは学校に言うことができます
+
+彼または彼女のスキルレベルの高レベルのリレーショナルデータベースのユースケースの親しい友人を実行しています
+
+RDBMSに対応し、非常にスケーラブルで、大きなテーブルのみが低レイテンシを完全に管理する構造で動作します
+
+データベースのユースケースのCollamerでは、財務を優先します。
+
+しかし、これは主に分析目的と構造の主な利点に使用されます
+
+これは分析であり、列はデータベースに入ります
+
+そして、クエリクエリがデータウェアハウスです。
+
+先ほどのこれら2つの画像を知っているので、先に進んで別のストレージを選択する方法を知りました
+
+高レベルのマネージャーTerry W. all upまたはPlourde up to scale scaleユースケースEGW分析
+
+データサイエンスビッグデータも同様に使用しています。
+
+あなたが使用できるユースケースを知っている他の多くの人。
+
+最終的にはエンタープライズデータウェアハウスであり、必要に応じてGoogleストーリーオプションから監視されます
+
+いくつかのデータを背面に保存し、いくつかの数学をオブジェクトとして保存しました
+
+ローカルSSDとRAMディスクが持続し、これがネットワークであるか、これらのストーリーをローカライズするストレージを保存する
+
+これは仮想マシン環境のハードウェアです。
+
+これがRAMです。
+
+ストレージに使用されます。
+
+実際にこれを使用して、Reemsスケールとサイズインストールソフトウェア間のIBMストーリー共有を行うことができます。
+
+また、コンピューターのみでブロックストレージも可能です。
+
+これが、次のストレージサービスクラウドストレージでの唯一の制限です。
+
+これは、マルチリージョン形式で利用可能な耐久性の高いファイルシステムのようなオブジェクトストレージです。
+
+アーカイブのニーズに合わせて、ラインおよびニアラインストレージを使用できるという要件。
+
+ユースケースでは、性的に関係なくラジオだけを使用します。
+
+弁護士またはソフトウェアをストレージに既にインストールできます。
+
+そこにディレクトリをネストすることはできません。
+
+firebase用のモバイルクラウドストレージ。
+
+再び文書化されますが、最終的には構成され、プラットフォームアプリケーションは
+
+満足してください。
+
+クラスターを管理する必要はありません。
+
+そして、Firebaseのクラウドストレージと、B-Bまたはホスティングを獲得したFirebaseがあります
+
+後ですべてのユーザーとのモバイルアプリケーションの同期は、特定のものを使用します。
+
+だから私たちが選択しようとしているのは何ですか。
+
+セッションストレージ用にデータストレージを選択しました
+
+およびゲームデータ。
+
+このハードウェアのためにハードウェアを管理する必要がないのは狂気です。
+
+さらに悪化する必要はありません。
+
+低レイテンシーはスケーラブルではないため、選択しているデータベースと同じ構造化文書に使用できます
+
+画像の音声と製品が長期アーカイブのバックアップとして機能するクラウドストレージ。
+
+そして、分析用の大きなクエリを選択します
+
+そのため、セッションデータストレージとしてのデータストアがあり、その後、クエリがあります。
+
+データをマッサージしていて、Date Lab Wやその他のような関係を提案できる場合
+
+関係ツールは、データを使用または処理します。
+
+私たちがここに持っていないのは、彼らがあなたの中にデバイスがある場合があることを知っていると言われていることです
+
+モバイルアプリ。
+
+彼らはインターネットを持っていないので、あなたが彼らがデータをワンショットでアップロードすることに満足している場合、
+
+インターネット接続が利用可能であり、それは私たちが今それを持っていないものですが、我々はその後でそれを行います
+
+フェーズ。
+
+データが保存された静かなこのコンピューターに注目しましょう。
+
+今のところ
+
+定義のような私たちの設計原則は、アーキテクチャの復元力とスケーラビリティのセキュリティです
+
+キャパシティプランニングまたはAsareは他の測定値です。

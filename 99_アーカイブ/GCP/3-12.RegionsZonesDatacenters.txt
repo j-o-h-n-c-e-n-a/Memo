@@ -1,0 +1,172 @@
+Before we proceed further on Google flower.
+
+So let's just go in and look at our take a glance of what regions don't send data centers in Google
+
+Cloud so regions are independent geographic area that consist of zones.
+
+And this is like you can think of it's a partition independent area.
+
+The main purpose is to host application year to your users reduce latency unavailability and durability
+
+where dead zones are the actual physical locations.
+
+And if I were to go back and to the console not the console cloud or Google dot com and I bought in
+
+locations that's where you can find the cloud locations.
+
+There are 20 regions which are out there right now 61 zones.
+
+These are the 61 physical location.
+
+That's where I have data centers.
+
+You can think of as a data center.
+
+There are a few locations and it it is available in 200 plus countries.
+
+So this is current as you can think of October 2019.
+
+There are 20 regions and the region has got.
+
+So all of these blue locations these are the regions and the numbers there which you'll see three and
+
+four right.
+
+These are the number of tones inside that particular region.
+
+So don't usually use to you know as a high visibility inside that particular region but these are the
+
+zones inside it so that's the zone.
+
+I'm not going in detail.
+
+So these are some of the zones which are listed and I copied that out some of the properties of the
+
+data center.
+
+They have signed you know so many agreements with the local renewable energy companies so that they
+
+can use renewable energy instead of burning carbon.
+
+They they build the you know the data center with high efficiency and what do we mean by that is there
+
+is the internal temperature to 70 Fahrenheit.
+
+So they don't actually cool it down below to 40 or 50.
+
+Like other service products does it.
+
+And majority of the times they use outside air temperature for cooling.
+
+They build their own set of words or custom servers and because they have good amount of experience
+
+out of Google you know YouTube and Google search and all that.
+
+And there is a data security really solid data inside a data center when it is getting stored.
+
+It is a dramatically encrypted and stored.
+
+So at the time of arrest or at the time of storage it is getting encrypted and stored.
+
+And when you are retrieving the data are accessing the data it is already in always encrypted in the
+
+transit as well.
+
+So that's some of the properties of the data center.
+
+We saw this earlier we had in you know as of 20 19 June it was 20 18 regions.
+
+But now there are more regions.
+
+OK that's it guys as a zones regions are data centers of locations.
+
+Let me know otherwise you can move to the next lecture.
+
+That's the network and point to presence.
+
+
+Google flowerをさらに進める前に。
+
+それでは、Googleのデータセンターを送信していない地域を見てみましょう。
+
+クラウドなので、リージョンはゾーンで構成される独立した地理的エリアです。
+
+これは、パーティションに依存しない領域であると考えることができます。
+
+主な目的は、ユーザーにアプリケーションを1年間ホストすることで、待ち時間の可用性と耐久性を削減することです。
+
+ここで、デッドゾーンは実際の物理的な場所です。
+
+そして、コンソールクラウドやGoogleドットコムではなくコンソールに戻って購入した場合、
+
+クラウドの場所を見つけることができる場所。
+
+現在61のゾーンにある20のリージョンがあります。
+
+これらは物理的な位置です。
+
+そこでデータセンターがあります。
+
+データセンターと考えることができます。
+
+いくつかの場所があり、200以上の国で利用できます。
+
+2019年10月を考えると、これは最新のことです。
+
+20の地域があり、その地域は持っています。
+
+これらすべての青い場所は、地域とそこにある数字です。
+
+四右。
+
+これらは、その特定の地域内のトーンの数です。
+
+そのため、通常、その特定の地域内の高い視認性として知っている使用しないでくださいが、これらは
+
+その中にゾーンがあり、それがゾーンです。
+
+詳細には行きません。
+
+これらはリストされているゾーンの一部であり、そのプロパティの一部をコピーしました
+
+データセンター。
+
+彼らはあなたが地元の再生可能エネルギー会社と非常に多くの契約を知っているので、彼らに署名しました
+
+炭素を燃やす代わりに再生可能エネルギーを使用できます。
+
+彼らはあなたがデータセンターを高効率で構築し、それが何を意味するのかを構築します
+
+内部温度は華氏70度です。
+
+したがって、彼らは実際にそれを40または50以下に冷却しません。
+
+他のサービス製品がそうするように。
+
+そして、ほとんどの場合、冷却に外気温を使用します。
+
+独自の単語セットまたはカスタムサーバーを構築し、十分な経験があるため
+
+GoogleからYouTubeやGoogle検索などを知っています。
+
+また、データセンター内に保存されるデータセキュリティは、非常に堅実です。
+
+劇的に暗号化されて保存されます。
+
+そのため、逮捕時または保管時に、暗号化されて保管されています。
+
+そして、データにアクセスしているデータを取得するとき、それはすでに暗号化されています
+
+同様にトランジット。
+
+これがデータセンターのプロパティの一部です。
+
+6月20日19日の時点で、これは20 18の地域でした。
+
+しかし、今ではさらに多くの地域があります。
+
+ゾーンリージョンは場所のデータセンターであるため、これでいいのです。
+
+そうでなければ、次の講義に移ることができます。
+
+それがネットワークであり、プレゼンスを指し示します。

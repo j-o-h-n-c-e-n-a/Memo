@@ -1,0 +1,547 @@
+So let's go ahead and create one instance and it I was in say to google and google spanner
+
+and go to database storage and compute So here I am and spammer
+
+I had continued the spammer like me word on daily is not required.
+
+OK.
+
+And that's where you can get things done.
+
+So let's go and stand for instance.
+
+So you need to provide the name for the spanner and then society will be seen unless you want to go
+
+in and change it and just keeping it scene.
+
+And then you see like the configuration we really want to actually store you or instance.
+
+Let me put you a central west and the north let me put the north here and then it will show you know
+
+what North or whatnot cost will be.
+
+And what is the storage cost.
+
+And there are guidelines which are given here let me just explain this one.
+
+So if you want Actually the Pope moments from the spanner put a particular optimal level than you.
+
+I didn't know or know what it is going to give you 10000 copies queries per second.
+
+Considering one kilobyte put a record.
+
+And that's the cupie is for each you know.
+
+Or do you have it for weeks and 2000 years for for years or so if you go ahead and say put forward a
+
+one here then it is going to give your 10000 Cupie is for your ears if you are changing it to say three
+
+it is going to use you 30000 croupiers for you or Rieves.
+
+And similarly you know it is multiply in a similar context with the 2000 comperes But you're right you
+
+want to actually look for optimal utilization of utilization and all that but it is recommended that
+
+you should not go beyond 75 percent minimum three naughties recommended but you can go and create.
+
+Start with one or two as well for the development.
+
+So there is a note here with cells that are close to a number of Homans is highly dependent on the workload
+
+schema design and the data.
+
+I know that that's characteristics of performance numbers are both estimates as humans the best practices
+
+are followed so you want to keep this in mind.
+
+I will go ahead and create another lecture to explain how you can increase performance of your queries
+
+and considering all those best practices have followed but not in this particular IBM or the lecture.
+
+Additional information which you will get is no cost.
+
+So there are three or so it is showing me 2.7.
+
+If I say one then it will reflect your price for me and create ignored and then create.
+
+So this is going to create an instance.
+
+Remember Ken
+
+no more resources are available in the instance config and they'll be gone.
+
+OK.
+
+Believe me go ahead
+
+Eric.
+
+Let me go ahead and pull the sticky as well because we can try some come ons from here.
+
+Still creating We can wait for that instance to be cleared.
+
+Still getting cleared.
+
+You can see there is so Spanoulis I think still can be tough.
+
+As I'm creating this one let me use that to take our partner instant service list OK right here.
+
+They should be showing one.
+
+Yeah.
+
+So it is really it is showing one.
+
+Let me go inside.
+
+And then once you have the infrastructure ready for you to use it you can go in and create our database
+
+and the database which I'm creating now is the cloud.
+
+Cleaning B.V.
+
+you know will continue.
+
+So I can go out and are there people right now you need to work I can just go out and say create
+
+Let me go badly here.
+
+So Google's crowner
+
+database you can see what I want and I want to list that and for my instance so this is a part ometer
+
+believe me put without instances.
+
+OK.
+
+Now he wanted to use
+
+so ask for
+
+OK.
+
+So it is Neots instance which instance I'm talking about.
+
+So I've been I've been instance equal to
+
+you in this particular instance name
+
+so that it is really OK it's really now we just
+
+use the day that I was here.
+
+You can actually go out and create table here from your heart.
+
+You can just Corti let me put some queries here.
+
+I want to actually copy pasted other than typing.
+
+I did think the same example which we helped create here which we discussed earlier.
+
+Hold on.
+
+I'm actually running inside the query.
+
+I should go to the definition table definition in there.
+
+I need to create table
+
+in that text.
+
+You can put the create table clearly here.
+
+For instance can not be pounde
+
+why it is giving me this distance.
+
+Create
+
+onto
+
+OK.
+
+So it has created it all really.
+
+So that's really real.
+
+C'mon you need to keep that in the mind real command and Sylhet Cordys where the commands are different.
+
+So no it isn't.
+
+So that's the schema.
+
+And then you can again file come on to create the access
+
+I don't know.
+
+I think you've discussed some data
+
+and then it is clear me no problem.
+
+Is continuously asking me questions since
+
+I am in D.M. training and it is saying this instance is wrong.
+
+Poking.
+
+It is all really create a singer and this is the
+
+this is the key.
+
+So does that let us go and understand our missions or is it they will KMA you can delete the bill.
+
+Q Well indeed I definition language right.
+
+So this is the database where it is Dilley database and then you can go ahead and want to go to a particular
+
+instance.
+
+And if you'd like.
+
+So that gets updated frequently
+
+are done.
+
+So there are three Northlake let's call it.
+
+And modify the node instance I want by and large say
+
+insufficient notes in this particular location to
+
+so now it has reduced you not to to not and there is also only one particular table I think that's it
+
+for this particular I think conciliar will.
+
+Let's go ahead and put some come on the back and
+
+so you can actually go ahead and create
+
+instance in the back and what with the command.
+
+Once you create an instance I'm not going to create it.
+
+Once you create an instance you can actually list it.
+
+We already saw how you can actually strip at the same time you can create a database.
+
+So spanner and database create databases
+
+create
+
+say the cloud training too.
+
+And you need to provide instance instance location where he wanted to create the database.
+
+So let me just copy that or
+
+green
+
+ones you will
+
+be clear on either.
+
+It is like this one.
+
+OK.
+
+What paystub problem instance not found so that they are always say that that is for instance
+
+the cloud
+
+there is a Duyvil paintings you know one
+
+way that it was his creator.
+
+So let me go ahead and list that is
+
+for that particular instance
+
+and I should get to this
+
+that are two databases both of them are clearly and then Lakeway there are multiple commands which you
+
+if you want to work on google Flora spanner you want to check the scheme or design all of the components
+
+for either the cloud or Spanair comments on how you can what you can do it from the console and what
+
+you can do it from the console.
+
+Understood guys for at least for this introductory demo for spanner hope actually to create another.
+
+And once you can start with the old ones features or demo for spanner.
+
+Thank you.
+
+それでは、インスタンスを1つ作成して、グーグルとグーグルスパナーに言いました。
+
+データベースストレージとコンピューティングに移動しますここで私はスパマーです
+
+私のようなスパマーを続けていたので、毎日の言葉は必要ありません。
+
+OK。
+
+そして、それはあなたが物事を成し遂げることができる場所です。
+
+それでは、たとえば立ち上がってみましょう。
+
+あなたはスパナの名前を提供する必要があります
+
+でそれを変更し、シーンを維持します。
+
+そして、実際にあなたまたはインスタンスを保存したい設定のように見えます。
+
+中央の西と北を入れてみましょうここに北を入れてみましょう
+
+ノースまたはその他のコストはどうなりますか。
+
+そして、ストレージコストはいくらですか。
+
+そして、ここで与えられているガイドラインがありますが、これを説明します。
+
+あなたが望むなら、実際にスパナからの教皇の瞬間はあなたよりも特定の最適なレベルを置きます。
+
+1秒間に10000コピークエリを提供するかどうかは知りませんでした。
+
+1キロバイトを記録することを検討してください。
+
+そして、それはあなたが知っているそれぞれのためのキューピーです。
+
+または、何週間もの間、2000年もの間、それを持っていますか？
+
+ここに1つ、それはあなたが3と言うようにそれを変更している場合、それはあなたの耳のためにあなたの10000 Cupieを与えるつもりです
+
+それはあなたまたはRievesのために30000のディーラーを使用するつもりです。
+
+同様に、2000人の同業者と同様の状況でそれが増加することを知っていますが、あなたは正しいです
+
+実際に使用率の最適な使用率を探したいと思っていますが、
+
+推奨される最低3つのいたずらを75パーセント以上にしないでください。作成して作成できます。
+
+1つまたは2つの開発も開始します。
+
+そのため、いくつかのHomansに近いセルがワークロードに大きく依存しているという注意があります。
+
+スキーマ設計とデータ。
+
+それはパフォーマンスの数値の特性が人間としての推定値であり、ベストプラクティスであることを知っています
+
+従うので、これを覚えておいてください。
+
+クエリのパフォーマンスを向上させる方法を説明する別の講義を作成します
+
+これらのベストプラクティスはすべて順守しているが、この特定のIBMまたは講義ではそうではないことを考慮してください。
+
+あなたが得る追加情報は無料です。
+
+だから、3つほどあります。それは私に2.7を見せています。
+
+私が1つ言うなら、それは私のためにあなたの価格を反映し、無視して作成します。
+
+これでインスタンスが作成されます。
+
+ケンを覚えている
+
+インスタンス構成で使用可能なリソースがなくなると、それらのリソースはなくなります。
+
+OK。
+
+信じて
+
+エリック。
+
+ここからいくつか試してみることができるので、先に進んでスティッキーも引っ張ります。
+
+作成中そのインスタンスがクリアされるのを待つことができます。
+
+まだクリアされています。
+
+あなたがそこにいるのを見ることができますので、私はまだ厳しいと思うと思う。
+
+これを作成しているので、それを使用して、パートナーのインスタントサービスリストをここでOKにしましょう。
+
+彼らは1つを表示する必要があります。
+
+うん。
+
+だから、実際にそれを示しているのです。
+
+中に入りましょう。
+
+そして、インフラストラクチャを使用する準備ができたら、データベースにアクセスして作成できます
+
+そして私が今作成しているデータベースはクラウドです。
+
+クリーニングB.V.
+
+続けます
+
+だから外に出て、すぐに仕事をする必要がある人がいるよ
+
+ここでひどく行かせてください。
+
+だからグーグルのcrown冠者
+
+データベースは、私が欲しいものを見ることができ、それをリストしたいと思いますので、これはパートメーターです
+
+インスタンスなしで置くと信じています。
+
+OK。
+
+今、彼は使いたかった
+
+だからお願い
+
+OK。
+
+だから、私が話しているインスタンスはNeotsインスタンスです。
+
+だから、私はに等しいインスタンスされてきました
+
+この特定のインスタンス名で
+
+本当に大丈夫だから、今は本当に
+
+私がここにいた日を使用してください。
+
+実際に外に出て、ここからテーブルを作成できます。
+
+ここでいくつかのクエリを入力できます。
+
+タイピング以外の貼り付けを実際にコピーしたい。
+
+先ほど説明した、ここで作成したものと同じ例を考えました。
+
+つかまっている。
+
+私は実際にクエリ内で実行しています。
+
+そこにある定義テーブルの定義に行きます。
+
+テーブルを作成する必要があります
+
+そのテキストで。
+
+ここに作成テーブルを明確に配置できます。
+
+たとえば、砲撃することはできません
+
+なぜそれが私にこの距離を与えているのか。
+
+作成する
+
+上に
+
+OK。
+
+本当にすべてを作成しました。
+
+それは本当に本当です。
+
+覚えておく必要があるのは、実際のコマンドと、コマンドが異なるSylhet Cordysを心に留めておくことです。
+
+そうではありません。
+
+これがスキーマです。
+
+そして、あなたは再びファイルを作成してアクセスを作成することができます
+
+知りません。
+
+あなたはいくつかのデータについて議論したと思います
+
+そして、それは私に問題がないことは明らかです。
+
+以来私に質問を続けています
+
+私はD.M.にいますこのインスタンスは間違っていると言っています。
+
+突く。
+
+それは本当に歌手を作成することであり、これは
+
+これが鍵です。
+
+だから、それは私たちの使命を理解させてくれますか、それとも彼らはあなたが法案を削除できるKMAになりますか？
+
+Q確かに、私は言語を正しく定義しています。
+
+したがって、これはDilleyデータベースであるデータベースであり、特定の場所に移動することができます。
+
+インスタンス。
+
+必要に応じて。
+
+それは頻繁に更新されます
+
+完了です。
+
+ノースレイクは3つあります。
+
+そして、私が望むノードインスタンスを変更します
+
+この特定の場所での不十分なメモ
+
+だから今ではないようにあなたを減らしており、特定のテーブルも1つしかありません
+
+この特定のために私は公会議の意志だと思います。
+
+先に進んで、いくつかを後ろに置いて、
+
+実際に先に進んで作成できます
+
+後ろのインスタンスとコマンドで何。
+
+インスタンスを作成したら、それは作成しません。
+
+インスタンスを作成したら、実際にリストできます。
+
+データベースを作成できると同時に、実際にストリップする方法をすでに見ました。
+
+したがって、スパナとデータベースはデータベースを作成します
+
+作成する
+
+クラウドトレーニングも言います。
+
+また、データベースを作成するインスタンスインスタンスの場所を指定する必要があります。
+
+それで、それをコピーするか、
+
+緑
+
+あなたがするもの
+
+どちらかを明確にしてください。
+
+こんな感じです。
+
+OK。
+
+ペイスタブ問題のインスタンスが見つからないため、常にインスタンスであると言われる
+
+クラウド
+
+あなたが知っているDuyvilの絵があります
+
+それが彼の創造者であった方法。
+
+だから私は先に行こう
+
+その特定のインスタンス
+
+そして私はこれに到達する必要があります
+
+それは両方とも明らかに2つのデータベースであり、レイクウェイには複数のコマンドがあります
+
+Google Floraスパナで作業したい場合は、スキームを確認するか、すべてのコンポーネントを設計します
+
+クラウドまたはSpanairのいずれかについて、コンソールから何ができるか、そして何ができるかについてコメントします
+
+コンソールから実行できます。
+
+少なくともこのスパナの入門デモでは、実際に別のものを作成したいと考えている人たちを理解していました。
+
+そして、一度古い機能やスパナのデモから始めることができます。
+
+ありがとうございました。

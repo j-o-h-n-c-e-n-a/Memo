@@ -1,0 +1,259 @@
+So as a what do we what we learn so we learn that you can create you know the Google Cloud Platform
+
+account if you have a G.M. account you can use that and you can log into Google Cloud Platform you will
+
+get three hundred dollar created which you can use it to purchase order and I would say the cloud services
+
+on Google Cloud Platform.
+
+We have gone through the console cloud console.
+
+We went to understand about regions zones and let us enter.
+
+So what we understand is regions that geographical locations divide addition I would say but the zones
+
+are the data centers are the physical location that's where your services are deployed.
+
+We have seen the network backbone the first part was what is what what are the fiber optic cables which
+
+lead by Google and one by Google.
+
+And there are submarine cable investments which Google has made with other companies.
+
+Then we saw there are pop locations all age locations we are in Ukraine go ahead and connect your data
+
+center and there are some Syrian locations that's where your data can be cached static data can be cached
+
+to increase the performance or to deliver the content content to the customer in a faster manner.
+
+We have seen high level services and how you can do it.
+
+We have seen what are the interfaces and the first one was called Cloud console.
+
+Second one was to cloud Commander C. allies and the third one was your application program interface
+
+like APIs which you can use it to create launch or use google cloud services.
+
+And the next we saw this is one level down the project how you can organize the resources in a nutshell.
+
+The project is the container for all your cloud resources you can create multiple projects inside one
+
+account and then there is a resource hierarchy and how you can related to the project.
+
+There is an organization that is a departments which is like folder in Du suite and then when it starts
+
+with a project that's where it is a scoop up Google flour platform building icons we saw and we knew
+
+and set up the alerts on the billing account.
+
+You can have multiple billing accounts which you can add it to the project but at the one point in time
+
+there is only one billing account active for a project for your bills visa quotas and limits of which
+
+court can be extended but the limits cannot limit sort of you can think of these.
+
+These are the limitation of cloud platform which you cannot extend it.
+
+We did not look at the pricing estimation.
+
+We saw rules commissions User Group and Resource Service account.
+
+So the pricing and estimation I'll just go back here and I can show you
+
+you know there are multiple ways you can identify pricing so while this is getting ready let me go ahead
+
+and show you pricing calculator
+
+you just such pricing calculator Google Cloud Platform
+
+and you will be able to identify the pricing are kind of estimation for your pricing.
+
+I would say production any of those much in class regular auditorium table we are waiting to see the
+
+difference in subsequent lectures.
+
+I want to use journo purpose and there are different machine types which you can use it.
+
+I said this one if I need SSD I can save Wan at the estimate so it is giving me an estimation for your
+
+Washington machine.
+
+Okay.
+
+And there is a sustained use discount if at all you use it for use it for complete one hour of when
+
+one month
+
+let's see if it is ready I think it is getting ready
+
+so that eBay is ready and I can go in and create now the VM.
+
+OK so if I click on this one and if I look in here.
+
+OK so there is a 24 dollar monthly estimate which I can see it.
+
+And based on the type of machine you choose it you know your monthly estimate get changed.
+
+OK so you can get these kind of estimation as well in some of the services but in a nutshell you can
+
+use pricing calculator to estimate your storage estimate your cloud services.
+
+I say 500 GBC if I'm going to stay there and then I want to
+
+I can see estimate me for this one so five hundred rupees.
+
+The charge is fifteen dollars.
+
+Okay so that's said guys.
+
+A somebody we have seen identity and access management and we have seen service account as well.
+
+So this this is all over with.
+
+So just getting you to the place where we can start discussing about individual services and we'll start
+
+with the compute engine of the compute platform as such but this will give you high level understanding
+
+on the Google Cloud Platform console.
+
+We are going to see some of the some of the interfaces before we head towards the actual creation of
+
+compute resources as an example.
+
+Cloud is sticking right and a cloud shield.
+
+All of those will get into it.
+
+We'll understand that and then we'll jump on to the computing platform.
+
+Thank you.
+
+Google Cloud Platformを知っているあなたが作成できることを学ぶために、私たちが学ぶことは何をするのか
+
+G.M.をお持ちの場合はアカウントそれを使用できるアカウントで、Google Cloud Platformにログインできます
+
+300ドルを作成し、それを使用して注文を発注できます。クラウドサービス
+
+Google Cloud Platformで。
+
+コンソールクラウドコンソールを使用しました。
+
+私たちは地域のゾーンについて理解しに行きました。
+
+私たちが理解しているのは、地理的な場所が追加を分割する地域です
+
+データセンターは、サービスが展開される物理的な場所です。
+
+ネットワークのバックボーンを見てきました。最初の部分は、光ファイバケーブルとは何か、
+
+Googleがリードし、Googleがリードします。
+
+また、グーグルが他社と行った海底ケーブルへの投資もあります。
+
+それから、私たちがウクライナにいるすべての年齢の場所が先に行き、あなたのデータを接続するポップな場所があるのを見ました
+
+中央にあり、データをキャッシュできるシリアの場所がいくつかあります静的データをキャッシュできます
+
+パフォーマンスを向上させるため、またはコンテンツコンテンツをより速く顧客に配信するため。
+
+高レベルのサービスとその方法を見てきました。
+
+インターフェースとは何かを見てきましたが、最初のインターフェースはクラウドコンソールと呼ばれていました。
+
+2番目はCommander C.同盟国をクラウド化することで、3番目はアプリケーションプログラムインターフェイスでした。
+
+起動の作成やGoogleクラウドサービスの使用に使用できるAPIなど。
+
+そして次に見たのは、プロジェクトの1レベル下で、リソースを簡単に整理する方法です。
+
+プロジェクトはすべてのクラウドリソースのコンテナであり、1つの内部に複数のプロジェクトを作成できます
+
+アカウントを作成すると、リソース階層とプロジェクトへの関連付け方法があります。
+
+Duスイートのフォルダーのような部門である組織があり、それが開始されると
+
+私たちが見たアイコンを構築するGoogle小麦粉プラットフォームのスクープであるプロジェクトで、私たちは知っていました
+
+請求先アカウントでアラートを設定します。
+
+複数の請求先アカウントを作成して、プロジェクトに追加できますが、1つの時点で
+
+請求書ビザの割り当てと制限のプロジェクトに対してアクティブな請求先アカウントは1つだけです
+
+裁判所は延長することができますが、これらの制限を考えることであなたの種類を制限することはできません。
+
+これらはクラウドプラットフォームの制限であり、拡張することはできません。
+
+価格の見積もりは見ていません。
+
+ルールコミッションのユーザーグループとリソースサービスアカウントを見ました。
+
+価格と見積もりについてはここに戻って説明します
+
+価格を特定する方法は複数あるので、準備ができている間に先に進みましょう
+
+価格計算ツールを表示します
+
+あなただけの価格計算機Google Cloud Platform
+
+また、価格設定が価格設定の推定の一種であることを識別することができます。
+
+私は私たちが見るのを待っているクラスの通常の講堂のテーブルでそれらのどれかを生産すると言います
+
+その後の講義の違い。
+
+journoの目的を使用したいのですが、使用できるマシンの種類はさまざまです。
+
+SSDが必要な場合はこれを言ったので、見積もりでワンを節約できるので、
+
+ワシントンマシン。
+
+はい。
+
+そして、使用するために1時間使用した場合、継続使用割引があります
+
+一か月
+
+準備ができているかどうか見てみましょう
+
+eBayの準備が整い、今すぐVMを作成できます。
+
+これをクリックして、ここを見るとわかりました。
+
+わかりましたので、私はそれを見ることができる24ドルの毎月の見積もりがあります。
+
+そして、選択したマシンのタイプに基づいて、毎月の見積もりが変更されることを知っています。
+
+わかりましたので、いくつかのサービスでこれらの種類の見積もりを取得できますが、簡単に言えば、
+
+料金計算ツールを使用して、ストレージの見積もりをクラウドサービスに見積もります。
+
+そこに留まるつもりなら500 GBCと言います
+
+私はこれを500ルピーと見積もることができます。
+
+料金は15ドルです。
+
+わかりましたので、それはみんな言った。
+
+IDとアクセスの管理を見た人、サービスアカウントも見た人。
+
+これで終わりです。
+
+個々のサービスについて話し合うことができる場所にあなたを連れて行くだけで、私たちは始めます
+
+コンピューティングプラットフォームのコンピューティングエンジン自体を使用しますが、これにより高度な理解が得られます
+
+Google Cloud Platformコンソールで。
+
+実際の作成に向かう前に、いくつかのインターフェースをいくつか見ていきます。
+
+例として計算リソース。
+
+雲は正しく付着しており、雲の盾です。
+
+それらのすべてがそれになります。
+
+それを理解してから、コンピューティングプラットフォームにジャンプします。
+
+ありがとうございました。

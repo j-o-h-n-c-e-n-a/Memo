@@ -1,0 +1,600 @@
+Denmark it's a mining farming heavy equipment company.
+
+OK so they have given a company or view.
+
+And the problem segment the company's heavy equipment company and agricultural run 20 percent mining
+
+is around 80 percent with 500 dealers and 100 countries since 1946.
+
+There are or 20 million diorama vehicles in operation that collect 150 fields of data per second data
+
+is stored locally on the vehicle and can be accessed for analysis when the vehicle is serviced in in
+
+the station.
+
+The data is download environment and in sport.
+
+This the same port can be used to adjust operational parameters allowing vehicles to upgrade in the
+
+field with the new computing model.
+
+Approximately 200000 vehicles are connected via cellular network allowing their armor to collect data
+
+directly at the rate of 120 fields.
+
+Data per second with 22 hours all operations party data mart collect around nine terabytes of data from
+
+these connected vehicles.
+
+Problem statement.
+
+There are more the existing architecture is composed of planets by a system that resides.
+
+Data Center.
+
+These systems.
+
+Joseph see as we file.
+
+So because that data comes in Joseph and applause Why MPP and then transform aggregate them in different
+
+places on the warehouses.
+
+Because this process takes longer time aggregated reports are based.
+
+That is three weeks old.
+
+So they are not current in the report with the data.
+
+Armor has been able to preemptively stock replacement parts reduce unplanned downtime by 60 percent.
+
+However because of the data is stale because it is three weeks old the customers are without the vehicle
+
+for up to four weeks for the replacement part.
+
+There are business requirements that decrease unplanned vehicle downtime less than one week without
+
+increasing the cost stop carrying surplus inventory and if you look at the current one is four weeks
+
+now they want to reduce it to one week support the dealer network with more data on how customers use.
+
+Equipment to water better position new products and services.
+
+How ability to partner with different companies especially to speed of fertilizers seed fertilizers
+
+in fast growing agricultural business to create compelling joint offerings for the customers see your
+
+statement.
+
+We have been able to successfully capitalizing on the trend towards the larger vehicle to increase productivity
+
+of the customer.
+
+Technological changes are occurring rapidly.
+
+Data mart has taken advantage of connected devices technology to provide customer with the better services
+
+such as intelligent farming equipment and all that.
+
+So if you look at the case studies says they want to go connected devices more and more connected devices
+
+so that they can collect the data and then think they can massage the data put some machine learning
+
+algorithms and then identify their maintenance coming in for those we call and identify if they can
+
+optimize the manufacturing process identify if they can a friend tell customer that you are going to
+
+need the maintenance in a week Expedia rate.
+
+So all of that is those that at one stage are connected devices connected.
+
+All these machines together and then providing unified view on what is happening CEOs from the technical
+
+background is a competitive advantage has always been a manufacturing process with our ability to better
+
+vehicle for lower cost than other competitors.
+
+How we were the new products and different approaches are constantly being developed and I am concerned
+
+that we lack of skill to undergo next fuel transformation in the industry.
+
+Unfortunately this year doesn't take technology absolutely seriously and he considers mainly new companies
+
+in our industry to be a niche player.
+
+My goal here is to build our skills while addressing immediate market needs through incremental innovation
+
+so as is infrastructure there is no hardware section specification given everything is in the datacenter
+
+but we have size around 200 key vehicle connectors since data processing.
+
+Second around 150 of fields for 22 hours which is like 9 terabytes per day weekly it is going to become
+
+sixty three terabytes aggregated reduced to 5 percent of its total data.
+
+You can think of.
+
+If you aggregate that data it will be reduced to 5 percent to come up with analysis right.
+
+Major problems long term to process the data which is three weeks and then around 40 percent of the
+
+customer wait to get there for it to be discovered.
+
+So all of these are like understanding about the case studies and which you need to understand before
+
+you provide solution.
+
+Okay I'll move forward to the next case study which is best for when and dress for women is typically
+
+it is a Web based company that helps users to organize and manage their personal wardrobes using Web
+
+site and mobile application.
+
+The company also cultivates active social network user and designers retailers they monetize their service
+
+using advertising e-commerce referrals and premium App Model.
+
+Problem segment is for when application has grown from purely a search was in to founders garbage to
+
+a several hundred words applications in co-located data center.
+
+Over the capacity of the infrastructure is now insufficient for application rapid growth because of
+
+this growth the company desire to innovate faster brace for when committing to full migration to a public
+
+cloud.
+
+And this is this is you know very important for you to understand as a problem statement.
+
+The solution for the first phase of the migration the cloud is for when he's considering moving their
+
+development and test environment into the cloud and not the production.
+
+They're also considering building disaster site records head because their current infrastructure is
+
+at a single location.
+
+They're not sure which component of their architecture which they can migrate.
+
+And we need to understand the current components of the physical components of those and we'll do it
+
+business requirement build a reliable reproducible environmental scaled parity of production improve
+
+security by defining editing to set up security and identify hiding identity and access management best
+
+practices for cloud improve the business agility speed up innovation through rapid provisioning new
+
+resources analyze and optimize architecture for performance in the cloud migrate fully to the cloud.
+
+If all the requirements are met and then technical requirements you wait and choose at the Mission framework
+
+provisioning resources support failure in production to the cloud during the emergency.
+
+Identify products and services that can migrate to the cloud save capacity use managed services whenever
+
+possible encrypt the data on the wire as well at that rate.
+
+This means that the transit and device support multiple VPN connection between production data center
+
+and the cloud environment some of the statement which are most relevant because these are the people
+
+who gives money or funding or approve the funding right.
+
+Investors are concerned about our ability to scale and contain cost with our current infrastructure.
+
+They are also concerned that the new competitor would use public cloud platform to offset their upfront
+
+investment and freeing up them from focusing developing better future.
+
+And this is very important.
+
+Like competitor sardine without worrying about the physical infrastructure and all those problems right.
+
+They want to use public cloud to expand the business and they want to only focus on the business and
+
+not on the idea.
+
+Instead we have invested heavily in current infrastructure and that is the city or a statement.
+
+But much of the equipment is approaching the end up its useful life which is usually you can think of
+
+five years.
+
+We are constantly waiting weeks to new gear to be the act before we can start a new project.
+
+Our traffic patterns are highest in the morning and we in weekend evenings during that time 80 percent
+
+of the capacity is sitting idle and this is where you can think of auto scaling can be used from the
+
+cloud.
+
+CFO statement capital expenditure is now exceeding quarterly projections migrating to the cloud.
+
+Likely cause an initially increasing spending but we expect full transition before the next hardware
+
+refresh cycle.
+
+Our total cost of ownership city this year is analysis over five years with the cloud strategy should
+
+reduce to a 30 to 50 percent lower than the current model.
+
+And why why these guys are saying that you need to understand this because you know if you are setting
+
+up your own data center right you need to procure the hardware in advance if at all you are kicking
+
+up new projects and you are expecting additional traffic you need to make sure that the sufficient hardware
+
+is stacked up stacked up and software Italian started before you are using it for your own purpose and
+
+this cycle actually it's fatty bulky cycle which people are using it.
+
+If you are very big corporate and you have no backup hardware backup software then you are least bothered
+
+about it.
+
+But when the when the cost and profits start cutting age you need to make sure that you are spending
+
+it wisely.
+
+If you are in your cloud resources usage go high that means there are definitely associated revenue
+
+which is coming into your company and you can spend for that high spike.
+
+You can spend some money out of it.
+
+So as CTO said mornings and weekends are like only the busy time otherwise that the capacity just 80
+
+percent.
+
+And if you are using this into your own data center you need to make sure that you broke your hardware
+
+for all you know these mornings and weekends for all the time.
+
+So you are saving some cost there if at all you use auto scaling and use you know the reduce scale down
+
+the resources when you are not using it.
+
+There are some hardware specifications which is given by them.
+
+I'm not going in details but what I want to tell you is you need to make sure that you understand the
+
+problems right as a cloud architect and then you are providing the solution and the solution could be
+
+any component.
+
+Are the solutions.
+
+Whether it is purely a public cloud or it's a hybrid environment.
+
+Looking at the looking at their pain it gets late so you need to come up with the solution.
+
+And my goal throughout this particular training is to give you enough information so that you can choose
+
+the right solution.
+
+Or I would say the best possible solution from our context to these companies right.
+
+So keep that in mind we are going to create the solution out of our learning about the cloud services
+
+are core services throughout this training session end of the training session you will find the best
+
+possible approach Yes I would say one of the best possible approaches as a solution which we will discuss
+
+and explain and then you can probably if you have any questions you can send us back.
+
+There was another case study which is which was joint command parties kept out of the scope.
+
+I think it's been one year now they have just scoped it out but I'm going to discuss Gen command as
+
+well.
+
+End of this particular training because it will just give you additional thought around the case study
+
+additional how you can solution solution for joint command as well.
+
+But anyway guys this is what we are going to do.
+
+We are going to learn core services we are going to learn the case studies and we are going to solution
+
+these case studies what we think as the best possible solution.
+
+
+デンマークは、鉱山農業の重機会社です。
+
+わかりましたので、彼らは会社またはビューを与えました。
+
+そして問題は、同社の重機会社と農業経営20％のマイニングをセグメント化します
+
+1946年以降、500のディーラーと100か国で約80パーセントになります。
+
+1秒あたり150フィールドのデータを収集するジオラマ車両が稼働しています
+
+車両にローカルに保存されており、車両の整備時に分析のためにアクセスできます
+
+駅。
+
+データはダウンロード環境とスポーツです。
+
+これと同じポートを使用して動作パラメータを調整し、車両を
+
+新しいコンピューティングモデルを持つフィールド。
+
+約20万台の車両が携帯電話ネットワークで接続されており、装甲でデータを収集できます
+
+120フィールドのレートで直接。
+
+すべてのオペレーションパーティデータマートから22時間の1秒あたりのデータは、約9テラバイトのデータを収集します
+
+これらの接続された車両。
+
+問題文。
+
+既存のアーキテクチャは、存在するシステムによって惑星で構成されています。
+
+データセンター。
+
+これらのシステム。
+
+ジョセフは私達がファイルするのを見る。
+
+そのため、そのデータはジョセフから届き、拍手してMPPを選択し、それを変換して別の
+
+倉庫に置きます。
+
+このプロセスには時間がかかるため、集約されたレポートはベースになります。
+
+それは3週間前です。
+
+したがって、それらはデータを含むレポートでは最新ではありません。
+
+アーマーは、予備部品を事前に在庫交換することで、予定外のダウンタイムを60％削減できました。
+
+ただし、データは3週間前のものであるため、データは古くなっています
+
+交換部品の場合は最大4週間。
+
+計画外の車両のダウンタイムを1週間未満に短縮するビジネス要件があります。
+
+余剰在庫の持ち込みを停止し、現在の在庫を見ると4週間です
+
+今では、顧客がどのように使用するかについてのより多くのデータでディーラーネットワークをサポートするためにそれを1週間に減らしたいと考えています。
+
+水を供給するための機器は、新しい製品やサービスをより適切に配置します。
+
+特に肥料のスピードを上げるために異なる企業と提携する能力種子肥料
+
+急速に成長している農業ビジネスで、顧客に魅力的な共同提供を作成します
+
+ステートメント。
+
+生産性を向上させるために、より大型の車両に向かう傾向をうまく利用することができました。
+
+顧客の。
+
+技術的な変化は急速に起こっています。
+
+データマートは、接続されたデバイステクノロジーを利用して、より良いサービスを顧客に提供しています
+
+インテリジェントな農業機器などすべて。
+
+ケーススタディを見ると、接続されたデバイスをどんどん増やしたいと言っています
+
+データを収集し、データをマッサージして機械学習を行えると考えるように
+
+アルゴリズムを呼び出して、呼び出したもののメンテナンスを特定し、可能な場合は特定します
+
+製造プロセスを最適化して、友人があなたに行くことを顧客に伝えることができるかどうかを特定する
+
+1週間のExpedia料金でメンテナンスが必要です。
+
+したがって、それはすべて、ある段階で接続されたデバイスであるものです。
+
+これらすべてのマシンが一緒になり、技術者からCEOに何が起こっているかについての統一されたビューを提供します
+
+背景は競争上の優位性であり、常により良い能力を持つ製造プロセスでした
+
+他の競合他社よりも低コストの車両。
+
+私たちがどのように新製品であり、さまざまなアプローチが常に開発されているのか心配です
+
+業界で次の燃料転換を行うスキルが不足していること。
+
+残念なことに、今年はテクノロジーをまったく真剣に考えていないため、主に新しい会社を考えています
+
+私たちの業界では、ニッチなプレーヤーになるために。
+
+ここでの私の目標は、漸進的なイノベーションを通じて、当面の市場ニーズに対応しながらスキルを向上させることです
+
+インフラストラクチャと同様に、すべてがデータセンターにある場合、ハードウェアセクションの仕様はありません
+
+しかし、データ処理以来、約200の主要車両コネクタのサイズがあります。
+
+2番目は約150フィールドの22時間で、これは1週間に1日9テラバイトのようになります
+
+総計63テラバイトが、総データの5％に減少しました。
+
+あなたが考えることができます。
+
+そのデータを集計すると、分析を正しく行うために5％に削減されます。
+
+主要な問題は、3週間のデータを処理するために長期間、その後の約40％
+
+お客様はそれが発見されるのを待ちます。
+
+したがって、これらはすべて、ケーススタディについての理解に似ており、事前に理解する必要があります。
+
+ソリューションを提供します。
+
+さて、次のケーススタディに進みます。これは、女性の服装が一般的な場合に最適です
+
+ユーザーがWebを使用して個人のワードローブを整理および管理するのを支援するWebベースの会社
+
+サイトおよびモバイルアプリケーション。
+
+同社はまた、彼らが彼らのサービスを収益化するアクティブなソーシャルネットワークユーザーとデザイナー小売業者を養います
+
+広告eコマースの紹介とプレミアムアプリモデルを使用します。
+
+問題セグメントは、アプリケーションが単なる検索からファウンダーガベージまでに成長したときのためのものです。
+
+同じ場所にあるデータセンターの数百ワードのアプリケーション。
+
+インフラストラクチャの容量を超えているため、アプリケーションの急速な成長には不十分です。
+
+この成長により、企業は一般への完全な移行を約束する際に、より迅速な装具の革新を望んでいます。
+
+雲。
+
+これは、問題文として理解するために非常に重要であることがわかっていることです。
+
+クラウドの移行の第1フェーズのソリューションは、クラウドの移行を検討している場合に適しています
+
+運用環境ではなく、クラウドへの開発およびテスト環境。
+
+現在のインフラストラクチャは
+
+単一の場所で。
+
+アーキテクチャのどのコンポーネントを移行できるかはわかりません。
+
+そして、それらの物理的なコンポーネントの現在のコンポーネントを理解する必要があります。
+
+ビジネス要件により、信頼性の高い再現可能な環境スケールの生産パリティを構築
+
+編集を定義してセキュリティを設定し、非表示のIDとアクセス管理を最適に識別することによるセキュリティ
+
+クラウドのプラクティスにより、ビジネスの俊敏性が向上し、迅速なプロビジョニングによりイノベーションがスピードアップ
+
+リソースは、クラウドのパフォーマンスのためにアーキテクチャを分析および最適化し、クラウドに完全に移行します。
+
+すべての要件が満たされ、その後技術要件が満たされたら、ミッションフレームワークで待って選択します。
+
+プロビジョニングリソースは、緊急時のクラウドへの運用の失敗をサポートします。
+
+クラウドに移行できる製品とサービスを特定し、いつでも管理サービスを使用して容量を節約
+
+可能であれば、そのレートでワイヤ上のデータを暗号化します。
+
+これは、トランジットとデバイスが本番データセンター間の複数のVPN接続をサポートすることを意味します
+
+そしてクラウド環境は、これらが人々であるため、最も関連性のある声明の一部
+
+資金や資金を提供したり、資金の権利を承認したりする人。
+
+投資家は、現在のインフラストラクチャでコストを調整し、抑える能力に懸念を持っています。
+
+また、新しい競合他社がパブリッククラウドプラットフォームを使用して前払いを相殺することも懸念しています。
+
+投資し、より良い未来の開発に集中することから解放します。
+
+これは非常に重要です。
+
+競合他社のイワシのように、物理的なインフラストラクチャとそれらすべての問題を心配することなく。
+
+彼らはパブリッククラウドを使用してビジネスを拡大したいと考えています。
+
+アイデアではありません。
+
+代わりに、現在のインフラストラクチャに多額の投資を行っており、それが都市または声明です。
+
+しかし、機器の多くは耐用年数の終わりに近づいています。
+
+5年。
+
+私たちは、新しいプロジェクトを開始する前に、常に新しいギアが機能するのを数週間待っています。
+
+私たちのトラフィックパターンは午前中が最も高く、週末の夕方は80％です
+
+容量のアイドル状態になっており、ここから自動スケーリングを使用できると考えることができます
+
+雲。
+
+CFOステートメントの設備投資は、クラウドへの移行が四半期ごとの予測を超えています。
+
+当初は支出が増加する可能性が高いが、次のハードウェアの前に完全に移行する予定
+
+更新サイクル。
+
+今年の総所有コストの都市は、5年間にわたるクラウド戦略の分析です
+
+現在のモデルよりも30〜50％低くなります。
+
+そして、なぜこれらの人があなたがこれを理解する必要があると言っているのか
+
+独自のデータセンターを構築するためには、キックする場合は事前にハードウェアを調達する必要があります
+
+新しいプロジェクトを立ち上げ、追加のトラフィックを期待しているので、十分なハードウェアを確保する必要があります
+
+あなたがあなた自身の目的のためにそれを使用する前に積み重ねられ、ソフトウェアイタリア語が開始された
+
+このサイクルは実際、人々がそれを使用している脂肪質のかさばるサイクルです。
+
+あなたが非常に大企業であり、バックアップハードウェアバックアップソフトウェアがない場合、あなたはあまり気になりません
+
+それについて。
+
+しかし、コストと利益が年齢を切り始めたとき、あなたが費やしていることを確認する必要があります
+
+それは賢明です。
+
+クラウドリソースの使用率が高い場合は、必ず関連する収益があることを意味します
+
+あなたの会社に来て、あなたはその高いスパイクに使うことができます。
+
+あなたはそれからいくらかのお金を使うことができます。
+
+CTOによると、朝と週末は忙しい時間のようなものです。
+
+パーセント。
+
+そして、これを自分のデータセンターで使用している場合は、ハードウェアを壊したことを確認する必要があります
+
+あなたはこれらの朝と週末をいつも知っています。
+
+したがって、自動スケーリングを使用し、縮小スケールダウンを知っている場合は、そこにいくつかのコストを節約しています
+
+使用していないときのリソース。
+
+それらによって与えられるいくつかのハードウェア仕様があります。
+
+私は詳細には行きませんが、あなたに伝えたいのは、あなたが理解していることを確認する必要があるということです
+
+クラウドアーキテクトとしての問題を解決し、ソリューションを提供している場合、ソリューションは
+
+任意のコンポーネント。
+
+ソリューションです。
+
+純粋にパブリッククラウドであるか、ハイブリッド環境であるか。
+
+彼らの痛みを見ると見るのが遅くなるので、解決策を考え出す必要があります。
+
+このトレーニング全体の私の目標は、あなたが選択できるように十分な情報を提供することです
+
+適切なソリューション。
+
+それとも、これらの企業に対する当社の文脈から可能な限り最良の解決策と言えます。
+
+クラウドサービスに関する学習からソリューションを作成することを念頭に置いてください
+
+このトレーニングセッション全体のコアサービスです
+
+可能なアプローチはい、私たちが議論する解決策として可能な限り最良のアプローチの1つと言えます
+
+説明してください。質問がある場合は、お送りください。
+
+別のケーススタディがあり、これは共同司令部が範囲外に置かれたものです。
+
+私はそれがちょうど1年になったと思う、彼らはちょうどそれを範囲外にしたが、私はGenコマンドについて議論するつもりだ
+
+上手。
+
+この特定のトレーニングの終了
+
+共同コマンドのソリューションを解決する方法も追加します。
+
+しかし、とにかくこれは私たちがやろうとしていることです。
+
+コアサービスを学習し、ケーススタディを学習し、ソリューションを作成します
+
+これらのケーススタディは、私たちが最良の解決策と考えるものを研究しています。

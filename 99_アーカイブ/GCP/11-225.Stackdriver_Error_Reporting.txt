@@ -1,0 +1,455 @@
+Strength over the reporting.
+
+You can identify understand your application.
+
+So what it does straggler level the reporting actually allow you to take it out and monitor it separately
+
+than any other logs.
+
+And so that you can take actions if there are any problems in the applications so you can handle real
+
+time exceptions and monitoring and alert.
+
+You can have instant messages in the form of mail or emails.
+
+Right.
+
+You can quickly understand together looking at Data's details in email or in the dashboard.
+
+It supports almost all the popular language with which are available and it is estimated again on most
+
+real time.
+
+So you can see that real time so features real time processing you can do aggregation you can do filtering
+
+you can get the error detail you can analyze stack trace exploration analysis also you can put forward
+
+alerts on the errors you can issue error track or ingestion you have mobile application in which you
+
+can monitor the errors and it is really easy to set up it is designed for app engine but it can be configured
+
+for other applications like easy to GC based on the API is a typical form of error reporting is like
+
+occurrence the number of occurrence it had happened the time range the user either seen in first scene
+
+last seen status and all of that information you can think of what is required for you to understand
+
+what is the problem inside the system which application is impacted how many how much time it has been
+
+since there was same rate if you want to enable data for energy use application you just need to go
+
+to this particular link and understand what it is that you want to do it but I'll show you these steps
+
+right now you need to enable strict driver error reporting API to have this information available to
+
+you and for that you can go here.
+
+In this particular link and understand what is how how you can do that.
+
+But in a nutshell what you need to do is you need to do a install NPM library here.
+
+OK so let's go ahead and do this.
+
+These steps here in console so here I am in the project where I have this I'm dog yes it's out of hello
+
+would application
+
+so let me install it.
+
+Reporting
+
+so one package updated whatever I may have actually read it again or my other project and what I need
+
+to do is you need to go here inside the application and add these statements.
+
+Okay let me go ahead and open a door.
+
+Yes.
+
+This is just not just application guys and let me know
+
+so let me go here and put those lining here it was the lines.
+
+Let me go back to the library
+
+so I have included this library here and then what I can do here is an end point I can call here in
+
+the door to report so let's call it it something broke and let me mark this as a
+
+training
+
+sale I say that.
+
+Let me go in and apply my app
+
+yes
+
+this will take around 30 40 seconds I am going to pause the video
+
+application is launched now I can go ahead and go to app engine services so there are three versions.
+
+Now let us see how it is responding.
+
+It is responding.
+
+Let me get inside three versions
+
+okay.
+
+That's the third version.
+
+It is taking on it wasn't traffic it is released just now in 0 6 and 0 4.
+
+Okay let's go and do some reporting okay.
+
+And I think we should be able to go there dividend so Scott using the strategy.
+
+The reporting JCP project
+
+so this was twenty three years.
+
+Hours ago.
+
+It says something broke.
+
+Just trying it.
+
+All they need is all the haters.
+
+So this was like Staples.
+
+You can say they took
+
+and I can let me mark this to put this out so that it will not appear okay.
+
+Let's play.
+
+Here are told a load and generate some traffic
+
+click on it.
+
+I'm just hitting the service
+
+and go here a reporting
+
+so this will take some time to get those errors
+
+okay I'll post the video and wait for that error to come here.
+
+But in the meantime what you can do is you can go here and go to
+
+go to logs.
+
+You should see that log Sara appearing
+
+for your service
+
+okay.
+
+You see the traffic log lingual any log level
+
+so you just say hello.
+
+I do not have I think the new Virgin like
+
+okay.
+
+So this was the new word and then 17 days not like you.
+
+Okay.
+
+Yeah.
+
+This is the new one
+
+yeah because I do not see the the name here Hain let me put a different name.
+
+This so the peak can say
+
+here reporting
+
+and deploy my app yes
+
+can we delete all services
+
+this way I'll get to know whether it is hitting well or whether the new version is live yet or not.
+
+I'm dating service
+
+we can go log we were
+
+so this Virgin is deployed now in the logs I should be able to see the logs I shouldn't be able to see
+
+how long something else here OK what am I alone long
+
+J application and okay app is listening on Skype it started just now Hello error reporting now you should
+
+be able to see error reporting there I'll go back to the reporting
+
+so it is not data loaded
+
+so you can see it said just now right now I just can't see it okay something is broke
+
+and you can see two more or different instances
+
+okay.
+
+And so this is cut in traffic.
+
+You can do a book on it but we'll see it in shortly I can go back and do the reporting that is my haters
+
+my secret
+
+so you can actually see the errors that are appearing now for my service let me go back and get into
+
+details of the error so these errors we are appearing continuously something broke show all ready to
+
+end where you got this particular negative
+
+so at ten ten we had this error something is you can open an issue that is Oleg and you can do statistics
+
+on the reporting for the last 30 days because you can have only last 30 days data here all of the data
+
+is deleted so that's what it is guys on data reporting you need to have deliberate reasons so there
+
+are multiple errors you can actually see it here and you can filter it based on days means time duration
+
+you can get into details of those errors and you can you and it in on your mobile.
+
+Let me go ahead and send some.
+
+See this particular area right now whatever we have it in my mobile application and share it in the
+
+share it in the slide deck OK if you have any questions on the other reporting let me know otherwise
+
+you can just move to the next lecture.
+
+Thank you.
+
+報告に対する強さ。
+
+アプリケーションを理解できます。
+
+ストラグラーレベルでレポートを実行すると、実際にレポートを取り出して個別に監視できます
+
+他のログよりも。
+
+また、アプリケーションに問題がある場合にアクションを実行できるため、実際の
+
+時間の例外と監視とアラート。
+
+メールまたは電子メールの形式でインスタントメッセージを作成できます。
+
+正しい。
+
+電子メールまたはダッシュボードでデータの詳細を見て、一緒にすばやく理解できます。
+
+利用可能なほぼすべての一般的な言語をサポートしており、ほとんどの言語で再び推定されています
+
+リアルタイム。
+
+そのため、リアルタイムを確認できるので、リアルタイム処理機能があり、フィルタリングを実行できる集約を実行できます
+
+エラーの詳細を取得できます。スタックトレースの調査分析を分析することもできます。
+
+エラートラックまたは取り込みを発行できるエラーに関するアラート。
+
+エラーを監視でき、セットアップは本当に簡単です。アプリエンジン用に設計されていますが、構成は可能です。
+
+APIに基づくGCが簡単な他のアプリケーションの場合、エラー報告の典型的な形式は
+
+発生発生した発生回数ユーザーが最初のシーンで見た時間範囲
+
+最後に見た状態とそのすべての情報あなたはあなたが理解するために何が必要か考えることができます
+
+システム内の問題は何ですか？どのアプリケーションに影響がありますか？
+
+エネルギー使用アプリケーションのデータを有効にしたい場合は同じレートだったので、あなたはただ行く必要があります
+
+この特定のリンクにアクセスして、あなたがそれをやりたいことを理解しますが、これらの手順を紹介します
+
+現時点では、厳格なドライバーエラーレポートAPIを有効にして、この情報を利用できるようにする必要があります。
+
+あなたとそのためにここに行くことができます。
+
+この特定のリンクで、どのようにそれを行うことができるかを理解してください。
+
+しかし、簡単に言うと、ここでNPMライブラリをインストールする必要があります。
+
+わかりましたので、これを実行してみましょう。
+
+コンソールでのこれらの手順は、ここで私はこれを持っているプロジェクトにいます私は犬ですはい、こんにちは
+
+申し込みます
+
+それをインストールさせてください。
+
+報告
+
+そのため、1つのパッケージは、実際にもう一度読んだか、他のプロジェクトと必要なものを更新しました
+
+これを行うには、アプリケーション内のここに移動して、これらのステートメントを追加する必要があります。
+
+さて、ドアを開けてみましょう。
+
+はい。
+
+これは単なるアプリケーション担当者ではなく、私に知らせてください
+
+ここに行かせて、それらの裏地をここに置いてください。
+
+図書館に戻りましょう
+
+ここにこのライブラリを含めました。ここでできることは、ここで呼び出すことができるエンドポイントです
+
+報告するために、それを何か壊れたものと呼び、これを
+
+トレーニング
+
+セール
+
+入場してアプリを適用させてください
+
+はい
+
+これには約30〜40秒かかります。動画を一時停止します
+
+アプリケーションが起動しました。次の3つのバージョンがあるため、App Engineサービスに進むことができます。
+
+次に、どのように応答しているかを見てみましょう。
+
+応答しています。
+
+3つのバージョンの中に入りましょう
+
+はい。
+
+これが3番目のバージョンです。
+
+0 6と0 4でリリースされたばかりのトラフィックではなかった。
+
+では、レポートを作成してみましょう。
+
+そして、私は、スコットが戦略を使用してそこに配当をすることができるはずだと思います。
+
+レポートJCPプロジェクト
+
+これは23年でした。
+
+時間前。
+
+何かが壊れたという。
+
+試してみてください。
+
+彼らが必要とするのは憎しみだけです。
+
+だから、これはステープルのようなものでした。
+
+あなたは彼らが取ったと言うことができます
+
+そして、これを消してマークを付けて、うまく表示されないようにします。
+
+遊ぼう。
+
+ここに負荷が伝えられ、トラフィックが生成されます
+
+クリックして。
+
+私はちょうどサービスを打っている
+
+そして、ここにレポートを行きます
+
+そのため、これらのエラーを取得するには時間がかかります
+
+ビデオを投稿し、そのエラーがここに来るのを待ちます。
+
+しかし、その間にできることは、ここに行って
+
+ログに移動します。
+
+ログサラが表​​示されます。
+
+あなたのサービスのために
+
+はい。
+
+トラフィックログがすべてのログレベルで表示されます。
+
+こんにちはと言うだけです。
+
+私は新しいヴァージンが好きだとは思わない
+
+はい。
+
+だからこれは新しい言葉であり、それから17日間はあなたと違う。
+
+はい。
+
+うん。
+
+これは新しいものです
+
+ええ、私はここに名前が表示されないので、ハインは別の名前を付けさせました。
+
+これは、ピークが言うことができるように
+
+ここで報告
+
+アプリをデプロイしますyes
+
+すべてのサービスを削除できますか
+
+この方法で、ヒットしたかどうか、または新しいバージョンがまだ公開されているかどうかを知ることができます。
+
+私は出会い系サービスです
+
+私たちはログに行くことができました
+
+そのため、このVirginは現在ログにデプロイされています。表示できないはずのログを表示できるはずです。
+
+ここで他にどれくらいの時間OK
+
+Jアプリケーションと大丈夫なアプリは、Skypeでリッスンしています。
+
+エラー報告を確認できるようになりました。報告に戻ります。
+
+したがって、データはロードされません
+
+すぐに言ったのを見ることができます
+
+さらに2つ以上のインスタンスを見ることができます
+
+はい。
+
+したがって、これはトラフィックを削減します。
+
+あなたはそれで本を作ることができますが、すぐにそれを見るでしょう私は戻って、私の嫌いである報告をすることができます
+
+私の秘密
+
+私のサービスで今表示されているエラーを実際に見ることができます。
+
+エラーの詳細なので、これらのエラーが連続して表示されているため、壊れたものがすべて表示されます。
+
+この特定のネガを手に入れたところで終わります
+
+10時10分にこのエラーが発生しました。オレグという問題を開くことができ、統計を行うことができます。
+
+ここでは過去30日間のデータのみを取得できるため、過去30日間のレポートについて
+
+削除されるので、意図的な理由が必要なデータレポートの担当者です。
+
+ここで実際に見ることができる複数のエラーがあり、日数に基づいてフィルタリングすることができます
+
+これらのエラーの詳細を把握し、携帯電話で確認できます。
+
+先に進みましょう。
+
+この特定の領域を今すぐモバイルアプリケーションに表示して、共有します
+
+他のレポートについて質問がある場合は、スライドデッキで共有してください。
+
+次の講義に移動できます。
+
+ありがとうございました。

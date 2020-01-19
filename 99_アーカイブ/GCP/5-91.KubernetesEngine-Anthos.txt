@@ -1,0 +1,95 @@
+Commodities engine.
+
+And those.
+
+And this is you can think of it so it's a Cuban it is Federated Virgin but it is more than that.
+
+OK so it's not only just having your clusters in multiple hybrid environment and just connecting it
+
+it is you can think of it as like if you are running your communities environment on prem you can take
+
+advantage of all the cloud services and that is the way a Cuban it is launched that has this particular
+
+virgin.
+
+OK.
+
+If I go back in architecture if you look at.
+
+So there is a Google Cloud Platform and you have component is engine that is on frame which is like
+
+datacenter and you have carbonates engine on prem OK so you have serviced service major which you can
+
+use a you as a service mesh on to on prem datacenter and then there is the and those configuration management
+
+you can use VM where and all those suites inside your data datacenter are using which you can implement
+
+and those are you help policy repository use using which you can control the world Kobani this cluster
+
+of total cluster here using single console.
+
+So using the policy repository it can you know propagate all that information to the conflict management
+
+server and there is a connection between these two network it is handled by a cloud interconnect your
+
+on prem GK uses DCP all API so it has got access to the Jeep you know the DCP API or cloud API.
+
+And you can do a cloud stack driver logging and monitoring.
+
+OK so this is very high level it is not too much detail I know but if it is required for any certification
+
+in the future then we will go in and create a detailed theory as well as time apart here.
+
+Okay that's it for now.
+
+If you have any questions on Antos let us know otherwise move to the next lecture.
+
+Thank you.
+
+商品エンジン。
+
+それらの。
+
+そして、これはあなたがそれを考えることができるので、それは連合聖母であるキューバですが、それはそれ以上です。
+
+わかりましたので、複数のハイブリッド環境にクラスターを配置して接続するだけではありません
+
+それはあなたが取ることができるプレムであなたのコミュニティ環境を実行しているかのようにそれを考えることができるということです
+
+すべてのクラウドサービスの利点、それがキューバの立ち上げ方法です
+
+バージン。
+
+OK。
+
+ご覧になったら、建築に戻ります。
+
+Google Cloud Platformがあり、コンポーネントはフレーム上のエンジンです
+
+データセンターとprem OKに炭酸塩エンジンがありますので、サービスメジャーを利用できます。
+
+premデータセンターでサービスメッシュとしてyouを使用すると、構成管理があります
+
+データデータセンター内のすべてのスイートが使用できるVMを使用できます。
+
+そして、これらを使用して、ポリシーリポジトリの使用を支援します。
+
+ここでは、単一のコンソールを使用した総クラスターの。
+
+したがって、ポリシーリポジトリを使用すると、その情報をすべて競合管理に伝達できます。
+
+サーバーとこれらの2つのネットワーク間に接続があり、クラウド相互接続によって処理されます
+
+prem GKはDCP all APIを使用するため、DCP APIまたはクラウドAPIを知っているジープにアクセスできます。
+
+また、クラウドスタックドライバーのログと監視を行うことができます。
+
+わかりましたので、これは非常に高いレベルです。あまり詳細ではありませんが、認定に必要な場合は
+
+将来的には、詳細な理論を作成し、ここで時間を空けます。
+
+さて、今のところはこれで終わりです。
+
+Antosについて質問がある場合は、次の講義に移ってください。
+
+ありがとうございました。

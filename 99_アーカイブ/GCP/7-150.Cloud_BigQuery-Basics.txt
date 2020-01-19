@@ -1,0 +1,420 @@
+Cloud equity.
+
+It is an enterprise data warehouse on Google Cloud Platform.
+
+What is really W.
+
+I'm not going to tell you.
+
+It's a data warehouse solution which you can use it.
+
+And there are many enterprise data warehouse solutions which has been implemented on premises on their
+
+own.
+
+And you know companies own data center as well as they have implemented that in the public cloud environment
+
+or in hybrid mode depends on the type of data which they use and we have to process the data.
+
+Let's go out and get into details of big query.
+
+It is a part of database and storage service and it is a part of Big Data Services.
+
+And this is the first offering which we are going to cover as a big data service.
+
+So cloud equity it is fully managed.
+
+Analytics data warehouse in we will cloud platform you can use that for the purpose of enterprise data
+
+warehouse analytics and dashboard purpose seeing for all your be I-Reports.
+
+And it's the new operations platform you are not provisioning anything literally anything if at all.
+
+I have to tell you I'll take you to the console.
+
+We can go to say
+
+big data
+
+big data and be equity once I am here I can click on my project and then I can go ahead and create a
+
+database and database is the data set in query so I can say my 18 w data base maybe.
+
+So this is my data set i.e. I can select the location I can go and choose my west U.S. West location
+
+our default table exploration that I can see anywhere expire our number of days after table creation
+
+so there are you know things wherein I can expire say after seven sixty days my table should be deleted
+
+because I know that I'm done with it it's around two years I can keep the data but after that if I'm
+
+not deleting it be quit it should go ahead and delete it you can go and delete it by yourself but you
+
+can allow me query to delete it and then encryption either Google managed custom or managed I can Gordon
+
+create data set so my dataset is created this is my database I can good now and create the table and
+
+table creation can be from anything like empty table from cloud storage you can upload the data you
+
+can take the data from data you know try you or you can create it based on the big table.
+
+OK so what I'm going to do is I'm going to create it from upload and I can select file
+
+then I have names database
+
+I can select this was
+
+okay and I can select one of the five
+
+okay.
+
+And then table is names can see clear table.
+
+I have the table and I can select straight from
+
+he did w the B that
+
+names it said this is going to process 36.
+
+Maybe I can just run and this is my data inside the file.
+
+So this is it is that easy.
+
+You can create the data set which is your database in big query and then you can create tables and for
+
+table creation there are multiple options.
+
+So if you look at I have not provisioned any resources there is no instance which I created I just created
+
+the database and then I started creating a table and then I store the data in it and then I ran the
+
+query so it is fully managed offering from Google Cloud Platform and you don't have to provision any
+
+hardware or software for it.
+
+So that's the big query.
+
+Let's move further on the features of query
+
+so when do you use it.
+
+So typically when your data structure and you want to use it for analytic purpose and you do not have
+
+requirement of low latency.
+
+OK.
+
+And that's where you can use big query it is for humongous data and you can run any number of queries
+
+on top up query data so the data is going to stay there.
+
+You will not be charged for any computation if you are not running any query on top of those big data
+
+tables which you have created once you execute any queries on top of it then definitely you'll be charged
+
+for the competition for data storage you are going to charge for the sites which are using it typical
+
+use case are the way it is used currently is you have multiple source system which is injecting data
+
+into query including your billing analytics and all that right.
+
+So either it is streaming pipeline or a bad batch pipeline it is injected into a big query.
+
+We are going to see how data flow works in subsequent lectures but be queries the AGW towards the data
+
+and then you can run the queries on top up with queries and then it can be used inside data stored your
+
+quick our tableau or data lab are Google shoots or any other person can go out and use it and access
+
+it.
+
+There are multiple use cases which are available on Google Cloud Platform documentation you can go and
+
+use that to understand more on the query some of the features of query its any size from anywhere you
+
+can just go ahead and dump the data inside it and you can run the school query on top of it it is super
+
+fast you don't have to wait for 10 10 15 minutes if the data is very huge then definitely you'll need
+
+to wait for some moment but the power we queries it calculates the amount of data it is going to process
+
+and then apply or add the computational logic in terms of processors and ram and then execute the query
+
+and then give you the outcome.
+
+So that is per query basis you will be charged and per query basis the computation requirement is evaluated
+
+and used to execute that particular query.
+
+Some of the features flexibility injection global availability security and permissions.
+
+So it is integrated with IBM and we are going to see that you can are you can apply cost controls and
+
+we are going to see that as well it is highly available fully integrated with Google other services
+
+connect you can connect with Google products and you can have automatic data transport service as well
+
+out of equity big query partitions use for local an entity and column based partitions you can create
+
+partitions inside the tables and you can use it for low cardinality as well.
+
+Some of the features which came in in 2018.
+
+Currently this is 2019 but there are features which they launch to it and that has reduced the cost
+
+for the equity.
+
+You can use high cardinality as well.
+
+Data is stored in sorted with within the partition so that when the query is getting executed it you
+
+don't have to apply additional computation so you are not managing it or you are not doing it.
+
+But ultimately if there are more competition is used you will be charged accordingly.
+
+So it is now less expensive because the data is stored in the sorted formats of pulling the data is
+
+very you can think of less expensive than the earlier ones.
+
+No need to manually Shard the tables it is automatically done for you and you don't want to worry about
+
+it.
+
+If you look at the typical database constraint in identifying and designing the data whereas solutions
+
+that are either problems like disk attached storage killing limits you can go up to certain limits and
+
+not beyond that because of the limited space that you have.
+
+CPE is not getting faster enough because you have a standard set of CPE use and you cannot just add
+
+dynamically based on your query which is possible in b b query and network.
+
+There is a coordination bottlenecks at one day just with the big query and the same those you know how
+
+we can mitigate that in terms of bios.
+
+You can have hundreds of parallel disk running to supply the data to be query separation of storage
+
+was this compute means compute is attached to the query based on the requirement of your school job
+
+are the query which you are applying it to the data set you can go up to thousands of CPE use and it
+
+is highly scalable Jupiter Jupiter network on which your data is accessed so it is Haifa it is fast
+
+it has got a dynamic query planning it uses shards has joints and stages inside the query so that it
+
+is executed efficient manner and to give you the data that is disguised as a big query let's call it
+
+and some of the other features of the query in subsequent lectures thank you.
+
+
+クラウドエクイティ。
+
+これは、Google Cloud Platform上のエンタープライズデータウェアハウスです。
+
+本当にWとは
+
+教えるつもりはない。
+
+これは、使用できるデータウェアハウスソリューションです。
+
+また、多くのエンタープライズデータウェアハウスソリューションがオンプレミスで実装されています
+
+自分の。
+
+そして、あなたは企業がデータセンターを所有していることを知っているだけでなく、パブリッククラウド環境でそれを実装しています
+
+またはハイブリッドモードでは、使用するデータの種類によって異なり、データを処理する必要があります。
+
+外に出て、大きなクエリの詳細に入りましょう。
+
+データベースおよびストレージサービスの一部であり、ビッグデータサービスの一部です。
+
+そして、これはビッグデータサービスとしてカバーする最初のサービスです。
+
+クラウドエクイティは完全に管理されています。
+
+エンタープライズデータの目的で使用できるクラウドプラットフォームの分析データウェアハウス
+
+ウェアハウス分析およびダッシュボードの目的は、すべてのIレポートを確認することです。
+
+そして、それはあなたが文字通り何かをプロビジョニングしていない新しいオペレーションプラットフォームです。
+
+コンソールに案内します。
+
+私たちは言うことができます
+
+ビッグデータ
+
+ここに来たら、ビッグデータとエクイティになります。プロジェクトをクリックしてから、
+
+データベースとデータベースはクエリのデータセットであるため、18 wのデータベースと言えます。
+
+これが私のデータセットです。つまり、行くことができる場所を選択し、西の西の場所を選択することができます
+
+デフォルトのテーブル探索はどこでも見ることができ、テーブル作成後の日数が切れます
+
+だからあなたは私のテーブルが削除されるべきである七十六日後に言って私が期限切れにすることができることを知っています
+
+私はそれをやったことを知っているので、データを保持できるのは約2年ですが、その後は
+
+削除しないで終了してください。先に行って削除する必要があります。自分で削除できますが、
+
+クエリを削除してから、Google管理のカスタムまたは管理のいずれかを暗号化できます。
+
+データセットを作成してデータセットを作成しますこれが私のデータベースです
+
+テーブルの作成は、クラウドストレージの空のテーブルのようなものから行うことができます。データをアップロードできます。
+
+知っているデータからデータを取得したり、大きなテーブルに基づいて作成したりできます。
+
+[OK]ので、アップロードから作成し、ファイルを選択します
+
+名前データベースがあります
+
+これを選択できました
+
+大丈夫、私は5つのうちの1つを選択できます
+
+はい。
+
+そして、テーブルは名前が明確なテーブルを見ることができます。
+
+私はテーブルを持っており、私はから直接選択することができます
+
+彼はBをやった
+
+これが36を処理すると言った名前。
+
+たぶん実行するだけで、これがファイル内の私のデータになります。
+
+これは簡単です。
+
+大きなクエリのデータベースであるデータセットを作成し、テーブルを作成して
+
+テーブルの作成には複数のオプションがあります。
+
+したがって、リソースをプロビジョニングしていないのを見ると、作成したインスタンスはありません
+
+データベースを作成してから、テーブルの作成を開始し、その中にデータを保存してから、
+
+Google Cloud Platformから完全に管理された提供であり、プロビジョニングする必要はありません
+
+それのためのハードウェアまたはソフトウェア。
+
+それが大きなクエリです。
+
+クエリの機能についてさらに説明しましょう
+
+いつ使用しますか。
+
+そのため、通常、データ構造があり、分析目的で使用したいが、持っていない場合
+
+低遅延の要件。
+
+OK。
+
+そして、巨大なデータ用の大きなクエリを使用できる場所であり、任意の数のクエリを実行できます
+
+クエリデータを追加して、データがそこにとどまるようにします。
+
+これらのビッグデータ上でクエリを実行していない場合、計算には課金されません
+
+その上でクエリを実行した後に作成したテーブルは、間違いなく請求されます
+
+データストレージの競争のために、あなたはそれを使用しているサイトに通常料金を請求しようとしています
+
+ユースケースは、現在使用されている方法です。データを注入している複数のソースシステムがあります
+
+あなたの請求分析とすべての権利を含むクエリに。
+
+そのため、ストリーミングパイプラインか、大きなクエリに挿入される不良バッチパイプラインのいずれかです。
+
+後続の講義でデータフローがどのように機能するかを確認しますが、データに対してAGWにクエリを実行します
+
+クエリを追加してクエリを実行し、保存されたデータ内で使用できます
+
+すぐに私たちのタブローまたはデータラボがGoogleの撮影であるか、他の人が外出して使用してアクセスできます
+
+それ。
+
+Google Cloud Platformのドキュメントで利用できる複数のユースケースがあります。
+
+それを使用して、クエリについて、どこからでも任意のサイズのクエリの機能のいくつかを理解する
+
+先に進んでその中のデータをダンプすれば、その上で学校のクエリを実行できます
+
+データが非常に大きい場合、10 10 15分待つ必要はありません。
+
+しばらく待機しますが、クエリの処理能​​力により、処理するデータ量が計算されます
+
+プロセッサとRAMの観点から計算ロジックを適用または追加し、クエリを実行します
+
+そして、あなたに結果を与えます。
+
+したがって、クエリごとに課金され、クエリごとに計算要件が評価されます
+
+特定のクエリを実行するために使用されます。
+
+一部の機能には、柔軟性の高いグローバルな可用性のセキュリティとアクセス許可が注入されます。
+
+したがって、IBMと統合されており、コスト管理を適用でき、
+
+Googleの他のサービスと完全に統合された可用性も高いことがわかります
+
+Googleサービスに接続できるほか、自動データ転送サービスも利用できます
+
+エクイティから大きなクエリパーティションはローカルエンティティに使用し、作成できる列ベースのパーティション
+
+テーブル内のパーティション。低カーディナリティにも使用できます。
+
+2018年に導入された機能の一部。
+
+現在、これは2019年ですが、彼らはそれを起動し、それがコストを削減した機能があります
+
+公平のために。
+
+高いカーディナリティも使用できます。
+
+データはパーティション内にソートされて保存されるため、クエリが実行されるときに
+
+追加の計算を適用する必要がないので、管理したり、実行したりしません。
+
+しかし、最終的には、より多くの競合が使用される場合、それに応じて課金されます。
+
+そのため、データは、データをプルするソートされた形式で保存されるため、より安価になりました。
+
+以前のものよりも安価であると考えることができます。
+
+自動的に行われるテーブルを手動でシャードする必要はありません。心配する必要はありません。
+
+それ。
+
+データを特定および設計する際の典型的なデータベースの制約を見ると、ソリューション
+
+これは、ディスク接続ストレージの強制終了制限などの問題であり、特定の制限に達することができます。
+
+スペースが限られているため、それ以上ではありません。
+
+CPEの標準的な使用方法があり、単に追加することはできないため、CPEは十分に高速化されていません。
+
+b bクエリとネットワークで可能なクエリに基づいて動的に。
+
+ある日、大きなクエリと調整方法のボトルネックがあります。
+
+BIOSの観点からそれを緩和できます。
+
+ストレージをクエリ分離するためのデータを提供するために、数百の並列ディスクを実行できます。
+
+このコンピューティングは、学校の仕事の要件に基づいて、コンピューティングがクエリに添付されることを意味していましたか
+
+あなたが何千ものCPEの使用に行くことができるデータセットにそれを適用しているクエリです
+
+高度にスケーラブルなJupiter Jupiterネットワークでデータにアクセスするため、ハイファです
+
+動的なクエリプランニングがあり、シャードを使用し、クエリ内にジョイントとステージがあるため、
+
+効率的な方法で実行され、大きなクエリとして偽装されたデータを提供するために呼び出しましょう
+
+後続の講義でのクエリのその他の機能の一部に感謝します。

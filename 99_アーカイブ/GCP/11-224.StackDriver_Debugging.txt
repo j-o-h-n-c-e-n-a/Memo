@@ -1,0 +1,383 @@
+Strang nobody but you can investigate it could be a very in production and that 31 of stacked over day.
+
+But you can have detailed performance insight and analytics.
+
+You can collaborate to wait while actually debugging you can debug this in production.
+
+You can use your own workflows and you can use multiple source code to do the debug.
+
+And this is very important.
+
+You can collaborate with different teams or different developers and you can enable debugging production
+
+and then C and we can actually see this in demo.
+
+Let's go to console and enable it.
+
+This was our error in strength.
+
+Driver error reporting to debug what we need to do is we need to go to
+
+and install debug agent.
+
+So let me do this.
+
+In our console
+
+and then what you need to do is you can just add this line in your code.
+
+Let me go ahead and date.
+
+So require debug agent
+
+and let me put this chart up just lowered
+
+to book
+
+and log on.
+
+So let me put debug say the reporting is already on.
+
+We are not changing that
+
+so that we see it everywhere.
+
+Okay.
+
+What you can do is you can also have.
+
+I just I think for to pay console not here.
+
+You can also put this one.
+
+It's not in reporting at such what this will appear in your log so log here and I'll show you how to
+
+see it.
+
+So let's go ahead and deploy this app.
+
+This will take some moment I'll pause the pass the video so now application is deployed.
+
+Let us go in and check whether it is serving our traffic or not.
+
+I'll go back to the service.
+
+I'll click on this end point.
+
+Okay.
+
+It says Hello debug means the newer version of application is low.
+
+Now what we can do is we can go to debug
+
+dota monitoring and deep book here.
+
+Also you can use multiple options you can go here.
+
+You can go to monitoring and click on debug or do you see between
+
+so there are multiple ways you can go to debunk more talking and disclosing these.
+
+OK here we are.
+
+It says log in to help debug.
+
+So this is our area log it.
+
+And I'm going to show this and log but focus it here.
+
+Okay so it says the obligation is on now what you can do is you can go here and create a log point and
+
+I can see a file app dot Jesus column
+
+I want to say jump on to twenty nine
+
+okay log level condition that I want to put in message that I want to push it
+
+debug mode
+
+so this is I did now debug mode.
+
+Right.
+
+And this is log point that has been added.
+
+Okay.
+
+And you will see that in action when you when you are running this application let's call it and create
+
+some
+
+transactions.
+
+Now
+
+so you can see in the code itself it has added this particular log point.
+
+You can add multiple log points and see that it happen is coming.
+
+You can actually put forward some variables also there you can put forward some conditions to see that
+
+e-book and you can the good part here is you can actually do it in production when the code is being
+
+executed.
+
+You don't have to take that code into test environment or a or developing environment and make the changes
+
+you can do it in the production yourself.
+
+So now as because we have added this we have the logs which are continuously pushing it lock point history.
+
+So this lock point you can click it here and then you have this particular lock point which is created.
+
+I mean good.
+
+And here that fake
+
+and if you go here at the same time to
+
+logging
+
+you will be able to see log point logs
+
+you see the log point right.
+
+And this is the debug mode logs which you have it.
+
+So as I mentioned earlier I had just added this log in there as well.
+
+You can put it in later
+
+you can find debug you can find in full all right.
+
+And any so the innards also appear here he had eight log in it.
+
+So you have debug your log enter and
+
+you can play this particular application file and dodges and it is available it is publicly available
+
+by Google in node docs samples that you can actually take it from google.
+
+I'm trying to get the zip file upload it to the resources section in one or two places.
+
+OK so that's 30 but it is more towards the developer tool than the operations tool.
+
+But you need to make sure that you understand it if you have to support it from the platform side.
+
+OK.
+
+That's it guys for the book.
+
+The only thing which you need to keep in mind that you can do debugging production using the standard
+
+lower debugging.
+
+OK going back to the remaining three you can inspect your code without too much of slowing down supports
+
+App Engine Java Python and go capture to all stack and local variables of applications inject logging
+
+into a service without stopping it.
+
+And that is very important and we saw that you need to install the library and you need to just put
+
+that required this debug agent and you will be able to debate that particular code.
+
+That's it for the book.
+
+If you have any questions let me.
+
+Otherwise you can move to the next lecture.
+
+Thank you.
+
+誰もストランしませんが、あなたはそれが非常に生産中であり、その31日が積み重なっている可能性があることを調査することができます。
+
+ただし、詳細なパフォーマンスの洞察と分析が可能です。
+
+共同で待機して実際にデバッグできますが、実稼働環境でデバッグできます。
+
+独自のワークフローを使用でき、複数のソースコードを使用してデバッグを実行できます。
+
+これは非常に重要です。
+
+さまざまなチームやさまざまな開発者と共同作業ができ、実稼働環境のデバッグを有効にできます
+
+そして、Cとデモで実際にこれを見ることができます。
+
+コンソールに移動して有効にします。
+
+これが強度のエラーでした。
+
+行う必要があることをデバッグするためのドライバーエラーレポート
+
+デバッグエージェントをインストールします。
+
+それで私にこれをさせてください。
+
+コンソールで
+
+そして、あなたがする必要があるのは、コードにこの行を追加するだけです。
+
+先に進みましょう。
+
+デバッグエージェントが必要です
+
+このチャートを下げたところに置きます
+
+予約する
+
+ログオンします。
+
+それで、レポートが既にオンになっているとデバッグを入れてみましょう。
+
+私たちはそれを変えていません
+
+どこでも見ることができます。
+
+はい。
+
+あなたができることはあなたも持つことができるということです。
+
+ここではなくコンソールにお金を払うだけだと思います。
+
+これを置くこともできます。
+
+これがあなたのログに表示されるものを報告するのではないので、ここにログインしてください。
+
+それを参照してください。
+
+それでは、このアプリを展開してみましょう。
+
+これには少し時間がかかりますので、ビデオのパスを一時停止して、アプリケーションをデプロイします。
+
+入って、それがトラフィックを処理しているかどうかを確認しましょう。
+
+サービスに戻ります。
+
+この終点をクリックします。
+
+はい。
+
+Helloデバッグは、アプリケーションの新しいバージョンが低いことを意味します。
+
+できることは、デバッグに行くことです
+
+ここでDOTAモニタリングと詳細な本。
+
+また、ここにアクセスできる複数のオプションを使用できます。
+
+監視に移動してデバッグをクリックするか、その間に表示されますか
+
+そのため、これらの話や開示をさらに深めるための複数の方法があります。
+
+OK
+
+ログインするとデバッグに役立ちます。
+
+これが私たちの地域のログです。
+
+そして、これを表示してログに記録しますが、ここで焦点を合わせます。
+
+わかりましたので、義務は今、あなたにできることは、ここに行ってログポイントを作成し、
+
+ファイルアプリのドットイエス列を見ることができます
+
+私は29にジャンプして言いたいです
+
+私はそれをプッシュしたいというメッセージに入れたい大丈夫なログレベルの条件
+
+デバッグモード
+
+だから、これは今デバッグモードでした。
+
+正しい。
+
+そして、これは追加されたログポイントです。
+
+はい。
+
+そして、あなたはこのアプリケーションを実行しているときにあなたがそれを呼び出して作成してみましょう
+
+いくつか
+
+トランザクション。
+
+今
+
+コード自体でこの特定のログポイントが追加されていることがわかります。
+
+複数のログポイントを追加して、発生することを確認できます。
+
+実際にいくつかの変数を転送することもできます
+
+電子書籍とあなたがここで良い部分ができることは、コードがされているときに実際に本番でそれを行うことができるということです
+
+実行されました。
+
+そのコードをテスト環境や開発環境に取り込み、変更を加える必要はありません。
+
+自分でプロダクションでそれを行うことができます。
+
+これで、これを追加したため、ロックポイント履歴を継続的にプッシュしているログがあります。
+
+したがって、このロックポイントをクリックすると、この特定のロックポイントが作成されます。
+
+いいよ
+
+そして、ここでその偽物
+
+同時にここに行くと
+
+ロギング
+
+ログポイントログを見ることができます
+
+ログポイントが正しく表示されます。
+
+そして、これはあなたが持っているデバッグモードログです。
+
+先ほど述べたように、このログも追加しました。
+
+後で入れることができます
+
+デバッグを完全に見つけることができます。
+
+そして、内臓もここに表示され、彼には8つのログがありました。
+
+だから、あなたのログをデバッグして入力してください
+
+この特定のアプリケーションファイルを再生して回避することができ、公開されています
+
+Googleのnode docsサンプルで、実際にGoogleから取得できます。
+
+zipファイルを取得して、1つまたは2つの場所のリソースセクションにアップロードしようとしています。
+
+30ですが、運用ツールよりも開発者ツールに向いています。
+
+ただし、プラットフォーム側からサポートする必要がある場合は、必ず理解しておく必要があります。
+
+OK。
+
+それは本のためにみんなです。
+
+標準を使用してプロダクションのデバッグを行うことができることに留意する必要がある唯一のこと
+
+より低いデバッグ。
+
+残りの3つに戻って、サポートを遅くすることなくコードを検査できます
+
+App Engine Java Pythonおよびアプリケーションのすべてのスタックとローカル変数へのキャプチャロギングの挿入
+
+停止せずにサービスに追加します。
+
+そして、それは非常に重要であり、ライブラリをインストールする必要があり、
+
+このデバッグエージェントが必要であり、その特定のコードについて議論することができます。
+
+これで終わりです。
+
+質問があれば私に聞かせてください。
+
+それ以外の場合は、次の講義に移動できます。
+
+ありがとうございました。

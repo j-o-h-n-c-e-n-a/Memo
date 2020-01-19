@@ -1,0 +1,135 @@
+Storage options.
+
+There are multiple storage which is required for your data right.
+
+So that is the first one is if you are submitting a job to Hadoop or spark.
+
+You need to find a kind of source information source directly and then standard out directory within
+
+it can write to the database.
+
+Are you can you provide liquidity.
+
+So as a storage you can have it as deep as system which you will be.
+
+You can think of anything to Hadoop but at the same time you can have cloud storage as a backup so all
+
+the data which will be returned to these days you can back that up to cloud storage bucket.
+
+This is in and out but at the same time as DFS users are top users are data shuffling and data shuffling
+
+you have two options one is persistent disk which is network storage but at the same time you can have
+
+a local SSD and the problem with the local SSD is if at all say node has got a problem and node is replaced
+
+not is deleted.
+
+You know the cluster is deleted and you started again.
+
+You'll not be able to recover that data so that is the problem with the local SSD.
+
+It is a primarily in nature you cannot use that was the node is gone.
+
+Okay so that's the thing we already saw how you can go in and configure the local SSD and the storage
+
+is so you can do the persistent disk as storage which will be attached to the nodes for enough to work
+
+on the data you can specify the number of nodes and then you can specify the local SSD as well so localized
+
+disease as we know it is 375 G's per disk and you can go up to 8 is D which will be attached to the
+
+node.
+
+Going back to the cluster you can click on the cluster which is created and it is happening now and
+
+you can see you can see the the end memory is deepest capacity that we have it.
+
+CB utilization.
+
+So this is when the cluster was creating and now it is 2 percent utilized.
+
+I can go in and see VM instances that are one marked you know master to work at nodes and there are
+
+a few program table workers which are running late now and you can see the configurations.
+
+You can go ahead and do it id configuration you can change say what called node to 1 Welcome Node 2
+
+2 and then let me take out all if you model our prime table Williams I can see so
+
+so the request is submitted and now the cluster will try to maintain our expected behavior.
+
+Okay so we have instances if I go so some of those who preemptively worker will start going down so
+
+you can see the worker program level workers are going down not that as a storage case.
+
+If you have any questions on storage let me know way you can move to the next lecture.
+
+That is data proc chops.
+
+ストレージオプション。
+
+データの権利に必要な複数のストレージがあります。
+
+それが、Hadoopまたはsparkにジョブを送信する場合の最初の方法です。
+
+一種のソース情報ソースを直接見つけてから、標準出力ディレクトリを見つける必要があります
+
+データベースに書き込むことができます。
+
+流動性を提供できますか。
+
+だから、ストレージとして、あなたがなるシステムと同じくらい深いことができます。
+
+Hadoopについては何でも考えられますが、同時にクラウドストレージをバックアップとして使用できるため、すべて
+
+最近に返されるデータは、クラウドストレージバケットにバックアップできます。
+
+これはインとアウトですが、DFSユーザーがトップユーザーであると同時にデータシャッフルとデータシャッフルがあります
+
+2つのオプションがあります。1つはネットワークストレージである永続ディスクですが、同時に使用することもできます。
+
+ローカルSSDとローカルSSDの問題は、ノードに問題があり、ノードが交換されたと言う場合です
+
+削除されません。
+
+クラスターが削除され、再起動したことがわかります。
+
+ローカルSSDの問題であるため、そのデータを回復することはできません。
+
+ノードがなくなったのは、本来使用できない性質です。
+
+わかりましたので、ローカルSSDとストレージをどのように設定して構成することができるかは、すでに見たものです
+
+永続ディスクをストレージとして使用できるため、十分に機能するようにノードに接続されます
+
+データ上でノードの数を指定してから、ローカルSSDも指定できます。
+
+私たちが知っているように、それはディスクあたり375 Gであり、あなたは8に行くことができます
+
+ノード。
+
+クラスターに戻ると、作成されたクラスターをクリックできます
+
+エンドメモリが私たちが持っている最も深い容量であることがわかります。
+
+CB使用率。
+
+したがって、これはクラスターが作成されていた時期であり、現在は2％が使用されています。
+
+私が行って、あなたがノードで動作するマスターを知っているとマークされているVMインスタンスを見ることができます
+
+遅く実行されているプログラムテーブルワーカーがいくつかあり、構成を確認できます。
+
+先に進んで、IDの設定を行うことができます。ノードの呼び出し元を1ようこそノード2に変更できます。
+
+2そして、あなたが私たちのプライムテーブルウィリアムズをモデル化するなら、私はすべてを取り出しましょう
+
+そのため、リクエストは送信され、クラスターは期待される動作を維持しようとします。
+
+わかりましたので、私が行くとインスタンスがあります。
+
+ワーカープログラムレベルのワーカーがストレージケースとしてではなく、ダウンしていることがわかります。
+
+ストレージについて質問がある場合は、次の講義に進む方法を教えてください。
+
+それはデータプロシージャチョップです。

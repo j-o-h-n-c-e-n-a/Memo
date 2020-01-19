@@ -1,0 +1,245 @@
+Cloud Spanish Cloud Spanner is again are to be a mess but it is global in nature.
+
+So you can have instances running across the globe for the same instance I would say no sliding across
+
+the globe for the same instance.
+
+Let's go in and take a look at it.
+
+It is a part of data was in storage that was of your releasing cloud as well as a pretty big mess.
+
+But cloud as Google is your my school or post class instances inside the cloud which is managed service
+
+but the Cloud Spanner is completely new homegrown database management system.
+
+They have doubled.
+
+They will update for their own need and now they have made it public so you can use it.
+
+You cannot download Cloud Spanner and install it but rather you need to use it from Google Cloud Platform
+
+itself.
+
+So it is fully managed our department built from ground up by Google the use cases are all already women's
+
+requirements.
+
+I take financials global supply chain retail scale consistency requirement.
+
+You need a you know huge scale because if you look at cloud a school you cannot go horizontal scaling
+
+where Cloud Spanner can go horizontal is killing you can add the nodes and then that's how it is scaled.
+
+You can have mission critical applications running for higher transactions inside clouds Bennett Cloud
+
+Spanner provides best features of both the worlds.
+
+Whether it is relational or noise Cube.
+
+Okay let's look at it.
+
+Cloud dependent provides the schema definition like the way we do it in relational database management
+
+system Clarksburg spanner compliant with Eskew Well it is strongly consistent like that already being
+
+mass availability if you look at it is highly available you do know our tower do not have a good failure
+
+mechanism in our department because it works and you know the vertical scaling and you have one master
+
+not only that particular node is providing the data in you know noise cool databases as because they
+
+are distributed in nature you have highly available systems so Cloud Spanner provides benefit of noise
+
+cool here it is horizontally scalable if you look at our we there are those are vertical scalable and
+
+noise will provide horizontal scalability and that is what it is provided by cloud spanner and you can
+
+have a replication and replication is all you can think of configurable in both the words but you can
+
+have automatically application of the data so your data is replicated in multiple locations.
+
+So even if one of the region goes down or one of the data I know this get cut up your data is still
+
+accessible some of the you know major use cases it's before Cloud Spanner world and with cloud a cloud
+
+span benefits how they can use it some parts you can go through the slides the data types if you look
+
+at here that I have some additional data that I have which the Cloud Spanner has added and like at a
+
+rate if it all say person has gotten multiple phone numbers if that old person has about you know two
+
+addresses then you can instead of creating additional columns you can just create Adi and then use that
+
+add a two story or additional phone number additional contact numbers like that but all other things
+
+are like you can go through it majority up that you don't care.
+
+It is required for a developer exam or a cloud architect exam and data engineers exam but not engineer
+
+network engineer road security what let us go ahead and go to the features in the next election but
+
+before that let me just spin off one cloud spanner instance if I go here storage cloud spanner there
+
+is none right now and you can find many times you can find this useful information which you can read
+
+it if I click on the instance I need to provide the name
+
+you can change the insurgency today and then you can say whether it is regional or multi regional.
+
+I'm just going ahead and selecting regional and I need to select a region in that case my location is
+
+U.S. West Oregon and the North say I want only one node and that is it.
+
+If you click on Node guidance it will give you the information about your nodes at the same time you
+
+have summary of what whatever configuration you choose it's somebody of that.
+
+Okay so reliability is ninety nine point nine ninety nine percent.
+
+If I click on multi regional then I reliability goes up if I choose say
+
+five nights and personal cost is three dollars.
+
+So let me quote and choose the regional one and my orange Oregon and I can click Create
+
+OK it's already created.
+
+Let me go ahead and create it I was
+
+my Debbie and define your schema.
+
+I'm not just doing it
+
+so inside the instance there is a database which is created you can go in and create tables you can
+
+monitor statistics you can import and export the data from the instances or you can find equity.
+
+OK that's the cloud spanner instance.
+
+We are going to see some more details in the subsequent lectures.
+
+Thank you.
+クラウドスパニッシュクラウドスパナーは再び混乱することになりますが、本質的にグローバルです。
+
+そのため、同じインスタンスに対して世界中でインスタンスを実行することができます。
+
+同じインスタンスの地球。
+
+入って見てみましょう。
+
+これは、リリースされたクラウドのデータとストレージのデータの一部であり、非常に大きな混乱です。
+
+ただし、クラウドとしてのGoogleはあなたの学校であり、マネージドサービスであるクラウド内のクラスインスタンスを投稿します
+
+ただし、Cloud Spannerは完全に新しい自家製データベース管理システムです。
+
+彼らは倍増しました。
+
+彼らは自分のニーズに合わせて更新しますが、現在は公開されているので、それを使用できます。
+
+Cloud Spannerをダウンロードしてインストールすることはできませんが、Google Cloud Platformから使用する必要があります
+
+自体。
+
+したがって、Googleによってゼロから構築された部門は完全に管理されており、ユースケースはすべて女性のものです
+
+要件。
+
+私は、グローバルなサプライチェーンの小売規模の一貫性に関する要件を満たします。
+
+学校のクラウドを見ると水平スケーリングができないため、巨大なスケールを知っている必要があります
+
+Cloud Spannerが水平方向に移動できるのは、ノードを追加することで殺すことができ、それがスケーリング方法です。
+
+クラウド内でより高いトランザクションのためにミッションクリティカルなアプリケーションを実行することができますBennett Cloud
+
+Spannerは両方の世界の最高の機能を提供します。
+
+リレーショナルキューブかノイズキューブか。
+
+それでは見てみましょう。
+
+クラウド依存は、リレーショナルデータベース管理で行う方法のようなスキーマ定義を提供します
+
+Eskewに準拠したシステムClarksburgスパナ
+
+マスアベイラビリティをご覧になれば、可用性が高いことを確認できます。
+
+それが機能し、垂直スケーリングを知っていて、マスターが1人いるので、私たちの部門のメカニズム
+
+その特定のノードがあなたのデータを提供しているだけでなく、
+
+自然に分散されているため、可用性の高いシステムがあるため、Cloud Spannerはノイズの利点を提供します
+
+ここでは、水平方向にスケーラブルです。垂直方向にスケーラブルであり、
+
+ノイズは水平方向のスケーラビリティを提供し、それがクラウドスパナによって提供されるものです。
+
+レプリケーションがあり、レプリケーションは両方の言葉で設定可能と考えることができますが、
+
+データが自動的に適用され、データが複数の場所に複製されます。
+
+そのため、リージョンの1つがダウンしたり、データの1つが切断されても、データはカットされます。
+
+あなたが知っているいくつかの主要なユースケースにアクセスできる
+
+スパンは、彼らがそれをどのように使用できるかという利点があります。
+
+ここには、Cloud Spannerが追加した、たとえば
+
+その人があなたについて知っている場合、その人が複数の電話番号を取得したと言う場合は評価
+
+アドレスを追加すると、追加の列を作成する代わりに、Adiを作成してそれを使用できます
+
+2ストーリーまたは追加の電話番号を追加します
+
+気にしないことで大部分を通過できるようになります。
+
+開発者試験またはクラウドアーキテクト試験とデータエンジニア試験には必要ですが、エンジニアには必要ありません
+
+ネットワークエンジニアの道路セキュリティは、次の選挙で先に進んで機能に進むことができますが、
+
+その前に、ここでストレージクラウドスパナに行くと、1つのクラウドスパナインスタンスをスピンオフできます
+
+今はありません、あなたはあなたが読むことができるこの有用な情報を見つけることができる何度も見つけることができます
+
+インスタンスをクリックすると、名前を指定する必要があります
+
+あなたは今日反乱を変えることができ、それからそれが地域的か多地域的かを言うことができます。
+
+私は先に進んで地域を選択していますが、その場合は地域を選択する必要があります
+
+米国西オレゴン州と北部は、1つのノードだけが欲しいと言っています。
+
+[ノードガイダンス]をクリックすると、同時にノードに関する情報が表示されます。
+
+どのような構成を選択した場合でも、その構成の概要があります。
+
+わかりましたので、信頼性は99ポイント99％です。
+
+多地域をクリックすると、言うと選択すると信頼性が上がります
+
+5泊で、個人的な費用は3ドルです。
+
+そこで、地域の1つとオレゴン州のオレゴン州を引用して選択し、[作成]をクリックします。
+
+OK、既に作成されています。
+
+先に行って作成しました
+
+私のデビーとあなたのスキーマを定義します。
+
+私はそれをしているだけではありません
+
+インスタンス内に作成されたデータベースがあり、そこに行ってテーブルを作成できます
+
+インスタンスからデータをインポートおよびエクスポートできる統計を監視するか、公平性を見つけることができます。
+
+OK、これはクラウドスパナインスタンスです。
+
+後続の講義でさらに詳細を確認します。
+
+ありがとうございました。
+
+
+

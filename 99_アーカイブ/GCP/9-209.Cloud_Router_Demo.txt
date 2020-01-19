@@ -1,0 +1,620 @@
+In this particular demo what we're going to do is we want to do that outing based on that.
+
+You know this is based on the router.
+
+And we will follow the same process but this time we will use the UI.
+
+What I'm going to do is I'm going to utilize existing words jewel network as well as the gateways I'm
+
+just going to modify certain things and just let me go to console so that we can start doing it.
+
+What I want to do is.
+
+So this was the original mission which we had created earlier for are you another VPN which is based
+
+on the cloud router static cloud.
+
+Let me go over to interconnect VPN.
+
+You can actually see those tunnels VPN gateways out there right.
+
+If you click on the VPN gateway You can see all those forwarding rules configured and Tony associated
+
+to where it is.
+
+These tunnels are allowed to burst you can see it or you can just go here and then and then click on
+
+it and then see.
+
+And these these are cloud based tunnels.
+
+One is in Europe west and the other one is in Asia east wind tunnel and the connection is established.
+
+So what I'm going to do is I'm going to delete these tunnels and I'm going to create another dentals
+
+for gateways.
+
+So let me go ahead and let me go to weepie and one recipe in one and I'm going to delete this particular
+
+go to VPN to and delete this
+
+OK so that I not only get.
+
+Hello.
+
+So what I have done is I have just read Rhondda architecture which we want to implement.
+
+So we are going to use router 1.
+
+I just put forward some labels here so that we can understand we are going to use the same process from
+
+creating network your machine firewall VPN gateway.
+
+That is the IP for both Network rating for Windows.
+
+All of this is created in our little app and the only thing which I'm going to do is I'm going to I
+
+hardly deleted the tunnels and I'm going to clear a router I'm going to create panels with the BGP section
+
+and then I'm going to test the connectivity and volitionally what I'm going to do is I'm going to add
+
+additional network which is additional subnetwork in Europe west.
+
+That's the subnetwork three.
+
+And then I'm going to create a virtual machine inside it and then I'm going to test the VM tree to VM
+
+to connectivity.
+
+And just to reiterate I'm going to create router or one with a sun or one and then C or two is in 65
+
+0 0 2 while creating the BGP link.
+
+So if I had to say create the ABC building from here to here I'm going to use to use 6 5 0 0 2 as a
+
+center for this particular router which is router 2 and vice versa.
+
+I'm going to prototype catalysis as well for both things.
+
+So let's go ahead and go to this one.
+
+Tunnel's I don't know what is happening to this one.
+
+This was earlier today of which we had it.
+
+So what I'm going to do is I have deleted those tunnels.
+
+I'm going to create or add the tunnels.
+
+But before I do that let me go to the interconnect and create some routers so router is the first photo
+
+which I'm going to create is the or one and parties in reep you see one.
+
+This one you're up.
+
+And then I'm going to create it in Europe west.
+
+One Google I assume which I'm going to use is 0 0 1 created router
+
+I'm going to create another router which is see to this time it is easy to and it's in Asia.
+
+He is one.
+
+And I'm going to use our differentiation and create
+
+OK the routers are now created.
+
+Let me go to the VPN connection and get on.
+
+So this is Ribisi one and VPN connection one.
+
+So let me go ahead and create the tunnel
+
+tunnel one from one to two.
+
+So what we want to clear out from this one to here so one to two.
+
+OK.
+
+And by IP address which we are going to use it here is for this particular network and that's the second
+
+IP address which we want to use it.
+
+I have for Shia This is the IP address which we are going to use.
+
+So from Europe to Asia.
+
+So that's the destination IP.
+
+I'm going to select the outer see one.
+
+And here I'm going to create easy here.
+
+BGP 1 2 2.
+
+And be present this spear is there is comes from.
+
+So I'm clearing this one so I should be using this router season which is 6 2 6 5 0 0 0 2.
+
+That's the beer here.
+
+And then I'm going to use one IP this one $69 2:54 dart or bought one and the same with two right.
+
+K
+
+and create OK you can do any any of your secret any that's one take some time actually to show that
+
+up here.
+
+I'm going to create another channel and repeat into that I'll this seeds tunnel to for me.
+
+Turn
+
+2 and this is from top to one.
+
+And here I'm going to use the other IP address which is now on connection from here to Europe OK.
+
+Order which I have here is Seattle and the buzy appreciation here.
+
+We want to create BGP to to one from two to one.
+
+And here is 6 5 0 0 1.
+
+If you look at the architecture here.
+
+So for the first router it's 65 001 and then I'm going to reverse the IP address because that's how
+
+it gets connected for the IP.
+
+So one sixty nine dot to do for dot dot dot to 1 69 dord 2 2 4 0 1 and that's it.
+
+Create
+
+so must be creating here.
+
+So I'm going to pause the video for these tunnels to get created and then we'll come back OK.
+
+We see the tunnels has been created.
+
+I think there is still some resources getting allocated like that status here.
+
+What we are going to check the ping if it goes from Rob that works so you can actually see that the
+
+connection between the two instances.
+
+Let me go to a computer virtual machine.
+
+So between these two this is why I'm in rerum one.
+
+I'm connecting from the 1 to 3 am too.
+
+And the connection is established now.
+
+That is the dynamic routing I'm going to add the subnet here again and we'll see that whether the connection
+
+is still exists and working fine.
+
+Let me go to VPN and see if you can see the traffic for this one monitoring OK.
+
+So there is a kind of connection or traffic which is going on flowing through
+
+ok.
+
+I one to then let me see another one.
+
+There is no data.
+
+So let me do one thing.
+
+Let me call your your machine do.
+
+That's an and
+
+being what is machine one.
+
+And let's see if we get the traffic in the monitoring.
+
+Bring 10 dot dot dot.
+
+When Dr.
+
+monitoring
+
+you can see there is a traffic very small as you know in the club that is flowing through.
+
+We can probably wait for some more time and then see the actual traffic which is going.
+
+But now what I want to actually do is come back to this thing I want to go ahead and create another
+
+subnet in VPC one and one word jewel machine inside it.
+
+So let me go to
+
+networks with PC network.
+
+And then in the PC one which is in Europe I want to create another subnet.
+
+And so Nick OK so in the meantime what I'm going to do is I'm going to add subnet so subnet.
+
+It's in Ribisi 1 and then I'm going to add it to the same region because otherwise I need to have another
+
+cloud router which I need to create.
+
+So Tehan Dord want to dot one dot the last 24 that's my IP range.
+
+Let me go in and clear that
+
+OK now let me go ahead and create world full the machine.
+
+This is re-entry
+
+you Europe.
+
+OK.
+
+Europe west warm be ok.
+
+Small instance Mike for instance.
+
+And let me go and modify the networking ban on Twitter.
+
+I want to use the PC one.
+
+And there is a page 3 which I can use gun create.
+
+So I should mention is getting created.
+
+So what I'm going to show is I should be able to ping from VM one to VM 3 seamlessly without modifying
+
+then it will because a router is already there which is taking care of you know announcing these networks.
+
+As for BGP to actually replace the network it takes some time.
+
+If we don't get well you know the response will be early and we've been wait for some time and then
+
+do it.
+
+OK.
+
+Here we are being
+
+team dart in door to door to let me just see there is a connection already exist with IBM too.
+
+Now let me bring two and three
+
+See.
+
+There is a connection exists so so what we want to do is we want to test from VM to do re-entry connectivity.
+
+Being an
+
+not will not to see the connection is going so we have connectivity from VM to re-entry which is in
+
+different network altogether.
+
+We have connectivity and that is how a BGP routing or dynamic cloud router will help us to go out of
+
+network.
+
+That's it guys for our dynamic.
+
+I'm going to put this particular document for you reference so that whenever you want to try it you
+
+can actually get this particular information and then go ahead and create your own cloud router and
+
+that's it for the demo.
+
+Let me know if you have any question.
+
+Make sure that you delete all the resources when you are done with the demo.
+
+
+この特定のデモでは、これに基づいてそのような外出を行いたいと考えています。
+
+これはルーターに基づいていることがわかります。
+
+そして、同じプロセスに従いますが、今回はUIを使用します。
+
+私がやろうとしているのは、既存のwords jewelネットワークと私が利用しているゲートウェイを利用することです
+
+特定のことを変更し、コンソールに移動して、それを開始できるようにします。
+
+私がやりたいのは
+
+これは、以前に作成した元のミッションでした。
+
+クラウドルーターの静的クラウド上。
+
+VPNの相互接続に進みましょう。
+
+実際に、それらのトンネルVPNゲートウェイをすぐに見ることができます。
+
+VPNゲートウェイをクリックすると、設定されたすべての転送ルールと関連するトニーが表示されます。
+
+それがどこにあるか。
+
+これらのトンネルは、あなたがそれを見ることができるか、あなたがただここに行って、それからクリックすることができる破裂することを許されます
+
+それを見てください。
+
+そして、これらはクラウドベースのトンネルです。
+
+1つは西ヨーロッパにあり、もう1つはアジア東風洞にあり、接続が確立されています。
+
+トンネルを削除して、別のデンタルを作成します
+
+ゲートウェイ用。
+
+だから私は先に進んで、ウィーピーと1つのレシピに行かせて、この特定のものを削除します
+
+VPNに移動して、これを削除します
+
+OK
+
+こんにちは。
+
+だから私がやったことは、実装したいRhonddaアーキテクチャを読んだだけです。
+
+そのため、ルーター1を使用します。
+
+ここにいくつかのラベルを付けて、同じプロセスを使用することを理解できるようにします
+
+マシンファイアウォールVPNゲートウェイネットワークを作成します。
+
+これは、Windowsの両方のネットワーク評価のIPです。
+
+これらはすべて小さなアプリで作成されます。私がやろうとしていることは、
+
+トンネルはほとんど削除されず、BGPセクションを含むパネルを作成するルーターをクリアします
+
+そして、接続性をテストし、意図的に行うことは追加することです
+
+ヨーロッパ西部の追加サブネットワークである追加ネットワーク。
+
+これがサブネットワーク3です。
+
+そして、その中に仮想マシンを作成し、VMへのVMツリーをテストします
+
+接続性へ。
+
+繰り返しになりますが、ルーターを作成するか、太陽を1つ、または1つを作成し、Cまたは2を65に設定します。
+
+0 0 2 BGPリンクの作成中。
+
+ここからここまでABCビルを作成する必要がある場合、6 5 0 0 2を使用して
+
+ルーター2であるこの特定のルーターの中心。
+
+両方のことに対して、触媒のプロトタイプも作成します。
+
+さあ、これに行きましょう。
+
+トンネルの私はこれに何が起こっているのか分からない。
+
+これは今日の早い時期でした。
+
+そのため、私はこれらのトンネルを削除します。
+
+トンネルを作成または追加します。
+
+しかし、その前にインターコネクトにアクセスしてルーターを作成し、ルーターが最初の写真になるようにします
+
+私が作成しようとしているのは1つまたは1つで、1つが表示されます。
+
+これはあなたが起きています。
+
+それから、西ヨーロッパで作成します。
+
+使用する予定のGoogleは、0 0 1ルーターです
+
+私は別のルーターを作成しますが、これは今までは簡単で、アジアにあります。
+
+彼は一人です。
+
+そして、私たちの差別化を使用して作成します
+
+OKこれでルーターが作成されました。
+
+VPN接続に行って、乗ってみましょう。
+
+したがって、これはRibisiのものとVPN接続のものです。
+
+トンネルを作成してみましょう
+
+1から2へのトンネル。
+
+これをここから1から2までクリアしたいのです。
+
+OK。
+
+ここで使用するIPアドレスは、この特定のネットワーク用であり、2番目です
+
+使用したいIPアドレス。
+
+私はシーアのためにこれが私達が使用しようとしているIPアドレスです。
+
+だからヨーロッパからアジアへ。
+
+これが宛先IPです。
+
+外側の1つを選択します。
+
+そして、ここで簡単に作成します。
+
+BGP 1 2 2。
+
+そして、この槍が存在する存在である存在。
+
+だから私はこれをクリアしているので、6 2 6 5 0 0 0 2であるこのルーターシーズンを使用する必要があります
+
+それがここのビールです。
+
+そして、1つのIPをこの$ 69 2:54ダーツで使用するか、2つの権利で同じものを購入します。
+
+K
+
+そして、あなたがあなたの秘密のいずれかを行うことができますOKを作成します。
+
+ここまで。
+
+別のチャネルを作成し、このシードトンネルを作成します。
+
+順番
+
+2、これは上から1です。
+
+そして、ここで、ここからヨーロッパへの接続に使用されている他のIPアドレスを使用します。
+
+私がここで持っている注文はシアトルであり、ここでのうれしい感謝です。
+
+BGPを2対1で作成します。
+
+そして、これは6 5 0 0 1です。
+
+ここでアーキテクチャを見ると。
+
+最初のルーターの場合は65 001で、次にIPアドレスを逆にします。
+
+IPに接続されます。
+
+だから1 69 dord 2 2 4 0 1へのドットドットドットに対して行う1つの69ドットとそれだけです。
+
+作成する
+
+ここで作成する必要があります。
+
+そのため、これらのトンネルが作成されるようにビデオを一時停止し、OKに戻ります。
+
+トンネルが作成されたことがわかります。
+
+ここにそのステータスのようなリソースがまだ割り当てられていると思います。
+
+動作するRobからの場合、pingを確認するため、実際に確認できます。
+
+2つのインスタンス間の接続。
+
+コンピューター仮想マシンに行きましょう。
+
+したがって、これら2つの間で、これが私がリラム1にいる理由です。
+
+私も午前1時から3時まで接続しています。
+
+これで接続が確立されました。
+
+これが動的ルーティングです。ここでサブネットを再度追加します。接続が
+
+はまだ存在し、正常に動作しています。
+
+VPNに移動して、この1つのモニタリングのトラフィックを確認できるかどうかを確認します。
+
+そのため、ある種の接続またはトラフィックが流れています
+
+OK。
+
+それから私は別のものを見させます。
+
+データが存在しません。
+
+だから一つだけさせてください。
+
+あなたのマシンをdoと呼びましょう。
+
+それは
+
+マシン1とは何か。
+
+そして、モニタリングでトラフィックを取得するかどうかを見てみましょう。
+
+10ドットドットドットをもたらします。
+
+博士が
+
+モニタリング
+
+クラブ内を流れるトラフィックは非常に少ないことがわかります。
+
+しばらく待ってから、実際のトラフィックを確認できます。
+
+しかし、今私が実際にやりたいことは、このことに戻って、私は先に行き、別のものを作成したいです
+
+VPC内のサブネットとその中の1つの単語宝石マシン。
+
+だから私に行きましょう
+
+PCネットワークとのネットワーク。
+
+そして、ヨーロッパにあるPCで、別のサブネットを作成します。
+
+ニックOKですから、その間にサブネットを追加するつもりです。
+
+それはRibisi 1にあり、それから同じリージョンに追加します。
+
+作成する必要があるクラウドルーター。
+
+したがって、Tehan Dordは、私のIP範囲である最後の24個に1個のドットを付けたいと考えています。
+
+行って、それをクリアさせてください
+
+では、先に進んで、マシン全体を作成します。
+
+これは再入場です
+
+あなたヨーロッパ。
+
+OK。
+
+ヨーロッパ西部は暖かくても大丈夫。
+
+たとえば、小さなインスタンスのマイク。
+
+そして、Twitterでのネットワーキング禁止を修正します。
+
+パソコンを使いたいです。
+
+ガンクリエイトを使用できる3ページ目があります。
+
+ですから、作成されることに言及する必要があります。
+
+見せることは、変更せずにシームレスにVM 1からVM 3にpingできることです
+
+これらのネットワークの発表を知っているあなたの世話をしているルーターが既にそこにあるので、それはそうなります。
+
+BGPが実際にネットワークを置き換えるには、時間がかかります。
+
+うまくいかない場合は、応答が早くなり、しばらく待ってから
+
+やれ。
+
+OK。
+
+ここにいる
+
+チームダーツツードアで、IBMとの接続がすでに存在することを確認します。
+
+今、私は2と3を持ってきましょう
+
+見る。
+
+接続が存在するため、やりたいことは、VMからテストして再入力接続を行うことです。
+
+であること
+
+接続が行われないことを確認しないため、VMから再入力への接続があります。
+
+まったく異なるネットワーク。
+
+接続性があるので、BGPルーティングまたはダイナミッククラウドルーターは、
+
+通信網。
+
+それが私たちのダイナミックな人たちです。
+
+この特定のドキュメントを参照用に配置して、いつでも試してみたいと思います
+
+実際にこの特定の情報を取得してから、独自のクラウドルーターを作成し、
+
+デモはこれで終わりです。
+
+何か質問があれば教えてください。
+
+デモを完了したら、必ずすべてのリソースを削除してください。

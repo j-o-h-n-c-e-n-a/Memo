@@ -1,0 +1,75 @@
+Let's look at encryption.
+
+We already saw Google encrypt all their data while in transit.
+
+So when you are storing that information into Google cloud storage or any other storage right.
+
+So we have that understanding let's understand how it is applicable to cloud storage.
+
+Google's cloud storage always always encrypt your data while storing that into a disk.
+
+So this is and this is what you need to have an understanding.
+
+So there is a sort of side encryption which is encrypt and decrypt the data so you are while storing
+
+it it will encrypt and while treating it it will automatically decrypt and show it to you how to give
+
+it to you.
+
+You can provide your own encryption key to encrypt the data or Google will use its own service.
+
+At the same time what you can do is you can encrypted data while sending it to the Google.
+
+And that is this is an additional option which you can use it to encrypt the data that is the client
+
+that encryption.
+
+So encryption using customer supplied the key you can.
+
+And there are multiple ways you can use it.
+
+You can use partner companies to manage your key.
+
+You can use this on the next email list API is all you can use GSM hotels combined for encryption
+
+that say does encryption.
+
+We are going to see objects in the notification in cloud storage as a next lecture.
+
+暗号化を見てみましょう。
+
+Googleは、送信中にすべてのデータを暗号化することを既に見ました。
+
+そのため、その情報をGoogleクラウドストレージまたはその他のストレージ権に保存する場合。
+
+そのため、クラウドストレージにどのように適用できるかを理解しましょう。
+
+Googleのクラウドストレージは、常にデータを暗号化してディスクに保存します。
+
+だから、これはあなたが理解するために必要なものです。
+
+したがって、保存中にデータを暗号化および復号化するサイド暗号化があります
+
+暗号化され、処理中に自動的に復号化され、提供方法が示されます
+
+それをあなたに。
+
+独自の暗号化キーを提供してデータを暗号化するか、Googleが独自のサービスを使用します。
+
+同時にできることは、データを暗号化してGoogleに送信することです。
+
+そして、これは、クライアントであるデータを暗号化するために使用できる追加オプションです
+
+その暗号化。
+
+したがって、顧客を使用した暗号化は、可能なキーを提供しました。
+
+そして、あなたはそれを使うことができる複数の方法があります。
+
+パートナー企業を使用して、キーを管理できます。
+
+次のメーリングリストAPIでこれを使用できます。GSMホテルを使用して暗号化を組み合わせることができます。
+
+つまり、暗号化を行います。
+
+次の講義として、クラウドストレージの通知にオブジェクトを表示します。

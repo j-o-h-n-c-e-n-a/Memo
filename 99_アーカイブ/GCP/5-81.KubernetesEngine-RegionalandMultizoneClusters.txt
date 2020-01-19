@@ -1,0 +1,123 @@
+Multi zone and regional clusters.
+
+So for high reliability you can choose to have newer nodes trending in multiple geographical locations
+
+like our data centers so that if one of their data center goes down and then you have a liability on
+
+other data centers and the concept here in Google Cloud Platform is the zones that we know right.
+
+So you can have your nodes running across multiple toons and it can be either managed by one master
+
+or it can be managed by multiple masters.
+
+So the keeping that thought in mind Google has got just be has got a Mercedes own all regional clusters.
+
+OK so if you look at the regional clusters you have multiple master nodes getting replicated.
+
+And if one of the master goes down right mean master goes down then the services can be restored and
+
+can be available from other master also.
+
+And that is a kind of a multiple.
+
+If I go back here and try to create these two scenarios the first one is I can say
+
+the zonal ones once and when I said zonal I can choose a node where I want to host right okay.
+
+And if I see the zonal it says it will ask me which reason only and then it will not ask me which is
+
+when you want worsted because you are master OK your master and your nodes are getting distributed across
+
+multiple zones inside the region.
+
+If you want to see or understand how the concept works I can just go to high level live a little lesser
+
+and most demanding availability requirement both the master and nodes are replicated across multiple
+
+tones.
+
+And this is really important.
+
+Okay so you can have both the configurations the way you want to have it the way for the normal level
+
+you can manage it based on your need and you can say that you know you want to manage you want to manage
+
+certain number of certain node pulls in one particular zone versus other zones you can have more options
+
+and you can customize more here this node pulls you can configure different pattern with that as I said
+
+maybe use and all that but that's it guys.
+
+As a as a market is two not regional clusters are mortgages or regional clusters a way to know where
+
+to an N on different zones in a single cluster all controlled by C master M.D. on cluster outside of
+
+primarily used the way to improve availability up your application and likely outreach in the regional
+
+cluster you have node as well as mustard in different zones replicated
+
+that same guys for multi zone and regional clusters.
+
+Next we are going to seize at upscaling.
+
+マルチゾーンおよびリージョナルクラスター。
+
+そのため、信頼性を高めるために、複数の地理的な場所で新しいノードをトレンド化することを選択できます
+
+データセンターのように、そのデータセンターの1つがダウンした場合に、
+
+他のデータセンターとここでのGoogle Cloud Platformの概念は、私たちが正しく知っているゾーンです。
+
+したがって、複数のトゥーンでノードを実行でき、1つのマスターで管理できます
+
+または、複数のマスターで管理できます。
+
+したがって、Googleが考えていることを念頭に置いておくと、メルセデスがすべての地域クラスターを所有していることになります。
+
+OKです。リージョナルクラスタを見ると、複数のマスターノードが複製されています。
+
+マスターの1つが正しくダウンした場合、マスターがダウンしたことを意味し、サービスを復元して、
+
+他のマスターからも利用できます。
+
+そしてそれは一種の倍数です。
+
+ここに戻ってこれら2つのシナリオを作成しようとすると、最初のシナリオは
+
+ゾーンのものを一度と私はゾーンと言ったとき、私は大丈夫ホストしたいノードを選択することができます。
+
+そして、ゾーンを見ると、それはどの理由だけを私に尋ねるだろうと言って、それからそれは私に尋ねません
+
+マスターがOKであるため、最悪の状態にしたい場合は、マスターとノードが分散されます
+
+領域内の複数のゾーン。
+
+コンセプトがどのように機能するかを見たり理解したい場合は、少しレベルを下げてライブを行うことができます
+
+最も要求の厳しい可用性要件は、マスターとノードの両方が複数にわたって複製されます
+
+トーン。
+
+そして、これは本当に重要です。
+
+大丈夫ですので、あなたは両方の設定をあなたが望むように通常のレベルの方法を持つことができます
+
+あなたはあなたのニーズに基づいてそれを管理することができ、あなたが管理したいあなたが管理したいことを知っていると言うことができます
+
+特定のノードの特定の数は、1つの特定のゾーンと他のゾーンをプルします
+
+ここでこのノードをさらにカスタマイズして、別のパターンを構成できます。
+
+多分それを使用しますが、それはみんなです。
+
+市場が2つあるように、地域クラスターは住宅ローンや地域クラスターではありません。
+
+単一クラスター内の異なるゾーン上のNに、すべてが外部のクラスター上のCマスターM.D.によって制御される
+
+主に、アプリケーションの可用性と地域での可能性のあるアウトリーチを改善する方法を使用しました
+
+複製された異なるゾーンにマスタードと同様にノードがあるクラスター
+
+マルチゾーンおよびリージョナルクラスターでも同じです。
+
+次に、アップスケーリングに専念します。

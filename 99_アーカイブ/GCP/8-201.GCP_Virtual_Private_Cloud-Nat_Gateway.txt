@@ -1,0 +1,104 @@
+Not get we host isolation so we solve one problem one problem and our is when you have instance in Dunalley
+
+instance and you want to do maintenance you want to install patches or are you interconnected for any
+
+other maintenance.
+
+You what you do is you set up Bashan host.
+
+And in the same subnet and then you connect to that particular instance why S-sh with the internal domain
+
+name or internal IP address.
+
+But in case of say there is an other network and you want to connect from the second network instance
+
+you want to connect or access services which are there in the you know instance one are the network
+
+one instance one which is internal.
+
+What you do is you actually create not the gateway and that Gateway takes all the traffic from the instance
+
+the.
+
+And that traffic gets routed using IP forwarding rules to the instance one that's how you have you know
+
+instance created as NAT gateway.
+
+Do you think of any use case here for this one you get it right.
+
+So you can think of you know there are and there is an another you that the VPC or the network or you
+
+can think of data center services they want to get connection to the cloud internal instance that's
+
+where you can use the instance to as in that case we do isolate the traffic or isolate it from the world.
+
+Right.
+
+That said for instance you can again go in and create some firewall rules who can restrict traffic from
+
+a particular instance only to the instance too.
+
+Right.
+
+So you can how all those rules are defined to restrict any other traffic to this particular instance
+
+too.
+
+And that's it for a target with isolation if you have any questions let me know.
+
+We'll see on network pricing in next chapter.
+
+Thanks.
+
+
+ホスト隔離を取得しないので、1つの問題と1つの問題を解決します。Dunalleyにインスタンスがある場合は、
+
+インスタンスおよびメンテナンスを行いたい場合、パッチをインストールする場合、または相互接続されている場合
+
+その他のメンテナンス。
+
+あなたがすることは、Bashanホストをセットアップすることです。
+
+そして、同じサブネットで、その特定のインスタンスに接続する理由は、内部ドメインでS-sh
+
+名前または内部IPアドレス。
+
+しかし、他のネットワークがあり、2番目のネットワークインスタンスから接続したい場合
+
+あなたが知っているインスタンスにあるサービスに接続またはアクセスしたい場合
+
+内部の1つのインスタンス。
+
+あなたがすることは、実際にはゲートウェイではなく作成し、そのゲートウェイがインスタンスからのすべてのトラフィックを取ることです
+
+。
+
+そして、そのトラフィックは、あなたが知っている方法であるインスタンス転送ルールにIP転送ルールを使用してルーティングされます
+
+NATゲートウェイとして作成されたインスタンス。
+
+あなたはそれを正しく理解するために、ここのユースケースを考えますか？
+
+だから、あなたが存在していることを知っていると思うことができますし、VPCまたはネットワークまたは
+
+クラウド内部インスタンスへの接続を取得したいデータセンターサービスを考えることができます
+
+その場合のようにインスタンスを使用して、トラフィックを隔離したり、世界から隔離したりできます。
+
+正しい。
+
+それは、たとえば、再び入って、からのトラフィックを制限できるいくつかのファイアウォールルールを作成できるということです
+
+特定のインスタンスもインスタンスにのみ。
+
+正しい。
+
+したがって、これらのすべてのルールを定義して、この特定のインスタンスへの他のトラフィックを制限することができます
+
+も。
+
+質問がある場合は、それが分離されたターゲットの場合です。
+
+ネットワークの価格設定については、次の章で説明します。
+
+ありがとう。

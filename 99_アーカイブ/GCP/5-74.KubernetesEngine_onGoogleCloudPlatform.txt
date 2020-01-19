@@ -1,0 +1,127 @@
+We saw how you can launch Coburn it is cluster here in Google Cloud Platform.
+
+We are not provisioned any nodes or virtual machines for us to launch a cluster.
+
+We are not done any hardware provisioning it is just readily available for us to start it.
+
+Let's look at some of the properties of it is in Google Cloud Platform.
+
+So common it is is open source based on Google systems as we as I said it is open sourced by Google
+
+itself.
+
+So Google understand the core of co-operatives.
+
+It's a it's a container framework.
+
+It is fully managed services with which is like communities with SLA.
+
+And this is one of the main feature that we have available.
+
+It is fully managed by Google.
+
+You don't have to manage anything you just need to launch the cluster it supports Docker format and
+
+I think there are multiple formats.
+
+Probably I am not aware right now how many format supports cloud European integration is already there
+
+cloud IAM integration is there some of the features it is fully managed you can do auto scaling and
+
+for auto scaling you do not need to provision again the virtual machines everything will be provisioned
+
+by default you can do a top grade you can auto repair the nodes you can get the hybrid networking configured
+
+on two Cuban entities it supports regulated logging and monitoring it supports state full application
+
+sub it support Docker images are containers I would say you can provide the resource limits so that
+
+you can control on the cost you can have private container registry which is available for you to use
+
+it it can work with identity and access management and you can have resource optimized deployments as
+
+well and we are going to see all of these concepts in subsequent lectures it provides a reliable and
+
+self healing without you doing anything and it supports private eye it provides the configuration as
+
+a desired state and then the cluster will try to make that particular configuration as an example if
+
+you say modify the cluster and you say I need now three nodes instead of one node you can just provide
+
+that configuration and then cluster will try to achieve that desired configuration.
+
+These are some of the concepts like content and cluster cluster Federation cluster that scaling cluster
+
+labeling node pools in order to upgrade node repair.
+
+Note Images load balancing I am identity and access management and access control IP agent rotation
+
+and there are some other configurations we are going to see it in subsequent lectures that's it guys
+
+if you have any questions on basic concepts let us know are you can move do you know these individual
+
+topics coming up next.
+
+Google Cloud PlatformのクラスターであるCoburnを起動する方法を確認しました。
+
+クラスタを起動するためのノードまたは仮想マシンはプロビジョニングされていません。
+
+ハードウェアのプロビジョニングはまだ完了しておらず、すぐに開始できます。
+
+Google Cloud Platformにあるいくつかのプロパティを見てみましょう。
+
+私が言ったように、Googleシステムに基づいたオープンソースが一般的です
+
+自体。
+
+したがって、Googleは協同組合の中核を理解しています。
+
+それはコンテナフレームワークです。
+
+これは、SLAを備えたコミュニティのような完全に管理されたサービスです。
+
+そして、これは私たちが利用できる主な機能の一つです。
+
+Googleが完全に管理しています。
+
+Docker形式をサポートするクラスターを起動するために必要なものを管理する必要はありません。
+
+複数のフォーマットがあると思います。
+
+おそらく、ヨーロッパの統合がすでにサポートされているクラウドのフォーマットがいくつあるのか、今は気づいていないでしょう。
+
+クラウドIAM統合には、完全に管理されている機能の一部があり、自動スケーリングと
+
+自動スケーリングの場合、すべてがプロビジョニングされる仮想マシンを再度プロビジョニングする必要はありません
+
+デフォルトでは、トップグレードを実行でき、ハイブリッドネットワークを構成できるノードを自動修復できます
+
+2つのキューバエンティティでは、規制されたログ記録と監視をサポートし、ステートフルアプリケーションをサポートします。
+
+Dockerイメージをサポートするサブは、リソース制限を提供できるコンテナです。
+
+あなたが使用できるプライベートコンテナレジストリを持つことができるコストを制御することができます
+
+IDおよびアクセス管理と連携でき、リソースを最適化した展開を次のように行うことができます。
+
+そして、今後の講義でこれらの概念をすべて見ていきます。
+
+あなたは何もせずに自己治癒し、プライベートアイをサポートします
+
+目的の状態にすると、クラスタは次の場合にその特定の構成を例として作成しようとします。
+
+あなたはクラスタを変更すると言い、あなたはちょうどあなたが提供できる1つのノードの代わりに3つのノードが必要だと言います
+
+その構成とクラスターは、その望ましい構成を達成しようとします。
+
+これらは、コンテンツやクラスターのような概念の一部ですクラスタークラスタースケーリングクラスター
+
+ノード修復をアップグレードするためのノードプールのラベル付け。
+
+注イメージの負荷分散私はIDおよびアクセス管理とアクセス制御IPエージェントローテーションです
+
+他の構成もありますので、今後の講義で見ていきます
+
+基本的な概念について質問がある場合は、移動できるかどうかをお知らせください
+
+次に取り上げるトピック。

@@ -1,0 +1,87 @@
+Local lessons do support in Cuba natives engine.
+
+If you look at why do we need local SSD.
+
+The only purpose where you need local SSD for any applications to rear your brain inside the nodes is
+
+if you want to do a you know data massaging and you want to have the storage which is near to your computer
+
+engine and that's where the local industry will be useful.
+
+So if you understand local SSD the SSD which are on there on the hardware which are you know the parts
+
+are running order.
+
+Application is running on them on the nodes.
+
+If you are to enable or use the local SSD it can go and show you where you can do that.
+
+If I go to cluster and I click on cluster
+
+so these are the.
+
+The node pulls right.
+
+If you go here in more options you can say I want local assisting
+
+so no up locally assist is I can say one two three four like that.
+
+You can go up to 8 SSD and we know we have seen local SSD in the compute engine aswell but you can use
+
+local SSD in Cuba it is engine as well.
+
+The only one thing which you need to make sure that you understand it if there are nodes are the parts
+
+which are obscured on a different hardware altogether different mission altogether.
+
+And it is not in the same node pool then probably you will not get localized as to all of the data which
+
+is created by one node is not transported to additional nodes and you need to understand that these
+
+are the limitations like using local SSD.
+
+That's it guys as a local SSD if you have any questions let us know how it was moved to the next picture.
+
+ローカルレッスンは、キューバのネイティブエンジンでサポートされています。
+
+理由を見ると、ローカルSSDが必要です。
+
+ノード内の脳を育てるアプリケーションにローカルSSDが必要な唯一の目的は
+
+あなたがしたいなら、あなたはデータマッサージを知っていて、あなたはあなたのコンピュータの近くにあるストレージを持ちたいです
+
+エンジンとそれは地元の産業が有用であるところです。
+
+したがって、ローカルSSDを理解している場合、ハードウェア上にあるSSDは、部品を知っています
+
+注文を実行しています。
+
+ノード上のアプリケーションでアプリケーションが実行されています。
+
+ローカルSSDを有効にするか使用する場合は、どこでそれを実行できるかを示します。
+
+クラスターに行き、クラスターをクリックした場合
+
+だからこれらは。
+
+ノードが右に引っ張られます。
+
+他のオプションでここに行くと、私は地元の援助が欲しいと言うことができます
+
+そのため、ローカルサポートはありません。
+
+最大8個のSSDを使用でき、コンピューティングエンジンでもローカルSSDを確認できますが、使用できます
+
+キューバのローカルSSDもエンジンです。
+
+ノードがある場合にそれを理解することを確認する必要がある唯一の事柄は部品です
+
+これらは、まったく異なるハードウェアで完全に異なるミッションで隠されています。
+
+そして、それは同じノードプールにないので、おそらくあなたはすべてのデータに関してローカライズされないでしょう
+
+1つのノードによって作成され、追加のノードに転送されないため、これらを理解する必要がある
+
+ローカルSSDを使用するなどの制限があります。
+
+質問がある場合は、ローカルSSDとして使用します。次の図に移動した方法をお知らせください。

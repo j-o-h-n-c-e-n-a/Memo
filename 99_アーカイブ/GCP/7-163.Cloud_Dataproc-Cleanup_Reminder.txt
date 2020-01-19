@@ -1,0 +1,20 @@
+Before we move ourselves to the next service make sure that you delete the cluster to save your 300
+
+dollars delete from Google Cloud Platform.
+
+So to select this one and go down delete and this will delete the cluster and it it's free of all the
+
+computing sources which is which is acquired by this particular cluster.
+
+Thank you.
+
+
+次のサービスに移動する前に、クラスターを削除して300を保存していることを確認してください
+
+Google Cloud Platformからドルが削除されます。
+
+したがって、これを選択して削除するには、クラスターを削除します。
+
+この特定のクラスターによって取得されるコンピューティングソース。
+
+ありがとうございました。

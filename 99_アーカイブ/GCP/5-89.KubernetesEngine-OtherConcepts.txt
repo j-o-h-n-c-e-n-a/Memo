@@ -1,0 +1,215 @@
+Let's look at other concepts of Cuban it is in June.
+
+And those are like first one is the alpha cluster.
+
+These and plus stocks are you can think of it's like very short lived clusters and not covered by silly
+
+and cannot be upgraded.
+
+It has got all legal but it is API and features enabled alfalfa.
+
+Turns out the way to unstable cabinet is released with Alpha features they may be late table Alpha clusters
+
+cannot upgrade and not automatically deleted after 30 days.
+
+You need to make sure that if at all you are using the latest concepts are the features of Alpha clusters
+
+labeling in the content engine you can apply label add a cluster label when you have a label in a cluster
+
+or label you choose and propagates to all the cluster individual resources such as computing instances
+
+bus system disk etc etc..
+
+So that's how the label is used.
+
+Any money you know for at upskilling the labels that are used widely for large clusters it can take
+
+up to an hour for the label.
+
+All the resources in the cluster of local SSD supports you can how localized assess the physical devices
+
+which is attached to an actual physical drive and you can use the local SSD.
+
+GK has added ability to Nords to be created with them up to the machine limits and the project coda
+
+local lessons deploys higher throughput and lower latency than the standard disk and we we need to we
+
+need to look at some of the constellations while using local SSD as an example.
+
+Those I would consider a case wherein you know your node gets relocated or you help board which is running
+
+on one particular node.
+
+You store the information on local SSD but at the same time if the PA get destroyed and started again
+
+on another node your data from the local SSD will be lost.
+
+You need to make sure that you understand the concentrations cluster federation and this is another
+
+widely used concept in Cuba and it is in June.
+
+And because of this only you know Cuban it is is so popular so popular that you can how you are a Cuban
+
+and its cluster running inside
+
+inside Google Cloud Platform in multiple regions and the zones as well as you can how clear you know
+
+Cuban it is cluster some part of it running inside some of the regions in Google cloud as well as you're
+
+on on pretty meiosis or you can how you can go you know Cuban it is cluster running across multiple
+
+cloud providers and providing you single interface to the country planet and that is what it is called
+
+as a you know cluster Federation.
+
+If there is any questions around it majorly it is going to come in.
+
+It is going to come in.
+
+Cloud engineer of it is going to come in developer as well you know what is that you want to say launch
+
+an application or manage an application in multiple cloud environment.
+
+What is that platform right.
+
+Whether it is App Engine whether it is Goulburn it is whether it is what is your machine instances what
+
+is that and Carbonite is is the best suitable answer here.
+
+Its also supports an identity and access management indication in GK So you hold your keys on configuration
+
+which is why I keep CDL but at the same time it also supports Google ought to.
+
+I am at indication.
+
+I usually when you create a new cluster container engine figures out the cube still to use application
+
+default credentials to return ticket to cluster.
+
+So there are internal you know Agent access permissions to the cluster and there are external.
+
+Which is like now I am and it can work together seamlessly in Google Cloud Platform and there is also
+
+a rule based access control which is managed by cooperatives inside API is and that works together.
+
+But we are going to see that in demo in some of the some of the respected got a certification cases
+
+that's it guys.
+
+As a Cuban it is if you have any questions on it let me know what I'm going to do is I'm going to detail
+
+it out.
+
+What are the other parameters which we are not discussed in going to the console while creating an fluster
+
+in the next lecture.
+
+Thank you very much.
+
+6月にあるキューバの他の概念を見てみましょう。
+
+そして、それらは最初のものがアルファクラスターであるようです。
+
+これらとプラスの株は、あなたがそれが非常に短命のクラスターのようであり、愚かなことで覆われていないと考えることができるということです
+
+アップグレードできません。
+
+すべて合法ですが、アルファルファを有効にしたAPIと機能です。
+
+不安定なキャビネットへの道は、それらが遅いテーブルAlphaクラスタであるかもしれないAlpha機能でリリースされることが判明
+
+アップグレードできず、30日後に自動的に削除されません。
+
+最新のコンセプトを使用している場合は、アルファクラスターの機能であることを確認する必要があります。
+
+ラベルを適用できるコンテンツエンジンでのラベル付けクラスターにラベルがある場合にクラスターラベルを追加
+
+または、選択したラベルを付けて、コンピューティングインスタンスなどのすべてのクラスターの個々のリソースに伝達します。
+
+バスシステムディスクなど。
+
+これがラベルの使用方法です。
+
+大規模なクラスターで広く使用されているラベルのスキルアップで知っているお金
+
+ラベルの最大1時間。
+
+ローカルSSDのクラスター内のすべてのリソースは、物理デバイスをローカライズする方法をサポートします。
+
+実際の物理ドライブに接続されており、ローカルSSDを使用できます。
+
+GKは、マシンの制限とプロジェクトcodaを上限として、Nordを作成する機能を追加しました。
+
+ローカルレッスンは、標準ディスクよりも高いスループットと低いレイテンシを展開します。
+
+例としてローカルSSDを使用しながら、いくつかの星座を調べる必要があります。
+
+ノードが再配置されることがわかっているか、実行中のボードを支援する場合を考えます
+
+1つの特定のノード。
+
+ローカルSSDに情報を保存しますが、同時にPAが破壊されて再起動した場合
+
+別のノードでは、ローカルSSDからのデータが失われます。
+
+濃度クラスター連合を理解していることを確認する必要があります。これは別の方法です
+
+キューバで広く使用されている概念であり、6月です。
+
+このため、キューバ人はあなたがキューバ人であることがわかります
+
+内部で実行されているそのクラスター
+
+Google Cloud Platform内の複数の地域とゾーンに加えて、あなたがどれだけ知っているかを確認できます
+
+キューバは、Googleクラウドの一部のリージョン内で実行されているクラスターの一部であり、
+
+かなり減数分裂に行くか、キューバはそれが複数で実行されているクラスタであることを知ることができます
+
+クラウドプロバイダーと国の惑星への単一のインターフェイスを提供し、それはそれが呼ばれているものです
+
+クラスターフェデレーションとして知っています。
+
+主にその周りに何か質問があれば、入ってくるでしょう。
+
+入ってくる予定です。
+
+クラウドエンジニアはデベロッパーに参加する予定です
+
+複数のクラウド環境でのアプリケーションまたはアプリケーションの管理。
+
+そのプラットフォームは何ですか。
+
+App Engineであるかどうか、Goulburnであるかどうか、それがあなたのマシンインスタンスであるかどうかです
+
+ここで、カーボナイトが最適な答えです。
+
+また、GKでIDおよびアクセス管理の表示をサポートしているため、構成時にキーを保持できます。
+
+だからこそ私はCDLを保持していますが、同時にGoogleもサポートすべきです。
+
+私は徴候です。
+
+私は通常、新しいクラスターコンテナエンジンを作成するときに、アプリケーションを使用するためにキューブを計算します
+
+チケットをクラスターに返すデフォルトの資格情報。
+
+したがって、クラスタへのエージェントアクセス許可を知っている内部と外部があります。
+
+これは今のようで、Google Cloud Platformでシームレスに連携できます。また、
+
+API内の協同組合によって管理されるルールベースのアクセス制御は、連携して機能します。
+
+しかし、私たちはいくつかの尊敬されているいくつかのデモで、認定ケースを得たことを見るつもりです
+
+それはみんなだ。
+
+キューバ人として、質問があれば、私が何をしようとしているのかを詳しく教えてください
+
+それを。
+
+フラスターの作成中にコンソールに移動する際に説明されていない他のパラメーターは何ですか
+
+次の講義で。
+
+どうもありがとうございました。

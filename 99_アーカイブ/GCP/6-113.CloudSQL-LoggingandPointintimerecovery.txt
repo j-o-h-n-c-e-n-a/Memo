@@ -1,0 +1,120 @@
+Logging and finding time recording.
+
+So if you look at or if you understand the way what actually works or my Haskell works it requires log
+
+if at all you want.
+
+Say your database is using very databases getting updated continuously and those individual transactions
+
+are very very important for you like financial institution or any bank bank or any other business right.
+
+That's where if you have importance of each and every transactions which rights to the database and
+
+committed to the database you will need to make sure that there are logs created because this right
+
+takes time and the way the databases are designed.
+
+If you look at the Oracle Oracle has got to redo logs and you can enable you know the really long archival
+
+process as well so that whenever you want to restore the database you can restore the database to the
+
+point it got crashed.
+
+OK.
+
+So that's the point in time recovery.
+
+You can enable point in time recovery
+
+in your for your database if at all you're creating a new database.
+
+You can go here and then you can say enable binary logging and that once you enable this you can go
+
+ahead and restore restore the database until it got when it got crashed.
+
+OK.
+
+So this is the binary logging and this might be a question for almost all the exams which you have it
+
+whether it is database engine.
+
+I know that I was sorry did engineer or cloudy engineer or cloud architect or cloud developer.
+
+OK.
+
+All of those exams this question may ask you need to make sure that you understand binary logging is
+
+what it is used to restore the database in its original state.
+
+OK.
+
+Without losing a single transaction
+
+besides this you can go to my school logs and this is you can think of the straggler where logging is
+
+where it really integrated with the my skills so you can see the logs inside track.
+
+I would logging and we can do you and monitoring in cloud structure I would monitoring.
+
+Okay that's it guys as a logging and point in time recovery next point we are going to series high reliability.
+
+
+時間記録の記録と検索。
+
+したがって、実際に機能する方法や私のHaskellが機能する方法を確認したり理解したりするには、ログが必要です
+
+必要に応じて。
+
+データベースが継続的に更新されているデータベースを非常に使用しており、それらの個々のトランザクションがあるとします
+
+金融機関や銀行、その他のビジネス権などのお客様にとって非常に重要です。
+
+ここで、データベースに対する権利を持つすべてのトランザクションの重要性があり、
+
+データベースにコミットします。この権利があるため、ログが作成されていることを確認する必要があります。
+
+時間とデータベースの設計方法がかかります。
+
+Oracleを見ると、Oracleはログをやり直す必要があり、本当に長いアーカイブを知ることができます。
+
+データベースを復元したいときはいつでも、データベースを
+
+クラッシュした点。
+
+OK。
+
+それが、ポイントインタイムリカバリです。
+
+ポイントインタイムリカバリを有効にできます
+
+新しいデータベースを作成している場合は、データベース用に。
+
+ここに行けば、バイナリロギングを有効にできます。これを有効にすると、
+
+事前にデータベースを復元し、クラッシュしたときにデータベースを復元します。
+
+OK。
+
+これがバイナリロギングであり、これはあなたが持っているほとんどすべての試験の質問かもしれません
+
+データベースエンジンかどうか。
+
+エンジニアまたはクラウドエンジニア、クラウドアーキテクト、またはクラウド開発者が申し訳ありませんでした。
+
+OK。
+
+この質問はすべて、この質問でバイナリロギングが理解されていることを確認する必要がある場合があります。
+
+データベースを元の状態に復元するために使用されるもの。
+
+OK。
+
+単一のトランザクションを失うことなく
+
+これに加えて、あなたは私の学校のログに行くことができ、これはあなたがロギングがどこにあるかを考えることができます
+
+マイスキルと本当に統合されているので、トラック内のログを見ることができます。
+
+ロギングを行います。クラウド構造でモニタリングし、監視します。
+
+ロギングとポイントインタイムリカバリとして次のポイントとして、信頼性の高いシリーズを作成します。

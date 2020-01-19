@@ -1,0 +1,351 @@
+Let's go back to the slide back again and the cloud network services.
+
+We already saw that there are submarine cables and you know that the fiber optic investment which is
+
+made by the Google and Google is making that available for the customer to use it.
+
+And this is very the best point which Google has it.
+
+Which other cloud does not have it in this level of know depth.
+
+So this is the advantage of this is the backbone for Google services to run very efficiently in the
+
+services the network services which uses these cables are the backbone is divided into three different
+
+sub topic.
+
+One is the load balancer and that's it's in global plain.
+
+The other one is VPC and sub networks and interconnections and third one is DNS and serious.
+
+These are like additional services from the network
+
+application he uses this to keep a load balancer Cloud City and cloud DNS.
+
+The VPC users are the virtual private cloud users
+
+is the network virtualization in the loop.
+
+As I said global playing you can create the network and you can create the subnet work inside it.
+
+And we saw that the theory we are going to see in detail in the next subsequent lectures and the interconnect
+
+using the interconnect you can connect your on prem ISIS
+
+you know data center with the cloud whether it is Google Cloud are you know I'm on cloud or any other
+
+cloud besides that there are some entities which will be supporting all those activities like a network
+
+IBM and firewalls too.
+
+And you can enable logs on do it on the firewalls and so that you can monitor their traffic on the first
+
+one is the cloud of UPC which we saw managed networking functionality on DCP resources.
+
+It has built private global data like feel without managing hardware or building it by yourself.
+
+You can configure sub network firewalls around spearing.
+
+You can monitor the VPC using the VPC flow logs and it is global shareable and expandable by design.
+
+So all these the networks which you created it does not have any physical regional or you know the zonal
+
+limitations you can once you create the VPC it is global in its nature.
+
+So that's the VPC.
+
+It's a virtual private cloud out of your own network in Google Cloud Platform.
+
+The second one is the VPN and this is this came in picture when you connect your data center order your
+
+office or your work premises with Google Cloud Platform.
+
+And that is the first service which you can use it as a hybrid connectivity some of the properties of
+
+VPN with SLA which is like ninety nine point nine percent service availability and this is seen for
+
+single connection.
+
+So you can have additional land and connection as a VPN to have more availability and you can House
+
+side to side connectivity supports cloud output.
+
+And what do we mean by that.
+
+We are going to look at it.
+
+But if you want to dynamically exchange the network information within your datacenter with the DCP
+
+are the ways for how you can use cloud Dr. and it support secure traffic exchange between your data
+
+center and DCP the next option for your interconnection is cloud interconnect.
+
+This is dedicated interconnection which you can use it with to connect to your data center or with Google
+
+Cloud Platform.
+
+It has got some requirements on minimum requirements.
+
+You can directly connect with the Google flower pop point of presence or you can go via partner interconnect
+
+so low latency highly available connection you can how dedicated and partner connection option it supports
+
+adeptly 1918 and you have direct 5 from your private data center to the Google flower platform.
+
+So these are like advantage.
+
+External reappearing.
+
+This is the third kind of option you have it when you want to Google services like could you switch
+
+services onto your power into your office or your premises.
+
+And this is mainly used when you know you want to reduce the risk charges not for network exchanges
+
+like that's what we do it and VPN are interconnect.
+
+So it is you.
+
+Again new option with direct and partner of appearing.
+
+It can be all VPN or Internet with low interest fees.
+
+Google has given us you know the map wherein you need to understand what kind of network you want to
+
+choose it.
+
+That is a decision tree which you can use it to make that decision which you want to choose it.
+
+The second kind of what I would say the second application kind of networking service that is available
+
+let us load balancer it is worldwide auto scaling your balance of that is available out of we will cloud
+
+platform I support single any cost IP address.
+
+It supports almost all the protocol in the market.
+
+Scalable software defined network it is scalable and it's a software device and not the hardware device.
+
+It has got intelligent routing and what do we mean by that.
+
+We'll talk about it but typically if you consider these two at the back end services and there is a
+
+front ending load balancer based on type of those backend services you can out the traffic are the second
+
+one is if your customer is located in Asia then on the back end you know the request will go to the
+
+nearest to the customer which is like if you have any impact on services in Asia.
+
+So that kind of intelligent routing is available or building inside the load balancer and that is the
+
+cloud load balancer cloud business as we said it translate your the name and domain name with the IP
+
+address and it takes resilient reliable low latency DNS serving or top Google worldwide network you
+
+can create private zones.
+
+It is cost effective.
+
+You can configure DNS forwarding rules and very important days it has guard hundred percent uptime SLA
+
+the last one is the low latency low cost content delivery network which is like seedy and that's where
+
+we said if you have the content which is static in nature.
+
+As an example images or something which is there in computing engine are in cloud storage.
+
+You don't have to go back frequently and pull the information from this back and this is what you can
+
+do is you can have the content cached in Syrian location if it is frequently used by the user.
+
+And that is what it is provided by the city and content delivery network out of Google.
+
+You can do logging you can have VM and storage as a backend you can do invalidation of all those content
+
+which is cached and it supports any cost.
+
+So that is the property obsidian we are going to look in detail of all these items in the next subsequent
+
+lectures.
+
+That said guys for the cloud network you have any questions in or will let me know otherwise we can
+
+hold on to your questions for detail subsequent lectures.
+
+Thank you.
+
+スライドに戻り、クラウドネットワークサービスに戻りましょう。
+
+海底ケーブルがあることはすでに見ましたが、光ファイバへの投資は
+
+Googleによって作成され、Googleはそれを顧客が使用できるようにしています。
+
+そして、これはグーグルが持っている最高のポイントです。
+
+他のどのクラウドがこのレベルの知識の深さでそれを持たないか。
+
+これは、Googleサービスがバックグラウンドで非常に効率的に実行されるためのバックボーンであるという利点です。
+
+これらのケーブルを使用するネットワークサービスは、バックボーンが3つの異なるネットワークに分かれています
+
+サブトピック。
+
+1つはロードバランサーであり、それはグローバルプレーンです。
+
+もう1つはVPCとサブネットワークおよび相互接続であり、3つ目はDNSと深刻です。
+
+これらは、ネットワークからの追加サービスのようなものです
+
+彼はこれを使用して、ロードバランサーのクラウドシティとクラウドDNSを維持します。
+
+VPCユーザーは仮想プライベートクラウドユーザーです
+
+ループ内のネットワーク仮想化です。
+
+グローバルプレイで述べたように、ネットワークを作成し、その中にサブネットワークを作成できます。
+
+そして、次の後続の講義と相互接続で詳細に見る理論を見ました
+
+インターコネクトを使用して、オンプレミスISISに接続できます
+
+Google Cloudであろうとクラウドであろうとデータセンターを知っています
+
+クラウド以外にも、ネットワークのようなすべてのアクティビティをサポートするエンティティがあります
+
+IBMとファイアウォールも。
+
+また、ファイアウォールでログオンを有効にして、最初のトラフィックを監視できるようにすることができます
+
+1つは、DCPリソースで管理されたネットワーク機能を見たUPCのクラウドです。
+
+ハードウェアを管理したり、自分で構築したりすることなく、感じのようなプライベートなグローバルデータを構築しました。
+
+スピアリングの周りにサブネットワークファイアウォールを設定できます。
+
+VPCフローログを使用してVPCを監視でき、設計によりグローバルに共有および拡張できます。
+
+したがって、作成したこれらすべてのネットワークには、物理​​的な地域はありません。または、ゾーンを知っています。
+
+VPCを作成すると、その性質はグローバルになります。
+
+これがVPCです。
+
+これは、Google Cloud Platformの独自のネットワークからの仮想プライベートクラウドです。
+
+2つ目はVPNです。これは、データセンターに接続するときに表示される画像です。
+
+Google Cloud Platformを使用したオフィスまたは職場。
+
+そして、それがハイブリッド接続として使用できる最初のサービスです。
+
+99ポイントの9％のサービス可用性のようなSLAを備えたVPN
+
+単一の接続。
+
+したがって、より多くの可用性を確保するために、VPNとして追加の土地と接続を持つことができます。
+
+サイドツーサイド接続はクラウド出力をサポートします。
+
+そして、それはどういう意味ですか。
+
+それを見ていきます。
+
+ただし、データセンター内のネットワーク情報をDCPと動的に交換する場合
+
+クラウド博士を使用する方法であり、データ間の安全なトラフィック交換をサポートします
+
+センターとDCP相互接続の次のオプションはクラウド相互接続です。
+
+これは、データセンターまたはGoogleとの接続に使用できる専用の相互接続です
+
+クラウドプラットフォーム。
+
+最小要件にいくつかの要件があります。
+
+Googleフラワーポッププレゼンスポイントに直接接続するか、パートナーインターコネクトを介して接続できます
+
+低遅延の高可用性接続により、専用のパートナー接続オプションがサポートされます
+
+1918年に適切に作成され、プライベートデータセンターからGoogleフラワープラットフォームに5つ直接アクセスできます。
+
+したがって、これらは利点のようなものです。
+
+外部に再登場。
+
+これは、Googleサービスに切り替えたいときに使用できる3番目のオプションです。
+
+あなたの力をあなたのオフィスやあなたの施設に供給します。
+
+これは主に、ネットワーク交換ではなくリスク費用を削減したい場合に使用されます
+
+それが私たちがやっていることであり、VPNは相互接続です。
+
+それはあなたです。
+
+再び登場する直接およびパートナーとの新しいオプション。
+
+それはすべて低VPNのインターネットまたは低金利のインターネットです。
+
+Googleは、どのようなネットワークを望んでいるかを理解する必要があるマップを知っていることを教えてくれました
+
+それを選択してください。
+
+これは、選択したい決定を行うために使用できる決定木です。
+
+私が言う第2の種類の利用可能なネットワークサービスの第2のアプリケーションの種類
+
+ロードバランサーにしましょう。それは世界中で自動スケーリングされます。
+
+プラットフォームは、単一の任意のIPアドレスをサポートします。
+
+市場のほぼすべてのプロトコルをサポートしています。
+
+スケーラブルなソフトウェア定義ネットワークはスケーラブルであり、ハードウェアデバイスではなくソフトウェアデバイスです。
+
+インテリジェントなルーティングを備えており、その意味は何ですか。
+
+これについては説明しますが、通常、これら2つのバックエンドサービスを検討し、
+
+あなたがトラフィックを出すことができるそれらのバックエンドサービスのタイプに基づいたフロントエンドロードバランサーは2番目です
+
+1つは、顧客がアジアにいる場合、バックエンドではリクエストが
+
+あなたがアジアのサービスに影響を与えているかのように顧客に最も近い。
+
+そのため、この種のインテリジェントルーティングが利用可能か、ロードバランサー内に構築されています。
+
+クラウドロードバランサークラウドビジネス
+
+アドレスに対応し、復元力のある信頼性の高い低遅延DNSサービスまたはGoogleの世界的なトップネットワークを利用します
+
+プライベートゾーンを作成できます。
+
+費用対効果が高い。
+
+DNS転送ルールを設定でき、100％のアップタイムSLAを保護する非常に重要な日
+
+最後の1つは、低レイテンシーで低コストのコンテンツ配信ネットワークです。
+
+本質的に静的なコンテンツがある場合、私たちは言いました。
+
+例として、コンピューティングエンジンにある画像または何かがクラウドストレージにあります。
+
+頻繁に戻ってこの情報を取得する必要はありません。これができることです
+
+ユーザーが頻繁に使用するコンテンツをシリアの場所にキャッシュすることができますか。
+
+そしてそれは、Google以外の都市およびコンテンツ配信ネットワークによって提供されるものです。
+
+VMとストレージをバックエンドとして持つことができるロギングを行うことができ、それらすべてのコンテンツの無効化を行うことができます
+
+キャッシュされ、あらゆるコストをサポートします。
+
+これがプロパティ黒曜石であり、次の以降でこれらすべてのアイテムの詳細を調べます。
+
+講義。
+
+それはあなたが質問を持っているか、そうでなければ私たちにできることを私に知らせてくれるクラウドネットワークの人
+
+その後の講義の詳細については、質問をお待ちください。
+
+ありがとうございました。

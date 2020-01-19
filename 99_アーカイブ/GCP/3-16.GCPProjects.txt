@@ -1,0 +1,117 @@
+GDP project.
+
+So what do what is the project.
+
+Project is container in JCP.
+
+So if you observe.
+
+When we created this particular account and let me just dismiss this.
+
+If we created this account there is a default project which is created for you.
+
+And this is done by your you know your account creation part as well.
+
+So you can go ahead and manage the settings for the project either you can migrate or you can shut down
+
+the project shutting down the project means it is going to decommission all your resources cloud resources
+
+in your project you can do the role you know you can enable disable the rules in the project you can
+
+go ahead and manage the quota you can define the organization policy at the project level but not beyond
+
+that because this project is not under any organization
+
+and you can manage.
+
+I am within the project so all of that you can think of it is a part of the projects a project is your
+
+container.
+
+When you look at Google Cloud Platform and not g suite just which you can go and create organization
+
+and insight that you can create different folders or departments and then the project can be assigned
+
+to a particular department and we are going to see that in I think one of the lecture wherein we do
+
+VPC peering or you know
+
+had VPC that's where we are going to see the organization and all that but right now just keep in mind
+
+that the project is a container where all the resources are associated to and you can get the bill for
+
+your cloud resources per project so that's it guys as a project what you can do with the project is
+
+you can track billing you can manage resources you can manage permissions and credentials at the project
+
+level which is like default for all those resources you can enable and disable APIs our project uses
+
+three identity project name number and I.T. and you can manage project using Cloud Control are API.
+
+If I go back to the homepage you can see project has got a name Project has got irony and project has
+
+got a number that's it guys for now as a project we are going to use Project extensively in subsequent
+
+lectures but if you have any questions let me know otherwise you can go to the next lecture.
+
+Thank you.
+
+GDPプロジェクト。
+
+それで、プロジェクトは何をしますか。
+
+プロジェクトはJCPのコンテナです。
+
+あなたが観察した場合。
+
+この特定のアカウントを作成し、これを却下させてください。
+
+このアカウントを作成した場合、デフォルトのプロジェクトが作成されます。
+
+そして、これはあなたがあなたのアカウント作成部分を知っていることによっても行われます。
+
+そのため、プロジェクトの設定を管理し、移行することもシャットダウンすることもできます
+
+プロジェクトがプロジェクトをシャットダウンすると、すべてのリソースがクラウドリソースをデコミッションします
+
+あなたのプロジェクトであなたはあなたができるプロジェクトのルールを無効にできるあなたが知っている役割を行うことができます
+
+先に進み、クォータを管理します。プロジェクトレベルで組織ポリシーを定義できますが、それ以上ではありません
+
+このプロジェクトはどの組織にも属さないためです
+
+管理できます。
+
+私はプロジェクト内にいるので、あなたが考えることができるすべては、プロジェクトがあなたのプロジェクトの一部であると考えることができます
+
+容器。
+
+組織を作成して作成できるgスイートではなく、Google Cloud Platformを見るとき
+
+さまざまなフォルダーまたは部門を作成してからプロジェクトを割り当てることができるという洞察
+
+特定の部門に、そして私たちはそれを見るつもりです
+
+VPCピアリングまたはあなたが知っている
+
+VPCを使用して組織を確認します
+
+プロジェクトは、すべてのリソースが関連付けられているコンテナであり、請求書を取得できること
+
+プロジェクトごとにクラウドリソースを取得することで、プロジェクトとして実行できることは
+
+請求を追跡できます。リソースを管理できます。プロジェクトで権限と資格情報を管理できます。
+
+プロジェクトが使用するAPIを有効または無効にできるすべてのリソースのデフォルトのようなレベル
+
+3つのIDプロジェクト名番号とI.T. Cloud ControlはAPIを使用してプロジェクトを管理できます。
+
+ホームページに戻ると、プロジェクトには名前があり、プロジェクトには皮肉があり、プロジェクトには名前があります
+
+私たちはその後のプロジェクトで広範囲にプロジェクトを使用するプロジェクトとして、今のところそれだけの数を持っています
+
+講義がありますが、質問がある場合は次の講義に進むことができます。
+
+ありがとうございました。
+
+

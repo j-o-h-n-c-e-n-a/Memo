@@ -1,0 +1,140 @@
+The BBC then projects
+
+in a project you can create VPC.
+
+That's what we saw.
+
+What are the limitations and what is the what is the relation between projects and pieces all objects
+
+are associated to associated with the project and we know project is a container for your cloud resources.
+
+Each project starts with default VPC network that is a two mode and you can create custom or network
+
+inside the project and you can go up to five network for a project and this can be an exam.
+
+Question How many networks you can created within the projects.
+
+It's like unlimited ten twenty five or only one right.
+
+But if at all you know if at all you need additional network beyond five network you can create another
+
+project and you can create the network there and then you can do a VPC building.
+
+Typically if you look at as you said the networks are global in nature.
+
+So in a project if you create say five network because you need it for production Dave tests are four
+
+different departments.
+
+All of those networks are global in nature.
+
+When you create a resource within the within the network.
+
+Right.
+
+When VPC say Region 2 and Region 3 and that are networks I'm just taking out some network concept here
+
+just to cover the complexity.
+
+There is a internal to the network and there are no fees associated to it but when you create the resources
+
+are the resources outside the network in another network then it is treated as a internet egress traffic.
+
+So when you are planning or designing the network planning you know for your cloud resources you need
+
+to make sure that you account for egress traffic as well.
+
+If there are any charges what do you risk you need to make sure that you account for those charges if
+
+at all.
+
+Too much data is being exchanged between the network and this is this goes way Internet.
+
+And this is very important even though it is it is going to hit do you know the doubt of playing off
+
+these deep network within the Google Cloud Platform itself.
+
+But it is treated as the Internet egress traffic that's it guys.
+
+As a project as a project and VIP sees you just need to remember that you can create up to five you
+
+network within the project and you need to make sure that the traffic when you are creating different
+
+network you need to make sure that the traffic exchange and the egress fees you need to account for
+
+those.
+
+That's it for Project and VPC.
+
+Coming up next TS subnet work or subnet.
+
+
+BBCはそれから投影します
+
+プロジェクトでVPCを作成できます。
+
+それは私たちが見たものです。
+
+プロジェクトとすべてのオブジェクトの断片間の関係とは何ですか？
+
+はプロジェクトに関連付けられており、プロジェクトはクラウドリソースのコンテナであることがわかります。
+
+各プロジェクトは、2つのモードであるデフォルトのVPCネットワークで開始され、カスタムまたはネットワークを作成できます
+
+プロジェクト内で、プロジェクトの最大5つのネットワークにアクセスできます。これは試験になります。
+
+質問プロジェクト内で作成できるネットワークの数。
+
+無制限の10 25または1つの権利のようなものです。
+
+ただし、5つのネットワーク以外に追加のネットワークが必要かどうかがわかっている場合は、別のネットワークを作成できます
+
+プロジェクトを作成し、そこでネットワークを作成してから、VPCの構築を行うことができます。
+
+通常、あなたが言ったように見れば、ネットワークは本質的にグローバルです。
+
+したがって、プロジェクトで、たとえば5つのネットワークを作成すると、実稼働環境で必要になるため、デイブテストは4つです。
+
+さまざまな部門。
+
+これらのネットワークはすべて、本質的にグローバルです。
+
+ネットワーク内でリソースを作成するとき。
+
+正しい。
+
+VPCがリージョン2とリージョン3を言い、それがネットワークである場合、ここでいくつかのネットワークコンセプトを取り上げます。
+
+複雑さをカバーするためだけに。
+
+ネットワークには内部があり、それに関連する料金はありませんが、リソースを作成するとき
+
+別のネットワーク内のネットワーク外のリソースである場合、インターネット出力トラフィックとして扱われます。
+
+そのため、必要なクラウドリソースについて知っているネットワーク計画を計画または設計するときに
+
+出力トラフィックも考慮に入れるようにしてください。
+
+費用が発生した場合、どのようなリスクがありますか？
+
+まったく。
+
+ネットワーク間でやり取りされるデータが多すぎます。これがインターネットの道です。
+
+そして、これはヒットすることになるとしても非常に重要です。
+
+Google Cloud Platform内のこれらの深いネットワーク。
+
+しかし、それはインターネット出口トラフィックとして扱われます。
+
+プロジェクトとしてのプロジェクトとして、VIPは、最大5つまで作成できることを覚えておく必要があるだけです。
+
+プロジェクト内のネットワークで、作成するトラフィックが異なることを確認する必要があります
+
+ネットワークは、トラフィック交換と出口料金を考慮する必要があることを確認する必要があります
+
+それら。
+
+ProjectとVPCについては以上です。
+
+次のTSサブネットの作業またはサブネットを作成します。

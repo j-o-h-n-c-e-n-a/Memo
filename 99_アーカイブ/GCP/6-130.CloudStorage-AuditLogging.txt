@@ -1,0 +1,75 @@
+You have your sensitive information or the data that resides in your file on an object right.
+
+And probably you want to do an audit.
+
+There is an audit would you want to make sure that you have all the logging captured.
+
+For anyone to understand the insights of who is accessing who is creating the data.
+
+And that's where the audit logging comes into play.
+
+There are two types of log you can think of.
+
+One is the administrative activities we're creating deleting blockade setting the permissions changing
+
+the policies or updating meta data.
+
+So those are like admin activity logs.
+
+And the second one is like Detective slugs and the log tables at main trade data read data right.
+
+And all of those are like did access logs.
+
+So these two logs have sufficient for you to do audit logging on your data who is accessing the data
+
+who is writing the data who is filling the data and you don't have to manually do that.
+
+You can just take these logs put that into query or any analytics platform and then you can see who
+
+is accessing and how he's accessing and if there are any suspicious things which are being leaked by
+
+someone has got access because of some reason right.
+
+Maybe some loopholes you can use the logs to understand inside of your access permissions.
+
+That's it guys as our logging if you have any questions let us know otherwise move to the next chapter
+
+which is I think almost one chapter is access permissions.
+
+機密情報またはファイルに存在するデータをオブジェクトの権利で所有しています。
+
+そしておそらくあなたは監査をしたいと思うでしょう。
+
+すべてのロギングがキャプチャされていることを確認するための監査があります。
+
+誰がデータを作成しているのに誰がアクセスしているかの洞察を理解するために。
+
+そして、ここで監査ログが機能します。
+
+考えられるログには2つのタイプがあります。
+
+1つは、封鎖を削除する権限を変更する設定を作成する管理アクティビティです
+
+ポリシーまたはメタデータの更新。
+
+したがって、これらは管理アクティビティログのようなものです。
+
+そして2つ目は探偵ナメクジのようなもので、主要な取引データのログテーブルはデータを正しく読み取ります。
+
+そして、それらはすべてアクセスログと同じです。
+
+したがって、これら2つのログは、データにアクセスしているデータの監査ログを作成するのに十分です
+
+誰がデータを書き込んでいるのか、誰がデータを埋めているのか、手動で行う必要はありません。
+
+これらのログを取得して、クエリまたは分析プラットフォームに入力するだけで、誰が誰であるかを確認できます
+
+彼がアクセスしている方法と彼がどのようにアクセスしているか
+
+何らかの理由で誰かがアクセス権を持っています。
+
+おそらく、ログを使用してアクセス許可の内部を理解できる抜け穴がいくつかあります。
+
+質問がある場合はログに記録します。それ以外の場合は次の章に進みます
+
+これは、ほぼ1つの章がアクセス許可だと思います。

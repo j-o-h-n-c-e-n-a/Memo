@@ -1,0 +1,411 @@
+Opinion.
+
+Let's go to understand the basics of opinion how you can apply the application without provisioning
+
+the infrastructure at such.
+
+Let's go in and get started.
+
+So the basics of opinion opinion is a part of computing platform or compute platform that is available
+
+where you can deploy IT applications into the platform.
+
+And it is one of the two or three part of the platform where you can deploy your application.
+
+So opinion is a part of code and container that's where you take your code that you deploy it into a
+
+cloud platform or you deploy your container as well so you have both the Playworks of cord and container
+
+in App Engine and let's call them guests see where it fits in.
+
+So App Engine actually fits in as a part of sort of weightless environment.
+
+I wouldn't say it's a hundred percent sort of witless environment but yeah you can contribute to scaling
+
+and all of those parameters such that if no one is accessing the opinion you know the actual application
+
+instance will not be available or not threatening to consume the resources it is some kind of soulless
+
+environment but not purely netbooks in this environment.
+
+Some of the use cases for app engines are how you can build reliable scalable serving application component
+
+without doing it or what.
+
+What does this mean.
+
+This means is you do not need to provision the platform or hardware to deploy an application.
+
+I minimize this your operational audit you and you get the will power velocity will or infrastructure
+
+provisioning or control which means you do not need to ask Operations Guide to do you know create the
+
+infrastructure platform for your developer to deploy your app and it is just focused on writing code
+
+and never want to touch servers clusters or the infrastructure component that call some of the high
+
+level features of opinion.
+
+It supports smart default and deep customizable data and we are going to see that it supports Java Python
+
+P2P go Ruby nobody is.
+
+And are you going to your you know you can bring your own runtime environment and we are going to see
+
+that how you can do it.
+
+It has got integrated SDK managed service and local then developing in Wyoming to as a part of your
+
+cloud SDK app versioning with zero downtime you can add to it traffic splitting automatic have liability
+
+and built into auto scaling
+
+its open platform for application deployment.
+
+Open and flexible fully managed and in finite scalable so practically if you look at you how the full
+
+googles get us into that the infrastructure for you to deploy your application you can enable logging
+
+monitoring diagnostic application visioning you can do traffic splitting red blue or a green deployment.
+
+That is what it is called provide compute for any load you can house flexible and standard environment
+
+options.
+
+And you can deploy the app with three commands like G Cloud in it G Cloud auth log in.
+
+This is like a top indication and you just push your app with a G Cloud App Deploy and that level of
+
+simplicity you have it with App Engine.
+
+You can do manuals killing an automatic killing as well in automatic you have additional basic scaling
+
+we are going to see that how you can scale your opinion application.
+
+This is an opinion ecosystem but before I dive into this one I want to go back to console and show you
+
+how you can deploy your opinion applications.
+
+So to go to app engine you can go to a compute service and in that.
+
+So I do not have any App Engine infrastructure or platform which is configured for this particular project
+
+as yet I can just go in and create the app engine which is like just environment for you to deploy your
+
+application and once you deploy it application your instance will be created or I can follow you know
+
+some of the tutorials.
+
+So what I can do is I can click on Start tutorial and I can pick one of the programming language say
+
+no JS application and then I follow these instructions how to you know deploy your app.
+
+So I have this particular project with me and you select an existing project.
+
+OK I can click Next I need to clone some of the you know the node yes no JS code base and for that I
+
+need to go to cloud shell you can click here and launch cloud shield so it will take some time in the
+
+meantime let me just go out and create app.
+
+So the infrastructure which I want to create is I want to create the infrastructure on the US West
+
+and I want to create an app.
+
+So what is that.
+
+You know it is asking which in my domain do you want to create and then what happened which I want to
+
+create is the flexible understand standard and we are going to see that what are those.
+
+But right now let me just put standard and the and then what went which I want to use it is for no GSM
+
+application.
+
+Next okay.
+
+So I can use multiple commands here.
+
+The environment is being created right now.
+
+Let me go in and you know clone.
+
+So you have a nice shortcut here.
+
+If you click this then the command is copy copied and pasted here in your shell and it's really good
+
+we'll call it cloned this.
+
+Now I can go to they directly here and you can see there is an app which is available for me.
+
+Let me go to let me run this application baby is installed.
+
+Let me start the application and to browse the application.
+
+You can just go here and that is a browser
+
+and you can see this application is running right.
+
+And this is the application is running inside my shell.
+
+This shell and not in the App Engine just to see what is there.
+
+So I just killed my app go next.
+
+You can either use this command.
+
+We already have an opinion created
+
+so it's going to pop up it's already there because we created that from window here.
+
+And then what we are going to do is we are going to deploy the app because here we are in application
+
+directly.
+
+We just need to do App Deploy.
+
+So do you want to continue it.
+
+It is going to pop up all that information.
+
+What it is going to be what your links are.
+
+I'm going to say yes so that I have commands which is you in here.
+
+So it says App Engine browse if I do this it is going to give me the link.
+
+This is the link and you have your application OK.
+
+It is.
+
+So it is that simple for you to launch an application.
+
+We are going to see all of that information or details of App Engine in subsequent lectures but that's
+
+what it is.
+
+Let me go back to the slide deck.
+
+So we saw that you can deploy App Engine but App Engine is not a singular unified service.
+
+You can.
+
+It comes with you know some other components which are very well integrated with App Engine.
+
+So you have got a load balancer.
+
+You have got men catch to you how guard and you can store application state here.
+
+You can have a cloud storage integrator.
+
+You can have data store.
+
+You can have you know cloud a school and then you can integrate all those with so many other you know
+
+Google Cloud Platform services.
+
+意見。
+
+プロビジョニングをせずにアプリケーションを適用する方法についての意見の基本を理解しましょう
+
+そのようなインフラ。
+
+始めましょう。
+
+意見意見の基本は、利用可能なコンピューティングプラットフォームまたはコンピューティングプラットフォームの一部です
+
+ITアプリケーションをプラットフォームに展開できる場所。
+
+また、アプリケーションをデプロイできるプラットフォームの2つまたは3つの部分の1つです。
+
+だから意見はコードとコンテナの一部であり、そこにコードを展開する場所です
+
+クラウドプラットフォームまたはコンテナを展開して、コードとコンテナのPlayworksの両方を用意します
+
+App Engineで、ゲストに電話して、どこに収まるかを見てみましょう。
+
+そのため、App Engineは実際には無重力環境の一部として適合します。
+
+100％の種類の機知に富んだ環境とは言いませんが、スケーリングに貢献できます
+
+そして、誰も意見にアクセスしていない場合、実際のアプリケーションを知っているようなすべてのパラメータ
+
+インスタンスは利用できないか、リソースを消費すると脅迫しません
+
+この環境では純粋にネットブックではありません。
+
+アプリエンジンの使用例のいくつかは、信頼性の高いスケーラブルなアプリケーションコンポーネントを構築する方法です。
+
+何もせずに
+
+これは何を意味するのでしょうか。
+
+つまり、アプリケーションをデプロイするためにプラットフォームまたはハードウェアをプロビジョニングする必要はありません。
+
+私はこれをあなたの運用監査を最小限にし、あなたは意志力速度意志またはインフラストラクチャを取得します
+
+プロビジョニングまたは制御。つまり、作成を知っているかどうかを操作ガイドに尋ねる必要はありません。
+
+開発者がアプリを展開するためのインフラストラクチャプラットフォーム
+
+サーバークラスターやインフラストラクチャコンポーネントに触れないでください。
+
+意見のレベルの特徴。
+
+スマートデフォルトおよび詳細なカスタマイズ可能なデータをサポートし、Java Pythonをサポートすることがわかります。
+
+P2Pゴールビーは誰もいません。
+
+そして、あなたはあなた自身のランタイム環境をもたらすことができることを知っています
+
+その方法。
+
+統合されたSDKマネージドサービスとローカルを持ち、ワイオミングで開発して、
+
+ダウンタイムゼロのクラウドSDKアプリのバージョニングに追加できる
+
+自動スケーリングに組み込まれています
+
+アプリケーション展開のためのオープンプラットフォーム。
+
+オープンで柔軟なフルマネージドおよび有限スケーラブルです。
+
+Googleは、アプリケーションをデプロイするためのインフラストラクチャを提供し、ロギングを有効にできます
+
+診断アプリケーションのビジョンを監視することにより、トラフィックを赤青または緑の展開に分割できます。
+
+それは、柔軟で標準的な環境を収容できるあらゆる負荷にコンピューティングを提供するというものです
+
+オプション。
+
+また、G Cloudなどの3つのコマンドを使用してアプリをデプロイできます。GCloud認証ログイン。
+
+これは最高の兆候のようなもので、G Cloud App Deployでアプリをプッシュするだけで、
+
+シンプルさはApp Engineで実現できます。
+
+あなたは追加の基本的なスケーリングを持っている自動で同様に自動殺害を殺すマニュアルを行うことができます
+
+オピニオンアプリケーションをどのようにスケーリングできるかを確認します。
+
+これは意見のエコシステムですが、これに飛び込む前にコンソールに戻ってあなたに見せたいです
+
+オピニオンアプリケーションを展開する方法。
+
+そのため、アプリエンジンに移動するには、コンピューティングサービスに移動します。
+
+この特定のプロジェクト用に構成されたApp Engineインフラストラクチャまたはプラットフォームはありません
+
+まだ私はちょうどあなたが展開するためのちょうど環境のようなものであるアプリエンジンを作成して作成することができます
+
+アプリケーションとアプリケーションをデプロイすると、インスタンスが作成されます。
+
+いくつかのチュートリアル。
+
+だから私ができることは、[チュートリアルを開始]をクリックして、プログラミング言語の1つを選択できることです。
+
+JSアプリケーションはありません。次に、アプリを展開する方法を次の手順に従います。
+
+私はこの特定のプロジェクトを持っているので、既存のプロジェクトを選択します。
+
+OK [次へ]をクリックできます。ノードを知っているいくつかのクローンを作成する必要があります。
+
+クラウドシェルに移動する必要があります。ここをクリックしてクラウドシールドを起動すると、
+
+それまでの間、アプリを作成してください。
+
+作成したいインフラストラクチャは、米国西部にインフラストラクチャを作成したいです
+
+アプリを作成したいです。
+
+それは何ですか。
+
+あなたは私のドメインでどれを作成したいのか、そして何が起こったのかを尋ねていることを知っています
+
+createは柔軟な理解基準であり、それらが何であるかを確認します。
+
+しかし、今私はちょうど標準を入れて、それから私がそれを使いたいと思ったのはGSMなしです
+
+応用。
+
+次に大丈夫。
+
+したがって、ここで複数のコマンドを使用できます。
+
+環境は現在作成中です。
+
+クローンを知ってください。
+
+ここにショートカットがあります。
+
+これをクリックすると、コマンドがコピーされ、シェルにコピーされて貼り付けられ、本当に良いです
+
+これをクローンと呼びます。
+
+今、私は彼らにここに直接行くことができます、そして、あなたは私が利用できるアプリがあるのを見ることができます。
+
+赤ちゃんがインストールされているこのアプリケーションを実行させてください。
+
+アプリケーションを起動して、アプリケーションを参照します。
+
+あなたはここに行くことができ、それはブラウザです
+
+このアプリケーションが正常に実行されていることがわかります。
+
+そして、これはアプリケーションが私のシェル内で実行されていることです。
+
+このシェルはApp Engineではなく、単に何があるかを確認するためのものです。
+
+だから、次に行くアプリを殺しました。
+
+このコマンドを使用できます。
+
+すでに意見が作成されています
+
+ここからウィンドウから作成したため、既にそこに表示されます。
+
+そして、私たちがやろうとしていることは、ここでアプリケーションにいるので、アプリをデプロイすることです
+
+直接。
+
+App Deployを実行するだけです。
+
+続行しますか？
+
+すべての情報がポップアップ表示されます。
+
+あなたのリンクが何であるか。
+
+私はここであなたであるコマンドがあるように私はイエスと言うつもりです。
+
+そのため、App Engineを参照すると、これを行うとリンクが表示されます。
+
+これがリンクであり、アプリケーションに問題はありません。
+
+そうです。
+
+したがって、アプリケーションを起動するのは簡単です。
+
+App Engineのすべての情報または詳細は、以降の講義で見る予定ですが、それは
+
+それは何ですか。
+
+スライドデッキに戻りましょう。
+
+そのため、App Engineをデプロイできますが、App Engineは単一の統合サービスではありません。
+
+あなたはできる。
+
+App Engineと非常によく統合されている他のコンポーネントをいくつか知っています。
+
+ロードバランサーがあります。
+
+あなたは男性があなたにどのように警備するかをキャッチし、あなたはここにアプリケーションの状態を保存することができます。
+
+クラウドストレージインテグレーターを使用できます。
+
+データを保存できます。
+
+学校のクラウドを知ってもらうことができ、それからそれらすべてをあなたが知っている他の多くの人と統合することができます
+
+Google Cloud Platformサービス。

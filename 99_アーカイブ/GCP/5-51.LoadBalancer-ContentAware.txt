@@ -1,0 +1,143 @@
+So we say yes GDP lower balance that is content available balancer.
+
+What do we mean by that.
+
+To elaborate that in a picture format.
+
+I just draw this one.
+
+So what happens is if there are requests from the front end services and it is for video content.
+
+And just pulling the video and streaming the video then there are services backend services which are
+
+only read and are only serving video content.
+
+As an example slash video right then the request is routed to a specific backend services.
+
+If there are BHP pages then you request about it to a specific BHP page.
+
+If there are some other static content like images or something like that as an example you know there
+
+is a cloud storage bucket and you have hosted some content there and you want to pull that information
+
+and choice Give it to the user then that is what you can do it.
+
+You can actually configure this as a content aware in the front end configuration upload balance that
+
+as well.
+
+If I go back
+
+to the lower balancer configuration
+
+in backend you can create multiple back and so is this year
+
+OK.
+
+I don't have anything as a backend but let me go ahead and show you where you can configure So what
+
+do you can do is you can say there is a default.
+
+So all the traffic will without it to all the back ends.
+
+Now you can say
+
+as an example all images goes to.
+
+I don't have any back right now but goes to here and I can say again the same
+
+and slash BHP content should go to additional instance
+
+slash
+
+video goes to any other backend rate.
+
+So you can configure all these rules and that is how your request is you know routing to a backend services.
+
+And this is explicit
+
+configuration if none of these matches to it will without it to the default backend instances.
+
+So that is the content to where load balancer we are going to see load distribution algorithm how the
+
+load get distributed in the backend in the context of if everything is same right all the backend services
+
+serving everything and then you want to distribute load how the load distributional algorithm will make
+
+sure that it has got right algorithm are right mention of so that it is not only about it to one particular
+
+back and continuously.
+
+So let's look at load distribution algorithm in the next lecture.
+
+したがって、コンテンツ利用可能なバランサーであるGDPの低いバランスはいです。
+
+それはどういう意味ですか。
+
+それを画像形式で詳しく説明します。
+
+私はこれを描くだけです。
+
+したがって、フロントエンドサービスからのリクエストがあり、それがビデオコンテンツに対するものである場合に起こります。
+
+そして、ビデオを引っ張り、ビデオをストリーミングするだけで、サービスのバックエンドサービスがあります。
+
+読み取りのみで、動画コンテンツのみを提供しています。
+
+例としてビデオをスラッシュすると、リクエストは特定のバックエンドサービスにルーティングされます。
+
+BHPページがある場合は、特定のBHPページにリクエストします。
+
+あなたがそこに知っている例として画像またはそのような何かのような他の静的コンテンツがある場合
+
+クラウドストレージバケットであり、そこにコンテンツをホストしていて、その情報を引き出したい
+
+そして選択ユーザーに提供すれば、それがあなたにできることです。
+
+実際に、これをフロントエンド設定のアップロードバランスでコンテンツアウェアとして設定できます。
+
+同様に。
+
+戻ったら
+
+低いバランサー構成へ
+
+バックエンドでは、複数のバックを作成できます。今年もそうです
+
+OK。
+
+私はバックエンドとして何も持っていませんが、先に進んで、どこで設定できるかをお見せしましょう
+
+できることはデフォルトがあると言うことです。
+
+したがって、すべてのトラフィックは、それなしですべてのバックエンドに送信されます。
+
+今、あなたは言うことができます
+
+例として、すべての画像が行きます。
+
+今は何もありませんが、ここに行き、同じことをもう一度言うことができます
+
+スラッシュBHPコンテンツは追加のインスタンスに移動する必要があります
+
+スラッシュ
+
+ビデオは他のバックエンドレートになります。
+
+したがって、これらのすべてのルールを設定できます。それが、バックエンドサービスへのルーティングをリクエストにどのように伝えるかです。
+
+そしてこれは明示的です
+
+これらに一致するものがない場合、デフォルトのバックエンドインスタンスには設定されません。
+
+これが、ロードバランサーが負荷分散アルゴリズムを表示する場所のコンテンツです。
+
+すべてのバックエンドサービスがすべて同じである場合に、バックエンドで負荷が分散されます
+
+すべてを提供してから、負荷分散アルゴリズムがどのように負荷を分散させるか
+
+それが正しいアルゴリズムを持っていることを確認してください。
+
+継続的に。
+
+それでは、次の講義で負荷分散アルゴリズムを見てみましょう。

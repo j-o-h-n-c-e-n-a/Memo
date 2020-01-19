@@ -1,0 +1,104 @@
+Going back to sea levels.
+
+That's what it is ask for straggler monitoring logging here creating a strict travel alert.
+
+We saw alerts we saw custom metrics which you can create.
+
+Country that log sink.
+
+We have created log sink for cloud storage as well as pops up weaving filtering log.
+
+That's what we saw Weaving specific log message detailing strength driver using cloud diagnostic tool
+
+such as trace debug.
+
+At what point in time.
+
+Application.
+
+So we did that as well weaving console platform status and you can actually do that in many places and
+
+working with Shelly take care or console.
+
+And we went in to cloud shield right.
+
+And we saw this in console as well.
+
+That's I think that is sufficient for you to go ahead and attempt for this exam and the questions around
+
+struggled over and unwanted cyclone monitoring and logging essentially what you need to do is you need
+
+to understand is why a specific service is used how you can browse a specific service how you can enable
+
+laid out how you can guide individual developer to use say monitoring works as logging works as debug
+
+versus trace right.
+
+And if there are any bottlenecks or problems in the application you can help a developer to get places
+
+and latency for the application and provided to them.
+
+So that's the overall if you look at the job role or the certification questions you may be asked you
+
+just need to think around what is possible with one particular service and what is possible with other
+
+services like all file strikes.
+
+There were services that it guys for straggler I want you if you have any questions related to the exam
+
+let me know.
+
+Otherwise you can move to the next section.
+
+
+海面に戻ります。
+
+これは、厳密な旅行アラートを作成するストラグラーモニタリングロギングに求められることです。
+
+作成可能なカスタムメトリックが表示されたアラートが表示されました。
+
+ログシンクの国。
+
+クラウドストレージ用のログシンクを作成し、ウィービングフィルタリングログをポップアップします。
+
+これが、クラウド診断ツールを使用して特定のログメッセージを作成し、強度ドライバーを詳述することです。
+
+トレースデバッグなど。
+
+どの時点で。
+
+応用。
+
+コンソールプラットフォームのステータスも織り込みました。実際に多くの場所でそれを行うことができます。
+
+Shellyでの作業には注意が必要です。
+
+そして、クラウドシールドに進みました。
+
+そして、コンソールでもこれを見ました。
+
+それはあなたが先に進み、この試験と周りの質問に挑戦するのに十分だと思います
+
+苦労し、不要なサイクロンの監視とロギングは、基本的に何をする必要があるかが必要です
+
+理解することは、特定のサービスを使用する方法と特定のサービスを参照する方法を使用する理由です
+
+ロギングがデバッグとして機能するのと同様に、モニタリング機能を使用するよう個々の開発者をガイドする方法
+
+対トレース権。
+
+また、アプリケーションにボトルネックや問題がある場合は、開発者が場所を取得するのに役立ちます
+
+アプリケーションのレイテンシとそれらに提供されます。
+
+仕事の役割や資格に関する質問を見ると、それが全体です。
+
+ある特定のサービスで何が可能か、他のサービスで何が可能かを考える必要があります。
+
+すべてのファイルストライキのようなサービス。
+
+試験に関連する質問がある場合は、ストラグラーのサービスがあります
+
+お知らせ下さい。
+
+それ以外の場合は、次のセクションに移動できます。

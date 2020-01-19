@@ -1,0 +1,187 @@
+Plowed out the what do we mean by cloud water if at all we want to understand the basic concepts behind
+
+the cloud arteries.
+
+Consider the VPN connection or VPN Getaway which is created from your data center on data center with
+
+Google Cloud Platform.
+
+So you establish a VPN connectivity now that you know this connection is established you if you add
+
+say any subnet work inside your BBC in Google Cloud Platform or if you create a subnet work inside your
+
+data center and add additional rec into it with a different address space and it you know your services
+
+will not understand each other very quickly.
+
+So what you need to do is you need to update the data the gateways and the table for you to route the
+
+traffic if at all.
+
+If you install any server and you want to discover that then you need to update this manually.
+
+So this is without the cloud outlook.
+
+Now if you add a cloud router inside Google Cloud Platform and you create the BGP link and that's the
+
+BGP link or BGP.
+
+The purpose of the cloud out of this is so if you establish the BGP connections between the other cloud
+
+router and your gateway BGP Gateway then
+
+and if you add any other subnet work inside your VPC what it will do is it will announce the information
+
+about the network into the other side of the network which is your own data center or if you add any
+
+track having different aerospace then it will announce that information via BGP link to the cloud out
+
+percent.
+
+This is the purpose of the cloud after we are.
+
+I think I can create additional day more in the network a sum for cloud output.
+
+The whole purpose of the cloud are pleased to announce or exchange the routing information between your
+
+own network with the Google Cloud Platform.
+
+So this is dynamic routing.
+
+If you do not use the cloud order then this becomes a static routing so you configure those routes manually.
+
+So it provides you building dynamically codes and everybody's routes supports visible restart because
+
+it's a software device and not the hardware device.
+
+It supports ECM peer traffic primary and backup tunnel for failure works.
+
+So with me as a part link as preplanned as well and we are not going.
+
+Details of those right now but for all three exams you just need to know you know what is the purpose
+
+of the cloud.
+
+I wonder out there but region so you need to have one broader region appears with BGP on premises.
+
+What is all subnet of the region.
+
+Link local APIs for BGP but I would say in on JCP and there is a concept of it easy and will elaborate
+
+that in the network exam.
+
+You do not need to know right now.
+
+The private and public case and on premises so typically if you want to say if you want to create a
+
+demo are you if you want to create the network connections you will need to have cloud output in each
+
+region and then that's how you are BGP link is established.
+
+So in a nutshell cloud output is fully distributed managed to Google Cloud service it kills with your
+
+network traffic it is not a physical device that might that may cause a bottleneck when you extend on
+
+premises network with Google cloud use cloud out to dynamically exchange routing between your cloud
+
+network and optimizes cloud after peers with your own pre my sweeping Gateway are louder and louder
+
+I exchange topology and permission through BGP Border Gateway Protocol and that is the whole purpose
+
+of BGP and that's it guys.
+
+If you have any questions on cloud out let me know as you can move to the next lecture.
+
+背後にある基本的な概念を理解したい場合、雲の水が何を意味するかを明らかにしました
+
+クラウド動脈。
+
+データセンターのデータセンターから作成されたVPN接続またはVPN Getawayを検討してください
+
+Google Cloud Platform。
+
+追加すると、この接続が確立されていることがわかったので、VPN接続を確立します
+
+Google Cloud PlatformでBBC内でサブネット作業を行うか、サブネット作業を作成する場合は、
+
+別のアドレススペースを使用してデータセンターに追加のrecを追加し、サービスを知っていること
+
+お互いをすぐに理解しません。
+
+だからあなたがする必要があるのは、あなたがルーティングするために、ゲートウェイとテーブルのデータを更新する必要があることです
+
+もしあればトラフィック。
+
+サーバーをインストールしていて、それを発見したい場合は、これを手動で更新する必要があります。
+
+したがって、これにはクラウドの見通しはありません。
+
+ここで、Google Cloud Platform内にクラウドルーターを追加し、BGPリンクを作成すると、
+
+BGPリンクまたはBGP。
+
+クラウドの目的は、他のクラウド間でBGP接続を確立する場合です。
+
+ルーターとゲートウェイBGP Gatewayその後
+
+VPC内に他のサブネット作業を追加すると、それが行うことは情報を通知します
+
+独自のデータセンターであるネットワークの反対側へのネットワークについて、または追加する場合
+
+異なる航空宇宙を追跡し、BGPリンクを介してクラウドへの情報を通知します
+
+パーセント。
+
+これがクラウドの目的です。
+
+クラウド出力の合計をネットワークでさらに1日増やすことができると思います。
+
+クラウド全体の目的は、あなたの間でルーティング情報を発表または交換することです
+
+Google Cloud Platformを使用した独自のネットワーク。
+
+これが動的ルーティングです。
+
+クラウドオーダーを使用しない場合、これは静的ルーティングになるため、これらのルートを手動で構成します。
+
+したがって、動的にコードを構築することができ、すべてのルートが目に見える再起動をサポートします。
+
+ハードウェアデバイスではなく、ソフトウェアデバイスです。
+
+障害が発生した場合のECMピアトラフィックプライマリおよびバックアップトンネルをサポートします。
+
+事前に計画されているように、私も一部のリンクとして、私たちは行きません。
+
+これらの詳細は現在ですが、3つの試験すべてについて、目的を知っている必要があります。
+
+クラウドの。
+
+私はそこにいるのだろうかと思うので、1つのより広い地域がオンプレミスのBGPで表示されるようにする必要があります。
+
+地域のすべてのサブネットとは何ですか。
+
+BGPのローカルAPIをリンクしますが、JCPで言うと、それは簡単で精巧なコンセプトがあります
+
+ネットワーク試験で。
+
+今すぐ知る必要はありません。
+
+プライベートおよびパブリックケースおよびオンプレミスなので、通常、作成するかどうかを言いたい場合
+
+ネットワーク接続を作成したい場合は、それぞれにクラウド出力が必要です。
+
+地域、それはあなたがBGPリンクが確立されている方法です。
+
+一言で言えば、クラウド出力は完全に管理されたGoogle Cloudサービスに分散されており、
+
+ネットワークトラフィックは、拡張したときにボトルネックを引き起こす可能性のある物理デバイスではありません
+
+Googleクラウドを備えた構内ネットワークは、クラウドアウトを使用してクラウド間でルーティングを動的に交換します
+
+ネットワークを構築し、クラウドを最適化する
+
+BGP Border Gateway Protocolを介してトポロジと許可を交換します。それが目的です
+
+BGPとそれだけです。
+
+クラウドに関する質問がある場合は、次の講義に進むことができるのでお知らせください。

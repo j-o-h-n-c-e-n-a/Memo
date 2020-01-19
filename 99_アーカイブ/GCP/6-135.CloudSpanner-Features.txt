@@ -1,0 +1,132 @@
+Clouds one of features.
+
+It is scaled globally.
+
+You can how multi regional Cloud Spanner database instance it can go to terabyte and practically in
+
+finite with the scale availability.
+
+It has got to availability numbers.
+
+One is for multiple original offers.
+
+Ninety nine point nine nine nine.
+
+With less than five minutes downtime and regional offers ninety nine point nine nine which we just saw
+
+consistency it is built for externals strong consistent global database management system some of the
+
+features which came in in 2018 multi regional admin and data access logging staggered over integration
+
+come it's timed timestamp compliance opens this instance as integration.
+
+Import and Export BMO query stats so eye level features Cloud Spanner automatically encrypted data before
+
+it writing report it as right and to the disk and when you are reading it means authorized user obviously
+
+I decrypt the data and give it to you replication as because it is a distributed system you need to
+
+have a replication rate and a replication is maintained automatically by the Cloud Spanner it how you
+
+have read and write replica you have read replica and you have witnessed replica read write the plague
+
+actually take read and write queries so it can write to the database split read replica only read the
+
+data and witness only participate in you know voting as an example.
+
+There is a right.
+
+Right query come in then which node will take the right is what the wording has is done and the witness
+
+participate in that data split data play a split is same like Oracle database block if you look at right
+
+it is a it is a chunk of data which you will RS Where you have stored it inside Cloud Spanner and this
+
+is used when say you have additional node to take your load because if you see the performance is going
+
+down and you added additional loads to it what it will do is it will move some of the chunks of data
+
+from say existing to three nodes to the additional two three nodes right.
+
+That's how it manages and it works in the split so in that in the cloud dependent analogy they call
+
+it as a split data we split commits time timestamp so you can see if you can figure it out if you enable
+
+it I will go ahead and store whenever you are updating the data of anywhere you are in setting the data
+
+it will store the Come it's time time for that particular role.
+
+So it is a role level and you can it is a configurable you can say whether you want to store it or you
+
+don't want to store it that's it as a high level feature guys how we are going to look at architecture
+
+in the next picture.
+
+Thank you.
+
+
+クラウドの機能の1つ。
+
+グローバルにスケーリングされます。
+
+複数地域のCloud Spannerデータベースインスタンスをテラバイト単位で、実際には
+
+スケールの可用性には限りがあります。
+
+可用性の数値に達しました。
+
+1つは複数のオリジナルオファー用です。
+
+99ポイント9ナインナイン。
+
+ダウンタイムが5分未満で、リージョナルオファーは先ほど見た99ポイント9ナイン
+
+外部向けに構築された一貫性強力で一貫性のあるグローバルデータベース管理システム
+
+2018年に導入された機能で、統合をずらして複数の地域管理とデータアクセスのログを記録します
+
+タイムスタンプのコンプライアンスにより、このインスタンスが統合として開かれます。
+
+BMOクエリの統計をインポートおよびエクスポートして、目の前のレベルでCloud Spannerがデータを自動的に暗号化する
+
+それは正しいとディスクに報告し、あなたがそれを読んでいるときに明らかに許可されたユーザーを意味します
+
+データを解読し、レプリケーションを提供します
+
+レプリケーションレートがあり、レプリケーションはCloud Spannerによって自動的に維持されます。
+
+レプリカの読み取りと書き込みがあり、レプリカの読み取りがあり、レプリカがペストの読み取りと書き込みを目撃している
+
+読み取りおよび書き込みクエリを実際に実行して、データベースに分割読み取りレプリカを書き込むことができるようにします
+
+データと証人は、例として投票を知っているあなただけに参加します。
+
+権利があります。
+
+正しいクエリが入力されると、どのノードが正しいとするかが、文言が実行され、証人が
+
+そのデータに参加しますデータを再生します右を見ると分割はOracleデータベースブロックと同じです
+
+これは、データの塊であり、RSを使用してCloud Spanner内に保存した場所です。
+
+負荷がかかる追加ノードがある場合に使用されます
+
+ダウンして、追加の負荷を追加しました。データの一部を移動します
+
+たとえば、既存の3つのノードから、追加の2つの3つのノードまでです。
+
+それが管理方法であり、スプリットで動作するので、クラウド依存の類推で
+
+分割データとして、コミット時間のタイムスタンプを分割するため、有効にした場合にそれを把握できるかどうかを確認できます
+
+あなたがデータを設定している場所のデータを更新しているときはいつでも私は先に行き、保存します
+
+その特定の役割の時間であるComeを保存します。
+
+だから、それは役割レベルであり、あなたはそれを保存したいかどうかを言うことができる設定可能です
+
+それを保存したくないのは、それがアーキテクチャをどのように見ているのかというハイレベルな機能の人たちです
+
+次の写真で。
+
+ありがとうございました。

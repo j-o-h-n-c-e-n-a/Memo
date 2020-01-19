@@ -1,0 +1,136 @@
+In the little tables what do we mean by the loot tables.
+
+Okay if you look at traditionally what is that we have right.
+
+So we had say there is a single table.
+
+So one is Beatles you two and Pink Floyd and then they have albums.
+
+Okay.
+
+So these are albums.
+
+And if you look at in traditional we are they we miss what you will do you will put the key in the albums
+
+table so that you can identify with what are those albums created by which singers right.
+
+And that is what traditionally you will design.
+
+But in the case of a you know spanner that is not the case what you will do is you will create go ahead
+
+and create entirely on the table.
+
+And those interlude table means say this album table will sit inside the singles table.
+
+OK.
+
+And if I go back.
+
+So this is your single stable and what it will do is it will create an additional entry inside those
+
+say Beatles has got two albums right.
+
+So for those two for Beatles so you'll have additional two records which is like help and Abbey Road
+
+and then for you two you do not have any album but for Pink Floyd you have the wall.
+
+So these data will sit alongside with your main primary records in your single table and that is the
+
+entire table.
+
+So there is no additional table is created.
+
+It is sitting inside it and you can actually nest this interlude table and I think up to say one layers
+
+so you can go deep inside seven layers so you have a single table and that is album right.
+
+So album sitting inside the single table and then you can create another songs which is related to an
+
+album and then these songs table can sit inside the album table so you can create these many nice things.
+
+And that nesting can go up to seven levels.
+
+And this is what it is called as an interlude table which is designed by what I call
+
+now you can go in and create the index on the Cloud Spanner like create index this one on album table
+
+and one album title you can also create the complex index on the songs which sits inside the album table.
+
+OK.
+
+So you can create a songs by single albums songs name description like on songs tables in Variety album
+
+melody and song name interlude the inside album table.
+
+That's it guys.
+
+Let's look at the pricing for Cloud Spanner in next lecture.
+
+
+小さなテーブルでは、ルートテーブルとはどういう意味ですか。
+
+あなたが伝統的に見て、私たちが正しいことは何ですか。
+
+そのため、テーブルは1つだけだと言っていました。
+
+1つはビートルズユー2とピンクフロイドで、アルバムがあります。
+
+はい。
+
+これらはアルバムです。
+
+そして、あなたが伝統的に見れば、彼らはあなたが何をするのか見逃していますあなたはアルバムにキーを入れます
+
+表を使用すると、どの歌手が作成したアルバムが何であるかを特定できます。
+
+そして、それは伝統的にあなたが設計するものです。
+
+しかし、あなたがスパナを知っている場合、あなたがすることはそうではありません。
+
+完全にテーブル上に作成します。
+
+そして、これらの間奏表は、このアルバム表がシングル表の内側にあることを意味します。
+
+OK。
+
+そして私が戻ったら。
+
+これがあなたの単一の安定版であり、それがすることはそれらの中に追加のエントリを作成することです
+
+ビートルズは2枚のアルバムを持っています。
+
+ビートルズのこれら2つについては、ヘルプとアビーロードのような追加の2つのレコードがあります。
+
+そして、あなた2人にはアルバムはありませんが、ピンクフロイドには壁があります。
+
+したがって、これらのデータは、単一のテーブルのメインのプライマリレコードと並んで配置され、それが
+
+テーブル全体。
+
+したがって、追加のテーブルは作成されません。
+
+内部にあり、この間奏表を実際にネストすることができます。
+
+7層の奥深くに移動できるので、テーブルが1つだけになり、アルバムにぴったりです。
+
+アルバムを単一のテーブル内に配置してから、関連する別の曲を作成できます
+
+アルバムとこれらの曲のテーブルはアルバムテーブル内に配置できるので、これらの多くの素晴らしいものを作成できます。
+
+そして、そのネストは最大7レベルまで可能です。
+
+そして、これは私が呼ぶものによって設計された間奏表と呼ばれるものです
+
+アルバムテーブルにインデックスを作成するように、Cloud Spannerにインデックスを作成します。
+
+1つのアルバムタイトルで、アルバムテーブル内にある曲の複雑なインデックスを作成することもできます。
+
+OK。
+
+だから、バラエティーアルバムの曲のテーブルのようなシングルアルバムの曲名の説明で曲を作成することができます
+
+メロディと曲名は、アルバム内のテーブルに挿入されます。
+
+それはみんなです。
+
+次の講義では、Cloud Spannerの価格を見てみましょう。

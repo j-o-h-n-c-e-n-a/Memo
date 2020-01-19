@@ -1,0 +1,28 @@
+GOP platform or view.
+
+In this particular lecture are the subsequent lectures we are going to get the audio of JCP platform.
+
+So in this series what we are going to call it is we are going to cover getting started with free trial.
+
+Create an account and log in to Google Cloud console where Will regions and zones network backbone services
+
+DCP interfaces projects DCP resources billing and billing account alerts.
+
+Court elements pricing and estimation rules permissions users and group and service account.
+
+So we are going to take the high level or two off Google Cloud Platform and its component.
+
+
+GOPプラットフォームまたはビュー。
+
+この特定の講義では、JCPプラットフォームの音声を取得する後続の講義です。
+
+したがって、このシリーズでは、無料トライアルの開始について説明します。
+
+アカウントを作成し、ウィルリージョンとゾーンがネットワークバックボーンサー​​ビスを行うGoogle Cloudコンソールにログインします
+
+DCPインターフェースは、DCPリソースの請求および請求アカウントのアラートを投影します。
+
+裁判所の要素の価格設定と推定ルールは、ユーザーとグループおよびサービスアカウントを許可します。
+
+そのため、Google Cloud Platformとそのコンポーネントから高レベルまたは2つを削除します。

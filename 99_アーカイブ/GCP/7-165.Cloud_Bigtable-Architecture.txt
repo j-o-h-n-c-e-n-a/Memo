@@ -1,0 +1,128 @@
+Architecture if you look at the architecture architecture is very simple and very straightforward for
+
+you to understand.
+
+So the architecture is you have front end hardware pool and the client gets connected to those four
+
+intense pools and then there are nodes.
+
+And this is what when we specified three nodes or six north side.
+
+These are the nodes wherein it stores the metadata of actual data.
+
+This is not the data and that this is very important distinctions which you need to make when you compare
+
+this way it's a Cloud Spanner or any other databases.
+
+So big table nodes store only the metadata and actual data get stored in colossus filesystem which is
+
+Google's file system in SS table format.
+
+And whenever you you know whenever you are writing the data you're reading the data node is just a medium
+
+for you to understand where the data located and it will pull from that Colossus file system.
+
+Okay so that's the architecture.
+
+If you look at usual you are called client is connected to the big table node to pull it out.
+
+Consider the case wherein you know you you are continuously adding the records into a sequential into
+
+a particular node and because the way the key is created it is continuously hitting one particular node
+
+and then there are data which is.
+
+I in that particular node what it will happen is over a period of time it will understand there is a
+
+load on that node 1.
+
+Instead upload Node 2 and North 3 it will move some of the data from node to node B like this one right.
+
+And then the future query on works will start flowing through the Node 2.
+
+And this is this balancing will be done automatically.
+
+You don't have to do that manually and this is the the power of you can think of managed services and
+
+the way big table is configured.
+
+That sit as a you know the architecture.
+
+It's a plain simple architecture your data gets stored into the filesystem colossus file system your
+
+node maintains the metadata of the records and it will point you so I know you can go in and read the
+
+data.
+
+You can add the nodes and the proponents will get increased the way your story or data in your node
+
+whether it is a city or a city you when that impacts the performance of your big table.
+
+So that's the architecture if you have any questions on architecture let us know otherwise move to the
+
+next one that is migration from each base.
+
+
+アーキテクチャアーキテクチャを見ると、アーキテクチャは非常にシンプルで非常に簡単です。
+
+あなたが理解する。
+
+したがって、アーキテクチャはフロントエンドハードウェアプールであり、クライアントはこれらの4つに接続されます
+
+激しいプールとノードがあります。
+
+これは、3つのノードまたは6つの北側を指定したときのものです。
+
+これらは、実際のデータのメタデータを保存するノードです。
+
+これはデータではなく、これは比較するときに行う必要がある非常に重要な区別である
+
+このように、それはCloud Spannerまたはその他のデータベースです。
+
+そのため、大きなテーブルノードはメタデータのみを保存し、実際のデータは巨像ファイルシステムに保存されます。
+
+SSテーブル形式のGoogleのファイルシステム。
+
+そして、あなたがデータを書いているときはいつでも、あなたがデータノードを読んでいるときはただの媒体です
+
+データがどこにあるかを理解し、Colossusファイルシステムからデータを取得します。
+
+さて、これがアーキテクチャです。
+
+普通に見ると、クライアントは大きなテーブルノードに接続されてそれを引き出します。
+
+レコードをシーケンシャルに連続的に追加していることがわかっている場合を考えます
+
+特定のノードとキーの作成方法により、特定のノードに継続的にヒットします
+
+そして、あるデータがあります。
+
+私はその特定のノードでそれが起こることは、それが存在することを理解する期間にわたってです
+
+そのノード1にロードします。
+
+代わりに、ノード2とノース3をアップロードし、このようにノードからノードBにデータの一部を移動します。
+
+そして、作品に関する今後のクエリがノード2を介して流れ始めます。
+
+これは、このバランス調整が自動的に行われることです。
+
+手動で行う必要はありません。これは、マネージドサービスと
+
+大きなテーブルの設定方法。
+
+それはあなたがアーキテクチャを知っているように座っています。
+
+これは、データがファイルシステムの巨像ファイルシステムに保存される単純なアーキテクチャです。
+
+ノードはレコードのメタデータを保持し、それがあなたを指し示すので、あなたが入って読むことができることを知っています
+
+データ。
+
+ノードを追加すると、提案者はノード内のストーリーやデータを増やすことができます
+
+それがあなたの大きなテーブルのパフォーマンスに影響を与えるとき、それが都市であろうと都市であろうと。
+
+アーキテクチャに関するご質問がある場合は、それがアーキテクチャです
+
+次は、各ベースからの移行です。

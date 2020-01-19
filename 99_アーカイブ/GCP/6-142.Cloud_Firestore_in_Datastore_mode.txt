@@ -1,0 +1,183 @@
+Let's go in and understand five storing data stored more.
+
+What is that and why.
+
+How it is different from fire to store in nature more so faster is the next question of data store.
+
+That's what we understand so it is backward compatible.
+
+A new strongly consistent storage layer that has been added on to data stored.
+
+Existing mode.
+
+So that is what does fire fighters storing data stored more a collection and a document data model real
+
+time updates mobile and web client libraries.
+
+So what is that it has got added and removed.
+
+So removing the following cloud data stored limitations so look at the limitations.
+
+OK.
+
+You enjoy consistency all cloud store queries now become strongly consistent.
+
+Transactions are no longer limited to 25 to entity groups.
+
+Right.
+
+And indeed the groups are no longer limited to once per second data store viewer.
+
+OK.
+
+So these are the limitations which they have taken it out but there are some functionalities which is
+
+not which will not work for the five stored in data stored more so project will accept the cloud data
+
+storage API request and deny all fires to reappear request.
+
+The project will use data storage indexes instead of fire stored indexes.
+
+You can use cloud data store client libraries with the project but not cloud Firestone client libraries
+
+cloud fires to real time capabilities will not be available in JCP console.
+
+The data whiz will use in will use the cloud
+
+selecting the DV if you use files storing data stored more for new southern New Project the cloud file
+
+stored in data stored more allow you to use establish the cloud data store server architecture while
+
+removing the fundamental data stored limitations so it is just it is removing the existing data will
+
+you know data stored limitations it is extending the features of existing data store so that you can
+
+use it in a better fashion right.
+
+So data stored more automatically scales to million off right.
+
+Per seconds rather than five storing they do more for the new mobile and web apps so far to store our
+
+first mobile and we plan libraries real time and offline features they do more can I automatically scale
+
+2 million of concurrent clients.
+
+There is one particular disclaimer when you are choosing the data based mode you need to make sure that
+
+you understand this warning it what it says.
+
+Once you select a database mode and execute the first right.
+
+Once you data a first right query in a project you cannot switch.
+
+You can't use both native and data stored more in the same project.
+
+If you want to use it you will need to have you you need to be in the two different projects.
+
+So please go through feature comparison making before making final decision if at all you are making
+
+final decisions.
+
+Go through the the feature comparison and what is the best suitable for you and based on that you make
+
+a choice and then you proceed further selecting a particular version of Firestorm whether it is data
+
+stored or whether it is in native mode.
+
+That's it guys.
+
+As a basic creatures let's go in and see some level of schema designing.
+
+We are not going in details but let's let's go out and see some level of schema.
+
+さらに保存されている5つの保存データについて説明します。
+
+それは何で、なぜですか。
+
+データストアの次の問題は、火と自然の中でより速く保存することの違いです。
+
+それは我々が理解していることなので、後方互換性があります。
+
+保存されたデータに追加された、強く一貫性のある新しいストレージレイヤー。
+
+既存のモード。
+
+それで、データを保存している消防士は、より多くのコレクションとドキュメントデータモデルを実際に保存しています
+
+時間は、モバイルおよびWebクライアントライブラリを更新します。
+
+だから、それが追加および削除されたということです。
+
+そのため、次のクラウドデータに保存されている制限を削除するため、制限を確認してください。
+
+OK。
+
+すべてのクラウドストアクエリの一貫性が高まり、一貫性が高まりました。
+
+トランザクションは、エンティティグループに対して25に制限されなくなりました。
+
+正しい。
+
+実際、グループは1秒に1回のデータストアビューアーに制限されなくなりました。
+
+OK。
+
+これらは彼らがそれを取り除いた制限ですが、いくつかの機能があります
+
+より多く保存されているデータに保存されている5つでは機能しないため、プロジェクトはクラウドデータを受け入れます
+
+ストレージAPIリクエストを送信し、すべての起動を拒否してリクエストを再表示します。
+
+プロジェクトは、保存されたインデックスを起動する代わりに、データストレージインデックスを使用します。
+
+プロジェクトではクラウドデータストアクライアントライブラリを使用できますが、クラウドFirestoneクライアントライブラリは使用できません
+
+リアルタイム機能へのクラウドファイアは、JCPコンソールでは使用できません。
+
+使用するデータウィズはクラウドを使用します
+
+新しい南部の新しいプロジェクトのクラウドファイルにさらに保存されたデータを保存するファイルを使用する場合は、DVを選択します
+
+より多くのデータを保存することで、クラウドデータストアサーバーアーキテクチャの確立を使用しながら、
+
+基本データに保存されている制限を削除して、既存のデータを削除するだけです
+
+データ保存の制限を知っているので、既存のデータストアの機能を拡張して、
+
+より良い方法で使用してください。
+
+そのため、保存されたデータは、自動的に数百万に拡大されます。
+
+1秒あたり5回保存するのではなく、新しいモバイルアプリとWebアプリでこれまで以上に保存します。
+
+最初のモバイルで、ライブラリのリアルタイム機能とオフライン機能を計画します。
+
+200万の同時クライアント。
+
+データベースモードを選択する際には、次のことを確認する必要がある特定の免責事項があります。
+
+あなたはこの警告にそれが言うことを理解している。
+
+データベースモードを選択して、最初の権限を実行します。
+
+プロジェクトで最初の正しいクエリのデータを作成したら、切り替えることはできません。
+
+同じプロジェクト内にネイティブとデータの両方を保存することはできません。
+
+使用したい場合は、2つの異なるプロジェクトに参加する必要があります。
+
+そのため、最終的な決定を下す前に、機能比較を行ってください。
+
+最終決定。
+
+機能の比較と、あなたに最適で、あなたが作成したものに基づいて最適なものを見てください
+
+選択してから、Firestormの特定のバージョンがデータであるかどうかを選択します
+
+保存されているか、ネイティブモードかどうか。
+
+それはみんなです。
+
+基本的なクリーチャーとして、あるレベルのスキーマ設計を見てみましょう。
+
+詳細は説明しませんが、スキーマを見てみましょう。

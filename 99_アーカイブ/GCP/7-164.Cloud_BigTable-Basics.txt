@@ -1,0 +1,335 @@
+Cloud big table.
+
+It's a low latency column oriented noise school database.
+
+And if you know what this column would entail database it is very easy for you to understand.
+
+If you want to map it to the real world example you can just map it to each base kind of requirement
+
+where it is you know low latency is very much necessity for your requirements and you want to have column
+
+were injured to do analytics run on the databases so big table is for you Cloud Big Table is a part
+
+of it ever since storage service and it is one of the database and storage service that is available
+
+out of Google Cloud Platform.
+
+We already saw cloud is cool and Cloud Spanner.
+
+Both of those are our debate means databases.
+
+You can map any you know traditionally women's requirement with them but the analytics part that is
+
+where the big table comes into play.
+
+So what is big table.
+
+It is poorly managed noise Q column oriented database it supports native time cities.
+
+I already finance I take all analytics requirements personalization recommendation and monitoring geospatial
+
+data datasets and graphs it is low latency read write access high throughput analytics database so some
+
+high level features highly scalable fast and for Parliament low latency data with auto scaling seamless
+
+cluster recessing simple and integrated with Google Cloud Cloud platform and globally available highly
+
+scalable database good for low latency read write access high throughput analytics native time it is
+
+support so if you get in question in the exam and if someone wants to have low latency database or high
+
+throughput database for analytics purpose you you just need to keep this in mind for analytics purpose
+
+then big table is for that particular case studies I already finance add take personalization recommendation
+
+monitoring geospatial data set and collapse before I head towards the architecture let's go ahead and
+
+create one big table instance.
+
+So if I go here
+
+storage in big table
+
+create instance
+
+and now it will ask you the instance name.
+
+So let me see a big table instance
+
+NAND storage size I want to see 10 G.B. and then you can either choose production or the development
+
+if you choose these different machines right.
+
+Your configuration here the cluster configuration gets changed so if we click on production it will
+
+ask for 3 n if it is development it will ask for only one note okay but you can go in and customize
+
+the customize those nodes as well if at all you want to have it.
+
+So let me choose to meant for now our production for now the storage type that you can choose SSD which
+
+is fast low latency our data was read and write are the magnetic disk which is it it is Didi and depends
+
+on what you choose you are charge per G.B. get changed.
+
+So if a high it is one dollar and 70 cents per month for SSD versus HDD if I choose it is at 26 cents.
+
+So let me go and choose this is different because I am going to delete the cluster very quickly
+
+and then you have a cluster configuration.
+
+So the cluster configuration says this is my elite cluster 80 this is permanent.
+
+If you want to change it you can go in and rename it trade.
+
+Now you cannot change it later than the location you need to choose the location.
+
+So we should be genuine those people that dot US West 1 and the zone.
+
+If you want to give us on the number of notes how many number up notes you want to have it I can save
+
+one then Eglee cry right.
+
+It will say you are seeing production machine and then you are saying only one note but I am going to
+
+say three notes and the proponents.
+
+So the current node count and storage type so the performance is based on these two parameters reads
+
+30 rows for six millisecond.
+
+30000 are right.
+
+Thirty thousand for six millisecond are scans six sixty MVC per second.
+
+Storage you can go up to seven point five terabytes.
+
+You can add a replication plus to that so as a backup to this one I can see the same configuration and
+
+I can add it.
+
+Okay
+
+it's a reason I want to replicate it to us w 2.
+
+In this case
+
+so her 2 1 is the main cluster and one in the second replication cluster.
+
+There are some guidelines which is given here you can go through it and the cost.
+
+So it says three thousand one hundred and thirty one dollars signed 65 cents per hour per an order.
+
+That is the cost.
+
+I think I'm going to use a dollar or two in say next next one or two hours of lab but I'm fine with
+
+it.
+
+I have 300 dollars credit let me go out and started
+
+so that cluster is getting started.
+
+I'll pause the video for a moment.
+
+Well I don't have to.
+
+So we'll see the cluster started
+
+the cluster lady.
+
+You can go and read the instance.
+
+You can go and delete the instance if I say click on edit I can say I don't want the replication one
+
+and say
+
+so the reply click the application cluster will go up.
+
+So now my cluster is this one okay.
+
+You can click on monitoring and it will show you the graphs sepia relation and all that.
+
+Currently nothing is there right now.
+
+You can go ahead and create the tables if you go here.
+
+You can go and create the tables the purpose of the big table is if you look at the decision tree it
+
+is low latency analytics and structure database so structured.
+
+If the data is structured and you want to use it for analytics purpose and you need low latency access
+
+that's where you'll use big table.
+
+If you have an analytics requirement and the date you don't you do not have a requirement of low latency
+
+then you can go ahead and use be query.
+
+クラウドの大きなテーブル。
+
+これは、低レイテンシの列指向のノイズスクールデータベースです。
+
+また、この列がデータベースに何を伴うかを知っている場合、理解するのは非常に簡単です。
+
+それを実世界の例にマッピングしたい場合は、それぞれの基本的な要件にマッピングするだけです
+
+低レイテンシは要件にとって非常に必要であり、列が必要であることがわかっている場合
+
+データベースで分析を実行するために負傷したので、大きなテーブルはあなたのためですクラウド大きなテーブルは一部です
+
+それはストレージサービス以来ずっと、それは利用可能なデータベースおよびストレージサービスの1つです
+
+Google Cloud Platformから。
+
+クラウドがクールでCloud Spannerであることはすでに見ました。
+
+どちらも私たちの議論はデータベースを意味します。
+
+あなたは伝統的に女性の要件を知っているものをそれらとマッピングすることができますが、
+
+大きなテーブルが登場します。
+
+それで、大きなテーブルとは何ですか。
+
+ネイティブタイムシティをサポートする、ノイズQ列指向データベースの管理が不十分です。
+
+すべての分析要件、パーソナライゼーションの推奨事項、および地理空間の監視をすでに受けています
+
+データデータセットとグラフは、低遅延の読み取り書き込みアクセスの高スループット分析データベースなので、
+
+高レベルの機能は、非常にスケーラブルで高速で、議会向けの自動スケーリングを備えた低遅延データをシームレスに提供します
+
+クラスターリセスがシンプルで、Google Cloud Cloudプラットフォームと統合されており、グローバルに利用可能
+
+低遅延の読み取り書き込みアクセスに適したスケーラブルなデータベース高スループット分析ネイティブ時間
+
+あなたが試験で問題になり、誰かが低レイテンシーのデータベースを持ちたい場合や、
+
+分析目的のスループットデータベース。分析目的でこれを念頭に置く必要があるだけです。
+
+大きなテーブルは、私が既に資金を提供している特定のケーススタディのためのものです。
+
+地理空間データセットを監視し、アーキテクチャに向かう前に崩壊します。先に進みましょう。
+
+1つの大きなテーブルインスタンスを作成します。
+
+ここに行くと
+
+大きなテーブルに収納
+
+インスタンスを作成する
+
+そして今、それはあなたにインスタンス名を尋ねます。
+
+大きなテーブルインスタンスを見てみましょう
+
+NANDストレージサイズ10 G.Bを見たいそして、生産または開発のいずれかを選択できます
+
+これらの異なるマシンを正しく選択した場合。
+
+ここでの設定はクラスター設定が変更されるため、本番をクリックすると
+
+開発中の場合は3 nを要求します。1つのノートのみを要求しますが、カスタマイズして入力できます
+
+必要に応じて、これらのノードもカスタマイズします。
+
+SSDを選択できるストレージタイプを今の生産に向けて選択します。
+
+高速で低レイテンシーであり、データの読み取りと書き込みは磁気ディスクです。つまり、ディディであり、
+
+選択した項目については、GBごとに請求されます。着替える。
+
+したがって、SSDとHDDの場合、月額1ドルで70ドル、それを選択した場合は26セントです。
+
+クラスターを非常に迅速に削除するため、これを選択します
+
+そして、クラスター構成ができました。
+
+したがって、クラスター構成では、これは私のエリートクラスター80であり、これは永続的であると言います。
+
+あなたがそれを変更したいなら、あなたは入って、それをtradeと改名することができます。
+
+現在、場所を選択する必要がある場所よりも後で変更することはできません。
+
+したがって、米国西部1とゾーンに点在する人々は本物でなければなりません。
+
+ノートの数を教えて欲しいなら、ノートをいくつ持って欲しいかを保存できます
+
+エグレは右に泣きます。
+
+プロダクションマシンを見ていると言って、1つのメモだけを言っていますが、
+
+3つのメモと支持者を言う。
+
+したがって、現在のノード数とストレージタイプにより、パフォーマンスはこれら2つのパラメーターの読み取りに基づいています
+
+6ミリ秒で30行。
+
+30000が正しい。
+
+6ミリ秒で3万回は、1秒あたり6 60 MVCのスキャンです。
+
+ストレージは、最大7ポイント5テラバイトまで移動できます。
+
+レプリケーションを追加することができます。これにバックアップとして、同じ構成を確認できます。
+
+追加できます。
+
+はい
+
+それが私たちにそれを複製したい理由ですw 2。
+
+この場合
+
+そのため、彼女の2 1はメインクラスターであり、2番目は2番目のレプリケーションクラスターです。
+
+ここに記載されているいくつかのガイドラインがあり、それとコストを確認できます。
+
+したがって、1注文あたり1時間あたり65セントに3,000ドルが署名されたと書かれています。
+
+それがコストです。
+
+次の1〜2時間のラボでは、1〜2ドルを使うつもりだと思いますが、
+
+それ。
+
+私は300ドルのクレジットを持っています
+
+クラスターが開始されます。
+
+ビデオを一時停止します。
+
+まあ私はする必要はありません。
+
+そのため、クラスターが開始されます
+
+クラスターレディ。
+
+インスタンスにアクセスして読むことができます。
+
+[編集]をクリックすると、インスタンスを削除できます。複製は不要です。
+
+そして、言います
+
+そのため、アプリケーションクラスターをクリックすると、応答が上がります。
+
+これで、私のクラスターはこれで大丈夫です。
+
+モニタリングをクリックすると、グラフのセピア色の関係などが表示されます。
+
+現在、何もありません。
+
+ここに行けば、先に進んでテーブルを作成できます。
+
+デシジョンツリーを見ると、大きなテーブルの目的であるテーブルを作成できます。
+
+低遅延分析と構造化データベースはそのように構造化されています。
+
+データが構造化されており、分析目的で使用する場合、低遅延アクセスが必要な場合
+
+そこで大きなテーブルを使用します。
+
+分析要件があり、日付がない場合は、低遅延の要件はありません
+
+次に、be queryを使用できます。

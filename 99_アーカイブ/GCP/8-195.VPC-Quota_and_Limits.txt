@@ -1,0 +1,76 @@
+What are the limits
+
+VPC and that's how some limits and quotas.
+
+The quotas which you can extend it and there are limits which you cannot extended VPC does not support
+
+IPF physics within the network and business limit VPC only supports IP V for unique cast multicast are
+
+not supported VPC can have maximum up to thousand virtual machine instances and you cannot extend this
+
+number and this applicable to peering as well.
+
+There is no pull subnet limit limit only add the network so you there is no particular limit on the
+
+subnet you subnet can have all 15000 words you'll miss and inside one particular subnet there are some
+
+limits which you need to make sure that you understand it the pairing limit for instance number of instances
+
+per network secondary IP Max tags routers number of holdouts which you can create federal rules which
+
+you can create forwarding rules which you can create in case of a shared we as an example this is one
+
+example you need to check the limit for all other items the number of service project that you can create
+
+attach to the words project is up to hundred.
+
+This limit can vary and might be lower than hundred contact you or I don't have to get into this number
+
+of shared VPC whose project is hundred number of horse project to which the service project can attach
+
+is only 1 and this limit cannot be increased
+
+that these guys I have only this thing as a code doesn't limit if you have any questions ask me otherwise
+
+you can go through the documentation and you can find the whole lot of limitations and code which you
+
+can use it in VPC.
+
+
+制限は何ですか
+
+VPC、そしてそれがいくつかの制限とクォータです。
+
+拡張可能なクォータと、VPCを拡張できない制限がありますがサポートしていません
+
+ネットワーク内のIPF物理学およびビジネス制限VPCは、一意のキャストマルチキャストのIP Vのみをサポートします。
+
+サポートされていないVPCは最大で最大1,000の仮想マシンインスタンスを持つことができ、これを拡張することはできません
+
+番号とこれはピアリングにも適用されます。
+
+プルサブネット制限の制限はありません。ネットワークを追加するだけなので、特定の制限はありません。
+
+サブネットには、15000個の単語すべてが含まれている可能性があります。特定のサブネット内には、
+
+インスタンスのインスタンス数のペアリング制限を理解するために必要な制限
+
+ネットワークごとのセカンダリIP最大タグルーターホールドアウトの数。
+
+共有ルールの場合に作成できる転送ルールを作成できます。これは一例です。
+
+あなたが作成できるサービスプロジェクトの数、他のすべてのアイテムの制限を確認する必要がある例
+
+言葉のプロジェクトに添付することは最大100です。
+
+この制限は変化する可能性があり、連絡先が100未満であるか、この数に達する必要はありません。
+
+サービスプロジェクトがアタッチできる馬プロジェクトの数が100である共有VPCの
+
+1のみであり、この制限を増やすことはできません
+
+これらの人は私がこのことだけを持っていることを質問します
+
+ドキュメントを確認して、多くの制限とコードを見つけることができます
+
+VPCで使用できます。

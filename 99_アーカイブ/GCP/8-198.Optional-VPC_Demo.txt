@@ -1,0 +1,1316 @@
+We perceive them in this particular demo we are going to create our two network acustom Ribisi network
+
+we already have our default network.
+
+We are going to explore our default are to find custom BPC configurations.
+
+We are going to create some networks about firewall tools.
+
+What's your solution to based on this configuration of connectivity you can say so in a nutshell what
+
+we're looking at.
+
+We are going to use the existing default network which usually gets created as a part of Project hazard
+
+network.
+
+So we are going to treat that as a deal for default.
+
+We are going to create test network which is our network.
+
+So we are going to keep all the defaults whatever it is and create a network.
+
+We are going to create a production network and this is where we will put our energy in to create different
+
+networks inside that create our firewall rules too so that all these network can talk to each other.
+
+So let's go ahead and just get into the cons..
+
+OK.
+
+This is my Google Cloud Platform console.
+
+So if I had to create a network I need to go to.
+
+If you look at the Network tab
+
+ABC network so inside ABC network you can see there are multiple subnetwork scripter.
+
+These networks are for different regions currently available right so you are one year of rest one U.S.
+
+West one East one and like that.
+
+All of these are the subject will create for the region.
+
+So all 15 region will have their own subnetwork which is created by default.
+
+There is an address range or IP range which is already created for you you dont have to worry about
+
+creating those.
+
+So there are 15 of those which is one subnetwork created for Region SCO to firewall rules.
+
+Ignore these ones because this is what I have created for the jinky are they will look at in all other
+
+firewalls also default allow DP St-Pierre be here allow our DP or lawas as that all of these are there
+
+for the full network.
+
+And you can see there is a target mentioned.
+
+If I click on it and those targets actually reaching out to all the graphics from the source range and
+
+the source ranges here which is like 0 0 0 0 from anywhere.
+
+That is what it means.
+
+If you look at the hours there are the hours created by default to each and every Are networks so so
+
+that they can talk to each other and as we saw there are something that was created for each and every
+
+region.
+
+Droughts are also created for all of those.
+
+All of those networks and there is one route which goes out to an internet gateway.
+
+Right so your emotions can connect to the Internet.
+
+And then we do not have any repeats repeating or shared repeated APCP appearing is what the connection
+
+when you create busy peering you can have another PC connected to this particular PC and then you can
+
+so you can connect different pieces together.
+
+That's the spirit.
+
+We are going to have one chapter on this one.
+
+And the more as well so lets go here and strafer to this particular slide.
+
+Right.
+
+So start with this one.
+
+So we already have the default Ribisi network on that.
+
+That is what we are trading that is our deal.
+
+We are going to create our Tovey between our dog and that its test.
+
+So lets move in and create based
+
+create repeat the network like me monk that as our test is environment
+
+and
+
+this this will reduce workload to way but we are going to check that in the next section.
+
+Not in this particular section but we are going to use that for the VPN creation.
+
+OK.
+
+So all of all of these networks will be created along with it and we are going to allow holographic.
+
+This is going to take some time.
+
+I'm going to pause the video so that once it is ready we can go ahead and continue.
+
+OK so the Space Network which is our Donat work is created you can go ahead and convert that if you
+
+want but I'm not going to do it.
+
+I'm going to create another PC that is our dollar re-org network is fraud.
+
+Broader network and this is going to be our custom network.
+
+So let's go ahead and create something that works toward peace.
+
+Rick
+
+Region 1 and this is first and this is going to be us.
+
+Here's to one region
+
+right.
+
+This is going to be US East one region.
+
+I'm going to specify the IP range from some networks
+
+and there's a network I'm going to add another one piece rake one page and one to the second one and
+
+read in the same US HE'S ONE going to create an IP range of these two.
+
+It's all really useful at school and he has to and then I'm going to create the
+
+Blake
+
+region to be only one subject and that region toys in west west one right.
+
+And he's in the West US West.
+
+And we have the IP range that is
+
+24
+
+don't want anymore.
+
+OK.
+
+So this is for your routers Globetrotters.
+
+I'm not going to discuss that right now because that is a part of the next section and we are going
+
+to see how we can use it.
+
+OK.
+
+So this is a product in a book it's called and created it's getting created.
+
+And then we are going to explore so.
+
+But before we do that let's go ahead and explore some other information.
+
+OK.
+
+Go to test.
+
+You can see all these subnet was created by default for all regions there is no static IP.
+
+There are a firewall all though which are created by default for your connectivity right.
+
+So the increased traffic like TCAP 3 3 8 9 TCAP 22 and ICMP it is everything is allowed routes you all
+
+that I was created as a default network.
+
+So default is out and you how one route is created for the network.
+
+You can go to a building that is not BPC building exists right now.
+
+Yeah.
+
+Now that our network broad is ready.
+
+We have three networks which we have created two in two.
+
+Oh my God.
+
+I think we wrongly create this one.
+
+US is a Shia East one.
+
+Let's go in and fix it.
+
+It's easy.
+
+So you can go your words of networks.
+
+This one right.
+
+I want to delete that word and delete
+
+see the letter.
+
+Let me create a piece of network or region one.
+
+And this is the second subnetwork brought on us.
+
+He used to watch OK and then the range which I'm going to use is 10 dot dot to dot zero.
+
+Slash 24.
+
+I'm going to give you all of the things as simple as a default.
+
+Ok so you how trees have networks created for your custom PPC.
+
+There are no firewall rules but there are routes at ours.
+
+Actually one goes to the default internet gateway and other three are open for your individual networks.
+
+So what's the next step.
+
+Our next step is so this is done right.
+
+So the next step is we need to create all these virtual machines one two three four five Wiltern which.
+
+So three in our action network one in test which is our network and one in your defaults on that.
+
+OK let's go in and create those virtual machines.
+
+Mm hmm.
+
+To get what you wish.
+
+It's OK.
+
+I have this particular virtual machine for some other purpose.
+
+Let me go ahead and create machines.
+
+So it's production.
+
+Well machine 1 and that is in us.
+
+He he's one B.
+
+Right.
+
+That's so hard.
+
+We want to use it.
+
+US just wanna be great.
+
+OK.
+
+Here it is.
+
+OK sorry.
+
+This is Shia
+
+hewas his wannabe I'm going to use very small machine.
+
+So I still go on for two hours left
+
+and then I'm going to explain this one.
+
+And in networking I'm going to select my network that is broad and I have two choices.
+
+One is Araik one entry too.
+
+I'm going to use the first one which is Rick B C break who runs on one right.
+
+Usually when you might have seen it right when you create an subnetwork you cannot actually it.
+
+So not such when you are going to create the resources inside it.
+
+That's how you make a particular something that looks like that it is a source.
+
+Ok so I'm going to create all other instances as well.
+
+B We.
+
+Do and this is again in US East
+
+one see is that so this is in us just one C grade and going to the unselect micro in networking.
+
+I'm going to select our network
+
+Berard I'm going to select.
+
+Now the second subnet right
+
+let us see go ahead and select.
+
+This is of what your machine.
+
+And again this is actually virtual machine.
+
+But this time I'm going to select us us two one and which.
+
+And so on we said that we'll use it.
+
+US West to 1 he was was one he.
+
+OK.
+
+And I'm going to select the micro for instance K
+
+networking.
+
+I am going to change this default network to draw.
+
+And this time I should be able to see some red too.
+
+This is for the West Region
+
+create O K
+
+BVM
+
+us with 1c one a
+
+micro
+
+going to create art.
+
+There is a vision to create.
+
+Now I am going to create another instance so I need.
+
+So we upgrader be we want to be with three other incidents like the end which is like this what you're
+
+looking for and this is in our best network.
+
+So the PM or this is in our Sorry this is in our US.
+
+He is to see OK you has his
+
+onesie and I should be able to see the next word which is available there for me to use at.
+
+We have network
+
+and then I'm going to create another instance which is in us is to 1c us he's to 1c and that's our De'Leon
+
+we're meant to be real fight against smally instance and not going to do anything there are inside just
+
+the networking and this time I'm going to use the default network for this one right word and create
+
+so all instances are getting ready.
+
+In fact this creator
+
+what next step.
+
+Let's look at what next to it.
+
+So this step is on
+
+now to DVM 5.
+
+OK.
+
+This is the instance let's do a search to BVM.
+
+OK.
+
+We are connected.
+
+So let's go ahead and all of the next steps so we want to bring the on file.
+
+Let us see being the wi fi.
+
+It works right.
+
+Let's being the
+
+O K It is not known.
+
+So let's call it and being
+
+being Beata's of PV for just being with this one they internalize Beatus or the reason for being pain
+
+not 1:42 don't is you've got to wow it's springing.
+
+How come actually the network is open.
+
+So how can I actually use these two networks are talking to each other.
+
+Is there any connection.
+
+Hold on let us see.
+
+OK.
+
+So if you look at if you look at the IP addresses here you can clearly see that there is internal IP
+
+address which is therefore the reason for which is like 10:48 2.0 or two is same as TV.
+
+For internal IP address which is in this case in this particular case it is pinging to itself.
+
+So it is not actually bringing to this particular instance.
+
+And let us try to ping.
+
+So usually this is why because you are using a you know default network and in default network if I
+
+go back to
+
+we use the network.
+
+Right.
+
+Let us see IP range subordinate.
+
+OK.
+
+So let us see you as he's one
+
+us to when you 1:42 dot dot dot dot walk.
+
+And if you look at the test as well US East
+
+one it's the same address range IP address range right.
+
+And that is because these two networks are different weight.
+
+And these is usually the default subnet words which are created with the same IP ranges.
+
+And usually when you create an instance the first address which is like Dean let's go to your machine
+
+instance.
+
+So the first address in here which is like 10 or 140 2.0 daughter one that is reserved for the subnet
+
+and the next IP address and onwards is used for their resources.
+
+So in here when you win if I ping the resource it is being into cell lives and being
+
+external IP address off BVM 4 which is like 35 dot to do 9 dot 32 dot 72
+
+yet connected it is going on
+
+yes so for on BVM five we have we were able to connect.
+
+Being fixed on the IP address of this one.
+
+So Warsaw makes the
+
+late spring.
+
+So this is it is right.
+
+So we are able to bring to the reenforce from our DVM file.
+
+So let's bring BVM one the scene we being the production team won an article to resolve.
+
+Let's go to B and.
+
+OK.
+
+Let's take the IP address the IP address of BVM
+
+35 Dorte 8:58 not 5:54 1 1 0.
+
+This is my BBM BVM one
+
+OK.
+
+So we are not able to bring to the hard let me go here.
+
+So we are not able to bring from this network this IP to one.
+
+OK.
+
+So let's go ahead and either.
+
+So what we can do is either we can open the firewall to this particular network or we can go ahead and
+
+use the network.
+
+So let's go ahead and create one that would tag
+
+the firewall.
+
+So let me create five were ruled here.
+
+This is a law I see the traffic S-sh and all that.
+
+So let's have that particular path and I'm going to clear that for production.
+
+I'm going to mention it here specified target tax.
+
+OK.
+
+And this is allow
+
+a lot.
+
+So if you are if there is a time for instance you know the traffic will be allowed.
+
+So what I want to open so I want to open it.
+
+Let's start with ICMP call on
+
+how do we use it ICMP
+
+DCB column 22.
+
+OK.
+
+Only 2.
+
+Let's go with it.
+
+And create.
+
+We printed OK.
+
+Source.
+
+You do it or not to let's see it from anywhere.
+
+OK
+
+how long before.
+
+Let's go back to the instance
+
+and then it would take
+
+say it's going to take a little bit time.
+
+See.
+
+So traffic has started flowing for on do machine
+
+so started actually went from there to this one right.
+
+So this tape is done.
+
+Let's try to bring the internal IP from do to be an easy one no hard internal IP Dane dog not one dog
+
+to OK.
+
+There is no connection because we are in two different networks so internal IPs are not resolved here.
+
+This one
+
+being BVM to
+
+OK so you can actually see that there is a life you or this which is bizarre but somehow it is not actually
+
+getting connected to period two or three.
+
+Let's actually do the into life here is 10 door to door to
+
+no let's try to piece one
+
+OK.
+
+This is not even going so you can actually see that book BVM and BVM two is in the same region.
+
+Hank BVM three in another region but in the same network.
+
+So you there are there is a network which is connected but it is the firewall rules are not open so
+
+let's go ahead and open the firewall for this one.
+
+So let's go to network BPC and Parag and fire rules.
+
+So this is actually allowing that traffic to based on their tax.
+
+Let me go ahead and add
+
+on
+
+instance and while doing this you want to actually select all instance in the network read.
+
+Ok I see Impey
+
+column TCAP 22.
+
+I don't need the APCP but I'm just creating it for
+
+my left side too.
+
+So all that network actually started communicating with each other let's go in here.
+
+So let me I'm being
+
+too is connecting theory is connecting let's driveway into an IP address and dot dot dot to right.
+
+It's just connecting.
+
+Let me go to B and to hold on.
+
+Let's go to
+
+the file and try to connect BBM 3 and see what happens.
+
+Being I want to connect to PCM to Pierian Dewes IP address is 35 to 9.
+
+Darte 98 Dorte 3:53.
+
+Is there anything left to test.
+
+Yeah that's all for this one so we have connected.
+
+So what we did was we have created test as our network production network that is a custom network and
+
+then we created 1 2 3 4 5 subnet.
+
+No.
+
+In fact we had it already on this particular subnet.
+
+We have created some news into while creating the production network.
+
+I did one mistake and then we fixed it.
+
+When we deleted subnetwork after creation and then I did another one and then we tried to bring it down
+
+to test and we saw that the connections all traffic was enabled by the firewall which is the firewall.
+
+But when we tried to connect to the production instances we were not able to connect it because all
+
+the traffic were blocked.
+
+So what we did was first one we created and it worked.
+
+We are Thyssen it worked out to be on one and then thats how the previous one was taking requests from
+
+the VM for our TV M4.
+
+And then we are the firewall rule to accept the traffic from anywhere else and that thats how we were
+
+able to connect from the we 4 p.m. to period 3.
+
+That's it for the BBC and something that we are going to create.
+
+HOST And just to give you a sense of how we can delete text on allied IP address and create obsession
+
+was to S-sh to that particular machine.
+
+OK thank you.
+
+
+この特定のデモでそれらを認識し、2つのネットワークを作成しますカスタムRibisiネットワーク
+
+すでにデフォルトのネットワークがあります。
+
+デフォルトを調査して、カスタムBPC構成を見つけます。
+
+ファイアウォールツールに関するネットワークを作成します。
+
+この接続の構成に基づいたソリューションは何ですか？簡単に言えば
+
+私たちは見ています。
+
+通常、プロジェクトハザードの一部として作成される既存のデフォルトネットワークを使用します。
+
+通信網。
+
+そのため、これをデフォルトの取引として扱います。
+
+私たちのネットワークであるテストネットワークを作成します。
+
+そのため、デフォルトをすべて維持し、ネットワークを作成します。
+
+生産ネットワークを作成します。ここでエネルギーを投入し、
+
+これらのネットワークすべてが互いに通信できるように、ファイアウォールルールも作成する内部のネットワーク。
+
+それでは、先に進んで、短所に入りましょう。
+
+OK。
+
+これが私のGoogle Cloud Platformコンソールです。
+
+そのため、ネットワークを作成する必要がある場合は、移動する必要があります。
+
+[ネットワーク]タブを見ると
+
+ABCネットワークなので、ABCネットワーク内には複数のサブネットワークスクリプターがあります。
+
+これらのネットワークは現在利用可能なさまざまな地域向けであるため、1年間は米国の残り1年間です。
+
+ウエストワンイーストワンなど。
+
+これらはすべて、サブジェクトがリージョンに対して作成するものです。
+
+したがって、15のリージョンすべてに、デフォルトで作成される独自のサブネットワークがあります。
+
+あなたのために既に作成されているアドレス範囲またはIP範囲がありますので、心配する必要はありません
+
+それらを作成します。
+
+そのため、リージョンSCOからファイアウォールルール用に作成された1つのサブネットワークである15があります。
+
+これらは私がジンキーのために作成したものであるため、これらを無視します
+
+ファイアウォールはデフォルトでDP St-Pierreを許可します
+
+完全なネットワークのために。
+
+そして、あなたは言及された目標があるのを見ることができます。
+
+それをクリックして、それらのターゲットがソース範囲からすべてのグラフィックスに実際に手を伸ばし、
+
+ソースの範囲はどこからでも0 0 0 0のようになります。
+
+それが意味することです。
+
+時間を見ると、デフォルトで作成される時間がネットワークごとにあります。
+
+彼らはお互いに話すことができ、私たちが見たように、それぞれのために作成されたものがあります
+
+領域。
+
+干ばつは、それらすべてのために作成されます。
+
+これらすべてのネットワークと、インターネットゲートウェイへのルートが1つあります。
+
+あなたの感情がインターネットに接続できるように。
+
+そして、繰り返される繰り返しや共有された繰り返しのAPCPは表示されません
+
+忙しいピアリングを作成するとき、別のPCをこの特定のPCに接続してから、次のことができます。
+
+そのため、異なる部分を一緒に接続できます。
+
+それは精神だ。
+
+これについては、1つの章があります。
+
+それだけでなく、ここに行ってこの特定のスライドを調べてみましょう。
+
+正しい。
+
+だから、これから始めましょう。
+
+そのため、すでにデフォルトのRibisiネットワークがあります。
+
+それが私たちの取引であるものです。
+
+犬とそのテストの間にToveyを作成します。
+
+で移動し、ベースを作成しましょう
+
+私のようなネットワークを繰り返し作成します
+
+そして
+
+これにより、作業負荷が大幅に削減されますが、次のセクションで確認します。
+
+この特定のセクションではありませんが、VPNの作成に使用します。
+
+OK。
+
+したがって、これらすべてのネットワークはすべて一緒に作成され、ホログラフィックを許可します。
+
+これには時間がかかります。
+
+ビデオを一時停止して、準備ができたら先に進んで続行できるようにします。
+
+それでは、Donatの作業であるSpace Networkが作成されます。
+
+したいが、私はそれをするつもりはない。
+
+私は、ドル再編成ネットワークが詐欺である別のPCを作成します。
+
+より広いネットワーク。これがカスタムネットワークになります。
+
+それでは、平和に向かって働くものを作りましょう。
+
+リック
+
+リージョン1。これが最初であり、これが私たちになります。
+
+1つの地域へ
+
+正しい。
+
+これは、米国東部1地域になります。
+
+一部のネットワークからIP範囲を指定します
+
+ネットワークがあり、1つのページともう1つのページをもう1つ追加します。
+
+同じUSを読んでHE'S ONEでこれら2つのIP範囲を作成します。
+
+それはすべて学校で非常に有用であり、彼はする必要があり、それから私は作成するつもりです
+
+ブレイク
+
+リージョンは1つのサブジェクトのみであり、そのリージョンは西西の1つ右のおもちゃです。
+
+彼はアメリカ西部にいます。
+
+そして、我々はあるIP範囲を持っています
+
+24
+
+もう欲しくない。
+
+OK。
+
+だから、これはあなたのルーターグローブトロッターのためです。
+
+それについては次のセクションの一部であるため、今は説明しません。
+
+使用方法を確認します。
+
+OK。
+
+だから、これは呼ばれ、作成された本の製品です。
+
+そして、そうするつもりです。
+
+ただし、その前に、他の情報を調べてみましょう。
+
+OK。
+
+テストに行きます。
+
+これらのサブネットはすべて、静的IPがないすべての地域に対してデフォルトで作成されたことがわかります。
+
+ただし、すべての接続権限に対してデフォルトで作成されるファイアウォールがあります。
+
+TCAP 3 3 8 9 TCAP 22やICMPなどのトラフィックの増加により、すべてのルートが許可されます
+
+デフォルトのネットワークとして作成されたこと。
+
+そのため、デフォルトは無効であり、ネットワークに対して1つのルートがどのように作成されるかを示します。
+
+現在、BPCの建物ではない建物に行くことができます。
+
+うん。
+
+これで幅広いネットワークの準備ができました。
+
+2つに2つ作成した3つのネットワークがあります。
+
+何てことだ。
+
+私たちはこれを間違って作成していると思います。
+
+米国はシーア派の東洋人です。
+
+修正してみましょう。
+
+それは簡単です。
+
+だから、あなたはネットワークの言葉を行くことができます。
+
+これが正しい。
+
+その単語を削除して削除したい
+
+手紙を参照してください。
+
+ネットワークまたはリージョンを作成します。
+
+そして、これが私たちにもたらした2番目のサブネットワークです。
+
+彼は以前は[OK]を見ていたので、使用する範囲は10ドットドットツードットゼロです。
+
+スラッシュ24。
+
+デフォルトと同じくらい簡単なことをすべて説明します。
+
+わかりましたので、カスタムPPC用に作成されたネットワークのツリーをどのように作成しますか。
+
+ファイアウォールルールはありませんが、私たちにはルートがあります。
+
+実際には、1つはデフォルトのインターネットゲートウェイに進み、他の3つは個々のネットワークに対して開いています。
+
+それでは、次のステップは何ですか。
+
+次のステップは、これが正しく行われるようにすることです。
+
+そのため、次のステップでは、これらすべての仮想マシンを作成する必要があります。
+
+したがって、アクションネットワークには3つ、テストに1つ、ネットワークは1つ、デフォルトは1つです。
+
+では、これらの仮想マシンを作成してみましょう。
+
+うーん
+
+あなたが望むものを得るために。
+
+大丈夫です。
+
+私は、この特定の仮想マシンを他の目的に使用しています。
+
+先に進んでマシンを作成しましょう。
+
+だから生産です。
+
+まあマシン1とそれは私たちにあります。
+
+彼は彼が一人のBです。
+
+正しい。
+
+それはとても難しいです。
+
+使いたいです。
+
+米国はただ偉大になりたい。
+
+OK。
+
+ここにあります。
+
+すみません。
+
+これはシーアです
+
+彼は彼の志望でした私は非常に小さなマシンを使用するつもりです。
+
+だから私はまだ2時間残っています
+
+次に、これについて説明します。
+
+また、ネットワーキングでは、幅広いネットワークを選択しますが、2つの選択肢があります。
+
+1つはAraikの1つのエントリでもあります。
+
+最初の1つであるRick B C breakを使用します。
+
+通常、サブネットワークを作成するときにそれを見たかもしれませんが、実際には見ることができません。
+
+そのため、内部にリソースを作成する場合はそうではありません。
+
+それがソースのように見える特定の何かを作る方法です。
+
+わかりましたので、他のすべてのインスタンスも作成します。
+
+B私たち。
+
+し、これは再び米国東部にあります
+
+ひとつの見方は、これは私たちの中にただ1つのCグレードであり、ネットワーキングの選択されていないマイクロに行くことです。
+
+ネットワークを選択します
+
+Berardを選択します。
+
+次に、2番目のサブネット
+
+先に進んで選択してみましょう。
+
+これはあなたのマシンのものです。
+
+また、これは実際には仮想マシンです。
+
+しかし、今回は2つ1つを選択します。
+
+そして、我々はそれを使うと言った。
+
+彼がいた米国西部の1つは彼だった。
+
+OK。
+
+そして、インスタンスKのマイクロを選択します
+
+ネットワーキング。
+
+このデフォルトのネットワークを変更して描画します。
+
+そして今度は赤も見えるはずです。
+
+これは西部地域向けです
+
+O Kを作成
+
+BVM
+
+1c 1 aで私たち
+
+マイクロ
+
+アートを作成します。
+
+作成するビジョンがあります。
+
+次に、別のインスタンスを作成するので、必要になります。
+
+だから私たちは、このようなものである終わりのような3つの他の事件と一緒になりたいです
+
+探して、これは私たちの最高のネットワークです。
+
+PMまたはこれは、申し訳ありませんが、これは米国にあります。
+
+彼はあなたが彼を持っていることを確認することです
+
+onesieと私は、私が使用できる次の単語を見ることができるはずです。
+
+ネットワークがあります
+
+そして、私たちの中にある別のインスタンスを作成します。それは1cに、彼は1cに、それが私たちのDe'Leonです
+
+私たちは小さなインスタンスに対する本当の戦いであることを意図しており、ちょうど内部にある何もしないつもりです
+
+ネットワーキングと今回は、この1つの正しい単語にデフォルトのネットワークを使用して作成します
+
+すべてのインスタンスが準備中です。
+
+実際、このクリエイター
+
+次のステップ。
+
+その横にあるものを見てみましょう。
+
+このステップはオンです
+
+次にDVM 5に進みます。
+
+OK。
+
+これは、BVMを検索するインスタンスです。
+
+OK。
+
+接続されています。
+
+それでは、次のすべてのステップに進んで、ファイルを保存します。
+
+Wi Fiであることを見てみましょう。
+
+正しく機能します。
+
+さあ
+
+O K知られていない。
+
+それを呼び出して
+
+このビータと一緒にいるためにビータのPVであること、彼らはビータスまたは痛みである理由を内面化します
+
+1:42ではありません
+
+実際にネットワークが開いているのはなぜですか。
+
+したがって、これら2つのネットワークを実際にどのように使用すれば、互いに通信できますか。
+
+接続はありますか。
+
+お待ちください。
+
+OK。
+
+ここでIPアドレスを見ると、内部IPがあることがはっきりとわかります。
+
+したがって、10：48 2.0または2のような理由であるアドレスはテレビと同じです。
+
+この特定のケースでこの場合にある内部IPアドレスの場合、それ自体にpingを送信しています。
+
+そのため、実際にはこの特定のインスタンスに持ち込むことはありません。
+
+そして、pingを試してみましょう。
+
+だから通常、これはあなたがデフォルトのネットワークを知っているので、デフォルトのネットワークで
+
+帰ります
+
+ネットワークを使用します。
+
+正しい。
+
+IP範囲の下位を見てみましょう。
+
+OK。
+
+それで、彼が一人であるのであなたに会いましょう
+
+1:42ドットドットドットドットウォークするとき。
+
+また、テストを米国東部でも見ると
+
+1つは、同じアドレス範囲のIPアドレス範囲です。
+
+それは、これら2つのネットワークの重みが異なるためです。
+
+通常、これらは同じIP範囲で作成されるデフォルトのサブネットワードです。
+
+通常、インスタンスを作成するときは、Deanのような最初のアドレスからマシンに行きましょう
+
+インスタンス。
+
+サブネット用に予約されている10または140 2.0ドーターのような、ここの最初のアドレス
+
+次のIPアドレス以降がリソースに使用されます。
+
+リソースをpingすると勝つと、セルライフになります。
+
+BVM 4からの外部IPアドレス。35ドットのように9ドット32ドット72
+
+まだ接続されている
+
+はい、BVM 5では接続できました。
+
+この1つのIPアドレスに固定されています。
+
+ワルシャワは
+
+晩春。
+
+だからこれは正しい。
+
+したがって、DVMファイルから強化することができます。
+
+それでは、BVMを、制作チームが解決すべき記事を獲得したシーンに紹介しましょう。
+
+Bに行きましょう。
+
+OK。
+
+IPアドレスをBVMのIPアドレスにしましょう
+
+35 Dorte 8:58ではなく5:54 1 1 0
+
+これは私のBBM BVMのものです
+
+OK。
+
+だから私たちはここに行かせてもらえません。
+
+したがって、このネットワークからこのIPを1つにすることはできません。
+
+OK。
+
+それでは、先に進みましょう。
+
+したがって、この特定のネットワークに対してファイアウォールを開くか、先に進むことができます
+
+ネットワークを使用します。
+
+それでは、タグ付けするものを作成しましょう
+
+ファイアウォール。
+
+そこで、ここで5つのルールを作成しました。
+
+これは、私が交通S-shなどを見る法律です。
+
+それで、その特定のパスを持ちましょう。本番環境ではそれをクリアします。
+
+ここで、指定されたターゲット税について説明します。
+
+OK。
+
+そしてこれは許可です
+
+たくさん。
+
+したがって、たとえば時間がある場合は、トラフィックが許可されることがわかります。
+
+だから、私が開きたいので、それを開きたい。
+
+ICMP呼び出しをオンにして始めましょう
+
+ICMPをどのように使用しますか
+
+DCB列22。
+
+OK。
+
+のみ2。
+
+それで行きましょう。
+
+そして作成します。
+
+OKを印刷しました。
+
+ソース。
+
+どこからでも見られるようにするかどうか。
+
+OK
+
+どれくらい前に。
+
+インスタンスに戻りましょう
+
+そして、それはかかります
+
+少し時間がかかると言います。
+
+見る。
+
+そのため、オンマシンでトラフィックが流れ始めました
+
+だから、実際にそこからこの1つに行きました。
+
+これでテープは完成です。
+
+内部IPを簡単なものにしようとしましょう。ハードな内部IPはありません。
+
+取った。
+
+私たちは2つの異なるネットワークにいるため、接続はなく、内部IPはここでは解決されません。
+
+これです
+
+にBVMであること
+
+わかりましたので、実際にあなたまたはこれは奇妙ですが、どういうわけか実際ではない人生があることを見ることができます
+
+期間2または3に接続します。
+
+実際にここに生活をしましょう10戸ごとです
+
+いいえ、一つにしようとしましょう
+
+OK。
+
+これは進んでいないので、実際に本BVMとBVM 2が同じ地域にあることがわかります。
+
+同じネットワーク内の別の地域にある3つのハンクBVM。
+
+接続されているネットワークがありますが、ファイアウォールルールが開いていないので、
+
+先に進んで、このファイアウォールを開きましょう。
+
+それでは、ネットワークBPCとParagに行き、ルールを実行しましょう。
+
+したがって、これは実際にそのトラフィックを税に基づいて許可しています。
+
+先に進みましょう
+
+オン
+
+インスタンスとこれを実行中に、実際にネットワークのすべてのインスタンスを選択して読み取ります。
+
+OK
+
+列TCAP 22。
+
+APCPは必要ありませんが、作成するのはAPCPだけです
+
+私の左側も。
+
+したがって、そのネットワークはすべて実際に相互に通信を開始しました。ここから始めましょう。
+
+だから私は
+
+接続理論も接続してみましょう、私道をIPアドレスに接続し、右にドットドットドットします。
+
+接続するだけです。
+
+Bに行きましょう。
+
+に行きましょう
+
+ファイルをBBM 3に接続して、何が起こるかを確認してください。
+
+Pierian DewesのIPアドレスにPCMに接続したいのは35対9です。
+
+Darte 98 Dorte 3:53。
+
+テストするものが残っていますか。
+
+ええ、これでこれで終わりです。
+
+そこで、カスタムネットワークであるネットワーク実稼働ネットワークとしてテストを作成し、
+
+次に、1 2 3 4 5サブネットを作成しました。
+
+番号。
+
+実際、この特定のサブネット上にすでにありました。
+
+本番ネットワークの作成中にいくつかのニュースを作成しました。
+
+私は1つのミスをして、それを修正しました。
+
+作成後にサブネットワークを削除し、別のサブネットワークを実行してから、ダウンさせようとしたとき
+
+テストすると、すべてのトラフィックがファイアウォールであるファイアウォールによって有効にされていることがわかりました。
+
+しかし、実稼働インスタンスに接続しようとしたとき、接続できませんでした。
+
+トラフィックがブロックされました。
+
+したがって、最初に作成したものが機能しました。
+
+私たちはティッセンであり、それが1つになり、それから前のものがどのようにリクエストを受け取っていたか
+
+TV M4のVM。
+
+そして、私たちは他の場所からのトラフィックを受け入れるファイアウォールルールであり、それが私たちのやり方です
+
+午後4時から接続できます。期間3まで。
+
+BBCにとってはこれで終わりです。
+
+ホストそして、私たちがどのように関連するIPアドレスのテキストを削除し、強迫観念を作成することができるかの感覚を与えるために
+
+その特定のマシンにS-shすることでした。
+
+よろしくお願いします。

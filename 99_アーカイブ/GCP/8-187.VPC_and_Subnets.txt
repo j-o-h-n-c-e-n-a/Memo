@@ -1,0 +1,335 @@
+Southern networks are in chart form subnets for subnet is the traditional word you can create.
+
+So you have your own data center right.
+
+And in that data center you have production network.
+
+We have testing network are you know you at network are developing network and you can restrict the
+
+print access permissions.
+
+Different firewall rules for all those different networks so developers should not have access to safe
+
+production.
+
+As an example right our operations team should have access to say production development and testing
+
+in networks so you can create different rules different subnet works and define the rules in between
+
+using the subnet.
+
+So what is subnet subnet.
+
+Is the sub part of the network which is created either of those subnets for a particular tone audit
+
+can you span across multiple tone so all the resources what are what are you resource.
+
+Whatever resource you create it is associated to the project it is associated to network inside the
+
+project and definitely it is associated to the sub network because that's how these resources individual
+
+resources get the IP address.
+
+So subnet is the only entity which provides the internal IP address to the cloud resources and that
+
+is very important.
+
+So subnet can be in zone or it can span across multiple zones within the region.
+
+And this is again important aspect to understand if at all you are spanning across multiple regions
+
+then you probably will need to have additional subnet works in those regions
+
+if you look at another use case or typical use case which you can have it in terms of subnet.
+
+Say you created production network and you created the end stage network and these are two different
+
+pieces you can have production network and for region when you can have one sub network and that's how
+
+IP address get assigned to those resources and you can define the firewall rules to control the communication
+
+between you can have additional sub network in additional region for your same production network as
+
+well as their state network.
+
+So you need to account or when are planning for you know cloud resources or cloud sub networks you need
+
+to make sure that you understand all this concept at the same time as a developer you understanding
+
+know how these pieces how these VPN you know sub network work if you are planning to deploy your application
+
+into Google Cloud Platform the resources can talk to each other within the network.
+
+As I said earlier but between the network you need to account for egress CHARGES THAT ARE YOU KNOW ANY
+
+so different aspect are different view of subnet work within your one update zone or within the region.
+
+Consider a you know you have a website that website has caught is is using compute engine and there
+
+are multiple computer engine in the entire instance groups it is that traffic is routed via a load balancer
+
+using DNS.
+
+So you have some say my website dot com right.
+
+That gets translated into cloud load balancer and then it comes to ultimately your cloud resources.
+
+So this William has got an IP address the IP address is assigned based on the subnet work and the load
+
+balancing also does all the traffic routing based on the IP addresses within within the instance group.
+
+And this is another concept within the IP addresses that are assigned by sub network and this is the
+
+location for your sub network and it can be in one's own audit can be in a multiple zone
+
+another aspect is consider when you have multiple sources within your you know within your V.P. VPC
+
+and this is your one VPC OK in Region 1 and Region 2 you can you have some resources within the region
+
+one in into on a and you have some resources within the region too.
+
+But those resources are Spanish Corazon and don't be.
+
+There are some some sub network spending in zone and on B and there are some sub networks which is within
+
+the sub network or within the zone e that is sub network too.
+
+So you can mix and match based on the topology whatever you want to have.
+
+The only thing to remember here is I've heard this comes from the sub network and subnet can span across
+
+multiple zone for different when you need to create a different sub network altogether but definitely
+
+you can house a sub network or the IP assigned in team for this particular resource cloud resource in
+
+sub network 3.
+
+You can have similar IP ranges created in subnet to one with a different block altogether.
+
+So you can mix and match.
+
+It's not a contiguous block of IP addresses which has to be that some of the properties of some network
+
+we precedent in sub networks of networks are region specific sub network in a single zone or can be
+
+in multiple zones within the region using subnet where you can apply single firewall rule to all VM
+
+if they are in different zone even if they're in different zone.
+
+You can create multiple some network within the region and zone to isolate the resources between different
+
+business needs each subnet has a contiguous private autopsy 1918 IP space or IP range.
+
+How was your machine instance in here.
+
+VPC network can communicate within the instances in all sub network in the same reporting network regardless
+
+region using IFC 1918.
+
+But I would say this and why I'm writing this we all we have gone through all of those points.
+
+I am writing this for your exam preparation.
+
+Keep that in mind.
+
+Resort addresses you going to have network addresses first address and decide the range.
+
+Default gateway address The address resort address which is like second last and last letters.
+
+So these four addresses within the subnet will ease result and you cannot use it for your ruin instances
+
+but all other IP addresses you can use it for your cloud resources
+
+sub network and the network in our own mode network you can create auto sub network with specific zone
+
+firewall rules are opened a subnet created within all the so that the resource can communicate with
+
+each other but in custom more you can create network with the specific zone and region not all the region
+
+having sub networks and no firewall rules are open.
+
+You how to open the firewalls in the custom network that said guys if I have to show you we already
+
+saw this.
+
+These are the sub networks which are created.
+
+And if I go to custom I have created 2 sub networks within the same you know same that same region.
+
+And this is very important.
+
+You can depends on the IP address and depends on how you can assign it.
+
+You can how multiple sub network or within the region are within the zones itself.
+
+That's it guys.
+
+As a sub networks if you have any questions let me know otherwise you can go to next internal IP address.
+
+サザンネットワークはチャート形式のサブネットです。サブネットは、作成できる伝統的な言葉です。
+
+したがって、独自のデータセンターがあります。
+
+そして、そのデータセンターには実稼働ネットワークがあります。
+
+ネットワークを開発していることを知っているので、テストネットワークがあります。
+
+印刷アクセス許可。
+
+これらすべての異なるネットワークに異なるファイアウォールルールがあるため、開発者はセーフにアクセスできません
+
+製造。
+
+正しい例として、運用チームは本番開発とテストにアクセスする必要があります
+
+ネットワーク内で、異なるサブネットが異なるルールを作成し、その間にルールを定義できるようにします
+
+サブネットを使用します。
+
+サブネットサブネットとは何ですか。
+
+特定のトーン監査のためにこれらのサブネットのいずれかで作成されるネットワークのサブ部分です
+
+複数のトーンにまたがることができますので、すべてのリソースはあなたが何であるかです。
+
+作成するリソースはすべて、プロジェクト内に関連付けられ、プロジェクト内のネットワークに関連付けられます
+
+プロジェクトと間違いなくサブネットワークに関連付けられています
+
+リソースはIPアドレスを取得します。
+
+したがって、サブネットは、クラウドリソースに内部IPアドレスを提供する唯一のエンティティであり、
+
+はとても重要です。
+
+そのため、サブネットはゾーン内に存在するか、リージョン内の複数のゾーンにまたがることができます。
+
+そしてこれは、あなたが複数の地域にまたがっているかどうかを理解するための重要な側面です
+
+その後、おそらくそれらの地域で追加のサブネットを動作させる必要があります。
+
+サブネットの観点から別のユースケースまたは典型的なユースケースを見ることができます。
+
+実稼働ネットワークを作成し、最終段階のネットワークを作成したとします。これらは2つの異なる
+
+サブネットワークを1つ持つことができる場合に、本番ネットワークと地域用にできる部分
+
+IPアドレスはそれらのリソースに割り当てられ、ファイアウォールルールを定義して通信を制御できます
+
+の間に、同じ本番ネットワークの追加地域に追加のサブネットワークを持つことができます
+
+州のネットワークも同様です。
+
+そのため、必要なクラウドリソースまたはクラウドサブネットワークを把握する必要があるか、いつ計画するのかが必要です
+
+理解している開発者と同時にこの概念をすべて理解していることを確認する
+
+アプリケーションを展開することを計画している場合、これらの部分がどのようにサブネットワークが機能するかを知っています
+
+Google Cloud Platformでは、リソースはネットワーク内で相互に通信できます。
+
+先ほど言ったように、ネットワーク間では、あなたが知っている出力料金を考慮する必要があります
+
+異なる側面は、1つの更新ゾーン内またはリージョン内のサブネット作業の異なるビューです。
+
+あなたがウェブサイトがキャッチしたウェブサイトがあることを知っていると考えてください
+
+インスタンスグループ全体に複数のコンピューターエンジンがある場合、トラフィックはロードバランサー経由でルーティングされます。
+
+DNSを使用します。
+
+あなたは私のウェブサイトのドットコムが正しいと言う人がいます。
+
+これはクラウドロードバランサーに変換され、最終的にクラウドリソースになります。
+
+そのため、このWilliamはIPアドレスを取得しています。IPアドレスは、サブネットの作業と負荷に基づいて割り当てられます
+
+バランシングは、インスタンスグループ内のIPアドレスに基づいてすべてのトラフィックルーティングも行います。
+
+これは、サブネットワークによって割り当てられるIPアドレス内の別の概念であり、これは
+
+サブネットワークの場所であり、自分の監査内にある可能性があり、複数のゾーンにある可能性があります
+
+別の側面は、V.P。内で知っている複数のソースがあるときに考慮することです。 VPC
+
+これはリージョン1とリージョン2で1つのVPC OKです。リージョン内にいくつかのリソースがあります。
+
+に1つとあなたも地域内のいくつかのリソースがあります。
+
+しかし、これらのリソースはスペインのコラソンであり、そうではありません。
+
+いくつかのサブネットワークがゾーンとBに出費しており、いくつかのサブネットワークが
+
+サブネットワーク、またはサブネットワークでもあるゾーンe内。
+
+そのため、必要に応じて、トポロジに基づいて組み合わせて一致させることができます。
+
+ここで覚えておくべき唯一のことは、これがサブネットワークから来て、サブネットがまたがることができると聞いたことです
+
+完全に異なるサブネットワークを作成する必要があるが、間違いなく複数のゾーン
+
+サブネットワークまたはこの特定のリソースクラウドリソースのチームで割り当てられたIPを収容できます。
+
+サブネットワーク3。
+
+サブネットで作成された同様のIP範囲を、完全に異なるブロックを持つものに設定できます。
+
+だから、ミックスして一致させることができます。
+
+いくつかのネットワークのプロパティの一部である必要があるのは、IPアドレスの連続したブロックではありません
+
+ネットワークのサブネットワークの先例は、単一ゾーン内の地域固有のサブネットワークであるか、
+
+単一のファイアウォールルールをすべてのVMに適用できるサブネットを使用するリージョン内の複数のゾーン
+
+別のゾーンにいる場合でも、別のゾーンにある場合。
+
+リージョンとゾーン内に複数のネットワークを作成して、異なるリソースを分離できます
+
+ビジネスニーズには、各サブネットに連続したプライベート剖検1918 IPスペースまたはIP範囲が必要です。
+
+マシンインスタンスはここにありましたか。
+
+VPCネットワークは、同じレポートネットワーク内のすべてのサブネットワークのインスタンス内で、
+
+IFC 1918を使用する地域。
+
+しかし、私はこれを言い、なぜ私がこれを書いているのか、私たちはこれらのすべての点を経験しました。
+
+私はあなたの試験準備のためにこれを書いています。
+
+心に留めておきます。
+
+リゾートアドレスは、ネットワークアドレスを最初に取得し、範囲を決定します。
+
+デフォルトゲートウェイアドレス2番目の最後と最後の文字のようなアドレスリゾートアドレス。
+
+したがって、サブネット内のこれら4つのアドレスは結果を容易にし、破滅的なインスタンスには使用できません
+
+ただし、クラウドリソースに使用できる他のすべてのIPアドレス
+
+サブネットワークと独自モードのネットワークでは、特定のゾーンで自動サブネットワークを作成できます
+
+ファイアウォールルールは、リソースが通信できるようにすべての内部に作成されたサブネットを開きます
+
+お互いですが、カスタムでは、すべての地域ではなく、特定のゾーンと地域でネットワークを作成できます
+
+サブネットワークがあり、ファイアウォールルールが開いていない。
+
+カスタムネットワークでファイアウォールを開く方法を教えてください。
+
+これを見た。
+
+これらは作成されるサブネットワークです。
+
+そして、カスタムに行くと、同じ地域内に同じサブネットワークを2つ作成しました。
+
+これは非常に重要です。
+
+IPアドレスと割り当て方法に依存します。
+
+複数のサブネットワークまたはリージョン内がゾーン内にどのようにあるかを確認できます。
+
+それはみんなです。
+
+サブネットワークとして質問がある場合はお知らせください。そうでない場合は、次の内部IPアドレスに移動できます。

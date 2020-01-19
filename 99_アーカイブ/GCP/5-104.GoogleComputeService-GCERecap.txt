@@ -1,0 +1,409 @@
+Hello let's go ahead and review what we learned as a computing service from GCP.
+
+So what we learned is there are four main services in GCP.
+
+First one is Google App Engine used widely.
+
+Google and interchanging is a container implementation in GCP which is Kubera it is implementation Google
+
+Cloud computing engine which is virtual machine on the cloud and Google Cloud function.
+
+And we have seen the spirometry.
+
+So we have a virtual machine which is computers as infrastructure as a service whereas container and
+
+app is a platform and function cloud function is again the platform sort of is but it is truly soulless
+
+and.
+
+So let's ahead and review cloud computing.
+
+Compute engine is what the machine in the cloud.
+
+You can have flexible configuration for what your machine for your work load.
+
+You can have Linux and Windows machine I suppose.
+
+Mobile load balancing and killing.
+
+You just configure the killing and load balancing policy and it will be done for you.
+
+And there are different types of predefined machine DOS standard high speed you high memory and shared
+
+core if one and Jeevan cost too much and you can choose you and memory based on your requirement with
+
+some restrictions.
+
+All machines are slightly more expensive than equal and pretty when machine drives performance VCP network
+
+performance and is for that.
+
+That's what we learned.
+
+VCP is equivalent to do we suppose are equivalent to one corps in your optimizes network or Pomerantz
+
+is dependent on a number of ECP use.
+
+So perviously you it is to Gibeon it can.
+
+You can go up to 16 GBP as a network.
+
+Are these apartments you can either choose SSD for more or you can use magnetic disk for more storage
+
+for the price which you are asking for.
+
+But at the same time the popovers get increases when you increase the size of her disk and the resources
+
+for cloud computing in these key measures networks firewalls addresses IP addresses regions Zunes instances
+
+load balance or descaling instance template an instance group or disk you can use ramdisk persistent
+
+disk and local guys will in persistent this can.
+
+You have two options one is magnetic and the second one is SSD and local disk you is only you can use
+
+magnetic re-assessed it is quite persistent as it is so persistent these are used as a pool table you
+
+cannot use locally as a bootable this couple moments where it is based on the size of most of the disk
+
+migration low migration is supported for transport and maintenance and when your VM is running localizes
+
+the storage goes away when things just get like migrated.
+
+Not necessarily on the same hardware so it can be provision onto another hardware as well.
+
+Preemptory machines are not supported and you can check the moderator to see if the machine is being
+
+migrated or not.
+
+I don't indeed restart a VM starts out to medically if crash or maintenance when it's not for me.
+
+I know manually stop you full stop though.
+
+It will not start and then read all other concepts like when I will working on machines you can get
+
+it for 24 hours.
+
+It has got a finite resources you can also make the pram table virtual machines not covered under a
+
+silly charge.
+
+Only if it is started 10 minutes and more.
+
+If it is less then you will not be billed for it.
+
+Average preemptions read between 5 to 15 percent.
+
+Who are you to claim it will be used as a call to use from the quarter.
+
+So you want to monitor the code to compute engine send signals for preemption to the VM 30 second in
+
+advance so 30 seconds is the driving factor.
+
+All other machines I guess you get 90 seconds to when the machine is getting stopped.
+
+This is how you can represent the virtual machine you can how persistent is mentioned here you can have
+
+size type of machine number of course and dbspace or core you will not be asked you know how you can
+
+represent this much.
+
+But this is just permission GPU and machine configurations.
+
+We saw this you know how you can attach you to the machines and there is a dependency.
+
+How many people as you can go for your GP use for a machine you can move your read from one to another
+
+zone using console are using the cloud come on.
+
+And we saw computing engine lifecycle provisioning staging running stopping and Terminator images.
+
+We saw that on multiple type of images public private community support for instance and an instance
+
+group which we saw template is where you can be creating a VM just to have the template and that will
+
+be then used by instance group to create instances actually instances in load balancing and upskilling
+
+uprising in addition we saw these things considered as a pricing innovation so table VM you can go up
+
+to 80 percent discount and you get sustained use discounting for instance ISKHANDAR predefined.
+
+So these invertor scorned is different for pre-define and custom.
+
+What we saw was in case of predefined much ensue it aggregates the same type of machines together for
+
+a particular zone in case of custom machines.
+
+It aggregates VCP used and memory used committers you do use discount.
+
+You also get a discount based on when you come in for one year or three years in terms and then there
+
+is a recommendation engine which you get get insight on how the VM was used for last one month and based
+
+on which it may come into whether you can go for a predefined type of machines or any other configuration.
+
+And then we saw Schelling load balancing and have a liability.
+
+We saw this particular architecture.
+
+There are multiple type uploader balancer one is the global order regional in globally how it should
+
+be as SSL and BCPL little balance having a regional You have network VCP And then there is a network
+
+internal load balancers
+
+there are two types of load balancing in a high level global balance which is a city CCBN as a citizen
+
+a lot.
+
+And so you have internal and external load balancer load distribution algorithm which we saw rates per
+
+second and c.p.
+
+And then we saw that there is intelligent routing when
+
+so intelligent routing means see if at all there is a call from say US west it will be routed to nearest
+
+location to the back end and thats the intelligent routing and we saw that you can have an opportunity
+
+so if you are a client requests to get routed to the same back any instance based on certain parameters
+
+and thats is an opportunity our client IP finity generator Cookie's opportunity and we saw these two
+
+as a different decision.
+
+I've been telling you how we interface Jeanne-Claude come on to CLIA you can use Konsole or you can
+
+use race tape here for our killing a lot of balance of the configuration.
+
+There are multiple components and for the Lord will answer them encumberance are checking back in services
+
+and they have to be good and key and global forwarding rules.
+
+And we saw that you know using Hill checking it continues to check whether the backend is in active
+
+state and can start with your request.
+
+And if the instance is not then the request gets forwarded to another nearest the instance in the back
+
+and we saw our scaling policies.
+
+You can have C.P. you can load balancing services capacities directly or monitor you can actually go
+
+ahead and put forward the mattresses based on our monitoring and you can scale or you know increase
+
+the instances audit whose instances are you can have you know cloud pops up queuing workload to Trader
+
+Joe's killing policy.
+
+That's what the GCs complete in the next chapter will see.
+
+The summary are some recap for all of the recomputing sedulous.
+
+Thank you.
+
+
+こんにちは先に進んで、GCPからコンピューティングサービスとして学んだことを確認しましょう。
+
+そこで学んだことは、GCPには4つの主要なサービスがあるということです。
+
+1つ目は、広く使用されているGoogle App Engineです。
+
+GoogleとインターチェンジはGCPでのコンテナ実装であり、KuberaであるGoogleの実装です
+
+クラウド上の仮想マシンであるクラウドコンピューティングエンジンとGoogle Cloud機能。
+
+そして、肺活量測定を見ました。
+
+そのため、仮想マシンがあります。これは、サービスとしてのインフラストラクチャとしてのコンピューターであり、コンテナーと
+
+アプリはプラットフォームであり、機能クラウド機能はプラットフォームの一種ですが、本当にソウルレスです
+
+そして。
+
+それでは、クラウドコンピューティングを見てみましょう。
+
+コンピューティングエンジンは、クラウド内のマシンです。
+
+作業負荷に合わせてマシンを柔軟に構成できます。
+
+LinuxとWindowsマシンを使用できます。
+
+モバイル負荷分散と殺害。
+
+強制終了と負荷分散のポリシーを設定するだけで、自動的に実行されます。
+
+さまざまな種類の事前定義されたマシンDOS標準高速高速メモリと共有があります
+
+1つとJeevanのコストが高すぎて、要件に基づいてメモリを選択できる場合は、コア
+
+いくつかの制限。
+
+すべてのマシンは、マシンがパフォーマンスVCPネットワークを駆動する場合、同等でかなりきれいです
+
+パフォーマンスとそのためです。
+
+それが私たちが学んだことです。
+
+VCPは、最適化ネットワークまたはPomerantzの1つの軍団と同等であると仮定する場合と同等です
+
+ECPの使用回数に依存します。
+
+だから、ギベオンにできるのはあなたです。
+
+ネットワークとして最大16 GBPを使用できます。
+
+これらのアパートメントでは、SSDをより多く選択するか、磁気ディスクを使用してより多くのストレージを選択できますか
+
+あなたが求めている価格のために。
+
+しかし、同時に、ディスクとリソースのサイズを大きくすると、ポップオーバーが増えます
+
+これらの主要な手段でのクラウドコンピューティングのために、ネットワークファイアウォールアドレスIPアドレス地域Zunesインスタンス
+
+インスタンステンプレートまたはインスタンスグループまたはディスクの負荷分散またはスケーリングの解除
+
+ディスクとローカルの連中は永続的にこれができます。
+
+2つのオプションがあります。1つは磁気で、もう1つはSSDとローカルディスクです。あなただけが使用できます
+
+磁気的再評価は非常に永続的であるため、非常に永続的です。これらはプールテーブルとして使用されます。
+
+ディスクのほとんどのサイズに基づいているこの瞬間に、ブート可能としてローカルで使用することはできません
+
+移行低移行は、トランスポートとメンテナンスのためにサポートされており、VMがローカライズされている場合
+
+移行が完了するとストレージはなくなります。
+
+必ずしも同じハードウェア上にあるとは限らないため、別のハードウェアにプロビジョニングすることもできます。
+
+プリエンプティブマシンはサポートされていません。モデレーターをチェックして、マシンが
+
+移行されたかどうか。
+
+VMがクラッシュしたり、メンテナンスが必要でない場合は、医学的に開始することはありません。
+
+ただし、手動で完全に停止することは知っています。
+
+開始されず、取得可能なマシンで作業するときなど、他のすべての概念を読みません
+
+24時間。
+
+有限のリソースがあり、pramテーブルの仮想マシンを
+
+愚かな電荷。
+
+10分以上開始された場合のみ。
+
+少ない場合は、請求されません。
+
+5〜15％の平均プリエンプション読み取り。
+
+誰がそれを主張するのかは、この四半期から使用するための電話として使用されます。
+
+したがって、コードを監視して、計算エンジンがVMにプリエンプションの信号を30秒送信するようにします。
+
+30秒が推進要因であるように進みます。
+
+他のすべてのマシンは、マシンが停止するまでに90秒かかります。
+
+これは、仮想マシンを表す方法です。ここで、永続性について言及できます。
+
+マシンのサイズタイプとDB領域またはコアのサイズタイプ
+
+これを表します。
+
+ただし、これはGPUおよびマシン構成の許可にすぎません。
+
+マシンにどのようにアタッチできるかを知っているので、依存関係があります。
+
+GPで使用できるマシンの数は、読み取りを1つのマシンから別のマシンに移動できます
+
+コンソールを使用しているゾーンは、クラウドを使用しています。
+
+また、コンピューティングエンジンのライフサイクルプロビジョニング、ステージング、実行停止、およびターミネーターイメージを確認しました。
+
+複数のタイプの画像で、インスタンスとインスタンスのパブリックプライベートコミュニティサポートを確認しました
+
+テンプレートを見たグループは、テンプレートを持つためだけにVMを作成できる場所です。
+
+インスタンスグループによって使用され、実際にインスタンスを作成して、負荷分散とスキルアップのインスタンスを作成します。
+
+さらに蜂起は、これらのことを価格の革新と見なし、テーブルVMを上昇させることができることを確認しました。
+
+80％の割引になり、事前定義されたインスタンスISKHANDARの継続使用割引が得られます。
+
+したがって、これらの軽inされたインバータは、事前定義とカスタムで異なります。
+
+私たちが見たのは、事前に定義された多くの場合、同じタイプのマシンを一緒に集約するためでした
+
+カスタムマシンの場合は特定のゾーン。
+
+使用するVCPとメモリを使用するコミッターを割引します。
+
+また、あなたが条件で1年または3年来たときに基づいて割引を受けます
+
+VMが過去1か月にどのように使用されたかに基づいて洞察を得る推奨エンジンです
+
+事前に定義されたタイプのマシンまたは他の構成を選択できるかどうかに関係する可能性があります。
+
+そして、Schellingの負荷分散を見て、責任を負います。
+
+この特定のアーキテクチャを見ました。
+
+複数のタイプのアップローダーバランサーがあります。
+
+SSLとBCPLとしては、地域のバランスがとれていません。ネットワークVCPがあり、ネットワークがあります。
+
+内部ロードバランサー
+
+市民としての都市CCBNである高レベルのグローバルバランスには、2種類の負荷分散があります。
+
+たくさん。
+
+したがって、内部および外部のロードバランサーの負荷分散アルゴリズムがあり、
+
+2番目とc.p.
+
+そして、次の場合にインテリジェントルーティングがあることがわかりました。
+
+したがって、インテリジェントルーティングとは、たとえば米国西部からの呼び出しがあるかどうかを確認することを意味します。
+
+バックエンドへの位置とそれはインテリジェントなルーティングであり、私たちはあなたが機会を持つことができることを見ました
+
+クライアントが特定のパラメータに基づいて同じバックインスタンスにルーティングされるように要求している場合
+
+それは、クライアントIP Finity Generator Cookieの機会であり、この2つを見ました
+
+別の決定として。
+
+私は、Jeanne-ClaudeがCLIAに接続する方法を教えてきました。Konsoleを使用するか、または
+
+構成の多くのバランスを取るために、ここでレーステープを使用します。
+
+複数の構成要素があり、主がそれらに答えるのは邪魔がサービスに戻ってチェックインしている
+
+そして、それらは適切であり、重要でグローバルな転送ルールでなければなりません。
+
+そして、Hillチェックを使用して、バックエンドがアクティブであるかどうかをチェックし続けることを知っていることがわかりました
+
+状態とあなたの要求から始めることができます。
+
+インスタンスがそうでない場合、リクエストは後ろのインスタンスに最も近い別のインスタンスに転送されます
+
+スケーリングポリシーを見ました。
+
+あなたはC.Pを持つことができますサービスの負荷を直接負荷分散するか、実際に監視することができます
+
+私たちのモニタリングに基づいてマットレスを前に出してください。
+
+インスタンスのインスタンスを監査すると、クラウドがTraderにキューイングワークロードをポップアップすることがわかります
+
+ジョーの殺害ポリシー。
+
+これは、次の章でGCが完了した内容です。
+
+概要は、すべての再計算の落ち着いた話の要約です。
+
+ありがとうございました。
+

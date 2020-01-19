@@ -1,0 +1,239 @@
+Internal and external load balancer in the context of regional we're going to see the internal load
+
+balancer first regional internal load balancer.
+
+There is nothing new at such and only we are the only thing which you do is you define the load balancer
+
+is the regional and internal load balancer internal means internal to the instance group.
+
+Okay so the internal load balancer balances internal to your virtual private cloud internal load balance
+
+request t internal to VPC network and region likely resulting lower latency internal load balancer work
+
+with two more VPC customer VPC network legacy network internal load balancer can also be implemented
+
+regional instance group.
+
+This allow you to auto scale regions so in natural world what it means.
+
+And all this text is for certifications but essentially it is internal load balancer you can have it
+
+for a specific region to reduce the latency is okay.
+
+There are some restrictions internally to the JCP instances cannot happen to IP manually country without
+
+yet cannot send traffic through VPN tunnel to the Lord balance that IP because it is internal a maximum
+
+number of 15 then a load balancer forwarding rule is allowed and maximum 250 backend is allowed per
+
+internal load balancer forwarding rules.
+
+So some of the recipients of having internal load balancer are the load balancing will context is if
+
+you look at traditional load balancer there is a hop on to the load balance that there are clients you
+
+can read.
+
+This is again your own server a request sending to your back end instances are other services why ad
+
+load balancer because it needs distribution of that particular question to multiple services right back
+
+in services what it was it was doing was traditionally it was taking the requests and there is a hop
+
+on the load balancer and then all the load balancer will take that request and forwarded to the back
+
+end.
+
+So there is a hub if you look at the Google internal load balancer there is no hop at so it is just
+
+a routing to the back end services that was intelligently taken care and as because there is no hub
+
+there the latency is improved the way it is configured is you have regional backend services so regional
+
+means it is in one particular region so it will without the traffic to the back end instances within
+
+that region whether it is single done all multiple zone
+
+selection or algorithm you can have client IP address port and there are additional you know additional
+
+you can see a parameter because it is not the user request it is the service service request destination
+
+IP destination port protocol if you want to control how the traffic and directory back and you can use
+
+additional hash treatable which is land IP destination and protocol or to the public client IP and destination
+
+IP and you can configure this hill check DCP will check SSL Helter tubular issue TB as hell you can
+
+be used if you look at the way we saw the earlier architecture what is internal you have web services
+
+and then you are hopping on to your absolute sets out of the business logic and that is where the internal
+
+load balancer kicks in our work in the context of that particular region itself if you look at the internal
+
+load balancer you can have external load balancer as well and that is external to the region and this
+
+particular regional load balancer it will take the request from the customer and order the requester
+
+I would say and it will distribute traffic to one particular region and that is where it is called as
+
+a regional load balancer it may not be necessarily in local or internal violence or it is regional because
+
+it is distributing or traffic to one particular region if I had to go back and show you how you can
+
+choose there are multiple ways you can choose that information.
+
+You can see a traffic from the Internet to my VM and this is an external.
+
+You can configure different ways.
+
+When you say choose the network carrier you can say which theory you want to use it.
+
+But if I go back and select between my VM and this is in the context of internal you need to mention
+
+the region rate which region you are using it and for what particular network you are using it is very
+
+specific to the network and that is where it is internal load balancer.
+
+There are some steps here to configure it reserve subnet and all that.
+
+I'm not going in details right now.
+
+So this is an internal.
+
+And this is the external which you can configure external load balancer network load balancer load balances
+
+based on incoming protocol data such as air transport and prototype protocol type and it would load
+
+balancer forwarding rules point to a target pools.
+
+Again it's the same as you.
+
+You have low disruption algorithm target position Affinity Health shaking firewall rules and load balancing
+
+parameters that set as a high level on the load balancer side.
+
+We are going to see some demos of load balancer and we're going to see the pricing that Google charges
+
+you for the load balancer usage.
+
+Thank you.
+
+地域のコンテキストでの内部および外部ロードバランサー内部負荷を確認します
+
+バランサー初の地域内ロードバランサー。
+
+そのようなものには新しいものはありません。ロードバランサーを定義するのは、私たちだけです。
+
+インスタンスグループ内部の地域および内部ロードバランサーの内部手段です。
+
+さて、内部ロードバランサーは、仮想プライベートクラウドの内部ロードバランスの内部バランスを取ります。
+
+VPCネットワークおよびリージョンの内部リクエストt
+
+さらに2つのVPCカスタマーVPCネットワークでレガシーネットワークの内部ロードバランサーも実装できます。
+
+リージョナルインスタンスグループ。
+
+これにより、地域を自動スケーリングできるので、自然界ではそれが何を意味するかがわかります。
+
+このテキストはすべて認証用ですが、基本的には内部ロードバランサーです。
+
+特定の地域で待ち時間を短縮することは問題ありません。
+
+JCPインスタンスの内部にはいくつかの制限があります。
+
+しかし、VPNトンネルを介して主にトラフィックを送信することはできません。
+
+15の場合、ロードバランサー転送ルールが許可され、最大250のバックエンドが許可されます
+
+内部ロードバランサーの転送ルール。
+
+したがって、内部ロードバランサーを持つ受信者の一部は、コンテキストが
+
+従来のロードバランサーを見ると、クライアントがいるロードバランスにホップがあります
+
+読める。
+
+これもまた独自のサーバーであり、バックエンドインスタンスに送信するリクエストは他のサービスであるため、広告
+
+特定の質問を複数のサービスにすぐに配信する必要があるため、ロードバランサー
+
+サービスでは、それがやっていたことは伝統的にリクエストを受け取っていて、ホップがありました
+
+ロードバランサー上で、すべてのロードバランサーがそのリクエストを受け取り、バックに転送します
+
+終わり。
+
+したがって、ホップがないGoogle内部ロードバランサーを見ると、ハブがあります。
+
+バックエンドサービスへのルーティング。これはインテリジェントに処理され、ハブがないために
+
+レイテンシーは設定された方法で改善されます。リージョナルバックエンドサービスがあるため、リージョナル
+
+特定の地域にあるため、内部のバックエンドインスタンスへのトラフィックが発生しません
+
+その地域は、単一であるかどうか、すべての複数のゾーン
+
+クライアントIPアドレスポートを持つことができる選択またはアルゴリズム。
+
+パラメータは、ユーザー要求ではなく、サービスサービス要求の宛先であるため表示できます
+
+トラフィックとディレクトリをどのように戻すかを制御し、使用できる場合は、IP宛先ポートプロトコル
+
+ランドIP宛先およびプロトコル、またはパブリッククライアントIPおよび宛先である追加のハッシュ処理可能
+
+IPと、このヒルチェックを構成できます。DCPは、SSLヘルターチューブラー問題TBをチェックします。
+
+あなたがウェブサービスを持っている内部のものである以前のアーキテクチャを見た方法を見るなら、使用される
+
+そして、あなたはビジネスロジックからあなたの絶対的なセットに飛び乗り、それは内部です
+
+ロードバランサーは、内部を見ると、その特定の地域自体のコンテキストで作業を開始します
+
+ロードバランサー外部ロードバランサーも使用できます
+
+特定の地域のロードバランサーは、顧客からのリクエストを受け取り、リクエスターを注文します
+
+私は言うだろうし、それは1つの特定の地域にトラフィックを分配し、それはと呼ばれている場所です
+
+地域のロードバランサーは、必ずしもローカルまたは内部の暴力ではないかもしれません。
+
+私が戻ってあなたができることをあなたに見せなければならなかった場合、それは特定の地域への配信またはトラフィックです
+
+その情報を選択する方法は複数あります。
+
+インターネットから私のVMへのトラフィックを見ることができ、これは外部です。
+
+さまざまな方法で構成できます。
+
+ネットワークキャリアを選択すると言うと、どの理論を使用したいかを言うことができます。
+
+しかし、私が戻ってVMの間で選択し、これが内部のコンテキストにある場合は、言及する必要があります
+
+使用している地域、および使用している特定のネットワークの地域レートは非常に高い
+
+ネットワーク固有であり、内部ロードバランサです。
+
+サブネットを予約するためのいくつかの手順があります。
+
+私は今詳細に行きません。
+
+これは内部的なものです。
+
+そして、これは外部ロードバランサーネットワークロードバランサーロードバランスを構成できる外部です
+
+航空輸送やプロトタイププロトコルタイプなどの着信プロトコルデータに基づいて、ロードする
+
+バランサー転送ルールは、ターゲットプールを指します。
+
+繰り返しますが、それはあなたと同じです。
+
+ファイアウォールルールと負荷分散を揺るがす低混乱アルゴリズムのターゲット位置Affinity Healthがある
+
+ロードバランサー側で高レベルとして設定されるパラメーター。
+
+ロードバランサーのデモと、Googleが請求する価格を確認します。
+
+ロードバランサーの使用についてはあなた。
+
+ありがとうございました。

@@ -1,0 +1,123 @@
+Nobody better.
+
+What is Lindsey in.
+
+It is engine content an engine maintains the node inhale this state.
+
+So you need to keep that in mind if at all there are nodes which are not Hildy not responding.
+
+For a certain period of time it will detect that particular node as a faulty node and then it will replace
+
+that particular node.
+
+Okay so that is in order to better enable continued engine makes periodic check on the Hill state of
+
+each node in the cluster.
+
+If the node file continued to check it extend the period approximately 10 minutes and initiate the repair
+
+process.
+
+The repair is configured wormhole for basis.
+
+If I go back and show you where you can configure no repair let me click on to standard engine and if
+
+you go here
+
+in the north pole if you click on more option so if I go here that is
+
+there is option here which says enable node repair and enable our top grid.
+
+So forget about our top grid node repair.
+
+That's where you can switch it on or off if at all.
+
+No it is not Hildy.
+
+It will just replace that's the Nordic power configuration.
+
+So what do we mean by an elite status on the Node reports.
+
+Not really.
+
+Status on continue to check nor does not report any status means as it has got some problem notebook
+
+disk is out of disk space for extended period of time.
+
+All of these reasons that you can think the note is not Hildy status.
+
+You can manually check with the cubes you still get nodes the notary will process the container engine
+
+detects that the node requires repair that will first drain so No.2 in between and then Continental
+
+will engine will recreate the node of.
+
+The train might not be successful if the node is unresponsive or it's too unhealthy to process you when
+
+the train come on.
+
+But ultimately the new node is created instead of repeating that so that's is an order guys if you have
+
+any questions let us know otherwise move to the next lecture.
+
+誰も良くない。
+
+リンジーとは何ですか
+
+エンジンがこの状態を吸い込むノードを維持するエンジンコンテンツです。
+
+そのため、Hildyが応答しないノードがまったくない場合は、そのことを念頭に置く必要があります。
+
+一定期間、その特定のノードを障害のあるノードとして検出し、置き換えます
+
+その特定のノード。
+
+さて、それは継続的なエンジンを有効にするために、ヒルの状態を定期的にチェックします
+
+クラスター内の各ノード。
+
+ノードファイルがチェックを続けた場合、期間を約10分延長し、修復を開始します
+
+処理する。
+
+修復は、基礎としてワームホールを構成します。
+
+戻って修理を設定できない場所を示したら、標準エンジンをクリックして、
+
+あなたはここに行きます
+
+北極では、さらにオプションをクリックすると、ここに行くと
+
+ここには、ノードの修復を有効にし、トップグリッドを有効にするというオプションがあります。
+
+したがって、トップグリッドノードの修復は忘れてください。
+
+そこで、オンまたはオフに切り替えることができます。
+
+いいえ、ヒルディではありません。
+
+北欧の電力構成を置き換えるだけです。
+
+Nodeレポートのエリートステータスとはどういう意味ですか。
+
+あんまり。
+
+ステータスはチェックを続けますが、ノートブックに問題があるため、ステータスを報告しません
+
+長時間ディスクのディスク容量が不足しています。
+
+メモがヒルディ状態ではないと考えることができるこれらの理由のすべて。
+
+まだ公証人がコンテナエンジンを処理するノードを取得するキューブを手動で確認できます
+
+ノードが最初に排水する修理が必要であることを検出します
+
+エンジンはノードを再作成します。
+
+ノードが応答しない場合、または異常な場合に処理できない場合、トレインは成功しない可能性があります
+
+電車が来る。
+
+しかし最終的には、それを繰り返す代わりに新しいノードが作成されます。
+
+質問がある場合は、次の講義に進みます。

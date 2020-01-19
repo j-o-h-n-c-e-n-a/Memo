@@ -1,0 +1,164 @@
+Some of the codes and limits applicable to data flow in Google Cloud Platform issues.
+
+User me makeup up to around three million requests per minute.
+
+Is that a floor job me use maximum of 1000 compute engine instances and that is the maximum.
+
+E.g. Google Cloud Platform project can run twenty five concurrent data upload jobs.
+
+Each organization may run 125 concurrent data play data upload jobs which is you can think of almost
+
+up to a few projects but there is a limit on the organization as well.
+
+Each user me make up to 15000 monitoring requests per minute and each Google Cloud project gets 160
+
+shuffle slot and this is new concept in 2018 and which is really good.
+
+So in the foreseeable approximately 50 terabytes of data concurrently then I think it should be sufficient
+
+for you to use it Google Cloud Platform projects up to 60 GDP per minute but cloud region streaming
+
+Indian through same data between the compute engine and the streaming Indian and additional quarters
+
+unit to look for cloud pops up separately or using cloud pops up or be query.
+
+So I said that because we already saw the architecture program right.
+
+If I go back
+
+and you are here you are using multiple cloud tools right and you need to make sure that when you're
+
+using it inside those job you have appropriate resources which are available as a quarter.
+
+Okay.
+
+If I take you back to this particular job creation if at all you look at the template right.
+
+This template says you can how cloud pops up subscription to equity pops up topic to be query and all
+
+that templates are available like Cloud Spanner to text file on cloud storage.
+
+I know Cloud Spanner to ever files out of files are a different kind of file format.
+
+Which game are you old in Big Data.
+
+Along with the big data technologies so all of that I can give you some of the example as a day more
+
+additional day more in the cloud engineer certification but I think it is not required right now here.
+
+The only thing which you need to understand is what is the cloud data flow and what are the use cases
+
+where you use data flow.
+
+If it is a green field operations then you should use our data law if at all you are streaming the data
+
+then you should use data flow otherwise like you have existing Hadoop or spotty implementation you should
+
+you should use data proc so that are use cases which you need to understand.
+
+Going back to the limitations
+
+so there are some limitations which you cannot extend the maximum number of workers per pipeline is
+
+1000 maximum size of job creation request pipeline disruptions with locked up.
+
+Very word was name meant the limit around 10 m b maximum number of side input sharks 20000 maximum size
+
+up single element inside the streaming ingenious handling B.
+
+So one element can go up 200 and B but not more than that.
+
+I think this is much more than sufficient information you and if you are using or processing I will
+
+be a data.
+
+That it guys as a limitation and Coda.
+
+Let's look at.
+
+I am in the next lecture.
+
+Thank you.
+
+
+Google Cloud Platformの問題のデータフローに適用されるコードと制限の一部。
+
+ユーザーは、1分あたり最大約300万のリクエストを作成します。
+
+それは私が最大1000のコンピューティングエンジンインスタンスを使用するフロアジョブであり、それが最大です。
+
+例えば。 Google Cloud Platformプロジェクトでは、25の同時データアップロードジョブを実行できます。
+
+各組織は125の同時データ再生データアップロードジョブを実行できます。
+
+少数のプロジェクトまでですが、組織にも制限があります。
+
+各ユーザーは1分間に最大15000の監視リクエストを行い、各Google Cloudプロジェクトは160
+
+シャッフルスロット。これは2018年の新しいコンセプトであり、非常に優れています。
+
+予見可能な約50テラバイトのデータを同時に処理することで、それで十分だと思います
+
+使用するにはGoogle Cloud Platformは毎分最大60のGDPを予測しますが、クラウドリージョンストリーミング
+
+コンピューティングエンジンとストリーミングインド人と追加の四半期の間で同じデータを使用するインド人
+
+クラウドを検索するユニットは個別にポップアップするか、クラウドポップアップを使用するか、クエリになります。
+
+だから、私はすでに建築プログラムが正しいと見ているからと言った。
+
+戻ったら
+
+ここにいると、複数のクラウドツールを使用していることになります。
+
+それらのジョブ内でそれを使用すると、四半期として利用可能な適切なリソースがあります。
+
+はい。
+
+まったくテンプレートを見れば、この特定のジョブ作成に戻ることができます。
+
+このテンプレートは、クラウドがどのようにエクイティへのサブスクリプションをポップアップするかトピックをポップアップすることができ、クエリおよびすべて
+
+Cloud Spannerのようなテンプレートは、クラウドストレージ上のテキストファイルに使用できます。
+
+ファイルからのファイルへのCloud Spannerは別の種類のファイル形式であることを知っています。
+
+あなたはビッグデータであなたが古いゲームです。
+
+ビッグデータテクノロジーと一緒に、すべての例を1日として紹介します。
+
+クラウドエンジニアの認定がさらに1日増えましたが、今はここでは必要ないと思います。
+
+理解する必要があるのは、クラウドのデータフローとユースケースだけです
+
+データフローを使用します。
+
+それがグリーンフィールドオペレーションである場合、データをストリーミングしている場合は、データ法を使用する必要があります
+
+そうでない場合は、既存のHadoopまたはむらのある実装のようにデータフローを使用する必要があります。
+
+あなたが理解する必要があるユースケースであるように、データプロシージャを使用する必要があります。
+
+制限に戻る
+
+パイプラインあたりのワーカーの最大数を拡張できない制限がいくつかあります
+
+ロックされた状態でのジョブ作成要求パイプラインの中断の最大サイズは1000です。
+
+非常に言葉が名前だったのは、サイド入力サメの最大数20000の最大サイズの約10MBの制限を意味しました
+
+独創的なストリーミングストリーミングB内の単一の要素をセットアップします。
+
+したがって、1つの要素は200とBを超えることができますが、それ以上はできません。
+
+これは十分な情報以上のものであり、使用または処理している場合は、
+
+データであること。
+
+それは制限とCodaとしてだ。
+
+見てみましょう。
+
+私は次の講義中です。
+
+ありがとうございました。

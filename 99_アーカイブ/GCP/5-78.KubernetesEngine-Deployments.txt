@@ -1,0 +1,111 @@
+Deployments deployments in Cuba and its engine what is deployment.
+
+It isn't set up multiple identical parts it runs multiple duplicate applications automatically replace
+
+an instance that fails it uses part templates which can then specification bits part as an example.
+
+This deployment.
+
+Here are the deployment which we created as a workload you see it here right.
+
+So this is like the deployment which we created and this deployment is like you have deployed a part
+
+as engine X application and it is running multiple parts in it.
+
+And you can do scale and expose and all up that you can do it on those parts.
+
+So it is like you can think of it a group instances group of single identical parts as instances and
+
+you can take deployment as synonym to an application.
+
+So you can say how many parts for your application should be running.
+
+How many replicas of that date it is running how you want to do a load balancer on it load balance that
+
+again it is a part of a service but you can expose the deployment to the service to act as a load balancer.
+
+OK so that's the deployment.
+
+It depends how HP and that'll scale the part create and manage part lifecycle use for rolling update.
+
+Changing Virgin's application running inside the container.
+
+It takes care up service available to the user.
+
+So it is like deployment use as a back backbone for your service availability.
+
+Okay so that's the deployment.
+
+I can go back here as I say like we can you know expose at to scale you can do a rolling update here
+
+as well and you can scale.
+
+Let me go ahead and and you can actually check the container log here for the cluster.
+
+You can see a different traffic patterns also.
+
+You can see that a week in history you can see the events scaling replica set and you have the amplified.
+
+You can go ahead and change this and we'll find OK.
+
+So there are two instances are running which is like that's my wish list.
+
+That said guys on a on a deployment if you have any questions let me know either way you can move to
+
+the next topic and the topic is notables.
+
+キューバおよびそのエンジンでの展開展開。
+
+複数の同一の部品をセットアップするのではなく、複数の複製アプリケーションを実行して自動的に置き換えます
+
+失敗したインスタンスは、パーツテンプレートを使用します。パーツテンプレートは、例としてビットパーツを指定できます。
+
+この展開。
+
+ここにワークロードとして作成した展開を示します。
+
+これは、私たちが作成した展開のようなものであり、この展開は、一部を展開したようなものです。
+
+エンジンXアプリケーションとして、その中で複数の部分を実行しています。
+
+そして、スケールとエクスポーズを行うことができ、それらの部分でそれを行うことができます。
+
+したがって、インスタンスと同じ単一部分のグループインスタンスグループと考えることができるようです。
+
+デプロイメントをアプリケーションの同義語として使用できます。
+
+したがって、アプリケーションのどの部分を実行するかを言うことができます。
+
+その日付のレプリカがいくつ実行されているか、どのようにロードバランサーを実行するか
+
+これもサービスの一部ですが、展開をサービスに公開してロードバランサーとして機能させることができます。
+
+OK、それが展開です。
+
+それは、HPとそれがパーツをどのようにスケーリングするかによって、ローリング更新のためのパーツライフサイクルの使用が作成および管理されます。
+
+コンテナ内で実行されているVirginのアプリケーションを変更します。
+
+ユーザーが利用できるサービスを大事にします。
+
+したがって、サービスの可用性のバックボーンとして展開を使用するようなものです。
+
+さて、これが展開です。
+
+私はあなたがここでローリング更新を行うことができるスケールで公開することを知っていることができるように、私はここに戻ることができます
+
+同様に、スケーリングすることができます。
+
+先に進みましょう。実際にクラスタのコンテナログを確認できます。
+
+別のトラフィックパターンも確認できます。
+
+履歴の1週間で、レプリカセットのスケーリングイベントを確認でき、増幅されていることがわかります。
+
+先に進んでこれを変更すると、OKが見つかります。
+
+したがって、2つのインスタンスが実行されており、それが私の希望リストのようです。
+
+それは、あなたが質問がある場合、展開の男が私にあなたがに移動することができる方法を教えて
+
+次のトピックとトピックは注目に値します。

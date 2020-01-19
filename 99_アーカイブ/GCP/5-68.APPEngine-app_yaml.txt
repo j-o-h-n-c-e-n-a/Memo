@@ -1,0 +1,138 @@
+App Engine deployment file and dirty animal fight.
+
+So this is the file which we saw while using the deployment we used.
+
+I've got a small file very widely in any of the applications which you'll see right.
+
+So this is the abdominal file which we are using.
+
+So what it contains it it depends on the environment trade.
+
+If we are using a flexible environment if we are using
+
+the standard environment on the app dot in Yemen fight changes by default the environment is standard
+
+environment if you do not specify it for Flex environment that's where we have provided different parameters
+
+here including scaling including the resources like CPO memory and the disk sites as well.
+
+So it's a kind of driver configuration file which app engine uses it while applying your application.
+
+That's that.
+
+I will file a lot going details into it as a concept because it is it may not be required for your exam
+
+when you are preparing for the exam.
+
+As an example if you are preparing for a data engineer right so you may not need to get into details
+
+of app data and will find out if you are preparing for network engineer.
+
+You are not getting into details of all of that right now.
+
+Okay so in a high level it ask you what type of.
+
+That said we seize our land timings you can specify the service name which we site already.
+
+You can switch weather in time which program it is.
+
+It needs to run and then the instance less and all of these is depends on you know the environment type
+
+whether it is flexible standard environment.
+
+So these two examples are standard environment.
+
+And the third one.
+
+That's where you specify the resources was like CPO memory and disk size and all that right.
+
+So all of this is the flexible environment so depends on the environment you choose.
+
+The abduct Yamin file has gone to different parameters altogether which can be used.
+
+That's it guys.
+
+You have some limitations on App Engine and that's like maximum service per app is fine you Mike zone
+
+well just for application is five and that can be actually kept light so you can think of that.
+
+It's not like you cannot launch multiple versions on Twitter you can just have three or 5 virgins waiting
+
+you can distribute your load maximum instances per virgin with manuals killing is 20 that's it guys.
+
+As a Abdullahi I will file if you have any questions let me know otherwise you can move to the next
+
+lecture.
+
+Thanks.
+
+App Engine展開ファイルと汚い動物の戦い。
+
+これは、使用したデプロイメントを使用しているときに見たファイルです。
+
+私はあなたが正しいと思うどんなアプリケーションでも非常に広く小さなファイルを持っています。
+
+これが私たちが使用している腹部のファイルです。
+
+それが何を含むかは、環境貿易に依存します。
+
+使用している場合、柔軟な環境を使用している場合
+
+イエメンの戦いのアプリドットの標準環境はデフォルトで変更されます環境は標準です
+
+異なるパラメーターを提供したFlex環境に指定しない場合の環境
+
+CPOメモリやディスクサイトなどのリソースを含むスケーリングも含まれます。
+
+そのため、アプリケーションを適用するときにアプリエンジンが使用する一種のドライバー構成ファイルです。
+
+それだけです。
+
+それはあなたの試験には必要ないかもしれないので、私は概念としてそれに多くの詳細を提出します
+
+試験の準備をしているとき。
+
+例として、データエンジニアの権利を準備しているので、詳細に入る必要がない場合があります。
+
+ネットワークデータの準備をしているかどうかがわかります。
+
+あなたは今、それらすべての詳細に触れていません。
+
+わかりましたので、高レベルで、それはあなたにどんなタイプを尋ねます。
+
+つまり、土地のタイミングを把握し、既にサイトに登録しているサービス名を指定できます。
+
+あなたはそれがプログラムである時間に天気を切り替えることができます。
+
+実行する必要があり、その後インスタンスが少なくなり、これらはすべて環境タイプを知っているかどうかに依存します
+
+柔軟な標準環境かどうか。
+
+したがって、これら2つの例は標準環境です。
+
+そして3番目。
+
+リソースを指定する場所は、CPOのメモリとディスクサイズなどです。
+
+したがって、これらはすべて柔軟な環境なので、選択する環境に依存します。
+
+Yaminの誘bファイルは、使用可能なさまざまなパラメーターに完全に移行しました。
+
+それはみんなです。
+
+App Engineにはいくつかの制限があり、アプリごとの最大サービスは大丈夫だと思いますMike zone
+
+アプリケーションの場合は5つだけで、実際は軽く保つことができるので、考えてみてください。
+
+Twitterで複数のバージョンを起動できないわけではなく、3人または5人のバージンを待機させることができます
+
+処刑ごとに負荷の最大インスタンスを分散できます。手動での強制終了は20です。
+
+アブドゥルラヒとして、質問がある場合は提出します。そうでない場合は、次のページに移動できます
+
+講義。
+
+ありがとう。
+
+
+

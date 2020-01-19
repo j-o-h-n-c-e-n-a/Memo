@@ -1,0 +1,151 @@
+Pricing pricing is a straightforward.
+
+If you go in and look at it there are different kind of machine type which you can choose from.
+
+It is very typical you can choose different machines and then you'll be charged according to the machine
+
+configuration.
+
+And then there are some network charges and all that.
+
+If I go back
+
+and I can go here
+
+I can create instance and I can see the pricing machine type
+
+if you change the machine type
+
+based on the machine you select your pricing get changed.
+
+Okay
+
+so this is your customers in type you can you can see in case of
+
+the first generation I can go here and then you can choose a different kind of machines and these are
+
+like ready made standard machines which are available in the first generation and based on the generation
+
+you choose your charges get changed.
+
+So it is like one point one six per hour you'll be charging monthly on the number of days you your data
+
+was sexist and this is a package you want to understand if you want to you can go out and do that
+
+okay.
+
+If you go to post with this school you can provide a different configuration altogether.
+
+So you can choose different machine on the machine types
+
+memory and you'll be charged accordingly.
+
+So that's the pricing guys.
+
+But besides this usually any cloud provider charge you on the the the data which you read it from from
+
+the instance as egress fees if at all you are reading inside that particular zone on the region I think
+
+you'll not be charged.
+
+But let's look at you guys go in and check how much data you are reading it and it is within the region
+
+or within the zone or it is outside the region.
+
+Okay.
+
+That's it.
+
+Guys as a pricing I'm going to go in and create the detailed video where you can go and connect it from
+
+your own client to the My School that I visit.
+
+But that's the only thing which we are going to do it and I'm going to have the labs do not miss the
+
+labs because it has got a detail steps in it you can always go back to the documentation cloud it's
+
+documentation and you can perform some of the quick labs there as well for your additional information
+
+in the end if you want to avoid the charges you can go ahead and select all these instances and you
+
+can choose and delete the instance because if you do not delete you are going to get the charge for
+
+all those instances which you are using it.
+
+So please please please delete those instances.
+
+価格設定は簡単です。
+
+中に入って見ると、さまざまな種類のマシンを選択できます。
+
+別のマシンを選択することは非常に一般的で、マシンに応じて課金されます
+
+構成。
+
+そして、いくつかのネットワーク料金などがあります。
+
+戻ったら
+
+ここに行くことができます
+
+インスタンスを作成でき、価格設定マシンのタイプを確認できます
+
+マシンタイプを変更した場合
+
+選択したマシンに基づいて、価格が変更されます。
+
+はい
+
+これはタイプの顧客です。
+
+第一世代はここに行くことができますし、別の種類のマシンを選択することができます
+
+第一世代で利用可能で、世代に基づいた既製の標準マシンのような
+
+料金を変更することを選択します。
+
+したがって、1時間に1回1ポイントの割合で、データを日数で毎月請求します。
+
+性差別主義者で、これはあなたが望むならあなたが理解したいパッケージです
+
+はい。
+
+この学校に投稿する場合は、異なる設定をすべて提供できます。
+
+マシンの種類に応じて異なるマシンを選択できます
+
+それに応じて課金されます。
+
+それが価格設定担当者です。
+
+しかし、これに加えて、通常、クラウドプロバイダーは、あなたが
+
+私が思うに地域のその特定のゾーン内ですべてを読んでいる場合、出口料金としてのインスタンス
+
+請求されません。
+
+しかし、皆さんが入っていくのを見て、あなたがそれを読んでいるデータの量をチェックしましょう。
+
+またはゾーン内またはリージョン外です。
+
+はい。
+
+それでおしまい。
+
+Guysの価格設定として、詳細なビデオを作成し、そこから接続して接続します。
+
+私が訪問する私の学校へのあなた自身のクライアント。
+
+しかし、それは私たちがやろうとしている唯一のものであり、私はラボが見逃さないようにするつもりです
+
+ラボには詳細な手順があるため、いつでもドキュメントクラウドに戻ることができます
+
+追加の情報については、そこにあるいくつかのクイックラボを実行できます。
+
+最後に、請求を避けたい場合は、先に進み、これらすべてのインスタンスを選択して、
+
+インスタンスを選択して削除できます。削除しないと、料金が発生するためです。
+
+使用しているすべてのインスタンス。
+
+そのため、それらのインスタンスを削除してください。

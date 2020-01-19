@@ -1,0 +1,171 @@
+Architectural aspects how you can use data.
+
+One of the use case is some migration.
+
+Migration means if you see as an example you have the cluster landing on premises and it runs multiple
+
+jobs locally.
+
+What you can do is you can take those jobs into Google Cloud Data proc you can execute the job you can
+
+spin off those clusters the way you want to have it whether it is if you model are on the long running
+
+clusters.
+
+Depends on what type of job you are running right.
+
+You can take that data into cloud storage Brocade and you can use those cloud storage bucket in Google
+
+Cloud Platform to execute the jobs on those cloud storage bucket.
+
+That is you know that is where you have something running on premises and you want to take those jobs
+
+into Google Cloud.
+
+So this is how you can slowly or you can start with the jobs.
+
+Some of the examples that we promoted as a cluster is as an example if you have a spark job or a big
+
+job or you know high wage job all of those kind of jobs in how do if you don't know how to spark.
+
+But those are the jobs.
+
+You what you can do is you can create a cluster for that particular job.
+
+You can execute the job and then write out put into big query or any other storage platform like cloud
+
+storage database and delete that cluster right.
+
+So you don't need that particular cluster for a longer ending than you can just call and delete the
+
+cluster.
+
+So this is kind of a criminal use case and there are so many requirement that such there are some requirements
+
+which needs Hadoop in continuous running mode.
+
+That is where you can spin up long running clusters.
+
+But there are some jobs which runs some part of the day and those jobs advance on a specific data which
+
+is incoming from upstream systems.
+
+And once the jobs are executed maybe it is aggregation maybe some other jobs are ones the jobs are executed
+
+then you can just delete the cluster off so that you can say the cost
+
+another case of incremental cost is cluster is considered a case where you have persistent clusters
+
+running in data proc and that is like continuous running your data.
+
+You know data proc jobs whether it is Hadoop Java or spark job but you realize that there are some jobs
+
+which are required within a specific time and a weekly or monthly some activities.
+
+You have considerable amount of load which you do not want to put it on the permanent clusters.
+
+So what you can do is you can take the data and then you can launch AP model clusters and you can use
+
+Apache airflow API is to create a schedule to launch those clusters and execute the job and destroy
+
+those clusters so there are multiple use cases as because you if you look at traditionally we had a
+
+fixed number of other machines we had masters we had.
+
+So I mean so until a number of workers and even if you are using it you know part of your regular jobs
+
+that is fine but if at all you are executing a monthly or yearly or weekly jobs then the cluster will
+
+hamper a lot.
+
+And that is where you can spin off if you were fly flustered for a shorter period of time in Google
+
+Cloud Platform and execute your chips
+
+let's look at how to enable and disable other features of you know data proc in Google Cloud Platform.
+
+データの使用方法のアーキテクチャーの側面。
+
+ユースケースの1つは移行です。
+
+移行とは、例としてオンプレミスにクラスターが着陸しており、複数のクラスターを実行している場合
+
+ローカルでの仕事。
+
+あなたができることは、あなたができるジョブを実行できるGoogle Cloud Data procにそれらのジョブを取ることができるということです
+
+長時間実行しているモデルであるかどうかにかかわらず、それらのクラスターを希望どおりにスピンオフします。
+
+クラスター。
+
+実行しているジョブのタイプによって異なります。
+
+そのデータをクラウドストレージBrocadeに取り込み、Googleでそれらのクラウドストレージバケットを使用できます
+
+これらのクラウドストレージバケットでジョブを実行するCloud Platform。
+
+それは、オンプレミスで何かを実行している場所であり、それらの仕事をしたいということです。
+
+Google Cloudへ。
+
+だから、これはあなたがゆっくりできる方法、またはあなたが仕事から始めることができる方法です。
+
+クラスターとして昇格した例の一部は、スパークジョブまたは大規模な
+
+仕事またはあなたは高賃金の仕事を知っています。
+
+しかし、それらは仕事です。
+
+できることは、その特定のジョブのクラスターを作成できることです。
+
+ジョブを実行してから、大きなクエリまたはクラウドのような他のストレージプラットフォームに書き込みます
+
+ストレージデータベースを削除し、そのクラスターを削除します。
+
+そのため、単に呼び出して削除するよりも長い終了のためにその特定のクラスターを必要としません
+
+集まる。
+
+したがって、これは一種の犯罪ユースケースであり、非常に多くの要件があるため、いくつかの要件があります
+
+連続実行モードでHadoopが必要です。
+
+ここで、長時間実行されるクラスターを起動できます。
+
+しかし、一日の一部を実行するジョブがいくつかあり、それらのジョブは特定のデータに基づいて進みます
+
+アップストリームシステムから着信します。
+
+そして、一度ジョブが実行されると、それは集約かもしれないし、他のいくつかのジョブはジョブが実行されるかもしれない
+
+次に、クラスタを削除して、コストを言うことができます
+
+増分コストの別のケースは、クラスターであり、永続的なクラスターがある場合と見なされます
+
+データプロシージャで実行します。これは、データを継続的に実行するようなものです。
+
+Hadoop JavaまたはSparkジョブであるかどうかにかかわらず、データプロシージャジョブは知っていますが、いくつかのジョブがあることに気付きます
+
+これは特定の時間内および週ごとまたは月ごとのいくつかのアクティビティ内で必要です。
+
+永続的なクラスターに負荷をかけたくないかなりの量の負荷があります。
+
+できることは、データを取得してから、APモデルクラスターを起動して、
+
+ApacheエアフローAPIは、これらのクラスターを起動し、ジョブを実行して破棄するスケジュールを作成することです
+
+これらのクラスターには複数のユースケースがあります。伝統的に見てみると、
+
+私たちが持っていたマスターを持っていた他のマシンの固定数。
+
+ですから、多くの労働者がそれを使用していても、通常の仕事の一部を知っているということです。
+
+それは結構ですが、月に一度、年に一度、または週に一度のジョブを実行している場合、クラスターは
+
+たくさん妨げます。
+
+そして、グーグルで短期間飛行することになった場合にスピンオフできる場所です
+
+クラウドプラットフォームとチップの実行
+
+Google Cloud Platformのデータプロシージャを知っている他の機能を有効または無効にする方法を見てみましょう。

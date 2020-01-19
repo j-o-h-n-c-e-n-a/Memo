@@ -1,0 +1,144 @@
+Computing in startup script startups clip help you to see a wide additional work whenever you want to
+
+launch an instance and you want to install same basic software in it whether it's your own software
+
+or whether it is standard open source or any other software right.
+
+So if it is your own software you can just copy or wineries to Google cloud storage and you can install
+
+the software providing the link Jesus link from it.
+
+We are not called cloud storage yet but we are going to demonstrate one outside after some time right
+
+now just understand what is the startup script and we are going to install Apache web server from the
+
+Internet itself.
+
+So there are two ways you can do a startup script.
+
+One is going to VM instance and the second one is file well defining the template itself.
+
+So if I tell you how to do in VM instance if you go to create instance if you go down and that's where
+
+you can put a startup script I have a sample startup script here.
+
+This will install update the binaries and install Apache into the computer engine.
+
+But for me to test it I need to allow the firewall to be opened.
+
+What I see to be in this today is just go ahead and just to click on Create instance.
+
+So once this instance is created we can go and hit the link for the external IP address.
+
+In the meantime when the instance is getting created let me go in and show you instance template where
+
+you can create a startup script.
+
+So if you go year provide all your name and whatever if at all you are to open firewall you just click
+
+in this one and again in the same location that's where you can create a startup script.
+
+You can go in and check if the instance which we started with the start us startup script has got a
+
+patch of landing inside it which means you have run the
+
+Yeah but she's running inside it.
+
+You can verify that by going to serial port as well and that's the console when the system gets started
+
+and there are some questions out of serial port and we are going to see that when one of the certification
+
+exam you can see the console as well and see the startup script has executed or not going back here
+
+okay.
+
+Somewhere here.
+
+It says now lie next started instance even log in.
+
+Okay.
+
+And then your startup script started executing it and then it has executed all of that it has executed
+
+the next command to execute to install the Apache and that's where you are right.
+
+So everything gets done.
+
+So your startup script executed inside the VM and it is running.
+
+Also we are going to see some demos out of load balancer and all that in subsequent section but that's
+
+the startup script which you can use it.
+
+
+スタートアップスクリプトスタートアップクリップでの計算は、いつでも必要なときに幅広い追加作業を確認するのに役立ちます
+
+インスタンスを起動し、自分のソフトウェアであるかどうかにかかわらず、同じ基本ソフトウェアをインストールしたい
+
+または、それが標準のオープンソースまたはその他のソフトウェア権であるかどうか。
+
+自分のソフトウェアであれば、Googleクラウドストレージにコピーするかワイナリーをコピーしてインストールできます
+
+イエスがリンクするリンクを提供するソフトウェア。
+
+まだクラウドストレージとは呼ばれていませんが、しばらくしてから外部のストレージをデモンストレーションします
+
+起動スクリプトとは何かを理解し、Apache Webサーバーを
+
+インターネット自体。
+
+したがって、起動スクリプトを実行する方法は2つあります。
+
+1つはVMインスタンスになり、2つ目はテンプレート自体を適切に定義するファイルです。
+
+したがって、インスタンスを作成するために行った場合、VMインスタンスで行う方法を説明すると、
+
+ここにサンプルのスタートアップスクリプトがあります。
+
+これにより、バイナリが更新され、コンピューターエンジンにApacheがインストールされます。
+
+しかし、それをテストするには、ファイアウォールを開くことを許可する必要があります。
+
+私が今日これにいるのは、先に進み、インスタンスの作成をクリックするだけです。
+
+したがって、このインスタンスが作成されたら、外部IPアドレスのリンクにアクセスできます。
+
+それまでの間、インスタンスが作成されているときに、インスタンステンプレートを表示します。
+
+起動スクリプトを作成できます。
+
+あなたが年を行くならば、あなたがすべてあなたの名前を提供し、あなたがファイアウォールを開くことになるとしても
+
+起動スクリプトを作成できる場所と同じ場所で、これを繰り返します。
+
+起動して、start usスタートアップスクリプトで開始したインスタンスが
+
+その中に着陸するパッチは、
+
+ええ、でも彼女はその中を走っています。
+
+シリアルポートに行くことでそれを確認することができ、それはシステムが起動したときのコンソールです
+
+そして、シリアルポートからいくつかの質問があり、認定の1つが
+
+試験では、コンソールも表示され、起動スクリプトが実行されたか、ここに戻っていないかを確認できます
+
+はい。
+
+ここのどこかに。
+
+これは、ログインしたとしても、次に起動されたインスタンスが存在することを示しています。
+
+はい。
+
+そして、起動スクリプトが実行を開始し、実行されたすべてを実行しました
+
+Apacheをインストールするために実行する次のコマンドは、まさにここにあります。
+
+これですべてが完了します。
+
+したがって、VM内で起動スクリプトが実行され、実行されています。
+
+また、ロードバランサーの一部のデモと、それ以降のセクションで説明するデモもありますが、
+
+使用できる起動スクリプト。

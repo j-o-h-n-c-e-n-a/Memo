@@ -1,0 +1,131 @@
+JCP interfaces if we need to talk about JCP interfaces.
+
+There are three ways which are available.
+
+The one which we already saw like Google Cloud Platform console.
+
+It's a new way and you can lunch.
+
+You can do so many things with within the UI itself but alternatively there are command line interface
+
+options available using ze cloud RPG and there are so many other utilities which are available based
+
+on the service which you use and there are API libraries which you can use it inside the programming.
+
+If I if I have to show you a CLIA I can just statically go to console and there is one C ally which
+
+say its cloud console.
+
+If I click on Start cloud console you don't have to install anything on your laptop.
+
+And this is very important part of the Cloud Control we are going to see details of the features of
+
+the cloud console but that's where you see you already locked in to the cloud console and this console
+
+is available for you.
+
+So if at all you have is a Unix Windows machine or any other kind of machine then you do not need to
+
+install new energy cloud come on the third one is the G Cloud command.
+
+I can click on CMB here and then you can install cloud SDK OK and using G Cloud command you can interface
+
+with Google Cloud Platform.
+
+So that is these are the command of you know C allies but alternatively you can go in and use API as
+
+once they are enabled.
+
+So as an example
+
+you can
+
+source API services go to dashboard so you can enable disable APIs and once those are those APIs that
+
+enable you can use that in a program for your account.
+
+So as an example compute service API is OK so if the API is not enabled for compute services then you
+
+can.
+
+So it is getting enabled you can use it inside your program.
+
+Okay so those are the three interfaces that are available.
+
+The first one is console which we use it then come online interfaces cloud or 3G.
+
+Are you in cloud shell and the API client libraries which you use it in your program.
+
+That's the interface guys.
+
+If you have any questions on interfaces let me know otherwise.
+
+More to the next lecture.
+
+That is DCP project.
+
+JCPインターフェースについて話す必要がある場合は、JCPインターフェース。
+
+使用可能な方法は3つあります。
+
+すでに見たものは、Google Cloud Platformコンソールのようなものです。
+
+それは新しい方法であり、昼食をとることができます。
+
+UI内で非常に多くのことを実行できますが、代わりにコマンドラインインターフェイスがあります
+
+ZEクラウドRPGを使用して利用可能なオプションと、利用可能な他の多くのユーティリティがあります
+
+使用するサービスには、プログラミング内で使用できるAPIライブラリがあります。
+
+CLIAを表示する必要がある場合、静的にコンソールに移動できます。
+
+そのクラウドコンソールを言う。
+
+[クラウドコンソールの起動]をクリックすると、ラップトップに何もインストールする必要はありません。
+
+そして、これはCloud Controlの非常に重要な部分であり、
+
+クラウドコンソールですが、クラウドコンソールとこのコンソールに既にロックされていることがわかります
+
+あなたのために利用可能です。
+
+したがって、Unix Windowsマシンまたは他の種類のマシンがある場合は、その必要はありません。
+
+新しいエネルギークラウドをインストールするのは、Gクラウドコマンドです。
+
+ここでCMBをクリックすると、クラウドSDKをインストールできます
+
+Google Cloud Platformで。
+
+つまり、これらはCの仲間を知っているあなたのコマンドですが、代わりに、
+
+それらが有効になったら。
+
+例として
+
+あなたはできる
+
+ソースAPIサービスはダッシュボードに移動するので、無効化APIを有効にできます。これらのAPIは、
+
+アカウントのプログラムでそれを使用できるようにします。
+
+計算サービスAPIの例としては問題ありません。計算サービスに対してAPIが有効になっていない場合は、
+
+できる。
+
+そのため、プログラム内で使用できるようになりました。
+
+さて、これらは利用可能な3つのインターフェースです。
+
+1つ目はコンソールで、これを使用してからオンラインインターフェースクラウドまたは3Gを導入します。
+
+クラウドシェルと、プログラムで使用するAPIクライアントライブラリを使用していますか。
+
+それがインターフェースの人たちです。
+
+インターフェイスについて質問がある場合は、別の方法でお知らせください。
+
+次の講義へ。
+
+それがDCPプロジェクトです。

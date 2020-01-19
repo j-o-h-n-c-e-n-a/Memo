@@ -1,0 +1,295 @@
+Not pulls in component is engine the no fools are like.
+
+You can think of as it is the group up Nords together that is managed to incite it and you can think
+
+of this like North Pole is we saw instance group right in group in computer engineer.
+
+No police.
+
+Exactly you can think of same concept in Cuban at its engine.
+
+So you may have a node node having say to CPO those 10 gigs of ram and so on so right.
+
+And that is a concept of notable.
+
+Okay if I go back to to this particular cluster are sample cluster here
+
+if we look at the node pool and this is the node pool you see it.
+
+And this defines your configuration right.
+
+The number of nodes machine type the image inside it are those scaling on and off.
+
+If I click on it
+
+it gives me the properties of no pool.
+
+Okay.
+
+And what I can do is I can go ahead and edit the node pool and I can see the number of node it is running
+
+so I can see 2.
+
+I cannot change any other configurations because it's like the same configuration which will get applied
+
+to the multiple nodes.
+
+Okay.
+
+So I can click on Save and then it will try to create additional nodes.
+
+If you have multiple applications and you want to manage multiple different applications with different
+
+node pools then you can do that
+
+so I can go here.
+
+You can see the instance groove for those node pulleys created and that's what we have here.
+
+You can find the instances also the virtual machines also for those two requirements is also created
+
+right.
+
+I can go back to Cuban at its engine and then show you the node pools so it says number of nodes inside
+
+the pool is to now
+
+so there are two different nodes which are running inside it.
+
+So think of this is like a group up node is managed are the group of virtual machine is managed inside
+
+Cuban and this cluster is what the node pool is.
+
+The way we saw the deployments which manages the port and its lifecycle you can do auto scaling and
+
+all that in it for the parts but for that part to run inside the cluster you need a node and that is
+
+where you can manage this North Pole and you can create additional node pool.
+
+You can go here and add node pool.
+
+Again it's a normal for 2 I can say no up north it naughty children.
+
+I would say 1 and then I can choose the image and I can configure all other properties which I'm pleased
+
+weather right now will check it in the end and I can set sail so I did what it will do is it will create
+
+an instance group and then it will assign the properties to the interest groups which is like you can
+
+have additional nodes out of that particular node pool created.
+
+So this node 2 is getting provision.
+
+So this is the Virgin in one standard container optimized images.
+
+So number up nodes.
+
+That is because the number up nodes are being created.
+
+If I go back again to computing Jane instance grew
+
+I can have additional inaudible which is like Node 2 created and then instance must be launching right
+
+now at the node must be lunching and you can actually look at the name of the instance you can see pool
+
+one pull one and this is the pool 2.
+
+Right.
+
+So this new normal is created for for the new normal because we have additional nodes.
+
+Now we can have additional parts running I can add to scale to
+
+say 6 and 10.
+
+Okay
+
+so it will it will add to scale but in the meantime I can go in and show you you can even at killed
+
+the node pools
+
+so I can go to say pull to and I can edit and I can say enable lactose killing.
+
+Okay so you've had all the work load goes high then it can increase the node number up nodes.
+
+I can see minimum number G zero to say 10.
+
+It can go up to 10 nodes.
+
+Okay I can save this so for the impact to get updated into the cluster it takes some time.
+
+I'm going to pause the video for some time.
+
+Yeah.
+
+If you look at there are six parts running
+
+and if I go to the cluster I said it can be zero even if we don't have any load I can go to this pool
+
+to and let's see if this pool too is running any of the it is definitely getting some boards
+
+Yeah.
+
+So.
+
+So that's the notable guys in natural if I had to look at the note bullets and actually individual nodes
+
+like instance group pool can contain different William from one from one another it can be a different
+
+zone GK As node pullover node pool and Maltese zone container cluster typically if we look at if you
+
+launch in notable to span across multiple zones you can do that and we're going to see that in in the
+
+next lecture but you can how notable which is panic across multiple zones inside the region that's it
+
+guys for notable severe any questions let me know otherwise you can move to the next lecture and that
+
+is marches on cluster.
+
+コンポーネントはエンジンではなく、バカは似ていません。
+
+それを扇動することができたのは、Nordsのグループであると考えることができます。
+
+このような北極点のように、コンピュータエンジニアのグループにインスタンスグループがあります。
+
+警察はありません。
+
+まさにあなたは、キューバのエンジンで同じコンセプトを考えることができます。
+
+したがって、CPOにこれらの10ギガバイトのRAMなどを適切に伝えるノードnodeがあるかもしれません。
+
+そして、それは注目すべき概念です。
+
+この特定のクラスターに戻ると、ここにサンプルクラスターがあります。
+
+ノードプールを見ると、これがノードプールです。
+
+そして、これは設定権を定義します。
+
+ノードの数は、その中にある画像をマシンがタイプすることで、スケーリングのオン/オフが決まります。
+
+クリックすると
+
+プールなしのプロパティを提供します。
+
+はい。
+
+そして、私ができることは、先に進んでノードプールを編集し、実行中のノードの数を確認できることです。
+
+だから私は見ることができます2。
+
+他の構成を変更することはできません
+
+複数のノードに。
+
+はい。
+
+したがって、[保存]をクリックすると、追加のノードを作成しようとします。
+
+複数のアプリケーションがあり、異なる複数のアプリケーションを管理したい場合
+
+ノードプールは、あなたがそれを行うことができます
+
+ここに行くことができます。
+
+作成されたノードプーリーのインスタンスグルーブを確認できます。これがここにあります。
+
+また、これらの2つの要件の仮想マシンも作成されるインスタンスを見つけることができます
+
+正しい。
+
+エンジンでキューバに戻り、ノードプールを表示して、内部のノードの数を表示します。
+
+プールは今までです
+
+そのため、内部で実行されている2つの異なるノードがあります。
+
+これは、グループアップノードが管理されているように、仮想マシンのグループは内部で管理されていると考えてください
+
+キューバとこのクラスターは、ノードプールです。
+
+ポートとそのライフサイクルを管理するデプロイメントを確認した方法で、自動スケーリングと
+
+パーツについてはそのすべてですが、クラスター内でそのパーツを実行するにはノードが必要です。
+
+この北極を管理でき、追加のノードプールを作成できます。
+
+ここに移動して、ノードプールを追加できます。
+
+繰り返しますが、これは2人にとっては正常なことです。
+
+私は1と言ってから、画像を選択して、他のすべてのプロパティを設定できます
+
+今の天気は最後にチェックしますので、帆を設定することができます。
+
+インスタンスグループを作成すると、プロパティがインタレストグループに割り当てられます。
+
+特定のノードプールから追加のノードを作成します。
+
+したがって、このノード2はプロビジョニングされています。
+
+したがって、これは、1つの標準コンテナ最適化イメージのVirginです。
+
+したがって、ノードを番号付けします。
+
+これは、最大数のノードが作成されているためです。
+
+再びコンピューティングに戻ると、Janeインスタンスが成長しました
+
+Node 2のような追加の非可聴音を作成できます。インスタンスを正しく起動する必要があります
+
+今ノードで昼食をしている必要があり、実際にプールを見ることができるインスタンスの名前を見ることができます
+
+1つを1つ引いて、これがプール2です。
+
+正しい。
+
+したがって、追加のノードがあるため、この新しい法線は新しい法線用に作成されます。
+
+これで、スケールに追加できる追加のパーツを実行できます
+
+6と10と言います。
+
+はい
+
+だから、それはスケールに追加されますが、その間、私はあなたが殺されても
+
+ノードプール
+
+だから私はプルに言って行くことができ、編集することができ、ラクトースを殺すことができると言うことができます。
+
+さて、すべての作業負荷が高くなったので、ノードのノード数を増やすことができます。
+
+私は10と言う最小数Gゼロを見ることができます。
+
+最大10ノードまで使用できます。
+
+さて、これを保存して、クラスターへの影響を更新するには少し時間がかかります。
+
+しばらく動画を一時停止します。
+
+うん。
+
+見てみると、6つの部品が走っています
+
+クラスターに行くと、負荷がなくてもゼロになる可能性があると言ったので、このプールに行くことができます
+
+このプールも実行されているかどうかを確認してみましょう。
+
+うん。
+
+そう。
+
+ノートの箇条書きと実際に個々のノードを見なければならない場合、それは当然の注目すべき人たちです
+
+インスタンスグループプールのように、互いに異なるWilliamを含めることができます。
+
+ゾーンGKノードプルオーバーノードプールおよびマルタゾーンコンテナクラスタとして
+
+複数のゾーンにまたがるように注目して起動してください。これを行うことができます。
+
+次の講義ですが、それが地域内の複数のゾーンにまたがってパニックになっていることはどれほど注目に値しますか
+
+深刻な質問がある場合は、次の講義に移ることができます。
+
+クラスターで行進します。

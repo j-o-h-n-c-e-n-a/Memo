@@ -1,0 +1,87 @@
+Cloud and service.
+
+So what is the services actually sourcing cloud run services a specific JCP reason are fully managed
+
+and GK cluster namespace.
+
+So you need to remember that so when you say service in fully managed it's a JCP region and in GK it's
+
+a cluster namespace these services are automatically replicated to multiple zones in the region you
+
+selected and is service exposes its unique endpoint.
+
+And if I go back here this is our service.
+
+My service right.
+
+It has got an endpoint and you you can hit the endpoint and you can get the get the application running
+
+again.
+
+So the application
+
+and you can create multiple services right.
+
+And those are your application you can think up and you can map these application to your own domain
+
+name.
+
+That is if you look at you know we have not selected the we are not selected when we created a service
+
+we are not selected VPC etc. and that is where there is no tightly coupling has until they are to the
+
+VPC.
+
+Okay.
+
+You can define those service authorization mechanism based on the service so all the parameters when
+
+you create a service.
+
+All those are service definitions.
+
+So that's the service case we are going to see a revision in next lecture.
+
+クラウドとサービス。
+
+特定のJCPの理由でクラウド実行サービスを実際に調達するサービスは完全に管理されています
+
+およびGKクラスター名前空間。
+
+そのため、完全に管理されたサービスとは、JCPリージョンであり、GKでは、
+
+これらのサービスは、リージョン内の複数のゾーンに自動的に複製されるクラスター名前空間
+
+選択され、サービスはその一意のエンドポイントを公開します。
+
+そして、ここに戻ると、これが私たちのサービスです。
+
+私のサービス権。
+
+エンドポイントがあり、エンドポイントにアクセスして、アプリケーションを実行することができます
+
+再び。
+
+そのため、アプリケーション
+
+また、複数のサービスを正しく作成できます。
+
+そして、それらはあなたが考え出すことができるアプリケーションであり、これらのアプリケーションをあなた自身のドメインにマッピングすることができます
+
+名前。
+
+これは、サービスを作成したときに選択されていないことを確認した場合です。
+
+VPCなどは選択されていません。これは、
+
+VPC。
+
+はい。
+
+サービスに基づいてこれらのサービス認証メカニズムを定義して、すべてのパラメーターが
+
+サービスを作成します。
+
+これらはすべてサービス定義です。
+
+これが、次の講義で改訂を予定しているサービスケースです。

@@ -1,0 +1,52 @@
+There are limits and there are some limits which you need to account for and not when you are designing
+
+for a big table or when you are planning to use big table.
+
+There are some soft limits and there are some hard limits soft limits are recommended size.
+
+You can see the rookie should be approximately 40 perky and not more than that.
+
+Column Families Summit around hundred families per table and not more than that column qualifier 16
+
+gave you per qualified individual value should not go beyond 10 and b Purcell on values in a single
+
+rose should not go beyond hundred M B and these are like guidelines or recommended or I would say best
+
+practices which big table is given by the goodwill and there are some hard limits individual values
+
+should not be more than hundred and b per sale all values in a single rule should not go beyond 256
+
+and B and that is the maximum size which you can store in a sale and the table should not have 100 or
+
+1000 tables per cluster and that is the max limit which you have it.
+
+You cannot extend these limits that set as a limit we are going to see pricing in the next section.
+
+Thank you.
+
+
+制限があり、設計するときではなく、考慮する必要がある制限がいくつかあります
+
+大きなテーブルの場合、または大きなテーブルの使用を計画している場合。
+
+いくつかのソフト制限があり、いくつかのハード制限がありますソフト制限は推奨サイズです。
+
+ルーキーは約40パーキーで、それ以下であることを確認できます。
+
+列ファミリサミットテーブルごとに約100ファミリ、その列修飾子16以下
+
+資格のある個々の値ごとに10を超えてはいけません
+
+バラは百メガバイトを超えてはならず、これらはガイドラインのようであるか推奨されているか、私は最高と言います
+
+のれんによって大きな表が与えられる慣行であり、個々の価値には厳しい制限があります
+
+セールごとに100を超えてはいけません。1つのルールのすべての値が256を超えてはなりません。
+
+そして、それはあなたがセールで保存できる最大サイズであり、テーブルは100または
+
+クラスターごとに1000のテーブルがあり、それが最大制限です。
+
+次のセクションで価格を確認する制限として設定されているこれらの制限を拡張することはできません。
+
+ありがとうございました。

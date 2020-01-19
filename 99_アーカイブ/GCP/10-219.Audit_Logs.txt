@@ -1,0 +1,375 @@
+Glowed or logging.
+
+We have one.
+
+Only one topic that is weaving audit logs.
+
+Put a project can manage service.
+
+Let's go ahead and get into it and understand what is already logging so audit log in is of different
+
+kind of activities like admin activity.
+
+So it is always enabled William or any cloud resources created permissions are changed all of those
+
+are admin activities but you can actually go on disability system events always enabled like like you
+
+migration and you cannot change this one you can get the meta data and understand if a particular virtual
+
+machine is getting laid migrated or not.
+
+This is just an example.
+
+And the third one.
+
+And again it is this data access it is disabled because of really high usage API call that create modify
+
+our lead user provided data.
+
+Example Your query logs are enabled by default and cannot be disabled they do not count against your
+
+log allotment so here are some retention period admin activity log it stays for 400 days date access
+
+log on only 30 dates and system we went like logs four hundred days there are service logs and you can
+
+actually get what is in G which is what it is not applicable to like App Engine.
+
+This is available now we can use it.
+
+GM is generally available means it is production virgin it is available beta is still in testing involvement
+
+there is no guarantee there is nicely associated to those services which are in beta so App Engine application
+
+identity we do not have any data access bug but admin activity logs of their be query we have item in
+
+log as well as data access log.
+
+So if you want you can actually go and look at this particular table but that's it as a information.
+
+Looks like we are complete.
+
+No hold on.
+
+We need to go back and see the logs.
+
+Okay let's go here.
+
+I am an admin and go to audit logs
+
+so once you are in I am and I am and I mean you can actually go ahead and click on this one to see the
+
+admin logs.
+
+You can go ahead and check this one out.
+
+Click this one and enable logs around those
+
+I think there are some default access permissions which I enabled a little earlier.
+
+OK I need to refresh
+
+so I enable admin for all admitted for all.
+
+Let me go in line so you can find that out in multiple ways you can just go in and do a default setting
+
+for all the services order you can actually change one by one so and as an example here I can see
+
+I can see cloud a school I want I mean data as well as data right.
+
+If I see you.
+
+So now these logs are enabled.
+
+OK.
+
+Computing genetic mean as well as the Texas log setting they will.
+
+If you want to actually enable it for all you can go ahead and never for all from here
+
+so the default is the default savings has been changed.
+
+So you see these logs are enabled now by default but individually you can go in and disable it if you
+
+want.
+
+As an example you want only I mean log
+
+right but this is by default it is in network so you can switch on so you will see what is by default
+
+in and what is enabled for a particular service.
+
+So once you turn on these logs you can go ahead and browse those logs in different instances are different.
+
+Instead I would logging so I can just say go ahead and stop those instances.
+
+I should be able to see those in logs
+
+so here are the logs.
+
+In fact they were logging.
+
+You can browse any log like I'll just give an example here.
+
+Be query or adoption do I have it.
+
+Whether it is activity or date access log I can just click on both
+
+and you can find the queries which we have executed by query right click here explained all and you
+
+can see the queries like job create get the data
+
+and default data set.
+
+SELECT start from new data set dot air quality which we have used it for when I'm today more in equity
+
+so you will have all these data access logs and you can type in different services here
+
+uh right query data set as an example System Event.
+
+Let me just put system we won't take out the data access
+
+so internal table expired.
+
+So this particular dataset is expired because I had put one early one day so you can actually build
+
+you know all those or get all those logs what you can do next year you can create matric and as an example
+
+here for BEA query
+
+data as excess activity you can create the metric load of no limit
+
+and all this data you can actually create a metric
+
+data
+
+and this metric it's created.
+
+Now you can export that particular data into again and be query for analysis.
+
+So thinking to be query cloud storage or this one.
+
+So if I give a cloud storage I can go you bucket name and
+
+b query data it is my think cleared sync so sync is cleared.
+
+So all your data will go to query and you can do the analysis that's
+
+that's it for audit log in guys if you have any questions until here let me know.
+
+We ultimately made it to end up this particular training course in terms of syllabus coverage I will
+
+have some bonus lectures at 9 US few days but yeah we have almost completed our syllabus.
+
+If you have any questions let me know.
+
+Otherwise you can jump on to seeing more and more you know the way I said more and more services in
+
+Google Cloud Platform.
+
+If you face any challenges or any questions let me know.
+
+Please do share your experience while you attempt your exam.
+
+Especially this cloud unit exam.
+
+We as well as the others would like to understand your feedback from the exam.
+
+Thank you very much for making it to this particular slide as the last.
+
+You definitely need a good patients to reach through this particular page as the last if you are not
+
+skipped any sections or any lectures.
+
+Anyways thank you very much for subscribing this particular course.
+
+And thank you very much for being with me throughout the journey.
+
+Thank you.
+
+グローまたはロギング。
+
+1つあります。
+
+監査ログを織り込んでいるトピックは1つだけです。
+
+プロジェクトにサービスを管理できます。
+
+監査ログインは異なるので、先に進んで、すでにログに記録されているものを理解しましょう
+
+管理アクティビティなどのアクティビティ。
+
+したがって、Williamが常に有効になっているか、クラウドリソースで作成されたアクセス許可がすべて変更されます
+
+管理アクティビティですが、実際にあなたのように常に有効になっている障害システムイベントに行くことができます
+
+移行するため、これを変更することはできません。メタデータを取得して、特定の仮想
+
+マシンが移行されているかどうか。
+
+これは単なる例です。
+
+そして3番目。
+
+繰り返しになりますが、このデータアクセスは、変更を作成するAPI呼び出しが非常に高いために無効になっています
+
+リードユーザーがデータを提供しました。
+
+例クエリログはデフォルトで有効になっており、無効にすることはできません。
+
+割り当てをログに記録するので、ここに保持期間の管理アクティビティログがあります。日付が400日間アクセスされる
+
+わずか30の日付でログオンし、システムがログのように行ったシステムは400日あり、サービスログがあります。
+
+実際にGにあるものを取得します。これはApp Engineのようなものには適用できません。
+
+これが利用可能になりました。
+
+GMは一般的に入手可能であり、実稼働で使用可能であることを意味します。
+
+App Engineアプリケーションのベータ版であるサービスにうまく関連付けられているという保証はありません
+
+データアクセスのバグはありませんが、beクエリの管理アクティビティログにはアイテムがあります
+
+ログとデータアクセスログ。
+
+必要に応じて、実際にこの特定のテーブルを見てみることができますが、それは単なる情報です。
+
+これで完了です。
+
+ちょっと待って。
+
+戻ってログを確認する必要があります。
+
+では、ここに行きましょう。
+
+私は管理者であり、監査ログにアクセスします
+
+一度あなたが私にいると私は、私はあなたが実際に先に進み、これを見るためにこれをクリックすることができるということです
+
+管理ログ。
+
+これを確認してください。
+
+これをクリックして、それらの周りのログを有効にします
+
+少し前に有効にしたいくつかのデフォルトのアクセス許可があると思います。
+
+OKリフレッシュする必要があります
+
+だから、私はすべてのすべてのために管理者を有効にします。
+
+行に行かせて、複数の方法でそれを見つけて、デフォルトの設定を行うだけでいい
+
+すべてのサービスの順序について、実際に1つずつ変更することができます。ここで例として、
+
+クラウドが必要な学校を見ることができます。データだけでなく、データも適切です。
+
+会ったら
+
+したがって、これらのログは有効になりました。
+
+OK。
+
+遺伝的平均とテキサスのログ設定を計算します。
+
+実際にすべてに対して有効にしたい場合は、先に進むことができますが、ここからはすべてではありません
+
+そのため、デフォルトではデフォルトの節約が変更されています。
+
+したがって、これらのログはデフォルトで有効になっていますが、個別にアクセスして無効にできます
+
+欲しいです。
+
+例としては、私はログを意味するだけです
+
+正しいが、これはデフォルトでネットワークにあるので、スイッチをオンにしてデフォルトが何であるかを見ることができます
+
+特定のサービスで何が有効になっているか。
+
+したがって、これらのログを有効にすると、異なるインスタンスのログを閲覧することができます。
+
+代わりにログを記録するので、先に進み、それらのインスタンスを停止するだけです。
+
+ログでそれらを見ることができるはずです
+
+ここにログがあります。
+
+実際、彼らはロギングしていました。
+
+ここに例を挙げて説明するように、任意のログを参照できます。
+
+質問または採用してください。
+
+それがアクティビティまたは日付アクセスログであるかどうか、私は両方をクリックすることができます
+
+クエリで実行したクエリを見つけることができます。
+
+job createなどのクエリでデータを取得できます
+
+デフォルトのデータセット。
+
+SELECTは、今日より公平になったときに使用した新しいデータセットドットエア品質から開始します。
+
+これらすべてのデータアクセスログがあり、異なるサービスをここに入力できます
+
+システムイベントの例としての正しいクエリデータセット。
+
+データアクセスを取得しないシステムを配置します。
+
+そのため、内部テーブルの有効期限が切れました。
+
+この特定のデータセットは期限切れです
+
+あなたはそれらすべてを知っているか、すべてのそれらのログを取得することができます来年何をすることができますあなたはマトリックスを作成し、例として
+
+BEAクエリの場合はこちら
+
+過剰なアクティビティとしてのデータは、制限なしのメトリック負荷を作成できます
+
+このすべてのデータは、実際にメトリックを作成できます
+
+データ
+
+そして、このメトリックが作成されます。
+
+これで、その特定のデータを再度エクスポートして、分析のクエリにすることができます。
+
+クエリクラウドストレージまたはこれと考えています。
+
+クラウドストレージを提供する場合は、バケット名と
+
+bクエリデータは同期がクリアされたと思うので、同期はクリアされます。
+
+したがって、すべてのデータがクエリに送られ、分析を行うことができます
+
+ここまでご質問がありましたら、監査ログについてはこれで終わりです。
+
+最終的にシラバスの範囲でこの特定のトレーニングコースを終了することにしました。
+
+数日前に米国で9日間のボーナスレクチャーがありますが、シラバスはほぼ完成しました。
+
+ご質問がある場合はお知らせください。
+
+それ以外の場合は、私がもっと多くのサービスを言った方法を知っているより多くを見ることにジャンプすることができます
+
+Google Cloud Platform。
+
+課題や質問に直面した場合はお知らせください。
+
+試験中に経験を共有してください。
+
+特にこのクラウドユニット試験。
+
+他の人たちと同様に、試験からのあなたのフィードバックを理解したいと思います。
+
+最後にこの特定のスライドを作成していただき、ありがとうございます。
+
+あなたがそうでない場合、最後としてこの特定のページを介して到達するには間違いなく良い患者が必要です
+
+セクションや講義をスキップしました。
+
+とにかく、この特定のコースを購読してくれてありがとう。
+
+そして旅の間ずっと一緒にいてくれてありがとう。
+
+ありがとうございました。

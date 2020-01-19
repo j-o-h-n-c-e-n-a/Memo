@@ -1,0 +1,79 @@
+Cloud data flow.
+
+I mean we look at you know the cloud data flow.
+
+What we did we created the job right away.
+
+And then we need to provide access to use other services like if at all you are using cloud storage
+
+if at all you're using Cloud Spanner are pub server or any other you know cloud resources.
+
+Then you need to make sure that cloud job has gotten permissions to execute or run those jobs or access
+
+those services.
+
+So there are two kinds of service account which data flow users.
+
+One is the job creation and execution managing the job.
+
+And the second one is control service account workers instance like this as input and output resource
+
+after the job submits.
+
+And that is where I said you know this account will have or should have access to the cloud resources
+
+actual job creation if you look at create job cancel job and all that.
+
+As I am permissions and there are rules which you can dedicate as I need to you know the people like
+
+the data flow you were like operations guy who can just call and monitor it are data upload developer
+
+who can create the jobs data floor administrator all of these data flow WORKER OK.
+
+So for the controller service account only right.
+
+These are like this will have access to all other cloud resources like logs and everything.
+
+That said guys as a cloud I am for data flow.
+
+Let's look at pricing in next lecture.
+
+クラウドデータフロー。
+
+クラウドデータフローがわかっていることを確認します。
+
+私たちがやったことはすぐに仕事を作成しました。
+
+そして、クラウドストレージを使用している場合など、他のサービスを使用するためのアクセスを提供する必要があります
+
+Cloud Spannerを使用しているのがパブサーバーまたはその他のクラウドリソースである場合。
+
+次に、クラウドジョブがそれらのジョブを実行または実行するためのアクセス許可を取得していることを確認する必要があります
+
+それらのサービス。
+
+したがって、ユーザーがデータフローする2種類のサービスアカウントがあります。
+
+1つは、ジョブの作成と実行、ジョブの管理です。
+
+そして2つ目は、このような入力および出力リソースとしてのコントロールサービスアカウントワーカーインスタンスです。
+
+ジョブが送信された後。
+
+そして、それは、このアカウントがクラウドリソースにアクセスできる、またはアクセスする必要があることを知っているということです。
+
+ジョブの作成キャンセルジョブなどを見ると、実際のジョブの作成です。
+
+私は許可であり、あなたが必要とするようにあなたが捧げることができるルールがあります
+
+呼び出して監視できる運用担当者のようなデータフローは、データアップロード開発者です
+
+ジョブデータフロア管理者を作成できるのは、これらすべてのデータフローです。
+
+そのため、コントローラーサービスアカウントのみが適切です。
+
+これらは、ログなどすべての他のクラウドリソースにアクセスできるようになります。
+
+つまり、私はクラウドとしての私はデータフローを求めています。
+
+次の講義で価格設定を見てみましょう。

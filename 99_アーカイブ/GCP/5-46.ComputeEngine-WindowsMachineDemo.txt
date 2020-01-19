@@ -1,0 +1,443 @@
+In this particular day more I want to create or show you how to create a Windows virtual machine and
+
+how to connect the instance.
+
+So if I can create instance
+
+I can see the Web when you are one
+
+I wanted to clear the Arvin West because it's somewhat cheaper.
+
+I want to change this image to the windows.
+
+One thing to note here is if you select some of the Windows machines it will show you the size for the
+
+persons's is TGB and for some others it is.
+
+It will show you you know for some other which I tried.
+
+It's 32 G-B that is doing fine.
+
+So it is somebody that it is seeing that footage.
+
+So at least 32 GP is required for something in this instance that's their take here and the selecting
+
+or what it is required.
+
+But I wanted to create This is the for this particular instance because it is taking too long time to
+
+create the instance.
+
+And I want to change this particular instance.
+
+The day will purpose because it was taking too long a long time to create the instance with the small
+
+configurations.
+
+So I do I love everything here.
+
+So yes is it actually.
+
+So you can see a similar process but I'm not creating any S-sh key here or attaching it.
+
+I want actually preventible So if I switch it on the price should go down drastically.
+
+OK so before I before I
+
+switch it off it was a hundred and twelve dollars and the 5 switch it on.
+
+Now it is showing me $70.
+
+This price is there because I have literally considered a big machine if I select a smaller machine
+
+it gets $41.
+
+Let me choose the big one because I want to carry it this way with you as much as fast I can do it.
+
+So let me create a so the instances being creator
+
+let me pause the video for some moment so that will come back when the instance is up and running.
+
+So the insensitively.
+
+So it has got to act something like of this internal IP address.
+
+Yeah I can go ahead and create instance grew out of this particular instance.
+
+This led me to his word and do IBP to the particular instance
+
+that's asking me Fosler.
+
+So I hope also it all to be clear.
+
+And what I think you should reject because this particular puzzle which I had created was for the other
+
+instance.
+
+So before you guys go in and connect to this particular instance you need to really say the password
+
+for this particular instance or set password for this instance.
+
+So this is the user
+
+and this is my Fosler
+
+right.
+
+I can use this password to connect connected but keep this in.
+
+This is in mind it takes you some time for you guys to get this particular instance if the instance
+
+is with a small unit of wait for certain you know at least some time for your password to get reflected
+
+in that particular instance because it takes some more time.
+
+So the instance is coming up now.
+
+It's just getting connected.
+
+You have option to either disconnect my eyes and I'll come to this is this is Chromes you can say extension
+
+for ITP which I'm using right now.
+
+I created this particular instance but this is not you know unfortunately which I created with the text
+
+of so many what do you do.
+
+DP
+
+You will be able to connect this particular instance what you will not be able to see the full text
+
+up here.
+
+So I created another instance which we are going to do our DP in a short while once the instance is
+
+ready I'll pause the video for some time
+
+so the instance which I helped created earlier was the Solve one instance and it does not have the graphics
+
+inside it.
+
+So in the meantime what I did is I created another instance we know the instance let me just say it
+
+said the password for this one as well.
+
+Copy the password just need to actually say this password you need it why you are connecting it so close
+
+and do our.
+
+To this instance.
+
+Connecting.
+
+So it takes a while for small instance to get that password.
+
+They said what would we do.
+
+We can actually wait for some time to get that reflected or one another option actually just to go ahead
+
+and stop the instance and start again.
+
+So that way you allow all the barriers for a password into the instance so the instance is coming up
+
+so they didn't know how they to the password as well.
+
+And I had the password for this particular instance leading me to the RTP.
+
+So I think there is some issue which this particular day is getting on certificate and the instance
+
+here is 97 delit certificate.
+
+OK.
+
+So connect again last word Clendenning venial
+
+you see it's now connecting to my windows instance which Creator Adlerian sent which I had created was
+
+only the server version so it doesn't it has.
+
+No actually the UI had such as a dextro.
+
+I have created another one with the UI using another image.
+
+So let's work on understand if this particular instance has Varda internet connection right now or not.
+
+Once that pops up
+
+first time usually actually takes time it will not be too much for the second one was because for Windows
+
+it has to set up the profile in everything.
+
+When you are logging in for the first time
+
+so this is Internet Explorer.
+
+OK.
+
+And this would go a risk.
+
+So let me put Google dot com continue.
+
+I hope it is coming and this is warning message here.
+
+See we have Google dot com.
+
+So let me actually try
+
+to actually install koom here.
+
+I don't want Actually this warning message to come.
+
+So I want to go ahead and download crawl
+
+looking to see you for this I'm allowing you to install that.
+
+And you're going to actually open the windows up in here if you want to do it.
+
+Taking some more time probably the instance router Hutchison is this is thinset think of options
+
+that that let me go in and force the mood you are here
+
+yeah I mean ultimately I can go there and browse internet.
+
+So which is good news.
+
+And then by default Google actually goes into Google floured you know the shell you can just run the
+
+cloud come on it's inside the machine if you want to.
+
+Right.
+
+So that's it for.
+
+I think the Windows machine guys if you have any question on this one let me know.
+
+Otherwise continue to the next lecture or the demo in which I try to explain.
+
+So that's it for the windows of virtual machine guys.
+
+We'll continue our discussion on the virtual machine demo and next chapter.
+
+These are the next demo for us.
+
+この特定の日に、Windows仮想マシンを作成する方法を作成または表示し、
+
+インスタンスの接続方法。
+
+したがって、インスタンスを作成できる場合
+
+あなたが1つであるとき、私はウェブを見ることができます
+
+少し安いので、Arvin Westをクリアしたかった。
+
+この画像をウィンドウに変更したいです。
+
+ここで注意すべきことの1つは、Windowsマシンのいくつかを選択すると、そのサイズが表示されることです。
+
+人のTGBであり、他の人にとってはTGBです。
+
+それはあなたが私が試した他のいくつかについて知っていることを示します。
+
+32 G-Bで問題ありません。
+
+だから、その映像を見ているのは誰かです。
+
+そのため、このインスタンスでの選択には、少なくとも32 GPが必要です。
+
+または必要なもの。
+
+しかし、作成したかったのは、この特定のインスタンスの場合です。
+
+インスタンスを作成します。
+
+そして、この特定のインスタンスを変更したいと思います。
+
+小さいインスタンスでインスタンスを作成するのに時間がかかりすぎたため、この日は目的になります
+
+構成。
+
+だから私はここですべてが大好きです。
+
+はい、実際にそうです。
+
+したがって、同様のプロセスを見ることができますが、ここではS-shキーを作成したり、添付したりしません。
+
+実際に予防できるようにしたいので、スイッチを入れると価格が大幅に下がるはずです。
+
+OK私の前に
+
+スイッチをオフにすると、12ドルで、5がオンになりました。
+
+現在、$ 70が表示されています。
+
+この価格は、小さなマシンを選択した場合、文字通り大きなマシンを考慮したためです。
+
+41ドルです。
+
+できる限り早くあなたと一緒にそれを持ち運びたいので、大きなものを選んでみましょう。
+
+インスタンスを作成します
+
+インスタンスが稼働しているときに戻ってくるように、しばらくビデオを一時停止させてください。
+
+だから無意識に。
+
+したがって、この内部IPアドレスのような動作をする必要があります。
+
+ええ、この特定のインスタンスから成長したインスタンスを作成します。
+
+これは彼の言葉に私を導き、特定のインスタンスにIBPを行います
+
+それは私にフォスラーを尋ねています。
+
+それで、それがすべて明確になることを願っています。
+
+そして、私が作成したこの特定のパズルは他の
+
+インスタンス。
+
+この特定のインスタンスに接続する前に、本当にパスワードを言う必要があります
+
+この特定のインスタンスに対して、またはこのインスタンスに対してパスワードを設定します。
+
+これがユーザーです
+
+これは私のフォスラーです
+
+正しい。
+
+このパスワードを使用して接続して接続できますが、これはそのままにしておきます。
+
+これは、インスタンスがこの特定のインスタンスを取得するのに時間がかかることを念頭に置いています
+
+パスワードが反映されるまでに少なくともある程度の時間がかかることが確実にわかるように、小さな単位で待機します
+
+その特定のインスタンスでは、さらに時間がかかるためです。
+
+そのため、インスタンスは現在アップしています。
+
+接続されたばかりです。
+
+あなたは私の目を切断するオプションがあり、私はこれに来るでしょうこれはあなたが拡張機能と言うことができるChromeです
+
+私が今使っているITPのために。
+
+私はこの特定のインスタンスを作成しましたが、これはあなたがテキストで作成したものを残念ながら知っていません
+
+あなたは何をしますか。
+
+DP
+
+この特定のインスタンスを接続できますが、全文を表示することはできません
+
+ここまで。
+
+そのため、別のインスタンスを作成しました。インスタンスができたら、すぐにDPを実行します
+
+準備ができてしばらくビデオを一時停止します
+
+以前作成したインスタンスは、Solve oneインスタンスであり、グラフィックはありません
+
+その中。
+
+その間、私がやったことは別のインスタンスを作成したことです
+
+このパスワードも言った。
+
+パスワードをコピーするだけで、実際にこのパスワードを言う必要があるので、なぜあなたはそれを接続しているのですか
+
+してください。
+
+このインスタンスに。
+
+接続しています。
+
+そのため、小さなインスタンスがそのパスワードを取得するにはしばらく時間がかかります。
+
+彼らは私たちが何をするかと言った。
+
+実際にそれが反映されるまでしばらく待つか、実際に先に進むためにもう1つのオプションがあります
+
+インスタンスを停止して、再起動します。
+
+そのため、インスタンスへのパスワードのすべての障壁を許可して、インスタンスが起動するようにします
+
+そのため、彼らはどのようにパスワードを入力するのかも知りませんでした。
+
+そして、この特定のインスタンスのパスワードを持っていて、RTPにアクセスできました。
+
+この特定の日が証明書とインスタンスを取得している問題があると思います
+
+ここに97のデリート証明書があります。
+
+OK。
+
+だから最後の言葉をもう一度接続してください
+
+Creator Adlerianが作成したWindowsインスタンスに接続していることがわかります
+
+サーバーのバージョンのみなので、持っていません。
+
+実際、UIにはdextroなどはありませんでした。
+
+別の画像を使用してUIで別のものを作成しました。
+
+この特定のインスタンスが現在Vardaインターネット接続を持っているかどうかを理解してみましょう。
+
+それが現れたら
+
+通常、最初の時間は実際に時間がかかります。
+
+すべてのプロファイルを設定する必要があります。
+
+初めてログインするとき
+
+これがInternet Explorerです。
+
+OK。
+
+そして、これはリスクを伴います。
+
+そこで、Googleドットコムを続けてみましょう。
+
+私はそれが来ることを望み、これはここに警告メッセージです。
+
+Googleドットコムがあるのをご覧ください。
+
+実際に試してみましょう
+
+ここに実際にkoomをインストールします。
+
+実際には、この警告メッセージが来たくありません。
+
+そこで、クロールをダウンロードします
+
+このためにあなたに会うために私はあなたがそれをインストールすることを許可しています。
+
+そして、あなたがそれをしたいなら、あなたは実際にここで窓を開けるつもりです。
+
+おそらくインスタンスルーターのハッチソンはもう少し時間がかかるでしょう
+
+それは私が入り、あなたがここにいる気分を強制すること
+
+ええ、最終的にはそこに行ってインターネットを閲覧できます。
+
+これは朗報です。
+
+そして、デフォルトでGoogleは実際にGoogleに行きますあなたがちょうど実行できるシェルを知っている
+
+クラウドは、必要に応じてマシン内にあります。
+
+正しい。
+
+これで終わりです。
+
+これについて何か質問がある場合は、Windowsマシンの担当者にお知らせください。
+
+そうでなければ、私が説明しようとする次の講義またはデモに進みます。
+
+これで、仮想マシンのユーザーのウィンドウは以上です。
+
+仮想マシンのデモと次の章に関する議論を続けます。
+
+これらは私たちにとって次のデモです。

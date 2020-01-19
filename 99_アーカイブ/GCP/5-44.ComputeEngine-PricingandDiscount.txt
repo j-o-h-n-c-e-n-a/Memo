@@ -1,0 +1,417 @@
+Very very high level concepts here on pricing and discount and I'll show you in the console as well.
+
+Disk pricing is brought it to a second.
+
+So if you use disk you know storage you know it will be also charged if at all you're assuming that
+
+it is not charge to charge and that put a second snapshot only charge for that mode.
+
+That is you see as an example if you took a snapshot of a tinge of a disk but actually it was maybe
+
+hp then you will be charged with for the HP your static IP charge for hours.
+
+That is because if you result that static IP address and we are going to target this in more in network.
+
+But if you are going to use a static IP address and you are not using it currently for you are virtually
+
+missing the instance and then it will be charged.
+
+But if you use it for what your machine then it is not charged custom machine types charged for ECP
+
+use and for them GV that is used predefined virtual machines are built based on instance you select
+
+maybe a standard we want and all that predefined machines and mostly floss less than the cool and custom
+
+machine type.
+
+And the example to that is I can go back here.
+
+I'll choose again the first generation let me choose this one.
+
+Okay.
+
+So my machine is eight we use with 32 B memory late.
+
+The monthly estimate is to forty nine point eighty nine dollars.
+
+If I choose ACP 130 GP memory in a custom
+
+so it shows date.
+
+Now same but sometimes you will be charged more than you know the standard machine.
+
+So you need to make sure that you all right tradeoffs.
+
+Right now I don't see any difference but I can change.
+
+This was a huge difference when I used it 96 CPR use and 360 G.B. of memory.
+
+So it's like approximately 2 990
+
+so you can see the difference here.
+
+Okay.
+
+Certainly the machine was
+
+this one that's where these says
+
+three thousand seven hundred and twenty one.
+
+And now if you look at the custom again I think it gives the same information.
+
+Hold on.
+
+I think there is a glitch
+
+okay.
+
+Yeah.
+
+That's that's what it is.
+
+Okay let's not get into it too much.
+
+But there was some difference on it Twitter gig.
+
+This is based on the type of weakness you used.
+
+No egress to VM and almost all DCP services.
+
+There are some pricing innovations we already saw.
+
+But I am they will watch you all machines you can get up to 80 percent of the discount but the machines
+
+are not permanent for you to use it and there is no guarantee that it is going to stay even for 24 hours.
+
+Sustained.
+
+There is a sustained use discount and that is influence happening to calculate the sustained use discount
+
+pre-defined as well as custom machines.
+
+And then there is a computer use discount if we use it for say one year or three year based on that
+
+you will get the discount recommendation engine will give you a level idea on what your monthly usage
+
+is.
+
+We are going to see the discount in the next lecture.
+
+I think let's see this in the next lecture.
+
+Thank you.
+
+This is just a glance of the discount and especially on particularly sustained use discount.
+
+So what it means.
+
+So if you use a particular you know instance for say 0 2 twin twenty five percent of your usage maybe
+
+say if you use N1 machine standard machine only for up to 25 percent you will need to pay 100 percent
+
+of the cost.
+
+Okay.
+
+If you use the same machine 25 to 50 percent then you will get 20 percent discount if you used 50 to
+
+75 percent you will get 60 percent 40 percent discount.
+
+So 6 percent will be charged and if you use say up to 75 100 percent then you are going to get 40 percent
+
+charges which means that 60 percent discount and the numbers are reflected here.
+
+But I would instances for anyone standard one instances.
+
+So Howard does actually this gets calculated and this is very important for you to understand how you
+
+know how to calculate whether it is standard machine are if you use a different kind of machine altogether.
+
+Okay so here is the thing.
+
+If you use say one particular instance from Day 1 to day 15 and then there is another instance or similar
+
+I would assume similar to exactly same instance from 15 to 30.
+
+Then this gets aggregated to calculate the discount so the way it works is for standard machine definitely
+
+it is one to one mapping.
+
+But if you look at the custom machines right and I think I have the custom machine state so custom machine
+
+is the way they calculate is they aggregate the CPE usage throughout the month they aggregate the memory
+
+usage throughout the month and that's where they calculate the that's where they calculate the sustained
+
+use discount.
+
+And this particular example here the two receive use and for it to be machine were used for the initial
+
+15 days and then for VCR use and 60 you remember he was used so you can think of it's like two recipients
+
+and 40 a of memory use continuously for the NBN recipients so you will get this on these two you will
+
+get the discount in full right which is approximately what was the percentage you will get up to 60
+
+percent of the discount and remaining ones you will get for 50 percent use you will get around 40 percent
+
+of the discount.
+
+So that's how sustained use and discount is calculated beside sustained use discount.
+
+There is a community discount as well so which means if at all you are you are you know that you are
+
+going to use a certain number of what is your machines for a longer period like for one year or for
+
+three years then definitely you can ask.
+
+You can say that you know you are committed to use these many number of use and these many number of
+
+RAM and then you can come in for it and once you purchase that then you can your bill is calculated
+
+automatically and that's the computer you use discount.
+
+So up on purchases you will be billed monthly through duration in terms you selected whether you use
+
+the service or not.
+
+Right.
+
+And that's the commentary is this can't come and it is just going to work on computer engine non shared
+
+core types including predefined and custom machine type commentary with discounts are simple and flexible
+
+they just kind of like aggregated number of ECP use and memory within the region so they are not affected
+
+by the changes in the instance in the machine type so you need to make sure that you are using those
+
+instances RAM and use and the instance I would say inside the region and not across the region no apparent
+
+cause that is not planned costs for commentary was discount and you will be billed monthly for all the
+
+months which you are committed for.
+
+That's it guys as a GC or compute engine I will have some labs which you can go through it it's really
+
+important too for you to go through the labs and then really move to the next section which is like
+
+load balancer high reliability get out outlaw scaling and in this also we are definitely going to use
+
+instance template and instance groups if you have any questions on computing until now you just can
+
+let us know that the questions that I will label that you can put forward the questions in your to me
+
+and all other platforms and then you can expect answer from the instructor.
+
+Thank you very much.
+
+
+ここでは、価格設定と割引に関する非常に高度な概念を紹介します。コンソールでも紹介します。
+
+ディスクの価格設定は一瞬です。
+
+したがって、ディスクを使用している場合は、ストレージを知っているので、もしあなたが
+
+チャージするのはチャージではなく、そのモードの場合は2回目のスナップショットのみチャージします。
+
+これは、ディスクの色合いのスナップショットを撮った場合の例として見ることができますが、実際には多分
+
+hpを使用すると、HPに対して静的IPチャージが数時間請求されます。
+
+これは、その静的IPアドレスを取得し、ネットワーク内でこれをさらにターゲットにしようとするためです。
+
+ただし、静的IPアドレスを使用する予定で、現在使用していない場合は、実質的に
+
+インスタンスが欠落している場合、請求されます。
+
+ただし、マシンに使用する場合は、ECPに対して課金されるカスタムマシンタイプは課金されません
+
+使用し、使用するGVは、選択したインスタンスに基づいて定義済みの仮想マシンが構築されます
+
+おそらく私たちが望む標準であり、事前定義されたすべてのマシンであり、ほとんどがフロスよりも冷たくてカスタムです
+
+マシンタイプ。
+
+その例は、ここに戻ることができます。
+
+私は再び第一世代を選択し、これを選択させます。
+
+はい。
+
+私のマシンは8台で、32 Bのメモリを遅く使用しています。
+
+毎月の見積もりは、49ポイント89ドルです。
+
+カスタムでACP 130 GPメモリを選択した場合
+
+日付が表示されます。
+
+今では同じですが、時々あなたは標準的なマシンを知っているよりも多く請求されます。
+
+だから、あなたはあなたがすべて正しいトレードオフであることを確認する必要があります。
+
+今のところ違いは見られませんが、変更できます。
+
+96 CPR使用と360 G.Bを使用したとき、これは大きな違いでした。メモリの。
+
+だから、約2 990のようです
+
+あなたはここで違いを見ることができます。
+
+はい。
+
+確かにマシンは
+
+これはこれらが言うところです
+
+三千七百二十一。
+
+そして今、もう一度カスタムを見ると、同じ情報が得られると思います。
+
+つかまっている。
+
+グリッチがあると思う
+
+はい。
+
+うん。
+
+それがそれです。
+
+さて、あまり入りすぎないようにしましょう。
+
+しかし、Twitterのギグにはいくつかの違いがありました。
+
+これは、使用した脆弱性のタイプに基づいています。
+
+VMおよびほとんどすべてのDCPサービスへの出口はありません。
+
+すでに見た価格の革新がいくつかあります。
+
+しかし、私は彼らがあなたが割引の最大80パーセントを得ることができるすべてのマシンを見ますが、マシン
+
+あなたがそれを使用することは永久的ではなく、24時間でもそれがとどまることを保証するものではありません。
+
+持続した。
+
+持続使用割引があり、それは持続使用割引を計算するために起こっている影響です
+
+事前定義およびカスタムマシン。
+
+そして、それに基づいてたとえば1年または3年使用する場合は、コンピューター使用割引があります
+
+あなたはあなたの毎月の使用量にあなたにレベルのアイデアを与える割引推奨エンジンを取得します
+
+です。
+
+次の講義で割引を見る予定です。
+
+次の講義でこれを見てみましょう。
+
+ありがとうございました。
+
+これは、割引の概要、特に特に継続使用割引の概要です。
+
+それが意味するもの。
+
+したがって、特定のインスタンスを使用する場合は、たとえば0 2ツインのインスタンスを知っているでしょう。
+
+N1マシンの標準マシンを最大25パーセントだけ使用する場合、100パーセントを支払う必要があると言います。
+
+コストの。
+
+はい。
+
+同じマシンを25〜50％使用すると、50〜50％使用すると20％割引になります。
+
+75％の場合、60％から40％の割引を受けられます。
+
+したがって、6パーセントが請求されます。最大75 75を言うと、40パーセントになります
+
+これは、60％の割引と数値がここに反映されることを意味します。
+
+しかし、私は誰でも1つの標準インスタンスをインスタンス化します。
+
+ハワードは実際にこれを計算します。これは、あなたがどのように
+
+別の種類のマシンを使用する場合は、それが標準マシンであるかどうかを計算する方法を知ってください。
+
+わかりましたので、ここにあります。
+
+1日目から15日目までの特定のインスタンスを言うと、別のインスタンスまたは類似のものがある場合
+
+15〜30のまったく同じインスタンスに似ていると仮定します。
+
+次に、これは割引を計算するために集計されるので、それが機能する方法は間違いなく標準的なマシン用です
+
+1対1のマッピングです。
+
+しかし、あなたが正しいカスタムマシンを見て、私がカスタムマシンの状態を持っていると思うなら、カスタムマシン
+
+彼らが計算する方法は、彼らがメモリを集約する月を通してCPE使用量を集約することです
+
+1か月を通して使用量を計算し、それが計算されます。
+
+割引を使用します。
+
+ここでのこの特定の例では、2つの受信を使用し、それがマシンであるために、最初の
+
+15日後、VCRの使用と60の場合、彼が使用されたことを覚えているので、2人の受信者のように思えます
+
+NBN受信者に対して40 aのメモリが継続的に使用されるため、これら2つでこれを取得します。
+
+最大で60％になるパーセンテージである割引を全権で取得できます。
+
+50％の使用で得られる割引と残りの割引の割合は、約40％になります
+
+割引の。
+
+そのため、持続使用割引と並んで持続使用と割引が計算されます。
+
+コミュニティ割引もあります。つまり、あなたがあなたであるなら、あなたは
+
+1年または
+
+3年後、間違いなくあなたが尋ねることができます。
+
+あなたは、あなたがこれらの多くの数の使用とこれらの多くの数の使用にコミットしていることを知っていると言うことができます
+
+RAM、そしてあなたはそれのために来て、それを購入したらあなたの請求書が計算されます
+
+自動的にそれがあなたが割引を使用するコンピュータです。
+
+そのため、購入時に、使用するかどうかを選択した期間の期間を通じて毎月請求されます
+
+サービスかどうか。
+
+正しい。
+
+そして、これは解説であり、これは来ることができず、共有されていないコンピュータエンジンで動作するだけです
+
+事前定義およびカスタムマシンタイプのコメント付き割引などのコアタイプはシンプルで柔軟
+
+それらは影響を受けないように、リージョン内のECP使用とメモリの集約数のようなものです
+
+マシンタイプのインスタンスの変更により、それらを使用していることを確認する必要があります
+
+インスタンスRAMと使用、およびリージョン内ではなく、リージョン内で言うインスタンスは明らかではありません
+
+解説のための計画コストではない原因は割引であり、あなたはすべてのために毎月請求されます
+
+あなたがコミットしている月。
+
+それはGCまたは計算エンジンとしての皆さんです。いくつかのラボがあります。
+
+ラボを通過してから次のセクションに移動することも重要です
+
+ロードバランサーの高い信頼性は無法者のスケーリングを排除し、これで私たちは間違いなく使用するつもりです
+
+インスタンステンプレートとインスタンスグループ。今までコンピューティングに関して質問がある場合は、
+
+私があなたに私に質問を提出できるというラベルを付ける質問を教えてください
+
+他のすべてのプラットフォームと、インストラクターからの回答を期待できます。
+
+どうもありがとうございました。
+

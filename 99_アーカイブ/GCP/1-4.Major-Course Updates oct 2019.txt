@@ -1,0 +1,131 @@
+Discourse is in October 2019.
+
+And what does that mean.
+
+That means we have incorporated syllabus from the exam and from the servicing permission from Google
+
+Cloud Platform.
+
+As of October 2019 around 90 percent of those lectures are replaced.
+
+Okay so let's move for further and then understand other things which has been changed.
+
+So now we have speakers to small small lectures.
+
+Earlier you used to be like in other computing in 1 2 3 4 and the normally 4 lectures covering all the
+
+computer engine.
+
+But now we have changed that to smaller smaller unit.
+
+And if we look at here at the computer engine GP use disk images instance template an instance group
+
+networking startup script all of these are different unit different small small lectures then the fatty
+
+25 minutes 30 minutes or 40 minutes lectures broken down into one minute four minute three minute like
+
+that.
+
+Okay for you to understand and focus it in a better fashion.
+
+So that's the change.
+
+The second changes you had better coverage.
+
+So we'd like to make sure that we cover each and every point and from each and every angle.
+
+And that is how you have better coverage.
+
+And then we have included lab I already showed you in the earlier exam earlier lecture that we have
+
+included lab which you can use it the prior surgeon student used to pause a video and then carry out
+
+the steps.
+
+Now you don't have to worry about looking.
+
+Look at the demo lectures and posit.
+
+You can just refer these workshops or labs and then carry out your own workshops.
+
+OK so these are the changes I think we are sure that you will like it and like it for sure.
+
+And then you when you provide a review are the coverage you will definitely say good word about it.
+
+OK.
+
+And that's it.
+
+Guys let's.
+
+That's the introduction.
+
+Let's get into real business.
+
+Thank you.
+
+談話は2019年10月です。
+
+そして、それはどういう意味ですか。
+
+つまり、試験とGoogleからのサービス許可からのシラバスが組み込まれたことになります。
+
+クラウドプラットフォーム。
+
+2019年10月現在、これらの講義の約90％が置き換えられています。
+
+さて、さらに進んで、変更された他のことを理解しましょう。
+
+それで今、私たちは小さな小さな講義のスピーカーを持っています。
+
+以前は、1 2 3 4で他のコンピューティングのように使用され、通常は4つの講義ですべての
+
+コンピューターエンジン。
+
+しかし、今ではそれをより小さな小さなユニットに変更しました。
+
+そして、ここでコンピュータエンジンGPを見ると、ディスクイメージインスタンステンプレートとインスタンスグループを使用します
+
+ネットワーキングスタートアップスクリプトこれらはすべて、ユニットごとに異なる小さな小さな講義です。
+
+25分30分または40分講義は、1分4分3分に分けられます。
+
+それ。
+
+それを理解し、より良い方法で集中してください。
+
+それが変化です。
+
+2番目の変更では、カバレッジが向上しました。
+
+そのため、すべてのポイントをすべての角度からカバーするようにします。
+
+そして、それはあなたがより良いカバレッジを持っている方法です。
+
+そして、以前の試験で既に示したラボを含めました。
+
+前の外科医の学生がビデオを一時停止してから実行するために使用したラボを含む
+
+手順。
+
+今、あなたは見ることを心配する必要はありません。
+
+デモの講義とポジをご覧ください。
+
+これらのワークショップまたはラボを参照して、独自のワークショップを実行できます。
+
+わかりましたので、これらはあなたがそれを好きで、確かに好きになると確信していると思う変更です。
+
+そして、あなたがレビューを提供するとき、あなたは間違いなくそれについて良い言葉を言うでしょう報道です。
+
+OK。
+
+以上です。
+
+みなさん。
+
+それが序論です。
+
+実際のビジネスを始めましょう。
+
+ありがとうございました。

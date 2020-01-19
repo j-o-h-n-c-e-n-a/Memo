@@ -1,0 +1,219 @@
+Into the IP addresses
+
+the internal IP addresses you can think of it is like I look at it from the subnet range to say VM by
+
+DSP DSP resolution is renewed 20 for every 25 hours VM name plus IP registered with the network it's
+
+scoped DNS static IP stays with VM until VM is removed.
+
+And if you model IP is attached to VM forwarding rules only stays until we start stopped ordering started
+
+on instances terminated.
+
+I'm not going to see external ip address right now.
+
+IP must belong to IP address range of subnet in more IP comes from the region subnet in custom mode
+
+VPC You must specify the subnet IP from where it comes from legacy network the IP addresses assigned
+
+from the network global IP ranges and I'm going to show that each instance has was name that can be
+
+resolved within the internal IP address was name is a name for an instance.
+
+If two DNS host named dot C. dot project Daily Dot internal name resolution is handled by Internal DNS
+
+it is all evil and there is Internal DNS resolved which you need to make sure that you understand it
+
+provided as a part of computing Jane configured for the use of instance why had the ATP provided and
+
+set for an internal and external letter says and you can use alternate DNS resolve if you prefer to
+
+do so.
+
+If I had to show you how the IP addresses that are signed I have three different network here.
+
+But what I'm going to use it I'm going to use default and I'm going to use custom one.
+
+That's how you will understand how it is different.
+
+OK.
+
+So if I go back
+
+and I go to compute engine and if I click on Create
+
+I'm keeping all other things are the same but I'm just choosing the region here because I have us E1
+
+and if I go here down and then click on networking
+
+and networking I can choose either default network or my auto network or my custom VPC I'm clicking
+
+on custom UPC I can choose from which that IP address can come in.
+
+OK if I choose say default there is a default you know sub network which is created and the IP address
+
+will come from that particular range in case of say auto again at all subnet.
+
+Well he's already created for me so I need to choose from there.
+
+Okay so if I choose say custom VPC I can choose sub network and from which it is come it will come.
+
+And this primary internal IP address this is what do come from this range I can choose either automatic
+
+or I can choose custom and I can give the ephemeral IP address I can.
+
+So if I choose a default network
+
+and I can see automatic and custom you can use aliases external IP I'm not mentioning it here.
+
+We are going to talk in the next lecture.
+
+And then if at all I want to put it I prefer waiting room.
+
+So I use this one
+
+I don't want to use that so but there is a automatic or custom if you model IP addresses which you can
+
+use it as internal.
+
+How are you going to resolve the static internal IP address.
+
+And that's where the difference and we said if I go back static IP stays with VM until it is removed
+
+and a permanent IP is attached to VM or forwarding rules only stays until VM is stopped or restarted.
+
+So if I cleared this William right and if I stop it then it will stay until we stop it.
+
+And it will go off when you stop the VM and start it again.
+
+So you will have new API sign when you start the machine VM again.
+
+If you restart and that is what it says if you restart it is going to again the criminal IP is going
+
+to go away.
+
+Only if you if you have static IP that is going to stay until you completely remove your virtual machine.
+
+Okay so I'm not going to resolve that because if I'm not deleting it when I'm not using the VM Google
+
+is going to charge me.
+
+So I'm not going to use it
+
+that's it as a Dylan IP.
+
+Those guys if you have any questions let me know.
+
+Otherwise you can move to the next one.
+
+That AIDS external IP address.
+
+IPアドレスへ
+
+考えられる内部IPアドレスは、サブネット範囲から見てVMと言うようなものです
+
+DSP DSP解像度は、25時間ごとに20更新されます。VM名に加えて、ネットワークに登録されたIP
+
+スコープDNS静的IPは、VMが削除されるまでVMに残ります。
+
+また、モデルIPがVM転送ルールにアタッチされている場合、停止を開始するまで停止しません
+
+終了したインスタンス。
+
+現在、外部IPアドレスは表示されません。
+
+IPは、カスタムモードのリージョンサブネットから取得されるIPのサブネットのIPアドレス範囲に属している必要があります
+
+VPC IPアドレスが割り当てられたレガシーネットワークからのサブネットIPを指定する必要があります
+
+ネットワークのグローバルIP範囲から、各インスタンスが持つことができる名前だったことを示します
+
+内部IPアドレス内で解決された名前は、インスタンスの名前です。
+
+ドットCという名前の2つのDNSホスト.dotプロジェクトDaily Dot内部名前解決が内部DNSによって処理される場合
+
+それはすべて悪であり、あなたがそれを理解していることを確認する必要がある解決された内部DNSがあります
+
+インスタンスの使用のために構成されたジェーンのコンピューティングの一部として提供され、なぜATPが提供されたのか
+
+内部および外部の手紙のために設定が言うとあなたがしたい場合は、代替DNS解決を使用することができます
+
+そうする。
+
+署名されたIPアドレスがどのように表示されるかを示す必要がある場合、ここに3つの異なるネットワークがあります。
+
+しかし、使用するものはデフォルトを使用し、カスタムのものを使用します。
+
+それはあなたがそれがどのように異なるかを理解する方法です。
+
+OK。
+
+だから戻ったら
+
+そして計算エンジンに行き、作成をクリックすると
+
+私は他のすべてのものが同じであることを維持していますが、私は私たちにE1があるので、ここで地域を選択しています
+
+そして、ここに行き、ネットワークをクリックします
+
+ネットワーキングデフォルトのネットワーク、自動ネットワーク、またはクリックしたカスタムVPCを選択できます
+
+カスタムUPCでは、そのIPアドレスを取得できるものを選択できます。
+
+[デフォルト]を選択すると、[作成されたサブネットワークとIPアドレスがわかっているデフォルトがあります]
+
+すべてのサブネットで再びautoと言う場合、その特定の範囲から取得されます。
+
+彼はすでに私のために作成されているので、そこから選択する必要があります。
+
+わかりましたので、カスタムVPCを選択すると、サブネットワークを選択でき、そこからサブネットワークが選択されます。
+
+このプライマリ内部IPアドレスは、この範囲から来るものです。自動または
+
+または、カスタムを選択し、できる限り短命のIPアドレスを与えることができます。
+
+したがって、デフォルトのネットワークを選択した場合
+
+ここでは言及していませんが、外部IPのエイリアスを使用できる自動およびカスタムを確認できます。
+
+次の講義で話します。
+
+そして、もし私がそれを置きたいなら、私は待合室を好む。
+
+だから私はこれを使う
+
+私はそれを使いたくありませんが、あなたができるIPアドレスをモデル化する場合、自動またはカスタムがあります
+
+内部として使用します。
+
+静的内部IPアドレスをどのように解決しますか。
+
+そして、そこが違いです。静的IPをVMから削除しても、それが削除されるまでVMに残ります。
+
+永続的なIPがVMにアタッチされるか、転送ルールはVMが停止または再起動されるまで残ります。
+
+したがって、このWilliamをクリアし、停止すると、停止するまでそのままになります。
+
+また、VMを停止してから再起動すると、消灯します。
+
+そのため、マシンVMを再度起動すると、新しいAPIサインがあります。
+
+あなたが再起動し、それが再起動した場合、それは再びそれが犯罪者のIPが起こっていると言うことです
+
+立ち去る。
+
+仮想マシンを完全に削除するまでとどまる静的IPがある場合のみ。
+
+わかりましたので、私はそれを解決するつもりはありません。なぜなら、VM Googleを使用していないときに削除しないのであれば
+
+私に請求するつもりです。
+
+だから私はそれを使用するつもりはありません
+
+それはディランIPとしてのそれです。
+
+質問があればそれらを教えてください。
+
+それ以外の場合は、次のものに移動できます。
+
+そのエイズ外部IPアドレス。

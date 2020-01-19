@@ -1,0 +1,56 @@
+Pricing for equity so be equities is priced in the unit of slots slots are like computational unit for
+
+capacity when they calculate calculates for your query.
+
+It can be used as a flat rate pricing and can be purchased in advance as a dedicated number of slots.
+
+If you know that you are going to use it to get a discount I estimation you can get it.
+
+Get the estimation query before you end submitting it.
+
+You can do it while you know in the console or by driving in the big query if you want to use the command
+
+line parameters.
+
+So these are the command line you know which you can use it BQ is the command line utility which you
+
+can use it for big query.
+
+And this is only for the big query you can create the data set you can create the table using query
+
+and you can you run the school command.
+
+So I'm going to give you these commands as a resource section for your for this particular lecture.
+
+Okay.
+
+Thank you.
+
+
+株式の価格設定は、株式がスロットの単位で価格設定されるため、スロットは
+
+クエリの計算時の容量。
+
+これは定額料金として使用でき、専用のスロット数として事前に購入できます。
+
+割引を取得するために使用することがわかっている場合は、見積もることができます。
+
+送信を終了する前に推定クエリを取得します。
+
+あなたがコンソールで知っている間、またはコマンドを使用したい場合は大きなクエリで運転することでそれを行うことができます
+
+行パラメーター。
+
+だから、これらはあなたがそれを使用できることを知っているコマンドラインですBQはあなたが
+
+大きなクエリに使用できます。
+
+そしてこれは、クエリを使用してテーブルを作成できるデータセットを作成できる大きなクエリ専用です
+
+学校のコマンドを実行できます。
+
+この特定の講義のリソースセクションとして、これらのコマンドを提供します。
+
+はい。
+
+ありがとうございました。

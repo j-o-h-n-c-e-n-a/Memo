@@ -1,0 +1,319 @@
+This can compute ancient.
+
+Let's go ahead and understand.
+
+What are the type of disk which you can attach it.
+
+We already saw this in the demo.
+
+Let me go back again.
+
+I enjoy it here.
+
+How you can attach the disk.
+
+So if I click on this particular thing here.
+
+I'm just leaving this as is.
+
+Go back here so that this crate if I click on this you can change it and you can apply different sizes.
+
+You can choose SSD or standard disk and this is beautiful disk.
+
+So it's only one Woodbridge disk and you can define the size
+
+and what do what do you choose.
+
+It could be attached.
+
+But beyond that if you want to attach additional disk right you can go here and click on disk and you
+
+can so based on the instance name or you can define the custom name like
+
+disk two or something like that.
+
+Right
+
+and then for that is key you can choose a different speed right if at all you delete the virtual machine.
+
+You want to have a protection tool you want to keep that disk.
+
+Even if you delete the virtual machine on it you want to keep that disk so you can choose theirs if
+
+at all there are some disk which you want to do.
+
+Really only describe it.
+
+There is some common data which is shared across multiple virtual machines you can choose it here you
+
+can you can attach that a limited image or whatever you have it if at all you have it and then if you
+
+look at this based on the size if I change the size to say something like this you read and write speed
+
+I OBS gets changed and that is where you can see you know this size changes the speed of the discord
+
+performance of disk and definitely the performances again depends on the type of disk which you attach
+
+it for sure.
+
+This is like standard disk if I change it to C SSD.
+
+Your performance definitely increases if it is local disk definitely you will have you will have different
+
+performance altogether.
+
+So there are three types of disk which you can attach it.
+
+One is the local it is taken with SSD and third one is the persistent disk which is of standard.
+
+So local but assistant and standard disk which you can have it
+
+going back again.
+
+The different type of disk.
+
+So there are two this you can attach it for persistent local this can condemn this and I'll show you
+
+how you can attach a RAM disk as well.
+
+Here so let's look at persistent disk persistent disk you can think of it's like Nas traditionally we
+
+had network attached storage right.
+
+So similar to that.
+
+You have persistent disk in Google Cloud Platform you can connect the persistent disk to any what's
+
+your machine whether it is you know system your system b or what your machine D something like that
+
+as because it is attached to a network you can just assigning or attached to any other virtual machine.
+
+Persistent is gone independent of computing in an instance it is it only nature it is used as a booty
+
+by a lot of snapshot as well you can have you the races do you or I study in places on disk you can
+
+say it's dynamically even when the instance is running.
+
+So that is beauty of the persistent disk attached to multiple VM for it only data as we saw automating
+
+in encryption that is available by default but you can choose your own encryption key are you going
+
+to have your own encryption mechanism implemented.
+
+Load proponents current pointing to localize as do our remedies because these are something which is
+
+attached to your VM via the network cable and it is not the local to that is the local disk local this
+
+definitely it is on the physical hardware our physical machine our physical so what you can think of
+
+where your machine is located if you model in nature if you take your virtual machine and take it to
+
+another machine then your data is lost or data is no more preserved because it is not attached in the
+
+network our data stays at the restart but not on the instant stopped and terminated.
+
+So you think of this restart happens on the same local physical machine but if you stop an instance
+
+and then started again then your data actually goes off you and if you dominate the instance the data
+
+goes off provides high ups input output speed based on the size of that is you can go up to six eighty
+
+k then 360 k a right.
+
+So these are the disks which are you can think of it is attached or it is on the hardware and that's
+
+where you have your washing machine.
+
+So it is fixed in size and you can attach up to a disk and Max up to three terabytes of you know the
+
+storage space which Lucas describes you cannot lie You migrate because you can think of when you take
+
+the the machine from one physical hardware to another one the data will not be persisted you can house
+
+because you are and we Amy interfaces not available for shared core machines and this can do that faster
+
+than any descriptions available because of its nature if you model goes away on stop restart or terminate
+
+because once you stop already start and then the memory goes off the size of the time is dependent on
+
+manufacturer which is persistent disk storage but you need cash the machine lifecycle you went to store
+
+the latest data so you finally are using said I am this great and if you have some data which you want
+
+to store it you always policies that data and do the persist and this so that you can record the data
+
+afterwards
+
+if you want to create a RAM disk you can go here let me go to the beach cloud dot google dot com computer
+
+disk disk and RAM disk so adding storage you can go here and you can create the RAM disk I'm not going.
+
+Details right now if at all you need I can create a demo out of it but just let me know if it's required.
+
+So these are some of the instructions which you can follow to create and delete and the RAM disk that's
+
+it guys as a disk and compute engine if at all you need any of their information or if you have any
+
+questions let me know otherwise who can move to the next lecture which is computer engine images thank
+
+you.
+
+これは古代を計算できます。
+
+さあ、理解しましょう。
+
+接続できるディスクの種類は何ですか。
+
+これはすでにデモで見ました。
+
+もう一度行きましょう。
+
+ここで楽しんでいます。
+
+ディスクの接続方法。
+
+ここでこの特定のものをクリックすると。
+
+私はこれをそのままにしておきます。
+
+ここに戻って、このクレートをクリックして変更し、異なるサイズを適用できるようにします。
+
+SSDまたは標準ディスクを選択できます。これは美しいディスクです。
+
+したがって、Woodbridgeディスクは1つだけで、サイズを定義できます
+
+そして、あなたは何を選択しますか。
+
+添付できます。
+
+しかし、さらにディスクを追加したい場合は、ここに移動してディスクをクリックし、
+
+インスタンス名に基づいてそうすることができますまたはあなたはのようなカスタム名を定義することができます
+
+ディスク2またはそのようなもの。
+
+正しい
+
+そして、それが鍵であるため、仮想マシンを削除してもまったく異なる速度を選択できます。
+
+そのディスクを保持したい保護ツールが必要です。
+
+仮想マシンを削除しても、そのディスクを保持して、次の場合に選択できるようにします。
+
+実行したいディスクがいくつかあります。
+
+本当にそれだけを記述してください。
+
+複数の仮想マシン間で共有される一般的なデータがいくつかあり、ここで選択できます
+
+限られた画像や、持っているものなら何でも添付できますか？
+
+サイズを変更してこのようなことを言うと、サイズに基づいてこれを見て、速度を読み書きします
+
+I OBSが変更されると、このサイズが不一致の速度を変更することがわかります
+
+ディスクのパフォーマンスと間違いなくパフォーマンスは、接続するディスクのタイプに依存します
+
+確かに。
+
+C SSDに変更すると、これは標準ディスクのようになります。
+
+ローカルディスクである場合、パフォーマンスは確実に向上します。
+
+全体のパフォーマンス。
+
+したがって、3種類のディスクを接続できます。
+
+1つはSSDで使用されるローカルであり、3つ目は標準の永続ディスクです。
+
+あなたはそれを持つことができるローカルだがアシスタントと標準ディスク
+
+再び戻ります。
+
+異なるタイプのディスク。
+
+永続的なローカル用にアタッチできるこれが2つあり、これを非難することができます。
+
+RAMディスクを接続する方法も。
+
+ここで、永続ディスクを見てみましょう。永続ディスクは、従来のNasのようなものです。
+
+ネットワーク接続ストレージの権利がありました。
+
+それにとても似ています。
+
+Google Cloud Platformに永続ディスクがあり、永続ディスクを任意のものに接続できます
+
+あなたのマシンは、あなたのシステムbを知っているか、あなたのマシンDのようなものか
+
+ネットワークに接続されているため、他の仮想マシンに割り当てるか接続するだけです。
+
+永続性はインスタンスのコンピューティングとは無関係になります。
+
+スナップショットをたくさん用意することで、あなたにレースをしてもらうことができます
+
+インスタンスが実行されているときでも動的であると言います。
+
+自動化を見たように、それはデータのみの複数のVMに接続された永続ディスクの美しさです
+
+暗号化はデフォルトで使用可能ですが、独自の暗号化キーを選択できます
+
+独自の暗号化メカニズムを実装します。
+
+現在の提案者をローカライズするようにロードします。
+
+ネットワークケーブルを介してVMに接続され、ローカルディスクではないローカルローカル
+
+間違いなく、物理ハードウェア上、物理マシン上、物理マシン上にあります。
+
+仮想マシンを取得してそれを取得する場合、自然にモデル化する場合はマシンの場所
+
+別のマシンでは、データが失われるか、データが保存されなくなります。
+
+ネットワークデータは再起動時に残りますが、停止および終了した瞬間には残りません。
+
+したがって、この再起動は同じローカル物理マシン上で発生すると思いますが、インスタンスを停止すると
+
+そして、再び起動すると、データは実際に消えてしまい、インスタンスを支配する場合はデータ
+
+オフになると、そのサイズに基づいて高出力の入出力速度が得られます。
+
+k、次に360 k右。
+
+だからこれらはあなたがそれが接続されているか、それがハードウェア上にあると考えることができるディスクです
+
+洗濯機がある場所。
+
+そのため、サイズが固定されており、最大で3テラバイトのディスクを接続できます。
+
+ルーカスが説明するストレージスペースは嘘をつかない
+
+ある物理ハードウェアから別の物理ハードウェアへのマシンデータは永続化されません。
+
+あなたは私たちであり、エイミーのインターフェイスは共有コアマシンでは利用できず、これにより高速に処理できるためです
+
+あなたがモデルが停止再起動または終了すると消える場合、その性質のために利用可能な説明よりも
+
+一度停止してから開始するとメモリが消えるので、時間のサイズは
+
+永続的なディスクストレージであるが、保管に行ったマシンライフサイクルに現金が必要なメーカー
+
+最新のデータを使用しているので、最終的に使用していると言います
+
+それを保存するには、そのデータを常にポリシーし、永続化してこれを行い、データを記録できるようにします
+
+その後
+
+RAMディスクを作成したい場合は、ここに行くことができますビーチクラウドドットグーグルドットコムコンピューターに行かせてください
+
+ディスクディスクとRAMディスクを追加します。ストレージを追加すると、ここに移動して、RAMディスクを作成できます。
+
+現時点で詳細が必要な場合は、デモを作成できますが、必要な場合はお知らせください。
+
+これらは、作成および削除するために従うことができるいくつかの指示と、RAMディスクです。
+
+情報が必要な場合、または情報がある場合は、ディスクおよび計算エンジンとして使用します
+
+質問は、コンピューターエンジンの画像である次の講義に移動できる人を教えてくれます
+
+君は。

@@ -1,0 +1,187 @@
+What happened in standard involvement.
+
+Let's see what the standard involvement is
+
+so containers are predefined one of the several runtime environment required.
+
+So you can think of it's like a sandbox environment which is available for your programming language
+
+or for your code to run you know.
+
+So that's the platform which is given to you each runtime also includes laboratories that support App
+
+Engine API and then we saw ecosystem right so that the whole ecosystem is supported and celebrities
+
+are included inside the sandbox.
+
+You can do infrastructure customization odd no based on what type of that particular involvement is.
+
+You cannot typically do infrastructure customization in standard environment because it is pre configure
+
+sandbox environment for you.
+
+The performance of the application in standard environment standard application runs in a secure sandbox
+
+environment allow App Engine standard environment to distribute the request across multiple service
+
+scaling in the servers to meet traffic demands your applications runs within its own secure reliable
+
+environment that is independent of hardware operating system and physical location of the server.
+
+So is decay is available for you and in this decade there is a you know a sandbox environment so you
+
+can turn your application locally in cloud SDK a simulated sandbox environment that emulates all App
+
+Engine services on your local environment deploy I mean tools that allow you to upload your application
+
+to cloud manage different words in the application is.
+
+Game Managers who are applications locally while in Google Cloud console you manage it and then production
+
+orders in Google Cloud Platform of that suit as a standard environment.
+
+We already saw the application which we have deployed was the standard environment.
+
+It's not first project.
+
+So this is standard environment.
+
+If I had to look at the information about the instances you can go to the virgins and you can see the
+
+configuration here.
+
+If you look at the configuration rate the environment which you see is the standard environment and
+
+the instance classes F one instance class.
+
+So if at all you want to see you for all you are interested in instance class
+
+so you can just search for this one
+
+so these are the instances which are available for you and the configuration for those instances are
+
+available
+
+okay.
+
+So here is the instance classes that is available so these are the sandbox environment all you can think
+
+of instances which you can launch it the current which is default you can see here if at all you do
+
+not specify an instance class it is appear as a default here which is 256 and be of memory and 600 megahertz
+
+of CPE you limit.
+
+And then as you go along you can increase the instance class up to 2g of memory and two point four gigahertz
+
+processor so and all of this is supported by automatic manual and basic scaling.
+
+OK so these are the instance lessons which you can use it and the pricing also change based on the instance
+
+class which you choose it.
+
+And here are some some of the pricing parameters and these are like the cost per hour.
+
+Okay.
+
+That's it guys for the standard in what way.
+
+If you have any questions let me know otherwise we can move to the next 10 environment which is like
+
+flexible in one way 19 happened.
+
+Thank you.
+
+標準的な関与で何が起こったのか。
+
+標準的な関与が何であるか見てみましょう
+
+コンテナは、必要ないくつかのランタイム環境の1つとして事前定義されています。
+
+プログラミング言語で利用できるサンドボックス環境のようなものだと考えることができます
+
+またはコードを実行するために知っています。
+
+各ランタイムにはアプリをサポートするラボも含まれています
+
+エンジンAPI、そしてエコシステム全体がサポートされるように、エコシステムが正しく表示されるようにしました。
+
+サンドボックス内に含まれています。
+
+その特定の関与の種類に基づいて、インフラストラクチャのカスタマイズを行うことができます。
+
+通常は標準環境でインフラストラクチャのカスタマイズを行うことはできません
+
+あなたのためのサンドボックス環境。
+
+標準環境でのアプリケーションのパフォーマンス標準アプリケーションは安全なサンドボックスで実行されます
+
+App Engine標準環境で複数のサービスにリクエストを分散できる環境
+
+アプリケーションが独自のセキュアで信頼性の高い範囲内で実行されるトラフィック要求を満たすためにサーバーでスケーリングする
+
+ハードウェアオペレーティングシステムおよびサーバーの物理的な場所に依存しない環境。
+
+崩壊はあなたのために利用可能であり、この10年間であなたはサンドボックス環境を知っているので、あなたは
+
+クラウドSDKでローカルにアプリケーションを、すべてのアプリをエミュレートするシミュレートされたサンドボックス環境に変えることができます
+
+ローカル環境でのエンジンサービスの展開アプリケーションのアップロードを可能にするツールを意味します
+
+アプリケーション内のさまざまな単語をクラウド管理します。
+
+Google Cloud Consoleでローカルにアプリケーションを管理しているゲームマネージャーは、それを管理してから本番
+
+標準環境としてのそのスーツのGoogle Cloud Platformでの注文。
+
+既にデプロイしたアプリケーションが標準環境であることがわかりました。
+
+それは最初のプロジェクトではありません。
+
+これが標準環境です。
+
+インスタンスに関する情報を見なければならなかった場合、あなたは処女に行くことができ、あなたは見ることができます
+
+ここで設定します。
+
+構成レートを見ると、表示される環境は標準環境であり、
+
+インスタンスクラスF 1つのインスタンスクラス。
+
+したがって、インスタンスクラスに興味があるすべてのあなたに会いたい場合
+
+これを検索するだけです
+
+これらはあなたが利用できるインスタンスであり、それらのインスタンスの設定は
+
+利用可能
+
+はい。
+
+使用できるインスタンスクラスは次のとおりです。これらは、考えられるすべてのサンドボックス環境です
+
+あなたがそれを起動することができるインスタンスの現在のデフォルトは、あなたがやるならここで見ることができます
+
+インスタンスクラスを指定しない場合、256であり、メモリおよび600メガヘルツであるデフォルトとして表示されます
+
+制限するCPEの。
+
+その後、インスタンスクラスを最大2gのメモリと2ポイント4ギガヘルツまで増やすことができます
+
+プロセッサであり、このすべてが自動手動および基本スケーリングによってサポートされています。
+
+わかりましたので、これらはあなたがそれを使用できるインスタンスのレッスンであり、価格もインスタンスに基づいて変更されます
+
+選択したクラス。
+
+そして、ここにいくつかの価格設定パラメーターがあり、これらは時間あたりのコストのようなものです。
+
+はい。
+
+それは、どのように標準の人たちです。
+
+質問がある場合はお知らせください。それ以外の場合は、次の10の環境に移行できます。
+
+ある意味で柔軟性がありました19
+
+ありがとうございました。

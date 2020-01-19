@@ -1,0 +1,647 @@
+The fourth and final Casely which we have is this when it's time to send the case on this forum.
+
+When is web based company that help their users organize and manage their personnel were dropped using
+
+Web site and mobile application company also called cultivate an active social network that connects
+
+the user with the designers and retailers they monetize the service through advertising e-commerce reference
+
+and premium app model problem statement breast Pareene application has grown from pewter words in the
+
+Founders to several hundred servers and appliances in look at the data center so they call it data color
+
+that doesn't have the capacity of their infrastructure is now Inception for that Legations rapid growth
+
+because of the growth and company decides to innovate faster for when is committing to full migration
+
+out to the public cloud environment solution concept for the first phase of their migration.
+
+The cloud dress for when he is considering moving their development and test environment only.
+
+They are also considering building disaster recovery site because their current infrastructure at a
+
+single location they are not sure which component of their architecture they can migrate as the ease
+
+and which components they need to change before migrating them to the cloud business requirement.
+
+Build a reliable reproducible environment with skilled party or production.
+
+So they want the prototypical environment and thats where they are asking for disaster recovery site.
+
+They are Prolixin improve security by defining and lead into say top security and I think the access
+
+management best practices for the cloud improve business as gelati and speed up innovation through rapid
+
+provisioning of new resources analyzing optimize architecture for performance in the cloud migrate fully
+
+to the cloud.
+
+If all the requirements are met.
+
+The technical requirement evaluate and choose and are to mention framework for provisioning resources
+
+in the cloud support a lot of production environment to the cloud doing an emergency thats it.
+
+Thats what they call a side of our productions or services that can migrate to the cloud to say capacity
+
+use manage services wherever it is possible encrypt the data on the line.
+
+And so while in transit and widely placed which is store support multiple VPN connections between the
+
+production data center and cloud environment
+
+so you statement investors are concerned about their ability to scale and contain costs with our current
+
+infrastructure.
+
+They are also concerned that new competitors could use public cloud platform to upset their upfront
+
+investment in that it doesn't that you can think about purchasing the stewards and freeing them to focus
+
+on their being better features.
+
+So you do a segment we have invested heavily in current infrastructure but much or much of the equipment
+
+is approaching to end up its useful life.
+
+We are constantly waiting waiting for a new career to be racked up before we can start a new project
+
+our traffic patterns are highest in morning and weekend in the evenings during other times.
+
+80 percent of its capacity is sitting idle.
+
+So this is where we can think of scaling is within which required simple statement.
+
+Our capital expenditure is now exiting are quarterly projections migrating to cloud will likely cause
+
+an initial increase in spending because of the application many to retire return.
+
+But we expect fully transition before the next hardware information that's you can think of huge investments
+
+required.
+
+Again our total cost of ownership TCO analysis or why you will support cloud strategy between 30 to
+
+50 percent lower than our current model.
+
+What it does is infrastructure.
+
+They have a single that doesn't.
+
+That's what they said and they have given these components so they have one database which is secure.
+
+It really is applications that were Tom-Kat in the next four be contained Abaci been for data processing
+
+storage appliances scuzzy for VM host Fiber Channel 4 sign my school database is nice image storage
+
+logs and backup.
+
+But you heard open sparser was good analysis and real time print calculations so these out of the loop
+
+and Sparke implementations are clusters.
+
+MQ Series what my setting such a lot of weakish and events I thought was like Junkin continuous deployment
+
+monitoring bashin security scanners.
+
+So this is what they have as is infrastructure in their wounded Center.
+
+Let's go ahead and map these two.
+
+You know what we can add to the cloud environment if at all you don't want to put forward too much logic
+
+on it.
+
+So what is not given is the size of each other data network architecture etc. etc..
+
+But let's assume something and then move forward because cloud is skill level high and you can put forward
+
+scaling rules and then it will be scaled as when your data is increasing.
+
+That I can manage instances which you can think of and there is an opportunity as well so they are not
+
+asking this migration they are thinking that if at all there are applications which needs to be rewritten
+
+they are needed to do that.
+
+Their intent is use as is.
+
+Identify what we can do as is and then identify what we can and once.
+
+So let's go ahead and map as these components from your data center to GCP my ask you how Q Well which
+
+is that it from managed it a service database a relational database that was run GCP.
+
+You can go up to 10 terabytes instance that's the My School you have.
+
+You can use radios.
+
+Which is my favorite social club or caching.
+
+You can use radios you can install that in realtime audio you can have memcache which you can do it
+
+using app engine so it depends on how you want to utilize it.
+
+You can use compute service or you can use to open for applications that word Java on Microsoft is best
+
+you can use either app engine or a container engine.
+
+And then for Apache when you have a bit off flow which is what you mean implementation inside to see
+
+for storage you have a cistern disk or you out cloud storage fiber channels and you persist and basic
+
+and then you have for the majors logs and backups you have cloud storage for you to use.
+
+Apache sparks Rocky's implementation of open SPARC implementations you can use proc for your batch worsteds
+
+realtime processing MQ Series massaging Mortie biggish and any Rentz you can yours pops up Cloud pops
+
+up Azeez for your own analysis.
+
+If you don't want to modify and then you have multiple services from striked driver you can use a Jenkin's
+
+that you can put forward.
+
+You can create BPC you can have either Jenkins or for your continuous deployment you can do monitoring
+
+or logging.
+
+You can do I am security you can utilize that and then you can use security scanners better and host
+
+are not a gateway.
+
+Right.
+
+All of that so this is as it's mapping to there to be state architecture.
+
+Right.
+
+You can apply your own logic now how you can modify your applications to create you know the final architecture
+
+the details of all those is not given as an architecture for you to understand but you can put forward
+
+your own logic how you can design your solution considering all these things in the mind.
+
+I'm going to put forward my parts.
+
+I'm going to create another another.
+
+A video which will detail out dress for when in subsequent weeks you can think up in a weeks or two
+
+weeks time you will get that thing.
+
+But what I'm suggesting you to do is you can go ahead and design your own solution for these kids study
+
+and put forward your cards whether you need to rewrite some applications that they need to do some analysis
+
+and do some analysis on how the storage will be used and they are using nice for storage if you want
+
+to put forward that storage and to cloud storage.
+
+Definitely there is application changes which they need to do it but they are ready to do that.
+
+They are ready to write rewrite the applications if at all it is required.
+
+But if you look at the architecture is already in Java micro services you can utilize opinion and Coburn
+
+that is and that's the main thing which you have it for static Contini that you can use cloud storage
+
+or you can use any Unix in a virtual machine itself.
+
+I does all depends on how you design interact.
+
+So beyond this information if at all they are asking any questions they will put forward a more context
+
+for you to think for it how how you are designing a solution onto the cloud or whether they will be
+
+able to they will put forward our direct mapping.
+
+So you've got all you want to take my school onto the cloud or what services would you use it.
+
+That is the direct service related questions.
+
+AUDIENCE Right.
+
+So consider the case where you have created my Eskil instance onto the cloud for your disaster recovery.
+
+Right.
+
+How are you seeing the data between your own premises and Waterman to the cloud environment.
+
+What is that you needed between your data center and the GCP So what you need is you need to have a
+
+connection you know a big connection thats on that connection you can use to transport or synchronize
+
+the data between your on premises database instance to the production database instance you can have
+
+multiple replicas which will be used to access so you can put forward scaling thoughts on my skill how
+
+you can do it or what you can do it or whether you will use cloud spanner.
+
+So you will be pleased based on you know what it is that you want to use and how you can seeing the
+
+data between on premises and cloud how you can connect between those environment.
+
+The question will be asked.
+
+They are not available in you know Google school location.
+
+How what is your proposal for higher throughput.
+
+So the possible answer for you is either to use cloud VPN or go a partner if at all you cant go airpark
+
+not.
+
+You can use cloud VPN and many more tunnels to increase the throughput between the between the two network
+
+one is their data center and the cloud so you need to consider that to be state.
+
+But we put that at the time of migration you may have some application running inside your datacenter
+
+and some applications are more migrated to the cloud or that it has migrated to the cloud.
+
+How you can sync between these two how you can sing the images from on my system data to the cloud.
+
+How if there are terabytes of files onto the cloud how you upload those files into cloud storage if
+
+at all you decide to go with that with the cloud storage whether you can use the transport service or
+
+you need to use just come on because transport service is not capable of taking your data from your
+
+on premises storage to cloud transport services used only when you have a data inside the Google Cloud
+
+Storage and you want to move to another bucket or do you have data available in AWOS and you want to
+
+move the data from AWOS to GCP cloud storage.
+
+So those are the questions you need to think about it.
+
+What it will be iced I'm going to prepare some of the questions on these kids this as a question say
+
+its following to these radios but keep that in mind that these are the variations of questions which
+
+will be asked if there are any contentions using MQ Series right now how pops up will solve the problems.
+
+And I and I don't think of any.
+
+Yeah.
+
+They will ask a question based on I am right.
+
+So if there are multiple departments how you can put forward a controlled use and policies to have these
+
+computer compute instances use a service account insert data account to audience set up just keeping
+
+all the connections open to use it.
+
+You need to use bashin host if at all you know they will put forward a question within you how some
+
+instances which you dont want to give access from outside internet how you can protect you around instances.
+
+So thats where you have the option to use bashin was at the time of maintenance.
+
+You can have a to get to we not with thats where you can use navigate are to connect our interface between
+
+your internal data centers networks and cloud the instances internal instances.
+
+So think around all of those scenarios to digest yourself so once you are giving the exam you are prepared
+
+for all the scenarios.
+
+So that's what I would as is to these guys if you have any questions on the case studies or any other
+
+parts let me know.
+
+I'm going to put forward an additional tart's and as a summary what advancement which are happening
+
+as and when I'm getting it from the Google I have subscribed to in fact you can go ahead and subscribe
+
+for those issues and you will get a monthly update on the updates from the GCP or how you can actually
+
+keep yourself updated with the GCP changes.
+
+Thank you.
+
+4番目の最後のCaselyは、このフォーラムでケースを送信するときです。
+
+ユーザーが従業員を整理および管理するのに役立つWebベースの会社は、
+
+Webサイトおよびモバイルアプリケーション会社とも呼ばれ、接続するアクティブなソーシャルネットワークを開拓します
+
+デザイナーや小売業者を持つユーザーは、広告のeコマースリファレンスを通じてサービスを収益化します。
+
+プレミアムアプリモデルの問題声明乳房パレーヌアプリケーションは、
+
+数百のサーバーとアプライアンスの創設者はデータセンターを見てデータカラーと呼んでいます
+
+インフラストラクチャのキャパシティを持たないものは、現在、その公使館の急速な成長の始まりです
+
+成長のため、会社は完全な移行をいつ行うかについて、より迅速に革新することを決定しました
+
+パブリッククラウド環境ソリューションのコンセプトに移行して、移行の最初のフェーズに進みます。
+
+開発環境とテスト環境のみを移動することを検討しているときのクラウドドレス。
+
+彼らはまた、災害復旧サイトの構築を検討しています。
+
+単一の場所で、簡単に移行できるアーキテクチャのコンポーネントがわからない
+
+クラウドビジネス要件に移行する前に、どのコンポーネントを変更する必要があるか。
+
+熟練したパーティまたはプロダクションで信頼性の高い再現可能な環境を構築します。
+
+そのため、彼らはプロトタイプ環境と、災害復旧サイトを求めている環境を望んでいます。
+
+彼らはProlixinであると定義し、最高のセキュリティに導くことでセキュリティを向上させます
+
+クラウドの管理のベストプラクティスは、ジェラティとしてビジネスを改善し、迅速にイノベーションを加速します
+
+クラウドでのパフォーマンスを最適化するアーキテクチャを分析する新しいリソースのプロビジョニングが完全に移行します
+
+クラウドへ。
+
+すべての要件が満たされている場合。
+
+技術要件は、リソースをプロビジョニングするためのフレームワークを評価および選択し、言及するものです
+
+クラウドでは、クラウドに多くの実稼働環境をサポートし、クラウドを緊急事態にしています。
+
+クラウドに移行してキャパシティを示すことができるプロダクションまたはサービスの側面と呼ばれるもの
+
+回線上のデータを暗号化できる限り管理サービスを使用します。
+
+そのため、移動中に広く配置されているストアは、複数のVPN接続をサポートします
+
+本番データセンターとクラウド環境
+
+そのため、投資家は現在のコストでコストを調整および封じ込める能力を懸念しています。
+
+インフラ。
+
+また、新しい競合他社がパブリッククラウドプラットフォームを使用して先行投資を混乱させる可能性があることも懸念しています。
+
+スチュワードを購入し、それらを自由に集中させることを考えることができないという点での投資
+
+より良い機能であることについて。
+
+そこで、現在のインフラストラクチャに多額の投資を行ったが、大部分または大部分の機器を
+
+その耐用年数を終わらせるために近づいています。
+
+新しいプロジェクトを開始する前に、新しいキャリアが積み上げられるのを待っています。
+
+私たちの交通パターンは、午前中と週末の夕方が他の時間帯で最も高くなります。
+
+その容量の80％はアイドル状態です。
+
+したがって、これはスケーリングが必要な単純なステートメントの範囲内であると考えることができる場所です。
+
+資本支出は現在終了しており、クラウドへの移行が四半期ごとに予測するため、
+
+多くのアプリケーションが返品を引退するため、最初の支出が増加します。
+
+ただし、次のハードウェア情報が完全に移行する前に、大きな投資を考えることができます。
+
+必須。
+
+再度、総所有コストTCO分析、または30〜30のクラウド戦略をサポートする理由
+
+現在のモデルよりも50％低い。
+
+インフラストラクチャです。
+
+彼らにはないシングルがあります。
+
+それは彼らが言ったことであり、彼らは安全な1つのデータベースを持っているようにこれらのコンポーネントを与えました。
+
+それは本当に、次の4つのトム・キャットに含まれていたアプリケーションです。
+
+VMホストファイバーチャネル4に不慣れなストレージアプライアンスが私の学校のデータベースに署名するのは素晴らしいイメージストレージです
+
+ログとバックアップ。
+
+しかし、あなたはオープンスパースが良い分析とリアルタイムの印刷計算であると聞いたので、これらはループの外にあります
+
+Sparkeの実装はクラスターです。
+
+MQ Series私が設定したこのような多くの弱点や出来事は、Junkinの継続的な展開のようでした
+
+bashinセキュリティスキャナーの監視。
+
+これが彼らの負傷したセンターのインフラストラクチャーと同じです。
+
+先に進み、これら2つをマッピングしましょう。
+
+あまりにも多くのロジックを提出したくない場合、クラウド環境に追加できるものを知っています
+
+その上。
+
+与えられていないのは、お互いのデータネットワークアーキテクチャなどのサイズなどです。
+
+しかし、クラウドはスキルレベルが高く、前に進めることができるため、何かを仮定してから先に進みましょう。
+
+スケーリングルールを適用すると、データが増加するときにスケーリングされます。
+
+私はあなたが考えることができるインスタンスを管理することができ、機会があるのでそうではない
+
+この移行を依頼する場合、書き換えが必要なアプリケーションがあれば
+
+彼らはそれをするために必要です。
+
+彼らの意図はそのままの使用です。
+
+現状のままでできることを特定し、次にできることを一度だけ特定します。
+
+それでは、これらのコンポーネントをデータセンターからGCPにマッピングして、Q Q
+
+それは、GCPで実行されたサービスデータベースとリレーショナルデータベースの管理からです。
+
+所有しているMy Schoolである最大10テラバイトのインスタンスに移動できます。
+
+ラジオを使用できます。
+
+私のお気に入りのソーシャルクラブまたはキャッシングです。
+
+インストールできるラジオを使用できます。リアルタイムオーディオでは、memcacheを使用できます。
+
+アプリエンジンを使用するため、どのように利用したいかによって異なります。
+
+コンピューティングサービスを使用することも、MicrosoftでJavaという単語が最適なアプリケーション用に開くこともできます。
+
+アプリエンジンまたはコンテナエンジンのいずれかを使用できます。
+
+そして、Apacheの場合、フローが少しずれているので、内部の実装を確認します
+
+ストレージには、貯水槽ディスクがあるか、クラウドストレージファイバーチャネルがあり、永続的で基本的な
+
+そして、あなたはあなたが使用するクラウドストレージを持っているメジャーログとバックアップを持っています。
+
+ApacheはRockyのオープンSPARC実装の火付け役になります。バッチワーストにprocを使用できます
+
+リアルタイム処理MQ SeriesがMortie biggishとRentzをマッサージします。
+
+独自の分析のためにAzeezをセットアップします。
+
+変更したくない場合、ストライキされたドライバーから複数のサービスがある場合は、Jenkinの
+
+あなたが提唱できること。
+
+Jenkinsを持つことができるBPCを作成するか、継続的な展開のために監視を行うことができます
+
+またはロギング。
+
+あなたは私があなたがそれを利用できるセキュリティであることができ、それからあなたはセキュリティスキャナをより良く使用してホストすることができ
+
+ゲートウェイではありません。
+
+正しい。
+
+それがすべてです。これは、状態アーキテクチャーへのマッピングと同じです。
+
+正しい。
+
+これで、独自のロジックを適用して、アプリケーションを変更して最終的なアーキテクチャを知ることができます。
+
+これらすべての詳細は、理解するためのアーキテクチャとして提供されているわけではありませんが、提案することができます
+
+これらすべてを考慮してソリューションを設計する独自のロジック。
+
+部品を出します。
+
+別のものを作成します。
+
+次の週に1週間か2週間で考えられるように、ドレスの詳細を説明するビデオ
+
+週の時間はあなたがそのことを取得します。
+
+しかし、私があなたにすべきことは、あなたが先に進んで、これらの子供たちの学習のために独自のソリューションを設計できることです。
+
+分析を行う必要のあるアプリケーションを書き換える必要があるかどうかをカードに提示します
+
+そして、ストレージがどのように使用されるかについていくつかの分析を行います。
+
+そのストレージをクラウドストレージに転送します。
+
+アプリケーションを変更する必要があるのは間違いありませんが、その準備は整っています。
+
+必要な場合は、アプリケーションを書き直す準備ができています。
+
+ただし、すでにJavaマイクロサービスに含まれているアーキテクチャを見ると、意見とCoburnを利用できます。
+
+それがクラウドストレージを使用できる静的Continiの主な目的です
+
+または、仮想マシン自体で任意のUnixを使用できます。
+
+私はすべて、あなたがどのように相互作用するかによって異なります。
+
+したがって、この情報を超えて、彼らが質問をしている場合、彼らはより多くのコンテキストを提示します
+
+クラウド上でソリューションをどのように設計しているのか、それが実現するのかを考えてください
+
+彼らが私たちの直接マッピングを提示することができます。
+
+だからあなたは私の学校をクラウドに持ち込むために必要なものをすべて持っているか、あなたはそれをどのサービスを使用しますか？
+
+それが直接的なサービス関連の質問です。
+
+聴衆右。
+
+したがって、災害復旧のためにクラウド上に私のEskilインスタンスを作成した場合を考えてください。
+
+正しい。
+
+自社環境とWaterman間のデータをクラウド環境にどのように見ていますか。
+
+データセンターとGCPの間で必要なものは何ですか
+
+転送または同期に使用できる、その接続上にある大きな接続を知っている接続
+
+オンプレミスのデータベースインスタンスと、所有できる運用データベースインスタンスの間のデータ
+
+アクセスするために使用される複数のレプリカ。これにより、私のスキルにどのようにスケーリングするかを考えることができます。
+
+できること、できること、クラウドスパナを使用するかどうか。
+
+だから、あなたはそれがあなたがそれを使用したいものであり、あなたがどのように見ることができるかを知っていることに基づいて満足します
+
+オンプレミスとクラウド間のデータをどのようにそれらの環境間で接続できるか。
+
+質問がされます。
+
+Googleスクールの場所を知っている人には利用できません。
+
+より高いスループットの提案はどうですか。
+
+あなたのための可能な答えは、クラウドVPNを使用するか、エアパークに行くことができない場合はパートナーに行くことです
+
+ありません。
+
+クラウドVPNとさらに多くのトンネルを使用して、2つのネットワーク間のスループットを向上させることができます
+
+1つはデータセンターとクラウドであるため、それを状態と見なす必要があります。
+
+ただし、移行時には、データセンター内でいくつかのアプリケーションが実行されている可能性があるとしています
+
+一部のアプリケーションはクラウドにさらに移行されているか、クラウドに移行されています。
+
+これら2つのシステム間で同期する方法と、システムデータからクラウドに画像を歌う方法。
+
+クラウドにテラバイトのファイルがある場合、クラウドストレージにそれらのファイルをアップロードする方法
+
+トランスポートサービスを使用できるかどうかにかかわらず、クラウドストレージを使用することに決めます
+
+使用する必要があるのは、トランスポートサービスがデータを取得できないためです。
+
+Google Cloud内にデータがある場合にのみ使用されるオンプレミスストレージからクラウドトランスポートサービス
+
+ストレージと別のバケットに移動するか、AWOSで利用可能なデータがあり、
+
+データをAWOSからGCPクラウドストレージに移動します。
+
+これらはあなたがそれについて考える必要がある質問です。
+
+アイスがどうなるか、これらの子供たちに関する質問のいくつかを準備します。
+
+これらのラジオをフォローしていますが、これらは質問のバリエーションであることに留意してください
+
+現在ポップアップがどのように問題を解決するかについて、MQ Seriesを使用する競合があるかどうかを尋ねられます。
+
+そして、私も私も考えていません。
+
+うん。
+
+彼らは私が正しいことに基づいて質問をするでしょう。
+
+したがって、複数の部門がある場合、これらを管理するための管理された使用法とポリシーを提案する方法
+
+コンピューターコンピューティングインスタンスは、サービスアカウントを使用し、データアカウントをオーディエンスに挿入します。
+
+それを使用するためにすべての接続が開かれます。
+
+バシンホストを使用する必要がある
+
+インスタンスの周りを保護するために、インターネットの外部からアクセスを許可したくないインスタンス。
+
+バシンを使用するオプションがあるのは、メンテナンス時でした。
+
+ナビゲートを使用できるインターフェイスではなく、インターフェイスを接続するために、
+
+内部データセンターネットワークとインスタンス内部インスタンスのクラウド。
+
+そのため、これらのシナリオをすべて検討して、自分自身を消化してください。
+
+すべてのシナリオに対して。
+
+ケーススタディやその他の質問について質問がある場合は、それがこれらの人に私がすることです
+
+部品は私に知らせてください。
+
+追加のタルトを、要約として、どのような進歩が起こっているのかを紹介します
+
+そして、私がGoogleからそれを取得しているとき、私は実際に購読しています
+
+それらの問題については、GCPからの更新または実際の方法について、毎月更新を取得します。
+
+GCPの変更を常に最新の状態に保ちます。
+
+ありがとうございました。

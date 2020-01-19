@@ -1,0 +1,255 @@
+Cloud data flow.
+
+It's a Apache beam implementation in Google Cloud Platform.
+
+It's a managed service which you can use it.
+
+You can just you know deploy your pipeline inside Google Cloud Platform and it'll be executed.
+
+The resources will be provision for you and you don't have to manage the resources.
+
+Clouded the flaw is a part of database and storage service and it is a part of Big Data Services.
+
+We already saw data rock and which can be used for similar purpose.
+
+We are going to see some differences here but data flow is being implementation by beam implementation
+
+in Google Cloud Platform and it's a managed service.
+
+You can stream batch transform engine you know using Apache beam.
+
+There are multiple use cases which you can use the data flow for.
+
+You can have fraud detection in financial services.
+
+I order analytics in manufacturing healthcare and logistics personalized user experience in gaming.
+
+An extreme point of sale and segmentation analysis in the retail stores.
+
+High level architecture.
+
+Hire how you know your data flow fits inside the overall architecture or application stack.
+
+Are you how the sources like which ingest the data.
+
+Maybe it's like pops up data store arrow Kafka all those and the data will come in to format.
+
+One is that it is streamed inside you know the processing platform audit is batch uploaded inside the
+
+processing platform and you can think of data flow can be used for stream as well as Batch Input processing.
+
+And once the data is processed as the EDL then it can be you know in just 10 inside the Big Data Tables.
+
+Machine learning or b query and then it can be used for multiple other purposes like Data Warehouse
+
+predictor analysis catching and all right.
+
+So this is what architecture so it takes the data from stream out the batches and process the data and
+
+output it to any of the things some of the feature at the major resource management dynamic rebalancing
+
+reliable and consistent processing.
+
+Horizontal auto scaling unified programming model community driven innovation.
+
+In 2018 they have added shuffle while processing the data and you how you that you can actually run
+
+it locally or you can run it inside and JCP.
+
+So let's get back to the console and understand how you can create a bot you beam pipeline so I I'm
+
+here in data flow if I click on the data.
+
+So what I'm going to do is I'm going to throw out the cloud storage bucket location and the file
+
+so you can go to storage cloud storage and I can open this new tab.
+
+I already have one bucket created for us to use it in port and this particular file location I can click
+
+on this one.
+
+This is my location and I can say this is my input and then I can put downward file location to output
+
+slash
+
+output dirty sexy and I'm going to run the job
+
+temporary location I can just call and go to this input location as a temporary location or ship for
+
+and on the job.
+
+So the graph is still being analyzed.
+
+It is analyzing the grep
+
+and you can see the time how much it is taking.
+
+You can go to the jobs and you can see the job is running right now and it's been around 50 seconds.
+
+Looks like the job is finished successfully and you can see the statistics out here.
+
+Okay.
+
+Or it has been done.
+
+So the job is executed.
+
+You know it has used somewhere around total memory.
+
+Zero point zero seven six G.B. which is like 76 M.B. our persistent disk was attached to property G.B.
+
+total Billy time was five you G.B. per our CPO time was zero point zero to VCR use per hour an hour
+
+and that is I think uh somewhere around 1 plus minute and all of the job details if I go back and okay
+
+hold on so I can go to logs and I can see the detail log here okay.
+
+So when the job was started and which stapled to a started and all that.
+
+If I go to
+
+the bucket and output I can see these multiple output files here
+
+and I can go here and click on it.
+
+So that are these names and then there are word column for those particular names and it has created
+
+three files
+
+because the data was huge inside it.
+
+You can find you know all these three files link here.
+
+So that's the the data flow guys I can go and show you enough to Java or Python program I think but
+
+it is not required right now let's go in and move further and understand the next concept here in data
+
+flow.
+
+クラウドデータフロー。
+
+これは、Google Cloud PlatformのApacheビーム実装です。
+
+使用できるマネージドサービスです。
+
+パイプラインをGoogle Cloud Platform内にデプロイするだけで、実行されます。
+
+リソースはプロビジョニングされ、リソースを管理する必要はありません。
+
+Clouded theの欠陥は、データベースおよびストレージサービスの一部であり、Big Data Servicesの一部です。
+
+既にデータロックがあり、同様の目的に使用できます。
+
+ここでいくつかの違いを確認しますが、データフローはビーム実装によって実装されています
+
+Google Cloud Platformで管理されたサービスです。
+
+Apacheビームを使用して、既知のバッチ変換エンジンをストリーミングできます。
+
+データフローを使用できるユースケースは複数あります。
+
+金融サービスで不正を検出できます。
+
+私は、製造業のヘルスケアとロジスティクスの分析を注文し、ゲームのユーザーエクスペリエンスをパーソナライズしました。
+
+小売店での極端な販売時点およびセグメンテーション分析。
+
+高レベルのアーキテクチャ。
+
+データフローが全体的なアーキテクチャまたはアプリケーションスタック内に収まることをどのように知っているかを雇います。
+
+どのソースがどのデータを取り込むのが好きか。
+
+たぶん、データストアの矢印がカフカ表示され、それらすべてが表示され、データがフォーマットされます。
+
+1つは、処理プラットフォームの監査が内部でバッチアップロードされることがわかっているため、内部でストリーミングされることです。
+
+処理プラットフォームであり、データフローはバッチ入力処理だけでなくストリームにも使用できると考えることができます。
+
+そして、データがEDLとして処理されると、ビッグデータテーブル内のわずか10個で知ることができます。
+
+機械学習またはbクエリは、データウェアハウスなどの他の複数の目的に使用できます
+
+予測分析のキャッチと大丈夫。
+
+したがって、これはどのようなアーキテクチャであるため、データをバッチから取り出し、データを処理し、
+
+主要なリソース管理の動的リバランスの機能の一部に出力します
+
+信頼性の高い一貫した処理。
+
+水平自動スケーリング統一プログラミングモデルコミュニティ主導のイノベーション。
+
+2018年には、データの処理中にシャッフルが追加され、実際に実行できる方法が
+
+ローカルで実行するか、JCP内で実行できます。
+
+コンソールに戻って、パイプラインにビームを送るボットを作成する方法を理解しましょう。
+
+データをクリックすると、データフローに表示されます。
+
+それで、クラウドストレージバケットの場所とファイルを破棄します
+
+ストレージクラウドストレージに移動して、この新しいタブを開くことができます。
+
+ポートで使用するために1つのバケットが既に作成されており、この特定のファイルの場所をクリックできます
+
+これに。
+
+これは私の場所であり、これが私の入力であると言えます
+
+スラッシュ
+
+汚いセクシーを出力し、ジョブを実行します
+
+一時的な場所一時的な場所としてこの入力場所に電話して行くことができます
+
+そして仕事中。
+
+そのため、グラフはまだ分析中です。
+
+grepを分析しています
+
+どれだけ時間がかかっているかを見ることができます。
+
+ジョブに移動すると、ジョブが現在実行中であり、約50秒であることがわかります。
+
+ジョブが正常に終了したように見えます。ここで統計を確認できます。
+
+はい。
+
+または、行われました。
+
+したがって、ジョブが実行されます。
+
+合計メモリのどこかで使用されていることがわかります。
+
+ゼロ点ゼロ7 6 G.B. 76メガバイトのようなものです永続ディスクはプロパティG.Bにアタッチされました。
+
+ビリーの合計時間は5 GBです。私たちのCPO時間あたりは、1時間に1時間あたりVCRを使用するゼロポイントゼロでした
+
+それは私が戻って大丈夫ならどこか1プラス分と仕事の詳細のどこかで
+
+しばらくお待ちください。ログにアクセスして、ここで詳細ログを確認できます。
+
+そのため、ジョブが開始されたとき、それは開始されたものすべてにステープルで留められました。
+
+に行けば
+
+バケットと出力ここでこれらの複数の出力ファイルを見ることができます
+
+ここに行ってクリックします
+
+それがこれらの名前であり、それらの特定の名前の単語列があり、それが作成されました
+
+3つのファイル
+
+データが内部に巨大だったからです。
+
+これら3つのファイルすべてがここでリンクされていることがわかります。
+
+これが、私が思うに、JavaやPythonプログラムについて十分に説明できるデータフローの人たちです。
+
+今は必要ありません。さあ、さらに進んで、データの次の概念を理解しましょう。
+
+フロー。

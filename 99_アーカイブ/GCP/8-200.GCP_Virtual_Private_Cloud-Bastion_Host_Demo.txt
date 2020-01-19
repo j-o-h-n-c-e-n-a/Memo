@@ -1,0 +1,133 @@
+So in this particular day we are going to see the Bashan was how you can actually go out and set up
+
+the batching host.
+
+What I'm going to do is I'm going to use one of the words you can watch and which is all there in the
+
+existing which I created an existing lab and then I'm going to delete text from an IP address for that
+
+particular machine and then I'm going to create another virtual machine in the same subnet and I'm going
+
+to connect that.
+
+So this is just I just wanted to show you that how you can actually deliver text on an IP and how you
+
+can access it from outside.
+
+So I have these instances let me go ahead and delete the IP address.
+
+It's an IP address for this one BVM one then go to Hadeed.
+
+I had to delete the network tag which was allowing all traffic I had to Le-Turd
+
+IP address and then I'm going to say NSA would
+
+you say.
+
+Now you can see that for Pivi am one.
+
+There is no there is no external IP address so you can't actually connect this one from outside.
+
+Now without actually creating any other machine right now I can just you know tweet BVM to as a best
+
+host I can just call your.
+
+And then I can just do a search to find an IP address.
+
+It was so simple so you can actually do S-sh to the last name as well right.
+
+Be one
+
+so you are all being.
+
+So this is how you can set up the Bashan host.
+
+I hope you understand this one this is very quick and they might just try to utilize whatever I had
+
+created in your heart for this one as well.
+
+This concludes actually the virtual networking configuration.
+
+If you have any question on this one just let me know.
+
+Otherwise you can move to the next section in the next section.
+
+I'm going to cover interconnect.
+
+So if you have three infrastructure audio or on the Internet you want to connect to cloud platform for
+
+additional services how you can actually do the interconnect.
+
+That's what we are going to see it.
+
+In addition to that a VPN connection our DNS cloud DNS and cloud Sealion.
+
+Thank you.
+
+
+この特定の日に、私たちはバシャンが実際に外に出てセットアップする方法だったのを見るつもりです
+
+バッチ処理ホスト。
+
+私がやろうとしているのは、あなたが見ることができる言葉の1つを使用することです。
+
+既存の既存のラボを作成し、そのIPアドレスからテキストを削除します
+
+特定のマシンと同じサブネットに別の仮想マシンを作成します
+
+それを接続します。
+
+これは、IPで実際にテキストを配信する方法と、
+
+外部からアクセスできます。
+
+したがって、これらのインスタンスを使用して、先に進んでIPアドレスを削除します。
+
+これは、この1つのBVMのIPアドレスであり、Hadeedに移動します。
+
+Le-Turdへのすべてのトラフィックを許可していたネットワークタグを削除する必要がありました
+
+IPアドレスを入力すると、NSAが
+
+あなたは言う。
+
+これで、Piviが1つであることがわかります。
+
+外部IPアドレスはないため、外部から実際に接続することはできません。
+
+今、実際に他のマシンを作成せずに、BVMをツイートすることを知っていることができます。
+
+ホストに電話するだけです。
+
+そして、IPアドレスを見つけるための検索を行うことができます。
+
+とても簡単だったので、実際に姓に対してS-shを実行することもできます。
+
+一つになる
+
+あなたはすべての存在です。
+
+これがBashanホストのセットアップ方法です。
+
+これが非常に迅速であり、彼らが私が持っていたものを利用しようとするかもしれないことを理解してほしい
+
+これもあなたの心の中に作成されました。
+
+これで実際に仮想ネットワーク構成が終了します。
+
+これに関する質問があれば、私に知らせてください。
+
+それ以外の場合は、次のセクションの次のセクションに移動できます。
+
+相互接続について説明します。
+
+したがって、3つのインフラストラクチャオーディオがある場合、またはインターネット上でクラウドプラットフォームに接続する場合は、
+
+実際に相互接続を行うことができる追加サービス。
+
+それは私たちがそれを見るつもりです。
+
+それに加えて、VPN接続DNSクラウドDNSおよびクラウドSealion。
+
+ありがとうございました。
+

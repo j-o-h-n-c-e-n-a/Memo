@@ -1,0 +1,424 @@
+Storage classes.
+
+So what is storage class so storage class.
+
+Define what type of that particular file storage is and what is your actual requirement to store your
+
+data into cloud storage.
+
+And that is that is how it is defined.
+
+It is defined at the bucket level.
+
+If you go back there is a storage class and while creating you can define the storage class.
+
+So my second bucket won.
+
+Okay I shall continue and argue using a location and then I can define this storage class.
+
+So there are three storage classes.
+
+One is the sender.
+
+Second one is in the airline.
+
+Third one is the code.
+
+OK that is a monthly estimate as well based on the way you want to use it.
+
+OK but storage classes there are three storage classes standard but in standard also you have multiple
+
+options.
+
+Original multi regional dual regional limits to regions you want to store it okay for latency requirements.
+
+So these are the storage class that you have.
+
+OK and the way I have even kept the original context is a clear view as to how multi regional and regional
+
+storage class okay.
+
+So that's how we'll go ahead and start it.
+
+Mulder regional storage classes appropriate for storing the data that is frequently accessed hard object
+
+Mulder is storage class has most availability as compared to their storage classes.
+
+Mulder is no storage class is jury rendered.
+
+So it stores across two or more regions within five hundred miles apart from each other so anything
+
+happens to your the data center because of Cyclone tornado or any other thing.
+
+Those storage is 500 miles apart so this is one thing which you need to consider it used for streaming
+
+videos and music saving images our website content and it is optimized for end user latency as a multi
+
+regional storage.
+
+The second standard storage is the redundant within the region.
+
+It is a original lower cost than the multi regional Regional Studies classes appropriate for storing
+
+data used by GC instances.
+
+In addition to storing your data as the regional storage in the scenario can reduce network charges.
+
+So consider this case right.
+
+So why you want to use a regional storage class regional storage class.
+
+That's where you have a computing requirement and you want to process huge amount of data which is stored
+
+inside cloud storage and you want to avoid the entire region or region transport of data transport charges.
+
+That is where you want to store your storage near to your compute engine.
+
+Whether it is computing engine whether it is COBOL annuities or any of that processing unit you want
+
+to store the data near to your near to your computing platform and that is where you use regional storage.
+
+Good for genomic analysis data online scoring analytics for e-commerce and I would be integrated with
+
+data proc cloud a and be query.
+
+OK so this is the.
+
+This is how you can use it.
+
+Regional storage class near lane.
+
+This is again the next level of low cost storage for storing infrequently access data.
+
+And this is very important.
+
+So near lane is where you are not accessing it daily.
+
+Okay so near airline storage is better choice than the mall there isn't a lot that is notorious in narrow
+
+where you have slightly lower availability 30 days minimum duration.
+
+So this is just an availability durability still stays a lower Ninth okay for all storage classes a
+
+minimum 30 days storage duration and costs for data access is acceptable trade off for lower storage
+
+plus and this is where to eat at.
+
+So nearly in our tracks some data access fees and you'll need to do a math.
+
+Which one is useful for your for your processing needs or storage needs right on your land is ideal
+
+for your data read modifier average ones are less than once per month.
+
+Okay good.
+
+Appropriate for data backup disaster recovery and archival In fact disaster recovery we have different
+
+storage classes as well which is like call like this is much more cheaper and I would rather low cost
+
+storage which is core line storage class it is used for data archiving online backup and disaster recovery
+
+which you may or may not access the data.
+
+So keep this in mind.
+
+So you are storing the data.
+
+There is a good access fee if you want to access it.
+
+There is a fee but the storage cost is very very low as compared to any other storage plus and storage
+
+is the best choice for your data that you plan to access at least at most once a year.
+
+And due to slightly lower availability and 90 days is a commitment that is what do you need to make
+
+sure right.
+
+So you are storing the data for 90 days and that is the minimum commitment.
+
+So there is a commitment associated in core line storage good for data storage and frequently access
+
+data for legal or regulatory.
+
+There are some data which you stored it.
+
+You don't even know whether you need it or not.
+
+And there is a requirement from regulatory or compliance that you need to store or hold the data for
+
+five years right before you drink it off.
+
+That is what do you use call line storage
+
+some thoughts around the put object storage class.
+
+There is a storage class associated to an object as well.
+
+If I go back
+
+and if I go inside it.
+
+Okay so there is a storage class which is associated to your object.
+
+If you change the default storage class to some other you know storage class and if you upload the object
+
+afterwards are stored the object afterwards the default storage class will be considered done on works
+
+for all the new objects not existing objects existing objects will stay in the existing storage closet.
+
+If you don't specify the storage cloud at the time of a load it will take default storage class or a
+
+bucket location cancellation multi regional which is like ACR us.
+
+You handled all of these consolidation again goes back to the way you do it for the bucket some of the
+
+some of the high level ports around the numbers and this number might have changed or will be changed
+
+when you are looking at this video after say four months five months the price continuously gets reduced.
+
+Day in day out so probably you need to see that the only difference I want to show here is pull multi
+
+regional and regional which is like standard storage plus there is no access fee retrieval fee but there
+
+is access fee for any airline and core line so if you look at the price when you storing it and if you
+
+compare this with the regional it is a two second two cents per GP per month and call line point seven
+
+cents per GP per month.
+
+And if you take this or calculate the charges for full 1 year and you are accessing data once.
+
+What will happen is this will come to somewhere around 10 10 cents for a GP and this will come somewhere
+
+at around 20 cents per GP okay.
+
+And if you twenty four cents per GP and if you are accessing only once then the access fee which is
+
+like 5 cents per GP that will be applicable for that particular GP.
+
+So this will come some at around 15 cents for that particular one GP storage.
+
+So you need to do a map while choosing the storage class.
+
+There are some thoughts around it if at all you are using computational unit right.
+
+You should not store the data inside a multi multi regional you should do that into a regional storage
+
+class.
+
+That's it guys as a storage class in a high level order.
+
+If you have any questions let us know otherwise you can move to the next lecture that is lifecycle policy.
+
+
+ストレージクラス。
+
+それで、ストレージクラスとはストレージクラスです。
+
+特定のファイルストレージの種類と、保存する実際の要件を定義します
+
+クラウドストレージへのデータ。
+
+それがそれが定義されている方法です。
+
+バケットレベルで定義されます。
+
+戻ると、ストレージクラスがあり、作成中にストレージクラスを定義できます。
+
+だから私の2番目のバケツが勝ちました。
+
+さて、場所を使用して議論を続け、このストレージクラスを定義できます。
+
+したがって、3つのストレージクラスがあります。
+
+1つは送信者です。
+
+2つ目は航空会社です。
+
+3つ目はコードです。
+
+それはあなたがそれを使用したい方法に基づいて同様に毎月の見積もりです。
+
+わかりましたが、ストレージクラスには3つの標準のストレージクラスがありますが、標準では複数の
+
+オプション。
+
+レイテンシー要件のためにそれを保存したいリージョンに対する元のマルチリージョンデュアルリージョン制限。
+
+だから、これらはあなたが持っているストレージクラスです。
+
+わかりました。元のコンテキストを保持した方法は、複数の地域および地域
+
+ストレージクラスは大丈夫です。
+
+これが、私たちが先に進んで開始する方法です。
+
+頻繁にアクセスされるハードオブジェクトのデータを保存するのに適した、Mulder地域のストレージクラス
+
+モルダーは、ストレージクラスと比較して、可用性が最も高いストレージクラスです。
+
+モルダーは、class審レンダリングされたストレージクラスではありません。
+
+したがって、互いに500マイル以内にある2つ以上の地域にまたがって保存されます。
+
+サイクロンの竜巻などが原因で、データセンターに起こります。
+
+これらのストレージは500マイル離れているため、これはストリーミングに使用することを検討する必要があるものの1つです
+
+ビデオや音楽の保存は、当社のウェブサイトのコンテンツを画像化し、マルチユーザーとしてのエンドユーザーの待ち時間に最適化されています
+
+地域ストレージ。
+
+2番目の標準ストレージは、リージョン内の冗長です。
+
+保管に適した多地域の地域研究クラスよりも低コストです
+
+GCインスタンスが使用するデータ。
+
+シナリオの地域ストレージとしてデータを保存することに加えて、ネットワーク料金を削減できます。
+
+したがって、このケースは正しいと考えてください。
+
+それでは、なぜ地域ストレージクラスを使用したいのでしょうか。
+
+そこにコンピューティング要件があり、保存されている膨大な量のデータを処理したい場合
+
+クラウドストレージ内で、地域全体または地域ごとのデータ転送料金の転送を避けたい場合。
+
+これは、ストレージをコンピューティングエンジンの近くに保存する場所です。
+
+COBOL年金か、希望する処理ユニットのいずれかがコンピューティングエンジンかどうか
+
+コンピューティングプラットフォームに近い場所にデータを保存します。ここで、地域のストレージを使用します。
+
+eコマースのゲノム分析データのオンラインスコアリング分析に適しています。
+
+データプロシージャクラウドaおよびbeクエリ。
+
+OK、これがそうです。
+
+これがあなたの使い方です。
+
+車線付近の地域ストレージクラス。
+
+これもまた、アクセス頻度の低いデータを保存するための次のレベルの低コストストレージです。
+
+これは非常に重要です。
+
+そのため、車線の近くは、毎日アクセスしない場所です。
+
+さて、航空会社の保管場所の近くはモールよりも良い選択です。狭い場所で悪名高いものはあまりありません
+
+30日間の最短期間で可用性がわずかに低くなります。
+
+したがって、これは可用性の耐久性にすぎず、すべてのストレージクラスで第9下位レベルのままです。
+
+最低30日間の保存期間とデータアクセスのコストは、保存容量の低下と引き換えに許容されます
+
+プラス、これはで食べる場所です。
+
+そのため、ほぼトラックでデータアクセス料金が発生し、計算が必要になります。
+
+どちらがあなたの土地の処理ニーズまたはストレージニーズに適しているかは理想的です
+
+データ読み取り修飾子の平均値は月に1回未満です。
+
+いいよ
+
+データバックアップの災害復旧とアーカイブに適切
+
+このような呼び出しのようなストレージクラスもはるかに安く、かなり低コストになります
+
+コアラインストレージクラスであるストレージは、データアーカイブのオンラインバックアップと災害復旧に使用されます
+
+データにアクセスする場合としない場合があります。
+
+そのため、これに留意してください。
+
+したがって、データを保存しています。
+
+アクセスしたい場合は、良いアクセス料金がかかります。
+
+有料ですが、ストレージコストは他のストレージプラスおよびストレージと比較して非常に低いです
+
+少なくとも年に1回はアクセスする予定のデータに最適です。
+
+可用性がわずかに低く、90日間がコミットメントであるため、何をする必要がありますか
+
+確かに正しい。
+
+したがって、データを90日間保存し、それが最小コミットメントです。
+
+したがって、データストレージと頻繁なアクセスに適したコアラインストレージに関連するコミットメントがあります
+
+法的または規制に関するデータ。
+
+保存したデータがいくつかあります。
+
+あなたはそれが必要かどうかさえ知りません。
+
+また、規制またはコンプライアンスから、データを保存または保持する必要がある要件があります
+
+飲む5年前。
+
+それはあなたがコールラインストレージを使用するものです
+
+putオブジェクトストレージクラスに関するいくつかの考え。
+
+オブジェクトに関連付けられたストレージクラスもあります。
+
+戻ったら
+
+そして中に入ったら
+
+オブジェクトに関連付けられているストレージクラスがあります。
+
+デフォルトのストレージクラスを別のストレージクラスに変更する場合、ストレージクラスを知っており、オブジェクトをアップロードする場合
+
+後でオブジェクトが保存されます。その後、デフォルトのストレージクラスが作業中に完了したと見なされます
+
+既存のオブジェクトではなく、すべての新しいオブジェクトについて、既存のオブジェクトは既存のストレージクローゼットにとどまります。
+
+ロード時にストレージクラウドを指定しない場合、デフォルトのストレージクラスまたは
+
+ACR usのようなバケットロケーションキャンセルマルチリージョナル。
+
+これらの統合をすべて処理したのは、バケットの一部の処理方法に戻ります。
+
+番号の周りの高レベルポートの一部と、この番号は変更されているか、変更される可能性があります
+
+たとえば、4か月5か月後にこのビデオを見ると、価格は継続的に低下しています。
+
+一日中毎日なので、おそらくここで見せたい唯一の違いはプルマルチであることを確認する必要があります
+
+標準ストレージのような地域および地域に加えて、アクセス料金の取得料金はありませんが、
+
+航空会社とコアラインのアクセス料金ですので、保管時に価格を見て、
+
+これを地域と比較すると、毎月GPごとに2秒2セントで、電話回線ポイント7
+
+1か月あたりGPあたりのセント。
+
+そして、あなたがこれを取るか、完全な1年間の料金を計算し、あなたが一度データにアクセスしている場合。
+
+起こることは、これがGPの10 10セント前後のどこかに来て、これがどこかに来るということです
+
+GPあたり約20セントで大丈夫です。
+
+GPあたり24セントで、一度だけアクセスする場合は、アクセス料金は
+
+その特定のGPに適用されるGPあたり5セントなど。
+
+したがって、これはその特定の1つのGPストレージで約15セントになります。
+
+そのため、ストレージクラスを選択するときにマップを作成する必要があります。
+
+計算単位を正しく使用している場合は、いくつかの考えがあります。
+
+データをマルチマルチリージョナル内に保存しないでください。それをリージョナルストレージに保存する必要があります。
+
+クラス。
+
+それは、ストレージクラスとしての高レベルの順序です。
+
+質問がある場合はお知らせください。それ以外の場合は、ライフサイクルポリシーである次の講義に進むことができます。

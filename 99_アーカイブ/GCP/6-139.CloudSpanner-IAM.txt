@@ -1,0 +1,103 @@
+Identity and access management includes Spanish so close by not as a instance you can say operate the
+
+instance you can create instance you can delete instance you can get the list of instances that isn't
+
+intensely well so there are permissions which are at the instance level there are permissions which
+
+are at the instance operation level.
+
+There are permissions which are to add data was creation like whether you can create whether you can
+
+least update database you can write the data you can get the metadata of three debates right.
+
+So those are like a database level permissions and then you can have data as Operation list data database
+
+operation get that that was Operation cancel so these are like operations on the right I was like whether
+
+their database is getting created with they.
+
+I was getting deleted and all that and then you can create sessions and those sessions means you are
+
+connecting actually connecting to your database to write the data to use the data so the rules.
+
+If you look at in in Cloud Spanner does it all sort of like a bundle of one or more permissions.
+
+And we saw that we know that right.
+
+So in the same way you have at the middle it's a person all you can say you can go ahead and create
+
+the database you can create the database country instance you can create spanner instance you can create
+
+the instance configuration you can change the configuration of existing instance you can add the nodes
+
+inside the Cloud Spanner so that is the person you have a database I mean who can create the data but
+
+not modify the Cloud Spanner if that person does not have access to it nobody can create the data database
+
+manager that I was create the table inside the database and then you will need to read the is like whether
+
+it is you know application data if you are writing application to redo the database then you can have
+
+a database reader that I was writer right and then data was user and you can have you when we were late
+
+or who and just see the database see the data inside the tables so that is the we.
+
+So it says it's a typical data was permissions I would say nothing special in it but when we look at
+
+I am policies for one particular service right you need to look at what are the bits and pieces of that
+
+particular service and you know to think about the permissions according to it that's it guys as the
+
+clouds final if you have any questions let us know otherwise you can move to the next lecture.
+
+アイデンティティおよびアクセス管理にはスペイン語が含まれているため、インスタンスとしてではなく、
+
+インスタンスを作成することができますインスタンスを削除することができますインスタンスではないインスタンスのリストを取得することができます
+
+非常によくあるので、インスタンスレベルであるアクセス許可があります
+
+インスタンス操作レベルです。
+
+あなたができるかどうかを作成できるかどうかのような作成であったデータを追加する権限があります
+
+データベースを更新するだけで、3つの議論のメタデータを正しく取得できるデータを書き込むことができます。
+
+これらはデータベースレベルの権限のようなもので、操作リストデータデータベースとしてデータを取得できます
+
+操作はそれが操作キャンセルであったことを取得しますので、これらは右側の操作のようなものです
+
+彼らのデータベースが作成されています。
+
+私は削除されていましたが、それからあなたはセッションを作成することができ、それらのセッションはあなたがいることを意味します
+
+実際に接続してデータベースに接続し、データを記述してデータを使用するようにします。
+
+Cloud Spannerで見ると、1つ以上の権限のバンドルのように機能します。
+
+そして、我々はその権利を知っていることがわかりました。
+
+だからあなたが真ん中にいるのと同じように、それはあなたが先に進み、創造することができると言うことができるすべての人です
+
+作成できるデータベース作成できるデータベースの国インスタンス作成できるスパナインスタンス
+
+既存のインスタンスの構成を変更できるインスタンス構成、ノードを追加できます
+
+Cloud Spannerの内部にいるので、データベースを持っている人がデータを作成できますが、
+
+その人がアクセスできない場合、Cloud Spannerを変更しないでください。誰もデータデータベースを作成できません。
+
+私がデータベース内にテーブルを作成し、それからあなたが読む必要があるであろうマネージャー
+
+データベースをやり直すアプリケーションを作成している場合は、アプリケーションデータを知っている必要があります。
+
+私がライターであり、データがユーザーだったデータベースリーダー
+
+または、誰がデータベースを見るだけでテーブル内のデータが見えるので、それが私たちです。
+
+だから、それは典型的なデータは許可だったと言っていますが、特別なことは何も言わないでしょうが、
+
+私はあなたがその細かな部分を見る必要がある特定のサービス権のポリシーです
+
+特定のサービスと、それに応じて許可について考えることを知っています
+
+質問がある場合は、最終的なクラウドをお知らせください。それ以外の場合は、次の講義に進むことができます。

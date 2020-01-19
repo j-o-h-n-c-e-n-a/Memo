@@ -1,0 +1,129 @@
+In this section let's call and understand what our JCP interfaces which are available for you to use
+
+it.
+
+This interfaces which means you how you can interact with the Google Cloud Platform using which tools
+
+so the first one is workflow plans.
+
+And this is the UI or the front end which is where B Why are the mobile app UI using which you can interact
+
+with the Google Cloud Platform.
+
+We are going to get into details into this section but that's the first one.
+
+The second one is command line interface where you use your cloud command or be query command or GSA
+
+tool command.
+
+So that is your command line interface.
+
+And in that command line interface you have two different utilities which you can use it on the first
+
+one is cloud is the key.
+
+And the second one is cloud shell and the third one is APL libraries and these are the restrained points
+
+which you can use it to call from your programming interface.
+
+You can include that into Python or Java or any other programming interface or you can use the postman
+
+to hit this point.
+
+You are allowed you can use the simple utility called called Girl to interface with the Google Cloud
+
+Platform.
+
+So this is typically API and primarily used inside your programming language so if you divide the whole
+
+aspect into the least the first one is the console console log in has a mobile app.
+
+So that is again another interface.
+
+There are pluses and minuses in this too.
+
+The third one is cloud shell.
+
+Again the interface command line interface is decay command line interface.
+
+But this gets installed on your laptop computer and we need to actually go through the installation
+
+step for as we can we are going to do that in the next section.
+
+The cloud API and that's the command line interface.
+
+It is.
+
+You cannot just interact with cloud API using your command line.
+
+You can do that with the cloud utility but that's not the whole purpose of cloud API.
+
+So let's go and understand the cloud console in the next chapter.
+
+Thanks.
+
+このセクションでは、使用できるJCPインターフェースを呼び出して理解しましょう
+
+それ。
+
+このインターフェースは、どのツールを使用してGoogle Cloud Platformとやり取りできるかを意味します
+
+最初のものはワークフロー計画です。
+
+そして、これがUIまたはフロントエンドです。ここでBを使用できます。
+
+Google Cloud Platformで。
+
+このセクションの詳細を説明しますが、それが最初のセクションです。
+
+2番目は、クラウドコマンドを使用するか、クエリコマンドまたはGSAになるコマンドラインインターフェイスです
+
+ツールコマンド。
+
+これがコマンドラインインターフェイスです。
+
+そして、そのコマンドラインインターフェースには、最初に使用できる2つの異なるユーティリティがあります
+
+1つはクラウドが鍵です。
+
+そして2つ目はクラウドシェルであり、3つ目はAPLライブラリであり、これらは制限されたポイントです
+
+これを使用して、プログラミングインターフェイスから呼び出すことができます。
+
+これをPythonまたはJavaまたは他のプログラミングインターフェイスに含めるか、郵便配達員を使用できます。
+
+このポイントをヒットします。
+
+Girlというシンプルなユーティリティを使用して、Googleクラウドとのインターフェースをとることができます。
+
+プラットホーム。
+
+したがって、これは通常APIであり、主にプログラミング言語内で使用されるため、全体を分割する場合
+
+少なくとも最初の1つの側面は、コンソールコンソールログインがモバイルアプリを持っていることです。
+
+これもまた別のインターフェースです。
+
+これにもプラスとマイナスがあります。
+
+3番目はクラウドシェルです。
+
+ここでも、インターフェイスのコマンドラインインターフェイスは減衰コマンドラインインターフェイスです。
+
+しかし、これはラップトップコンピューターにインストールされ、実際にインストールを実行する必要があります
+
+次のセクションでそれを行うつもりです。
+
+クラウドAPI。それがコマンドラインインターフェイスです。
+
+そうです。
+
+コマンドラインを使用してクラウドAPIと対話することはできません。
+
+クラウドユーティリティを使用してそれを行うことができますが、それはクラウドAPIの目的全体ではありません。
+
+次の章では、クラウドコンソールについて説明します。
+
+ありがとう。
+
+

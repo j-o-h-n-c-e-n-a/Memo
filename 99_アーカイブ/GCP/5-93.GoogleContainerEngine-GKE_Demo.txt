@@ -1,0 +1,760 @@
+So let's go ahead and get started on the console so I'm in control right now.
+
+So this is kind of another engine and another engine buster.
+
+And there is no cholesterol as such which is configured.
+
+So everything is empty
+
+right.
+
+I can go ahead and create the glister from here.
+
+Do you know what.
+
+Let me go ahead so you can actually go ahead and create a list you can select so on are
+
+the words and you can actually get selected for auto repair and or you know for some thing some of the
+
+items which we saw that as he does one point say one three are doubles what is required.
+
+So you can actually select who you can choose.
+
+What is the content of the images.
+
+You can define the size you can enable disable or to upgrade.
+
+You can enable this with no repair.
+
+I don't want to do anything right now because I will not be able to get where they will put everything.
+
+And then you can you will be able to have labels you can select additional zones if at all it is like
+
+wired or you want it.
+
+You can do dictation whether it is you want to enable basic starting action or not.
+
+You can have a client certificate you can define it with it are just killing on or off you on playing
+
+table and or
+
+boot disk you can actually define whether it is how much you want localizes the it is an optional maximum
+
+number of North Sperber pool or not pool for that before not pool containers you can actually find the
+
+controllers address if you have it.
+
+You can define M.R. radiation for the network user info compute engine what you want to read write stories
+
+you want.
+
+The EPA has access to all of that so you can choose all of those options to create the cluster.
+
+You can go to the command line you can see the rest API call for whatever options I have selected.
+
+And at the same time you can go to the command line and then fire this particular Come on.
+
+But let me go ahead and do the simple way.
+
+To create to clear the cluster and be polite application.
+
+So I have a simple application to deploy in the cluster the simple application is hello up.
+
+This is you can see up and then we are Delko file as well.
+
+Right.
+
+So it says there we want to use nor the docket file nor image on the internal.
+
+So the IP address is this one.
+
+And then this is the application.
+
+So if you look at that location and the come on this node then this particular application.
+
+And this is simple command.
+
+And if you know Dr. Ali you can exhibit only one command which will end in the background.
+
+So this will actually was this a starter on the application in the background that will start.
+
+Let us look at what is this that we're Rajiv's
+
+more sort of that or yes.
+
+It's a very simple it's true you can say call which takes the call which is like Slash.
+
+And for that slightly It provides you look at but it is for everything it provides you with how open
+
+it is.
+
+That is what the software is and it is in Bellport is a deity right.
+
+It is invited to import.
+
+So I'll not get into too much detail here but I just wanted to say that you will need this doctor.
+
+I can and these particular files and the resources for this particular section and then this is the
+
+application which we want to run inside the internet.
+
+So let's go ahead and first export the project id as a of individual which is required
+
+so I would just
+
+write.
+
+So if I see cool.
+
+Love Project my NIV it is giving me Diom cloud training which is in here.
+
+Let me go ahead and build this particular doctor.
+
+So I have this come on duty for
+
+already already.
+
+So I say all the time.
+
+So that is really now.
+
+I can actually see that
+
+doctored image right.
+
+This particular this particular image which I have created right now.
+
+Yeah.
+
+And then I can actually create a cluster sort of cluster using the cloud come on
+
+containers
+
+cluster I want to create a cluster create say hello
+
+look let's turn.
+
+And I want number up north
+
+Oh OK.
+
+So what's wrong in the come on.
+
+I want cloud glass screed.
+
+Moton.
+
+OK.
+
+So I need to actually said that SORN are to create this particular class.
+
+Let me
+
+just create one first
+
+let me say this on
+
+and then play it again.
+
+Come on.
+
+So the cluster is being created.
+
+So the number of notes which we are actually configuring it right now you can go in and change that
+
+afterwards and effect only one type.
+
+You can change the replication factor as well but we'll see that in subsequent D-Mo.
+
+it's going to take some time.
+
+Someone that's just
+
+all of the elements are as deferred here because we are not ask for any other part I want to sort of
+
+you can actually see it here is.
+
+So the default for these options will be selected
+
+that is good.
+
+Yeah you can see the list of these being created
+
+and you can act silly.
+
+You should be able to see the number of nodes here into computing.
+
+Let me see if that information is available right now.
+
+See
+
+the north side of being charactered now.
+
+So for North Pole it will create an instance a group and so it will manage the resource or similar resource
+
+you can see.
+
+And this is the Nord the instance click through if you click on this particular instance then click.
+
+You can find what it is configuring the in the back and right.
+
+So this is the same configuration which you can actually see that in a clustered information.
+
+So the instance group is literally you can see you can relate this to the pool and that's how we can
+
+manage our different kind of instances in different notables and to the north are created.
+
+Now let's go to container engine.
+
+It's hung
+
+should be just fine.
+
+Let me go to another engine and then Lester and come on.
+
+So I think our cluster is ready to deploy.
+
+Let me go and see
+
+the note in full right.
+
+So let me just call it.
+
+So we have seen the files file file and that is I want to deploy this daquiri me just I want to play
+
+this particularly image into the cluster just to see you
+
+time
+
+let me push this particular.
+
+So this is the image which we want to push it right.
+
+This one can actually directly copy paste the image here.
+
+But I had this really well to come on.
+
+So this has been done it is pushed image.
+
+And let me go ahead.
+
+And on
+
+this particular part no application actually
+
+gets done.
+
+So you see it and good parts
+
+even though the parts are deployed and deployed right now.
+
+But it is not ultimately available to the external world so what do we need to do to make it available.
+
+We need to expose
+
+expose it in the form of some of these
+
+services exposed.
+
+You can see safety or get.
+
+That was so services exposed now you can actually go and see there's no IP address yet for this one
+
+so we'll wait for that IP address to come so that we can you know see this with
+
+still pending.
+
+So the number of course plus her name is default.
+
+So the wind is reflected here.
+
+Does it help you.
+
+So it's either that you can actually take this one IP address or you can directly get to it.
+
+Can you hear see local That is it appears which was there in the world was there in the obvious way
+
+application for story parts.
+
+How many parts are there.
+
+It's one for
+
+let me go ahead.
+
+And so you can actually go ahead and change the replication of the parts and the way you do that is
+
+come on cube steel skill
+
+deployment
+
+Hello web.
+
+And what you want to do.
+
+Kiplagat
+
+replug us.
+
+So currently it's one and we want to make it to three let's get parts so you can actually see this is
+
+three seconds older.
+
+And this particular part is newly added to the cluster because we said that you know we want to hear
+
+it and you can clearly see that for these two it is not really it should be really in some moment it's
+
+really you know to so the traffic.
+
+Unfortunately we will not be able to do it right now.
+
+That particular aspect because all the content in those particular containers are the same thing.
+
+So what it would require a response which you get it it may be any of those particular parts.
+
+So that's that you can actually go ahead and reduce that applications to one
+
+lignin and it's still selling
+
+and you can see it is being dominated right
+
+services only one.
+
+So there is no other service which is for this particular halo web app.
+
+It's really used to one that for all we were off.
+
+You can say the more for the container engine will contain everything but hold on let me go ahead and
+
+delete this particular cluster.
+
+If I delete this cluster
+
+you can free up all the resources which are which were required for these particular clusters.
+
+Let me go to the machines.
+
+It's getting terminated.
+
+You can see that this is in a nutshell what it's what it is giving you is the platform wherein you just
+
+ask for the cluster the resource for that particular platform is getting provisioned axiomatically.
+
+So the instance template is creating created for you know pool either multiple or pools then run multiple
+
+instances group which will be created to manage them independently and then the instances are created
+
+for each and every node in the cluster.
+
+So and those are managed seamlessly.
+
+You don't have to you know install the software or you don't have to manage it working in between.
+
+Manage the resources on your own.
+
+It is everything is managed by the container engine.
+
+So it is getting you know it is getting disconnected or Peter
+
+waiting for all the notes to go down.
+
+Studies being done
+
+see the glasses literally.
+
+There is no service as such.
+
+There is no computing services provisioned.
+
+You can see instances group gone instance template is also on that it for this particular team of guys.
+
+If we have any questions on this Catinat engine demo I'm going to add these files to the resource section
+
+of the training.
+
+But if you have any questions on this one let me know.
+
+That was more to the next section.
+
+Thank you.
+
+
+それでは、コンソールを開始して、すぐにコントロールできるようにしましょう。
+
+これは別のエンジンと別のエンジンバスターの一種です。
+
+そして、コレステロール自体は構成されていません。
+
+すべてが空です
+
+正しい。
+
+ここからグリスターを作成できます。
+
+知っていますか。
+
+先に進んで、実際に先に進み、選択できるリストを作成できるようにします
+
+言葉とあなたは実際に自動修復のために選択されることができます、またはあなたはいくつかのことのためにいくつかのことを知っています
+
+私たちが見たアイテムは、彼が1つのポイントを行うと、必要なものが1つ3つであると言います。
+
+したがって、実際に選択できる人を選択できます。
+
+画像の内容は何ですか。
+
+無効化またはアップグレードするために有効化できるサイズを定義できます。
+
+修復せずにこれを有効にできます。
+
+私は彼らがすべてを置く場所を得ることができないので、私は今何もしたくありません。
+
+そして、あなたはあなたがそれが次のようであれば、追加のゾーンを選択できるラベルを持つことができるようになります
+
+有線またはあなたがそれをしたい。
+
+基本的な開始アクションを有効にするかどうかを口述することができます。
+
+あなたはそれを定義することができるクライアント証明書を持つことができます
+
+テーブルと
+
+起動ディスクは、実際にローカライズする量であるかどうかを定義できます。オプションの最大値です
+
+North Sperberプールの数、またはプールでないコンテナの数は、実際に見つけることができます
+
+コントローラーがある場合はアドレスします。
+
+ネットワークユーザー情報計算エンジンのM.R.放射を定義して、読みたいものを書きます
+
+あなたが欲しい。
+
+EPAはこれらすべてにアクセスできるため、これらのオプションをすべて選択してクラスターを作成できます。
+
+コマンドラインに移動すると、選択したオプションの残りのAPI呼び出しを確認できます。
+
+そして同時に、コマンドラインに移動して、この特定のコマンドを実行できます。
+
+しかし、先に進んで簡単な方法を実行させてください。
+
+クラスターをクリアして丁寧なアプリケーションにするために作成します。
+
+そのため、クラスターにデプロイする単純なアプリケーションがあります。単純なアプリケーションはこんにちは。
+
+これはあなたが見ることができ、それから私たちも同様にDelkoファイルです。
+
+正しい。
+
+そこで、使用したいのはドケットファイルでも内部の画像でもないということです。
+
+したがって、IPアドレスはこれです。
+
+そして、これがアプリケーションです。
+
+したがって、その場所を見て、このノードにアクセスすると、この特定のアプリケーションになります。
+
+そして、これは簡単なコマンドです。
+
+アリ博士を知っている場合、バックグラウンドで終了するコマンドを1つだけ表示できます。
+
+したがって、これは実際に、バックグラウンドで起動するアプリケーションのスターターになります。
+
+私たちがラジブだということを見てみましょう
+
+それ以上の種類かはい。
+
+それは非常に単純で、スラッシュのような呼び出しを行う呼び出しを言うことができるのは事実です。
+
+そしてそれについては少し見ますが、それはあなたが提供するすべてのもののためです
+
+そうです。
+
+それがソフトウェアであり、ベルポートにあるのは神の権利です。
+
+インポートに招待されています。
+
+したがって、ここではあまり詳しく説明しませんが、この医者が必要になると言いたいだけです。
+
+この特定のセクションの特定のファイルとリソースを作成できます。これが
+
+インターネット内で実行したいアプリケーション。
+
+それでは、まずプロジェクトIDを個人としてエクスポートします。
+
+だから私はただ
+
+書く。
+
+かっこいいと思ったら。
+
+私のNIVプロジェクトを愛して、ここにあるDiomクラウドトレーニングを提供しています。
+
+先に進んで、この特定の医者を作りましょう。
+
+だから私はこれを任務に持っています
+
+もうすでに。
+
+だから私はいつも言います。
+
+それが今です。
+
+私は実際にそれを見ることができます
+
+画像を修正しました。
+
+私が今作成したこの特定の特定の画像。
+
+うん。
+
+そして、実際にクラウドを使用してクラスターのようなクラスターを作成できます
+
+コンテナ
+
+クラスタークラスターを作成したい
+
+見てみましょう。
+
+そして、私は番号を北にしたい
+
+わかった
+
+では、何が悪いのでしょう。
+
+雲ガラスのスクリードが欲しい。
+
+モトン。
+
+OK。
+
+したがって、実際にSORNはこの特定のクラスを作成することになると言う必要があります。
+
+私にさせて
+
+最初に作成するだけです
+
+これを言わせて
+
+もう一度再生します。
+
+いい加減にして。
+
+そのため、クラスターが作成されています。
+
+そのため、現在実際に設定しているノートの数を入力して変更できます
+
+その後、1つのタイプのみに影響します。
+
+複製係数も変更できますが、これは後続のD-Moで確認できます。
+
+しばらく時間がかかります。
+
+ただ誰か
+
+すべての要素はここで延期されています
+
+実際に見ることができます。
+
+したがって、これらのオプションのデフォルトが選択されます
+
+それはいいです。
+
+ええ、作成されているこれらのリストを見ることができます
+
+そして、あなたは愚かな行動をすることができます。
+
+ここでコンピューティングのノード数を確認できるはずです。
+
+その情報がすぐに利用できるかどうかを見てみましょう。
+
+見る
+
+今、特徴付けられている北側。
+
+したがって、North Poleの場合、インスタンスをグループに作成し、リソースまたは同様のリソースを管理します
+
+あなたが見ることができます。
+
+これは、この特定のインスタンスをクリックしてクリックすると、インスタンスがクリックするNordです。
+
+あなたはそれが何を設定しているかを後ろと右で見つけることができます。
+
+したがって、これはクラスター化された情報で実際に見ることができるのと同じ構成です。
+
+インスタンスグループは文字通り、これをプールに関連付けることができることがわかります。
+
+さまざまな種類のインスタンスをさまざまな著名人で管理し、北に作成します。
+
+それでは、コンテナエンジンに行きましょう。
+
+ハングしました
+
+うまくいくはずです。
+
+別のエンジンに行き、次にレスターに行きましょう。
+
+したがって、クラスターはデプロイする準備ができていると思います。
+
+見に行かせて
+
+完全に右のノート。
+
+それで、私はそれをただ電話させてください。
+
+ファイルファイルファイルを見てきました。これは、このdaquiriを展開したいだけです。
+
+あなたに会うためだけに特にこの画像をクラスタに
+
+時間
+
+これをプッシュさせてください。
+
+だから、これは私たちがそれを正しくプッシュしたいイメージです。
+
+これは実際にここに画像を直接コピーして貼り付けることができます。
+
+しかし、これは本当にうまくいきました。
+
+これが行われたので、画像がプッシュされます。
+
+先に進みましょう。
+
+そして
+
+この特定の部分は実際には適用されません
+
+完了します。
+
+だから、あなたはそれと良い部分を見る
+
+パーツが今すぐデプロイおよびデプロイされていても。
+
+しかし、最終的には外部の世界で利用できるわけではないので、利用可能にするために何をする必要がありますか。
+
+公開する必要があります
+
+これらのいくつかの形で公開する
+
+サービスが公開されました。
+
+あなたは安全を見るか得ることができます。
+
+これは公開されたサービスなので、実際にアクセスして、このIPアドレスのIPアドレスがまだないことを確認できます
+
+そのIPアドレスが来るのを待って、これがわかるようにします
+
+まだ保留中です。
+
+したがって、コース数と彼女の名前がデフォルトです。
+
+風がここに反映されます。
+
+それはあなたを助けますか。
+
+したがって、実際にこの1つのIPアドレスを取得するか、直接取得することができます。
+
+地元の人の声が聞こえますか？それは、世界にあったものが明白な方法であったように見えます
+
+ストーリーパーツのアプリケーション。
+
+部品はいくつありますか。
+
+それは
+
+先に行かせてください。
+
+そして、実際に部品の複製を変更し、その方法を変更することができます
+
+キューブスチールスキル
+
+配備
+
+こんにちはウェブ。
+
+そして、あなたがやりたいこと。
+
+キプラガト
+
+再接続してください。
+
+ですから、現在は1つです。実際にこれを確認できるように、3つに分けて部品を取得しましょう。
+
+3秒古い。
+
+そして、この特定の部分がクラスタに新しく追加されました
+
+それと、これらの2つについては本当にそうではないことをはっきりと見ることができます
+
+本当にトラフィックを知っています。
+
+残念ながら、今のところそれを行うことはできません。
+
+これらの特定のコンテナ内のすべてのコンテンツは同じものであるため、その特定の側面。
+
+したがって、応答が必要なのは、その特定の部分のいずれかです。
+
+それで、実際に先に進み、そのアプリケーションを1つに減らすことができます
+
+リグニンとそれはまだ販売しています
+
+そして、あなたはそれが正しく支配されているのを見ることができます
+
+サービスは1つだけです。
+
+そのため、この特定のHalo Webアプリ用の他のサービスはありません。
+
+私たちが休んでいたすべてのものに本当に慣れています。
+
+コンテナエンジンにはすべてが含まれていると言えますが、しばらくお待ちください
+
+この特定のクラスターを削除します。
+
+このクラスターを削除した場合
+
+これらの特定のクラスターに必要なすべてのリソースを解放できます。
+
+機械に行きましょう。
+
+終了します。
+
+これが一言で言えば、それがあなたに与えているものであることがわかります。
+
+特定のプラットフォームのリソースが公理的にプロビジョニングされているクラスターを要求します。
+
+したがって、インスタンステンプレートは、複数のプールまたはプールを実行してから複数のプール
+
+それらを個別に管理するために作成されるインスタンスグループと、その後インスタンスが作成されます
+
+クラスター内のすべてのノードに対して。
+
+したがって、それらはシームレスに管理されます。
+
+ソフトウェアをインストールすることを知っている必要はありません。また、その間で動作するように管理する必要もありません。
+
+自分でリソースを管理します。
+
+すべてがコンテナエンジンによって管理されています。
+
+だから、それはあなたがそれが切断されているかピーターを知っています
+
+すべてのノートが下がるのを待っています。
+
+行われている研究
+
+文字通りメガネを見てください。
+
+そのようなサービスはありません。
+
+プロビジョニングされたコンピューティングサービスはありません。
+
+インスタンスグループがなくなったインスタンステンプレートは、この特定のチームのテンプレートにも表示されます。
+
+このCatinatエンジンのデモについて質問がある場合は、これらのファイルをリソースセクションに追加します
+
+トレーニングの。
+
+しかし、これについて質問がある場合はお知らせください。
+
+それは次のセクションでした。
+
+ありがとうございました。

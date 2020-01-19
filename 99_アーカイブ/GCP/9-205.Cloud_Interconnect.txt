@@ -1,0 +1,260 @@
+Global interconnect.
+
+Again the concept here is you want to have direct pipe between your data center and Google Cloud Platform.
+
+Are the Google services I would say and that's what we use interconnect.
+
+And we have different flavors here.
+
+That's right.
+
+They call it as a cloud interconnect purely on cloud interconnect to the dedicated interconnect connections
+
+with DCP and buildings is they are treating it differently because building is just accessing your data
+
+from G suite or Google into your premises.
+
+Reducing the price of or reducing the this fees.
+
+Right.
+
+So interconnect is the option.
+
+That's where you have pipe between your own datacenter and Google Cloud Platform.
+
+And on top of it you want to exchange the network information as well.
+
+That's what you use interconnect some of the you know the criteria out of what it is dedicated.
+
+But I would interconnect that it is not a third party it is Google's own interconnections and it has
+
+got a requirement which you need to have it it supports adeptly 1918.
+
+You do not need a public IP or external ip address because ultimately it is.
+
+Once you connect the pipe then you know you.
+
+It is not allowed in via the public internet.
+
+It definitely supports a silly dedicated partner interconnect.
+
+It is definitely a third party because you want to have this one because you do not need the Google
+
+requirement.
+
+And you go I partner.
+
+It supports other steps in 1918 yes public IP external is not required or not supported easily.
+
+Yes it has got also so easily appearing in other words.
+
+It's it's Derek beginning it's not third party it is that direct connection with the Google ads for
+
+1918 if you want to have a repeat in 1918.
+
+On top of that building you can still implement VPN on top of that being a VPN public or external IP
+
+it is supported.
+
+There is no facility on building any of the beating option and carrier building it is a third party
+
+at FC nineteen eighty nine a VPN and public IP or external IP it's optional.
+
+So this is what we sign nutshell red brick building.
+
+It's a layer 3 1 and the carrier appearing Derek building and carrier building is the level 3 connection
+
+and delegate and interconnect and partner interconnect is layer 2 connections between your own office
+
+we license our datacenter with Google Cloud Platform dedicated means that it connections between you
+
+and Google and share means that's where you use partner R carrier to connect to the Google some of the
+
+parts on interconnect.
+
+What this Derek building Derek creating can be used by DCP but does not require it cloud interconnect
+
+requires JCP use you direct access to g suite Google services including full suite of we will cloud
+
+platform products from your on prem ISIS network and this is very important distinction still indicating
+
+you are accessing the data which is that induced suite on Google Cloud Platform but not exchanging the
+
+data cloud interconnect does not give it you suite but gives you access to all other Google.
+
+So this is really specific to Google Cloud Platform which is what you need to understand no setup or
+
+maintenance cost has maintenance cost reducing integrate Internet egress rates on your on premises network
+
+from DCP resources for Continental locations and enable the project standard egress rate for their traffic
+
+sent to interconnect does apply connect to Google HD Network connector we will age network definitely
+
+pathetic being an Internet cloud interconnect routs on your premises network do not appear in BBC because
+
+it is not the whole purpose the whole purpose for that out information are the network information exchange
+
+between you and Google is cloud interconnect some of the you know use cases.
+
+So this is your own network and this is your cloud and you connect these two together and this is direct
+
+interconnect our direct peering you can do it and this is why I said it was.
+
+So you connect to serious fraud and then ultimately service provider is connected to google wire direct
+
+connections and that's where you can use a service provider for appearing as well as interconnect some
+
+of the cells that do have it in different regions south of the country.
+
+Can the concentration the minimal deployment but location is 10 GBP as for cloud interconnect.
+
+If your traffic does not require that level up capacity consider cloud VPN circuit within your network
+
+and Google's network is not encrypted.
+
+If you required additional data security whose application level encryption on the VPN connection some
+
+of the you know the parameter for you to make decisions will not go into details but typically if you
+
+look at the dedicated interconnection you can have 10 G.B. two 80 GBP is.
+
+But Internet connections in cloud VPN.
+
+That's what you use when you out requirement to say one in five you GBP is 2 3 GBP is
+
+that seen guys as a cloud interconnect or hybrid connectivity.
+
+If you have any questions let me know otherwise you can move to the next lecture.
+
+Thank you.
+
+
+グローバル相互接続。
+
+繰り返しますが、ここでのコンセプトは、データセンターとGoogle Cloud Platformの間に直接パイプを配置することです。
+
+私が言うのはGoogleサービスであり、それがインターコネクトを使用するものです。
+
+ここにはさまざまなフレーバーがあります。
+
+そのとおり。
+
+彼らは、専用の相互接続接続への純粋なクラウド相互接続上のクラウド相互接続としてそれを呼び出します
+
+DCPと建物の場合、建物はデータにアクセスするだけなので、異なる方法で処理されます。
+
+GスイートまたはGoogleからお客様の施設へ。
+
+この料金の値下げまたは値下げ。
+
+正しい。
+
+そのため、相互接続がオプションです。
+
+そこで、独自のデータセンターとGoogle Cloud Platformの間でパイプを使用します。
+
+さらに、ネットワーク情報も交換する必要があります。
+
+それはあなたが使用するものであり、それが専用のものから基準を知っているいくつかを相互接続します。
+
+しかし、私はそれがサードパーティではなく、Google自身の相互接続であり、それが持っていることを相互接続します
+
+1918年に適切にサポートする必要がある要件がありました。
+
+最終的にはパブリックIPまたは外部IPアドレスであるため、必要ありません。
+
+パイプを接続したら、あなたはあなたを知っています。
+
+パブリックインターネット経由では許可されていません。
+
+それは間違いなく愚かな専用パートナー相互接続をサポートします。
+
+Googleを必要としないので、これは間違いなくサードパーティです。
+
+要件。
+
+そして、あなたは私がパートナーに行く。
+
+1918年には他のステップをサポートしています。はい、パブリックIP外部は不要であるか、簡単にサポートされていません。
+
+はい、それは言い換えれば、とても簡単に現れました。
+
+Derekがサードパーティではなく、Google広告との直接的なつながりがあるためです。
+
+1918年に繰り返したい場合は1918年。
+
+その建物の上に、VPNパブリックまたは外部IPであるVPNをさらに実装できます。
+
+サポートされています。
+
+ビーティングオプションのいずれかを構築する施設はなく、それを構築するキャリアはサードパーティです
+
+FC 1989でVPNとパブリックIPまたは外部IPはオプションです。
+
+だから、これは私たちが一言で言えば赤レンガの建物に署名するものです。
+
+レイヤー3 1であり、Derekビルとキャリアビルに表示されるキャリアはレベル3接続です
+
+そして、委任および相互接続とパートナー相互接続は、あなた自身のオフィス間のレイヤー2接続です
+
+Google Cloud Platform専用のデータセンターにライセンスを付与します
+
+Googleと共有は、パートナーRキャリアを使用してGoogleに接続することを意味します
+
+相互接続上の部品。
+
+Derekが作成したこのDerekの建物はDCPで使用できますが、クラウド相互接続は必要ありません
+
+JCPを使用すると、G Suiteの完全なスイートを含むGoogleサービスに直接アクセスできます
+
+オンプレミスISISネットワークのプラットフォーム製品であり、これは非常に重要な区別であり、まだ示されています
+
+Google Cloud Platformで誘導されたスイートであるデータにアクセスしていますが、交換していません
+
+データクラウドインターコネクトはスイートを提供しませんが、他のすべてのGoogleへのアクセスを提供します。
+
+したがって、これはGoogle Cloud Platformに固有のものです。これは、セットアップや
+
+メンテナンスコストにより、オンプレミスネットワークでのインターネット出力レートの統合が削減されます。
+
+コンチネンタルロケーションのDCPリソースから取得し、トラフィックのプロジェクト標準の出力レートを有効にします
+
+相互接続に送信すると、Google HDネットワークコネクタへの接続が適用されます
+
+構内ネットワーク上のインターネットクラウド相互接続ルートであるという哀れなことは、BBCには表示されません。
+
+それは全体の目的ではなく、その情報の全体の目的はネットワーク情報交換です
+
+あなたとGoogleの間には、あなたが知っているユースケースのいくつかをクラウドで相互接続します。
+
+これはあなた自身のネットワークであり、これはあなたのクラウドであり、これら2つを一緒に接続し、これは直接です
+
+直接ピアリングを相互接続して、あなたはそれを行うことができます。
+
+あなたは深刻な詐欺に接続し、最終的にサービスプロバイダーはGoogle Wire Directに接続します
+
+接続とは、いくつかの相互接続と同様に表示するためにサービスプロバイダーを使用できる場所です
+
+国の南の異なる地域でそれを持っているセルの。
+
+集中は最小限の展開が可能ですが、クラウド相互接続の場合、場所は10 GBPです。
+
+トラフィックがそのレベルアップ容量を必要としない場合は、ネットワーク内のクラウドVPN回線を考慮してください
+
+Googleのネットワークは暗号化されていません。
+
+VPN接続でアプリケーションレベルの暗号化が必要な追加のデータセキュリティが必要な場合
+
+あなたが決定を下すためのパラメータを知っているのは詳細には行きませんが、通常は
+
+10 G.Bを持つことができる専用の相互接続を見てください。 2つの80 GBPです。
+
+しかし、クラウドVPNでのインターネット接続。
+
+これは、5分の1がGBPであると言う必要がある場合に使用するものです。
+
+それは、クラウド相互接続またはハイブリッド接続として人々を見ました。
+
+質問がある場合はお知らせください。それ以外の場合は、次の講義に移動できます。
+
+ありがとうございました。

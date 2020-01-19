@@ -1,0 +1,503 @@
+Exam requests for Jackie Jeanne-Claude functions which is second part of the computer is and we saw
+
+this already.
+
+GK Google container engine and we saw that you know what is that what are the advantages of content
+
+arranging or or traditional applications in an engine Google can do that engine is powerful cluster
+
+manager an orchestration system for your training docket containers Grondin and in general tools your
+
+containers into the cluster keep them healthy and manage them automatically based on the requirement
+
+you define examples keep you and me you can choose CPR and memory quantities.
+
+And this is the goal but it is implementation in VCP So this is open source and based on google systems
+
+DKs the framework for container management not to mention itis luminous or is it supports Dharker currently
+
+Ottos killing is supported and it allows stragglers logging and monitoring in what we saw was there
+
+is a cluster.
+
+How you now know one node actually manages one must have no managers or leatherworker nodes and then
+
+we saw what is the concept of Pod which contains multiple containers.
+
+Each shares IP address and namespace as well as the cloud storage or disk storage.
+
+And then we saw you know you service can be treated as a laudable answer inside the container engine.
+
+It will give you a global IP address for the backend parts and then we saw a template which is our deployments
+
+the way we defined them blitzing compute engine or you can define defined templates and you can configure
+
+what how many number of port it should be running at this you know in one point in time in somebody's
+
+i this answer is you can have Attles killing or to upgrade or to repair configured for G.K..
+
+You can utilize hybrid networking integrated logging and monitoring our stateful application support
+
+daquiri made support.
+
+There is a resource limit which you need to look at private container registry so this is again a service
+
+for you to utilize from GCP all the containers you don't want to actually store that in the public repository
+
+you need to store that plywood somewhere that's where you can use container registry.
+
+It is integrated with I am resource optimized deployments it's reliable and self-healing robotic configuration
+
+as a desired state.
+
+I mean can concept which we saw contain a cluster cluster of Federation clusters are two scaling cluster
+
+labeling pools nor are to upgrade nor repair nor the images load balancing.
+
+I am an access control IP agent rotation and other configuration so I want to take your attention to
+
+purely you know content of cluster cluster Federation the way articling work.
+
+What's the use of labeling pools and all other items you can actually just go ahead and ignore because
+
+this may not be osting the exam but these are the concepts which are very much important for you.
+
+Google App Engine google engine is in Phoenix killable you manage platform that completely abstract
+
+away infrastructure.
+
+So you are you focus on your core.
+
+So this is you know no ops platform you just create the core and apply that in your application will
+
+start working.
+
+So it is Open's open platform for application deployment supports multiple languages open and flexible
+
+to manage and funnel scalable monitoring logging agnostic where it will integrated with it application.
+
+It supports application was exploding exploiting it provide compute for any workload you just deploy
+
+your workload and ask for resources and it will be available and there are two different options from
+
+the environment you can choose this one is a place that will.
+
+And the second one is standard environment.
+
+And we saw this ecosystem in this ecosystem you can have a load balancer and this is in a lot of balance
+
+and part application the services our services will be responded from App Engine and opinion has got
+
+to integrate or support with cloud is good let us or other storage cloud storage as well as memcached.
+
+And you can deploy your application using say only three compressed de-clawing net and cloud logging
+
+and that's where you initiate you have access to the cloud console.
+
+And the only command using which you can deploy is Jeanne-Claude app deploy.
+
+This will deploy your app into App Engine.
+
+And then we saw this particular architecture where the service is a lot balancer.
+
+You are vergence inside it can be treated as containers employment so you can have multiple words in
+
+learning for a particular service.
+
+And then there are instances which are serving actual traffic so this is actually implementation and
+
+the instances will be created many more depends on your need for your applications.
+
+And then we saw the differences between plague's people and standard environment.
+
+All other things are fine but you want to focus on say instant startup time Minerva's in case a flexible
+
+environment this is darker content or image or content of application and standard environment is in
+
+second.
+
+That's that's I know sandbox for your runtime.
+
+You can have maximum request time out which is 60 seconds.
+
+This is fine but do you want to focus on two.
+
+Yeah this is debugging.
+
+This is where you have access to the back and instance Wium in case of lexical environment because you
+
+have a doctor in case substandard environment.
+
+You don't have access to you know the VM.
+
+You do have access to the local disk in case a flexible environment in a standard environment you can
+
+do that.
+
+And all other things important.
+
+Yeah.
+
+You can customize this environment this flexible in order because that's what you know it's a continuous
+
+application whatever you want to incorporate dependencies you can do that in flexible enlightenment
+
+but in case of standard entertainment that is not possible.
+
+That's the only thing which you can take you know think of that super App Engine for cloud function.
+
+So it is even better so whenever there is a requirement for your computing services and it says about
+
+execution based on the events and the first thing it should come in your mind is the cloud function.
+
+So cloud function is a lightweight compute solution for developers to create single poper standalone
+
+functions that respond to your events without too need.
+
+Man is the worse or in pain.
+
+So I think you know the Microsoft Office is architecture really.
+
+You know its a single responsivity function deployed into cloud functions and those can be invoked based
+
+on cloud pops events or DP and point are cloud storage changes so the change in storage.
+
+If you create a bucket or if you add any object you can take action based on those.
+
+Are you can have a strike driver or firebase as well so these are the triggers for the cloud function.
+
+You can use this as a mobile back and an API macro services.
+
+Our Data Processing auditee also as an example if you store something in a database and then you want
+
+to take action on that particular data.
+
+Once the data is getting populated you can do that.
+
+You can always try to be endpoints.
+
+You can how strict integration.
+
+I already it is true sort of enlargement.
+
+You dont have to manage any environment at all in the backend.
+
+It's fully or is and you will be build on hundred milliseconds and in slots so if you use save in milliseconds
+
+you have you know the function itself executed within 15 milliseconds minimum charging segment unit
+
+is 100 milliseconds and it supports the fiber base.
+
+And then we saw these are different use cases and this is where you know you write a message to their
+
+database you execute a function.
+
+This is where there is a new follower using any application you create data in database event and that
+
+database is captured by function.
+
+There are some thing so many images uploaded to the cloud storage and you can trigger you when you use
+
+tools that are either in cloud storage or anywhere you just trigger HTP and then you will process and
+
+process that particular image.
+
+In this particular case its a thumbnail.
+
+You can integrate it with third party is right.
+
+And this is what you can do it.
+
+These are all cloud function use cases so compute engine in summary you have virtual machine you under
+
+full access to the VM with Level Changes application can be controlled.
+
+And this is where you want to use.
+
+What's your machine.
+
+Any use cases require is are always changes on the application you want to disappear without rewriting
+
+it.
+
+And that is where it shines.
+
+GA says so there is a standard environment where the first scale up scale down to zero no containers
+
+in case of will in a moment you can just write a code or they say they're low cost and simple code than
+
+that geeky but flexible environment is like in a container based whenever you can actually go in and
+
+make containers that's with you can use GEAE best use cases or mobile app gaming back and the pool API
+
+or web sites you and GK becloud full control on Khandelwal castration and you you can use UK for content
+
+as workload cloud two applications or distributor's or hybrid applications cloud functions it's even
+
+really an answer was also what is requirements for mobile back and I would be a p.m.-I or micro services.
+
+Our data processing any deal so all of these are specific use cases off the computer service.
+
+You may get a question.
+
+And in fact we'll see this in use cases as well.
+
+When do you say virtual machine versus happening versus you know container engine which is cloud function
+
+D.S. is now complete.
+
+If you have any question on computer let me the rest more to the next section.
+
+Thank you.
+
+コンピューターの2番目の部分であるジャッキージャンヌクロード関数の試験要求は
+
+これはすでに。
+
+GK Googleコンテナエンジン。コンテンツの利点とは何かを知っていることがわかりました
+
+Googleが実行できるエンジンでの従来のアプリケーションの配置またはそのエンジンは強力なクラスターです
+
+トレーニングドケットコンテナーGrondinおよび一般的なツールのオーケストレーションシステムのマネージャー
+
+コンテナをクラスターに入れて、コンテナを健全に保ち、要件に基づいて自動的に管理します
+
+あなたがあなたと私を維持する例を定義すると、CPRとメモリ量を選択できます。
+
+これが目標ですが、VCPでの実装なので、これはオープンソースであり、Googleシステムに基づいています
+
+DKsコンテナ管理のフレームワークはもちろんのこと、明るいか、現在Dharkerをサポートしていますか
+
+Ottos killingがサポートされており、ストラガーがログや監視を行えるようになりました。
+
+クラスターです。
+
+1つのノードが実際に1つのノードを管理していることをどのように確認するかは、マネージャーまたは革細工師のノードがなく
+
+複数のコンテナを含むPodの概念を確認しました。
+
+それぞれが、クラウドストレージまたはディスクストレージと同様に、IPアドレスと名前空間を共有します。
+
+そして、あなたはあなたのサービスがコンテナエンジン内で称賛に値する答えとして扱われることを知っています。
+
+バックエンドパーツのグローバルIPアドレスが提供され、その後、展開されているテンプレートが表示されます。
+
+驚くべき計算エンジンを定義した方法、または定義済みのテンプレートを定義して構成することができます
+
+ある時点で誰かのポートで何個のポートを実行する必要があるかを知っている
+
+この答えは、Attlesを殺したり、アップグレードしたり、G.K。用に構成された修復したりできることです。
+
+ハイブリッドネットワーキングの統合されたロギングを利用して、ステートフルアプリケーションのサポートを監視できます
+
+daquiriがサポートしました。
+
+プライベートコンテナレジストリを調べる必要があるリソース制限があるため、これもサービスです
+
+GCPから実際に公開リポジトリに保存したくないすべてのコンテナを利用するために
+
+その合板をコンテナレジストリを使用できる場所に保存する必要があります。
+
+これは、リソース最適化された展開と統合されており、信頼性の高い自己修復ロボット構成です。
+
+望ましい状態として。
+
+フェデレーションクラスターのクラスタークラスターは、2つのスケーリングクラスターです。
+
+ラベリングプールも、アップグレードも、修復も、イメージのロードバランシングもありません。
+
+私はアクセス制御IPエージェントのローテーションおよびその他の設定を行っていますので、ご注意ください。
+
+純粋に、クラスタークラスターフェデレーションのコンテンツが明確に機能する方法を知っています。
+
+ラベリングプールと他のすべてのアイテムの使用方法は何ですか？
+
+これは試験に負担をかけるものではないかもしれませんが、これらはあなたにとって非常に重要な概念です。
+
+Google App EngineのGoogleエンジンは、完全に抽象化されたプラットフォームを管理するフェニックスで殺すことができます
+
+離れたインフラ。
+
+あなたはあなたのコアに集中しています。
+
+だからこれは、あなたがコアを作成してアプリケーションに適用するだけのopsプラットフォームを知らないということです
+
+働き始める。
+
+したがって、アプリケーション展開のためのオープンなオープンプラットフォームであり、オープンで柔軟な複数の言語をサポートしています
+
+スケーラブルな監視ロギングにとらわれないアプリケーションを統合する場所を管理およびファンネルします。
+
+アプリケーションをサポートし、展開したばかりのワークロードにコンピューティングを提供することで、爆発的に活用しました
+
+ワークロードとリソースを要求すると利用可能になります。
+
+あなたがこれを選ぶことができる環境はそうする場所です。
+
+そして2つ目は標準環境です。
+
+そして、このエコシステムでこのエコシステムを見ました。ロードバランサーを使用でき、バランスが取れています
+
+一部のアプリケーションは、App Engineから当社のサービスに対応するサービスであり、意見があります
+
+クラウドと統合またはサポートするには、memcachedだけでなく、他のストレージクラウドストレージも使用できます。
+
+そして、たった3つの圧縮されたデクローイングネットとクラウドロギングを使用してアプリケーションをデプロイできます
+
+そこから始めて、クラウドコンソールにアクセスできます。
+
+また、デプロイに使用できるコマンドは、Jeanne-Claudeアプリのデプロイのみです。
+
+これにより、アプリがApp Engineにデプロイされます。
+
+そして、サービスが多くのバランサーであるこの特定のアーキテクチャを見ました。
+
+あなたはその中に輻輳しているので、コンテナ雇用として扱うことができるので、複数の単語を
+
+特定のサービスの学習。
+
+そして、実際のトラフィックを処理しているインスタンスがあるので、これは実際に実装され、
+
+インスタンスは、アプリケーションのニーズに応じてさらに作成されます。
+
+そして、ペストの人々と標準的な環境の違いを見ました。
+
+他のすべては問題ありませんが、柔軟な場合にミネルバのインスタント起動時間を言うことに集中したいです
+
+環境これは暗いコンテンツまたは画像またはアプリケーションのコンテンツであり、標準環境は
+
+秒。
+
+それが、ランタイム用のサンドボックスです。
+
+最大要求タイムアウトは60秒です。
+
+これで問題ありませんが、2つに焦点を当てたいですか。
+
+うん、これはデバッグ中です。
+
+これは、レキシカル環境の場合にバックおよびインスタンスWiumにアクセスできる場所です。
+
+標準以下の環境の場合は医師の診察を受けてください。
+
+VMを知っているあなたにはアクセスできません。
+
+標準環境で柔軟な環境を使用できる場合に備えて、ローカルディスクにアクセスできます。
+
+それを行う。
+
+そして、他のすべての重要なこと。
+
+うん。
+
+この環境はこの柔軟な順序でカスタマイズできます。
+
+依存関係を組み込みたいアプリケーションは何でも柔軟な啓発で行うことができます
+
+ただし、標準的なエンターテイメントの場合は不可能です。
+
+これが、クラウド機能用のスーパーApp Engineについて考えることができる唯一の方法です。
+
+コンピューティングサービスに要件があり、次のことを言っているときはいつでもさらに良いです。
+
+イベントに基づいた実行と、最初に頭に浮かぶのはクラウド機能です。
+
+クラウド機能は、開発者が単一のpoperをスタンドアロンで作成するための軽量な計算ソリューションです
+
+必要なくイベントに応答する関数。
+
+人はより悪いか、または苦しんでいます。
+
+だから、Microsoft Officeは本当にアーキテクチャであると知っていると思います。
+
+クラウド機能にデプロイされた単一の応答機能を知っており、それらはベースに基づいて呼び出すことができます
+
+クラウドポップイベントまたはDPとポイントは、クラウドストレージの変更なので、ストレージの変更です。
+
+バケットを作成する場合、またはオブジェクトを追加する場合、それらに基づいてアクションを実行できます。
+
+ストライクドライバーまたはファイアベースを使用することもできますが、これらはクラウド機能のトリガーです。
+
+これをモバイルバックおよびAPIマクロサービスとして使用できます。
+
+また、データベースに何かを保存してから必要になった場合の例としてのデータ処理被監査者
+
+その特定のデータに対してアクションを実行します。
+
+データが入力されたら、それを行うことができます。
+
+いつでもエンドポイントになろうとすることができます。
+
+どれだけ厳密に統合できますか。
+
+私はすでに本当の拡大だ。
+
+バックエンドで環境を管理する必要はまったくありません。
+
+それは完全にまたはそうであり、あなたはミリ秒で保存するので、ミリ秒とスロットでビルドします
+
+最小充電セグメント単位15ミリ秒以内に実行される機能自体を知っていますか
+
+100ミリ秒であり、ファイバーベースをサポートします。
+
+そして、これらは異なるユースケースであり、これはあなたが彼らにメッセージを書くことを知っているところです
+
+関数を実行するデータベース。
+
+これは、データベースイベントでデータを作成するアプリケーションを使用する新しいフォロワーがいる場所です。
+
+データベースは機能によってキャプチャされます。
+
+クラウドストレージにアップロードされた非常に多くの画像があり、使用時にトリガーできます
+
+クラウドストレージまたはHTPをトリガーする任意の場所にあるツールは、
+
+その特定の画像を処理します。
+
+この特定のケースでは、サムネイルです。
+
+サードパーティと統合することができます。
+
+これがあなたにできることです。
+
+これらはすべてクラウド機能のユースケースであるため、計算エンジンは要約すると仮想マシンを所有しています
+
+レベル変更アプリケーションを使用したVMへのフルアクセスを制御できます。
+
+そして、これはあなたが使いたいところです。
+
+あなたのマシンは何ですか。
+
+必要なユースケースは、書き換えることなく非表示にするアプリケーションの変更です。
+
+それ。
+
+そして、それはそれが輝く場所です。
+
+GAによると、最初のスケールアップはコンテナなしでゼロに縮小する標準環境があります
+
+すぐに意志の場合には、あなたはただコードを書くことができるか、彼らはより低コストでシンプルなコードだと言う
+
+こっけいだが柔軟な環境は、実際に入ることができ、
+
+GEAEの最適なユースケースまたはモバイルアプリゲームバックとプールAPIを使用できるコンテナーを作成します
+
+またはあなたとGK becloudがKhandelwal去勢を完全に制御し、コンテンツにUKを使用できるWebサイト
+
+ワークロードクラウドの2つのアプリケーション、ディストリビューター、またはハイブリッドアプリケーションのクラウド機能として
+
+実際に答えはモバイルバックの要件でもあり、私は午後のサービスまたはマイクロサービスになります。
+
+データはすべての取引を処理するため、これらはすべてコンピューターサービスの特定のユースケースです。
+
+質問があるかもしれません。
+
+そして実際、これはユースケースでも見られます。
+
+仮想マシン対ハプニング対クラウド機能であるコンテナエンジンを知っているのはいつですか
+
+これでD.S.が完成しました。
+
+コンピューターに関する質問がある場合は、次のセクションに進みましょう。
+
+ありがとうございました。

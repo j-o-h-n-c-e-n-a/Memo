@@ -1,0 +1,71 @@
+Backup and restore if I go back on the console.
+
+You can click on this backup.
+
+You can say automatic backup automatic backup means.
+
+That's what you can see.
+
+You know cloud is still need to take my backup and it will go ahead and take the country's backup and
+
+you can specify the window to take the backup.
+
+You can do higher availability configuration but we'll see it in the later section.
+
+But this is where you can do automatic backup but at the same time you can say I want to take a backup
+
+click on it and you can go to backups and you can say create backup I can go my rescue marketing database
+
+backup I can to create so there are two types of backup.
+
+One is on demand backup and the second one is automatic backup.
+
+Okay so the backup is getting created
+
+I think our backup is ready date and time and I can say I can go in and we can restore what I can deleted
+
+when I say restored it will get refreshed that it always will get refreshed with the seed backup.
+
+Okay you can do so there are backup times you can go ahead and change the times and by then like logging
+
+we are going to see that in the next lecture.
+
+Okay but that's the backup guys if you have any questions let us know otherwise move to the next lecture.
+
+And that is point in time to goatee and logging.
+
+コンソールに戻った場合のバックアップと復元。
+
+このバックアップをクリックできます。
+
+自動バックアップとは自動バックアップと言うことができます。
+
+それはあなたが見ることができるものです。
+
+クラウドはまだ私のバックアップを取る必要があることを知っています、そしてそれは先に進み、国のバックアップを取り、
+
+バックアップを取得するウィンドウを指定できます。
+
+高可用性構成を行うこともできますが、後のセクションで説明します。
+
+ただし、ここで自動バックアップを実行できますが、同時にバックアップを取りたいと言うこともできます。
+
+それをクリックして、あなたはバックアップに行くことができ、あなたは私の救助マーケティングデータベースに行くことができるバックアップを作成することができます
+
+バックアップを作成できるため、バックアップには2つのタイプがあります。
+
+1つはオンデマンドバックアップで、もう1つは自動バックアップです。
+
+さて、バックアップが作成されます
+
+バックアップの日付と時刻は準備ができていると思うので、削除できるものを復元できると言うことができます
+
+復元すると言うと、それは更新され、常にシードバックアップで更新されます。
+
+できるので、バックアップ時間があるので、先に進んで時間を変更してから、ロギングのように
+
+次の講義でそれを見るつもりです。
+
+わかりましたが、質問があれば次の講義に移ってください。
+
+そして、それはヤギと伐採の時点です。

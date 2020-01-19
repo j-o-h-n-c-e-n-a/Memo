@@ -1,0 +1,177 @@
+Such an affinity.
+
+Before we dive into how we can configure station affinity in Google Cloud Platform for load balancer
+
+you need to understand what decision emanating.
+
+What do we mean by station affinity station affinity is the user request is sent to the backend services
+
+and to the same back and so we say for one user who is accessing your Web site from one of the virtual
+
+machine instance right.
+
+You need to make sure that that particular user request are always sent to our maximum time it is sent
+
+to same back and virtual machine so that the caching mechanism work station management if at all we
+
+are doing it in the back and if that works seamlessly and that is where station up affinity comes into
+
+play load balancer uses two different parameters here.
+
+One is client IP you know the IP who is requesting a particular content that IP it will be tracked and
+
+then it will be always sent to the same backend services are generated Cookie's affinity.
+
+So there are these two hour session up at Trinity which you can use it in as GDP load balancer the way
+
+you configure session affinity is.
+
+I mean the same back and configuration and I can click on Add once if you look at here and this is where
+
+you can go ahead and configure a session entity you can configure it even he'll check here but let me
+
+just focus on session ability you have client IP addresses are generated cookie if I click on client
+
+IP address this time to leave for that particular session affinity that you can contribute it if it
+
+is generated cookies if it is IP address then it will be always tried to take that I bear this to the
+
+back end instances you can even configure connection draining time out and then you can have optional
+
+custom requested it.
+
+And based on that also you can do it.
+
+OK.
+
+So that's the session affinity guys.
+
+It is there are two parameters.
+
+Let me go back.
+
+Client IP address and generator cookie which is used in its GDP as the load balancer that it has a session
+
+affinity we are going to see types of load balancer in Google Cloud Platform next.
+
+そのような親和性。
+
+ロードバランサー用にGoogle Cloud Platformでステーションアフィニティを設定する方法について説明する前に
+
+どのような決定が発せられるかを理解する必要があります。
+
+ステーションアフィニティステーションアフィニティとはどういう意味ですか？ユーザーリクエストはバックエンドサービスに送信されます
+
+そして同じ背中に、私たちは仮想の1つからあなたのWebサイトにアクセスしている1人のユーザーのために言います
+
+マシンインスタンスの権利。
+
+特定のユーザーリクエストが送信される最大時間に常に送信されることを確認する必要があります
+
+キャッシュ機構がワークステーション管理を行うように、同じバックおよび仮想マシンに
+
+バックでそれをやっていて、それがシームレスに動作し、それがステーションアップアフィニティが入る場所である場合
+
+ここで、ロードバランサーの再生は2つの異なるパラメーターを使用します。
+
+1つは、特定のコンテンツを要求しているIPを追跡するクライアントIPです。
+
+常に同じバックエンドサービスに送信され、Cookieのアフィニティが生成されます。
+
+トリニティではこれらの2時間のセッションがあり、GDPロードバランサーとして使用できます
+
+セッションアフィニティを構成します。
+
+私は同じバックと設定を意味し、ここを見て、これがどこにあるか、一度追加をクリックします
+
+先に進んでセッションエンティティを設定できます。ここでチェックしても、設定できます。
+
+クライアントをクリックすると、クライアントIPアドレスが生成されたCookieを持っているセッション機能に焦点を当てる
+
+今回のIPアドレスは、特定のセッションアフィニティのために残します。
+
+IPアドレスの場合、Cookieが生成されます。これは、
+
+バックエンドインスタンスでは、接続のドレインタイムアウトを設定することもできます。
+
+カスタムがそれを要求しました。
+
+それに基づいて、あなたもそれをすることができます。
+
+OK。
+
+それがセッションの親和性です。
+
+2つのパラメーターがあります。
+
+戻りましょう。
+
+セッションを持つロードバランサーとしてGDPで使用されるクライアントIPアドレスとジェネレーターCookie
+
+次に、Google Cloud Platformでロードバランサーの種類を確認します。
+
+これは、Google Cloud Platformのロードバランサーです。
+
+それらのロードバランサーとは何ですか。
+
+それらすべてを見てみましょう。
+
+ここでヒットする前に、UIに戻ってキャンセルします。
+
+ここをクリック。
+
+ここをクリックして直接、負荷分散のタイプを表示することもできます。
+
+ロードアレンがこの制限付きロードバランサーDCPロードバランサーとヨーロッパロードを言ったように、それはCTPです
+
+バランサー。
+
+これをすべて見ると、GDPで発生するか、負荷が原因であるさまざまな分類があります
+
+バランサー。
+
+これらのロードバランサーは、インターネットに直接接続する内部または単一または複数の内部領域になります。
+
+はい。
+
+そして、この問題をグローバルなロードバランスと同様にロードバランサーとして扱うことができます。
+
+インターネットトラフィックはインターネットトラフィックによって処理され、バックエンドに配信できます。
+
+TBロードバランサーDCPロードバランサー用のDCPロードバランサーがあるSSLプロキシRTC CCPプロキシ
+
+再びインターネットに面するか内部にあるかは、単一または複数の地域である可能性があるため、グローバルなロードバランサー
+
+DCPロードバランサーがSSLプロキシロードバランサーを失った場合、または内部ロードバランサーを使用できます
+
+同様に。
+
+そして、内部に面したウリベ交通インターネットがあります。
+
+これは単一の地域のロードバランサーです。これは、利用可能な地域のロードバランサーについて考えることができます。
+
+[設定を開始]をクリックすると、グローバルな外部向けかどうかを尋ねられます
+
+それは被害者の内部にありますか？
+
+先ほど言ったように、さまざまなユースケースがあります。
+
+スライドに戻ります。
+
+そのため、グローバル外部ロードバランサーSGPまたは安定したベースロードバランシングSSLプロキシとDCPプロキシがあります。
+
+これらは、グローバルロードバランサーのカテゴリです。
+
+ネットワークロードバランサーおよび地域ではないロードバランサー地域の外部負荷分散はありません。
+
+内部負荷分散機である内部負荷分散機シンプルな内部負荷分散装置
+
+DCPロードを使用して、ネットワークロードバランサーの内部ロードバランスを構成する複数の方法があります
+
+これは伝統的にGoogleが提供するものであり、この決定3を使用してどの
+
+特定のユースケースに適したロードバランサーは、複数のロードバランサーが必要な場合などです。
+
+私たちが見ようとしている人たちは、次の講義でセンサーを配備します。
+
+ありがとうございました。

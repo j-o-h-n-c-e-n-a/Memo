@@ -1,0 +1,339 @@
+Cloud skill my skill instances.
+
+You can create my skill instance out of Google Cloud Platform as a managed service.
+
+Our cloud rescue.
+
+Some of the properties it is fully managed community edition that I was in cloud data is encrypted at
+
+press and as well as in channel it supports SSL with cloud scale proxy replication between multiple
+
+zones with R2 failure and we are going to see that these in different chapters here.
+
+You can do import and export.
+
+You can how R2 and on demand backup with point in time recovery you can do instance cloning and you
+
+can have.
+
+So there is a stacked driver logging and monitoring already integrated with it so we can take advantage
+
+of state by logging and monitoring some of the things which you need to understand before you proceed
+
+further.
+
+The load data in file.
+
+So these are the features which are not supported currently for data in file select into our file select
+
+into them file install plugin uninstall plugin create function because you can think of all those plug
+
+ins are already available so you do not need to install it or you are not.
+
+You cannot do it because everything is managed for you.
+
+Some of the second generations which are not supported CREATE TABLE WITH SELECT statement create temporary
+
+table unsupported functions like load fellow load files and you can check your ones.
+
+Some of the features which are marked supporter to your clown client program.
+
+You know because everything is managed inside Google Cloud Platform.
+
+There are certain features which are not available currently and you can just go in and look at it to
+
+create an instance.
+
+I'll go to the same UI OK and I click on choose my school instance.
+
+What I can do is I can give my instance I can say they'll do
+
+marketing and I can ask for generate password.
+
+I'll just go in and store it.
+
+You can give your own name.
+
+I'm just storing that password.
+
+You can define the location and the location means which region and which is when you want to create.
+
+So I'm specifying a region and I can't see any zone inside the US central one and it can be white ABC
+
+or f.
+
+I can go and choose it for my understanding if at all say you know that you are reading data from central
+
+location you need to change.
+
+You need to choose the region accordingly.
+
+But June you can let Google choose it or you can choose it.
+
+So I'm going to choose it on the database which isn't the word in two seconds generation.
+
+I would say I supported five point six as well as five point seven.
+
+So and then you can do advance configuration connectivity if you want to enable IP address public IP
+
+address
+
+you can do an instance configuration you can choose instance different instance configurations so I
+
+can board and this is you can map this to similar kind of configurations that is there in your virtual
+
+machine you can go up to 64 abuse and 240 jeebies of memory and you need to you need to understand that
+
+these numbers get changed continuously.
+
+If you look at
+
+the presentation it says you can go up to 2 0 8 of jeebies operator and 32 processors but that has been
+
+changed as we are recording this okay already.
+
+So you can choose the configuration
+
+I can choose have.
+
+You can choose different flag that I was Blackwell Well starting the maintenance window so this maintenance
+
+window means if at all there are maintenance going on on the host machine you need to make sure that
+
+you are suggesting your time like if there is no one accessing on Sunday you can just give those times
+
+so I'll choose a Sunday
+
+for 5 to 6 p.m. That's where you know Australia or the Eastern European country is yet to start their
+
+work so I can choose that.
+
+And later earlier I can choose if you can provide labels also to the instance.
+
+These are like again the same label as you having what your machines.
+
+I can go in and created
+
+so instance is going to get created so does his is ready now if I click on it I can see detail configuration
+
+here.
+
+So the configuration for the instance you can go out and click on edit and then you can switch on and
+
+off loads functionalities are the features which we configured it you can see the detail dashboard here
+
+see utilization memory storage and all that.
+
+Select storage.
+
+I don't have anything here because we just created that instance.
+
+Connections if there are any and we have enabled public IP address so that we can connect it from outside
+
+network
+
+if at all you want to use SSL connection you can configure it and use it.
+
+Currently there are only two accounts you can go ahead and say create account
+
+so either you want to enable it.
+
+So this particular account from anywhere or you can say specify the IP address I can I'm just going
+
+to create as is so you can create user.
+
+You can go ahead and delete user change password from here if at all some users forgot it that it was
+
+parameters the databases do Paul databases which are created.
+
+I can go in and create
+
+Kate.
+
+Katie D.B.
+
+you can say create
+
+im getting deeply and I can choose this data was to create my tables the backups reply cards and all
+
+other operations which are there you can do import export restart stop delete and clone database I can
+
+just go here and you can click here you can edit Read replica clone connect to the VM or you can delete
+
+it I can say connect to VM
+
+and it is suggesting me how I can connect to the real get
+
+that's it as a basic concept on my skill instance as we are going to see some of the features in subsequent
+
+lectures thank you.
+
+クラウドスキルスキルインスタンス。
+
+マネージドサービスとしてGoogle Cloud Platformからスキルインスタンスを作成できます。
+
+クラウドレスキュー。
+
+クラウドデータに含まれていた完全に管理されたコミュニティエディションのプロパティの一部は、
+
+を押すだけでなく、チャネル内で、複数間でクラウドスケールのプロキシ複製を使用してSSLをサポート
+
+R2障害が発生したゾーンについては、ここで別の章で説明します。
+
+インポートとエクスポートを行うことができます。
+
+R2およびオンデマンドバックアップとポイントインタイムリカバリを使用して、インスタンスのクローンを作成し、
+
+持てる。
+
+スタックされたドライバーのロギングとモニタリングが既に統合されているので、活用できます
+
+続行する前に理解する必要があるもののいくつかを記録および監視することによる状態の
+
+さらに。
+
+ファイル内のロードデータ。
+
+これらは、ファイル選択のファイル選択のデータに対して現在サポートされていない機能です
+
+それらにすべてのそれらのプラグを考えることができるのでそれらにファイルインストールプラグインアンインストールプラグイン作成機能を
+
+insは既に利用可能であるため、インストールする必要はありません。
+
+すべてがあなたのために管理されているため、あなたはそれを行うことができません。
+
+サポートされていない第2世代のいくつかは、CREATE TABLE WITH SELECTステートメントを作成します。
+
+ロード仲間のロードファイルなどのサポートされていない関数をテーブルに追加し、チェックすることができます。
+
+ピエロクライアントプログラムのサポーターとしてマークされている機能の一部。
+
+すべてがGoogle Cloud Platform内で管理されているためです。
+
+現在利用できない特定の機能があります。あなたはただそこに行ってそれを見ることができます
+
+インスタンスを作成します。
+
+同じUIに移動して[OK]をクリックし、[学校のインスタンスを選択]をクリックします。
+
+私ができることは、私がインスタンスを与えることができるということです。
+
+マーケティングと私はパスワードを生成するように依頼することができます。
+
+入って保管するだけです。
+
+自分の名前を付けることができます。
+
+そのパスワードを保存しているだけです。
+
+場所を定義できます。場所とは、作成する地域と場所を意味します。
+
+だから私は地域を指定しているのですが、米国中部のゾーンは見えず、白いABCである可能性があります
+
+またはf。
+
+あなたが中央からデータを読んでいると知っていると言ったら、私はそれを理解のために行って選択することができます
+
+変更する必要がある場所。
+
+それに応じて地域を選択する必要があります。
+
+しかし、6月にGoogleに選択させるか、選択することができます。
+
+だから私はデータベースでそれを選択するつもりです、それは2秒世代の言葉ではありません。
+
+私は5つのポイント6と5つのポイント7をサポートしたと思います。
+
+IPアドレスパブリックIPを有効にする場合は、事前に構成接続を行うことができます
+
+住所
+
+インスタンス構成を行うことができます。インスタンスの異なるインスタンス構成を選択できるため、
+
+搭乗できます。これは、これを仮想環境にある同様の種類の構成にマッピングできます。
+
+マシンは最大64個の虐待と240ジービーのメモリにアクセスできますが、それを理解する必要があります
+
+これらの数値は継続的に変更されます。
+
+見ると
+
+プレゼンテーションでは、ジービーオペレーターと32プロセッサーの2 0 8まで行くことができますが、それは
+
+これをすでに記録しているので変更しました。
+
+構成を選択できます
+
+持っていることを選択できます。
+
+私がブラックウェルだった別のフラグを選択することができます
+
+ウィンドウは、ホストマシンでメンテナンスが行われている場合、次のことを確認する必要があることを意味します。
+
+あなたは日曜日に誰もアクセスしていないなら、あなたはそれらの時間を与えることができるようなあなたの時間を提案しています
+
+日曜日を選びます
+
+午後5時から6時オーストラリアまたは東ヨーロッパの国はまだ彼らを開始していないことを知っているところです
+
+私がそれを選択できるように働きます。
+
+後で、インスタンスにもラベルを提供できるかどうかを選択できます。
+
+これらは、あなたのマシンを持っているのと同じラベルのようなものです。
+
+私は入って創造することができます
+
+インスタンスが作成されるので、インスタンスの準備ができました。クリックすると詳細な設定が表示されます
+
+ここに。
+
+そのため、インスタンスの構成は外に出て編集をクリックし、次にスイッチをオンにして
+
+オフロード機能は、設定した機能です。詳細ダッシュボードはこちらで確認できます
+
+使用率メモリストレージなどを参照してください。
+
+ストレージを選択します。
+
+インスタンスを作成したばかりなので、ここには何もありません。
+
+接続があり、外部から接続できるようにパブリックIPアドレスを有効にしている場合
+
+通信網
+
+SSL接続を使用する場合は、設定して使用できます。
+
+現在、2つのアカウントのみがあり、アカウントを作成することができます
+
+あなたがそれを有効にしたいので。
+
+だからどこからでもこの特定のアカウントまたはあなたが私がちょうど行くことができるIPアドレスを指定すると言うことができます
+
+ユーザーを作成できるように、そのまま作成します。
+
+一部のユーザーがそれを忘れてしまった場合は、ここからユーザー変更パスワードを削除できます
+
+データベースが作成するPaulデータベースのパラメーター。
+
+行って作成できます
+
+ケイト。
+
+ケイティD.B.
+
+作成することができます
+
+深くなって、このデータを選択できるようになりました。テーブルを作成して、バックアップの返信カードと
+
+そこにある他の操作は、インポート、エクスポート、再起動、削除、およびデータベースの複製を行うことができます
+
+ここに移動して、ここをクリックして、VMに接続する読み取りレプリカクローンを編集するか、削除することができます。
+
+VMに接続すると言えます
+
+そしてそれは私が本当のgetに接続する方法を私に示唆しています
+
+これは、スキルインスタンスの基本概念であり、以降の機能の一部を参照します。
+
+講義ありがとうございます。

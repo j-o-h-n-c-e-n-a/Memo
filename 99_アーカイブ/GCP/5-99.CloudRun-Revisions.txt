@@ -1,0 +1,127 @@
+Glad revisions so revision is the kind of you can thing we have seen this in opinion as well.
+
+Revision is kind of worse than in our own world right.
+
+So but this revision is you can think of it.
+
+It's a bundle.
+
+You cannot update the revision if at all you update something some files inside your application and
+
+you launch a new word in it again a new urgent you cannot modify the version.
+
+It's a bundle of content that emerged new environment variable memory limits concurrency value etc.
+
+it's immutable you cannot change it.
+
+QUIST-ARCTON medical it out to the latest regions.
+
+So if I go back here if I click on this particular service I love service and if I click on revisions
+
+so there are two revisions which are available and second services serving under.
+
+Percent of your traffic.
+
+If I go back to our service this one and if I deploy the new word in and when I say deploy new urgent
+
+I'm going to say deploy the exact same exactly same container so when I deployed the new religion it
+
+is going to show me there is a new horizon deployed and then it is going to allow the traffic to then
+
+you got it in so new words and is deployed and then it is serving hundred percent of the top.
+
+Now you know traffic you're service in point is the same.
+
+And that is not changed so I.
+
+The words are not maintained internally inside the service if I click on it then you are going to get
+
+the same result.
+
+And I think I am we should see some logs here.
+
+For our deployment
+
+okay.
+
+So we have deployed the new service and then there is one in location to it.
+
+Yeah.
+
+But there are some invocations which you can see and that I believe will instance as well.
+
+So if I go by here.
+
+So this is the billable time for a for instance.
+
+And looking at these fractions I think even if I use it for my own application purpose I am I'm not
+
+going to get a bill flawed bill because it will be under Freedia and we are going to see that what do
+
+we mean by free to air in the next lecture.
+
+That's the regions.
+
+改定を喜んでいるので、改定は私たちが意見でこれを見てきたことができるものの一種です。
+
+改訂は、私たち自身の世界の権利よりも少し悪いです。
+
+だから、しかし、この改訂はあなたがそれを考えることができるということです。
+
+バンドルです。
+
+アプリケーション内のいくつかのファイルを更新しても、リビジョンを更新することはできません。
+
+その中に新しい単語を再び起動すると、バージョンを変更することはできません。
+
+これは、新しい環境変数のメモリ制限の同時実行値などを明らかにしたコンテンツのバンドルです。
+
+変更することはできません。
+
+QUIST-ARCTONは、最新の地域に医療を提供しています。
+
+この特定のサービスをクリックしてここに戻ると、サービスが大好きで、リビジョンをクリックすると
+
+そのため、利用可能な2つのリビジョンと、2番目のサービスが提供されています。
+
+トラフィックの割合。
+
+このサービスに戻って、新しい単語を展開し、新しい緊急を展開すると言うとき
+
+新しい宗教を展開したときに、まったく同じまったく同じコンテナを展開すると言います
+
+新しい地平線が展開されていることを示してから、トラフィックを許可します
+
+あなたはとても新しい言葉でそれを手に入れて展開され、トップの100パーセントにサービスを提供しています。
+
+これで、サービス中のトラフィックが同じであることがわかります。
+
+そして、それは変わらないので私。
+
+言葉はサービス内で内部的に維持されていません。クリックすると、
+
+同じ結果。
+
+そして、私は私たちがここでいくつかのログを見るべきだと思います。
+
+展開のために
+
+はい。
+
+そのため、新しいサービスを展開しましたが、その場所に1つのサービスがあります。
+
+うん。
+
+しかし、あなたが見ることができるいくつかの呼び出しがあり、私も同様にインスタンス化すると信じています。
+
+ここに行ったら
+
+したがって、これは例えば請求可能な時間です。
+
+そして、これらの分数を見て、自分のアプリケーションの目的のためにそれを使用しても、私はそうではないと思います
+
+それはフリーディアの下にあるので、法案に欠陥のある法案を取得しようとしています
+
+次の講義では無料放送を意味します。
+
+それが地域です。

@@ -1,0 +1,327 @@
+Lifecycle policy for cloud storage so what is the lifecycle policy.
+
+Let's go in and understand war or what is that right.
+
+In it day zero if you created once they see as we file our backup file or dumb file or you create an
+
+image write a photo or picture.
+
+Right.
+
+All of that file is created on day zero and you used continuously on your website or your own business
+
+logic for the next six months.
+
+And that is where you used it in one particular storage category.
+
+Right.
+
+What object is created in that category and you used it until six months as a hard data right.
+
+You treat that as a hard data because you are accessing it daily.
+
+Then you realize that now you can go into backup because you do not need that anymore for at least you
+
+know that for next six months.
+
+And if at all we need it we'll get it from the backup and that's where you move that into a backup.
+
+And after one year you move that into archives so that if at all it is required then you can pull it
+
+out otherwise you can just leave it there to get deleted after five years right.
+
+All of this can be achieved by manual writing the file name conventions directly conventions and you
+
+can still go in and delete that and do it right.
+
+But way to do it if there is a systematic process available for you to do it and that is your lifecycle
+
+policies in Google cloud storage.
+
+So what you can do is you can have standard storage class defined for your days you know once the object
+
+is created you can create a lifecycle policy which moves your objects from standard to the near line
+
+after six months and then after one year it can be moved to cool light and after five years you can
+
+just go out and delete and all of this.
+
+Once you defined the policy it will be taken care for you as a cloud storage lifecycle policies and
+
+you don't have to take any action.
+
+And that is what the lifecycle policy is.
+
+So you can assign lifecycle management configuration to work 80 circular lifecycle management configuration
+
+can then set up rules.
+
+What are those rules.
+
+That you can delete all you can change you can change the storage class and the conditions are whether
+
+you define age created before is label matches some storage class or move to the next storage class
+
+and number of newer virgin part of that particular object.
+
+Let's go in and look at it in the console
+
+if we go here we had this particular bucket and if I go to bucket log there is a retention policy which
+
+we already said it I can go in and add lifecycle so I can say age and if I need to consider the same
+
+example year.
+
+So once the bucket is created it can be a standard.
+
+Okay.
+
+And after that so that is the default.
+
+I don't have to create it.
+
+So after six months what I need to do is I need to move objects into nearly so that is my actions.
+
+So what I can say is after 180 days I want to move in matching storage class and the storage class could
+
+be a regional standard.
+
+Okay do they reduced availability.
+
+Any of those three storage classes.
+
+This is an optional you can give out and options the state whether it is archived or like you I don't
+
+want to choose that because I I'm just I know that it is life and you can move it.
+
+I can be surveyed continue and then what I can do is I can say to middling storage class.
+
+Okay so this policy is applicable and I think there is another
+
+Okay sale I can go ahead and add additional rule.
+
+Now this time I want to make sure that I am counting those.
+
+So after the 365 days
+
+I want to so the state is storage classes.
+
+All near lane I want to move to goal line.
+
+Okay
+
+so this is my next one.
+
+And after that and that rule I can create.
+
+And this is applicable to one particular bucket.
+
+I'm creating a lifecycle policy photobucket.
+
+I can create.
+
+See after
+
+how many days
+
+so are around 18 25 days.
+
+What I want to do is the storage class which are there as a core line.
+
+I want to delete that okay.
+
+It says Once deleted it cannot be restored.
+
+Okay.
+
+Continue continue and seal so these are the three policies which we are defined one is set on your line
+
+then core line and then delete.
+
+If I go back to our example this is what we have implemented it and everything will be taken care by
+
+cloud storage and you don't have to do it.
+
+You don't have to intervene.
+
+OK.
+
+So if you want to go in and change some of the conditions you can go ahead and edit that and it will
+
+be applicable quickly.
+
+OK.
+
+So that's the lifecycle policies for your storage classes so the lifestyle conditions which we saw age
+
+created before is low magic storage class number of knew what wasn't available.
+
+OK that's it guys.
+
+If you have any questions on this storage class let us know otherwise move to the next lecture.
+
+That is data transfer.
+
+クラウドストレージのライフサイクルポリシーは、ライフサイクルポリシーとは何ですか。
+
+戦争に入り、何が正しいのかを理解しましょう。
+
+バックアップファイルまたはダムファイルを提出するときに表示されるか、または
+
+画像は写真や絵を書きます。
+
+正しい。
+
+そのファイルはすべて、ゼロ日目に作成され、あなたのウェブサイトまたはあなた自身のビジネスで継続的に使用されました
+
+次の6か月間のロジック。
+
+そして、特定のストレージカテゴリでそれを使用した場所です。
+
+正しい。
+
+そのカテゴリで作成されるオブジェクトと、6か月までハードデータとして使用したオブジェクト。
+
+毎日アクセスしているので、それをハードデータとして扱います。
+
+それから、少なくともあなたにはもうそれを必要としないので、あなたは今、あなたがバックアップに入ることができることに気付きます
+
+次の6ヶ月間それを知っています。
+
+必要な場合は、バックアップから取得します。バックアップからそれをバックアップに移動します。
+
+そして、1年後にそれをアーカイブに移動して、必要な場合はそれをプルできるようにします
+
+それ以外の場合は、そのままにしておくと、5年後に削除されます。
+
+これはすべて、ファイル名の規則を手動で直接記述することで実現できます。
+
+まだ入ってそれを削除し、正しく行うことができます。
+
+しかし、あなたがそれを行うことができる体系的なプロセスがあり、それがあなたのライフサイクルである場合、それを行う方法
+
+Googleクラウドストレージのポリシー。
+
+だからあなたができることは、あなたが知っているあなたの日のために定義された標準のストレージクラスを持つことができるということです
+
+オブジェクトが標準からニアラインに移動するライフサイクルポリシーを作成できます
+
+6か月後、1年後にクールな光に移動でき、5年後には
+
+外出して削除するだけです。
+
+ポリシーを定義すると、クラウドストレージライフサイクルポリシーとして管理され、
+
+何もする必要はありません。
+
+それがライフサイクルポリシーです。
+
+したがって、ライフサイクル管理構成を作業に割り当てることができます80循環ライフサイクル管理構成
+
+その後、ルールを設定できます。
+
+それらのルールは何ですか。
+
+変更できるものをすべて削除できること、ストレージクラスを変更できること、条件は
+
+ラベルが何らかのストレージクラスに一致する前に作成された年齢を定義するか、次のストレージクラスに移動します
+
+その特定のオブジェクトの新しい未使用部分の数。
+
+入ってコンソールで見てみましょう
+
+ここに行くと、この特定のバケットがあり、バケットログに行くと、保持ポリシーがあります。
+
+私たちはすでに、ライフサイクルを追加してライフサイクルを追加できると言っているので、年齢を言うことができ、同じことを考慮する必要がある場合
+
+例年。
+
+そのため、バケットが作成されると、標準になります。
+
+はい。
+
+そしてその後、それがデフォルトです。
+
+作成する必要はありません。
+
+6か月後、私がしなければならないことは、オブジェクトをほぼ近くに移動する必要があることです。
+
+つまり、180日後に、一致するストレージクラスに移動したいので、ストレージクラスを
+
+地域の標準であること。
+
+可用性が低下しましたか。
+
+これら3つのストレージクラスのいずれか。
+
+これはオプションです。アーカイブするかどうかにかかわらず、状態を指定できます。
+
+私はそれが人生であり、あなたがそれを動かすことができることを知っているからです。
+
+調査を続けることができ、それから私ができることは、ストレージクラスの中間に言えることです。
+
+わかりましたので、このポリシーは適用可能であり、別のものがあると思います
+
+さて、セールを進めて、ルールを追加できます。
+
+今度は、それらをカウントしていることを確認したいと思います。
+
+365日後
+
+状態がストレージクラスになるようにします。
+
+すべてのレーンの近くで、ゴールラインに移動したい。
+
+はい
+
+これが私の次のです。
+
+その後、そのルールを作成できます。
+
+そして、これは特定のバケットに適用できます。
+
+ライフサイクルポリシーのフォトバケットを作成しています。
+
+作成できます。
+
+あとで見る
+
+何日
+
+18日から25日くらいです。
+
+私がやりたいのは、コアラインとして存在するストレージクラスです。
+
+大丈夫削除したいです。
+
+削除すると復元できないと表示されます。
+
+はい。
+
+続けて封印して、これらが私たちが定義している3つのポリシーになるようにします。
+
+次にコアラインを削除します。
+
+私の例に戻ると、これは私たちが実装したものであり、すべてが世話をします
+
+クラウドストレージを使用する必要があります。
+
+介入する必要はありません。
+
+OK。
+
+いくつかの条件を変更したい場合は、先に進んで編集してください。
+
+すぐに適用できます。
+
+OK。
+
+それがストレージクラスのライフサイクルポリシーです。
+
+以前に作成されたのは、利用できないものを知っていた低マジックストレージクラス番号です。
+
+OK、それはみんなだ。
+
+このストレージクラスに関するご質問は、次の講義に移ってください。
+
+それがデータ転送です。

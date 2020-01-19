@@ -1,0 +1,119 @@
+Consistency for cloud storage.
+
+You can think of you know when you put a data or you when you copy a data out when you store the data
+
+to any file system right.
+
+You will need to have a consistency model because if you look at if you are storing of hailing in one
+
+particular directly you know in your own file system.
+
+You are not bothered about the consistency because it is getting stored into one particular location.
+
+But when you are storing the file into distributed architecture that's where the multiple copies of
+
+the data is getting created by the system that's where you need to look at the consistency model as
+
+because it is distributed system.
+
+OK.
+
+So looking at the consistency the strong consistency is for the following including Port data and the
+
+metadata.
+
+What is the strong consistency model right left after right.
+
+So 1 if you write the object if you copy the object and you are reading it once the right function is
+
+completed you can just read it.
+
+And this is strongly consistent a told me today to update you if you are reading the metadata update.
+
+If you are reading if you are trying to read a deleted object then it is definitely not available.
+
+Bucket listing is strongly consistent object listing strongly consistent granting access to resources
+
+strongly consistent means if you if someone does not have access to your object or bucket and you provided
+
+the permissions then those access permissions are strongly consistent.
+
+It will be immediately available to you internal consistency is reworking access permission from the
+
+resources.
+
+I consider you have provided permission to one of the objects are the bucket to certain users.
+
+Yeah and if you revoke the permissions it is going to stay for a little while you know and there is
+
+no guarantee that it will be.
+
+He walked away immediately.
+
+So you need to keep that in mind while under you know implementing or designing the solutions.
+
+That said guys is a bucket as a consistency rules.
+
+If you have any questions on the consistency let me know.
+
+Otherwise you can move to the next one which is bucket.
+
+クラウドストレージの一貫性。
+
+データを格納するとき、またはデータを保存するときにデータをコピーするとき、あなたが知っていると考えることができます
+
+任意のファイルシステムの権利。
+
+一貫性モデルが必要になります
+
+特定の直接あなた自身のファイルシステムで知っています。
+
+一貫性は特定の場所に保存されるため、気にする必要はありません。
+
+ただし、ファイルを分散アーキテクチャに保存する場合は、
+
+データは、一貫性モデルを次のように見る必要があるシステムによって作成されています
+
+分散システムだからです。
+
+OK。
+
+したがって、一貫性を見ると、ポートデータや
+
+メタデータ。
+
+右から左へ強い整合性モデルとは何ですか。
+
+したがって、オブジェクトをコピーし、正しい関数が読み込まれた後にオブジェクトを読み取る場合、オブジェクトを記述する場合は1
+
+完了したら、それを読むことができます。
+
+そして、これは非常に一貫性があり、メタデータの更新を読んでいる場合に更新するように今日教えてくれました。
+
+削除されたオブジェクトを読み取ろうとしているときに読んでいる場合、それは間違いなく利用できません。
+
+バケットリストは、リソースへのアクセスを許可する、非常に一貫したオブジェクトリストです。
+
+強い一貫性とは、誰かがあなたのオブジェクトまたはバケットにアクセスできず、提供した場合
+
+これらのアクセス許可は、強い一貫性があります。
+
+すぐに利用できるようになります内部一貫性は、
+
+リソース。
+
+特定のユーザーにバケットのオブジェクトの1つに許可を与えたと思います。
+
+ええ、もし許可を取り消すなら、あなたが知っていてそこにいる間、それは少しの間とどまるでしょう
+
+そうなるという保証はありません。
+
+彼はすぐに立ち去った。
+
+そのため、ソリューションの実装または設計を知っている間は、そのことに留意する必要があります。
+
+一貫性のルールとして、男はバケツだと言った。
+
+一貫性について質問がある場合はお知らせください。
+
+それ以外の場合は、次のバケットに移動できます。

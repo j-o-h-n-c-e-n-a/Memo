@@ -1,0 +1,707 @@
+Stag river logging.
+
+You can store analyze search monitor and alert on the log data and events from JCP as well as the EAW
+
+services.
+
+So again like monitoring logging is also multi cloud service that we have we can use it so what is it
+
+used for.
+
+You can actually do log management with alert you can how Splunk and log entries integration it is integrated
+
+with DCP and so is like equity and you can have it on NWS as well as JCP some of the features you can
+
+have a real time almost real time log management analysis seamless resolve these issues looking at the
+
+logs and work effectively to resolve them.
+
+It is scalable and fully managed service you do have to monitor manage any resources to do the logging
+
+all your cloud logs in one particular place rather than spread across multiple applications and you
+
+can get realtime insights on what is happening on the instances are the services cloud services
+
+some other features
+
+you can have custom logs ingestion API is now you can have a WS integration with agent you can have
+
+log retention up to 30 days longer period can we use cloud storage so you can store the log in cloud
+
+storage and again do analysis on it you can do log search you can have log base mattresses creator you
+
+can do alerting based on the logs you can hide once analytics with the big query so the data which is
+
+stored in the big cloud storage as well as you can think of data which is stored in big query go with
+
+the cloud storage you can stream log with Pops sub streamer you can how Splunk and log entries integration
+
+as well and you can do audit logging as well.
+
+And we are going to see how did logging in the next section.
+
+But yeah you can do our liking as well a high level concepts so you need to have a project for logging
+
+which is like straggler were logging and that project can be shared across all your resources project
+
+a W as projects log entries the individual entry which is there in the logging that is logging pre and
+
+it has got defined set up attributes which we can use it to define different matrices around it and
+
+you will have logs you have a retention period attached to the log entries and based on that the logs
+
+will be deleted like log retention is 30 days and there are different logging for different different
+
+type of retention period for different type of logs you have monitored resources again here so the resource
+
+from which you are pulling the logs out you have filters and you can apply different filters to get
+
+their dashboards are the reports out of logs you can export the log using the things sensing can be
+
+your cloud storage bucket are you are upset about your query you can have log based mattresses and those
+
+metrics are created you can create it from the UI itself and you have audit logs those audit log is
+
+based on you can think of when the resource is getting created or someone is trying to access the resource
+
+and you want to put forward some logs there because we want to mean make sure the right people are getting
+
+right services or system access and not you know some people trying to access a data which is not accessible
+
+by them you can actually get that monitored as well you can have access control logs you have a different
+
+set with three years and you need to have a strike they would account as we said so why we use typical
+
+logging or the logging which is there in the distract driver so straggling over logs right you can have
+
+straggler with logs struggling with logging receives index and store the log entries from many sources
+
+including Google Cloud Platform I made on a WSB instance is running strike driver logging which is with
+
+the planted agent and any other user applications so you are logging trees in straggler words are presented
+
+using single type log entry and that is very important and you can find the keys around it and get the
+
+statistics out of it we should define certain common data for all the log entries as well as getting
+
+individual payload exporting log you can actually go in and export the log so you need to have sync
+
+to export logs so really want to export it the process wants to configure the seeing all new entries
+
+will start exporting that into the sink not the old one will be exported it depends on type of thinking
+
+that it is batch are near real time like pub sub right cloud storage is in the batch you can probably
+
+check if the close to the account has access to cloud storage be query or pub sub configuration because
+
+that is what it is required for you to push the logs inside those things type of blocks you have audit
+
+log which is like I mean data access audit control log and we are going to see this again in the next
+
+section you have Agent log you are logs available in straggled I would look and there are some standard
+
+information about IP engine you have audit log opinion flexibility again you can get the audit log the
+
+agent log you can get it from the computer engine but yeah that's that's not typical you know the use
+
+cases what type of log are available from which service but you can have your own application log as
+
+well logging pricing this is the high level pricing that we have we have free allotment which is like
+
+free PDB per project per month but there are a lot of charges like 50 cents per GP and this is an optional
+
+if you go for premium tier right free Lux cloud audit logging and these are like logging which are excluded
+
+from the log allotment and you'll not be considered under you know the free PDB allotment the model
+
+if you want to look at the logging probably can go to Epping in logs are competing in logs or logging
+
+agent filters which we use it as track travel agent straggler would account in details but let's go
+
+ahead and get into the demo or the order wheel off strike driver logging let's go on getting details
+
+of the council right now and for straggler we're logging you can go straggling over logging from multiple
+
+locations one is you can go to your individual service like here in App Engine and you can go go directly
+
+into logging from there order you can go from straggler our logging directly.
+
+Right.
+
+So there are multiple ways right all you can actually go to say Strand where we're monitoring UI and
+
+click on logging and select
+
+Yeah.
+
+So there are multiple ways you can reach to a were logging when you go to straggler with logging in
+
+the UI.
+
+You will be presented with different options.
+
+Right.
+
+You can go in and create my trick.
+
+You can go ahead and export.
+
+Or you can go to logs log base metrics which are available out of system or you can define your own.
+
+You can export it and you can do log in as well.
+
+Okay so let's go back coming back here.
+
+You can choose a different services okay.
+
+Let me go ahead and go here and I have application.
+
+I can choose specific service and I can choose different the instances to pull the log out.
+
+So currently this particular instance is a 100 percent of my traffic.
+
+I can go here and select one another instance.
+
+There will no traffic last one hour.
+
+I can go in and see no limit.
+
+And there are this logs which are available for that particular instance.
+
+I can go and choose the application which is deposited with and this particular Virgin RAS now and you
+
+can see the the logs which are there right now for
+
+last hour so there are these logs.
+
+Let's go in and create some traffic there.
+
+So I'm just calling the the end point for the logs and logs will appear here either you can click load
+
+newer log or you can just click this one the stream logs in and as in when you are creating traffic
+
+on the App Engine all the logs will start appearing in here.
+
+OK so that's a good thing.
+
+I'll go back
+
+so you can go from here or you can go from application or you can go from straggler directly.
+
+So here we are.
+
+You can create different mattress metrics for your application but it will create based on whatever
+
+you have chosen right now.
+
+So if I need to create a metric based on my virtual machine I can see a no limit and load all the logs
+
+which are there in the virtual machine right.
+
+So I can create for do what I have selected right now I can create a metric for that.
+
+So create metric William
+
+what's your machine.
+
+I can add labels if I need to.
+
+I can put forward units count that out of distribution.
+
+I will just go ahead and create by default and you will find actually the metric is created right now.
+
+What do you see instance.
+
+I can just go ahead and read this particular metric or I can delete the metric or I can view the logs
+
+in the metric or I can just go to the exploded metric explode.
+
+Let's go one by one.
+
+So let me go here and you logs
+
+so these are the logs which are right now available.
+
+I can put forward different numbers here to jump those logs okay.
+
+And you can download more and more logs if there are available.
+
+I do not have any instance of ending right now I can download this lock and there are multiple options
+
+available you can do that with Jason ah CSP format view in a tab order you can click download I would
+
+say I want to we a tab so that tab really open and the Jason is there for that particular logs so that's
+
+the download option I can clear it and download and the file will get downloaded here OK I can explain
+
+all logs and you can see that Jason for that particular individual log what is there or what it is of
+
+what is there it is for non stream standard data log and what is that particular it's
+
+likewise I can choose different log based mattress which are available right now so monthly byte in
+
+the state for billing you can go ahead and view memory in metric Explorer
+
+so interval one minute interval that is what it says I want to see for one month and you can find the
+
+data
+
+right.
+
+So what I can do is I have this metric I can go in and apply filters if at all you want to have it I'll
+
+just choose this particular project and then I can
+
+explore in different modes I can put forward ratios and define it there
+
+I again put the stats there maximum minimum OK so you can actually explore the logs based on the way
+
+we want to have it right.
+
+And then shared by you are all you can share it by you in our view by you as a Jason format.
+
+So this is what it is.
+
+And we saw that you know you can have monitoring based on the dashboards and we saw these dashboards
+
+created the last time going back again to logging.
+
+You can create metric you can export the log.
+
+There is no sync configure so we can export it to any desired service.
+
+So where we want to export you want to export it and be query cloud storage or cloud pops up.
+
+And this is using Bob so you can actually stream the logs.
+
+So let's go ahead and do one of this particular export in the next demo.
+
+Thanks so I can go ahead and export the logs.
+
+I can create export here.
+
+So let me choose app engine because that is the service which is running right now
+
+Google App Engine.
+
+What is that.
+
+So how these logs I can go ahead and
+
+sync
+
+pops up and have engine select destination I can create pops up if I choose pops up then it says choose
+
+topic right.
+
+I can do is use one of the existing topic or I can create a new topic let me clear the new topic here.
+
+My log topic
+
+and then I can create sync
+
+so sync is created.
+
+I have the topic now which I can use it to pull that information.
+
+Okay.
+
+Let's go ahead and go to console and pull the information
+
+so we saw rally in cloud pops up.
+
+You can actually go in and use the come on.
+
+G Cloud pops up.
+
+Subscriptions and you can pull it
+
+our talk knowledge and I need to give the topic here right.
+
+So my topic is my logic topic my lock topic my log topic.
+
+So what it says resource not found
+
+so I'd say is not available so let's go ahead and see if pub sub is created just now.
+
+Audit is still awaiting go to perhaps up oh OK I need to create a subscription for that.
+
+So let me go ahead and create
+
+subscription create.
+
+So I need to create a subscription
+
+if you look at here in this book it looks good and identify if there are any log s..
+
+Yes there are log sync here App Engine standard error standard out you can go one up that log standard
+
+out 20 19 year one day and you can find all these logs you can click here and you can see the details
+
+of the log whatever it has been incorporated it isn't just informal and that's what we said we want
+
+to sink it in just in format so you will how actually these logs here what you can do is you can how
+
+life might create lifecycle policy which will delete these logs after say 30 days like age
+
+30 days if you want ah I would say 90 days or do can do is that you can do a state change are deleted
+
+continue and deleted so after 90 days these logs will be deleted so you can you will not have a considerable
+
+amount of charges from cloud storage bucket that's all guys for storing logging cloud storage if you
+
+have any questions here let me know otherwise you can more to the next lecture thanks.
+
+クワガタの伐採。
+
+分析検索モニターを保存し、JCPおよびEAWからのログデータとイベントに関するアラートを保存できます。
+
+サービス。
+
+繰り返しになりますが、ロギングの監視と同様に、マルチクラウドサービスもあります。
+
+のために使用される。
+
+実際にアラートを使用してログ管理を行うことができ、Splunkとログエントリの統合方法を統合できます
+
+DCPを使用しているため、公平性があり、NWSおよびJCPで使用できる機能の一部を使用できます。
+
+リアルタイムのほぼリアルタイムのログ管理分析により、これらの問題をシームレスに解決します。
+
+ログに記録し、効果的に解決してください。
+
+スケーラブルで完全に管理されたサービスであり、監視する必要があります
+
+すべてのクラウドが複数のアプリケーションに分散するのではなく、特定の場所にログを記録します。
+
+インスタンスで何が起こっているかについてリアルタイムの洞察を得ることができます
+
+他の機能
+
+カスタムログ取り込みAPIを使用できるようになりました
+
+クラウドストレージを使用してログをクラウドに保存できるように、最大​​30日間のログ保持
+
+ストレージと再度分析を行い、ログ検索を行うことができ、ログベースマットレスを作成することができます
+
+大きなクエリを使用して分析を一度非表示にできるログに基づいてアラートを実行できるため、
+
+大きなクラウドストレージに保存されているだけでなく、大きなクエリに保存されているデータを考えることができます
+
+Popsサブストリーマーでログをストリーミングできるクラウドストレージで、Splunkとログエントリの統合方法
+
+同様に、監査ログも実行できます。
+
+そして、次のセクションでロギングがどのように行われたかを見ていきます。
+
+しかし、あなたは私たちの好みと同様に高レベルの概念を行うことができますので、ロギングのためのプロジェクトが必要です
+
+これはストラグラーがログを記録していたようで、そのプロジェクトはすべてのリソースプロジェクトで共有できます
+
+プロジェクトとしてのWログエントリ個々のエントリは、事前にロギングしているロギングにあり、
+
+定義された設定属性があり、それを使用して周囲のさまざまな行列を定義できます。
+
+あなたはあなたがログエントリに添付された保持期間を持っているログを持つことになり、それに基づいてログ
+
+ログの保持期間が30日間であり、異なるログが異なるために削除されます
+
+ここでリソースを再度監視したさまざまなタイプのログの保持期間のタイプ
+
+ログを引き出しているフィルターにはフィルターがあり、さまざまなフィルターを適用して取得できます
+
+ダッシュボードはログからのレポートであり、センシングを使用してログをエクスポートできます
+
+あなたのクラウドストレージバケットは、あなたがログベースのマットレスとそれらを持つことができるあなたのクエリに動揺しています
+
+メトリックは作成されます。UI自体から作成できます。監査ログは
+
+リソースが作成されたとき、または誰かがリソースにアクセスしようとしているときに考えることができます
+
+そして、あなたはそこにいくつかのログを提出したいのです
+
+適切なサービスまたはシステムアクセス。アクセスできないデータにアクセスしようとしている人を知っているかどうか
+
+それらによって、実際に監視することができます。また、異なるアクセス制御ログを持つこともできます。
+
+3年で設定し、私たちが言ったように彼らが説明するストライキを持っている必要があります。
+
+ロギングまたは気を散らすドライバーにあるロギング。
+
+ロギングに苦労しているログのストラグラーは、インデックスを受け取り、多くのソースからログエントリを保存します
+
+WSBインスタンスで作成したGoogle Cloud Platformを含む
+
+植え付けられたエージェントと他のユーザーアプリケーションを使用して、ツリーをログに記録します。
+
+単一タイプのログエントリを使用することは非常に重要であり、その周りのキーを見つけて取得することができます
+
+統計情報から、すべてのログエントリに特定の共通データを定義するとともに、
+
+個々のペイロードエクスポートログを使用すると、実際にログインしてログをエクスポートできるため、同期が必要です
+
+ログをエクスポートして本当にエクスポートしたい場合、プロセスはすべての新しいエントリを表示するように設定します
+
+古いものではなくシンクにエクスポートすることを開始します。それは思考のタイプに依存します。
+
+バッチであることは、パブのサブ右クラウドストレージがバッチ内にあるようにほぼリアルタイムであり、おそらく
+
+アカウントの近くにクラウドストレージへのアクセス権があるかどうかを確認してください
+
+それはあなたが監査しているそれらの物のタイプのブロックの中にログをプッシュするために必要なものです
+
+ログは、データアクセス監査制御ログを意味するようなもので、次でもう一度確認します
+
+あなたがエージェントログを持っているセクションあなたは私が見てしまうだろうに利用可能なログであり、いくつかの標準があります
+
+監査ログの意見の柔軟性があるIPエンジンに関する情報監査ログを再度取得できます。
+
+エージェントログは、コンピュータエンジンから取得できますが、それはそうではありません。
+
+どのタイプのログがどのサービスから利用可能かを示しますが、独自のアプリケーションログを
+
+よくロギング価格設定これは我々が持っている高レベルの価格設定です
+
+1プロジェクトあたり月額無料PDB。ただし、GPあたり50セントなどの料金がかかります。これはオプションです。
+
+プレミアムレベルの無料のLuxクラウド監査ロギングを使用し、これらが除外されるロギングのような場合
+
+ログの割り当てから、あなたはモデルの下に無料のPDBの割り当てを知っているの下で考慮されません
+
+ログを確認したい場合は、おそらくログのエッピングに行くことができますログまたはログで競合しています
+
+旅行代理店ストラグラーが詳細に説明するトラックとして使用するエージェントフィルターですが、行きましょう
+
+先にデモを取得するか、ストライクドライバーのログを記録するオーダーホイールを見てみましょう詳細を取得しましょう
+
+評議会の今、そしてストラグラーのために私たちはロギングしています
+
+ロケーション1つは、App Engineのように個々のサービスにアクセスでき、直接アクセスできることです
+
+そこから順番にログを記録するようにするには、ストラグラーから直接ログを記録します。
+
+正しい。
+
+したがって、UIを監視しているStrandを実際に言うことができる方法は複数あります。
+
+ロギングをクリックして選択します
+
+うん。
+
+したがって、ログインしてストラグラーに行ったときに、ロギングに到達する方法は複数あります
+
+UI。
+
+さまざまなオプションが表示されます。
+
+正しい。
+
+入って、私のトリックを作成できます。
+
+先に進んでエクスポートできます。
+
+または、システム外で利用可能なログログベースメトリックに移動するか、独自に定義することができます。
+
+それをエクスポートでき、ログインもできます。
+
+さて、ここに戻ってみましょう。
+
+別のサービスを選択できます。
+
+先に進んで、ここに行きましょう。アプリケーションがあります。
+
+特定のサービスを選択し、異なるインスタンスを選択してログアウトすることができます。
+
+現在、この特定のインスタンスは私のトラフィックの100％です。
+
+ここに移動して、別のインスタンスを1つ選択できます。
+
+1時間続くトラフィックはありません。
+
+私は入って制限なしを見ることができます。
+
+そして、その特定のインスタンスで利用可能なこのログがあります。
+
+寄託されたアプリケーションと、この特定のVirgin RASを選択できます。
+
+今そこにあるログを見ることができます
+
+最後の時間なので、これらのログがあります。
+
+そこに行き、そこにトラフィックを作成しましょう。
+
+したがって、ログのエンドポイントを呼び出しているだけで、ここにログが表示されます。
+
+新しいログ、またはこれをクリックするだけで、ストリームがログインし、トラフィックを作成するときのように
+
+App Engineでは、すべてのログがここに表示され始めます。
+
+OK、それは良いことです。
+
+戻ります
+
+あなたはここから行くか、アプリケーションから行くか、ストラグラーから直接行くことができます。
+
+だからここにいる。
+
+アプリケーション用にさまざまなマットレスメトリックを作成できますが、何に基づいても作成されます
+
+あなたは今選んだ。
+
+したがって、仮想マシンに基づいてメトリックを作成する必要がある場合、制限なしを確認してすべてのログをロードできます
+
+仮想マシンの右側にあります。
+
+そのため、今選択したことを実行するために作成できます。そのためのメトリックを作成できます。
+
+メトリックウィリアムを作成する
+
+あなたのマシンは何ですか。
+
+必要に応じてラベルを追加できます。
+
+ユニットを前倒しして、それを配布から除外することができます。
+
+先に進み、デフォルトで作成します。実際にメトリックが作成されます。
+
+インスタンスは何を見ていますか。
+
+先に進み、この特定のメトリックを読むか、メトリックを削除するか、ログを表示できます
+
+メトリックで、または爆発したメトリックの爆発に行くことができます。
+
+ひとつずつ行きましょう。
+
+ここに行かせてください
+
+これらは現在利用可能なログです。
+
+ここで別の数字を入力して、これらのログをジャンプできます。
+
+また、利用可能なログがあれば、より多くのログをダウンロードできます。
+
+現在、このロックをダウンロードでき、複数のオプションがあるエンディングのインスタンスはありません
+
+利用可能な場合は、Jason ah CSP形式のビューでタブオーダーで実行できます。
+
+そのタブが本当に開くようにタブを作りたいと言って、ジェイソンはその特定のログのためにそこにいるので
+
+ダウンロードオプションをクリアしてダウンロードすると、ファイルがここからダウンロードされますOK説明できます
+
+すべてのログを見ると、その特定の個々のジェイソンがそこに何があるか、それが何であるかを見ることができます
+
+それは非ストリーム標準データログのためのものであり、その特定のものは何ですか
+
+同様に、現在利用可能な別のログベースのマットレスを選択できます。
+
+請求先の状態。先に進んで、Metric Explorerでメモリを表示できます。
+
+間隔1分間隔は、1か月間見たいと言っているもので、
+
+データ
+
+正しい。
+
+だから私ができることは、私が行くことができるこのメトリックを持っていることです。
+
+この特定のプロジェクトを選択するだけで
+
+さまざまなモードで探索し、前方比を入れてそこに定義することができます
+
+再度、統計を最大値、最小値、OKに設定して、実際に方法に基づいてログを調査できるようにします
+
+私たちはそれを正しくしたいのです。
+
+そして、あなたによって共有されるのは、あなたがジェイソン形式として私たちの見解であなたがそれを共有できるすべてです。
+
+これがそれです。
+
+そして、ダッシュボードに基づいて監視できることを知っていることがわかり、これらのダッシュボードを見ました
+
+再度ロギングに戻る最後の時間を作成しました。
+
+ログをエクスポートできるメトリックを作成できます。
+
+同期の構成はないため、目的のサービスにエクスポートできます。
+
+そのため、エクスポートしたい場所にエクスポートして、クエリクラウドストレージまたはクラウドポップアップが必要になります。
+
+これはボブを使用しているので、実際にログをストリーミングできます。
+
+それでは、次のデモでこの特定のエクスポートのいずれかを実行しましょう。
+
+おかげで、ログをエクスポートできます。
+
+ここでエクスポートを作成できます。
+
+アプリエンジンを選択します。これは、現在実行中のサービスです。
+
+Google App Engine。
+
+それは何ですか。
+
+これらのログをどのように先に進めるか
+
+同期する
+
+ポップアップが表示され、エンジンの選択先が表示されます。ポップアップを選択するとポップアップが作成され、選択すると表示されます
+
+トピック右。
+
+既存のトピックのいずれかを使用するか、新しいトピックを作成して、ここで新しいトピックをクリアできます。
+
+私のログトピック
+
+同期を作成できます
+
+同期が作成されます。
+
+これで、その情報を引き出すために使用できるトピックができました。
+
+はい。
+
+さあ、コンソールに行って情報を引き出しましょう
+
+クラウドでの集会がポップアップするのを見ました。
+
+実際に入って来て使用することができます。
+
+G Cloudがポップアップします。
+
+サブスクリプションとあなたはそれを引き出すことができます
+
+私たちの話の知識と私はここでトピックを与える必要があります。
+
+したがって、私のトピックは私のロジックトピック、私のロックトピック、私のログトピックです。
+
+リソースが見つかりません
+
+だから私は利用できないと思うので、先に進んで、pub subが今作成されたかどうかを見てみましょう。
+
+監査はまだ待機中です。おそらく、そうするためにサブスクリプションを作成する必要があります。
+
+それでは先に進んで作成しましょう
+
+サブスクリプション作成。
+
+サブスクリプションを作成する必要があります
+
+この本のここを見ると、見栄えがよく、ログがあるかどうかを識別できます。
+
+はい、ここにログ同期がありますApp Engine標準エラー標準出力
+
+20 19年いつか、あなたはここをクリックしてこれらのログをすべて見つけることができ、詳細を見ることができます
+
+それが組み込まれたログの何でもそれはただの非公式ではなく、それが我々が望むと言ったことです
+
+ちょうど形式でそれをシンクするので、ここで実際にこれらのログをどのようにすることができますか
+
+ライフはライフサイクルポリシーを作成するかもしれません。これはこれらのログを年齢のような30日後に削除します
+
+あなたがああしたい場合30日私は90日と言うでしょうか、あなたができることはあなたが状態の変更を行うことができるということです削除されます
+
+90日後にこれらのログが削除されるので、継続して削除してください。
+
+クラウドストレージバケットからの請求額
+
+質問がある場合はお知らせください。それ以外の場合は、次の講義に感謝します。

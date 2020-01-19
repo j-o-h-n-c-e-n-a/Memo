@@ -1,0 +1,64 @@
+Enabling disable other features.
+
+So if I go back to the cluster creation if I click on Create cluster I can go down in elements options.
+
+So first thing first I can go in and click on component Gateway.
+
+You can enable and disable it but at the same time we can go down and change this image so I can change
+
+say one point forty billion out of two point nine and spark two point four.
+
+If at all you need two point four but at the same time you can go ahead and select an optional component.
+
+I can click here I can select Anaconda Hyo Jupiter not Wook zip link and Druid Presto and zookeeper
+
+all of those has got a different use cases a fertile you know the requirement as an example say Zuckerberg
+
+maintains multiple copies and then it helps the H.A. clusters to choose the master.
+
+You can have centralized data synchronization nodes so there are many many more use cases which you
+
+can use it out of zookeeper an inability to install it into the cluster.
+
+So these are the optional components does not get installed automatically if you want to install those
+
+components you need to go in and select those components so those are the advanced features or the additional
+
+component which you can install along with the cluster guys.
+
+If you have any questions on these ones let me know otherwise we can move to the next lecture and that
+
+is storage options.
+
+
+有効にすると、他の機能が無効になります。
+
+そのため、[クラスターの作成]をクリックしてクラスターの作成に戻ると、要素オプションに移動できます。
+
+まず最初に、コンポーネントGatewayをクリックします。
+
+有効化および無効化できますが、同時にこのイメージを変更して変更できるため、
+
+2ポイント9のうち40ポイントを1ポイントと言い、2ポイント4を引き起こします。
+
+2つのポイント4が必要な場合でも、同時にオプションコンポーネントを選択できます。
+
+ここをクリックして、Wac zipリンクとDruid PrestoおよびzookeeperではなくAnaconda Hyo Jupiterを選択できます。
+
+Zuckerberg氏は、これらすべてが異なるユースケースを持っていることを知っています。
+
+複数のコピーを維持し、それがH.Aを支援しますマスターを選択するクラスター。
+
+集中化されたデータ同期ノードを使用できるため、さらに多くのユースケースがあります。
+
+zookeeperからそれを使用して、クラスターにインストールできないことがあります。
+
+したがって、これらをインストールする場合、これらはオプションのコンポーネントは自動的にインストールされません
+
+これらのコンポーネントが高度な機能または追加機能であるように、それらのコンポーネントを選択して選択する必要があります
+
+クラスタの人と一緒にインストールできるコンポーネント。
+
+これらについて質問がある場合はお知らせください。それ以外の場合は、次の講義に移ることができます。
+
+ストレージオプションです。

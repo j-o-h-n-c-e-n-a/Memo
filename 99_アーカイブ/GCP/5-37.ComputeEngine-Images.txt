@@ -1,0 +1,295 @@
+Computer engine images what are those images.
+
+Images are you can think of it's like operating system image which we use it in that it can be like
+
+you custom created and take it to we will float platform or you can have your you know you can use the
+
+public image to launch and a virtual machine instance.
+
+So let's go in and understand what are those kind of images how you can do it how you can create your
+
+own whether you can create on your own which others cannot access here because a proprietary code all
+
+Well we all get it.
+
+I mean all that.
+
+So we image or you see image.
+
+The image contains definitely a bootloader or root file system.
+
+Everything you need to start a computer image computing engine.
+
+Images are stored in D.C. as image storage service and this is a separate service it is Google cloud
+
+storage.
+
+We are going to see that what it is.
+
+In subsequent lectures.
+
+But typically it's a separate email service and you can store that in Google cloud storage.
+
+And we are going to see that shortly.
+
+There are two different type of images one is the private image and the second one is the public image.
+
+Private images maintained by you are you created on your own maybe on premises you create the image
+
+you take it to the Google Cloud Platform and you use it for your own purposes.
+
+It is not a public.
+
+The public image is on the other hand is the public maintained by Google and its community.
+
+Well you can how you know the lamp mage are you going to have you in the image which we used just now
+
+to launch and we am.
+
+So if I had to go to the console right now if you go to compute engine and images you can find all these
+
+images right all of these images.
+
+So there are public images that are private images which you you created on your own right.
+
+You can create a create image with this one you can do a source's disk snapshot or image itself.
+
+So if you choose the image itself then you can select the image source as an image here you can have
+
+the location lose no more is no because you can think of this is actually stored in cloud storage and
+
+cloud storage has gone to a different storage classes.
+
+One is the military's name and the second one is the regional.
+
+You can have family associated.
+
+This is an additional tag description and you can even provide the labels you can incorporate Google.
+
+So encryption mechanism whether it is Google manage customer managed which is you manage it or you just
+
+supply a key and Google will manage it for you.
+
+So these are kind of images which are you you can think of it's like image service which you can use
+
+it or leverage it.
+
+I'll go back to you know I'll go back to VM instance and create William and this is like image right
+
+to see these are the image these are like public images.
+
+I can click on this one and you can even see Windows servers and all our trade application images.
+
+I if I have a custom image I can see it here.
+
+Snapshot existing disk.
+
+So let me go back I have this particular instance right.
+
+So let me stop it so I will have this Castle Theatre to that particular instance right now here I can
+
+select that and create a snapshot out of it.
+
+But I can create image out of disk and the disk sources your the original instance which we just stopped
+
+right.
+
+You can create the image out of it.
+
+So let me give you a name here JCP of exam
+
+create
+
+once you create the image
+
+you can see it here.
+
+So use your own image.
+
+Right.
+
+Encryption is Google managed but this is your only image.
+
+Other people cannot see the image.
+
+It's your own image.
+
+OK you can use this image to create virtual machine instance
+
+create instance and I can see here change to OK I'll wait for some time for for the image to appear
+
+here.
+
+Now as you see the JCP all exam is created and I can select that and launch an instance so that's the
+
+private image which I created.
+
+Public image which we are using it and maintained by Google all security badges grades and everything
+
+is taken care of by Google.
+
+You can have your own custom image you can create it on your own pretty nice and you can take it to
+
+the Google.
+
+You can import boot disk of your choice you can create an image out of booties.
+
+Can you can copy one image to another image so all of these are like how you can create your own images
+
+into a Google Cloud Platform and that's it.
+
+Guys as the images on Google Cloud Platform.
+
+If you have any questions let me know otherwise you can move to the next lecture that is instant template.
+
+Any instance groups.
+
+Thank you.
+
+コンピューターエンジンのイメージは、それらのイメージを表します。
+
+イメージは、オペレーティングシステムイメージのようなものだと考えることができます。
+
+あなたがカスタム作成し、私たちにそれを連れて行くプラットフォームをフロートさせるか、あなたがあなたがあなたが使用できることを知ってもらうことができます
+
+起動するパブリックイメージと仮想マシンインスタンス。
+
+それでは、そのような画像が何であるかを理解してみましょう。
+
+独自のコードがすべてあるため、他の人がここでアクセスできない独自の方法で作成できるかどうか
+
+まあ我々はそれをすべて取得します。
+
+すべてのことを意味します。
+
+だから、私たちは画像化するか、画像を見る。
+
+イメージには必ずブートローダーまたはルートファイルシステムが含まれています。
+
+コンピューターイメージコンピューティングエンジンを起動するために必要なものすべて。
+
+画像は画像ストレージサービスとしてD.C.に保存されます。これはGoogleクラウドの別のサービスです
+
+ストレージ。
+
+それが何であるかを見ていきます。
+
+その後の講義で。
+
+ただし、通常は個別のメールサービスであり、Googleクラウドストレージに保存できます。
+
+そして、私たちはまもなくそれを見ます。
+
+2種類の画像があります。1つはプライベート画像で、もう1つはパブリック画像です。
+
+自分で管理しているプラ​​イベートイメージは、自分で作成したものか、イメージを作成した社内で作成したものです
+
+Google Cloud Platformに持って行き、自分の目的に使用します。
+
+一般公開されていません。
+
+一方、パブリックイメージは、Googleとそのコミュニティが維持しているパブリックです。
+
+さて、ランプメイジをどのように知ることができますか。
+
+起動し、私たちは。
+
+そのため、今すぐコンソールに行かなければならなかった場合、計算エンジンと画像に行くと、これらすべてを見つけることができます
+
+画像はこれらすべての画像に当てはまります。
+
+したがって、自分で作成したプライベートイメージであるパブリックイメージがあります。
+
+これを使用して作成イメージを作成し、ソースのディスクスナップショットまたはイメージ自体を作成できます。
+
+したがって、画像自体を選択した場合、ここで画像として画像ソースを選択できます
+
+あなたはこれが実際にクラウドストレージに保存されていると考えることができるため、場所はこれ以上失うことはありません
+
+クラウドストレージはさまざまなストレージクラスに移行しています。
+
+1つは軍の名前で、2つ目は地域です。
+
+家族を関連付けることができます。
+
+これは追加のタグの説明であり、Googleに組み込むことができるラベルを提供することもできます。
+
+暗号化メカニズムは、Googleであるか、顧客が管理しているのか、それともあなたが管理しているのか
+
+キーを入力すると、Googleがキーを管理します。
+
+だから、これらはあなたがあなたがそれを使用できる画像サービスのようなものだとあなたが考えることができる画像の一種です
+
+またはそれを活用します。
+
+VMインスタンスに戻り、Williamを作成します。これはイメージのようなものです。
+
+これらは、パブリックイメージのようなイメージです。
+
+これをクリックすると、Windowsサーバーとすべてのトレードアプリケーションイメージを表示できます。
+
+カスタムイメージがある場合は、ここで確認できます。
+
+既存のディスクのスナップショット。
+
+それでは、この特定のインスタンスが正しいことを説明します。
+
+それを止めさせて、この特定のインスタンスのキャッスルシアターを今すぐここに持って行きます。
+
+それを選択して、スナップショットを作成します。
+
+しかし、私はディスクからイメージを作成し、ディスクは元のインスタンスをソースします
+
+正しい。
+
+それから画像を作成できます。
+
+ここで試験のJCPの名前を教えてください
+
+作成する
+
+画像を作成したら
+
+ここで見ることができます。
+
+独自の画像を使用してください。
+
+正しい。
+
+暗号化はGoogleが管理しますが、これが唯一の画像です。
+
+他の人は画像を見ることができません。
+
+それはあなた自身の画像です。
+
+このイメージを使用して仮想マシンインスタンスを作成できます
+
+インスタンスを作成すると、ここで[OK]に変更できます。画像が表示されるまでしばらく待ちます
+
+ここに。
+
+JCPを見ると、すべての試験が作成されているので、それを選択し、インスタンスを起動して、
+
+作成したプライベートイメージ。
+
+Googleが使用し、すべてのセキュリティバッジグレードとすべてを維持しているパブリックイメージ
+
+Googleが処理します。
+
+独自のカスタムイメージを作成して、独自に作成することができます。
+
+Google。
+
+選択したブートディスクをインポートして、ブーティからイメージを作成できます。
+
+ある画像を別の画像にコピーできるので、これらはすべて独自の画像を作成する方法のようです
+
+Google Cloud Platformに統合すればそれだけです。
+
+Google Cloud Platformの画像としてのGuys。
+
+質問がある場合はお知らせください。それ以外の場合は、インスタントテンプレートである次の講義に移動できます。
+
+インスタンスグループ。
+
+ありがとうございました。

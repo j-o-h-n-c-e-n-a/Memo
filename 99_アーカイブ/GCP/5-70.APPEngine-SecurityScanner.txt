@@ -1,0 +1,179 @@
+Happened in has got a security scanner a few observe that I am not sure whether you observe it while
+
+we were doing this.
+
+There are other taps as well.
+
+If you want to see it you can incorporate firewall rules to allow or disallow here itself.
+
+Instead of actually going in to the network you can apply firewall rules so you can see I can say I'll
+
+deny or allow you can do all of that right.
+
+You can have a go die right.
+
+You can how main cache setup right.
+
+You can just create a key and then you can use it you can flash them cache but at the same time you
+
+have something called security scanner and you need to enable this so it takes a moment.
+
+And if I go back to happiness in security scanner
+
+so how enabled this one the security scan I can actually go at and include I can give the name my new
+
+scan and what it needs is you all.
+
+So my you URL for
+
+my opinion is
+
+OK I don't know what was the problem.
+
+So here is what I have it.
+
+I can just go ahead and
+
+run it.
+
+And it says scan discovered unexpectedly low number up your is definitely only.
+
+We only have one you are.
+
+OK that's fine.
+
+And you can donate again you can edit it you can do all of that.
+
+But beyond this one happened and also provides an infected is not a part of App Engine but it is a part
+
+of so you can debug the code.
+
+You can trace.
+
+You can do a logging you can do edit reporting and debug trees and edit reporting only applicable to
+
+the App Engine.
+
+And I think that are adding some.
+
+But at this point let me go back to app and you know
+
+and you can put the logging mechanism there so if there are logs it'll show you the logs but this is
+
+not something I want to go I want to go to see source code.
+
+You can see the source code here okay.
+
+So this is the source code.
+
+This is our fine and.
+
+And it has got to be doing it
+
+have dirty animal files right.
+
+So that's a you can check the source code and go back and I want to do the book
+
+and you can just go in and put these bookmarks there and do a deep book on the source code as well.
+
+So that's the advantage with that that's guys.
+
+That's what I had it on securities Canada and all other feature up App Engine.
+
+If you have any questions let me know.
+
+You can hold onto your advance level up questions if it is developer level coaching or something because
+
+we are going to cover this in detail in the developer certification.
+
+Thank you.
+
+Happened inはセキュリティスキャナーを持っています
+
+これをやっていた。
+
+他のタップもあります。
+
+表示する場合は、ファイアウォールルールを組み込んで、ここで許可または拒否することができます。
+
+実際にネットワークにアクセスする代わりに、ファイアウォールルールを適用して、私が
+
+その権利をすべて拒否または許可できます。
+
+あなたは死ぬ権利を持つことができます。
+
+メインキャッシュの設定方法は適切です。
+
+キーを作成するだけで、それを使用してキャッシュをフラッシュできますが、同時に
+
+セキュリティスキャナーと呼ばれるものがあり、これを有効にする必要があるため、少し時間がかかります。
+
+そして、私がセキュリティスキャナーで幸せに戻ったら
+
+だから私は実際にこのセキュリティスキャンをどのように有効にして含めることができますか？新しい名前を付けることができます
+
+スキャンして必要なのはあなただけです。
+
+だから私のあなたのURL
+
+私の意見は
+
+OK何が問題なのかわかりません。
+
+ここに私が持っているものがあります。
+
+先に進むことができます
+
+それを実行します。
+
+そして、それはスキャンがあなたが間違いなく唯一の予想外に低い数を発見したと言います。
+
+あなたがいるのは一人だけです。
+
+OK、それは大丈夫です。
+
+そして、あなたはそれを編集することができ、あなたはそのすべてを行うことができます再び寄付することができます。
+
+しかし、これを超えて、App Engineの一部ではなく、感染したものも提供されますが、それは一部です
+
+そのため、コードをデバッグできます。
+
+トレースできます。
+
+ロギングを実行して、レポートの編集およびツリーのデバッグを行い、適用可能なレポートのみを編集できます。
+
+App Engine。
+
+そして、それがいくつか追加されていると思います。
+
+しかし、この時点でアプリに戻りましょう。
+
+ログメカニズムをそこに置くことができるので、ログがある場合はログが表示されますが、これは
+
+私が行きたいものではなく、ソースコードを見に行きたいです。
+
+ここでソースコードを見ることができます。
+
+これがソースコードです。
+
+これは私たちの罰金です。
+
+そしてそれはそれをしなければならない
+
+汚い動物のファイルが正しい。
+
+だから、ソースコードを確認して戻って、本をやりたい
+
+そこに行ってこれらのブックマークをそこに置いて、ソースコードについての深い本を作成することもできます。
+
+だからそれはみんなの利点です。
+
+これが、カナダの証券やその他のApp Engineのすべての機能で私が持っていたものです。
+
+ご質問がある場合はお知らせください。
+
+それが開発者レベルのコーチングまたは何かである場合、あなたは事前のレベルアップ質問を保持することができます
+
+これについては、開発者認定で詳しく説明します。
+
+ありがとうございました。

@@ -1,0 +1,104 @@
+So how do you know auto scaling works in at least in virtual machine right.
+
+If we keep ourselves out mind ourselves to the virtual machine because for all other things like App
+
+Engine for
+
+Coburn it is engine.
+
+You have parameters you can contribute it in is your machine also.
+
+We have seen it and I I want to point it back to the the configurations like instance group if you look
+
+at how you can define auto scaling configuration that if I go back just wanted to reiterate what we
+
+learned instead the group and you can define auto scaling on and off.
+
+If you make it on then you can define parameters based on what parameter you want to configure and auto
+
+scaling.
+
+Okay.
+
+And then target superior deflation if you say that then what should be minimum target.
+
+Simply relation to speed up additional instances what should be minimum maximum.
+
+And then you've used to say mattresses or utilization.
+
+Then you can say so okay.
+
+The concept here is competent you know for Sato's killing automatically removes an ADD and that is again
+
+elasticity.
+
+The way you can use it there are these two scaling policy which you can use it.
+
+I'm not going in details but that is in a high level if you want to treat or understand auto scaling.
+
+We already see in it the high availability now you need to think about it.
+
+Hi how you can configure higher liability in any of the load balancer right.
+
+Just think about it and then you can put forward the question if you do not understand or not have answered
+
+and answered that question yet in my theory or demote which we have covered.
+
+Just let me know.
+
+Ah you can just put forward your thoughts around how you can configure high availability using he did
+
+that you know in this does group are history strategy load balancer.
+
+
+それでは、少なくとも仮想マシンで自動スケーリングが機能することをどのように確認しますか。
+
+Appのような他のすべてのことのために、仮想マシンに対して自分自身を気にしない場合
+
+のエンジン
+
+コバーンはエンジンです。
+
+あなたのマシンでも貢献できるパラメータがあります。
+
+私たちはそれを見てきましたので、インスタンスグループのような構成を見てみましょう。
+
+自動スケーリング設定をどのように定義できるかで、私が戻ったら私たちが何を繰り返したかっただけなのか
+
+代わりにグループを学習し、自動スケーリングのオンとオフを定義できます。
+
+設定すると、設定したいパラメーターに基づいてパラメーターを定義でき、自動
+
+スケーリング。
+
+はい。
+
+そして、もしあなたがそう言うなら、優れたデフレを目標にします。
+
+最小の最大値である必要がある追加のインスタンスを高速化するための単純な関係
+
+そして、あなたはマットレスや使用率を言うのに使用しました。
+
+その後、あなたはとても大丈夫と言うことができます。
+
+ここでの概念は、佐藤の殺害がADDを自動的に削除することを知っている有能であり、それは再びです
+
+弾性。
+
+使用できる方法には、使用できるこれらの2つのスケーリングポリシーがあります。
+
+詳細は説明しませんが、自動スケーリングを処理または理解したい場合は高レベルです。
+
+あなたはそれについて考える必要がある今、私たちはすでにその中に高可用性を見ています。
+
+こんにちは、ロードバランサーの権利のいずれかで高い責任を構成する方法。
+
+考えてみてください。理解できない場合や回答していない場合は、質問を提出してください。
+
+そして、私たちがカバーした私の理論または降格でその質問にまだ答えました。
+
+私に知らせて。
+
+ああ、彼を使って高可用性を構成する方法について考えを進めることができます。
+
+このグループで知っているのは、履歴戦略ロードバランサーです。

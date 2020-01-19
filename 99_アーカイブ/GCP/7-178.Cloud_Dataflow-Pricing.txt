@@ -1,0 +1,79 @@
+Pricing for cloud did have low
+
+and this is clouding the floor.
+
+Jobs are built per second increments based on the actual usage of data flow badge or streaming worker
+
+jobs that consume additional resources such as cloud storage pops up are billed as poor.
+
+It's not a service pricing methodology.
+
+And if you look at it says batch zero point zero 56 we CPE use dollar per hour memory storage storage
+
+necessity and data processed.
+
+And this is in jeebies.
+
+And if I go back here to our example you can find those numbers here at Okay so the resource metric
+
+mattresses total we see butane the 2.0 to visit you are where the memory was this much but actual memory
+
+which will be built is zero point zero 7 6 GBR were persistent disk was this but actual G.B. hour which
+
+will be charged is this one.
+
+So all of that those numbers are used for your calculation and you can think of.
+
+You can see this that at this particular time right which was used and that particular compute resources.
+
+And this is the time that is how it will be charged to you for any jobs
+
+that's it guys as a foundation for the data flow if at all you have any questions let us know the detail
+
+of data flow rate writing the actual program and all those should be either the part of cloud developer
+
+or it should be part of cloud a data engineer but not know those certifications if you have any questions
+
+if you want to try something and if you get stuck somewhere let us know otherwise move to the next service
+
+thank you very much.
+
+クラウドの価格設定は低かった
+
+これが床を曇らせています。
+
+ジョブは、データフローバッジまたはストリーミングワーカーの実際の使用に基づいて、1秒ごとに増加して構築されます
+
+クラウドストレージのポップアップなどの追加のリソースを消費するジョブは、低品質として請求されます。
+
+サービスの価格設定方法ではありません。
+
+バッチゼロポイントゼロ56と言うと、CPEは1時間あたり1ドルのメモリストレージストレージを使用しています
+
+必要性と処理されたデータ。
+
+そして、これはジービーです。
+
+ここに戻って例に戻ると、Okayでこれらの数値を見つけることができるので、リソースメトリック
+
+あなたが訪問するブタン2.0を見るマットレスの合計は、メモリがこれほどでしたが実際のメモリであった場所です
+
+構築されるのは、ゼロポイントゼロ7 6 GBRでしたが、これは永続ディスクでしたが、実際のGBです。時間
+
+これが請求されます。
+
+そのため、これらの数値はすべて計算に使用され、考えることができます。
+
+これは、この特定の時間に使用されたものと特定の計算リソースを示しています。
+
+そして、これがどんな仕事に対してもあなたに請求される方法です
+
+質問があれば詳細をお知らせください。
+
+実際のプログラムを作成するデータフローレートのすべてであり、それらはすべてクラウド開発者の一部である
+
+または、クラウドの一部であるデータエンジニアが、質問がある場合はそれらの認定を知らない
+
+何か試してみたい、どこかで行き詰まったら、次のサービスに移ってください
+
+どうもありがとうございました。

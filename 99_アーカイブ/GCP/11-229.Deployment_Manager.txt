@@ -1,0 +1,744 @@
+Deployment Manager Deployment Manager is a part of infrastructure and supporting services that are available
+
+on Google Cloud Platform.
+
+You can do infrastructure automation using Deployment Manager which will launch this core services like
+
+computing database storage of networking.
+
+Let's go ahead and get into it.
+
+So deployment using deployment while year you can create manage cloud resources with simple template.
+
+And this is what we call it as infrastructure as a core.
+
+So you you defined the infrastructure into a configuration file and you can launch the full infrastructure
+
+using that configuration file and that is the deployment manager.
+
+We already saw all used Deployment Manager here when we saw cloud launcher.
+
+I'll go through deployment manager
+
+and we launched we launched this LAMP stack using using cloud launcher.
+
+If you get in and see the details you can find there is a danger right.
+
+And this is a template that we used it.
+
+And it contains washing machine instances.
+
+It's password it's the data's config lamp configuration all of that is there inside this particular
+
+template.
+
+So if you go inside site that addresses this one that we just launched.
+
+If you click on it you will be able to see it
+
+BHP might mean you will be able to see it right.
+
+It reminded me and that is a part of the configuration
+
+so in a nutshell if at all if you look at it is using some imports here a right layout by clicking here
+
+you will find what is the configuration that we have use it right.
+
+And this is the main configuration file that we have.
+
+So it contains resources lamp.
+
+The VM instances like the zone machine type input disk would all of that information is there in your
+
+deployment.
+
+So let's go in and understand what is that.
+
+When we say Deployment Manager how you can create the deployment manager you can deploy solutions from
+
+market place which is like cloud launcher which they renamed it but you can create your own deployments.
+
+Let's go in and understand that
+
+so when we say cloud deployment manager what do we mean by that right.
+
+So cloud deployment manager has got a deployment which is a you can think of configuration file where
+
+you write all your code or the infrastructure resource you can template ize it.
+
+So for different resources you can create different template and you can implement a import those templates
+
+inside your the big file and you can launch the deployment template has all deployment has got the resources.
+
+And these are the cloud resources and you configure those resources and you can have multiple resources
+
+inside deployment and resource has got a different type of resources.
+
+OK we will get into details of that shortly but typically what you use as a when you want to launch
+
+a particular configuration or deployment into a DCP is first you create the deployment which is I can
+
+tell you this these are the example from Google flag platform.
+
+Quick star deployment and which will use config file we will execute this shortly.
+
+G cloud deployment manager you can describe what it contains in that particular deployment and you can
+
+delete the deployment.
+
+So that's all you need to know as a part of deployment of deployment manager.
+
+If you look at the sea levels which they have asked is deploying an application using Deployment Manager
+
+deploying them developing Deployment Manager template to automate deployment of an application launching
+
+a Deployment Manager template to provision DCP resources and configure automatically.
+
+OK.
+
+We we are going to see this in detail shortly here in the console.
+
+Let's go ahead and get it.
+
+Okay so if I if I go to the documentation part here.
+
+Google
+
+cloud deployment manager and I would say quick start saying Quick Start I did things set up here.
+
+So first you need to set the project as a configuration and then I have a that he will file and this
+
+is your yarmulke configuration file it's a similar like Jason file but it is more friendly than Jason
+
+is.
+
+Okay.
+
+So let me copy this out and put this in
+
+notepad here and what I need to do is I need to change my project daily area.
+
+Very well it is we've done a project today.
+
+OK so that I can set it in the configuration as a project and dollar project idea or I can just replace
+
+it here.
+
+So let me go here I will take the project idea from here.
+
+Let me just copy that and replace it in this
+
+locations where.
+
+There is a project early
+
+so if you look at what it contains is
+
+it sets.
+
+I want the resources the resources of the type of computer instance the name of the resources.
+
+Quick Start.
+
+William deployment and its properties for this particular complete instance is the zone in which this
+
+should be launched.
+
+The matching type it is there.
+
+Then this.
+
+What is that you want to attach it.
+
+It is a part search and disk.
+
+And so it is a boot disk of the type of persistent yes boot disk.
+
+Totally true initialize parameters and sort of see image we were using which you want to launch your
+
+infrastructure network interface and the network configuration which you want to attach it.
+
+Okay.
+
+So I'm going to use the default network country duration and that's it.
+
+So once I have this particular file I'm just going to get that file okay.
+
+So I had this file.
+
+I can just copy pasted and I can go to here.
+
+I can create VM dot
+
+yellow and I can just copy paste all the contribution
+
+you feel look at it's the same configuration that we have.
+
+OK.
+
+Just example
+
+OK the next come on that we have EAS you want to create the deployment out of it and I can go in and
+
+just use this command to launch the deployment
+
+so it is the deployment is getting created now.
+
+Will pause the video for some moment and come back OK.
+
+It is failed now and the NSA is a resource error which means there are some resources to which I am
+
+using it has got some problem.
+
+400.
+
+I'm just trying to identify where is the resource here in value.
+
+Well value for field resource.
+
+This dot initialize Batam source image so source images wrong I can go on and check what is the source
+
+image here initialize Batam and source image.
+
+OK debris and cloud and family is not clearly there.
+
+So let me go ahead and get it from this particular
+
+so we are using Debian.
+
+So what is that we are using not bad.
+
+We want them in global image family baby in cloudy image family
+
+image family baby in line.
+
+Okay.
+
+Just go ahead and replace that in our
+
+Yemen to find okay.
+
+I just have a family member.
+
+What it says project global deployment already exists and cannot be created again.
+
+OK deployment is there.
+
+It says
+
+OK let me just delete this first.
+
+So it had created a deployment but as because it while launching it it was creating a problem for that
+
+particular image which was not available so let's wait.
+
+Yeah.
+
+I think deployment is deleted now run it again we'll wait for this to launch.
+
+So looks like deployment is created.
+
+Let me just to refresh this one
+
+so I have the deployment just now so I can go ahead and I'm just using quick start successfully created
+
+I can go in and explore the deployment in G Cloud console.
+
+Greek Star deployment I need will explain this the complete beauty goes about the deployment.
+
+Let us go ahead.
+
+Click here so I can review config
+
+and you can see all the configuration that is that is what we are given it is available here just to
+
+lay out what it contains.
+
+It contains the resources and extended country is the remaining part of that instance.
+
+If you look at the actual resource that we have is this one and you can have multiple resources inside
+
+the deployment file.
+
+You can do manage resources but it is in the vehemence it does which cost provision as a part of that
+
+deployment.
+
+Okay
+
+so you can the SSA to VM if you want
+
+you can access to that.
+
+But the initial all the configuration if we look at while you are launching the instance you are giving
+
+all these parameters right.
+
+You can get all this parameter inside the configuration file and that's how the deployment is created
+
+you can provide disk you can provide network and all of that and that's where you can.
+
+It says that it is infrastructure as a core.
+
+So everything is written in a code and that's so you can launch an infrastructure using the config file
+
+and that's third deployment manager.
+
+If I elaborate more on what is deployment manager I can go ahead and explain a little bit about it.
+
+So if you look at
+
+if we look at the concepts
+
+here and I'll give you an example there as well you can how you can create the templates deployment
+
+file.
+
+So this is your configuration or deployment means the overall configuration and using which you can
+
+launch the deployment but you can create templates and those templates can be imported here into the
+
+main configuration file.
+
+And usually if you look at the market place images like this lamp one if I go to deployment manager
+
+and this one they are using multiple configuration here templates here to ultimately launch your instances.
+
+OK so that's the that's the template which you can you can template is it you can define different type
+
+of resources and it's type like what type of that particular resources like computer are cloud ask you
+
+a letter like that.
+
+OK.
+
+And that's Yeah.
+
+That is that is the property of deployment manager.
+
+If I look at here.
+
+So deployment is a high level property pile using which you can deploy multiple cloud resources you
+
+can take that particular property file and launch it again and again like if you create a deployment
+
+for you are developing environment right you can use that deployment file to launch it again and again
+
+whenever you want to create the European environment if you have the environment which is like best
+
+environment and which are only required whenever you are.
+
+Your project is in the test phase.
+
+So what you can do is you can create a deployment for that and you can launch it using that particular
+
+deployment file as in when it is required.
+
+The work is or you can just you know build the deployment and have that configuration file stored so
+
+that you can launch it again whenever it is required you can do the same thing you went from production
+
+right you can take a copy up your production and create the deployment file and ultimately you can if
+
+something goes wrong and you want to you need to create a complete new infrastructure you can go in
+
+and use deployment manager to launch your complete infrastructure within some minutes.
+
+OK.
+
+If it has gotten our networks databases and everything in it you can launch the complete infrastructure
+
+within a minute okay.
+
+And that is the power of the deployment manager which you can use it.
+
+I think we covered almost all the walloping deployment manager template to automate deployment of an
+
+application launching deployment manager template providing disability resources and configure and application
+
+automatically.
+
+So we saw this one if at all you need any other demo on deployment manager like a detail demo area let
+
+me know.
+
+I can actually go out and create that but I think this information is sufficient for the third application
+
+if you have any questions on this one.
+
+Let me know otherwise you can move to the next section.
+
+Thank you very much.
+
+
+Deployment Manager Deployment Managerは、利用可能なインフラストラクチャおよびサポートサービスの一部です。
+
+Google Cloud Platformで。
+
+次のようなコアサービスを起動するDeployment Managerを使用して、インフラストラクチャの自動化を行うことができます。
+
+ネットワークのデータベースストレージの計算。
+
+さあ、始めましょう。
+
+したがって、年間の展開を使用した展開では、シンプルなテンプレートを使用してクラウドリソースの管理を作成できます。
+
+そして、これはコアとしてのインフラストラクチャと呼ばれるものです。
+
+インフラストラクチャを構成ファイルに定義したので、完全なインフラストラクチャを起動できます
+
+その構成ファイルを使用し、それがDeployment Managerです。
+
+クラウドランチャーを見たときに、ここで使用されているすべてのDeployment Managerをすでに見ました。
+
+展開マネージャーを使用します
+
+クラウドランチャーを使用してこのLAMPスタックを起動しました。
+
+乗り込んで詳細を見ると、危険があることがわかります。
+
+そして、これは私たちが使用したテンプレートです。
+
+そして、洗濯機のインスタンスが含まれています。
+
+パスワードであり、データの設定ランプの設定です
+
+テンプレート。
+
+したがって、私たちが立ち上げたばかりのこのサイトに対応するサイト内に行くと。
+
+クリックすると表示されます
+
+BHPは、あなたがそれを正しく見ることができることを意味するかもしれません。
+
+それは私に思い出させ、それは構成の一部です
+
+簡単に言えば、もしあなたがそれを見るならば、ここでいくつかのインポートを使用しているなら、ここをクリックして正しいレイアウトを
+
+あなたは私たちがそれを正しく使用している構成が何であるかを見つけるでしょう。
+
+そして、これは私たちが持っているメインの設定ファイルです。
+
+そのため、リソースランプが含まれています。
+
+ゾーンマシンタイプの入力ディスクなどのVMインスタンスは、すべての情報が
+
+展開。
+
+それでは、それが何であるかを理解しましょう。
+
+Deployment Managerを使用してソリューションを展開できるDeployment Managerを作成する方法を言うとき
+
+彼らはそれを名前を変更したクラウドランチャーのような市場ですが、独自の展開を作成することができます。
+
+入って理解しましょう
+
+クラウドデプロイメントマネージャーと言うとき、その権利とはどういう意味ですか。
+
+クラウドデプロイメントマネージャーは、構成ファイルを考えることができるデプロイメントを持っています。
+
+すべてのコードまたはインフラストラクチャリソースを記述して、テンプレート化できます。
+
+したがって、異なるリソースに対して異なるテンプレートを作成し、それらのテンプレートのインポートを実装できます
+
+あなたの大きなファイルの中で、あなたはすべての展開がリソースを持っている展開テンプレートを起動することができます。
+
+そして、これらはクラウドリソースであり、それらのリソースを設定すると、複数のリソースを使用できます
+
+内部展開とリソースには異なるタイプのリソースがあります。
+
+すぐに詳細を説明しますが、通常は起動するときに使用するものを使用します
+
+DCPへの特定の構成または展開は、最初に展開を作成します。
+
+これは、Googleフラグプラットフォームの例です。
+
+クイックスターの展開と構成ファイルを使用します。これはすぐに実行します。
+
+Gクラウドデプロイメントマネージャーでは、その特定のデプロイメントに含まれる内容を記述できます。
+
+展開を削除します。
+
+したがって、Deployment Managerのデプロイメントの一部として知る必要があるのはこれだけです。
+
+彼らが尋ねた海面を見ると、Deployment Managerを使用してアプリケーションをデプロイしています
+
+それらを展開して、アプリケーションの起動を自動化するDeployment Managerテンプレートを開発する
+
+DCPリソースをプロビジョニングして自動的に構成するDeployment Managerテンプレート。
+
+OK。
+
+これについては、コンソールで詳細に説明します。
+
+先に進みましょう。
+
+ここでドキュメントの部分に移動すると、大丈夫です。
+
+グーグル
+
+クラウドデプロイメントマネージャーとクイックスタートと言いますが、ここで設定したことをクイックスタートと言います。
+
+最初にプロジェクトを構成として設定する必要があります
+
+あなたのyarmulke設定ファイルはJasonファイルに似ていますが、Jasonよりも使いやすいです
+
+です。
+
+はい。
+
+これをコピーして入れてみましょう
+
+ここでメモ帳を使用して、プロジェクトの毎日の領域を変更する必要があります。
+
+今日はプロジェクトを完了しました。
+
+構成でプロジェクトとドルのプロジェクトのアイデアとして設定するか、単に置き換えることができます
+
+ここに。
+
+ここに行きましょう。ここからプロジェクトのアイデアを取り上げます。
+
+それをコピーして、これに置き換えてみましょう
+
+どこの場所。
+
+プロジェクトが早い
+
+含まれているものを見ると
+
+設定します。
+
+リソースには、コンピューターインスタンスのタイプのリソース、リソースの名前が必要です。
+
+クイックスタート。
+
+この特定の完全なインスタンスのWilliam展開とそのプロパティは、このゾーンです
+
+起動する必要があります。
+
+一致するタイプがあります。
+
+それからこれ。
+
+添付したいものは何ですか。
+
+部品検索およびディスクです。
+
+そして、それは永続的なyesブートディスクのタイプのブートディスクです。
+
+完全に初期化するパラメーターと、使用したい起動イメージの種類
+
+インフラストラクチャネットワークインターフェイスと、接続するネットワーク構成。
+
+はい。
+
+そのため、デフォルトのネットワーク国の期間を使用しますが、それだけです。
+
+そのため、この特定のファイルを取得したら、そのファイルを取得します。
+
+だから私はこのファイルを持っていた。
+
+貼り付けてコピーするだけで、ここに行くことができます。
+
+VMドットを作成できます
+
+黄色とすべての貢献をコピーして貼り付けることができます
+
+あなたはそれが私たちが持っているのと同じ構成だと感じます。
+
+OK。
+
+ほんの一例
+
+次に、EASを使用して展開を作成したいので、次に進みます。
+
+このコマンドを使用して展開を開始するだけです
+
+ですから、デプロイメントが今作成されています。
+
+しばらくビデオを一時停止し、OKに戻ります。
+
+今は失敗し、NSAはリソースエラーです。つまり、私がいるリソースがいくつかあります。
+
+それを使用すると、いくつかの問題が発生しました。
+
+400。
+
+私はただ、ここで価値のあるリソースがどこにあるかを特定しようとしています。
+
+フィールドリソースのウェル値。
+
+このドットはBatamソースイメージを初期化するため、ソースイメージが間違っているため、ソースを確認できます。
+
+ここの画像は、バタムとソース画像を初期化します。
+
+[OK]がれきや雲、家族はそこにはっきりとはありません。
+
+だから私は先に行くと、この特定からそれを取得しましょう
+
+私たちはDebianを使用しています。
+
+だから私たちが使っているのは悪くないということです。
+
+クラウドイメージファミリーの赤ちゃんをグローバルイメージファミリーに入れたい
+
+ラインの家族の赤ちゃんをイメージします。
+
+はい。
+
+ただ先にそれを置き換えてください
+
+イエメンは大丈夫です。
+
+私には家族がいます。
+
+プロジェクトのグローバル展開は既に存在し、再作成することはできません。
+
+OK展開があります。
+
+それは言います
+
+まず、これを削除してください。
+
+展開を作成しましたが、起動中に問題が発生したため
+
+特定の画像が利用できなかったので、待ってみましょう。
+
+うん。
+
+展開が削除されたので、もう一度実行して、これが起動するのを待ちます。
+
+展開が作成されたように見えます。
+
+これをリフレッシュさせてください
+
+だから私はちょうど今展開を持っているので、先に進むことができます。
+
+G Cloudコンソールで展開を確認できます。
+
+私が必要とするギリシャ星の展開は、完全な美しさが展開について行くことを説明します。
+
+先に進みましょう。
+
+ここをクリックして構成を確認できます
+
+そして、私たちが与えられているものであるすべての構成を見ることができます
+
+含まれているものをレイアウトします。
+
+リソースが含まれており、拡張国はそのインスタンスの残りの部分です。
+
+私たちが持っている実際のリソースを見ると、これであり、内部に複数のリソースを持つことができます
+
+展開ファイル。
+
+リソースを管理することはできますが、その一部としてプロビジョニングにかかる​​費用は激しいです
+
+展開。
+
+はい
+
+必要に応じて、VMにSSAすることができます
+
+あなたはそれにアクセスできます。
+
+ただし、与えているインスタンスを起動しているときに見ると、最初のすべての設定
+
+これらすべてのパラメーターが正しい。
+
+構成ファイル内でこのパラメーターをすべて取得できます。これがデプロイメントの作成方法です
+
+ネットワークを提供できるディスクを提供でき、そのすべてが可能です。
+
+それはコアとしてのインフラストラクチャであると言います。
+
+すべてがコードで記述されているため、構成ファイルを使用してインフラストラクチャを起動できます
+
+それが3番目のデプロイメントマネージャーです。
+
+Deployment Managerとは何かについて詳しく説明する場合は、先に進んで、それについて少し説明します。
+
+だからあなたが見たら
+
+概念を見ると
+
+ここに例を示します。テンプレートの展開を作成する方法もあります。
+
+ファイル。
+
+ですから、これはあなたの構成または展開であり、全体的な構成と使用を意味します
+
+展開を開始しますが、テンプレートを作成し、それらのテンプレートをここにインポートできます
+
+メイン構成ファイル。
+
+そして通常、私が展開マネージャーに行くと、このランプのような市場の画像を見ると
+
+これは、ここで複数の設定テンプレートを使用して、最終的にインスタンスを起動します。
+
+OK、それがあなたがテンプレートにできるテンプレートです、それはあなたが異なるタイプを定義することができるということです
+
+リソースの種類と、コンピューターなどの特定のリソースの種類がクラウドであるようなタイプです
+
+そのような手紙。
+
+OK。
+
+そしてそれはうん。
+
+それがDeployment Managerのプロパティです。
+
+ここを見ると。
+
+したがって、展開は、複数のクラウドリソースを展開できる高レベルのプロパティパイルです
+
+その特定のプロパティファイルを取得し、展開を作成する場合と同様に何度も起動できます。
+
+環境を開発しているので、その展開ファイルを使用して何度も起動できます
+
+あなたが最高のような環境を持っているなら、ヨーロッパの環境を作りたいときはいつでも
+
+いつでも必要な環境です。
+
+プロジェクトはテスト段階です。
+
+できることは、そのための展開を作成し、その特定の
+
+必要な場合の展開ファイル。
+
+作業は、または展開を構築してその構成ファイルを保存することを知っているだけです
+
+必要なときにいつでも再起動できるので、本番環境から行ったのと同じことができます
+
+まさにあなたの生産をコピーして展開ファイルを作成することができ、最終的には
+
+何かがうまくいかず、あなたが入ることができる完全に新しいインフラストラクチャを作成する必要がある場合
+
+Deployment Managerを使用して、数分以内に完全なインフラストラクチャを起動します。
+
+OK。
+
+ネットワークデータベースとその中のすべてを取得している場合は、完全なインフラストラクチャを起動できます。
+
+1分以内に大丈夫です。
+
+そして、それがDeployment Managerのパワーであり、それを使用できます。
+
+展開の自動化のために、ほぼすべてのウォロッピング展開マネージャーテンプレートをカバーしたと思います
+
+障害リソースおよび構成とアプリケーションを提供するアプリケーション起動デプロイメントマネージャーテンプレート
+
+自動的に。
+
+したがって、詳細なデモエリアのようにDeployment Managerで他のデモが必要な場合は、この1つを見ました
+
+知ってる
+
+実際に外に出て作成することもできますが、この情報は3番目のアプリケーションには十分だと思います
+
+これに関する質問がある場合。
+
+それ以外の場合は、次のセクションに移動できることをお知らせください。
+
+どうもありがとうございました。

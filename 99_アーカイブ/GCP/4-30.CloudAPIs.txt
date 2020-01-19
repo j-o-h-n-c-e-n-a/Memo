@@ -1,0 +1,219 @@
+Cloud APIs.
+
+This is you can think of.
+
+You can use it while in your programming and it's a restrained point.
+
+It's a race to API which you can use it.
+
+Let me go to the console and show you how you can explore different APIs.
+
+Let me go back.
+
+If I go to the cloud console as a home page you can go here exploring enable API is and here you will
+
+see what our API is executed in your duration.
+
+This one you can actually change that duration or download those cloud transactions but let me go ahead
+
+and show you an example.
+
+I went inside a computer engine API is in here.
+
+You will get the information.
+
+How many uses for the for your computer engine API.
+
+But you can go and try in API Explorer so here.
+
+This is a sandbox.
+
+You can try different API.
+
+I can go here and
+
+let me try one compute engine.
+
+Instance create so instance list.
+
+Let me try this one.
+
+So what it needs it needs.
+
+Project 80 and the zoom.
+
+Let me go here and get my project tidy.
+
+This is my project 30
+
+and zone which one I am referring and I just need to put it in its own.
+
+I just kill us and this could happen e to one.
+
+So on
+
+so he will ask me permissions which user
+
+did say it's Anons on.
+
+Okay let let me give you one.
+
+A might just give the region
+
+us is to 1
+
+it says unknown.
+
+Let me go here and see if I have any virtual machine running there.
+
+So it says US just 1 be just copy paste
+
+so here you go.
+
+The outcome.
+
+The instance name what it's kind it's kind of compute instance.
+
+Instance 1.
+
+It's a name and it will give you all the details of IP addresses and all the information so I have this
+
+IP address and so EPA Explorer is really a good tool to explode or explode these APIs and you can query
+
+it and you can get the information out and you can see the sample outcome.
+
+This is what you will get it in your programming interface.
+
+And this is what the EPA request which you are putting it.
+
+That's the cloud API guys.
+
+If you have any questions on cloud EPA let me know it's a programming interface that's what you need
+
+to remember.
+
+If all you want to try it you can use EPA Explorer that is another reminder.
+
+And if at all there is any questions it will be around this one for you.
+
+If you want to try say restrained points what is the option which you want to use it right.
+
+And AP Explorer is one of the options that you will get get it which you need to select.
+
+That's it as the interfaces.
+
+Guys we are going to get into cloud SDK installation in the next section anyways.
+
+But if you have any questions on Terry part let me know otherwise you can move to the next section.
+
+Thanks.
+
+クラウドAPI。
+
+これはあなたが考えることができるものです。
+
+プログラミング中に使用できますが、それは制限されたポイントです。
+
+それはあなたがそれを使うことができるAPIへの競争です。
+
+コンソールにアクセスして、さまざまなAPIを探索する方法を説明します。
+
+戻りましょう。
+
+ホームページとしてクラウドコンソールにアクセスすると、ここでAPIの有効化を確認できます。
+
+期間中にAPIが実行される内容を確認します。
+
+これは、実際にその期間を変更するか、クラウドトランザクションをダウンロードできますが、先に進めます
+
+例を示します。
+
+ここにあるコンピューターエンジンAPIの中に行きました。
+
+情報を取得します。
+
+コンピューターエンジンAPIの使用回数。
+
+ただし、API Explorerで試してみることができます。
+
+これはサンドボックスです。
+
+別のAPIを試すことができます。
+
+ここに行くことができます
+
+1つの計算エンジンを試してみましょう。
+
+インスタンスはインスタンスリストを作成します。
+
+これを試してみましょう。
+
+必要なものが必要です。
+
+プロジェクト80とズーム。
+
+ここに行って、プロジェクトを整頓しましょう。
+
+これは私のプロジェクトです30
+
+そして、私が参照しているものをゾーンし、それをそれ自体に置く必要があります。
+
+私はただ私たちを殺すだけです。
+
+など
+
+だから彼はどのユーザーに許可を求めます
+
+Anonsがオンだと言った。
+
+さて、1つあげましょう。
+
+ただ地域を与えるかもしれない
+
+私たちは1
+
+不明と言う。
+
+ここに行って、そこで実行されている仮想マシンがあるかどうかを確認します。
+
+だから、米国はたった1コピーコピーペーストであると言う
+
+だからここに行きます。
+
+結果。
+
+インスタンス名種類計算インスタンスの種類。
+
+インスタンス1。
+
+これは名前であり、IPアドレスのすべての詳細とすべての情報を提供します。
+
+IPアドレスなので、EPA ExplorerはこれらのAPIを爆発または爆発させるのに本当に良いツールであり、クエリを実行できます。
+
+それとあなたは情報を得ることができ、サンプルの結果を見ることができます。
+
+これは、プログラミングインターフェイスで取得するものです。
+
+そして、これはあなたがそれを入れているEPAが要求するものです。
+
+それがクラウドAPIです。
+
+クラウドEPAについて質問がある場合は、必要なプログラミングインターフェースであることをお知らせください
+
+覚えておいてください。
+
+試してみたいのであれば、別のリマインダーであるEPA Explorerを使用できます。
+
+そして、何か質問がある場合は、この質問の周りにあなたのためになります。
+
+あなたが抑制されたポイントを言いたいと思うならば、あなたがそれを正しく使いたいオプションは何ですか。
+
+AP Explorerは、選択する必要のあるオプションの1つです。
+
+インターフェースとしてはそれだけです。
+
+とにかく、次のセクションでクラウドSDKのインストールについて説明します。
+
+しかし、テリーの部分について質問がある場合はお知らせください。そうでない場合は、次のセクションに移動できます。
+
+ありがとう。

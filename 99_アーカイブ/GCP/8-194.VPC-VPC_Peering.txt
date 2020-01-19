@@ -1,0 +1,284 @@
+We are disappearing disappearing if we look at all.
+
+If you want to understand the concept itself you want to connect to different networks together.
+
+And that's where the viewer concept of the VPC pairing comes within the project.
+
+Outside the project it relies on pre-programmed routes for VM to VM communication.
+
+It can be used to connect one too many VPC is subject to the quota.
+
+So the total number of VM inside the VPC pairing should not cross more than I think fifteen thousand
+
+five hundred.
+
+It is non transitory in nature.
+
+As an example if you say pair a you know VPC a with VPC B and then we proceed B with we PCC then you
+
+cannot assume that VPC is paired with B PCC security policies remain independent and can limit the communication
+
+ability between two pieces.
+
+There is a quote As I said which you need to monitor or network can have up to 25 direct peer network
+
+in total.
+
+There are some differences but before I do that I'll want you to take to the VPC here and want to show
+
+you how you can share VPC on how you can peer VPC so I have three networks right now.
+
+I can go out and create the UPC connection I say create I can create
+
+beating one and I can see a default network I want to be a default network.
+
+Okay.
+
+In this particular project I my same project and I want to be to do it custom VPC.
+
+Okay so I can create this one
+
+so it's going to take some time or some moment I'll post the video
+
+so if you look at it says inactive status okay.
+
+I can go here.
+
+Create peering.
+
+And this time what I need to do is I need to create other way around.
+
+So my first name was like I created from default to build my custom UPC the other way around I need
+
+to create from
+
+building to.
+
+And this is from my custom UPC to default.
+
+So if I do that in that case it is going to appear and you can do within the multiple projects altogether.
+
+It does not necessarily need to have in the same project so I can.
+
+I think this is going to take some time.
+
+So the bidding is created and you see that you know it is active from both the ends preparing from this
+
+end and bidding from this end.
+
+So when you create appearing you enable a connection or you ask for a connection and then once it is
+
+once you create that bidding it will wait for other connection to be created.
+
+OK so this is within the project.
+
+If I have to create appearing outside the project let me give you an example
+
+beating outside one.
+
+That's what I created and I want to connect my custom VPC with another project and the project data
+
+which I want to use is this one.
+
+I have another project fortunately which I can use it and the network name which I want to use it.
+
+Default.
+
+And while this is being created I can go that side.
+
+I can choose the other project and I can create a connection and they can create and say
+
+outside waiting to happen.
+
+So I only one network there and I want to connect another project and let me put the UPC name post and
+
+now this project
+
+so the bidding is getting connected.
+
+I can go back to my.
+
+So this is waiting for the other part to get connected.
+
+I'll wait for some moment.
+
+So I think there is a problem and this is very important for you to understand as a problem what it
+
+says.
+
+If I go here in the notification it says an IP range in the local network.
+
+This overlaps with IP range with other network and that is not at all good for peering so you need to
+
+have exclusive IP ranges in both the network that's where you can go ahead and create the peering.
+
+Okay.
+
+And that is what you need to keep in mind.
+
+So I'm not going to demonstrate that you can just to have exclusive IP ranges in both the network and
+
+then you can go on and period
+
+going back to some of the differences here.
+
+VPC tweeting was associated with P.C. use case in a project within the project.
+
+You cannot do a shared VIP pieces because that's not the whole purpose within the project.
+
+You can have different network and you can connect different pieces together for communication multiple
+
+organization you can do VPC appearing on network management if you want to have you know a centralized
+
+network management and that's where you create shared VPC one network team and you have help from the
+
+host project and then that is shared across multiple service project in case of repositioning the network
+
+management is individual project teams job like you know because the pieces are created within those
+
+projects that's it guys as a VPC appearing if you have any questions let me know otherwise you can move
+
+to the next lecture that is quotas and limits.
+
+
+私たちはすべてを見れば消えて消えています。
+
+コンセプト自体を理解する場合は、異なるネットワークに一緒に接続する必要があります。
+
+そして、VPCペアリングの視聴者の概念がプロジェクト内で出てくるところです。
+
+プロジェクトの外部では、VMからVMへの通信のために事前にプログラムされたルートに依存しています。
+
+割り当ての対象となるVPCが多すぎる場合の接続に使用できます。
+
+したがって、VPCペアリング内のVMの総数は、1万5,000を超えないはずです。
+
+500。
+
+それは本質的に一時的ではありません。
+
+例として、VPC aとVPC Bを知っているペアaと言う場合、PCCを使用してBを進め、次にあなたは
+
+VPCがB PCCセキュリティポリシーとペアになっていると想定することはできず、独立したままで通信を制限できる
+
+2つの部分の間の能力。
+
+私が言ったように、あなたが監視する必要があるか、ネットワークが最大25の直接ピアネットワークを持つことができるという引用があります
+
+合計で。
+
+いくつかの違いがありますが、その前に、ここでVPCにアクセスして見せたいと思います。
+
+VPCをピアリングする方法についてVPCを共有する方法を教えてください。現在3つのネットワークがあります。
+
+外に出てUPC接続を作成できます
+
+1つを破ると、デフォルトネットワークになりたいデフォルトネットワークが表示されます。
+
+はい。
+
+この特定のプロジェクトでは、私の同じプロジェクトで、カスタムVPCを実行したいと考えています。
+
+さて、これを作成できます
+
+しばらく時間がかかりますビデオを投稿します
+
+あなたがそれを見ると、非アクティブ状態は大丈夫だと言います。
+
+ここに行くことができます。
+
+ピアリングを作成します。
+
+今回は、他の方法で作成する必要があります。
+
+だから私の名前はデフォルトから作成したようなものでした
+
+から作成する
+
+への構築。
+
+これは、私のカスタムUPCからデフォルトです。
+
+したがって、その場合、それが表示され、複数のプロジェクト内ですべて実行できます。
+
+私ができるように、必ずしも同じプロジェクトに参加する必要はありません。
+
+これには時間がかかると思います。
+
+入札が作成され、あなたはそれがこれから準備する両端からアクティブであることを知っていることがわかります
+
+この終わりから入札します。
+
+したがって、表示を作成するときは、接続を有効にするか、接続を要求してから
+
+その入札を作成すると、他の接続が作成されるまで待機します。
+
+OK、これはプロジェクト内にあります。
+
+プロジェクトの外に表示を作成する必要がある場合は、例を挙げましょう
+
+外で暴行。
+
+それが私が作成したものであり、カスタムVPCを別のプロジェクトとプロジェクトデータに接続したい
+
+私が使いたいのはこれです。
+
+幸いなことに、使用できる別のプロジェクトと、使用したいネットワーク名があります。
+
+デフォルト。
+
+これが作成されている間、私はその側に行くことができます。
+
+他のプロジェクトを選択し、接続を作成して、作成して発言することができます
+
+外で起こるのを待っています。
+
+そこで、ネットワークは1つだけで、別のプロジェクトに接続して、UPC名の投稿と
+
+今このプロジェクト
+
+入札が接続されています。
+
+戻ることができます。
+
+したがって、これは他の部分が接続されるのを待っています。
+
+しばらくお待ちください。
+
+だから私は問題があると思うし、これはあなたが問題としてそれを理解するために非常に重要です
+
+言う。
+
+ここで通知に移動すると、ローカルネットワークのIP範囲が示されます。
+
+これは、他のネットワークとのIP範囲と重複するため、ピアリングにはまったく向いていません。
+
+先に進んでピアリングを作成できるネットワークの両方に排他的なIP範囲があります。
+
+はい。
+
+そして、それはあなたが心に留めておく必要があるものです。
+
+したがって、ネットワークとネットワークの両方で排他的なIP範囲を使用できることを示すつもりはありません。
+
+その後、期間を続けることができます
+
+ここでいくつかの違いに戻ります。
+
+VPCのツイートはP.Cに関連付けられていました。プロジェクト内のプロジェクトのユースケース。
+
+共有VIPピースは、プロジェクト内の目的ではないため、共有できません。
+
+異なるネットワークを持つことができ、複数の通信のために異なる部分を一緒に接続することができます
+
+中央集中型を知ってもらいたい場合は、ネットワーク管理に表示されるVPCを実行できる組織
+
+ネットワーク管理。共有VPCを1つのネットワークチームで作成し、そこから支援を受けます。
+
+プロジェクトをホストしてから、ネットワークを再配置する場合に複数のサービスプロジェクトで共有します
+
+管理は、あなたが知っているように個々のプロジェクトチームの仕事です
+
+質問がある場合に表示されるVPCとしてのプロジェクトです
+
+次の講義であるクォータと制限に進みます。

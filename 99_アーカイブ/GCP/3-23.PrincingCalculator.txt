@@ -1,0 +1,283 @@
+Pricing calculator you can get estimation of cost including discounts and treat years using the pricing
+
+calculator.
+
+There is not enough theory for us to get into the presentation mode.
+
+Let's just dive into the pricing calculator.
+
+As an UI itself let me go here then I'll just put pricing
+
+Google Cloud Platform
+
+and here you go.
+
+The first link appears has a pricing calculator.
+
+So what it does will put forward some of the examples you write as an example I want compute into.
+
+I'm.
+
+I have not explained what is computing Gene yet but I'm just giving an example here.
+
+So I want compute engine with the number of instances I want five compute engine.
+
+This instances is for web hosting for my company.
+
+Majority of domain.
+
+I'll use debut in our Linux platform.
+
+You have multiple paid license it's also included like Red Hat Enterprise Linux and something like that.
+
+But I'll just put this one regular or premium table.
+
+I'll talk about what is premium table virtual machine in actual virtual machine computing engine section
+
+but there is a premium table option which exists for you to just launch it and you get around 80 percent
+
+discount for those instances.
+
+But there are limitations using those.
+
+But let me make that as a premium table and then type up instance.
+
+We are not gone through yet but I am just selecting I need 32 jeebies up then and 120 G visa to 32 recipients
+
+and one 22 NDTV.
+
+If you aren't you can add in graphic processing unit
+
+and then you can just added.
+
+So this is your estimate.
+
+And if you want to see the details you want in different uh uh currencies you can get it getting us
+
+it's like 1000 dollars for one month.
+
+Let me go ahead and take this out or yield it this way.
+
+I want to only one instance I want time but I don't want this big machine I just want small machine
+
+I can go small and it says GPO and I believe well I don't need GPO for this one I need the locally sixty
+
+three seventy five.
+
+I'll I'll talk about this one.
+
+Okay uh
+
+okay let me add it so here you go right.
+
+Twenty three dollars for one month you can uh you can change it you can do multiple instances.
+
+You can see this is one month right.
+
+If you go here for three years it will give you eight thirty one dollars so you estimate you estimate
+
+it saved
+
+so like that you can ask for different options like I want 10 forwarding rules for and 10 G's.
+
+I'm just adding it to it.
+
+And you're.
+
+The cost will reflect the amount.
+
+Or do you know you have it.
+
+There was a detail of this particular pricing which they used to give it.
+
+Not sure why I don't see it right now.
+
+Okay so this is pricing calculator guys if at all say you want to launch let me go here and launch cloud
+
+a school
+
+and in crowded school I want secondary inflation my yes school instance this one.
+
+This is a web number of instances 3 N I want 3 N storage in G.B. is as easy can just you will get the
+
+cost for this second variation a school that's.
+
+Right.
+
+Three instances which will run for one complete here and you'll be charged three thousand eight hundred
+
+dollars right.
+
+Sustained uses on the other 30 percent you should have sustained use just counting computer engineers
+
+will because it does not qualify
+
+Yeah it does not qualify for it.
+
+So they are not shown it but you can see sustained use this counts also implement calculate likewise
+
+you can go to any of these API eyes and so this is number of North bases like Cloud Spanner.
+
+I can just mention I need 10 nodes danger with storage.
+
+This is really silly.
+
+Configuration 10 nodes and 10 Gibby but I'm just going to ask and you can see the cost.
+
+Two hundred and forty uh.
+
+This is what three years if you want you can get one one week or one month cost as well.
+
+So this is the this is the pricing calculator using which you can estimate how much you are going to
+
+expect get to build for your cloud services or do what you are using it.
+
+Okay.
+
+And that's it for this particular pricing calculator guys.
+
+We will get into individual service and compute services the first one to get into in the next chapter.
+
+Thank you.
+
+価格計算を使用すると、割引を含むコストの見積もりを取得し、価格設定を使用して年を扱うことができます
+
+電卓。
+
+プレゼンテーションモードに入るのに十分な理論はありません。
+
+価格計算ツールを見てみましょう。
+
+UI自体がここに表示されるので、価格を設定します
+
+Google Cloud Platform
+
+そしてここに行きます。
+
+最初のリンクには価格計算ツールがあります。
+
+そのため、計算したい例として、あなたが書いた例をいくつか紹介します。
+
+私は。
+
+Geneの計算についてはまだ説明していませんが、ここでは例を示しています。
+
+したがって、5つのコンピューティングエンジンが必要なインスタンスの数を持つコンピューティングエンジンが必要です。
+
+このインスタンスは、私の会社のWebホスティング用です。
+
+ドメインの大半。
+
+Linuxプラットフォームでデビューを使用します。
+
+複数の有料ライセンスがあり、Red Hat Enterprise Linuxなどのライセンスも含まれています。
+
+しかし、私はこの1つの通常のテーブルまたはプレミアムテーブルを配置します。
+
+プレミアムテーブル仮想マシンとは、実際の仮想マシンコンピューティングエンジンセクションで説明します
+
+しかし、あなたがそれを起動するために存在するプレミアムテーブルオプションがあり、あなたは約80パーセントを取得します
+
+それらのインスタンスの割引。
+
+ただし、それらの使用には制限があります。
+
+しかし、それをプレミアムテーブルとして作成してから、インスタンスを入力します。
+
+まだ完了していませんが、その時点で32ジービーが必要で、32受取人に120 Gビザが必要です。
+
+および1つの22 NDTV。
+
+そうでない場合は、グラフィック処理ユニットに追加できます
+
+そして追加するだけです。
+
+これがあなたの見積もりです。
+
+必要な詳細を異なる通貨で表示したい場合は、入手してください
+
+1か月で1000ドルになります。
+
+先に進んでこれを取り出すか、この方法で譲ります。
+
+時間を必要とするインスタンスを1つだけにしたいが、この大きなマシンは必要ない、小さなマシンが必要
+
+私は小さく行くことができ、それはGPOを言い、私はこれのためにGPOを必要としないと信じています
+
+スリー75
+
+これについて話しましょう。
+
+わかった
+
+大丈夫、ここで追加します。
+
+1か月あたり23ドルで、変更できます。複数のインスタンスを実行できます。
+
+これは1か月間です。
+
+ここに3年間行けば、81ドルの収入があります
+
+保存しました
+
+そのため、10個の転送ルールと10個のGが必要な場合など、さまざまなオプションを要求できます。
+
+それを追加するだけです。
+
+そしてあなたは。
+
+費用には金額が反映されます。
+
+またはあなたがそれを持っていることを知っていますか。
+
+彼らがそれを与えるのに使用したこの特定の価格設定の詳細がありました。
+
+なぜ今見ないのか分かりません。
+
+さて、これは価格計算機の人たちです。もしあなたが起動したいなら、ここに行ってクラウドを起動してください
+
+学校
+
+そして混雑した学校では、この学校のインスタンスである二次インフレが必要です。
+
+これは3 NのインスタンスのWeb番号です。GBで3 Nストレージが必要です。簡単にできます
+
+この2番目のバリエーションの費用は学校です。
+
+正しい。
+
+ここで1回実行する3つのインスタンスが完了すると、3800が課金されます
+
+ドル右。
+
+コンピューターエンジニアを数えるだけで他の30％の持続的な使用が可能になります。
+
+資格がないので
+
+ええ、それは資格がありません。
+
+したがって、彼らはそれを示していませんが、あなたはこのカウントが同様に計算を実装する持続的な使用を見ることができます
+
+これらのAPIアイのいずれかにアクセスできるため、これはCloud Spannerのような北の拠点の数です。
+
+ストレージに10ノードの危険性が必要だとだけ言っておきます。
+
+これは本当にばかげています。
+
+10個のノードと10個のGibbyを構成しますが、質問するだけでコストを確認できます。
+
+二百四十
+
+これは、1週間または1か月のコストを1年で得られるようにしたい場合、3年です。
+
+これが価格計算機です。これを使っていくら見積もることができます
+
+クラウドサービス用に構築するか、使用していることを実行することを期待してください。
+
+はい。
+
+そして、これはこの特定の価格計算機の人たちのためのそれです。
+
+次の章では、個々のサービスとコンピューティングサービスについて最初に説明します。
+
+ありがとうございました。

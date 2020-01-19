@@ -1,0 +1,151 @@
+GP services
+
+as we already saw that there are services which are available and satisfy all your needs and that is
+
+where you can use aid from Google Cloud Platform and not get into details because it's like too much
+
+of a reputation that we have it where they have services available for you to use it as infrastructures
+
+as a service and platform as a service.
+
+And there are some configurations which you can do and treat that as a software as a service but they
+
+are not actually software.
+
+It's a new ops kind of platform that you have it you can deploy your code and then you know without
+
+managing you managing that application there are smart defaults which can be a tool you know automatically
+
+managed.
+
+But there are a high level services which are like compute networking storage and database services
+
+identity.
+
+So all these are called services.
+
+But on top of it there are infrastructure services like identity and security big data and machine learning.
+
+And there are management tool and developer tools as well.
+
+So which you can use it.
+
+So these are the services if I go back to the console I can exploit those services.
+
+I can go to say compute storage networking.
+
+There are tools development tools big data solutions artificial intelligence like machine learning and
+
+all that right.
+
+All of these are the services of the group of services that are available out of Google Cloud Platform
+
+direct services which are additional on top of Google Cloud Platform like strength but work they acquired
+
+a company called Strength driver and you can do wandering off your platform so you if you click on certain
+
+links here and you go to
+
+it'll will go to strength I already feel as though the link here it says app dot google dot com slash
+
+and order strength flavor right and if you click on certain links like the logging link it stays in
+
+the that Google console.
+
+There are still integrations which are happening with other platforms besides dragged that word if I
+
+need to show you I can show you the the service for APM management and you can find that in
+
+so you can go to cloud our Google dot com slash RPG and you can use these services.
+
+This is like company acquired I think 2017 and they have yet to integrate it fully but you can how managed
+
+service inside Google Cloud Platform as IPG you can see click on trade for free and then it will ask
+
+you some information and then you are set to go.
+
+But that's an apogee.
+
+That's the services which you can explore it inside Google Cloud console.
+
+That's it guys as a cloud services if you have any questions let us know.
+
+Otherwise move to the next lecture.
+
+That is DCP interactions are interfaces.
+
+GPサービス
+
+すでに利用可能なサービスがあり、すべてのニーズを満たすサービスがあることを既に見たように、
+
+Google Cloud Platformの支援を使用できます
+
+インフラストラクチャとして使用できるサービスを提供しているという評判がある
+
+サービスおよびプラットフォームとしてのサービスとして。
+
+そして、あなたができるいくつかの構成があり、それをサービスとしてのソフトウェアとして扱いますが、
+
+実際にはソフトウェアではありません。
+
+それはあなたがあなたのコードを展開することができ、そしてあなたがそれなしで知っていることを持っている新しいops種類のプラットフォームです
+
+そのアプリケーションを管理するあなたを管理する自動的にあなたが知っているツールであることができるスマートなデフォルトがあります
+
+管理されます。
+
+しかし、コンピューティングネットワーキングストレージやデータベースサービスのような高レベルのサービスがあります
+
+身元。
+
+したがって、これらはすべてサービスと呼ばれます。
+
+しかし、その上に、アイデンティティやセキュリティのビッグデータや機械学習などのインフラストラクチャサービスがあります。
+
+また、管理ツールと開発者ツールもあります。
+
+だからあなたはそれを使うことができます。
+
+そのため、これらのサービスは、コンソールに戻ってこれらのサービスを利用できます。
+
+コンピューティングストレージネットワーキングと言えます。
+
+機械学習のような人工知能やビッグデータソリューションのツール開発ツールがあります。
+
+すべての権利。
+
+これらはすべて、Google Cloud Platformから利用できるサービスグル​​ープのサービスです
+
+Google Cloud Platformに追加された直接サービスは、強度のようなものの、獲得した仕事
+
+ストレングスドライバーと呼ばれる会社で、特定のプラットフォームをクリックすると、プラットフォームをさまようことができます。
+
+ここにリンクして、あなたはに行きます
+
+ここにあるリンクはapp dot google dot com slash
+
+強度フレーバーを正しく注文し、ロギングリンクなどの特定のリンクをクリックすると、
+
+そのGoogleコンソール。
+
+私がその言葉をドラッグした以外に、他のプラットフォームで起こっている統合がまだあります
+
+表示する必要がありますAPM管理のサービスを表示できます
+
+GoogleドットコムスラッシュRPGのクラウドにアクセスして、これらのサービスを使用できます。
+
+これは2017年に買収した会社のようなもので、まだ完全に統合していないが、どのように管理できるのか
+
+IPGとしてのGoogle Cloud Platform内のサービスは、無料で取引をクリックすると表示されます。
+
+あなたはいくつかの情報を取得し、それから行く準備ができています。
+
+しかし、それは遠慮です。
+
+これが、Google Cloudコンソール内で探索できるサービスです。
+
+質問がありましたら、クラウドサービスとしてご連絡ください。
+
+それ以外の場合は、次の講義に移動します。
+
+つまり、DCP相互作用はインターフェースです。

@@ -1,0 +1,1327 @@
+I will go back here and just for our illustration.
+
+I will use this image again.
+
+We have actually seen this many times what we are going to refer to this in our demo what we are going
+
+to do is we do not have DNS all Asia Europe and West.
+
+We are going to create these virtual machines.
+
+We have backend actually services which will support these clients.
+
+So I'm actually trying to mimic that.
+
+Someone is calling for a Omar making the request from Asia.
+
+Someone is making requests from Europe someone is making the request from U.S. West.
+
+How do I do it.
+
+Because I am I am it in the US and that to east.
+
+How can I actually make a request to load balancer that I'm me.
+
+You know that I'm sitting in U.S. west or Europe or Asia the way I'm going to do here is I'm going to
+
+create a virtual machine in Asia.
+
+I'm going to create a virtual machine in Europe.
+
+I'm going to create virtual machine in the U.S. West.
+
+And that's how I'll make a request and then we'll see how load balancer perform.
+
+OK.
+
+And this is the only way in which I can check it.
+
+I should have actually done this virtual machines from either AWOL or any other cloud provider but just
+
+for simplicity I'm just doing it on a JCP.
+
+OK.
+
+So what do we are going to do is we are going to create first the instance grew for a Shiite instance
+
+grew for European stones group for us west and then we are going to configure the load balancer which
+
+will hit the request to the back end.
+
+And all this client has a virtual machine again.
+
+OK let let's go ahead and get started create first the instance group
+
+so for for me to create an instance group I need a instance template I'll go ahead and create instance
+
+template.
+
+So the first thing first time going to create the Asia let me go ahead and share on this particular
+
+slide again I just elaborated that what is that we are going to create as a part of load balancer demo.
+
+So what we are going to do is we need instance template for Asia instance simply for Europe instance
+
+simply for US West and instance group so that we can manage auto scaling and multiple insistence in
+
+the back and then we'll go in and configure load balancing on top of this one with Hill chicken and
+
+we are not going to have DNS but decline from Asia.
+
+We are going to make creating one instance in Asia one instance in Europe.
+
+I can actually use my next stop to maybe get a you know on the traffic from us or I can actually just
+
+have a client instance created.
+
+But we'll see how it goes what we are going to see here is once we create the instances we are going
+
+to generate the traffic from different client instances.
+
+OK so let's do one step at a time.
+
+Let's go in and create instant template and instance group.
+
+What I'm going to do is I'm going to create the script start a script in which a script I will have
+
+actually CPE mutilation go high.
+
+So if you invoke that particular script why GDP disputed election on that instance will go high and
+
+that's how we will be able to demonstrate that those killing also for us west.
+
+OK quietly we can actually do it for another instance.
+
+So let me jump back to console and in console I have to create the instance template first so I'll just
+
+mark this instance template I.T. pipeline Asia for Asia I'm going to create a small instance so I'll
+
+be charged with less and what I'm going to do is I'm going to click here and go to startup script I
+
+have this particular Dude me and I have all the script which are really to download by you and the script
+
+creator.
+
+So for Asia I have this particular startup script what it does is it gives this front end of Asia python
+
+script and it will execute this will create any strategic trigger and whenever you call that API is
+
+GDP link then this will burn some CBO again I'm going to just copy this over so copy from slice into
+
+here not this dot.
+
+Okay
+
+okay.
+
+I'm not specifying any end zone or region here just to tell you.
+
+So this is Asia instance template create
+
+instance simply this created now I'm just going to click on the instance template and let me see its
+
+GDP is traffic allowed because we want to hit the the website where is there.
+
+I'm just going to copy this instance template and create
+
+Europe same instance sites but I'm going to modify the startup script this time I'm going to take Europe
+
+that startup skip
+
+okay
+
+create
+
+again I'm going to copy or the same one to create USA instance group and change the startup script
+
+this one
+
+OK
+
+create.
+
+I'm not really worried about all other parameters right now so instance templates are created as per
+
+are the requirements for instance employed created for all three regions
+
+let me create instance group.
+
+I'll just prefix all those in since group with IAG and a.
+
+I I'm just using simple singles on
+
+singles or location or I can just use multiples homes and I can just select a region.
+
+So now I am creating Asia.
+
+So I'm going to go ahead and use
+
+it used one
+
+instance template Asia.
+
+I'm going to switch on auto scaling ratio CB relation.
+
+This is our target Cypriot lesson right.
+
+When do you want to trigger additional instances.
+
+And based on this one it will trigger an additional instances if at all.
+
+So we start with one instance and if that particular instance goes over 60 percent it will trigger multiple
+
+instances and you can go up to 10 instances cooling down period 60 seconds and this is where you try
+
+to a word if they're running these spikes low and high.
+
+You want to wait for 60 seconds to major disputation and then you take average and then then it can
+
+decide.
+
+So we have a GDP health check.
+
+Let me go here.
+
+I can actually go ahead and create one.
+
+I'll just go in and create one create another health check as TTP new born L.B. traffic is age GDP Haiti
+
+Port number 80.
+
+So in parallel to check to check the health whether this does is a lie and we can wait for up to five
+
+seconds to respond back.
+
+Healthy thresholds contrary to two
+
+failures will be like unhealthy healthy is like conjugated to an unhealthy conjugate to three failures
+
+so
+
+so that it has a ensigns group.
+
+And let me just select whether I had choose and write things.
+
+Okay great create
+
+I can create another one for Europe instance group
+
+Europe again single zone this time I'm going to select somewhere in London any N is fine
+
+Europe and health checks same our Lord Whelan's health check all other things should be really seen.
+
+I'm not going to change anything there
+
+creating another instance group and this is instance Group USA
+
+USA
+
+health check state TPL be
+
+so while we we are creating this innocent group we do will create the number of minimum instances that
+
+we are ask for and you can actually see that is reflected here I have this particular instance as an
+
+additional instance to mimic the US air traffic so us e when that is my instance
+
+so the total resistance group is getting created I can go while this is creating I can go here in network
+
+and services for a load balancer and currently it is in networks that to send load balancer it may be
+
+somewhere else when you see this demo because Google is keep changing create load balancer.
+
+If I click on Create load balancer it will show me multiple options.
+
+I'm going to use as GDP instead of base load balancer.
+
+I'm saying HDD P L LP demo backend services I can give you instance R bucket like admins cloud storage
+
+bucket.
+
+We are going to see this later.
+
+I'm going to just use
+
+back and forth load balancer demo and I can start with Asia.
+
+Somehow we created multi one in Asia.
+
+That's fine utilization.
+
+This is balancing what this is stipulation.
+
+If it goes to 80 percent then it will not send the request to this backend and that is the utilization
+
+more.
+
+The number of request if you mention 1000 requests per second will make you decide to go to some somewhere
+
+else.
+
+What I'm going to consider this repudiation or back in instances to make the decision where to transfer
+
+and I'm not going to get major rates per second because if the utilization is lower than I'm fine with
+
+just hating it then I need to add another instance group as well.
+
+Europe for data utilization same.
+
+I think what I can do is utilization is 60.
+
+Okay auto scaling is already country and then U.S. so all the instances.
+
+So you can actually enable cloud Syrian for this back end if at all you want to have it and I'm going
+
+to use health check which we created it
+
+so we have back.
+
+We are hopeful see if at all you do and this is where actually we saw it right.
+
+So you've had all you want to transport major traffic to somewhere else BHP to somewhere else.
+
+Or you know your other web traffic to somewhere else then this is how you can configure.
+
+You can just mention here images start my JCP green dot com.
+
+Odd you can mention here slash images.
+
+It will route this to a particular back in service as because we have just created one for this demo.
+
+If at all required I'm going I'll go in and create.
+
+And this is the default backend actually too.
+
+I'm going to create another one in fatalities required but I don't think it is required front end and
+
+this is your issue pin point right.
+
+So I'm going to say
+
+I'll be demo the protocol I'm going to use is as GDP and resolve as it is.
+
+I can see how additional front end hitting to the same backend for this load balancer but I do not have
+
+that requirement right now.
+
+I'm just going to use as is.
+
+So this is finally what we are going to create when we when I click on Create
+
+and this is the thing about.
+
+You need to really good patients yet because it is going to hit you are going to once by peace out there
+
+and you are just trying to access it and you will not be able to see it.
+
+While this is being created let us go back to virtual machine instances compute William
+
+and so we have one particular instance that mimics of us w o r my X doc I need to have another client
+
+instance and to a client instance one in Europe one in Asia.
+
+So let me go in and create those instances as well.
+
+CLP in Asia I tell you Asia now we have given de Hong Kong me Tokyo which is near anyway and I'm fine
+
+I just need a small small small instance say I don't need to never lose weight I'm just doing it for
+
+my sake so that's the ratio one creator I'm going to create another one in Europe and CLP
+
+in instance that it's Europe and I'm going to choose nearer to London somewhere that I can actually
+
+host this in London are the let me choose Netherlands and any zone is fine for me and I'm going to use
+
+micro
+
+so the instance is getting created let me go ahead and hit this Asia and see if it is working.
+
+So usually when you click on that click click on the external IP it will hit two extra G.P.S. you need
+
+to make sure that you take our district DPW there and then head directly so you have OK.
+
+Asia
+
+okay Europe so this one we checked now U.S.
+
+so many many off actually the student in my earlier course they responded back saying that you know
+
+when we click on this one we get error it says Error connection they feels right.
+
+So you need to make sure that you have chosen right protocol because the the web server which we are
+
+trying to create here is its GDP and not its GDP is we are not enable SSL connection on it.
+
+OK so that's all you'll get.
+
+I'm just going to
+
+delete this ones.
+
+OK now we have a client in Europe client in Asia and glide in U.S. but at the same time if I hit the
+
+load balancer from my machine it should go to U.S. because I am currently in the US.
+
+So let's go ahead and call back
+
+network service load balancer so the issue table the balance that is up and running when you actually
+
+get this information right check here.
+
+What are the instances.
+
+So it is not yet complete.
+
+If you look at the number of LTE instances acute at least you should have one Hilda instance here are
+
+two.
+
+So the request.
+
+OK let let me pause this video to get get these instances.
+
+Inhale this state and then we'll continue again now we see these instances you have one instance for
+
+each of this instance group which we are on record as a back end service here.
+
+Let's go ahead and hit this particular IP in our
+
+okay.
+
+It says U.S. West all the time it says U.S. was that's wrong rate why it is saying only U.S. West or
+
+have I actually configured wrong script everywhere.
+
+No it should not.
+
+Yeah.
+
+The categories I'm sitting in U.S. and that's why it is routing my request to U.S. West instances going
+
+back here if you look at it at all.
+
+I'm sitting in Asia then it will just router out the traffic to back and in Asia but in U.S. West it
+
+is getting louder to users.
+
+I want other alternative to go ahead and heed the request to this load balancer my mapping mimicking
+
+that the instance is in order the client is in Asia.
+
+OK.
+
+So I have Asia instance right now I can just click on s search
+
+and what I'm going to do it.
+
+I have created this uh called Girls script as well.
+
+OK.
+
+I'm going to ram these call commands.
+
+Yeah.
+
+That's all.
+
+Okay I just need to replace the IP address of my load balancers.
+
+What is it.
+
+Thirty five.
+
+One eighty six thirty four you got 1 8 6 got 2 0 2 not ninety nine.
+
+Don't forget to actually put a show to be cool in their
+
+okay.
+
+So what this will do is every two seconds it will hit to this
+
+every second I wanted to see and it will hit two back and not the back connect actually the load balancer
+
+sorry just a load balancer endpoint.
+
+This particular instance is in Asia somewhere so it is.
+
+The request is getting louder to Asia back end.
+
+Let me go ahead and create your client.
+
+This is a start and we know and for the same command we should get the request or object to
+
+Europe
+
+what is that.
+
+That is not good.
+
+Somehow this copy paste is not that much good.
+
+Okay
+
+I'm just going to get this copy
+
+it says Europe.
+
+Good.
+
+Let me go ahead and get this one.
+
+And let's execute the same command.
+
+So this is claim in us.
+
+It says us what's right.
+
+So everything is normal everything is going intelligent.
+
+Everything is working properly.
+
+And now we need to what we need to do is we need to somehow create the load on us with.
+
+I'm just choosing leave us first because this is there in my presentation.
+
+But you we can choose any of those backend and create considerable amount of requests in US West.
+
+So let me go ahead and
+
+choose you s West client where is U.S. West client
+
+this way.
+
+I'm just going to control C
+
+Okay.
+
+No what I'm going to do is I'm going to change the timer to zero point one second.
+
+Let us just go and review how many instances that are running right now.
+
+So this is Cline.
+
+This is client and this is client only one one instance for each and every instance a group is running
+
+right now.
+
+Okay let's go out and create some traffic in U.S. West.
+
+So what is this.
+
+B This is also just let's hit it continuously and we can actually go ahead and U.S. West U.S. West
+
+and go to monitoring
+
+and you can actually see the
+
+traffic going up this case
+
+60 on 60 percent usage it will go and hit the
+
+ticket on number one
+
+I will let it pause this particular video and let the CPO opening go high and then I'll come back so
+
+if you look at this particular point and the base endpoint will not give us a p burner I have another
+
+endpoint using which we can use the CPO burner but we have seen that in know the request targeting intelligently
+
+to hold it to their respect you nearest back and so is this.
+
+So let me go ahead and hit the with which will do the CPO burning and I want to actually use that for
+
+us West region.
+
+So this particular service the end point slash service will hit heavily and it will create a superior
+
+usage
+
+so if I go here
+
+in
+
+U.S. and monitoring we should actually see the
+
+CPE you saw I was able to just hit 25 percent with so many requests but I have no service which will
+
+hit you beyond 60 percent we just should stay here for some time and let me say it's a U.S. West
+
+I'm just putting two seconds for Europe and many more requests in U.S. and in Asia
+
+for Asia we are going to run heavily to second request.
+
+Hold on I want to use this particular
+
+so we are not going to burn too much of you in Asia and in Europe we are hitting the same endpoint.
+
+So US West
+
+why the request from Europe is that our and getting it out to U.S. West okay we can take that maybe
+
+I have not changed the text there
+
+so he was e
+
+let's burn super you okay on the back end and look to see I can actually I don't want to burn to you
+
+here.
+
+I'll just keep our normal cool command so that we know where it is hitting.
+
+So now U.S. West is actually hitting conservative along to request this is to say.
+
+And so this is not that much.
+
+And we are not burning NAACP Jews in Europe.
+
+So this is our case.
+
+Let's go ahead and see the monitoring for U.S.
+
+Kay
+
+OK so you can actually see for us as because we I was waiting to many request it has considered a spinoff
+
+additional instances for Europe.
+
+Also it has created additional concerns because I mistakenly had a number of you know the traffic in
+
+Asia though as because we are not at all hitting the service
+
+right.
+
+So we are not actually hitting too many request here.
+
+So let's go in and what we do is kill some of the instances in Asia and let us see what happens.
+
+Uh ok.
+
+Your context is topic
+
+Asia
+
+remove from Google do something OK do something there.
+
+Let us see what happens.
+
+So now.
+
+Nothing is essentially working properly initiation to trigger additional instance.
+
+But in the meantime it has to send the traffic or to
+
+some other location.
+
+This is Europe.
+
+This is Asia
+
+so it has created additional instances.
+
+Delete delete let us see what happens.
+
+Okay.
+
+So this will not be applicable because we have you okay.
+
+There are multiple instances getting created for each year.
+
+Let me read more from group or delete the instances.
+
+Let me just go in and delete the instances.
+
+Let us see what happens with the request.
+
+OK.
+
+In meantime you can actually see that you know.
+
+We have some of the requests already going to us West has because we were deleting goods instances.
+
+OK and there was Lord on if at all there was one instance it was Lord on it.
+
+So additional requests went to US West because that was near.
+
+If you look if we look at the geography and that is what you can see it right.
+
+That's what it is for a load balancer guys.
+
+If you have any questions the way we have actually gone through was
+
+so we created all this.
+
+We created the clients and we weren't actually sleeping too much in US waist and then we deleted instead
+
+up Europe depicted here in in the animation we actually deleted it tried to delete Dacia and the traffic
+
+actually went to US West because that was near.
+
+That's it guys.
+
+If you have any questions on the demo please let me know.
+
+Otherwise you can actually just move to the next load balancer Terry.
+
+私はここに戻って、私たちのイラストのためだけに行きます。
+
+この画像を再び使用します。
+
+これを実際に何度も見てきました
+
+行うには、すべてのアジアヨーロッパおよび西部にDNSがありません。
+
+これらの仮想マシンを作成します。
+
+これらのクライアントをサポートするバックエンドサービスが実際にあります。
+
+だから私は実際にそれをまねようとしている。
+
+誰かがオマーにアジアからの要請を求めています。
+
+誰かがヨーロッパからリクエストをしている誰かがアメリカ西部からリクエストをしている。
+
+どうすればいいのですか。
+
+私はアメリカにいるから、東にいるからです。
+
+ロードバランサーに自分をリクエストする方法
+
+あなたは私が米国西部、ヨーロッパ、またはアジアに座っていることを知っています
+
+アジアで仮想マシンを作成します。
+
+ヨーロッパで仮想マシンを作成します。
+
+米国西部で仮想マシンを作成します。
+
+そして、それが私がリクエストを行う方法であり、それからロードバランサーがどのように機能するかを見るでしょう。
+
+OK。
+
+そして、これは私がそれを確認できる唯一の方法です。
+
+AWOLまたは他のクラウドプロバイダーからこの仮想マシンを実際に実行する必要がありましたが、
+
+簡単にするために、JCPで実行しています。
+
+OK。
+
+それで、私たちがやろうとしていることは、シーア派のインスタンスのためにインスタンスが成長した最初に作成することです
+
+私たちの西のヨーロッパの石グループのために成長し、それからロードバランサーを設定します
+
+バックエンドへのリクエストをヒットします。
+
+そして、このすべてのクライアントには再び仮想マシンがあります。
+
+OKでは、先にインスタンスグループの作成を始めましょう。
+
+インスタンスグループを作成するには、インスタンステンプレートが必要です。インスタンスを作成します。
+
+テンプレート。
+
+最初にアジアを作成する最初のことは、この特定のことについて話を進めさせてください
+
+スライドをもう一度スライドさせて、ロードバランサのデモの一部として作成するものについて詳しく説明しました。
+
+それで、私たちがやろうとしているのは、単にアジアのインスタンスのインスタンスのテンプレートが必要です
+
+単純に米国西部およびインスタンスグループに対して、自動スケーリングと複数の主張を管理できるようにします
+
+後ろに行って、この上にヒルチキンとロードバランシングを設定します。
+
+DNSを使用するのではなく、アジアからは減少します。
+
+アジアで1つのインスタンスを作成し、ヨーロッパで1つのインスタンスを作成します。
+
+実際に次の停車地を使って、私たちからの交通状況について知ってもらうか、実際に
+
+クライアントインスタンスを作成します。
+
+しかし、インスタンスを作成すると、これがどのように進むかがわかります。
+
+さまざまなクライアントインスタンスからトラフィックを生成します。
+
+では、一度に1つのステップを実行しましょう。
+
+インスタントテンプレートとインスタンスグループを作成してみましょう。
+
+私がやろうとしていることは、スクリプトを作成して、スクリプトを開始するスクリプトを作成することです
+
+実際、CPEの切断は高くなります。
+
+その特定のスクリプトを呼び出すと、GDPでそのインスタンスの選挙に異議が唱えられる理由と
+
+それは、私たちが西側でも殺していることを示すことができる方法です。
+
+静かに、別のインスタンスで実際に行うことができます。
+
+コンソールに戻って、コンソールで最初にインスタンステンプレートを作成する必要があるので、
+
+このインスタンステンプレートI.Tをマークします。アジア向けのパイプラインアジア小さなインスタンスを作成するので、
+
+少ない料金で請求され、私がやろうとしていることは、ここをクリックして起動スクリプトに行きます
+
+この特定の男を持っていると私は本当にあなたとスクリプトによってダウンロードするすべてのスクリプトを持っています
+
+作成者。
+
+アジアの場合、この特定のスタートアップスクリプトを使用して、Asiaのこのフロントエンドpythonを提供します
+
+スクリプトを実行すると、戦略的なトリガーが作成され、APIを呼び出すたびに
+
+GDPリンクを使用すると、CBOが再び焼き付けられます。これをコピーして、スライスからコピーします。
+
+ここではこの点ではありません。
+
+はい
+
+はい。
+
+ここでは、単にエンドゾーンまたはリージョンを指定するわけではありません。
+
+これがAsiaインスタンステンプレートです
+
+インスタンスが作成されたので、インスタンステンプレートをクリックして、
+
+そこにあるウェブサイトにアクセスしたいので、GDPは許可されたトラフィックです。
+
+このインスタンステンプレートをコピーして作成します
+
+ヨーロッパの同じインスタンスサイトですが、今回はスタートアップスクリプトを変更し、ヨーロッパを取り上げます。
+
+その起動スキップ
+
+はい
+
+作成する
+
+もう一度、同じインスタンスをコピーしてUSAインスタンスグループを作成し、起動スクリプトを変更します
+
+これです
+
+OK
+
+作成します。
+
+インスタンステンプレートは次のように作成されます。
+
+3つの地域すべてに対して作成された、採用されたインスタンスの要件
+
+インスタンスグループを作成します。
+
+IAGとaでグループ以降のすべてのプレフィックスを付けます。
+
+私は単純なシングルを使用しています
+
+シングルまたはロケーション、または複数のホームを使用して、リージョンを選択するだけです。
+
+だから今、私はアジアを作成しています。
+
+だから私は先に行き、使用するつもりです
+
+それを使った
+
+インスタンステンプレートAsia。
+
+自動スケーリング比CB関係をオンにします。
+
+これがキプロスのターゲットレッスンです。
+
+いつ追加のインスタンスをトリガーしますか？
+
+そして、これに基づいて、追加インスタンスをトリガーします。
+
+そのため、1つのインスタンスから開始し、その特定のインスタンスが60％を超えると、複数のインスタンスをトリガーします
+
+インスタンスを使用すると、最大60個のインスタンスを冷却することができます。
+
+彼らがこれらのスパイクを低および高に走らせているなら、一言で言えば。
+
+あなたは主要な紛争まで60秒待ってから平均を取るとそれからそれができます
+
+決定する。
+
+したがって、GDPヘルスチェックがあります。
+
+ここに行かせてください。
+
+実際に作成して作成できます。
+
+入って、TTP new born L.B.として別のヘルスチェックを作成します。トラフィックは年齢GDPハイチです
+
+ポート番号80。
+
+並行して、これが嘘であるかどうかをチェックして健康状態をチェックし、最大5つまで待つことができます
+
+応答するまでの秒数。
+
+2に反する健全なしきい値
+
+失敗は不健康な健康のようになります
+
+そう
+
+そのため、ensignsグループがあります。
+
+そして、物を選んで書いたかどうかを選択させてください。
+
+わかりました
+
+Europeインスタンスグループ用に別のものを作成できます
+
+今回もヨーロッパのシングルゾーンで、ロンドンのどこかでNを選択します
+
+ヨーロッパとヘルスチェックは同じです。ウィランLordのヘルスチェックは他のすべてのものが本当に見られるべきです。
+
+私はそこで何も変えるつもりはありません
+
+別のインスタンスグループを作成します。これはインスタンスグループUSAです。
+
+米国
+
+ヘルスチェック状態TPL be
+
+この無邪気なグループを作成している間に、最小インスタンスの数を作成します
+
+私たちは求められており、実際にここに反映されていることを見ることができます
+
+米国の航空交通を模倣する追加のインスタンスであるため、それが私のインスタンスである場合
+
+抵抗グループ全体が作成されています。作成中に移動できますここでネットワークに移動できます
+
+ロードバランサーのサービスであり、現在はロードバランサーを送信するネットワーク内にあります。
+
+Googleがロードバランサーの作成を継続的に変更しているため、このデモを見たどこか他の場所。
+
+[ロードバランサーの作成]をクリックすると、複数のオプションが表示されます。
+
+ベースロードバランサーの代わりにGDPとして使用します。
+
+HDD P L LPデモバックエンドサービスと言っています。管理者クラウドストレージのようなインスタンスRバケットを提供できます。
+
+バケツ。
+
+これについては後で説明します。
+
+私はただ使うつもりです
+
+前後のロードバランサーのデモと私はアジアから始めることができます。
+
+どういうわけか、私たちはアジアでマルチを作成しました。
+
+それは素晴らしい利用です。
+
+これは、これが規定であるもののバランスを取っています。
+
+80％に達した場合、リクエストはこのバックエンドに送信されず、それが使用率です。
+
+もっと。
+
+1秒あたり1000件のリクエストに言及した場合のリクエスト数により、どこかに行くことになります。
+
+そうしないと。
+
+この拒否を検討するか、インスタンスに戻って、どこに転送するかを決定します
+
+使用率が私よりも低い場合、私は毎秒メジャーレートを取得するつもりはありません
+
+それが嫌いな場合は、別のインスタンスグループも追加する必要があります。
+
+データ利用の欧州も同じです。
+
+私ができることは利用率が60だと思います。
+
+オーケーオートスケーリングはすでに国であり、米国ですので、すべてのインスタンスです。
+
+したがって、このバックエンドで実際にクラウドシリアを有効にすることができます。
+
+作成したヘルスチェックを使用する
+
+戻ってきました。
+
+私たちはあなたが何をするのかを期待しています。これが実際に私たちがそれを正しく見た場所です。
+
+したがって、主要なトラフィックを他のどこかBHPから他のどこかに転送する必要があります。
+
+または、他の場所への他のWebトラフィックを知っている場合、これが設定方法です。
+
+ここで言及できるのは、画像が私のJCPグリーンドットコムを開始することです。
+
+奇妙なことに、ここでスラッシュ画像に言及することができます。
+
+このデモ用に作成したばかりなので、これを特定のサービスに戻します。
+
+必要な場合は、作成していきます。
+
+そして、これも実際にはデフォルトのバックエンドです。
+
+必要な死亡者数に別の1つを作成するつもりですが、フロントエンドが必要だとは思わない
+
+これが問題のピンポイントです。
+
+だから私は言うつもりです
+
+私が使用するプロトコルがGDPであり、そのまま解決するプロトコルをデモします。
+
+このロードバランサーのフロントエンドが同じバックエンドにどのようにヒットするかがわかりますが、
+
+その要件は今。
+
+そのまま使用します。
+
+これが最終的に作成をクリックするときに作成するものです
+
+これが問題です。
+
+本当に良い患者が必要です
+
+そして、あなたはそれにアクセスしようとしているだけであり、あなたはそれを見ることができなくなります。
+
+これが作成されている間、仮想マシンのインスタンスに戻りましょうWilliam
+
+X docを模倣する特定のインスタンスがあり、別のクライアントが必要です
+
+インスタンスに、ヨーロッパに1つ、アジアに1つ、クライアントインスタンスに1つ。
+
+それでは、それらのインスタンスも作成してみましょう。
+
+アジアでのCLP私はアジアを教えてくれました。とにかく近い香港に東京を与えました。
+
+私はちょうど私がちょうどそれをやっている体重を失うことはない必要があると言う小さな小さな小さなインスタンスが必要です
+
+私のために、それは私がヨーロッパとCLPでもう1人を作成する比率です
+
+たとえば、それがヨーロッパであり、実際にできる場所のどこかでロンドンに近い場所を選択する場合
+
+これをロンドンでホストすることで、オランダを選択できます。どのゾーンでも問題ありません。
+
+マイクロ
+
+インスタンスが作成されているので、先に進み、このアジアにアクセスして、動作するかどうかを確認します。
+
+したがって、通常、そのクリックをクリックすると、外部IPをクリックすると、2つの追加G.P.S.がヒットします。あなたが必要
+
+地区のDPWをそこに持って行ってから直接向かうようにしてください。
+
+アジア
+
+大丈夫ですので、今回はアメリカで確認しました。
+
+私の以前のコースで実際に学生を離れた多くの人は、あなたが知っていると言って返事をしました
+
+これをクリックすると、エラーが表示されます。エラー接続は正しいと感じています。
+
+したがって、正しいプロトコルを選択したことを確認する必要があります。
+
+ここで作成しようとしているのはGDPであり、GDPではなく、SSL接続を有効にしていないためです。
+
+OK、それがあなたが得るすべてです。
+
+私はただ行くつもりです
+
+これを削除してください。
+
+OK今、ヨーロッパにクライアントがあり、アジアにクライアントがいて、米国に滑空していますが、同時に
+
+私は現在米国にいるので、私のマシンからロードバランサーは米国に行くはずです。
+
+それでは先に進んでコールバックしましょう
+
+ネットワークサービスのロードバランサーは、問題のテーブルに、実際に稼働しているときに稼働しているバランスを
+
+この情報をここで確認してください。
+
+インスタンスとは何ですか。
+
+したがって、まだ完全ではありません。
+
+少なくとも急性のLTEインスタンスの数を見ると、1つのヒルダインスタンスがあるはずです。
+
+二。
+
+だから要求。
+
+これらのインスタンスを取得するために、このビデオを一時停止させてください。
+
+この状態を吸入すると、1つのインスタンスがあるインスタンスが表示されます。
+
+ここでバックエンドサービスとして記録されているこのインスタンスグループのそれぞれ。
+
+先に進み、この特定のIPをヒットします。
+
+はい。
+
+それは、それが米国西部だけと言っているのは、米国がそれが間違った率であると言うたびに、米国西部を言う
+
+実際にどこでも間違ったスクリプトを設定しました。
+
+いいえ、そうすべきではありません。
+
+うん。
+
+私がアメリカに座っているカテゴリ、そしてそれが私の西アメリカのインスタンスに私のリクエストをルーティングしている理由です
+
+あなたがそれを見た場合、ここに戻ってください。
+
+私はアジアに座っているので、トラフィックをバックに、そしてアジアにルーティングしますが、米国西部では
+
+ユーザーの声が大きくなっています。
+
+私は他の選択肢を進めて、このロードバランサーへのリクエストに注意してください
+
+インスタンスがクライアントがアジアにある順番になっていること。
+
+OK。
+
+だから私は今アジアのインスタンスを持っています
+
+そして私がやろうとしていること。
+
+Girlsスクリプトと呼ばれるこのuhも作成しました。
+
+OK。
+
+これらの呼び出しコマンドを実行します。
+
+うん。
+
+それで全部です。
+
+さて、ロードバランサーのIPアドレスを置き換えるだけです。
+
+それは何ですか。
+
+三十五。
+
+あなたが1 8 6を得た1 86 6 34は99ではなく2 0 2を得ました。
+
+彼らにクールになるために実際にショーを置くことを忘れないでください
+
+はい。
+
+これが行うことは2秒ごとにこれにヒットすることです
+
+毎秒、私は見たいと思っていましたが、実際にはロードバランサーを接続するのではなく、2つ戻って
+
+ロードバランサーのエンドポイントのみごめんなさい。
+
+この特定のインスタンスは、アジアのどこかにあります。
+
+アジアのバックエンドへの要求はますます大きくなっています。
+
+さあ、クライアントを作成しましょう。
+
+これは開始点であり、同じコマンドでリクエストまたはオブジェクトを取得する必要があります
+
+ヨーロッパ
+
+それは何ですか。
+
+それは良くありません。
+
+どういうわけか、このコピーペーストはあまり良くありません。
+
+はい
+
+このコピーを取得するだけです
+
+ヨーロッパと言います。
+
+良い。
+
+これを手に入れましょう。
+
+そして、同じコマンドを実行しましょう。
+
+これが私たちの主張です。
+
+正しいことを教えてくれます。
+
+したがって、すべてが正常です。すべてがインテリジェントになります。
+
+すべてが正常に機能しています。
+
+そして今、私たちがする必要があるのは、何らかの形で私たちに負荷をかける必要があるということです。
+
+これは私のプレゼンテーションにあるので、最初に私たちを置いておくだけです。
+
+ただし、これらのバックエンドのいずれかを選択して、米国西部でかなりの量のリクエストを作成できます。
+
+だから先に行かせて
+
+ウェストクライアントを選択してください
+
+こちらです。
+
+Cをコントロールするだけです
+
+はい。
+
+タイマーをゼロポイント1秒に変更するつもりはありません。
+
+すぐに実行しているインスタンスの数を確認してみましょう。
+
+これがClineです。
+
+これはクライアントであり、これはクライアントがグループが実行している各インスタンスごとに1つのインスタンスのみです
+
+たった今。
+
+さあ、外に出て、米国西部でトラフィックを作りましょう。
+
+これは何ですか。
+
+Bこれも継続的にヒットさせて、実際に先に進むことができます。米国西部米国西部
+
+そして監視に行きます
+
+実際に見ることができます
+
+この場合のトラフィック
+
+60パーセントの使用で60になり、ヒットします
+
+ナンバーワンのチケット
+
+この特定の動画を一時停止し、CPOの開始を高くしてから、また戻ってきます
+
+この特定のポイントを見て、ベースエンドポイントがpバーナーを提供しない場合、別の
+
+エンドポイントを使用してCPOバーナーを使用できますが、インテリジェントにターゲティングするリクエストを知っていることがわかりました
+
+あなたの最も近くにいる彼らの尊敬にそれを保持するために、これもそうです。
+
+それでは、CPOの書き込みを行うために使用します。実際に使用して、
+
+米国西部地域。
+
+そのため、この特定のサービスのエンドポイントスラッシュサービスは大幅にヒットし、優れたサービスを作成します
+
+使用法
+
+ここに行くと
+
+に
+
+米国とモニタリングでは、実際に
+
+あなたが見たCPEは、私は非常に多くのリクエストで25パーセントをヒットすることができましたが、私はそうするサービスはありません
+
+60％を超えてヒットします。しばらくここに滞在し、米国西部と言います。
+
+私はヨーロッパのために2秒を費やしているだけです
+
+アジアの場合は、2番目の要求まで頻繁に実行します。
+
+ちょっと待ってこれを使いたい
+
+そのため、アジアではあまり多くの人を燃やすことはなく、ヨーロッパでも同じエンドポイントに到達しています。
+
+だから米国西部
+
+ヨーロッパからのリクエストは、私たちとそれを米国西部に持ち出すことです。
+
+そこでテキストを変更していません
+
+彼はeだった
+
+バックエンドで大丈夫スーパー燃やし、実際にあなたに燃やしたくないことができるかどうか見てみましょう
+
+ここに。
+
+通常のクールなコマンドをそのままにして、どこにヒットしているかを確認します。
+
+だから今、米国西部はこれを言うことを要求するために実際に保守派を打っている。
+
+そして、これはそれほど多くありません。
+
+そして、私たちはヨーロッパでNAACPユダヤ人を燃やしていません。
+
+これが私たちの場合です。
+
+先に進み、米国の監視を見てみましょう。
+
+ケイ
+
+スピンオフと見なされた多くのリクエストを待っていたので、実際に見ることができます
+
+ヨーロッパの追加インスタンス。
+
+また、誤って多くの人にトラフィックを知っていたので、追加の懸念が生じました。
+
+アジアですが、サービスをまったく利用していないためです
+
+正しい。
+
+したがって、実際にはあまり多くのリクエストをここでヒットすることはありません。
+
+では、アジアのいくつかのインスタンスを殺して、何が起こるか見てみましょう。
+
+わかった
+
+あなたのコンテキストはトピックです
+
+アジア
+
+Googleから削除します。
+
+何が起こるか見てみましょう。
+
+だから今。
+
+基本的に、追加のインスタンスをトリガーするために適切に開始するように機能するものはありません。
+
+ただし、その間にトラフィックを送信するか、
+
+他の場所。
+
+これがヨーロッパです。
+
+これはアジアです
+
+そのため、追加のインスタンスが作成されています。
+
+削除削除で、何が起こるかを確認できます。
+
+はい。
+
+したがって、これは適用されません。大丈夫です。
+
+毎年作成される複数のインスタンスがあります。
+
+グループから詳細を読むか、インスタンスを削除します。
+
+入ってインスタンスを削除します。
+
+リクエストで何が起こるか見てみましょう。
+
+OK。
+
+それまでの間、実際にあなたが知っていることを見ることができます。
+
+商品のインスタンスを削除していたため、既にWestに送信されているリクエストの一部があります。
+
+OK、そして、もしそれが主である一つの例があれば、主はそこにいたのです。
+
+そのため、米国西部に追加のリクエストが送信されました。
+
+地理を見てみると、それが正しく見えることがわかります。
+
+それがロードバランサーの人たちにとってのことです。
+
+質問がある場合は、実際に行った方法は
+
+これをすべて作成しました。
+
+クライアントを作成しましたが、実際にはアメリカの腰であまり寝ていなかったので、代わりに削除しました
+
+私たちが実際に削除したアニメーションでここに描かれているヨーロッパの上に、ダチアと交通を削除しようとしました
+
+それが近いので、実際に米国西部に行きました。
+
+それはみんなです。
+
+デモについて質問がある場合はお知らせください。
+
+それ以外の場合は、実際に次のロードバランサーTerryに移動できます。

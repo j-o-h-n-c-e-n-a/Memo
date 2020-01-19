@@ -1,0 +1,676 @@
+Hello cloud will be in demo.
+
+So what we're going to do is we're going to create two different networks here as we start earlier.
+
+I will not be able to create anything as a data center connection but what I'm going to do is I'm going
+
+to create two different networks in the same project and then I'm going to connect them with a VPN and
+
+then we're going to connect it with those.
+
+So the steps are we are going to create the networks and the networks we are going to create the VM
+
+and open the firewall so that they can communicate.
+
+We are going to create VPN gateway and that is how there is a connection between that network.
+
+We are going to resolve the static IP for both the networks.
+
+We are going to create forwarding rules so that if there are request for a specific IP does and that
+
+is from the other network it would be forwarded perfectly to that particular network and then we are
+
+going to create tunnel and the tunnel is the way for your traffic to flow from one network to another.
+
+We are going to create a route and then we are going to create what you machine in.
+
+We are going to test the connectivity between virtual machine and what the machine to between the network
+
+and that's when the connected connectivity is established you can think of VPN it's set up properly.
+
+So let's go ahead.
+
+I have created this Yuichi which you can use it if you want to try it on your wall.
+
+Let's let me go to the console to start the connection.
+
+So if you look at here in my dashboard I need to go to Ribisi networks to create the network and the
+
+network which I need both the network our custom network.
+
+Ok I already have one custom network which I don't want it now.
+
+I'm going to delete this particular custom network I will let it get delayed but in the meantime I'm
+
+going to create VPC one.
+
+And this is custom network being going to create subnetwork and the subnetwork he is this one subnetwork
+
+one
+
+subnet one and the region which I'm going to select for this subnet is YOUR of West 1.
+
+I'm going to give you IP range and going to use the similar IP range which I have used earlier on my
+
+earlier demos
+
+and create
+
+so BBC One is Kading created literally create another one way b c to
+
+and in here I'm going to create subnetwork to this subnetwork to is related to
+
+which one subnet two is related to a Shia is to one
+
+IP range and going to use it 10 10 not to
+
+the next steps are.
+
+We need to create a virtual machine and open firewall between them.
+
+Right.
+
+So let me go ahead and create one virtual machine.
+
+In each It works less subnetwork so I need to create one virtual machine in this subnetwork and second
+
+one is and not the other one.
+
+Let me go to the computer was
+
+rerum one.
+
+And this I wanted for your wrist one
+
+here.
+
+Wes
+
+one b.
+
+I'm going to select small micro and the networking I'm going to select my network for Europe.
+
+So that's the PC one and that's the subnet one I'm going to keep all of the thing.
+
+See him create I'm going to launch another Harry to
+
+and this is in Shia East one
+
+and I'm going to select another networking another network that stays now PC for my subnet to all of
+
+the things are saying
+
+so my step number two part one is or I need to open the firewall so I can create firewall I need to
+
+go to network firewall rules.
+
+OK.
+
+Then you can see there are firewall rules already created for default network.
+
+But I'm going to create it for the PC one and the PC.
+
+So let me create a PC and firewall the network is BPC wan.
+
+And what I'm going to do is I need to open this traffic
+
+and specify from anywhere
+
+Detrol And instance in the network I'm going to keep that sense in that network should be applied.
+
+This particular firewalls will repeat see 1 allow ICMP and his message
+
+create We're going to create another firewall.
+
+This time it is VBC to
+
+to PC to instance or dotted taunted or don't it or slash it or all connections
+
+OK now why this particular step is.
+
+Now step number three let's go in and create a VPN gateway.
+
+So what you need to do is you know the exec de-clawed come on you can actually execute cloud Kamandi
+
+using your own Schale you can install and download and install STK Google SDK or what you can do is
+
+you can go to cloud shell in the console yourself to pop up cloud shield you just click here and then
+
+we are going to launch connections here.
+
+What it does is a check for us.
+
+The project or what project I do we are using it if it is the same project then we are good for days.
+
+If you are using multiple projects you want to specify the project id here and Kairouan to create a
+
+VPN or an encryption connections.
+
+Ok I I'm going to use Giac loud training and thats the project id.
+
+So I'm not going to identify this one.
+
+Let me go ahead and create the VPN one.
+
+Typically this is you can think of this is really hard a way of doing it.
+
+You have an option to include some of the commands from the front end itself.
+
+Consolidating all of the steps together.
+
+But this is you can think of higher way of doing it.
+
+I'm going to create another demo with the cloud router and then I'll show you how you can create VPN
+
+connection using the UI.
+
+So this one is created now.
+
+For your Rypien Well I'm going to create get three or four weepie and two for
+
+Shia.
+
+So you have VPN one and VPN to get recreated for your PC and then we proceed to respectively.
+
+Step Number four Rizzo's static IP address for each network.
+
+So let's go ahead and Brazeau the static IP address I have given to come on here and de-clawed come
+
+on so what it will do is it will take that process for the region and the region we are seeing is Europe
+
+who asked one.
+
+So there is a static IP creator.
+
+I'm going to create another one for the Shia east
+
+OK.
+
+This is a game creator.
+
+If you can actually see the you stop at recess which you have reserved.
+
+You can see it here right.
+
+Or you can go to external IP addresses.
+
+And then you can find those two IP addresses here.
+
+Right.
+
+With their names.
+
+What I I'm going to do is I'm going to create a environment variable for those IP addresses for easy
+
+use here after in all the scripts
+
+so VPN one and that's VPN one is Europe
+
+VPN to address.
+
+He's this one which is a Shia
+
+so we have created this environment variable and let's go in and create the forwarding rule for forwarding
+
+rule you need to create it for ESB.
+
+You leave your finder and you leave before the 500
+
+let me go ahead and created for yes the first
+
+to
+
+and an UDP 500
+
+people four to five hundred
+
+and four we've been to as well.
+
+So
+
+OK.
+
+I hope you and I should have you under different names what they should be fine.
+
+These are just names.
+
+It would be to
+
+be
+
+OK.
+
+So
+
+that we can leave it here.
+
+There is no problem with that.
+
+Our very external IP addresses.
+
+You can go ahead and check text and IP addresses here and then you can run VPN gateway
+
+to this weepin get released.
+
+So we are done with our for you as well.
+
+Let's go to Step 6.
+
+So you want to create an old sort know from VPC want to repeat it.
+
+And then we busy to do with Pursuivant.
+
+I created this command so that you can use directly
+
+OK.
+
+The tunnel has been created.
+
+You want to verify that.
+
+The come on here.
+
+OK.
+
+Gee cloud done a list now create a that out between Ribisi 1 2 2 and 2 2 1.
+
+So this is just talk about creation
+
+just created
+
+a second round piece again.
+
+Creator
+
+OK.
+
+It's all good.
+
+So let's go ahead and test the connectivity.
+
+Let me go to
+
+what true machine
+
+compute engine machine instances
+
+launch rerum 1
+
+and K being so from VM 1 view on being rerum to
+
+OK.
+
+It is not known.
+
+Let me bring in dot dot dot too.
+
+Right.
+
+That's the two IP address see the connection is going so in a nutshell what we have done is we have
+
+let me go here so we what we have done is we created this particular network the network then we create
+
+a virtual machine inside it.
+
+Then we open the firewall so that these instances can accept the connection and then we have created
+
+these gateways.
+
+We have reserved the static IP addresses for both the network.
+
+We have created forwarding rules so that these particular can understand if a set of IP range where
+
+the request should be forwarded to we created a tunnel and then we have created routes and then we have
+
+tested the connectivity between we and one nvm to this is how you can go work and create the VPN connection
+
+guys.
+
+If I hear any question on this one let me know.
+
+I'm going to put forward these cheat sheet in the resources section.
+
+You can actually download that and utilize it for your own.
+
+I know laptop.
+
+Thank you.
+
+
+こんにちはクラウドはデモになります。
+
+それで、私たちがやろうとしているのは、ここから先に開始するときに、2つの異なるネットワークを作成することです。
+
+データセンター接続として何かを作成することはできませんが、私がやろうとしているのは
+
+同じプロジェクトで2つの異なるネットワークを作成し、それらをVPNで接続し、
+
+それからそれらに接続します。
+
+手順は、ネットワークを作成することと、VMを作成するネットワークです。
+
+ファイアウォールを開いて通信できるようにします。
+
+VPNゲートウェイを作成します。これにより、そのネットワーク間に接続が確立されます。
+
+両方のネットワークの静的IPを解決します。
+
+転送ルールを作成して、特定のIPに対するリクエストがある場合、
+
+他のネットワークからのものであり、その特定のネットワークに完全に転送されます。
+
+トンネルを作成します。トンネルは、トラフィックが1つのネットワークから別のネットワークに流れる方法です。
+
+ルートを作成してから、マシンで作成したものを作成します。
+
+仮想マシン間の接続と、ネットワーク間の接続をテストします
+
+接続された接続が確立されると、VPNが適切に設定されていると考えることができます。
+
+それでは先に進みましょう。
+
+あなたがあなたの壁でそれを試してみたい場合にそれを使用することができますこの雄一を作成しました。
+
+コンソールにアクセスして接続を開始しましょう。
+
+ダッシュボードでここを見ると、ネットワークを作成するためにRibisiネットワークに移動する必要があります。
+
+ネットワークとカスタムネットワークの両方が必要なネットワーク。
+
+[OK]既に1つのカスタムネットワークがありますが、これは今は必要ありません。
+
+この特定のカスタムネットワークを削除します。遅延させますが、それまでは
+
+VPCを作成します。
+
+そしてこれはサブネットワークを作成しようとしているカスタムネットワークであり、サブネットワークはこの1つのサブネットワークです
+
+1
+
+サブネット1で、このサブネットに選択する地域は、ウェスト1です。
+
+IP範囲を指定し、前に使用したのと同じIP範囲を使用します
+
+以前のデモ
+
+作成する
+
+BBC Oneは、文字通り作成されたKadingです
+
+ここでは、このサブネットワークに関連するサブネットワークを作成します
+
+どのサブネット2がシーアに関連しているのか
+
+IP範囲とそれを使用する10 10
+
+次のステップは次のとおりです。
+
+仮想マシンを作成し、それらの間にファイアウォールを開く必要があります。
+
+正しい。
+
+それでは、仮想マシンを1つ作成します。
+
+各サブネットワークで動作するサブネットワークが少ないため、このサブネットワークに1つの仮想マシンを作成し、2番目に仮想マシンを作成する必要があります
+
+一方はそうであり、もう一方はそうではありません。
+
+コンピューターに行きましょう
+
+リラムワン。
+
+そして、これはあなたの手首にしたかった
+
+ここに。
+
+ウェス
+
+ワンb。
+
+小さなマイクロを選択し、ネットワークをヨーロッパ用に選択します。
+
+つまり、これがPCのものであり、それがすべてのものです。
+
+彼が作成するのを見て私は別のハリーを起動するつもりです
+
+これはシーアイーストにあります
+
+そして、私は別のネットワークを選択します。別のネットワークは、今ではすべてのサブネットに私のPCのままです
+
+事は言っている
+
+したがって、ステップ2のパート1は、ファイアウォールを作成する必要があるため、ファイアウォールを開く必要があります
+
+ネットワークファイアウォールルールに移動します。
+
+OK。
+
+次に、デフォルトのネットワーク用にすでに作成されたファイアウォールルールがあることを確認できます。
+
+しかし、私はPCとPC用に作成します。
+
+そこで、PCとファイアウォールを作成します。ネットワークはBPC wanです。
+
+そして、私がやろうとしているのは、このトラフィックを開く必要があるということです
+
+どこからでも指定
+
+Detrolそして、ネットワーク内のインスタンスは、そのネットワークに適用する必要があるという意味を保ちます。
+
+この特定のファイアウォールは、1 ICMPおよび彼のメッセージを許可することを繰り返します。
+
+create別のファイアウォールを作成します。
+
+今回はVBCです
+
+PCからインスタンスへ、またはドットをあざけるか、それをしないか、スラッシュするか、すべての接続
+
+さて、この特定のステップの理由を説明します。
+
+次に、ステップ3に進み、VPNゲートウェイを作成します。
+
+だからあなたがする必要があるのは、あなたが実際にクラウドカマンディを実行できるようになった幹部の爪が外れたことを知っていることです
+
+独自のSchaleを使用して、STK Google SDKをインストールおよびダウンロードしてインストールできます。
+
+コンソールでクラウドシェルに移動してクラウドシールドをポップアップできます。ここをクリックしてから
+
+ここで接続を開始します。
+
+それは私たちのチェックです。
+
+プロジェクトまたは私がどのプロジェクトを使用しているのかは、同じプロジェクトであれば何日間でも使用できます。
+
+複数のプロジェクトを使用している場合は、ここでプロジェクトIDを指定し、Kairoanを作成して
+
+VPNまたは暗号化接続。
+
+わかりました。Giacの大声トレーニングを使用します。これがプロジェクトIDです。
+
+したがって、これを特定するつもりはありません。
+
+先に進み、VPNを作成します。
+
+通常、これは、これを行うのが本当に難しい方法だと考えることができます。
+
+フロントエンド自体からのコマンドの一部を含めるオプションがあります。
+
+すべてのステップをまとめて統合します。
+
+しかし、これはあなたがそれを行うより高い方法を考えることができるということです。
+
+クラウドルーターを使用して別のデモを作成し、VPNを作成する方法を紹介します
+
+UIを使用した接続。
+
+これが今作成されています。
+
+あなたのRypienのために、3つまたは4つのウィーピーと2つのウィーピーを作成します。
+
+シーア。
+
+したがって、お使いのPC用に再作成するVPN 1とVPNがあり、それぞれに進みます。
+
+ステップ番号4各ネットワークのRizzoの静的IPアドレス。
+
+それでは、Brazeauに静的IPアドレスを与えて、ここに来て、爪を外します。
+
+そのため、それが行うことは、そのプロセスがその地域のためにかかり、私たちが見ている地域はヨーロッパです
+
+誰が尋ねました。
+
+そのため、静的IPクリエーターがいます。
+
+私は、シーア派の東のために別のものを作成するつもりです
+
+OK。
+
+これはゲームクリエーターです。
+
+あなたが実際にあなたが予約した休憩所で止まるのを見ることができれば。
+
+ここで見ることができます。
+
+または、外部IPアドレスにアクセスできます。
+
+そして、あなたはここでそれらの2つのIPアドレスを見つけることができます。
+
+正しい。
+
+その名前で。
+
+私がやろうとしているのは、簡単にそれらのIPアドレスの環境変数を作成することです。
+
+すべてのスクリプトで後で使用する
+
+VPN 1であり、それがVPN 1です。
+
+アドレスするVPN。
+
+彼はシーアです
+
+この環境変数を作成しました。次に、転送用の転送ルールを作成します。
+
+ESB用に作成する必要があるルール。
+
+あなたはあなたのファインダーを去り、あなたは500の前に去ります
+
+はい、最初に作成しました
+
+に
+
+およびUDP 500
+
+四から五百人
+
+そして、私たちも行ったことがあります。
+
+そう
+
+OK。
+
+私はあなたと私が違う名前であなたが彼らがうまくあるべきであることを願っています。
+
+これらは単なる名前です。
+
+になります
+
+なる
+
+OK。
+
+そう
+
+ここに置いておくことができます。
+
+それに問題はありません。
+
+非常に外部のIPアドレス。
+
+ここでテキストとIPアドレスを確認してから、VPNゲートウェイを実行できます
+
+このweepinにリリースされます。
+
+それで、私たちもあなたのために私たちと一緒に終わりました。
+
+ステップ6に進みましょう。
+
+だから、あなたはそれを繰り返したいVPCから知っている古いソートを作成したい。
+
+そして、私たちはPursuivantとのやり取りに忙しくしています。
+
+このコマンドを作成して、直接使用できるようにしました
+
+OK。
+
+トンネルが作成されました。
+
+それを確認したいです。
+
+ここに来て。
+
+OK。
+
+Geeクラウドがリストを作成し、Ribisi 1 2 2と2 2 1の間にそれを作成しました。
+
+だからこれは創造についての話です
+
+作成したばかり
+
+再び2番目のラウンドピース。
+
+作成者
+
+OK。
+
+大丈夫だよー。
+
+それでは、接続をテストしてみましょう。
+
+に行かせて
+
+本当のマシン
+
+計算エンジンマシンインスタンス
+
+レラム1を起動
+
+そして、KはVM 1のビューからのリラムに関するものです
+
+OK。
+
+知られていない。
+
+ドットドットドットも持ち込みましょう。
+
+正しい。
+
+これは2つのIPアドレスで、接続が行われていることがわかります。
+
+ここに行かせて、この特定のネットワークを作成し、ネットワークを作成します
+
+内部の仮想マシン。
+
+次に、これらのインスタンスが接続を受け入れることができるようにファイアウォールを開き、作成しました
+
+これらのゲートウェイ。
+
+両方のネットワークの静的IPアドレスを予約しました。
+
+転送ルールを作成して、特定のIP範囲が
+
+リクエストを転送してトンネルを作成し、ルートを作成してから
+
+私たちと1つのnvmの間の接続をテストしました。これは、あなたが仕事に行き、VPN接続を作成する方法です。
+
+みんな。
+
+これに関する質問があれば、お知らせください。
+
+リソースセクションでこれらのチートシートを紹介します。
+
+あなたは実際にそれをダウンロードして、あなた自身のためにそれを利用することができます。
+
+私はラップトップを知っています。
+
+ありがとうございました。

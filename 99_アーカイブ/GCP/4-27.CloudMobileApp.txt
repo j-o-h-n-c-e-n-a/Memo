@@ -1,0 +1,123 @@
+Cloud mobile application.
+
+And this is the mobile application of.
+
+You can think of console.
+
+I'm going to give an order to demos of my mobile application alerts which way which I got it on my mobile.
+
+But you can think of it like that in the console on your mobile application.
+
+This is the native applications which interface with the backend.
+
+Google services so cloud in mobile application and you can do production alerting you can diagnose and
+
+fix it very fast using because you will get the alert on your mobile itself.
+
+Keep an eye on your environment using are different perhaps inside mobile application using mobile application
+
+you can do insulin management you can help when I sign I acknowledge resolve incidents.
+
+You can do alerting you can do better reporting you can for computer engine you can do start stop and
+
+yes access to the instance you can see the logs for the instance you can customize the dashboard on
+
+your mobile applications what you want to see it in your application words is in the console you can
+
+do billing you can check all the billing billing alerts you can how app engine you can see errors all
+
+back you can roll back out chin strap exploiting our top mobile application you can view and delete
+
+cloud storage data and you can view hilt of cloud is cool you can start and stop cloud Haskell I'm going
+
+to actually go and get a small demo of mobile application but it isn't I don't think it is very much
+
+required you can also go ahead and install the app on your mobile but agents are available even I us
+
+as well as Android you can just install it you can use the same user password which you use it for your
+
+Google Cloud Control to your mobile application and just browse it and that's the mobile application
+
+I don't think there are many questions around mobile applications but if there are any questions it
+
+would be around whether you can get alerts on your mobile application right or billing alerts on your
+
+mobile application whether you can start and stop computing which is what you imagine on the cloud using
+
+mobile application or not right.
+
+So all of that this is very basic you can think of application that you have it but it is really good
+
+too if you are working as a cloud engineer and you want to monitor or check on the go.
+
+This is really a good utility to have it.
+
+That's it guys.
+
+If you have any questions on cloud mobile application at such let me know otherwise you can just move
+
+to the next lecture.
+
+Thanks.
+
+クラウドモバイルアプリケーション。
+
+そして、これはのモバイルアプリケーションです。
+
+コンソールについて考えることができます。
+
+私は、モバイルアプリケーションアラートのデモを注文して、モバイルでどのように取得したかを通知します。
+
+しかし、モバイルアプリケーションのコンソールでそのように考えることができます。
+
+これは、バックエンドとインターフェイスするネイティブアプリケーションです。
+
+Googleがモバイルアプリケーションでクラウドをサービスし、診断と
+
+モバイル自体でアラートを受け取るため、非常に高速に修正します。
+
+使用している環境に注意してください。おそらくモバイルアプリケーションを使用するモバイルアプリケーションの内部とは異なります。
+
+インスリン管理を行うことができます。私が署名したときに支援できます。
+
+アラートを実行して、コンピュータエンジンのより良いレポートを作成できます。
+
+はいインスタンスへのアクセスダッシュボードをカスタマイズできるインスタンスのログを見ることができます
+
+あなたのモバイルアプリケーションは、あなたのアプリケーションの言葉でそれを見たいものはあなたができるコンソールにあります
+
+すべての請求請求アラートを確認できる請求書作成を行うことができます
+
+戻ると、トップモバイルアプリケーションを利用してチンストラップを巻き戻すことができます。
+
+クラウドストレージデータとあなたはクラウドの柄を見ることができますあなたはクラウドハスケルを開始および停止することができますクールです
+
+実際に移動してモバイルアプリケーションの小さなデモを入手することはできますが、それはそれほどではないと思います
+
+また、モバイルにアプリをインストールすることもできますが、エージェントは私でも利用可能です
+
+Androidだけでなく、インストールすることもできます。同じユーザーパスワードを使用することができます。
+
+Google Cloud Controlをモバイルアプリケーションに追加して閲覧するだけで、それがモバイルアプリケーションになります
+
+モバイルアプリケーションに関する質問はあまりないと思いますが、質問がある場合は
+
+モバイルアプリケーションでアラートを受け取ることができるか、または
+
+モバイルアプリケーションを使用して、クラウド上で想像するコンピューティングを開始および停止できるかどうか
+
+モバイルアプリケーションかどうか。
+
+そのため、これは非常に基本的なものであり、あなたはそれを持っているアプリケーションを考えることができますが、それは本当に良いです
+
+クラウドエンジニアとして働いており、外出先で監視または確認したい場合も同様です。
+
+これは本当に便利です。
+
+それはみんなです。
+
+クラウドモバイルアプリケーションについてご質問がある場合はお知らせください。
+
+次の講義へ。
+
+ありがとう。

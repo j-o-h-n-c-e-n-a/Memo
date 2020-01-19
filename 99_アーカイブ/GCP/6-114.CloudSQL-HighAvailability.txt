@@ -1,0 +1,247 @@
+Availability.
+
+What do we mean by availability of highly available software applications.
+
+So the application if at all something happens to the main or primary instance the application still
+
+continues and the design or architecture should be such that you know your application is still serving
+
+to the user.
+
+And that is where higher liability concept comes into play in my school are cloudy school you can go
+
+ahead and enable high visibility and it is applicable to my school as well as possible school.
+
+What you can do is you can how create you can create a lower replica.
+
+And it has got to say me synchronous replication continuously happening to the standard by instance
+
+and that is where you know the standby instance can be primary when it is required.
+
+So I can go back to the instance here okay and I can say
+
+I will see this on my school.
+
+I can go ahead and create
+
+fellow replica so I can give fellow Republicans a few to look at the Zune.
+
+You can see this Zune is not exactly as that of primary instance.
+
+And why why do you have that.
+
+That is because if at all say because of some reason if your connection to the this particular Zune
+
+goes down say this particular zone out of your network or you are not able to reach it right you should
+
+be able to travel to another zone in the same region and that is where you can create the fail or replica.
+
+I'm just going to go ahead and specify either you can specify any and cloud this girl will choose one
+
+of the other three locations or you can specify the location and you can do the configuration as well.
+
+But anyway I am just going ahead and creating it and all the configuration in the failover will come
+
+from the master so that you know in case of requirement right.
+
+It can be become a monster and then master can go as a standby.
+
+So I'm going toward and created as a fellow replica.
+
+So the the instance in central one be he's getting created as a fellow replica.
+
+I'm going to pause a video so looks like failure is really OK.
+
+I can go to the master and I can do failure.
+
+I can go in and see the details of the fail or replica.
+
+So let me go ahead and see how you can see if a lower replica you can actually find it here.
+
+But let me go in and do failure.
+
+So if I click on fail or what it is going to do is
+
+okay.
+
+Trigger failure.
+
+So this failure become my master and this master will become like Stand By instance for failure.
+
+Okay so this is going to take some time I I'm going to pause the video.
+
+While this is being created let's go to the boys.
+
+This is cool and here if you go here and create replicas it says create only read replica why we how
+
+do we choose the high visibility configuration and the way you do that is you go here and it says highly
+
+available.
+
+It is like not OK.
+
+You can go in and edit configuration and you can enable high availability here.
+
+Okay.
+
+And you can do say so one or more changes require a restart save and restart
+
+so let it do whatever it is doing.
+
+And we'll go back to this instance.
+
+So you see the primary instance become central B and the secondary is still being changed so they can
+
+they should be central one.
+
+A I'm going to pause the video some moment so if you look at now the field is ready.
+
+You can actually go in and see the instance name is
+
+for primary primary becomes standby and standby become primary now in my school.
+
+And you have the instance idea also changed to so the instance name which we have given to the were
+
+that that went to the field where now were we really it was primary and then so the switching of those
+
+instance I.D. plus switching up those the connections he's taken care automatically by cloud askew.
+
+You do not need to worry about it.
+
+If you look at the post Christian school we say it says high availability enabled what you can do is
+
+you can go ahead and trigger the failure here so you can click on preload and it will toggle.
+
+I'm not going to do it the same as that of my high school.
+
+But you do not have the fail or replica here.
+
+It is automatically managed by Google Cloud Platform.
+
+Now that's it guys as a failure.
+
+We are going to see a read replica in the next lecture.
+
+可用性。
+
+高可用性ソフトウェアアプリケーションの可用性とはどういう意味ですか。
+
+そのため、アプリケーションは、メインインスタンスまたはプライマリインスタンスに何かが発生した場合でも、アプリケーションはまだ
+
+継続し、設計またはアーキテクチャは、アプリケーションがまだ機能していることを知っているようなものでなければなりません
+
+ユーザーに。
+
+そして、それは私の学校でより高い責任の概念が出てくるところです。あなたが行くことができる曇りの学校です
+
+高い視認性を実現し、私の学校だけでなく可能な学校にも適用できます。
+
+あなたができることは、あなたがどのようにあなたがより低いレプリカを作成することができるかということです。
+
+そして、インスタンスごとに標準に継続的に発生する同期レプリケーションを言わなければならない
+
+スタンバイインスタンスが必要なときにプライマリになることができる場所です。
+
+ここでインスタンスに戻ることができます
+
+これは私の学校で見ます。
+
+先に進んで作成できます
+
+仲間のレプリカです。私は仲間の共和党員にZuneを見るためのいくつかを与えることができます。
+
+このZuneがプライマリインスタンスのZuneとまったく同じではないことがわかります。
+
+そして、なぜあなたはそれを持っているのですか。
+
+これは、何らかの理由でこの特定のZuneへの接続があったとしても
+
+この特定のゾーンがネットワークの外に出るか、正しく到達できないと言う
+
+同じリージョン内の別のゾーンに移動できるようになり、そこに障害またはレプリカを作成できます。
+
+私は先に行き、あなたがいずれかを指定できるか、この女の子が1つを選択するクラウドを指定するつもりです
+
+または、場所を指定して、構成を行うこともできます。
+
+しかし、とにかく先に進んでそれを作成すると、フェイルオーバーのすべての構成が来ます
+
+必要な場合にあなたが知るように、マスターから。
+
+それはモンスターになることができ、その後マスターはスタンバイとして行くことができます。
+
+だから私は仲間のレプリカに向かって作成します。
+
+そのため、中央のインスタンスは、仲間のレプリカとして作成されています。
+
+動画を一時停止するので、失敗しても本当に問題ないようです。
+
+マスターに行くことができ、失敗することができます。
+
+フェイルまたはレプリカの詳細を確認できます。
+
+それでは、下のレプリカが実際にここで見つかるかどうかを確認してみましょう。
+
+しかし、私を入れて失敗させてください。
+
+だから私は失敗をクリックするか、それがやろうとしていることは
+
+はい。
+
+トリガー障害。
+
+したがって、この障害は私のマスターになり、このマスターは障害のスタンバイインスタンスのようになります。
+
+さて、これには少し時間がかかります。ビデオを一時停止します。
+
+これが作成されている間、男の子に行きましょう。
+
+これはクールです。ここに行ってレプリカを作成すると、リードレプリカのみを作成する理由がわかります。
+
+視認性の高い構成を選択しますか。それを行うには、ここにアクセスしてください。
+
+利用できます。
+
+それは大丈夫ではないようなものです。
+
+設定を編集することができ、ここで高可用性を有効にできます。
+
+はい。
+
+そして、あなたは言うことができますので、1つまたは複数の変更は再起動を保存して再起動する必要があります
+
+そのため、何でも実行できます。
+
+そして、このインスタンスに戻ります。
+
+プライマリインスタンスが中央Bになり、セカンダリインスタンスがまだ変更されているため、
+
+それらは中心的なものでなければなりません。
+
+Aビデオを一時停止しますので、今ご覧になればフィールドの準備ができています。
+
+実際に行って、インスタンス名が
+
+私の学校ではプライマリがプライマリになり、スタンバイがプライマリになりました。
+
+また、インスタンスのアイデアも変更されているため、指定したインスタンス名は
+
+それが今、私たちが本当に主だった分野に行ったので、それらの切り替え
+
+インスタンスI.D.さらに、クラウドスキューによって自動的に処理される接続を切り替えます。
+
+心配する必要はありません。
+
+クリスチャンのポストスクールを見ると、高可用性によって可能になるのは
+
+ここで失敗をトリガーして、プリロードをクリックすると切り替えられます。
+
+私は高校と同じようにはしません。
+
+ただし、ここには障害やレプリカはありません。
+
+Google Cloud Platformにより自動的に管理されます。
+
+今、それは失敗としてみんなです。
+
+次の講義でリードレプリカを見る予定です。

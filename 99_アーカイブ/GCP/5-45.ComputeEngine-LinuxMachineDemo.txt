@@ -1,0 +1,587 @@
+Get to go out and create some virtual machines to understand how we can actually go out and create those
+
+this is local control or to
+
+do have those.
+
+Let me actually just get into the council straightaway.
+
+Once you get into the council you'll see the dashboard.
+
+It will show you the projects which is currently selected.
+
+You can actually see multiple projects what we have created in this particular account you will have
+
+this information you can actually see if there are any resources which you have created that there are
+
+none right now.
+
+So you don't see any.
+
+There are multiple actually documents that you can see guide.
+
+You can actually use this guide to create the virtual machines straightaway.
+
+You can see the API as traffic correctly which you are using.
+
+And there are different items here which are the site and the controls.
+
+Or have you.
+
+Let me go straight to the Google compute engine.
+
+So this is what I have right now I just cleaned up each and every one of the resources in this particular
+
+project are to create flash.
+
+Let me go in and create a wonderful machine.
+
+So you can actually see that it will need instance name here.
+
+I can actually type in any name which I want.
+
+So you can actually see that you know it is only lower lower case letters numbers and happens.
+
+So let me put Web 0 1
+
+instance name on the zone as we discussed earlier with you all those data centers are divided into regions
+
+and ultimately the zones.
+
+So if you look at that and multiple zones here I mean I can go in and create as we are actually talking
+
+right now these are the zones which are reliable.
+
+So the first little you can actually see that here is the one that's the region.
+
+And then there are multiple zones in each one which is a b and c Lakeway we have multiple songs.
+
+So the regions and corresponding zones associated right now which is available for this particular resource
+
+to create.
+
+So let me just you know pick any of these on and you can actually see the price.
+
+And these are his teammates for monthly you know the virtual machine usage you can actually go ahead
+
+and change a different zone and you will see the price is also getting changed.
+
+So you can actually get a really good that the price for this particular resource which is instance
+
+what your machine is getting changed or is dependent on each other and so on which you are actually
+
+creating.
+
+In fact it is the reason which you are creating.
+
+And then based on the region the pricing will get changed.
+
+So it says effectively on it you know three cents three point four cents.
+
+Let me you know let us try to serve a very cost effective too option if we can get.
+
+So you can say in it's $20 per month in place 34 which is more expensive in Europe 27 euro.
+
+West Okay $31 U.S. Central 24.
+
+He's 27 and West 24 again.
+
+So east or west you can actually just go and create.
+
+You can actually select the machine which you want to create.
+
+So you you can go here and select the available machine types as we discussed already.
+
+And there are multiple machine types which is like.
+
+First one is a standard policy for you there is three point seventy five G-B of memory available and
+
+you can go up to 60 poor ones you will see Pew's and up to 40 the in the standard.
+
+Then you have high memory in this particular
+
+in this particular machine type you have.
+
+I personally feel there is a six point five year base and you don't have option to select one where
+
+you'll see your unit to actually select two or on worse or more and you can go up to 60 plus pursue
+
+appeals and fool one six of them and then you have high speed machines which are you know you that is
+
+point nine G-B up memory which is available so you can again cannot select one which will keep you here.
+
+As of now you need to select at least two to go ahead and start those instances.
+
+You can actually say no you can go up to 64 which will see use with two when G.V. appearance you can
+
+actually select all those configurations or combinations based on your needs whether you need more memory
+
+to cache some data or you need more processing or the Scipio's to do computational analysis or something.
+
+So based on your requirement you can go in and choose but there are besides these there are other two
+
+which is shared CPQ.
+
+The C.P. would still be shared between the instances and you have many options between points if you
+
+were to one point say one memory.
+
+One is if one micro and Jeevan small unit if one makes that we saw that you know using your micro you
+
+can actually work.
+
+And
+
+so the instance itself will be you know it can throttle to the higher speed based on the requirement.
+
+Let me go ahead and you say one micro for that point seems to be when these are really selected.
+
+Right.
+
+Let me just go ahead and customize this one and see what I can get.
+
+So if I come out of what you'll see if you will which is one it is giving me three point seventy five
+
+G-B which is standard machine and I can not actually go below 1 G.V..
+
+I can go below 6.5 6.5.
+
+Here's the machine where you how high memory machines you can see option.
+
+So it will get you know in Khaleesi you can actually select any combination of those.
+
+The best thing about this particular combination is you can very well see the what is the monthly cost
+
+what is estimators monthly cost.
+
+Definitely if you go ahead and terminate these instances and then use it again are some of those instances
+
+for a certain time and use it again.
+
+There will be a procession happen but this is high level running costs for the machine considering 730
+
+hours per month.
+
+Then your option actually to select based on the Scipio's and the memory.
+
+Let me go ahead and
+
+Soumik you can actually go ahead and send them the
+
+the CPA platform.
+
+OK so you're going to actually I think select the CPA platform if you are in class.
+
+You know what let me just go ahead and choose one of these particular machine and try to select because
+
+they're not constrained and which you can't use certain platforms.
+
+OK.
+
+So I think in US West we choose a center.
+
+Let me see what happens.
+
+Yeah.
+
+So it is not actually based on the C-p use Lipnicki that our constraints are to select the Scipio's
+
+work.
+
+It is locked to the zone.
+
+That particular zone if you have the few platforms have a lever like Skylink and with our high well
+
+that is available for you or central do with this that we see what our options are.
+
+One was we asked that's what we saw only one we think would insulate central
+
+and if I Silex the central or so front page them to use and I want to select I would breach the price
+
+for those two or any of this platform is going at least currently showing it is same for me.
+
+I can go and the GP use so few out and available in this particular zone of only use selected.
+
+I need to actually change this soon.
+
+My me.
+
+You as is.
+
+OK that's not daring as well.
+
+OK.
+
+Now in us we asked you how option to choose GP was like and to those two pillars of this one you can
+
+see the cost is going tremendously high.
+
+So if I take out the piece it's showing some at around $50 but if I choose the GPO the cost goes through
+
+must hide somewhere around 500 dollars per GP was what they are charging per month right.
+
+So let me actually not select this one right now.
+
+A book this can this is where actually you can choose predefined images if you want to use the public
+
+images right now or you can actually choose it from the images and options are available for Windows
+
+or Linux or whatever it is used.
+
+Right now in the market.
+
+You can actually choose the Windows machine on the winning acts as an example.
+
+Or you can actually choose any of the any of the major application images like this one is Windows Server
+
+2012
+
+or you can actually select from any major I don't have any image right now.
+
+I cleared everything.
+
+I don't know snapshot and I don't exist in this at all.
+
+Who is the image from the boot disk.
+
+I can you can you have a choice to either select the electromagnetic Biscardi says these and I use actually
+
+changes based on what you choose it.
+
+And in fact this speed is associated with that gets changed.
+
+Let me go ahead and just keep the magnetic disk and continue that.
+
+So that's the baby in Linux 8 which have selected it is asking me to list a phone I want but this like
+
+the same thing.
+
+I don't want to do too much ifs and buts.
+
+I want to select all strategies and let me go ahead and with all the false.
+
+So this will take I think some moment to get that particular set was started.
+
+Yeah.
+
+The instance is really now and there is so there is in the libraries which you can actually use it for
+
+the Internet a lot of balancer or any other Internet communications or rules for text and life.
+
+And that's where you can see this IP is assigned and you can actually read a billboard and being that
+
+particular IP traffic is allowed you have multiple options to actually click connect to this particular
+
+instance one is to you are S-sh browser right now the way we're doing it are there are multiple.
+
+You can even connect it with a party for a party that is another you know a process.
+
+We'll done that in detail in subsequent lecture.
+
+But this is the way if we just go in and connect with the with S-sh
+
+see it is connected you have full access to the to the machine right now.
+
+If you want to actually do it which is a root access you can just wait it will go in and do it so that
+
+we can access
+
+we'll see more features on this one in subsequent lecture.
+
+So you feel ready let's go ahead and jump onto the next lecture.
+
+Thank you.
+
+外に出て仮想マシンを作成して、実際に外に出て作成する方法を理解します。
+
+これはローカル制御または
+
+それらがあります。
+
+実際にすぐに議会に入りましょう。
+
+評議会に入ると、ダッシュボードが表示されます。
+
+現在選択されているプロジェクトが表示されます。
+
+この特定のアカウントで作成した複数のプロジェクトを実際に見ることができます
+
+作成したリソースがあるかどうかを実際に確認できるこの情報
+
+今はありません。
+
+そのため、何も表示されません。
+
+ガイドを見ることができる複数の実際のドキュメントがあります。
+
+実際にこのガイドを使用して、すぐに仮想マシンを作成できます。
+
+使用しているトラフィックとしてAPIを正しく見ることができます。
+
+そして、サイトとコントロールであるさまざまなアイテムがここにあります。
+
+またはあなたがいます。
+
+Google計算エンジンに直行します。
+
+これが私が今持っているものです。この特定のリソースのすべてをクリーンアップしました
+
+プロジェクトは、フラッシュを作成することです。
+
+入って素晴らしい機械を作りましょう。
+
+そのため、実際には、ここでインスタンス名が必要になることがわかります。
+
+好きな名前を実際に入力できます。
+
+したがって、実際には、小文字の数字のみであり、実際に発生していることがわかります。
+
+それでは、Web 0 1
+
+先に説明したように、ゾーン上のインスタンス名はすべてのデータセンターがリージョンに分割されています
+
+そして最終的にはゾーン。
+
+ここと複数のゾーンを見てみると、実際に話しているときに行って作成することができます
+
+現在、これらは信頼できるゾーンです。
+
+だから、最初にあなたが実際に見ることができるのは、ここが地域だということです。
+
+そして、各ゾーンに複数のゾーンがあり、bとcのレイクウェイには複数の曲があります。
+
+そのため、この特定のリソースで利用可能な、現在関連付けられているリージョンとゾーン
+
+作成します。
+
+これらのいずれかを選択すると、実際に価格が表示されます。
+
+そして、これらは毎月の彼のチームメイトです。あなたが実際に進めることができる仮想マシンの使用を知っています
+
+別のゾーンを変更すると、価格も変更されます。
+
+インスタンスであるこの特定のリソースの価格を実際に本当に得ることができます
+
+マシンが変更されているもの、または相互に依存しているものなど、実際にあなたがいるもの
+
+作成。
+
+実際、それがあなたが作成している理由です。
+
+そして、地域に基づいて価格が変更されます。
+
+事実上、3セント3ポイント4セントを知っているということです。
+
+可能であれば、非常に費用対効果の高いオプションを提供するようにしてください。
+
+だからあなたはそれがヨーロッパで27ユーロより高価である場所34で月額20ドルだと言うことができます。
+
+West Okay $ 31 U.S. Central 24。
+
+彼は再び27歳で西24歳です。
+
+ですから、東または西で実際に行って作成することができます。
+
+実際に作成したいマシンを選択できます。
+
+したがって、ここで説明したように、使用可能なマシンの種類を選択できます。
+
+また、複数のマシンタイプがあります。
+
+最初の1つは、3ポイント75 GBのメモリが使用可能であり、
+
+あなたは、Pew'sと最大40の標準を見ることができます。
+
+次に、この特定の高いメモリを持っています
+
+あなたが持っているこの特定のマシンタイプで。
+
+個人的には、6年5年ベースがあり、どこかを選択するオプションがないと感じています
+
+ユニットが実際に2つ以上を選択するのがわかります
+
+アピールし、そのうちの6つをだますと、あなたはあなたが知っている高速マシンを持っています
+
+使用可能な9つのG-Bアップメモリ​​をポイントします。これにより、ここで保持するメモリを再び選択できなくなります。
+
+今のところ、これらのインスタンスを開始して開始するには、少なくとも2つを選択する必要があります。
+
+G.V.の場合、実際には2つで使用できる64まで上がることができないと言うことができます。あなたができる外観
+
+実際には、より多くのメモリが必要かどうかに応じて、ニーズに基づいてこれらすべての構成または組み合わせを選択します
+
+一部のデータをキャッシュする場合、またはより多くの処理が必要な場合、またはScipioで計算分析などを行う場合。
+
+あなたの要件に基づいて、あなたは入って選択することができますが、これらのほかに他の2つがあります
+
+これは共有CPQです。
+
+C.P.インスタンス間で共有され、ポイント間の多くのオプションがあります
+
+ある点まで言うと、1つの記憶がありました。
+
+1つは、マイクロとJeevanの1つの小型ユニットである場合、マイクロユー
+
+実際に動作することができます。
+
+そして
+
+インスタンス自体は、要件に基づいてより高速にスロットルできることを知っています。
+
+先に進みましょう。あなたは、その点についての1つのマイクロは、これらが実際に選択されたときであるように思えます。
+
+正しい。
+
+先に進んでこれをカスタマイズし、何が得られるか見てみましょう。
+
+だから、もしあなたがどれがあなたがどれであるかを見るならあなたが見るものから出てきたら、それは私に3ポイント75を与えている
+
+G-Bは標準的なマシンであり、実際には1 G.V.を下回ることはできません。
+
+6.5 6.5以下にすることができます。
+
+ここに、あなたがどのくらい高いメモリのマシンを見ることができるかのオプションがあります。
+
+Khaleesiでは、実際にそれらの任意の組み合わせを選択できることがわかります。
+
+この特定の組み合わせの最大の利点は、毎月の費用が非常によくわかることです。
+
+見積もりの​​月額費用はいくらですか。
+
+確かに、これらのインスタンスを終了してから再び使用する場合は、それらのインスタンスの一部です
+
+しばらくの間、それを再び使用します。
+
+行列が発生しますが、これは730を考慮したマシンの高レベルのランニングコストです
+
+月あたりの時間。
+
+次に、実際にScipioのメモリに基づいて選択するオプション。
+
+先に行かせて
+
+Soumikあなたは実際に先に行き、それらを送ることができます
+
+CPAプラットフォーム。
+
+わかりましたので、実際にクラスにいる場合はCPAプラットフォームを選択すると思います。
+
+あなたは私が先に進んでこれらの特定のマシンの1つを選択し、選択しようとする理由を知っています
+
+制約がなく、特定のプラットフォームを使用できません。
+
+OK。
+
+アメリカ西部ではセンターを選択すると思います。
+
+何が起こるか見てみましょう。
+
+うん。
+
+したがって、実際にC-pを使用するLipnickiに基づいていないのは、Scipioの制約を選択することです
+
+作業。
+
+ゾーンにロックされています。
+
+いくつかのプラットフォームがある場合、その特定のゾーンにはSkylinkのようなレバーがあり、
+
+これは、あなたが利用できるか、これを使用して中央で行うことができます。
+
+1つは、それが私たちが中央を断熱すると思うものだけを見たことだと尋ねました
+
+そして、私がそれらを使用するために中央またはフロントページをサイレックスし、選択したい場合、私は価格に違反するだろう
+
+これら2つまたはこのプラットフォームのいずれかが、少なくとも現在のところ、私にとって同じであることを示しています。
+
+私は行くことができ、GPは非常に少ないので、この特定の使用のみのゾーンが選択されています。
+
+実際にこれをすぐに変更する必要があります。
+
+私の私。
+
+あなたはそのまま。
+
+大丈夫ですよ。
+
+OK。
+
+今、私たちはGPを選択するオプションはどのようなものであり、この2つの柱にできることを尋ねました
+
+コストが非常に高くなっていることを確認してください。
+
+だから、私が作品を取り出すと、それは約50ドルでいくつかを示していますが、GPOを選択すると、費用はかかります
+
+GPあたり約500ドルを非表示にする必要があります。これは、1か月あたりの料金です。
+
+ですから、実際にこれを選択しないでください。
+
+これができる本は、実際にあなたが公共を使用したい場合、事前に定義された画像を選択できる場所です
+
+現在の画像またはあなたは実際に画像からそれを選択することができ、オプションはWindowsで利用可能です
+
+またはLinuxまたはそれが使用されているもの。
+
+市場で今。
+
+あなたは実際に例として勝った行為でWindowsマシンを選択することができます。
+
+または、実際には、Windows Serverのような主要なアプリケーションイメージのいずれかを選択できます。
+
+2012
+
+または、実際には画像がないメジャーから選択できます。
+
+すべてをクリアしました。
+
+私はスナップショットを知りませんし、これにはまったく存在しません。
+
+ブートディスクのイメージは誰ですか。
+
+電磁ビスカルディがこれらを言うと、実際に使用するかを選択することができます
+
+選択した内容に基づいて変化します。
+
+実際、この速度はそれに関連して変化します。
+
+先に進んで、磁気ディスクをそのままにして、それを続けましょう。
+
+だから、それが選択したLinux 8の赤ちゃんです、私が欲しい電話をリストするように頼んでいますが、これは
+
+同じこと。
+
+ifsとbutsをやりすぎたくありません。
+
+私はすべての戦略を選択し、先に進みましょう。
+
+そのため、特定のセットが開始されるまで少し時間がかかると思います。
+
+うん。
+
+インスタンスは実際にあり、ライブラリには実際に使用できるものがあります
+
+インターネットの多くのバランサーまたはその他のインターネット通信またはテキストと生活のルール。
+
+そして、それはあなたがこのIPが割り当てられているのを見ることができる場所であり、あなたは実際にビルボードを読んで、
+
+特定のIPトラフィックが許可されます。実際にこの特定の接続をクリックする複数のオプションがあります。
+
+インスタンス1つは、S-shブラウザーであるということです。私たちのやり方は複数あります。
+
+プロセスを知っている別のパーティのパーティと接続することもできます。
+
+これについては、後続の講義で詳しく説明します。
+
+しかし、これは、S-shで接続して接続する場合の方法です
+
+接続されていることを確認してください。今すぐマシンにフルアクセスできます。
+
+ルートアクセスである実際にそれをしたい場合は、それが入ってそれを行うのを待つことができます
+
+私たちはアクセスできます
+
+この機能については、後続の講義でさらに詳しく説明します。
+
+準備が整ったと感じたら、次の講義に進みましょう。
+
+ありがとうございました。

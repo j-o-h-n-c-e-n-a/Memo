@@ -1,0 +1,163 @@
+But it closing low data Brock the cloud data workflow provides flexible and easy use mechanism for managing
+
+and executing workflows.
+
+What do we mean by workflow so you can create or directed a cyclic graph which is Dag and this is standard
+
+terminology.
+
+Nothing new here.
+
+So you can create those different jobs and processes and you can identify the dependencies.
+
+As an example here it will trigger B and C as well as D and C but at the same time where you can actually
+
+say that for D to be executed you need to help B to complete a to complete and c to complete and then
+
+really D will be executed so you can incorporate all those complexities inside the workflow and that
+
+is what you can do it in data proc workflow as well workflows are ideal for complex jobs where you have
+
+multiple dependencies and you want to make sure that everything is executed in a sequence using workflow
+
+you can create a cluster.
+
+You can do the job.
+
+You can delete the cluster you can enforce the dependencies between the jobs inside the cluster.
+
+So there are workflow templates which you can use it so templates are just you know way of defining
+
+the workflow but it is not an execute.
+
+So once you create a template it unless and until you execute the template you will not see the you
+
+know the cluster it's launched and managed.
+
+There are different kind of template which you can use it.
+
+One is the managed cluster the cluster which will come and go right.
+
+So if you have a job need to run.
+
+So what you can do is you can launch a cluster.
+
+You can run the job and then you can delete the cluster that is managed.
+
+LESTER You can have a cluster selector templates which is like existing cluster is there.
+
+You are just running the job inside the existing cluster.
+
+You can have parameter raised as an example you you don't have to specify everything inside the template
+
+you can provide the parameter from outside and then execute depends on the parameter.
+
+Are you can you run the template or you know execute via inline tool which is like G Cloud command and
+
+execute it.
+
+Use cases you want to automate the repetitive task.
+
+You can think of that is one of the use case you want to have transactional fire and forget kind of
+
+interaction model way where it will come and go as in when it is required.
+
+You can launch if you model as well as long lived clusters using the workflow and you can have granular
+
+am security Incorporated Inside the workflow so Security's already there in the workflow if I go back
+
+and I can show you where you can go and create the workflow.
+
+You can go here and create the workflow template so you can go ahead and say create a workflow template
+
+using one of these method.
+
+I'm not going in details right now because it is not at all required for you to understand at least
+
+as a foundation but in our specific search application that is cloud data engineer will go more deep
+
+into it that you guys as a workflow template.
+
+Going to the next one that is go down limits.
+
+しかし、低データをブロックすることにより、クラウドデータワークフローは柔軟で使いやすい管理メカニズムを提供します。
+
+ワークフローの実行。
+
+Dagであり、これが標準である巡回グラフを作成または指示できるようにするためのワークフローの意味
+
+用語。
+
+ここに新しいものはありません。
+
+そのため、これらの異なるジョブとプロセスを作成し、依存関係を特定できます。
+
+ここでの例として、BとC、およびDとCをトリガーしますが、同時に実際にできるのは
+
+Dが実行されるためには、Bがaを完了し、cが完了し、そしてc
+
+実際にDが実行されるため、これらの複雑さをすべてワークフロー内に組み込むことができます。
+
+データプロシージャワークフローでできることです。ワークフローは複雑なジョブに最適です。
+
+複数の依存関係があり、ワークフローを使用してすべてがシーケンスで実行されることを確認したい
+
+クラスターを作成できます。
+
+あなたは仕事をすることができます。
+
+クラスターを削除して、クラスター内のジョブ間に依存関係を強制できます。
+
+したがって、使用できるワークフローテンプレートがあるので、テンプレートは定義方法を知っているだけです。
+
+ワークフローですが、実行ではありません。
+
+したがって、テンプレートを作成すると、テンプレートを実行しない限り、テンプレートが実行されるまで、
+
+起動および管理されているクラスターを知っている。
+
+使用できるテンプレートにはさまざまな種類があります。
+
+1つは、管理対象クラスターであり、適切に行き来するクラスターです。
+
+したがって、ジョブを実行する必要がある場合。
+
+そのため、クラスターを起動できます。
+
+ジョブを実行してから、管理されているクラスターを削除できます。
+
+LESTER既存のクラスターが存在するようなクラスターセレクターテンプレートを使用できます。
+
+既存のクラスター内でジョブを実行しているだけです。
+
+テンプレート内のすべてを指定する必要がない例としてパラメーターを上げることができます
+
+外部からパラメーターを提供し、パラメーターに応じて実行することができます。
+
+テンプレートを実行できますか、それともG Cloudコマンドのようなインラインツールで実行できますか？
+
+それを実行します。
+
+反復タスクを自動化するユースケース。
+
+あなたはそれがあなたがトランザクションの火を持ち、種類のことを忘れたいユースケースの一つであると考えることができます
+
+必要な場合のように、やり取りする相互作用モデルの方法。
+
+ワークフローを使用して、長寿命のクラスタをモデル化する場合と起動することができます。
+
+セキュリティはワークフロー内に組み込まれているので、戻るとセキュリティはすでにワークフロー内にあります
+
+ワークフローを作成して作成できる場所を示します。
+
+ここに行ってワークフローテンプレートを作成すると、ワークフローテンプレートを作成できます
+
+これらの方法のいずれかを使用します。
+
+少なくともあなたが理解する必要は全くないので、私は今詳細に行きません
+
+基盤としてですが、クラウドデータエンジニアである特定の検索アプリケーションでは、さらに深くなります
+
+ワークフローのテンプレートとして皆さんに紹介します。
+
+次の1つである限界に行きます。

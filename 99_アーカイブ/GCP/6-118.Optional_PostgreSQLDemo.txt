@@ -1,0 +1,231 @@
+Help in this particular demo I go out and create as cool as you can Google.
+
+Q Well offerings
+
+and I can select the cloud.
+
+B G.
+
+Q Well the one instance I want to put down in us and let me see or whatever I'm least bothered about
+
+this one I can select the instance machine type here I can select stories whatever it is required and
+
+as I said explained earlier you can based on your you know the CPP use and all your IOPS me go up and
+
+down you will probably check that what I want to go default here.
+
+Sorry
+
+dangerous officiant.
+
+I want to go ahead.
+
+Up windows this way.
+
+It's all same.
+
+You can see maintenance window
+
+Satterlee louder password.
+
+If I have to generate the password and post glaces they use it early you know to keep that in mind.
+
+John Reed and you have this password to connect
+
+If you want.
+
+You can actually go ahead and create the flags.
+
+And here you can actually create adres network if you want to put forward some restrictions or you won't
+
+open it.
+
+I'm just creating the instance
+
+or it's the problem
+
+that it's orderly instance ok for instance has been created.
+
+I thought there was error I think there is a glitch.
+
+I can see the instances here.
+
+Let me go ahead and see the instance from here.
+
+Instance just
+
+know there is no instance here.
+
+So let me in Fiji is well.
+
+Diom cloud
+
+and I strongly for I don't want to change anything.
+
+A maintenance window any window for a password Gendry
+
+or that and then create that it's orderly instance running.
+
+I don't know with the same name and what to do.
+
+It was feel I think
+
+so you can actually think of you know it is still in beta.
+
+There is no instance running for for the same name and it was showing me because I think it has cached
+
+that information somewhere.
+
+So the instances is getting created.
+
+Let me go and delete these instances because this is not like work.
+
+You can stop start or restart it me and delete this one for additional security it asking you the instance
+
+name you're going to type the same thing just to make sure that you're not deleting it by mistake.
+
+Delete.
+
+So this is being created
+
+so you can actually go and check the state doesn't it says bendingly.
+
+It is still being creator.
+
+It's not entirely
+
+we're unable to see the properties
+
+see the instances running.
+
+It's the same you can see options but there are no H.E. and all that configuration currently available
+
+in Clodius cloud Q Well cloud you will.
+
+Was Haskell instances.
+
+So those are like you can see limited options
+
+for this particular Postiga this is cool demo guys.
+
+If you have any questions on this one let me know.
+
+Otherwise you can move to the next section.
+
+Thank you.
+
+この特定のデモを手伝って、Googleでできる限りクールに作成します。
+
+Q井戸の提供
+
+クラウドを選択できます。
+
+B G.
+
+Qまあ私は私たちに置いて、私が見ているか、私が少なくとも気にしない何でもしたい1つのインスタンス
+
+これは、ここでインスタンスマシンタイプを選択できます。必要に応じてストーリーを選択できます。
+
+前に説明したように、CPPの使用とすべてのIOPSがわかっていることに基づいて、
+
+おそらく、ここでデフォルトにしたいものをチェックするでしょう。
+
+ごめんなさい
+
+危険な司令官。
+
+先に行きたいです。
+
+この方法でウィンドウをアップします。
+
+それはすべて同じです。
+
+メンテナンス期間を確認できます
+
+Satterleeの大きなパスワード。
+
+私がパスワードを生成し、Glacesを投稿する必要がある場合、彼らはそれを早期に使用することを覚えておいてください。
+
+ジョン・リードとあなたは接続するためにこのパスワードを持っています
+
+お望みならば。
+
+実際にフラグを作成することができます。
+
+そしてここで、いくつかの制限を適用したい場合、またはしない場合、実際にadresネットワークを作成できます。
+
+それを開く。
+
+インスタンスを作成しています
+
+またはそれが問題です
+
+インスタンスが正常に作成されていることは問題ありません。
+
+エラーがあると思った。グリッチがあると思う。
+
+ここでインスタンスを見ることができます。
+
+先に進み、ここからインスタンスを見てみましょう。
+
+インスタンスだけ
+
+ここにはインスタンスがないことを知ってください。
+
+それで、フィジーで私がいいです。
+
+ディオムクラウド
+
+私は何も変えたくないのです。
+
+メンテナンスウィンドウパスワードGendryの任意のウィンドウ
+
+またはそれから、それが正常なインスタンスの実行であることを作成します。
+
+私は同じ名前で何をすべきかわかりません。
+
+感じていた
+
+そのため、まだベータ版であることを実感できます。
+
+同じ名前で実行されているインスタンスはありません。キャッシュされたと思われるため、表示されていました
+
+その情報はどこかに。
+
+したがって、インスタンスが作成されています。
+
+これは仕事のようなものではないため、これらのインスタンスを削除します。
+
+起動を停止または再起動して、セキュリティを強化するためにこれを削除してインスタンスを要求することができます
+
+間違って削除しないようにするために、同じ名前を入力します。
+
+削除します。
+
+これが作成されています
+
+そのため、実際に行って状態を確認することができます。
+
+まだクリエーターです。
+
+完全ではありません
+
+プロパティが表示されません
+
+実行中のインスタンスを参照してください。
+
+あなたがオプションを見ることができるのと同じですが、H.Eはありません。現在使用可能なすべての構成
+
+ClodiusクラウドでQよくクラウドになります。
+
+Haskellインスタンスでした。
+
+これらは限られたオプションを見ることができるようなものです
+
+この特定のPostigaの場合、これはクールなデモ担当者です。
+
+これに関する質問がある場合はお知らせください。
+
+それ以外の場合は、次のセクションに移動できます。
+
+ありがとうございました。

@@ -1,0 +1,776 @@
+Master class cloud computing for architects designers doula books and cease operations.
+
+Let's go in and get started on the next service around cloud computing and computer service that is
+
+cloud function but we'll do one thing here.
+
+OK.
+
+Before getting dial into what is cloud function and how we.
+
+Let's call and launch one of the cloud function here OK.
+
+And then we'll see how does it help and how quickly you can launch cloud function.
+
+I mean to cloud a console.
+
+And I just clicked on create function.
+
+I'm not changing anything name memory anything anything here.
+
+OK I'm just.
+
+Let me put low
+
+GDP gurus.
+
+I'm not changing anything.
+
+Okay and here you go.
+
+Your function is getting created and it should be done within a few seconds
+
+Yeah it's ready.
+
+Okay.
+
+Let's getting
+
+what they have created.
+
+So just forget about these calls it just might try.
+
+Okay.
+
+So these are the locations that I have once I created the function I created it treated me type of function
+
+so I can just go and trigger it.
+
+I can see source code and I can see you on test function.
+
+There are two ways for extra DP.
+
+I can just invoke it from here.
+
+I can use postmen man to trigger these functions.
+
+I can use this particular interface itself and test the function.
+
+Here we go click a low cloud.
+
+So this is a this is the simple and very simple cloud function that we have created.
+
+I can actually just hit this all and it will say hello cloud chorus and that's the sole purpose of this
+
+particular function.
+
+So take a extra DP hit on this particular link and then respond to that particular link.
+
+And that's the that is very simple cloud function that we have let's look at other concepts.
+
+So here in the runtime which it says it's not six I have indexed yes and packaged Jesus.
+
+So this is simple extra to be willing to zero point zero point one.
+
+The function name is hallowed.
+
+I can actually just go ahead and download the zip.
+
+I can open the Zeev and in that deep you can find indexed or Jesus and package
+
+so we did test right.
+
+So I just treated some events I can just this too many times
+
+and I can actually go ahead and get the log entries.
+
+Also I can go in here.
+
+Okay.
+
+Sure the logs function execution started.
+
+It took 3 milliseconds.
+
+It finishes with status quo 200.
+
+This is to a set of code and you can actually just code and look at what it is.
+
+What do we mean by it to be status quo.
+
+You can actually see all the logs in structure that were logging.
+
+It has integrated very well integrated within the logs.
+
+So I think that our filters created directly so that you'll see only this vertical.
+
+Let me go in and play a game.
+
+So many more instances
+
+so the logs are still getting created.
+
+Cloud function.
+
+I can just mention this one function.
+
+And pull the logs out right.
+
+So these would like current hits.
+
+Everything was written 200 status close and I can actually click and detail what that logging message
+
+is in detail.
+
+What is that like.
+
+That's it.
+
+Cloud function right.
+
+You can actually create a cloud function and then you can see the logs you can hit that cloud functionality
+
+in the cloud function and there are many more aspect will you go ahead and get in to it shortly
+
+so you can actually test function copy this function you can be logs and you can delete it.
+
+Okay so that is very simple simple cloud function that we have going back to the theory.
+
+What is cloud function.
+
+It is even three once that level is computing platform.
+
+Okay.
+
+Why it is a realist will will talk about it cloud function is a part of computing platform which is
+
+one of the three core services that we have available in any cloud platform in DCP.
+
+They call it as a cloud function in Iaw as they have a W as lambda and I think they they call some events
+
+or actual function in as you're in DCP they call it cloud function it comes top in the top in the pyramid
+
+that's where it is even rewiring.
+
+Orderly service and we'll talk about that what is civil this means so the cloud function it's a sudden
+
+release in wonderment to build and connect cloud services.
+
+It's a thing you can think of is just one of the infrastructure service.
+
+Why do you want to use cloud function.
+
+You do not want to run an app when no one is using it.
+
+Absolutely no operations ordered simple to implement.
+
+And with multiple endpoints and it is you and Ryan you wondering when.
+
+Right.
+
+So events based on the business logic execution some of the cloud function features.
+
+It's a truth that we're left with somewhat less economics.
+
+It is made hundred milliseconds at the minimum.
+
+So if I go back now this particular function is not doing anything.
+
+I'm not in it.
+
+So you will not be charged at all.
+
+So that is the economic slide so you'll be charged.
+
+If you look at for these invocations and the memory which was spent if we look at the execution time
+
+this is what the millisecond.
+
+So you will be charged initially.
+
+Hundred milliseconds for that your time and the memory usage for that.
+
+Right.
+
+So minimum I didn't really say and then onwards it will go upward right.
+
+So if you continuously know and it is using C then we second continuously you'll be charged for 100
+
+millisecond.
+
+You need to make sure.
+
+So that is true somewhat less right connect and extend cloud services.
+
+It is mobile really.
+
+You can just add code and it will just start working and that's what we saw.
+
+It has a of open source support.
+
+I I-40 you can use it for I already know locations like census data api and micro services as a backend
+
+you can use that for data processing and Apl jobs so usually how it works you have some event that is
+
+coming in the cloud function and cloud to function actually does other API calls.
+
+If at all that is required our order function is very simple we just hit it from the browser and we
+
+got a response.
+
+So that's the power of cloud function
+
+features.
+
+There's even ways to micro servers fully manage through a secure trigger are from cloud pops up and
+
+we are not actually gone through cloud pops up yet but we will get into details of cloud pops up as
+
+GDP cloud storage is tracked ever and find ways and we are going to see some of the examples in the
+
+demo code you can deploy the function from cloud storage but can get hub bit bucket repository written
+
+in Javascript and runs no Jesus it has got a strangle our integration inbuilt and we saw the logs on
+
+stack I would logging and you can actually see that in monitoring as well events and triggers the cloud
+
+events have the thing that happen in your cloud norm and so it could be anything and in any business
+
+event or you know someone is storing the files into cloud storage or there are any ones like you know
+
+their database or data was got added or something like that.
+
+So you can create a response to those event with a trigger a pretty good is a declaration that you are
+
+interested in and certain events are to set up events.
+
+So I'm just giving you some background about what do we mean by event event is like any activity that
+
+happens in the cloud and you want to pretty good some activity late in the backend for those events.
+
+That's where the cloud function comes in binding a function to allow you to capture and act on those
+
+events.
+
+It could be business requirement.
+
+It could be your audit requirement.
+
+It could be your any other requirement for which you want to capture that event
+
+access control so user need to be added as a team member to project to grant them permissions using
+
+identity right in.
+
+I am.
+
+So typically there are rules on Google Cloud Platform one or a little and we work with that these are
+
+free may be rules at all right.
+
+Which cloud function also uses cloud function also supports the cloud function keyboard root like developer
+
+we were which you can grant the permissions to either the developer or the viewer developer means someone
+
+who is actually writing the code and then submitting the code right.
+
+And that's the developer we were he's just actually he just going in and auditing what it is there in
+
+case of troubleshooting if it is required
+
+and also you can actually bind the cloud function to service account so that if at all you want to restrict
+
+cloud function to dos only certain things you can actually have it
+
+cloud function pricing in locations.
+
+So first two million invocations are free beyond 2 million.
+
+It's 40 cents per million isn't it very cheap.
+
+No it's not only the.
+
+Actually it's not only the parameter.
+
+So you will be charged based on the compute time if at all you are using say 128 and be of memory and
+
+you 200 megahertz so the pricing four hundred milliseconds summit around this I don't even know how
+
+to pronounce these numbers but some it's a fraction of since
+
+other parameters are like network you can think of and this is again some fraction of you know sense
+
+and gigahertz second is counted like this.
+
+So you gotta say can these typically if you look at one gig second is the second off Walcott time in
+
+one gigahertz approach provision so you don't need to worry about it that much as a cloud engineer but
+
+that's the number right you need to just accumulate for how much time it is going to get to.
+
+I'm not sure whether they are giving pricing calculator also for cloud function let's call it and understand
+
+do we know cloud function here.
+
+Okay.
+
+And then what it takes you define 128 and be memory NCP use like those three you want to execute it
+
+and or they wouldn't name name one and execution time for function execution I say give a 15 millisecond
+
+and network bandwidth so I'm transporting 500
+
+cables of data and
+
+indication whatever number somewhere around 2 million had to estimate sorry for a dollar it is going
+
+to be like 2 million in location for this one they estimate at quarks quality submit around hundred
+
+dollars for two million in locations.
+
+Right.
+
+So that is what you have.
+
+So in locations two million G.B. seconds twelve 12000 gigahertz takedowns 20000 networking one GP per
+
+month.
+
+They have just multiplied the size
+
+said
+
+or should know for your SO portion of your estimate way of physics within the cloud function free to
+
+air click click here.
+
+So it has got a free to get as I said plus 2 million free beyond 2 million it's 40 cents compute.
+
+It will be charged I think actually it's pretty area.
+
+Cloud function provide perpetual free tier for computing in this process which locates GBC can and Google.
+
+Secondly in addition to 2 million in locations retail provides 400000 UBC accounts and 200000.
+
+I've taken up your computer time and full 5G B of Internet ingress traffic per month.
+
+Okay so that is what you will get.
+
+I think why I was not allowed to get that.
+
+Okay.
+
+I do not have
+
+that's fine.
+
+I think it is included in the calculation.
+
+That's the cloud function.
+
+Okay we will go in and in detail will create some locations will have Pub Sub cloud functioning location
+
+in the next to demo if at all.
+
+And that goes all the theory.
+
+Okay.
+
+So you've got all you have any questions around.
+
+Terry please let me know.
+
+Otherwise you can just go to wait for the day more like the next lecture and get your all other indications
+
+of cloud function aspects clarified.
+
+Thank you.
+
+
+建築家、デザイナー、ドゥーラの本のためのマスタークラスのクラウドコンピューティングと運用の停止。
+
+クラウドコンピューティングとコンピューターサービスに関する次のサービスを始めましょう
+
+クラウド機能ですが、ここでは1つのことを行います。
+
+OK。
+
+クラウド機能とは何か、どのように私たちにダイヤルする前に。
+
+ここでクラウド機能の1つを呼び出して起動しましょう。
+
+そして、それがどのように役立ち、クラウド機能をどれだけ早く起動できるかを見ていきます。
+
+コンソールをクラウド化するということです。
+
+そして、作成機能をクリックしました。
+
+私はここで何か名前の記憶を何も変えていません。
+
+OK
+
+低くさせて
+
+GDPの達人。
+
+私は何も変えていません。
+
+さて、ここに行きます。
+
+関数が作成されており、数秒以内に完了する必要があります
+
+うん、準備ができた。
+
+はい。
+
+取得しましょう
+
+彼らが作成したもの。
+
+したがって、これらの呼び出しを忘れて、試してみてください。
+
+はい。
+
+だからこれらは私が作成した関数を作成した場所です
+
+それで私はただそれをトリガーすることができます。
+
+私はソースコードを見ることができ、テスト機能であなたを見ることができます。
+
+追加のDPには2つの方法があります。
+
+ここから呼び出すことができます。
+
+郵便配達員を使用してこれらの機能をトリガーできます。
+
+この特定のインターフェイス自体を使用して、機能をテストできます。
+
+ここで、低い雲をクリックします。
+
+これが、これが私たちが作成したシンプルで非常にシンプルなクラウド関数です。
+
+私は実際にこれをすべて打つことができ、こんにちはクラウドコーラスと言うでしょう、それがこの唯一の目的です
+
+特定の機能。
+
+したがって、この特定のリンクで追加のDPヒットを取得し、その特定のリンクに応答します。
+
+これが非常にシンプルなクラウド機能です。他の概念を見てみましょう。
+
+ですから、ここでは6ではないというランタイムで、イエスとインデックスを作成し、イエスをパッケージ化しました。
+
+そのため、これはゼロポイントゼロポイント1を希望するための単純な追加です。
+
+関数名は神聖です。
+
+実際に、zipをダウンロードするだけです。
+
+私はZeevを開くことができ、その深さでインデックス付きまたはイエスとパッケージを見つけることができます
+
+そのため、正しくテストしました。
+
+だから、私はこれを何度もやり直すことができるいくつかのイベントを扱った
+
+実際にログエントリを取得できます。
+
+またここに行くことができます。
+
+はい。
+
+ログ機能の実行が開始されたことを確認してください。
+
+3ミリ秒かかりました。
+
+現状200で終了します。
+
+これはコードのセットであり、実際にコードを作成してそれが何であるかを見ることができます。
+
+現状とはどういう意味ですか。
+
+実際に、ログに記録されていたすべてのログを構造で確認できます。
+
+ログ内に非常によく統合されています。
+
+そのため、この垂直のみが表示されるように、フィルターが直接作成されたと思います。
+
+遊びに行こう。
+
+非常に多くのインスタンス
+
+そのため、ログはまだ作成されています。
+
+クラウド機能。
+
+この1つの関数に言及するだけです。
+
+そして、ログを正しく引き出します。
+
+したがって、これらは現在のヒットを望んでいます。
+
+すべてが200ステータスクローズに書き込まれ、実際にクリックして詳細を記録することができます
+
+詳細です。
+
+それはどんな感じですか。
+
+それでおしまい。
+
+クラウド機能の権利。
+
+実際にクラウド機能を作成し、そのクラウド機能をヒットできるログを見ることができます
+
+クラウド機能では、さらに多くの側面があり、すぐにそれを取得します
+
+したがって、実際に関数をテストすることができます。この関数をコピーすると、ログになり、削除できます。
+
+さて、これは非常に単純な単純なクラウド関数であり、理論に戻ります。
+
+クラウド機能とは何ですか。
+
+そのレベルがコンピューティングプラットフォームである場合は、3回です。
+
+はい。
+
+なぜそれが現実主義者なのかについて説明します。クラウド機能はコンピューティングプラットフォームの一部であり、
+
+DCPのクラウドプラットフォームで利用できる3つのコアサービスの1つ。
+
+ラムダとしてWを持っているので、彼らはIawでそれをクラウド関数と呼びます。
+
+あなたがDCPにいるとき、彼らはそれをクラウド機能と呼び、ピラミッドの一番上に来ます
+
+それが再配線です。
+
+整然としたサービスであり、これが意味するのは民間のことであるため、クラウド機能は突然です
+
+クラウドサービスを構築して接続するために、驚異的にリリースします。
+
+これは、インフラストラクチャサービスの1つにすぎないと考えることができます。
+
+なぜクラウド機能を使用したいのですか。
+
+誰も使用していないときにアプリを実行したくありません。
+
+簡単に実装できるように命令された操作は絶対にありません。
+
+そして、複数のエンドポイントがあり、あなたとライアンはいつ疑問に思っています。
+
+正しい。
+
+そのため、ビジネスロジックに基づくイベントは、クラウド機能の一部を実行します。
+
+経済性がやや劣るのは事実です。
+
+最小で100ミリ秒になります。
+
+したがって、今戻ってみると、この特定の機能は何もしていません。
+
+私はそこにいません。
+
+したがって、あなたはまったく請求されません。
+
+それが経済的なスライドなので、請求されます。
+
+これらの呼び出しと、実行時間を見ると費やされたメモリを見ると
+
+これがミリ秒です。
+
+したがって、最初に請求されます。
+
+その時間の100ミリ秒とそのためのメモリ使用量。
+
+正しい。
+
+だから最低限、私は本当に言っていなかったし、それ以降は右に上に行くだろう。
+
+したがって、Cを使用し続けている場合は、2番目に連続して100が請求されます
+
+ミリ秒。
+
+確認する必要があります。
+
+そのため、クラウドサービスを適切に接続して拡張することはやや少なくなります。
+
+本当にモバイルです。
+
+コードを追加するだけで機能し始め、それが私たちが見たものです。
+
+オープンソースをサポートしています。
+
+私はI-40を使用できます。国勢調査データAPIやマイクロサービスなどの場所をバックエンドとして既に知っています。
+
+あなたはデータ処理とAplジョブのためにそれを使用することができますので、通常それがどのように機能するかは、あるイベントを持っています
+
+クラウド機能に入って機能するクラウドは、実際に他のAPI呼び出しを行います。
+
+それが必要な場合は、注文関数が非常に簡単で、ブラウザからヒットするだけで、
+
+応答を得た。
+
+それがクラウド機能の力です
+
+特徴。
+
+マイクロサーバーが安全なトリガーを介して完全に管理する方法もあります。
+
+実際にはまだクラウドポップアップが表示されていませんが、クラウドポップアップの詳細については、
+
+GDPクラウドストレージはこれまでに追跡され、方法を見つけています。
+
+クラウドストレージから関数をデプロイできますが、ハブビットバケットリポジトリを作成できるデモコード
+
+Javascriptで、イエスを実行していませんそれは私たちの組み込みが首尾よく絞られており、私たちはログオンを見ました
+
+スタックをログに記録すると、実際にイベントを監視し、クラウドをトリガーすることがわかります
+
+イベントにはクラウドの標準で発生するものがあるため、あらゆるビジネスで発生する可能性があります
+
+イベントまたはあなたは誰かがクラウドストレージにファイルを保存していることを知っているか、あなたが知っているようなものがあります
+
+データベースやデータが追加されたか、そのようなものがありました。
+
+そのため、トリガーを使用してこれらのイベントへの応答を作成できます。
+
+特定のイベントに興味があり、イベントを設定します。
+
+イベントイベントとは何を意味するのかについての背景を説明しているだけです。
+
+クラウドで発生し、それらのイベントのバックエンドの後半でかなり良いアクティビティをしたいです。
+
+そこでクラウド機能が機能をバインドし、それらをキャプチャして操作できるようにします
+
+イベント。
+
+ビジネス要件である可能性があります。
+
+監査要件である可能性があります。
+
+そのイベントをキャプチャしたい他の要件である可能性があります
+
+アクセス制御により、プロジェクトにチームメンバーとして追加する必要があります。
+
+アイデンティティー
+
+わたし。
+
+そのため、通常、Google Cloud Platformには1つまたはいくつかのルールがあります。
+
+自由はすべての権利であるかもしれません。
+
+どのクラウド機能もクラウド機能を使用していますか？開発者のようなクラウド機能キーボードルートもサポートしています
+
+開発者またはビューア開発者に許可を与えることができました
+
+実際にコードを書いてから、コードを正しく送信しているのは誰ですか。
+
+そして、それが開発者であり、彼は実際に彼がちょうど入って、そこにあるものを監査しているのです
+
+必要な場合のトラブルシューティングのケース
+
+また、クラウド機能をサービスアカウントに実際にバインドして、制限する場合
+
+あなたが実際にそれを持つことができる特定のことだけを行うクラウド機能
+
+場所でのクラウド機能の価格。
+
+したがって、最初の200万回の呼び出しは200万回を超えて無料です。
+
+100万分の40セントです。それほど安くはありません。
+
+いいえ、それだけではありません。
+
+実際には、パラメータだけではありません。
+
+したがって、たとえば128を使用していてメモリがある場合、計算時間に基づいて課金されます。
+
+200メガヘルツなので、400ミリ秒の価格設定でこれをサミットします。
+
+これらの数字を発音しますが、一部はそれ以来のほんの一部です
+
+他のパラメータは、あなたが考えることができるネットワークのようなものであり、これもまたあなたの感覚の一部です
+
+ギガヘルツ秒はこのようにカウントされます。
+
+だから、1ギグを見ると、これらは通常、ウォルコット時間の2番目のオフであると言えます
+
+1ギガヘルツのアプローチを提供するため、クラウドエンジニアほど心配する必要はありませんが、
+
+それは、到達する時間だけ蓄積するのに必要な数です。
+
+彼らがクラウド機能にも価格計算機を提供しているかどうかはわかりませんが、それを呼び出して理解しましょう
+
+ここでクラウド機能を知っていますか。
+
+はい。
+
+そして、必要なものは128を定義し、NCPがそれらを実行したい3つのようにメモリを使用することです
+
+または、名前を付けずに、関数実行の実行時間を15ミリ秒と言います
+
+とネットワーク帯域幅ので、私は500を輸送しています
+
+データのケーブルと
+
+およそ200万件の数字が何であれ、1ドルでごめんなさい
+
+クォーク品質で約100を送信すると推定されるこの場所の場所は200万になります
+
+200万の場所でドル。
+
+正しい。
+
+それがあなたの持っているものです。
+
+そのため、200万GBの場所で秒12 12000ギガヘルツのテイクダウン20000ネットワーキング1 GP
+
+月。
+
+彼らはちょうどサイズを掛けています
+
+前記
+
+または、クラウド関数内の物理学の推定方法のSO部分について無料で知っておく必要があります
+
+こちらをクリックしてください。
+
+だから、私が言ったように、無料で200万を超える無料で、40セントの計算です。
+
+有料になりますが、実際にはかなりのエリアだと思います。
+
+クラウド機能は、GBC缶とGoogleを見つけるこのプロセスでのコンピューティングに永続的な無料利用枠を提供します。
+
+第二に、小売店の200万に加えて、400,000のUBCアカウントと200000を提供しています。
+
+1か月あたり、コンピューターの時間と5G Bのインターネット進入トラフィックをすべて処理しました。
+
+さて、それはあなたが得るものです。
+
+なぜそれを手に入れられなかったのかと思います。
+
+はい。
+
+持っていない
+
+それはいいです。
+
+計算に含まれていると思います。
+
+それがクラウド機能です。
+
+では、詳細に説明します。いくつかの場所を作成し、Pub Subクラウドが機能する場所を作成します。
+
+次のデモでは、もしあれば。
+
+そして、それはすべての理論に当てはまります。
+
+はい。
+
+質問があります。
+
+テリー、教えてください。
+
+それ以外の場合は、次の講義のように1日待つだけで、他のすべての指標を取得できます
+
+クラウド機能の側面の明確化。
+
+ありがとうございました。
