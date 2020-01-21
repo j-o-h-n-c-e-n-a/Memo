@@ -27,6 +27,7 @@
 * Cloud Console
 * Cloud Identity-Aware Proxy(IAP)
 
+https://google.qwiklabs.com/catalog?format%5B%5D=courses&utm_source=cloud-dot-google&utm_medium=website
 
 * Android Enterprise
 * Cloud Identity
