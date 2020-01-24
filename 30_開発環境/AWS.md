@@ -109,11 +109,12 @@
     + 課金単位も異なる
 ### Auto Scaling
   * Auto-Scalingの概要
+    + Auto-Scalingグループ
   * Auto-Scalingの設定(ハンズオン)
 ### EBS(Elastic Block Store)
   * EBSの概要
     + インスタンスに接続するとOSから認識されるブロックストレージ
-  * AMIとsnapshotの活用(ハンズオン)
+  * AMIとSnapshotの活用(ハンズオン)
     + AMI(AmazonMachineImage)
       - AWSの加増ディスクのサービスであるEBSのスナップショットにルートボリュームの付加情報を追加したもの  
   * EC2のまとめ
@@ -142,7 +143,9 @@
 ### ECS/EKS/Fargate
   コンテナに関するサービス
 ### Lambda
+  サーバーレスでマネージドな
 ### APIGateway
+  
 ### Strage Gateway/EFS
   Strage Gatewayはオンプレミス環境からの接続用アプライアンス。EFSは分散ストレージ
 
