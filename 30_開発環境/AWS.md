@@ -335,7 +335,11 @@
  * プレイスメントグループ
  * メトリクスの監視：CloudWatch
   + プッシュ通知：SNS（SimpleNotificationService）
- 
+ * Cognito
+  + モバイル管理サービス：Firebaseのようなもの？
+ * Device Farm
+  + モバイルデバイス管理：MDMのようなもの？
+
 ## 機械学習
 ### SageMaker
 
@@ -351,6 +355,7 @@ https://dev.classmethod.jp/cloud/aws/2018-aws-re-entering-security/
 http://aws.clouddesignpattern.org/index.php/メインページ
 https://aws-exam.net/saa/
 https://dev.classmethod.jp/cloud/aws/aws-summary-2020/
+https://awsjp.com/
 
 ### Qwiklabs
 * [](https://dev.classmethod.jp/cloud/aws/saa-exam-usecase-training-in-qwiklabs/)
