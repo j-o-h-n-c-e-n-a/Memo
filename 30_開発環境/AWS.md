@@ -139,19 +139,19 @@
     + 暗号化
   * S3小テスト
 ### Glacier
-  低コストアーカイブ向けストレージ
+    低コストアーカイブ向けストレージ
 ### ECS/EKS/Fargate
-  コンテナに関するサービス
+    コンテナに関するサービス
 ### Lambda
-  サーバーレスでマネージドな
+    サーバーレスでマネージドな
 ### APIGateway
   
 ### Strage Gateway/EFS
-  Strage Gatewayはオンプレミス環境からの接続用アプライアンス。EFSは分散ストレージ
+    Strage Gatewayはオンプレミス環境からの接続用アプライアンス。EFSは分散ストレージ
 
 ## 3．セキュリティとネットワーキング
 ### IAM
-  ユーザ権限管理
+    ユーザ権限管理
 #### IAMグループへのポリシー適用(ハンズオン) ポリシー、グループ、ロール
 * ユーザー
   + ルートユーザー：何でもできる。漏洩防止のために普段は使用しない。MFAを設定しておく。
@@ -176,14 +176,14 @@
     + ツール ELB/EC2/RDS/S3/Auto-Scaling/VPC
 ### セキュリティサービス
 #### 責任共有モデル
-  セキュリティに対してAWSとユーザーとで責任分解して対応する責任共有モデルとなっている
+    セキュリティに対してAWSとユーザーとで責任分解して対応する責任共有モデルとなっている
 #### Shield
-  DDos対策
+    DDos対策
 #### WAF
 #### セキュリティグループ
-  ステートフル：ルールで許可された通信の戻りの通信も自動的に許可されます
+    ステートフル：ルールで許可された通信の戻りの通信も自動的に許可されます
 #### ネットワークACL
-  ステートレス：通信の行き（アウトバウンド）と戻り（インバウンド）で、ルールの設定が必要です
+    ステートレス：通信の行き（アウトバウンド）と戻り（インバウンド）で、ルールの設定が必要です
 ### VPCの概要
 ### VPCとの接続
 ### VPCの設計
@@ -199,7 +199,7 @@
   * ELBによる冗長構成(ハンズオン)
   * ELBによる冗長構成(ハンズオン)  
 ### Route53
-  フルマネージドのネームサーバー、トラフィックルーティング、ヘルスチェックとDNSフェイルオーバー
+    フルマネージドのネームサーバー、トラフィックルーティング、ヘルスチェックとDNSフェイルオーバー
 #### ネームサーバー
   * ルートを起点にすべてのFQDNを探索できるように構成された分散データベース
   * NSレコードとGlueによる親ゾーンから子ゾーンへの権限移譲の仕組み
@@ -213,7 +213,7 @@
   * CNAMEレコードタイプの制約とZoneApex
   * 正常応答のキャッシュ、不存在応答のネガティブキャッシュ
 ### Direct Connect
-  オンプレとの専用線
+    オンプレとの専用線
   * 論理接続
     + プライベートとパブリックがある
   * Direct Connect Gateway
@@ -223,7 +223,7 @@
   * 可用性
     + デュアルロケーション（リージョンを分散：東阪）
 ### CloudFront
-  コンテンツ配信（CDN）ネットワーク
+    コンテンツ配信（CDN）ネットワーク
   * コンテンツのキャッシュ
   * Webコンテンツや動画などを分散ネットワーク上で配信が可能
 
@@ -231,39 +231,39 @@
 ### RDS
 #### リードレプリカ
 #### ストレージタイプ
-  汎用SSD、プロビジョンドIOPS、Magnetic
+    汎用SSD、プロビジョンドIOPS、Magnetic
 #### バックアップ
 * SQL Server DB インスタンスでは SQL Server データベースのミラーリング (DBM) が使用される
 ### Aurora
-  リレーショナルデータベース。他のRDSに比較して高いスループットを提供している。
+    リレーショナルデータベース。他のRDSに比較して高いスループットを提供している。
 #### ストレージ構成
 #### フェイルオーバーの仕組み
 ### DyanamoDB
-  key-value形式のデータベース（NoSQL）
+    key-value形式のデータベース（NoSQL）
   * 複数のAZに保存される
   * テーブルの読み書き容量を制御
     + プロビジョニングされたスループット容量
 ### ElastiCache
-  インメモリキャッシュ
+    インメモリキャッシュ
 ### Redshift
-  列指向データベース
+    列指向データベース
 
 ## 5．管理とガバナンス
 ### CloudWatch
-  AWSリソースとAWSで実行されるアプリケーションの監視サービス
+    AWSリソースとAWSで実行されるアプリケーションの監視サービス
 #### Logs
-  AWSのログ収集サービス
+    AWSのログ収集サービス
 #### Events
-  AWSリソースの変更をトリガーとしてアクションを実行するサービス
+    AWSリソースの変更をトリガーとしてアクションを実行するサービス
 ### CloudTrail
-  AWSサービスの操作を監視し、AWSアカウントのガバナンス／コンプライアンス/運用とリスクの監査を実施するためのサービス
+    AWSサービスの操作を監視し、AWSアカウントのガバナンス／コンプライアンス/運用とリスクの監査を実施するためのサービス
 ### Config
-  リソースの操作履歴
+    リソースの操作履歴
   * ルール
   * ダッシュボード
   * アグリゲータ
 ### TrustedAdvisor
-  パフォーマンス・セキュリティ最適化
+    パフォーマンス・セキュリティ最適化
 #### チェック項目
   * コスト最適化
   * パフォーマンス
@@ -271,7 +271,7 @@
   * 耐障害性
 ### オペレーション自動化サービス
 #### CloudFormation
-  テンプレートによるインフラ構築
+    テンプレートによるインフラ構築
   * スタック
     + デプロイする単位。複数のスタックを組み合わせて1つの環境を作成することが可能
   * デザイナー
@@ -281,34 +281,34 @@
 
 ## 6．アプリケーション統合
 ### SQS
-  メッセージキューサービス
+    メッセージキューサービス
 ### SNS
-  通知サービス
+    通知サービス
 ### SES
-  メール通知サービス
+    メール通知サービス
 ### SWF
-  ワークフローサービス
+    ワークフローサービス
 
 ## 7．分析サービス
 ### Redshift
   * 分析に使用されるが、S3のデータを分析できない
 ### Kinesis
-  リアルタイムに大量のストリーミングで^多を収集する一連のサービス群です。
+    リアルタイムに大量のストリーミングで^多を収集する一連のサービス群です。
 1. Data Streams 
 2. Data Firehose
 3. Data Analytics
 4. Video Streams
 ### EMR
-  Hadoop のマネージドサービス
+    Hadoop のマネージドサービス
 ### Data Pipeline
-  異なるAWSコンピューティングとストレージサービス間でデータを確実に処理および移動するのに役立つウェブサービス
+    異なるAWSコンピューティングとストレージサービス間でデータを確実に処理および移動するのに役立つウェブサービス
 ### Glue
-  完全に管理された抽出、変換、および読み込み（ETL）サービス
+    完全に管理された抽出、変換、および読み込み（ETL）サービス
   * S3のデータ分析には使用しない
 ### Athna
-  標準SQLを使用してAmazon S3のデータを簡単に分析できるインタラクティブなクエリサービス。
+    標準SQLを使用してAmazon S3のデータを簡単に分析できるインタラクティブなクエリサービス。
 ### QuickSight
-  RedShiftなどのデータウェアハウスやS3、Athena、EDSなどのAWSのデータソースに接続できるBIツール
+    RedShiftなどのデータウェアハウスやS3、Athena、EDSなどのAWSのデータソースに接続できるBIツール
 
 ## 8. 移行とコスト管理のサービス
 ### 移行のためのサービス
@@ -345,18 +345,17 @@
 
 ## 参考
 ### AWS活用資料集
-https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS%20Certified%20Solutions%20Architect%20-%20Associate_Exam%20Sample_v1.5_FINALJP.pdf
-https://aws.amazon.com/jp/about-aws/events/aws-innovate/
-https://aws.amazon.com/jp/aws-jp-introduction/aws-jp-webinar-service-cut/
-https://aws.amazon.com/jp/whitepapers/?whitepapers-main.sort-by=item.additionalFields.sortDate&whitepapers-main.sort-order=desc
-https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/
+* https://aws.amazon.com/jp/about-aws/events/aws-innovate/
+* https://aws.amazon.com/jp/aws-jp-introduction/aws-jp-webinar-service-cut/
+* https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/
+* https://aws.amazon.com/jp/whitepapers/
 ### その他
-https://dev.classmethod.jp/cloud/aws/2018-aws-re-entering-security/
-http://aws.clouddesignpattern.org/index.php/メインページ
-https://aws-exam.net/saa/
-https://dev.classmethod.jp/cloud/aws/aws-summary-2020/
-https://awsjp.com/
+* http://aws.clouddesignpattern.org/index.php/メインページ
+* https://awsjp.com/
+* https://aws-exam.net/saa/
+* https://dev.classmethod.jp/cloud/aws/2018-aws-re-entering-security/
+* https://dev.classmethod.jp/cloud/aws/aws-summary-2020/
 
 ### Qwiklabs
-* [](https://dev.classmethod.jp/cloud/aws/saa-exam-usecase-training-in-qwiklabs/)
-* [](https://dev.classmethod.jp/cloud/aws/mesoko-r53-cdn/)
+* [1](https://dev.classmethod.jp/cloud/aws/saa-exam-usecase-training-in-qwiklabs/)
+* [2](https://dev.classmethod.jp/cloud/aws/mesoko-r53-cdn/)

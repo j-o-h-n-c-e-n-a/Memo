@@ -20,3 +20,8 @@
 
 ## Effective DevOps ― 4本柱による持続可能な組織文化の育て方
 	「DevOpsの4つの柱」としてコラボレーション、アフィニティ(親近感、一体感)、ツール、スケーリングを挙げ、個人と個人のコラボレーション、チーム間や組織全体でのアフィニティの構築、企業全体でのツール選択の考え方、さらに組織がスケールする中でのアフィニティの向上と維持について4部構成で詳述。
+
+## DevOps の阻害要因
+
+## DevOps への法的支援
+* [裁判所の民事訴訟手続きの IT 化において、Microsoft Teams を採用](https://news.microsoft.com/ja-jp/2020/01/09/200109-microsoft-teams-adopts-it-for-court-civil-procedure/)
