@@ -305,7 +305,136 @@
     答え：４
 </div></div>
 
-### Q37. 
+### Q37. GKEは、GCP上のKubernetesの実装であり、Google Cloud Platformのマネージドサービスです。
+1. TRUE
+2. FALSE
+<details><div>
+    答え：1
+</div></div>
+
+### Q38. コンテナは、特定の状況での仮想化マシン上のリソース消費量が少なくなります。
+1. TRUE
+2. FALSE
+<details><div>
+    答え：1
+</div></div>
+
+### Q39. コンテナは、仮想マシンよりも少ないリソースを消費するという問題を解決しますが、次の問題を解決します
+1. オーケストレーションとライフサイクルの管理
+2. 仮想化環境へのインストール
+3. コンテナは解決策であり問題です
+4. リソース配分
+<details><div>
+    答え：1
+</div></div>
+
+### Q40. GKEは、1つを除く以下の機能をサポートします
+1. Auto Scaling
+2. Stackdriver Logging
+3. Docker Format
+4. Cloud IAM integration
+5. Preemptible Machine
+<details><div>
+    答え：5
+</div></div>
+
+### Q41. GKWには、1つのマスターと1つ以上のワーカーノードが含まれます。
+1. TRUE
+2. FALSE
+<details><div>
+    答え：1
+</div></div>
+
+### Q42. GKEマスターノードは、以下を除くすべてを管理します
+1. Schedules POD Creation
+2. POD Deletion
+3. Runs POD
+4. Acts as endpoint to GKE cluster
+<details><div>
+    答え：3
+</div></div>
+
+### Q43. ポッドには次のコンポーネントが含まれます
+1. Doket Runtime
+2. Cloud Service Integration
+3. Kubelete Agent
+4. Doker Runtime
+<details><div>
+    答え：2
+</div></div>
+
+### Q44. ポッド共有内のコンテナー
+1. IP address and Namespace
+2. IP address and Port
+3. Does not share anything
+4. Same application
+<details><div>
+    答え：1
+</div></div>
+
+### Q45. GKEサービスは以下を提供します
+1. Acts Load balancer
+2. Resource Manager and scheduler
+3. Provide single IP adress for pods
+4. HA and Autoscaller
+<details><div>
+    答え：2
+</div></div>
+
+### Q46. GKE Deploymentsはどの目的のためのものですか
+1. Supports HA and Autoscaller
+2. Resource Manager and scheduler
+3. For single endpoint to cluster
+4. Procides single IP to pods
+<details><div>
+    答え：1
+</div></div>
+
+### Q47. Googleのどのサービスが真のサーバーレス環境として扱われますか？
+1. Cloud Compute Engine
+2. Google App Engine
+3. Google Container Engine
+4. Cloud Function
+<details><div>
+    答え：4
+</div></div>
+
+### Q48. GCPのどのコンピューティングサービスをウェブサイトのホスティングに選択しませんか？
+1. Cloud Compute Engine
+2. Google App Engine
+3. Google Container Engine
+4. Cloud Function
+<details><div>
+    答え：4
+</div></div>
+
+### Q49. Cloud Functionは、Dockerコンテナーでアプリケーションを実行します。
+1. True
+2. False
+<details><div>
+    答え：2
+</div></div>
+
+### Q50. 次の文のうち、Cloud Functionに当てはまらないものはどれですか？
+1. サーバーレス
+2. 実行時にのみ変更
+3. イベントドリブン
+4. その実行はdocker containerです
+<details><div>
+    答え：４
+</div></div>
+
+### Q51. Cloud Functionは、次のいずれかをのぞく、すべてのトリガーをサポートしています
+1. HTTP
+2. Cloud Storage
+3. Cloud Pub/Sub
+4. Firebase
+5. Cloud SQL
+<details><div>
+    答え：5
+</div></div>
+
+### Q52. 
 1. 
 2. 
 3. 

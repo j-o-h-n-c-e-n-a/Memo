@@ -17,6 +17,8 @@
 * [codelabs](https://codelabs.developers.google.com/)
 * [GCPUG](https://gcpug.jp/about)
 * [1 行でわかる Google Cloud Platform](https://lp.google-mkto.com/rs/248-TPC-286/images/GCP_clearfile_A4_for_PaperPrint.pdf)
+* [topgate](https://www.topgate.co.jp/gcp07-how-to-start-docker-image-gke)
+* [tech-run](https://www.tech-run.net/ja/contents/gke)
 * []()
 
 ### Qwiklabs
