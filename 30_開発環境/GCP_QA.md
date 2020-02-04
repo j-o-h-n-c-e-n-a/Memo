@@ -1427,6 +1427,7 @@
 4. データをbigqueryに取り込み、独自のカスタムロジックを記述して、事前に障害を特定する予測分析を行うことができます。
 <details><div>
     答え：4
+  １？
 </div></details>
 
 ### Q. 次の質問に回答するには、Mountkirk Gamesのケーススタディを参照してください。 Mountkirk Gamesは、カスタムOS要件のゲームバックエンドをホストしたいと考えています。ゲームバックエンドに最適なCompute Serviceは何ですか？
@@ -1738,7 +1739,7 @@
 </div></details>
 
 ### Q. 次の質問に回答するには、Dress4winのケーススタディを参照してください。 会社は、Apache BeamをGoogle Cloud Platformに移行する必要がありますが、どのようなオプションがありますか？
-1. データフローマネージドサービスを使用する
+1. DataFlow Managed Service を使用する
 2. bigquery etlエンジンを使用する
 3. dataprocを使用する
 4. 仮想マシンにApache Beamをインストールし、必要に応じて自動スケーリングベースを使用します
@@ -1802,14 +1803,14 @@
     答え：1
 </div></details>
 
-### Q. 各クラウドスパナノードによって提供される適切なQPSとは
+### Q. 各Cloud Spanner ノードによって提供される適切なQPSとは
 1. 2k
 2. 1 billion
 3. 1 million
 4. 1 trillion
 5. 10k
 <details><div>
-    答え：2
+    答え：1
 </div></details>
 
 ### Q. 複数の仮想マシン間で読み取り専用データを共有するためにどのストレージサービスを使用しますか？
