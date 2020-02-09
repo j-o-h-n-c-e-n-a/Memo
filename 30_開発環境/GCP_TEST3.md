@@ -366,10 +366,10 @@
 </div></details>
 
 ### Q. 次の質問に回答するには、Dress4winのケーススタディを参照してください。 同社は、既存の仮想マシンのワークロードをGoogle Cloud Platformに移行する必要があり、それでもコストを最適化したいと考えています。 コスト最適化のどの側面を使用できますか？
-1. use only one vpc
-2. start with min configuration and scale based on requirement
-3. try to use less subnetworks
-4. use preempmtible vm for batch work
+1. 1つのvpcのみを使用する
+2. 最小構成から開始し、要件に基づいてスケールします
+3. サブネットワークの使用を減らす
+4. バッチ作業にプリエンプティブVMを使用する
 <details><div>
     答え：2,4
 </div></details>
@@ -386,7 +386,7 @@
 ### Q. 次の質問に回答するには、Dress4winのケーススタディを参照してください。 会社は、ネットワークの外部からアクセスされるクラウド上の仮想マシンについて懸念を持っています。外部からマシンにアクセスすることを避けるための提案は何ですか？
 1. use cloud vpn
 2. use service account to restrict access to vm
-3. use firewall rule to allow only from your own infrastructure
+3. ファイアウォールルールを使用して、独自のインフラストラクチャからのみ許可する
 4. use cloud router
 <details><div>
     答え：3

@@ -173,7 +173,7 @@
 </div></details>
 
 ### Q. 次の質問に回答するには、Dress4winのケーススタディを参照してください。 同社には、カスタムの監視/ログサービス、インフラストラクチャ、およびインシデント管理メカニズムがあります。 IT運用部門は、Google Cloud Platformでこれが満たされるかどうか懸念しています。 Google Cloud Platformではどのようなサービスを使用できますか？
-1. Stackdriver LoggingおよびMinitoringは、すべてのgcpサービスに使用できます。
+1. Stackdriver LoggingおよびMonitoringは、すべてのgcpサービスに使用できます。
 2. 監視およびロギング用の既存のツールをインストールします
 3. 監視とログにawsサービスを使用する
 4. Stackdriver Loggingは、アラート用のサードパーティツールで使用できます
