@@ -40,3 +40,5 @@
 https://cloud.nissho-ele.co.jp/blog/microsoft_windows-virtual-desktop/
 
 google ドキュメントで音声入力
+
+https://ascii.jp/azure-fixer/
