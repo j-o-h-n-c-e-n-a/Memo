@@ -5,6 +5,7 @@
 * [OnsenUI2 + Angular2 + PhoneGapの雛形を作る](https://qiita.com/puku0x/items/301800e43a78c046a085)
 * [Angular + Onsen UI 2 + PhoneGap Starter](https://github.com/puku0x/angular-onsenui2-webpack2)
 * [PhoneGap日本語公式](http://ja.docs.phonegap.com/)
+* [プラグインAPI](http://ja.docs.phonegap.com/references/plugin-apis/)
 * [OnsenUI公式](https://ja.onsen.io/)
 * [Angular公式](https://angular.jp/)
 

@@ -1,9 +1,12 @@
 # 参考
+* [ファイルダウンロードリンク作成](https://chaika.hatenablog.com/entry/2016/03/25/073203)
+* [HTML5で作られたガントチャート](https://blog.verygoodtown.com/2010/05/html5-gantt-chart/)
+* [hifive開発者ブログ](https://blog.htmlhifive.com/)
 * [Web先端技術味見部](https://tokyoappwork.shop/ebooks/exam1/test/)
 * [HTML5 レベル1](https://www.shoeisha.co.jp/book/detail/9784798154619)
 * [HTML5 レベル2](https://www.shoeisha.co.jp/book/detail/9784798154626)
 
-# レトロゲーム再現
+# レトロゲーム再現(WebGL)
 ## ACT
 ### マリオ
 ## STG

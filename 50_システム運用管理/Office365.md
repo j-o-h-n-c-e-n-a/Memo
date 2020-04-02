@@ -15,12 +15,15 @@
 ## Office365の運用管理
 ### ユーザー
 ### 課金
+* [Office 365 Enterprise E1とE3の違いをこまか～く解説](https://www.biz2cloud.com/blog/different-point-enterprise-e3-and-e5.html#close-modal)
+* [Office 365の賢い選び方（法人向け）：７つのプランの違いがわかる](https://www.biz2cloud.com/blog/wise-choice-corporate.html)
 ### ネットワーク
 ### セキュリティとコンプライアンス
 ### 使用状況
 
 # 各サービス
 ## Teams
+* [docomo連携](https://www.nttdocomo.co.jp/info/news_release/2019/10/01_01.html)
 ### OneNote
 ### Planner 
 ### ミーティング
