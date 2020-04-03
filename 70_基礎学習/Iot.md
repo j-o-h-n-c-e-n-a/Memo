@@ -1,4 +1,6 @@
 * 参考リンク
+    - [デジタルプラクティス](https://www.ipsj.or.jp/dp/contents/dp-mokuji.html)
+    - [Iotビジネス共創ラボ](https://iotbizlabo.connpass.com/)
     - [Iot](http://iot-jp.com/)
     - [IoTシステム技術検定　基礎編](http://www.mcpc-jp.org/iotkentei/text.html)
 * 3DCG(3次元コンピュータグラフィック)
@@ -209,6 +211,7 @@
     - https://www.mizuho-ir.co.jp/publication/column/2014/0812.html
 * RPA(Robotic Process Automation)
     - 
+    - https://braingate.co.jp/winactor/consulting_1/ocr
     - https://www.abeam.com/jp/ja/expertise/SL175
 * SCARA型ロボット
     - 水平多関節ロボットのこと。

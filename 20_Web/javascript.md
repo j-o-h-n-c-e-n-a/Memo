@@ -44,3 +44,6 @@
 	3. jquery-validation
 	4. knockoutJS
 	5. modernizr
+
+# GL
+* [Gantt-Chart](https://github.com/dk8996/Gantt-Chart)

@@ -169,10 +169,15 @@
 		上記のライセンス問題を解消
 * [](http://2ndgd.blogspot.com/2018/07/pdfsharp-migradoc-cpdf.html)
 * [](www.pdfsharp.net/wiki/MainPage.ashx?AspxAutoDetectCookieSupport=1)
+#### PDF.js
+	https://www.weblab.co.jp/staff/html/7914.html
+
 ### PDF編集ツール	
 #### MigraDoc	
 	上記PDFSharpと組み合わせて使用
 ### 他	
+* http://www.subarunari.com/entry/2017/10/11/003225
+
 #### PanDoc	
 * [](https://pandoc.org/)
 		クリスタルレポート	

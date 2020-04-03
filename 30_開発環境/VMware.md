@@ -133,3 +133,7 @@
 * NUMA
 * vCPU hot add
 * vApp と DRS enabled
+
+
+## 仮想環境
+* https://blogs.vmware.com/jp-euc

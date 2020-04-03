@@ -33,6 +33,9 @@
 ## Flow
 * https://forest.watch.impress.co.jp/docs/news/1217458.html
 ## PowerApps
+* https://enterprisezine.jp/news/detail/12728
+* https://cyber-bb.jp/Office365/wp/powerapps_20180625/
+* https://ascii.jp/elem/000/004/003/4003323/?topnew=4
 ## PowerBI
 ## OneDrive
 ## SharePoint
@@ -41,3 +44,4 @@
 ## Whiteboard
 * https://forest.watch.impress.co.jp/docs/news/1217164.html
 ## Yammer
+* https://blogs.partner.microsoft.com/mpn-japan/2019/02/16/skype-for-business-teams-yammer-comparison-2019/

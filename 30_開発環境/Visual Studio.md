@@ -212,3 +212,5 @@
 
 # 参考
 * [NpgsqlとEntityFramework Coreを使ってPostgreSQLをCRUDする](http://ohke.hateblo.jp/entry/2017/03/03/000000)
+* [](https://do-gugan.com/~furuta/archives/2017/09/vb-net2c.html)
+* https://aspnet-mvc.clock-up.jp/contents/rest-api/format
