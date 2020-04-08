@@ -352,6 +352,7 @@
 * https://aws-exam.net/saa/
 * https://dev.classmethod.jp/cloud/aws/2018-aws-re-entering-security/
 * https://dev.classmethod.jp/cloud/aws/aws-summary-2020/
+* https://dev.classmethod.jp/articles/lesson-of-aws-certification-saa-taking-2-times/
 
 ### Qwiklabs
 * [1](https://dev.classmethod.jp/cloud/aws/saa-exam-usecase-training-in-qwiklabs/)
