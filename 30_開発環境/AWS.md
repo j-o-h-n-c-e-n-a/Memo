@@ -346,8 +346,8 @@
 * https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/
 * https://aws.amazon.com/jp/whitepapers/
 ### その他
-* https://dev.classmethod.jp/articles/aws-study-kaji/
 * http://aws.clouddesignpattern.org/index.php/メインページ
+* https://dev.classmethod.jp/articles/aws-study-kaji/
 * https://awsjp.com/
 * https://aws-exam.net/saa/
 * https://dev.classmethod.jp/cloud/aws/2018-aws-re-entering-security/
