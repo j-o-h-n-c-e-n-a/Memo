@@ -4,6 +4,7 @@
 ### mermaid
   * [公式サイト](https://github.com/mermaid-js/mermaid)
   * [UMLの書き方](http://www.itsenka.com/contents/development/uml/sequence.html)
+
 #### フロー
 ``` mermaid
 graph TD
@@ -12,6 +13,7 @@ B --> C{Decision}
 C -->|One| D[Result 1]
 C -->|Two| E[Result 2]
 ```
+
 #### シーケンス図
 ``` mermaid
 sequenceDiagram
@@ -28,6 +30,7 @@ end
 John->>Bob: How about you?
 Bob-->>John: Jolly good!
 ```
+
 #### ガントチャート
 ``` mermaid
 gantt
@@ -39,6 +42,7 @@ Parallel 2   :         des4, after des1, 1d
 Parallel 3   :         des5, after des3, 1d
 Parallel 4   :         des6, after des4, 1d
 ```
+
 #### クラス図
 ``` mermaid
 classDiagram
@@ -58,7 +62,6 @@ class Class10 {
   size()
 }
 ```
-#### ダイアグラム
 
 #### 状態遷移図
 ``` mermaid
