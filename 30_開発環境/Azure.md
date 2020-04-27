@@ -42,3 +42,6 @@ https://cloud.nissho-ele.co.jp/blog/microsoft_windows-virtual-desktop/
 google ドキュメントで音声入力
 
 https://ascii.jp/azure-fixer/
+
+### MCP
+https://blog.nextscape.net/archives/Date/2018/12/mcp2019

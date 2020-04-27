@@ -375,3 +375,9 @@ copius Pernod、それが拡張性だと思います。
 5. OAuth2認証ページでユーザー自身でアプリケーションからの接続の許可をしてもらう
 6. ユーザー許可後のページタイトルから「code」を取得する
 7. 「code」を使って「アクセストークン」を取得する
+
+### Google Cloud INSIDE Digital
+
+### Links
+https://cloud.google.com/blog/ja/topics/training-certifications/expanding-at-home-learning
+https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=19&cad=rja&uact=8&ved=2ahUKEwiT1KDYpefoAhXO-GEKHWcYBQY4ChAWMAh6BAgJEAE&url=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fgoogle-jp-ai%2F&usg=AOvVaw16i60ECWey0P7AJdqM-QJD
