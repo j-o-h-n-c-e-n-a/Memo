@@ -45,3 +45,7 @@ https://ascii.jp/azure-fixer/
 
 ### MCP
 https://blog.nextscape.net/archives/Date/2018/12/mcp2019
+
+
+### Responsible ML
+* https://dev.classmethod.jp/articles/mrmo-azure-ai-ml-20200524/
