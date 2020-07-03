@@ -1,4 +1,5 @@
 ## 参考
+* [awesome blazor](https://github.com/AdrienTorris/awesome-blazor)
 * [はじめてのプログレッシブ ウェブアプリ](https://codelabs.developers.google.com/codelabs/your-first-pwapp-ja/#0)
 * [GitHubを使って3分でHPを公開する。](https://qiita.com/budougumi0617/items/221bb946d1c90d6769e9)
 * [API一覧](https://developers.google.com/web/updates/capabilities)
@@ -6,7 +7,6 @@
 
 ### ステップ
 1. HTTPSを有効にする
-  
 2. Webアプリのマニュフェストを作る
   * [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest)
 3. Service Workersを作る
@@ -56,6 +56,8 @@
 ### フレームワーク
 #### ionic
   * Angularベース
+#### Blazor
+  * C#
 
 ### 注意点
   * 常時HTTPS対応
