@@ -94,11 +94,10 @@
 													
 	5	ブラウザからURLを指定して、アプリケーション実行（ローカル）											
 													
-	＜HTTPSサーバーの用意＞												
 	1	自己署名証明書の作成											
 		・	PowerShellを管理者モードで起動する										
 		・	下記のコマンドを実行し、自己署名証明書を作成する										
-			①	$cert = New-SelfSignedCertificate -DnsName "sv_kasprova","192.168.121.197" -CertStoreLocation "cert:\LocalMachine\My"									
+			①	$cert = New-SelfSignedCertificate -Subject "sv_kasprova" -DnsName "sv_kasprova","192.168.121.197" -CertStoreLocation "cert:\LocalMachine\My" -KeyAlgorithm RSA -KeyLength 2048 -KeyExportPolicy Exportable -NotAfter (Get-Date).AddYears(10)
 			②	$password = ConvertTo-SecureString -String "P@ssw0rd" -Force -AsPlainText									
 			③	Export-PfxCertificate -Cert $cert -FilePath "F:\cert\sv_kasprova.pfx" -Password $password									
 			④	Export-Certificate -Type CERT -Cert $cert -FilePath F:\cert\sv_kasprova.cer									
@@ -109,8 +108,14 @@
 		・	バインドの種類を「https」とし、「SSL証明書」に作成した自己署名証明書を選択する										
 		・	作成されたWebサイトに、ビルド先のファイルをWebアプリケーションとして追加する										
 	3	クライアントでの確認											
+		[windows]											
 		・	サーバーとは異なるPCにて、１－④で作成した証明書を「信頼されたルート証明書」へインポートする										
 		・	証明書のインストール後、再度URLへ遷移し、エラーが出ないことを確認する										
+		[android]											
+		・	「設定」→「セキュリティ」の順にタップ										
+		・	「認証情報ストレージ」セクションの証明書を保存した保存先をタップ										
+		・	証明書の一覧からインポートするクライアント証明書を選択。										
+		・	クライアント証明書のパスワードを入力し、「OK」をタップ										
 													
 	＜Phonegapの機能置き換え＞												
 		〇	カメラ										
