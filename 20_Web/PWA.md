@@ -116,7 +116,14 @@
 		・	「認証情報ストレージ」セクションの証明書を保存した保存先をタップ										
 		・	証明書の一覧からインポートするクライアント証明書を選択。										
 		・	クライアント証明書のパスワードを入力し、「OK」をタップ										
-													
+
+	自己署名だと、スマホ利用時にChromeでエラーが出る。このため認証局を立てる方法をとる。
+	下記の手順に則り、認証局とルート証明書、Webサーバーのサーバー証明書を作成する。
+* [自組織のCAを作成するための手順](https://www.ipentec.com/document/windows-windows-server-create-certification-authority-of-own-organization)
+	クライアントにはルート証明書をインストールする。
+	その他
+* [Windows Server ADCSの証明書自動配布設定](https://mitomoha.hatenablog.com/entry/2019/08/14/001734)
+
 	＜Phonegapの機能置き換え＞												
 		〇	カメラ										
 		〇	QR										
