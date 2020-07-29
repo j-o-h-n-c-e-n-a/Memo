@@ -33,6 +33,7 @@
 #### Push API
   * [プッシュ通知を作る](https://techblog.asahi-net.co.jp/entry/2018/06/15/162752)
 #### Notification API
+* [BlazorExtensions](https://github.com/BlazorExtensions/Notifications)
 
 ### ストレージ
 #### localstrage
