@@ -59,7 +59,26 @@
   * Angularベース
 #### Blazor
   * C#
-
+  * Razor構文
+  * await/async
+  * BlazorStrap
+  * bootstrap
+	+ 
+  * コンポーネント作成
+	+ QRコード
+	+ 仮想キーボード
+	+ スワイプ
+	+ PullToReflesh
+  * 依存性の注入
+  * WebAPI呼出
+  * localstrage/sessionstrage
+  * ログイン認証
+	+ https://qiita.com/Mutz/items/1b0d7a826004dd9272db
+  * javascriptを実行
+  * javascriptから実行
+  * settings.json
+  * PDF.js
+ 
 ### 注意点
   * 常時HTTPS対応
   * バックグラウンドにいるときはコードを実行できない
@@ -151,3 +170,8 @@
 				②	デバイス認証しつつ、ログイン認証と組み合わせ								
 					（デバイス情報が変更となった場合は、ログインさせる等）								
 				③	Googleの認証を利用する（Androidのアカウントを使用）								
+
+
+https://entityframeworkcore.com/ja/knowledge-base/59955735/
+https://thinkami.hatenablog.com/entry/2019/12/17/224720#StartupcsにDbContextと接続文字列を追加
+https://devadjust.exblog.jp/28138344/
