@@ -89,6 +89,8 @@
   * [サンプルコードで学ぶPWA](https://qiita.com/radiocat/items/034904a094d07c389a4f)
   * [PWAをもっと簡単に初めてみる](https://qiita.com/poster-keisuke/items/6651140fa20c7aa18474)
 
+  * [](https://qiita.com/h_tyokinuhata/items/ab8e0337085997be04b1)
+ 
 ## 利用アイデア
 													
 	参考												
@@ -175,3 +177,8 @@
 https://entityframeworkcore.com/ja/knowledge-base/59955735/
 https://thinkami.hatenablog.com/entry/2019/12/17/224720#StartupcsにDbContextと接続文字列を追加
 https://devadjust.exblog.jp/28138344/
+
+
+https://qiita.com/Naoto9282/items/8427918564400968bd2b
+https://techblog.roxx.co.jp/entry/2019/03/13/135739
+https://anatoo.hatenablog.com/entry/2018/10/03/000518
