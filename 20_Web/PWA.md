@@ -182,3 +182,8 @@ https://devadjust.exblog.jp/28138344/
 https://qiita.com/Naoto9282/items/8427918564400968bd2b
 https://techblog.roxx.co.jp/entry/2019/03/13/135739
 https://anatoo.hatenablog.com/entry/2018/10/03/000518
+
+https://knowledge.sakura.ad.jp/23201/
+https://techracho.bpsinc.jp/hachi8833/2019_10_09/80851
+https://unskilled.site/デバイスを判別する5つの方法/
+https://www.saitolab.org/fp_site/
