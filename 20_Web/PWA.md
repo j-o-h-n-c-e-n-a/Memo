@@ -187,3 +187,7 @@ https://knowledge.sakura.ad.jp/23201/
 https://techracho.bpsinc.jp/hachi8833/2019_10_09/80851
 https://unskilled.site/デバイスを判別する5つの方法/
 https://www.saitolab.org/fp_site/
+
+https://www.cresco.co.jp/blog/
+
+https://qiita.com/TakeshiNickOsanai/items/8d012a128827c9db980d
