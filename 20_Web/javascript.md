@@ -27,9 +27,11 @@
 
 ---
 # MV*などの各種フレームワーク
+## Vue.js
 ## React
 ## AngularJS
 ## KnockoutJS
+
 ### プラグイン
 1. knockout.mapping
 2. knockout-validation
