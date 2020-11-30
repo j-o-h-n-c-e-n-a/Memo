@@ -63,3 +63,4 @@
 * [Dapperについてまとめてみた](https://sweets-junkie.hatenablog.com/entry/2014/03/07/010004)
 * [DapperのQueryを使ってマルチマッピングしてみる](https://qiita.com/Tokeiya/items/dda1096d03dfbf5fe431)
 * [EntityFramework Core のメモ](https://qiita.com/gelehrte/items/6245142c7425870eb30e)
+* [Blazor-Fluxor = C# + Redux + DI](https://blablablazor.hatenablog.com/entry/try-blazor-fluxor-1)
