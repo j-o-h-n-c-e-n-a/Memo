@@ -77,3 +77,16 @@
 * モジュールシステム
 * ローカル値型インターフェース
 * Javaコマンドによるソースファイルの実行
+
+### Tips
+
+* 文字列のパディング
+```java:
+String str = "123";
+String paddingStr = str.format("%5s", str);
+```
+* 文字列を繰り返す方法
+```java:
+String.join("", Collections.nCopies(繰り返す回数, "繰り返したい文字列" )); 
+```
+
