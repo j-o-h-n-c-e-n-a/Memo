@@ -79,7 +79,15 @@
 * Javaコマンドによるソースファイルの実行
 
 ### Tips
-
+* 10進数の変換
+```java:
+// 2進数
+Integer.toBinaryString()
+// 8進数
+Integer.toOctalString()
+// 16進数
+Integer.toHexString()
+```
 * 文字列のパディング
 ```java:
 String str = "123";
