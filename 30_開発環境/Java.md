@@ -102,4 +102,8 @@ String paddingStr = str.format("%5s", str);
 ```java:
 String.join("", Collections.nCopies(繰り返す回数, "繰り返したい文字列" )); 
 ```
-
+* StringJoiner
+```java:
+    StringJoiner sj = new StringJoiner(",");
+    Arrays.stream(arr).forEach(i -> sj.add(String.valueOf(i)));
+```
