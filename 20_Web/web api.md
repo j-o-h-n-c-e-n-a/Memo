@@ -158,6 +158,13 @@
 ## ユーザ認証
 * アクセストークン
 
+## OpenAPI
+
+
+## Swagger
+* [NSwag](https://tech-blog.cloud-config.jp/2020-12-15-net-core-3-1-web-api-nswag/)
+
+
 ## PDF		
 ### PDF出力ツール	
 #### iTextSharp	
