@@ -78,6 +78,8 @@ l = [[0] * 10 for i in range(10)]
 	- idx:カウンタ
 	- elem:要素
 	- reversed() でリストの逆順での取り出しも可能
+* for i in range(x) if~:
+	- 条件式の値を取得
 * for-else, while-else
 	- else節は一度もbreakされなかった場合に発生
 * while(条件式):
