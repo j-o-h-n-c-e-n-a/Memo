@@ -72,3 +72,14 @@ ORDER BY
  is_primary DESC,
  index_name"
 ```
+
+* ランダム値を生成する
+```PostgreSQL:ランダム値を生成する例
+select * from random(); --結果例:0.13224（実行する度異なる値が生成）
+
+--範囲指定：最小値=1 , 最大値=100
+select round(( random() * (1 - 100) )::numeric, 0) + 100; --結果例:77
+
+--範囲指定：最小値=1 , 最大値=10,000
+select round(( random() * (1 - 10000) )::numeric, 0) + 10000; --結果例:7000
+```
