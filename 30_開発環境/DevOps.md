@@ -2,26 +2,59 @@
 ### Git
 * nisco2008, Nisco@2008
 * nisco20183730, Nisco@20183730
+### Slack、Teams、Zoom
+	コミュニケーション
 ### Chef
 	構成管理の自動化
 ### Jenkins
 	ビルド、テスト自動化
-### 部門間連携
+### SonarQube
+	静的解析
+### xUnit
+	フレームワーク
+### Moq
+	モック
+### FluentAssertions
+	アサーション
+### WebApplicationFactory
+	結合テスト
+### SpecFlow
+	振る舞いテスト
+### Selenium
+	E2Eテスト
+### FrisbyJS
+	APIテスト
+### Ansible
+	デプロイ
+### Office
+	プレゼンテーション、資料作り
+### Notion
+	プレゼンテーション、資料作り
+### RPA
+	プロセス自動化
+	
+## 部門間連携
 	それぞれの部門の価値を互いに認識し、尊敬しあえる信頼関係作りが重要
-#### ビジネス部門
+### ビジネス部門
 	いわゆるユーザ企業の情シス部門だが、ビジネスを理解しているのかというと…
-#### 開発部門
+### 開発部門
 	いわゆる情報子会社だが、技術力が十分かというと…
-#### 運用部門
+### 運用部門
 	いわゆる情報子会社だが、技術力が十分かというと…
-#### インフラ部門
-### Rocro
+### インフラ部門
+#### Rocro
 	https://qiita.com/hikoy/items/a7f0e012c141d4c8e71f
 
 ## Effective DevOps ― 4本柱による持続可能な組織文化の育て方
 	「DevOpsの4つの柱」としてコラボレーション、アフィニティ(親近感、一体感)、ツール、スケーリングを挙げ、個人と個人のコラボレーション、チーム間や組織全体でのアフィニティの構築、企業全体でのツール選択の考え方、さらに組織がスケールする中でのアフィニティの向上と維持について4部構成で詳述。
 
 ## DevOps の阻害要因
+### 心理的安全性
 
 ## DevOps への法的支援
 * [裁判所の民事訴訟手続きの IT 化において、Microsoft Teams を採用](https://news.microsoft.com/ja-jp/2020/01/09/200109-microsoft-teams-adopts-it-for-court-civil-procedure/)
+
+## アジャイルとスクラム、ファシリテーション
+
+## 参考
+* [テスターとアジャイルチームのための実践ガイド](https://www.shoeisha.co.jp/book/detail/9784798119977)
