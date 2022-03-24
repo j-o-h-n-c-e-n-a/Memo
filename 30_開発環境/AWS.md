@@ -241,11 +241,21 @@
   * 複数のAZに保存される
   * テーブルの読み書き容量を制御
     + プロビジョニングされたスループット容量
+### DynamoDB Accelerator
+  DynamoDBのアクセラレータ
 ### ElastiCache
     インメモリキャッシュ
 ### Redshift
     列指向データベース
 ### Redshift Serverless
+### DocumentDB
+  MongoDB
+### Neptune
+  GraphDB
+### Quantum Ledger Database
+  金融機関(記録システム)
+### Manged Blockchain
+  Blockchain
 
 ## 5．管理とガバナンス
 ### CloudWatch
