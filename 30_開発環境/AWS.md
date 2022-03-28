@@ -341,6 +341,14 @@
 * 様々なデータに接続可能
 ### AWS Amplify
   Webアプリケーション開発
+### Amazon Transcribe 
+  音声をテキストに変換
+### Amazon Comprehend 
+  テキストのパターンを検出
+### Amazon Fraud Detector 
+  不正の可能性があるオンラインアクティビティを特定
+### Amazon Lex 
+  音声およびテキストチャットボットを構築
 
 ## 用語集
  * ADFS
