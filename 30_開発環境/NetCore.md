@@ -73,3 +73,6 @@
 * MediatR
 * FluentValidation：〇
 * Polly：〇
+
+## 参考
+https://atmarkit.itmedia.co.jp/ait/articles/2203/25/news003.html
