@@ -1,5 +1,6 @@
 ## 認定試験対策
-
+### kintoneSignpost
+* [](https://kintone.cybozu.co.jp/kintone-signpost/)
 ## 事例
 ### デジエ2kintone
     オンプレからクラウドへの移行
@@ -21,3 +22,5 @@
 * AWS
     + S3
     + Aurora
+### gusuku Customine
+* [](https://support.gusuku.io/ja-JP/support/solutions)
