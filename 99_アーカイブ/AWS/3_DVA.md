@@ -124,9 +124,12 @@
 * 自動的にメッセージを取得して、ターゲットの Lambda 関数にルーティングします
 * Lambda 関数が正常に完了すると、メッセージを削除します
 * 通信データの暗号化、CloudTrailに記録
+* FIFO キュー（1回）
+* デッドレターキュー：使用すると、処理できないメッセージを後で分析するために分離できます
+* 可視性タイムアウト：Amazon SQS で、他の消費コンポーネントがメッセージの受信と処理を行わないようにする期間
 #### SNS、SES
 #### MQ
-#### Kinesis
+#### Kinesis Streams 
 #### StepFunctions
 ### コンテナ
 * ECS Task PlacementはECS with EC2のみ使用可能
@@ -167,6 +170,7 @@
 
 ### 移行
 #### 6つのR
+    Re-HostとRe-platform
 1. Retain
     + 今は変更を加えず、将来再検討する
 2. Re-host
@@ -179,7 +183,6 @@
     + 既にクラウドに存在するソリューションを購入する
 6. Retire
     + アプリケーションやシステムが価値を提供しているかどうかを評価する
-
 
 ## 5.モニタリングとトラブルシューティング
     ベストプラクティスへの理解を深めること
@@ -202,6 +205,9 @@
 #### スロットリングエラー
 #### エクスポネンシャルバックオフ
 #### セキュリティのトラブルシューティング
+
+## 0. ベストプラクティス
+
 
 ## 参考
 https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/welcome.html?did=wp_card&trk=wp_card
