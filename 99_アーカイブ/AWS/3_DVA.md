@@ -1,16 +1,61 @@
+# 
 ## 1.デプロイ
 
 ### 可用性、スケーラビリティ、メンテナンス
 #### EC2、AutoScaling
+* ELB配下のWebサーバーをAutoScaling
+    + 特徴
+        - Webサーバーの負荷に応じてスケール
+        - EC2は複数AZに分散し高可用性を担保
+    + スケーリングトリガーの例
+        - ELBのリクエスト数
+        - アプリケーションサブグループ内EC2の平均CPU使用率
+* SQSのジョブを処理するワーカーをAutoScaling
+    + 特徴
+        - ワーカーの負荷に応じてスケール
+        - EC2は複数AZに分散し高可用性を担保
+        - スポットインスタンスがマッチするケースが多い
+    + スケーリングトリガーの例
+        - キュー内のメッセージ数
+* ECSホストのAutoScaling
+    + 特徴
+        - ECSクラスタ内のホストを負荷に応じてスケール
+        - ホストへのタスクの配置・管理はECSが実施
+    + スケーリングトリガーの例
+        - ECSホストのCPU使用率
+        - ECSホストのメモリ使用率
 #### ELB
 * 環境でELB作成したあとはELBのタイプを変えることはできない。
+* セキュリティグループの割り当て
+* スティッキーセッション
+* AutoScalingとの連携
+* ECSのALB対応
+    + ALBによりECSコンテナをまたがった負荷分散
+* ACMとの統合
+    + ACMを使用して、証明書のリクエストと管理を容易に実施
+    + 無料で利用可能
+    + ELBに対する証明書の設定を数クリックで完了
+* Route 53 DNSフェイルオーバー対応
+    + Route53のヘルスチェック機能とELBが連携
+* OpsWorksのELB対応
+    + OpsWorksでELBをレイヤーにアタッチして、負荷分散が可能
+* AWS Trusted AdvisorによるELBのチェック
+    + ELBのセキュリティとフォールトトレランスをチェック
 #### S3、EBS
+* CloudFrontとの連携
+* CloudWatchによるメトリクス管理
+* CloudTrailによるAPI管理
+    + 操作ログを収集する
 #### RDS
 
 ### リリースプロセス
 ### CI/CDパイプライン
 ### デプロイパターン
-
+#### Blue/Greenデプロイメント
+* 特徴
+    + アプリケーションのデプロイ時にASGを再作成
+    + ELBまたはDNSで環境を切替
+    + ASG作成にはCloudFormationを利用することで環境構築を自動化可能
 ### デプロイサービス
 #### Codeシリーズ
 ##### CodeCommit
@@ -118,7 +163,7 @@
 * スロットリング制限
 * リソースポリシー
 
-### メッセージング、ステート制御
+### メッセージング、ステート制御、イベント
 #### SQS
 * メッセージ保持期間（デフォルト4日間）
 * 自動的にメッセージを取得して、ターゲットの Lambda 関数にルーティングします
@@ -129,8 +174,13 @@
 * 可視性タイムアウト：Amazon SQS で、他の消費コンポーネントがメッセージの受信と処理を行わないようにする期間
 #### SNS、SES
 #### MQ
+* オンプレミスからAWSへのブリッジ
+* サードパーティクラウドとのコネクタ
 #### Kinesis Streams 
 #### StepFunctions
+#### EventBridge
+    イベント駆動
+
 ### コンテナ
 * ECS Task PlacementはECS with EC2のみ使用可能
     + 3つのタイプ
@@ -228,3 +278,56 @@ https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/tagging-be
 https://docs.aws.amazon.com/whitepapers/latest/kms-best-practices/welcome.html?did=wp_card&trk=wp_card
 https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/welcome.html?did=wp_card&trk=wp_card
 https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/welcome.html?did=wp_card&trk=wp_card
+
+
+## サンプル問題
+
+### Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+
+### Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+
+### Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+
+### Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+
+### Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
