@@ -626,13 +626,204 @@ https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/
 これは高可用性を実現するために、システムが停止した際に指数関数的にリトライを実行するという意味です。
 </div></details>
 
-### Q. 
-1. 
-2. 
-3. 
-4. 
+### Q. 稼働中の環境を新しいアプリケーションで更新するデプロイ方法はどれですか？
+1. In-Place
+2. Linear
+3. 線形
+4. Canary
 <details><div>
-    答え：
+    答え：1
+</div></details>
+
+### Q. 時間に合わせて新環境の割合を増やしていくデプロイ方法はどれですか？
+1. In-Place
+2. Linear
+3. Canary
+4. Rolling
+<details><div>
+    答え：2
+</div></details>
+
+### Q. 最初は数％のみのユーザーに提供して試験的にリリースし、そのうち全体を新環境に移行するデプロイ方法はどれですか？
+1. In-Place
+2. Rolling
+3. All at Once
+4. Canary
+<details><div>
+    答え：4
+</div></details>
+
+### Q. 現バージョン環境とは別に新バージョン環境を構築して、リクエスト送信先を切り替える事によって無停止でリリースできるデプロイ方法はどれですか
+1. In-Place
+2. All at Once
+3. Rolling
+4. Blue/Green
+<details><div>
+    答え：3
+</div></details>
+
+### Q. システムを構成しているサーバーを同時にIn-Place更新するデプロイ方法はどれですか
+1. In-Place
+2. All at Once
+3. Immutable
+4. Blue/Green
+<details><div>
+    答え：2
+</div></details>
+
+### Q. プライベートにソースコードのバージョンを管理できるリポジトリサービスが必要です。次のどのサービスが適していますか？
+1. CodeBuild
+2. CodeCommit
+3. CodeDeploy
+4. CodeArtifact
+<details><div>
+    答え：2
+</div></details>
+
+### Q. リリースプロセスにおいて、コンパイル、テスト、ソフトウェアのパッケージを実行するサービスは次のどれですか？
+1. CodeBuid
+2. CodeCommit
+3. CodeDeploy
+4. CodeArtifact
+<details><div>
+    答え：1
+</div></details>
+
+### Q. 数クリックで、用意されたテンプレートをもとにCI/CDパイプラインを移築したいです。この場合、どのサービスが適していますか？
+1. CodePipeline
+2. CodeGrue
+3. CodeStar
+4. CodeDeploy
+<details><div>
+    答え：3
+</div></details>
+
+### Q. 開発者は、使い慣れたGitコマンドを使ってソースコードのバージョン管理をしたいと考えています。最も適したサービスは次のうちどれですか？
+1. CodeBuid
+2. CodeCommit
+3. CodeDeploy
+4. CodeArtifact
+<details><div>
+    答え：2
+</div></details>
+
+### Q. CodeCommitのリポジトリに安全に接続できるプロトコルは次のうちどれですか？２つ
+1. RDP
+2. SSH
+3. FTP
+4. DNS
+5. HTTPS
+<details><div>
+    答え：２，５
+</div></details>
+
+### Q. CodeCommitへのアクセス権限の設定は次のどれで設定しますか
+1. CodeCommitのリソースポリシー
+2. IAMユーザーにアタッチするIAMポリシー
+3. Amazon LinuxのOSユーザーのパーミッション
+4. Gitクライアントユーザーのパーミッション
+<details><div>
+    答え：2
+</div></details>
+
+### Q. CodeCommitでソースコードが更新されたとき、事前に設定している管理者にEメールを送信しなければなりません。この場合、どのサービスを利用しますか？
+1. SQS
+2. SNS
+3. Chatbot
+4. SES
+<details><div>
+    答え：2
+</div></details>
+
+### Q. ソースコードが更新されたときにレビューを行い、承認を行いたいです。メンバーは全員AWSアカウントでIAMユーザーの認証情報を持っているので、IAMポリシーで制限や許可をしたいです。この場合、どのサービスを利用するのが最も適していますか？
+1. Github
+2. GitLab
+3. CodeCommit
+4. Bitbucket
+<details><div>
+    答え：3
+</div></details>
+
+### Q. CodeBuildで、ビルド対象のソースとして選択できるのは次のうちどれですか？
+1. CodeCommitのみ
+2. S3とCodeCommitのみ
+3. S3、CodeCommit、GitHub、Bitbucket
+4. S3、CodeCommit、GitHub、GitLab、Bitbucket
+<details><div>
+    答え：3
+</div></details>
+
+### Q. CodeBuildのビルドの仕様はどうやって定義しますか？
+1. buildspec.ymlファイルに記述して、ソースのルートレベルに配置する
+2. ターミナルで、シェルスクリプトですべて記述する
+3. Pythonでコーディングする
+4. appspec.ymlに記述する
+<details><div>
+    答え：1
+</div></details>
+
+### Q. buildspec.ymlに記述した内容に問題がないか、アプリケーションをコミットする前に実行可能な状態にして確認したいです。この場合、王やって確認するのが最適ですか？
+1. CodeBuildを実行して、アーティファクトから実行ファイルをダウンロードして実行確認する。
+2. CodeBuildローカルエージェントを使用して、開発環境でテストする。
+3. 本番環境にリリースしてテストする
+4. CodeBuildローカルエージェントにはCloud9が必要なので、Cloud9を起動する
+<details><div>
+    答え：2
+</div></details>
+
+### Q. CodeDeployのデプロイ仕様はどうやって定義しますか？
+1. buildspec.ymlファイルに記述する
+2. ターミナルでシェルスクリプトですべて記述する
+3. Pythonでコーディングする
+4. appspec.ymlファイルに記述してリビジョンに含める
+<details><div>
+    答え：4
+</div></details>
+
+### Q. CodePipelineで選択できる対象のソースプロバイダは次のうちどれですか？
+1. CodeCommitのみ
+2. CodeCommit、ECR、S3のみ
+3. CodeCommit、ECR、S3、Bitbucket、Github
+4. CodeCommit、ECR、S3、Bitbucket、Github、GitLab
+<details><div>
+    答え：3
+</div></details>
+
+### Q. CodePipelineで選択できる対象のビルドプロバイダは次のうちどれですか？
+1. CodeBuidのみ
+2. CodeBuid、Jenkins
+3. CodeBuid、Jenkins、Bitbucket、Github
+4. CodeBuid、Jenkins、Bitbucket、Github、GitLab
+<details><div>
+    答え：2
+</div></details>
+
+### Q. CloudFormationを使ってスタックを作成するユーザーが、開発環境、本番環境を選択できるようにしたいと考えています。この場合、どのセクションを使いますか？２つ
+1. Outputs
+2. DependsOn
+3. Mappings
+4. Parameters
+5. Conditions
+<details><div>
+    答え：2.5
+</div></details>
+
+### Q. CloudFormationを使って複数リージョンで独自のAMIを使用したEC2インスタンスを含むアーキテクチャを起動したいです。この場合、どのセクションを使いますか？
+1. Outputs
+2. DependsOn
+3. Mappings
+4. Parameters
+<details><div>
+    答え：3
+</div></details>
+
+### Q. CloudFormationを使ってアプリケーションレイヤーとネットワークレイヤーにそれぞれスタックを作成します。ネットワークレイヤーにはVPCとサブネット、アプリケーションレイヤーではEC2インスタンスを起動します。次のどの手順が最適ですか？２つ
+1. ネットワークレイヤーのテンプレートでOutputsセクションにExportを定義する
+2. ネットワークレイヤーのスタックを作成して、できたサブネットのIDをアプリケーションレイヤーのテンプレートに直接記述する
+3. アプリケーションレイヤーのテンプレートで、ImportValue関数を使用して、ネットワークレイヤースタックでExportされたサブネットIDを入力できるパラメータを設定する
+4. SSM::Parameterで、同じアカウント内の適したサブネットIDを自動的に設定する
+<details><div>
+    答え：1.3
 </div></details>
 
 ### Q. 
@@ -661,4 +852,5 @@ https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/
 <details><div>
     答え：
 </div></details>
+
 
