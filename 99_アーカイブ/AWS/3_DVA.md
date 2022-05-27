@@ -59,15 +59,20 @@
 #### Blue/Green
 * 特徴
     + アプリケーションのデプロイ時にASGを再作成
-    + ELBまたはDNSで環境を切替
+    + ELBまたはDNSで環境を切替（ルーティング切替が柔軟）
     + ASG作成にはCloudFormationを利用することで環境構築を自動化可能
+    + テストリスナーにより本番環境でリリース対象タスクの動作確認が可能
+    + 切り戻し作業が楽
+* 制約
+    + AutoScalingがサポートされない（デプロイ前後で停止～再開する必要がある）
 #### Rolling
 * サーバーをいくつかのグループに分けて、グループごとにIn-Placeする
 * アプリケーションの古いバージョンでリクエストを処理するインスタンスもあり、新しいバージョンでリクエストを処理するインスタンスもある
+* キャパシティは減るがダウンタイムはない
 #### Rolling with additional batch
 * バッチサイズ分の新しいインスタンスを追加してデプロイを実行
-* キャパシティーを100%に維持できる(メリット)
 * 本番でよく使われる
+* Rollingと異なり、キャパシティーを100%に維持できる(メリット)
 #### Immuitable
 * 同じ環境にASGだけ追加する、それで同じASGが同じDNS名を持つ
 * Blue/GreenはDNS名が変わるがこの方法は変わらない
@@ -76,9 +81,13 @@
 * 古いバージョンと新しいバージョンが混在している時間はある
 #### All at once
 * 全てのサーバで同時にIn-Place更新をする
+* サービスはすべて停止する
 
 ### 1.2.Elastic Beanstalk
     使い慣れたサーバーでデプロイおよびスケーリングするためのサービス
+* 特徴
+    + アプリケーションの状態モニタリングと管理のための統一されたユーザーインターフェイス
+    + 管理された更新を使用して、最新のプラットフォームバージョンや新しいパッチを自動的に取得できる
 * エラー発生したとき、管理者にメール通知したい場合、SNSと連携。
 * AWSの各リソースを管理するために、サービスロールと呼ばれるIAMロールが必要
 * cron.yamlファイルを設定およびアップロードして、2つの定期的なタスクを作成できる
@@ -137,6 +146,16 @@
 * AWS Glue：ETL
 * EMR：Hadoop/Spark
 #### 一般的なサーバーレスアーキテクチャ
+* 実行：Lambda
+* データ：DynamoDB、S3
+* モニタリング：CloudWatch
+* 監査：CloudTrail
+* 補助：SQS、SNS
+* 暗号化：KMS、IAM
+#### サーバーレスストリーミングアーキテクチャ
+* Iotデータの収集：Kinesis
+* データの変換
+* リアルタイム分析
 
 ## 2.セキュリティ
 ### 責任共有モデル
@@ -146,8 +165,8 @@
 ### 認証と認可
 #### IAM
 #### Cognito
-* ユーザープール
-* IDプール
+* ユーザープール：認証とユーザー管理
+* IDプール　　　：認可
 * Lambdaフック
 * カスタム認証フロー
 ### データおよびアプリケーションのセキュリティ、暗号化
@@ -227,6 +246,9 @@
         - タイムスタンプを作成し、API レスポンスに含める
 * スロットリング制限
 * リソースポリシー
+* JWT Authorizer
+* Lambdaカスタムオーソライザー
+    + カスタムアクセスログの出力
 
 ### メッセージング、ステート制御、イベント
 #### SQS
@@ -238,11 +260,15 @@
 * デッドレターキュー：使用すると、処理できないメッセージを後で分析するために分離できます
 * 可視性タイムアウト：Amazon SQS で、他の消費コンポーネントがメッセージの受信と処理を行わないようにする期間
 #### SNS、SES
+* プッシュ通知
+* SMS
+* ＋SQS
 #### MQ
 * オンプレミスからAWSへのブリッジ
 * サードパーティクラウドとのコネクタ
 #### Kinesis Streams 
 #### StepFunctions
+* Lambda関数、SNS Publish、ETL
 * モニタリング
     + CloudWatch Logsに出力された各Stateの実行ログを確認する
     + マネージメントコンソールから実行履歴を確認する
@@ -252,6 +278,13 @@
     イベント駆動
 
 ### コンテナ
+* 主な設定機能
+    + コンテナの配置管理
+    + Load Balancer統合による負荷分散
+    + コンテナの状態監視と自動復旧
+    + コンテナのスケーリング
+    + コンテナのIAM権限管理
+    + CloudWatch Metrics・Logs統合
 * ECS Task PlacementはECS with EC2のみ使用可能
     + 3つのタイプ
         1. Binpack - 使用するインスタンスの数を最小にしようとする most cost effective
@@ -360,7 +393,7 @@ https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/tagging-be
 https://docs.aws.amazon.com/whitepapers/latest/kms-best-practices/welcome.html?did=wp_card&trk=wp_card
 https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/welcome.html?did=wp_card&trk=wp_card
 https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/welcome.html?did=wp_card&trk=wp_card
-
+https://dev.classmethod.jp/articles/awssummit-aws-27/
 
 ## サンプル問題
 ### Q. ある企業のアプリケーション開発チームは、Java アプリケーションを開発し、ソースコードを .war ファイルに保存しました。AWSリソース上でアプリケーションを実行したいと考えており、実行される基礎となるリソースのプロビジョニングと管理を処理できるサービスを探しています。ソリューションアーキテクトは、開発者がJavaソースコードファイルをアップロードするためにどのAWSサービスを使用することを推奨すべきですか？

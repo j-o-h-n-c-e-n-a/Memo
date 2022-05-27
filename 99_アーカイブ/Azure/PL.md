@@ -477,6 +477,6 @@
 https://www.microsoft.com/ja-jp/biz/dynamics/power-platform.aspx?aaid=PFUNRL
 https://info.microsoft.com/JA-RapidApps-CNTNT-FY22-04Apr-13-Power-Apps-Special-Edition-SRGCM6591_LP01-Registration---Form-in-Body.html?aaid=PFUNRL
 https://info.microsoft.com/JA-PowerApps-CNTNT-FY21-01Jan-08-PowerAutomatecan-SRGCM4179_01Registration-ForminBody.html?aaid=PFUNRL
-https://info.microsoft.com/JA-PowerAuto-CNTNT-FY22-09Sep-30-Power-Automate-Desktop-SRGCM4999_LP01-Registration---Form-in-Body.html?aaid=PFUNRL
 https://info.microsoft.com/JA-DBI-WBNR-FY22-09Sep-13-MKTO-FY22-Power-BI-Webinar-0913-SRDEM83223_LP02-On-Demand-Registration---Form-in-Body.html?aaid=PFUNRL
 https://info.microsoft.com/JA-DBI-WBNR-FY22-02Feb-16-MKTO-FY22-Power-BI-Webinar-0216-SRDEM100922_LP02-On-Demand-Registration---Form-in-Body.html?aaid=PFUNRL
+https://info.microsoft.com/JA-PowerAuto-CNTNT-FY22-09Sep-30-Power-Automate-Desktop-SRGCM4999_LP01-Registration---Form-in-Body.html
