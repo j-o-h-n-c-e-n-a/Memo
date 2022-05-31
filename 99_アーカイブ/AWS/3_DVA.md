@@ -1189,33 +1189,6 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
     答え：２
 </div></details>
 
-### Q82. 
-1. 
-2. 
-3. 
-4. 
-<details><div>
-    答え：
-</div></details>
-
-### Q. 
-1. 
-2. 
-3. 
-4. 
-<details><div>
-    答え：
-</div></details>
-
-### Q. 
-1. 
-2. 
-3. 
-4. 
-<details><div>
-    答え：
-</div></details>
-
 ### Q. 
 1. 
 2. 
