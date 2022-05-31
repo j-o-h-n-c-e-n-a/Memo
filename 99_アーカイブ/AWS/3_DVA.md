@@ -1400,7 +1400,182 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
     答え：1.3
 </div></details>
 
-### Q. 
+### Q23. 組織にはChefを使用して構成しているシステムと、Chefの蘊奥にたけたエンジニアがいます。AWSの使用開始にあたり、どのサービスを使用するのが最短で使い始められる方法ですか
+1. CloudFormation
+2. Elastic Beanstalk
+3. CodeStar
+4. OpsWorks
+<details><div>
+    答え：4
+</div></details>
+
+### Q24. Elastic Beanstalkによって作成できるリソースは次のどれですか 
+1. IAMユーザー
+2. EFS フ ァ イ ル シ ス テ ム 
+3. CloudFormation ス タ ッ ク
+4. Application Load Balancer
+5. Step Functions 
+<details><div>
+    答え：3.4
+</div></details>
+
+### Q25. Elastic Beanst で 設定できるデブロイメントボリシーを１つ選択
+1. All at once の み 
+2. Rolling の み 
+3. All at once と Rolling 
+4. イ ン ス タ ン ス に ロ グ イ ン し て 手 動 更 新 
+<details><div>
+    答え：3
+</div></details>
+
+### Q26. Elastic Beanstalk で 環境作成のエラーやヘルスステータスの変更したとき、管理者にメール通知したいです。どのサービスと連携しますか。
+1. Simple Email Service 
+2. Simple Queue Service 
+3. Simple Notification Service 
+4. Simple Storage Service 
+<details><div>
+    答え：3
+</div></details>
+
+### Q27. Elastoc BeanstalkがAWSリソースのヘルスステータスを確認するために必要な権限設定は次のどれですか
+1. 同じアカウントのリソースについては、設定しなくてもステータス確認が可能
+2. Elastic Beanstalk環境を作成したIAMユーザーにAWS管理ポリシーAWSElastic BeanstalkEnhancedHealthとAWSElastic BeanstalkServiceをアタッチする
+3. IAMロールにAWS管理ポリシーBeanstalkEnhancedHealthとAWSElastic BeanstalkServiceをアタッチして、Elastic Beanstalkにサービスロールとして設定する
+4. Elastic Beanstalk環境を覚醒したIAMユーザーにAWS管理ポリシーBeanstalkEnhancedHealthとAWSElastic BeanstalkServiceをアタッチして、アクセスキーIDとシークレットアクセスキーを作成してElastic Beanstalkに設定する
+<details><div>
+    答え：3
+</div></details>
+
+### Q28. Elastic Beanstalkで構築したPHPSDKアプリケーシンはs3バケットオブジェクトのアップロード、ダウンロードを行います。次のうち最も最適な方法はどれでしようか?1つ選択してください。
+1. ユーザーに該当s3バケットへのすべてのアクションを許可するIAMボリシーをアタッチするIAMユーザーのアクセスキーIDとシークレットアクセスキーをEC2インスタンスにawsconfigureコマンドによってセットアップする。
+2. バケットボリシーを作成して、EC2インスタンスが使用しているElasticIPからのリクエストしか受け付けないようConditionsを設定する。
+3. ロールを作成して対象のS３バケットを指定し、アップロード、ダウンードを可能とするIAMボリシーをアタッチする。そのIAMロールをEC2にを受けさせる。
+4. ElasticBeanstalkサービスロールに対象のS3バケットを指定して、アップ-ド、ダウンロードを可能とするIAMポリシーをアタッチする。
+<details><div>
+    答え：3
+</div></details>
+
+### Q29. EB CLIを使用して環境を構築します。使用する最低限のコマンドはどれですか?
+1. ebinitとebdeploy
+2. ebcloneとebcreate
+3. ebcinitとebcreate
+4. ebcreateとebdeploy
+<details><div>
+    答え：3
+</div></details>
+
+### Q30. Elastic Beanstalkで作成したアプリケーションのソースファイルをS3で保存しています。週去バージョンのソースファイルをバージョン管理によって削除したいです。次のうちどの方法が最適ですか?
+1. S3バケットのライフサイクルポリシーによって指定したバージョン数を保存する
+2. Elastic Beanstalkのバージョンライフサイクル機能でバージョン数を設定する
+3. Lambda関数を作成し、特定のバージョン数を保持するようにコードを記述する
+4. Elastic Beanstalkのバージョンライフサイクル機能でバージョン
+<details><div>
+    答え：4
+</div></details>
+
+### Q31. Elastic Beanstalkで作成する環境のEC2インスタンスに追加するモジュールの最新バージョンを、起動時にはインストールが完了した状態にしておきたいです。次のうち最適な方法を1つ選択してください。
+1. 起動後、EC2インスタンスにターミナルからログインしてモジュールを追加する。
+2. systemsManagerRunCommandを実行してモジュールを追加する。
+3. EBCLIコマンドを実行するディレクトリに.ebextensionsディレクトリを作成し、config.ymlにモジュール追加指示を記述する。
+4. 追加のモジュールをインストール済みのAMIを作成する。
+<details><div>
+    答え：3
+</div></details>
+
+### Q32. Elastic Beanstalkを使用して、無停止でソフトウェアの新バージョンをリリースしたいです。次のどの方法を使用しますか
+1. Allatonceデプロイを実行する
+2. 起動中のサービスを停止し、ソフトウェアをインストールしてサービスを再構築する
+3. 現環境のクローンを作成して、現環境に新バージョンのソフトウェアをデプロイする。環境URLのスワップを行う。これらの操作によるBlue/Greenデプロイを実行する
+4. 現環境のクローンを作成して、新しい観光に新バージョンのソフトウェアをデプロイする。環境URLのスワップを行う。これらの操作によるBlue/Greenデプロイを実行する。
+<details><div>
+    答え：4
+</div></details>
+
+### Q33. Elastic Beanstalkで構築できる環境を次から２つ選択してください
+1. サーバーレスアーキテクチャ
+2. 機械学習推論モデルの繰り返し構築
+3. データレイク
+4. Webサーバー環境
+5. ワーカー環境
+<details><div>
+    答え：4.5
+</div></details>
+
+### Q34. 組織はサーバーレスアプリケーションの開発とデブロイを素早く開始したいと考えています。次のうち最も適した方法はどれでしようか?1つ選択してください。
+1. ElasticBeanstalk
+2. AWSSAM
+3. OpsWorks
+4. AWSCDK
+<details><div>
+    答え：2
+</div></details>
+
+### Q35. AWS SAM によるプロジクト開始からデプロイまでのコマンド実行で正しい順番はつぎのどれでしょうか
+1. saminit,samcreate,samdeploy
+2. Saminit,samdeploy
+3. saminit,sambuild,samdeploy
+4. saminit,sambuild.samexeCUte
+<details><div>
+    答え：3
+</div></details>
+
+### Q36. サーバーレスアプリケーションAPIのテストをローカル環境で行います。どの方法か適切でしようか?１つ選択してください。
+1. CodeBuildのローカルエージェントでテストを行う。
+2. 関数コードにローカルテストコーティンクをする。
+3. Jenkinsを使用する。
+4. sam local start-apiを実行する
+<details><div>
+    答え：4
+</div></details>
+
+
+## サンプル問題3
+### Q1. 責任共有モデルにおいて、ユーザーが担当するのはどれですか
+1. AWSサービスAPIのネットワークレイヤーの保護
+2. ハードウェアのアップデート
+3. ストレージの破棄処理
+4. EC2インスタンスのWindowsセキュリティアップデート
+<details><div>
+    答え：
+</div></details>
+
+### Q2. 責任共有モデルにおいてユーザーが検討するのはどれですか
+1. SQSキューメッセージの複数サーバーでの冗長化
+2. EC2インスタンスファミリーのハードウェア構成
+3. AWSデータセンターで保存されているS3オブジェクトの暗号化
+4. RDSインスタンスへのデータベースソフトウェアのインストール
+<details><div>
+    答え：
+</div></details>
+
+### Q3. インターネットからは直接アクセスさせたくないインスタンスから、インターネット上のAPIへのリクエストを実行したいです。
+1. インターネットゲートウェイ、のルートを設定したルートテーブルを関連付けたバブリックサブネットにインスタンスを配置する。
+2. インターネットゲートウェイへのルートを設定したルートテーブルを関連付けたバブリックサブネットにNATゲートウェイを配置して、そのNATゲートウェイへのルートを設定したルートテーブルを関連付けたプライベートサブネットにインスタンスを配置する。
+3. プライベートサブネットにNATゲートウェイを配置して、そのNATゲートウェイへのルートを設定したルートテープルを関連付けたプライベートサブネットにインスタンスを配置する。
+4. プライベートサプネットにインスタンスを配置する。
+<details><div>
+    答え：
+</div></details>
+
+### Q4. パブリックサブネットで起動したNginx Webサーバーをインストール済み、Webアプリケーションをデプロイ済のEC2インスタンスのパブリックIPアドレスに、ブラウザからアクセスしましたが、タイムアウトになりました。何を確認すればいいでしょうか
+1. セキュリティグループインバウンドルールで80番ポートが明示的に拒否されていないか確認する
+2. セキュリティグループインバウンドルールとアウトバウンドルールで80番ポートが許可されていることを確認する
+3. セキュリティグループインバウンドルールで80番ポートが許可されていることを確認する
+4. セキュリティグループインバウンドルール80番ポートと、アウトバウンドルールで一時ポートが許可されていることを確認する
+<details><div>
+    答え：
+</div></details>
+
+### Q5. パブリックサブネットで起動したNginx Webサーバーをインストール済み、Webアプリケーションをデプロイ済のEC2インスタンスのパブリックIPアドレスに、ブラウザからアクセスしましたが、タイムアウトになりました。何を確認すればいいでしょうか
+1. NACLインバウンドルールで80番ポートが明示的に拒否されていないか確認する
+2. NACLインバウンドルールとアウトバウンドルールで80番ポートが許可されていることを確認する
+3. NACLインバウンドルールで80番ポートが許可されていることを確認する
+4. NACLインバウンドルール80番ポートと、アウトバウンドルールで一時ポートが許可されていることを確認する
+<details><div>
+    答え：
+</div></details>
+
+### Q6. S3、KeyManagementserviceへのリクエストを実行する社内アプリケーションが、EC2インスタンスにデブロイされています。本社ビルがVPNで接続しているvpcのサブネットで起動しています。vpcにはインターネットゲートウェイをアタッチしたくありません。どうすればいいですか?1つ選択してください。
 1. 
 2. 
 3. 
@@ -1426,14 +1601,3 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
 <details><div>
     答え：
 </div></details>
-
-### Q. 
-1. 
-2. 
-3. 
-4. 
-<details><div>
-    答え：
-</div></details>
-
-
