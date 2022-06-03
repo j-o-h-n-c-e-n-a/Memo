@@ -100,6 +100,13 @@
 * 開発環境、本番環境を選択できるようにしたい場合、ParametersとConditionsセクションを使う
 * 複数のリージョンで独自のAMIを使用したEC２インスタンスを含むアーキテクチャを起動したい場合、Mappingsセクションを使う
 * 別の AWS CloudFormation スタックのリソース出力を参照する場合、Outputsセクションを使う
+* 主なセクション
+    + Description：テンプレートの説明
+    + Parameters：テンプレートに渡す値
+    + Mappings：キーと値のテーブル
+    + Conditions：リソース作成などを制御する条件
+    + Resources：スタックのリソースとプロパティ
+    + Outputs：リソースのプロパティの値
 #### AWS SAM
     CloudFormationの拡張機能で、サーバーレスアプリケーションの開発とデプロイを素早く開始できる
 #### OpsWorks
