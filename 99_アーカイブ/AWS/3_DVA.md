@@ -403,6 +403,13 @@
 * EC2・ECS・Lambda・ElasticBeanstalkなどど連携可能
 * セグメント：動作に関するデータ（リソース名、リクエスト詳細など）
 * サブセグメント：呼び出しに関する追加の詳細な情報（AWSサービス、データベースなど）
+* Elastic Beanstalk コンソールで X-Ray デーモンを有効にするには以下の手順に従います。 
+    + Elastic Beanstalk コンソールを開きます。
+    + 環境設定の管理コンソールに移動します。
+    + Configurationを設定します。
+    + [Software Settings] を選択します。
+    + [X-Ray daemon] で、[Enabled] を選択します。
+    + [Apply] を選択します。 
 
 #### CloudTrail
 * CloudTrailはログをS3バケットに保存
