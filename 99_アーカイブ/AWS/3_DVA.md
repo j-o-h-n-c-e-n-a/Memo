@@ -1384,7 +1384,7 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
 </div></details>
 
 
-## サンプル問題2
+## デプロイ問題
 ### Q1. 稼働中の環境を新しいアプリケーションで更新するデプロイ方法はどれですか？
 1. In-Place
 2. Linear
@@ -1714,14 +1714,14 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
 </div></details>
 
 
-## サンプル問題3
+## セキュリティ問題
 ### Q1. 責任共有モデルにおいて、ユーザーが担当するのはどれですか
 1. AWSサービスAPIのネットワークレイヤーの保護
 2. ハードウェアのアップデート
 3. ストレージの破棄処理
 4. EC2インスタンスのWindowsセキュリティアップデート
 <details><div>
-    答え：
+    答え：4
 </div></details>
 
 ### Q2. 責任共有モデルにおいてユーザーが検討するのはどれですか
@@ -1730,7 +1730,7 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
 3. AWSデータセンターで保存されているS3オブジェクトの暗号化
 4. RDSインスタンスへのデータベースソフトウェアのインストール
 <details><div>
-    答え：
+    答え：3
 </div></details>
 
 ### Q3. インターネットからは直接アクセスさせたくないインスタンスから、インターネット上のAPIへのリクエストを実行したいです。
@@ -1739,7 +1739,7 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
 3. プライベートサブネットにNATゲートウェイを配置して、そのNATゲートウェイへのルートを設定したルートテープルを関連付けたプライベートサブネットにインスタンスを配置する。
 4. プライベートサプネットにインスタンスを配置する。
 <details><div>
-    答え：
+    答え：2
 </div></details>
 
 ### Q4. パブリックサブネットで起動したNginx Webサーバーをインストール済み、Webアプリケーションをデプロイ済のEC2インスタンスのパブリックIPアドレスに、ブラウザからアクセスしましたが、タイムアウトになりました。何を確認すればいいでしょうか
@@ -1748,7 +1748,7 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
 3. セキュリティグループインバウンドルールで80番ポートが許可されていることを確認する
 4. セキュリティグループインバウンドルール80番ポートと、アウトバウンドルールで一時ポートが許可されていることを確認する
 <details><div>
-    答え：
+    答え：3
 </div></details>
 
 ### Q5. パブリックサブネットで起動したNginx Webサーバーをインストール済み、Webアプリケーションをデプロイ済のEC2インスタンスのパブリックIPアドレスに、ブラウザからアクセスしましたが、タイムアウトになりました。何を確認すればいいでしょうか
@@ -1757,10 +1757,375 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
 3. NACLインバウンドルールで80番ポートが許可されていることを確認する
 4. NACLインバウンドルール80番ポートと、アウトバウンドルールで一時ポートが許可されていることを確認する
 <details><div>
-    答え：
+    答え：4
 </div></details>
 
 ### Q6. S3、KeyManagementserviceへのリクエストを実行する社内アプリケーションが、EC2インスタンスにデブロイされています。本社ビルがVPNで接続しているvpcのサブネットで起動しています。vpcにはインターネットゲートウェイをアタッチしたくありません。どうすればいいですか?1つ選択してください。
+1. NATゲートウェイをデプロイする
+2. AWSのすべてのサービス向けの一括VPCエンドポイントを作成する
+3. S3のゲートウェイエンドポイント、KMSのインターフェイスエンドポイントを作成して、S3エンドポイントへのルートをサブネットに関連付けられたルートテーブルに追加する
+4. VPNをインターネット接続に変更する
+<details><div>
+    答え：3
+</div></details>
+
+### Q7. ルートユーザー運用のベストプラクティスはどれでしょうか
+1. 最小権限の原則に従って運用する
+2. IAMロールにスイッチロールして使用する
+3. アカウント作成後にIAMユーザーを作って、移行はルートユーザーを使わずにIAMユーザーで通常の運用をする
+4. ルートユーザーを削除する
+<details><div>
+    答え：3
+</div></details>
+
+### Q8. IAMユーザーがマネジメントコンソールにサインインするときに必要な認証情報はどれですか
+1. ユーザー名とパスワード
+2. アクセスキーIDとシークレットアクセスキー
+3. １２桁アカウントIDとユーザー名とパスワード
+4. １２桁アカウントIDとユーザー名とパスワードとリージョン
+<details><div>
+    答え：3
+</div></details>
+
+### Q9. AWSCLIやSDKでAWSサービスに対してコードを実行するときに必要な認証情報はどれですか
+1. ユーザー名とパスワード
+2. アクセスキーIDとシークレットアクセスキー
+3. １２桁アカウントIDとアクセスキーIDとシークレットアクセスキー
+4. １２桁アカウントIDとアクセスキーIDとシークレットアクセスキーとリージョン
+<details><div>
+    答え：2
+</div></details>
+
+### Q10. 名前付きプロファイルを指定するオプションは次のどれですか
+1. --region
+2. --dry-run
+3. --profile
+4. --output
+<details><div>
+    答え：3
+</div></details>
+
+### Q11. CLIやSDKでリクエストが実行されているリージョンは、何によって決定されますか
+1. オプションやコードで指定した場合はそれが優先され、指定がない場合は、.aws/configに設定されているデフォルトリージョンで実行される
+2. .aws/configが設定されていれば、オプションやコードで指定しても.aws/configが優先される
+3. CLI、SDKを使うクライアントの地域によって決定される
+4. リクエストが最も少ないリージョンで実行される
+<details><div>
+    答え：1
+</div></details>
+
+### Q12. 次のIAMポリシーは意図したとおりに動作しません。何を変更すればよいですか
+1. EffectをDenyにする
+2. Actionの[]を外す
+3. Conditionを追加する
+4. Resourceを”arn:aws:s3::blog-image/*”にする
+<details><div>
+    答え：4
+</div></details>
+
+### Q13. 最小権限の原則に従うメリットを２つ選択してください
+1. テストの範囲を最小化できる
+2. 他コンポーネントへの依存性を減らせる
+3. 不正アクセスが発生した際に、アクセスできる範囲が最小化されていることにより、リスクを軽減できる
+4. やらなくてもいい操作がブロックされることにより、例えばテストユーザーが誤って本番環境のインスタンスを終了させるなどの操作ミスを防ぐことができる
+5. 移動のたびにユーザーごとにIAMポリシーの変更調整が必要になる
+<details><div>
+    答え：3.4
+</div></details>
+
+### Q14. DynamoDBテーブルを指定するARNで、正しいものはどれですか
+1. arn:aws:dynamodb::123456789012:table/mytable
+2. arn:aws:dynamodb:ap-northeast-1::table/mytable
+3. arn:aws:dynamodb:ap-northeast-1:123456789012:stream/mystream
+4. arn:aws:dynamodb:ap-northeast-1:123456789012:table/mytable
+<details><div>
+    答え：4
+</div></details>
+
+### Q15. 特定の送信元IPアドレスからのリクエストのみ許可したい場合、次のうちどれを使いますか
+1. aws:PrincipalTag
+2. aws:TokenissueTime
+3. aws:SourceIP
+4. aws:SourceArn
+<details><div>
+    答え：3
+</div></details>
+
+### Q16. IAMユーザー自身に対してパスワードの変更を許可したい場合、どの方法が安全で効率的でしょうか
+1. リソースを＊指定で、iam:*LoginProfileを許可するポリシーを作成する
+2. IAMユーザーごとにiam:*LoginProfileを許可するポリシーを作成する
+3. リソースにポリシー変数aws:usernameを設定して、iam:*を許可するポリシーを作成する
+4. リソースにポリシー変数aws:usernameを設定して、iam:*LoginProfileを許可するポリシーを作成する
+<details><div>
+    答え：4
+</div></details>
+
+### Q17. CodeCommitでSSHを使用して、リポジトリのクローンを実行するために必要な操作を、以下の２つから選択してください
+1. ssh-keygenコマンドを実行して、パブリックキーファイルとプライベートキーファイルを作成し、IAM認証タブにパブリックキーをアップロードする
+2. IAM認証タブでキーペアを作成する
+3. マネジメントコンソールでサインインパスワードを設定する
+4. アクセスキーIDとシークレットアクセスキーを作成する
+5. クライアントの.sshディレクトリで、Host git-codecommit.*.amazonaws.comの設定をする
+<details><div>
+    答え：1.5
+</div></details>
+
+### Q18. 各AWSサービスリソースに対してのリストや詳細表示など読み込み専用のIAMポリシーが必要です。どの方法が最も効率的でしょうか
+1. カスタマー管理ポリシー
+2. インラインポリシー
+3. アイデンティティベースのポリシー
+4. AWS管理ポリシー
+<details><div>
+    答え：4
+</div></details>
+
+### Q19. グループにアタッチしているポリシーの変更後に、タイミングをはかって、許可を適用したいです。問題があればすぐにロールバックしたいです。どの方法が適していますか？
+1. カスタマー管理ポリシー
+2. インラインポリシー
+3. アイデンティティベースのポリシー
+4. AWS管理ポリシー
+<details><div>
+    答え：1
+</div></details>
+
+### Q20. CloudFrontのオリジンとしてS3バケットを設定しています。CloudFront経由のみ許可して、S3バケットには直接アクセスされたくありません。どうすればいいですか
+1. 署名付きURLでアクセスする
+2. 対象オブジェクトに対して、アクセスコントロールリストでパブリック設定をする
+3. OAIのみのGetObjectを許可するバケットポリシーを設定する
+4. プリンシパルにCloudFrontサービスを指定したバケットポリシーを設定する
+<details><div>
+    答え：3
+</div></details>
+
+### Q21. CognitoサインイントリガーでLambdaを実行する場合、どのようなポリシーが必要でしようか?1つ選択してください。
+1. Cognito IDプールに設定するIAMロールのポリシー
+2. Lambdaに設定する実行口一ルのボリシーで、リソースにCognitoユーザープールを指定。
+3. Webアプリケーションの認証を実装するEC2インスタンスに設定する。IAMロールのポリシーで、LambdaのInvokeFunctionを許可。
+4. Lambda関数のリソースポリシーで、cognitoサービスからのlnvokeFunctionを許可。
+<details><div>
+    答え：4
+</div></details>
+
+### Q22. API GatewayでデブロイしたREST API でIAM認証を使用し、別アカウントの特定IAMユーザーからの実行を許可しますどのポリシーが必要でしようか?1つ選択してください。
+1. API GatewayがLambda関数を実行するためのLambda関数リソースポリシー
+2. 別アカウントからの実行を許可するAPIGatewayのリソースポリシ
+3. APIGatewayからサービスAPIを実行するためのポリシー
+4. APIGatewayがログを出力するためのポリシー
+<details><div>
+    答え：2
+</div></details>
+
+### Q23. 共有SQSキューを作って他アカウントからのメッセージ送信を許可したいです。どのポリシーが必要ですか?1つ選択してください。
+1. アイデンティティベースのボリシー
+2. SQSリソースペースのキューポリシー
+3. 他アカウントとの共有キューは作成できない。
+4. SNSトピックポリシー
+<details><div>
+    答え：2
+</div></details>
+
+### Q24. IAMユーザーAさんは2つのグループのメンバーです。1つのグループではEC2インスタンスの終了が拒否されています。最近メンバーになったグループでは、EC2インスタンスのすべての操作が許可されましたIAMユーザーAさんがEC2インスタンスを終了しようとしたらどうなるでしようか?1つ選択してください。
+1. 許可されてインスタンスのステータスが終了になる。
+2. 終了は拒否されて、停止ステータスになる。
+3. 操作が拒否される。
+4. インスタンスが終了したあと、他のグループでは拒否されていたメセージを通知で受け取る。
+<details><div>
+    答え：3
+</div></details>
+
+### Q25. EC2インスタンスからDynamoDBに対して書き込みと読み込みを行うアプリケーションがあります。土の設定がセキュアな方法でしょうか
+1. アクセスキーIDとシークレットアクセスキーをコードに含める
+2. アクセスキーIDとシークレットアクセスキーを.aws/credentialsに含める
+3. アクセスキーIDとシークレットアクセスキーを環境変数に含める
+4. IAMロールを利用する
+<details><div>
+    答え：4
+</div></details>
+
+### Q26. EC2インスタンスにIAMロールを設定するIAMユーザーに必要なアクションは何ですか
+1. Assume Role
+2. GetRoleとPassRole
+3. Encrypt
+4. InvokeFunction
+<details><div>
+    答え：2
+</div></details>
+
+### Q27. マネジメントコンソールからEC2用のIAMロールを作成したときに自動で作成されるものはどれですか？２つ
+1. ec2.amazonaws.comからのsts:AssumeRoleを許可した信頼ポリシー
+2. CloudWatch Logsにログを書き込むデフォルトの実行ポリシー
+3. メタデータで確認できるアクセスキーID,シークレットアクセスキー、トークン
+4. インスタンスプロファイル
+5. マネジメントコンソールから作成されたことを示すタグ
+<details><div>
+    答え：1.4
+</div></details>
+
+### Q28. SAMLをサポートしているIdpを使用しています。AWＳアカウントで別途ＩＡＭユーザーを管理したくありません。どの方法が最も簡単ですか
+1. Idpからエクスポートしたユーザー情報をIAMにインポートして移行する
+2. IDブローカーでコーディングすることでSSOを構成する
+3. AWS Directory Service をデプロイし、ユーザー情報を移行してSSOを設定する
+4. idPをIAMに設定し、SAMLプロバイダ向けのIAMロールを作成してSSOを設定する
+<details><div>
+    答え：4
+</div></details>
+
+### Q29. Cognitoはユーザープールでサインアップ、サインインを設定します。最も早く実現する方法はどれでしようか?1つ選択してください。
+1. オリジナルUIをSDKを使って開発する。
+2. Cognitoは使わずに認証基盤を実装する。
+3. 組み込みUIに企業ロゴ画像をアップロードして、コールバックURLにWebアプリケーションを指定する。
+4. Saasのフォーム製品からWebhookを設定してCognitoAPIを呼び出す。
+<details><div>
+    答え：3
+</div></details>
+
+### Q30. アプリケーションのユーザーパスワードの漏洩を検知してプロックしたいです。どうしたらいいですか?1つ選択してください。
+1. Cognitoユーサープールを使えば何もしなくても有効。
+2. Cognitoユーザープールを使用してアドバンスドセキュリティを有効にする。
+3. CognitoユーザープールトリガーでLambda関数を実行し、外部の漏洩リストを検索して、リストに含まれていればプロックする。
+4. Cognitoユーザープールではできないので、サードバーティ製品を使用する。
+<details><div>
+    答え：2
+</div></details>
+
+### Q31. サインインに多要素認証を設定したいです。どうしたらいいですか?1つ選択してください。
+1. Cognitoユーザープールを使えば何もしなくても有効。
+2. CognitoユーザープールトリガーでLambda関数を実行して、SMSコードを検証するプログラムを実行する
+3. Cognitoユーザープールではできないので、サードバーティ製品を使用する。
+4. Cognitoユーザープールを使用してMFAオプションを設定する
+<details><div>
+    答え：4
+</div></details>
+
+### Q32. アプリケーションを使用するユーザー本人のサインアップを許可します。どうしたらいいですか
+1. SDKにより、勘k理社権限によるサインアップコードを実行する
+2. CognitoユーザープールトリガーでLambda関数を実行し、有効化したAPIリンクをユーザーに送信する
+3. Cognitoユーザープールを使用してユーザーによるサインアップを許可する
+4. Cognitoユーザープールではできないので、サードバーティ製品を使用する。
+<details><div>
+    答え：3
+</div></details>
+
+### Q33. アプリケーションを使用するユーザーが既に持っている外部ソーシャルサービスのアカウントを使って、サインアップとサインインを行いたいです
+1. Cognitoユーザープールを使えば何もしなくても有効。
+2. Cognitoユーザープールを使用してWebIDフェデレーションを設定する
+3. CognitoユーザープールトリガーでLambda関数を実行し、外部ソーシャルサービスに対して認証をリクエストするコードを実装する
+4. Cognitoユーザープールではできないので、サードパーティー製品を使用する
+<details><div>
+    答え：2
+</div></details>
+
+### Q34. サインインしていないゲストユーザーに対しても、DynamoDBに保存されている一部の情報をWebアプリケーションの画面に表示したいです
+1. DynamoDBテーブルのパブリックアクセスを可能にする
+2. DynamoDBテーブルの一部データの読み込みが可能なアクセスキーID、シークレットアクセスキーを、JavaScriptにコーディングする
+3. Coginto IDプールの認証されていないロールに設定したIAMロールにDynamoDBの一部データの読み込みが可能なIAMポリシーをアタッチする
+4. WebアプリケーションのJavaScriptが読み込みが可能なJSON形式の情報をDynamoDBから定期的にエクスポートする
+<details><div>
+    答え：3
+</div></details>
+
+### Q35. 機密情報をSystem Managerパラメータストアで管理したいです
+1. SDKを使用してKMSへのリクエストを実行して暗号化したあとの文字列を保管する
+2. SDKを使用して任意のアルゴリズムで暗号化したあとの文字列を保管する
+3. String形式で保存する
+4. SecureString形式で保存する
+<details><div>
+    答え：4
+</div></details>
+
+### Q36. Amazon Auroraのパスワードを定期的に変更したいです
+1. System Managerパラメータストア
+2. Secrets Manager
+3. S3
+4. DynamoDB
+<details><div>
+    答え：2
+</div></details>
+
+### Q37. SSL/TLS証明書の管理を簡易化したい
+1. S3でサードパーティー証明書発行のためのキーを管理する
+2. パラメータストアでサードパーティ証明書発行のためのキーを管理する
+3. Certificate Managerで証明書を作成し、メール認証する
+4. Certificate Managerで証明書を作成し、CNAME認証する
+<details><div>
+    答え：4
+</div></details>
+
+### Q38. CloudFrontで設定しているWebサイトで、HTTPSへのアクセスを強制したい。２つ 
+1. EC2のWebサーバーでリダイレクトするよう設定する
+2. Cartificate Managerで作成した証明書をCloudFrontに設定する
+3. ALBでリダイレクトするようルールを作成する
+4. サードパーティ製証明書をWebサーバーに設定する
+5. HTTPへのリクエストをHTTPSにリダイレクトするようCloudFrontで設定する
+<details><div>
+    答え：2.5
+</div></details>
+
+### Q39. データの暗号化で専用ハードウェアが必要です
+1. Dedicated Hosts
+2. AWS CloudHSM
+3. AWS Key Management Service
+4. AWS IAM
+<details><div>
+    答え：2
+</div></details>
+
+### Q40. S3オブジェクトの暗号化が必要です。保管時に暗号化されていればいいという要件です
+1. SSE-S3
+2. SSE-KMS
+3. SSE-C
+4. クライアントサイド暗号化
+<details><div>
+    答え：1
+</div></details>
+
+### Q41. S3オブジェクトの保管時の暗号化が必要です。暗号化に使用するマスターキーは１年ごとにローテーションが必要です
+1. SSE-S3
+2. SSE-KMS
+3. SSE-C
+4. クライアントサイド暗号化
+<details><div>
+    答え：2
+</div></details>
+
+### Q42. S3オブジェクトの保管時の暗号化が必要です。暗号化に使用するキーとしては、オンプレミスのキーサーバーで作成したキーが必要です。
+1. SSE-S3
+2. SSE-KMS
+3. SSE-C
+4. KMSを使用したクライアントサイド暗号化
+<details><div>
+    答え：3
+</div></details>
+
+### Q43. S3オブジェクトの暗号化が必要です。アップロード前に暗号化しておく必要があります
+1. SSE-S3
+2. SSE-KMS
+3. SSE-C
+4. KMSを使用したクライアントサイド暗号化
+<details><div>
+    答え：4
+</div></details>
+
+### Q44. 暗号化されたRDSスナップショットを他リージョンでリストアしたいです
+1. そのままクロスリージョンコピーして、コピー元リージョンのＫＭＳキーを使ってリストアする
+2. スナップショットの暗号化を無効化する
+3. リストアするコピー先のリージョンのＫＭＳキーを使って、スナップショットのクロスリージョンコピーを暗号化する。コピー先のＫＭＳキーを使ってリストアする
+4. 基のリージョンのスナップショットを指定して、別リージョンでリストアする
+<details><div>
+    答え：3
+</div></details>
+
+## 開発問題
+### Q1. アベイラビリティゾーンとは
+1. AWSが用意したデータセンター
+2. データセンターのグループ
+3. データセンターのグループが複数ある地域
+4. キャッシュコンテンツなどを扱う世界２００か所以上の拠点
+<details><div>
+    答え：
+</div></details>
+
+### Q. 
 1. 
 2. 
 3. 
@@ -1776,6 +2141,446 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
 4. 
 <details><div>
     答え：
+</div></details>
+
+### Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+### Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+### Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## リファクタリング問題
+### Q1. EC2インスタンスにスケーラビリティを確保する方法。２つ
+1. CPU使用率に応じて設定するEC2 Auto Scalling
+2. EC2 Auto Recovery
+3. EC2 スポットインスタンス
+4. SQSメッセージ数によるEC2 Auto Scalling
+5. Application Load Balancer
+<details><div>
+    答え：1.4
+</div></details>
+
+### Q2. ALBとEC2オートスケーリングで構成されているアプリケーションで、時々、リクエストが１つのインスタンスに偏っている事があります。どうすればこの問題を解消し、均等負荷分散ができるようになりますか。２つ
+1. Connection Drainingを有効にする
+2. セッションの維持を無効化する
+3. オートスケーリングを無効化する
+4. クールダウン時間を増やす
+5. セッション情報をDynamoDBに格納する
+<details><div>
+    答え：2.5
+</div></details>
+
+### Q3. データベースのフェイルオーバーのタイミングでも、ユーザーからのリクエストは受け続けたいです。
+1. フェイルオーバー中はソーリーページを表示する
+2. リクエストを受け続けて、データベースがリクエストを拒否した場合はアプリケーションが再試行し続ける
+3. データベースのリードレプリカを用意して、フェイルオーバー中はリードレプリカに書き込む
+4. リクエストメッセージをキューに格納し、コンシューマーアプリケーションがメッセージを受信してデータベースに書き込む
+<details><div>
+    答え：4
+</div></details>
+
+### Q4. S3バケットに格納された画像のサムネイル化、モバイル向けのサイズ調整、ウェブ向けのサイズ調整を並列化したいです。どのようなデザインパターンで実装しますか
+1. S3バケットから３つのSQSに対して通知を行う。SQSをトリガーとしたLambda関数をそれぞれデプロイする
+2. S3バケットから３つのLambda関数対して通知を行う
+3. S3バケットからSNSに対して通知を行い、３つのSQSにサブスクライブする。SQSをトリガーとしたLambda関数をそれぞれデプロイする
+4. S3バケットから１つのLambda関数に対して通知を行い、そのLambda関数でサムネイル化と各サイズ調整をまとめて行う
+<details><div>
+    答え：3
+</div></details>
+
+### Q5. ユーザーからのリクエストを処理している静的なWebフォームがあります。バックエンドはAPIリクエストを受け付けて処理しています。両方ともEC2インスタンスを１つ起動しています。今後、このアプリケーションに多くのアクセスとリクエストが発生する可能性があります。どのように対処するのが最適ですか
+1. WebフォームとバックエンドのEC2インスタンスのサイズを大きくします
+2. WebフォームのEC2インスタンスを大きくして、バックエンドアプリケーションをAPI Gateway とLambda関数に移行する
+3. WebフォームをS3バケットへ、バックエンドアプリケーションのEC2インスタンスサイズを大きなものへ変更します。
+4. WebフォームをS3バケットへ、バックエンドアプリケーションをAPI GatewayとLambda関数に移行する
+<details><div>
+    答え：4
+</div></details>
+
+### Q6. MySQLが必要なアプリケーションがあります。読み込み負荷の軽減及びレポーティングアプリケーションのために、リードレプリカが８つ必要です。どのデータベースサービスを使用しますか
+1. RDS
+2. DynamoDB
+3. Aurora
+4. ElastiCache
+<details><div>
+    答え：3
+</div></details>
+
+### Q7. グラフデータベースが必要です
+1. RedShift
+2. DynamoDB
+3. Aurora
+4. Neptune
+<details><div>
+    答え：4
+</div></details>
+
+### Q8. DynamoDBで、コストが２倍かかってもいいので、強い整合性の読み込みが必要です
+1. 結果整合性の読み込みを２回行う
+2. BatchGetItemを実行する
+3. GetItem、Query、Scanを実行するときに、ConsistentReadパラメータを追加する
+4. GetItem、Query、Scanを実行するとデフォルトで強い整合性になるので、何も指定しない
+<details><div>
+    答え：3
+</div></details>
+
+### Q9. 常に最新の情報をGetCacheできるのはどの方法でしょうか
+1. ファンアウト
+2. ライトスルー
+3. 遅延キャッシュ
+4. スティッキーセッション
+<details><div>
+    答え：2
+</div></details>
+
+### Q10. データレイクとしてデータをため続ける先に最も適したサービスはどれですか
+1. RedShift
+2. SageMaker
+3. S3
+4. Athena
+<details><div>
+    答え：3
+</div></details>
+
+### Q11. そのままの構成で移行する方法はどれですか
+1. REHOST
+2. REPLATFORM
+3. REPURCHASE
+4. REFACTOR
+<details><div>
+    答え：1
+</div></details>
+
+### Q12. プログラムコードは変更せずに、最適化を検討した移行はどれですか
+1. REHOST
+2. REPLATFORM
+3. REPURCHASE
+4. REFACTOR
+<details><div>
+    答え：2
+</div></details>
+
+### Q13. 製品やサービスを再検討をする移行方法はどれですか
+1. REHOST
+2. REPLATFORM
+3. REPURCHASE
+4. REFACTOR
+<details><div>
+    答え：3
+</div></details>
+
+### Q14. プログラムのカスタマイズ、作り直しをする移行方法はどれですか
+1. REHOST
+2. REPLATFORM
+3. REPURCHASE
+4. REFACTOR
+<details><div>
+    答え：4
+</div></details>
+
+### Q15. すべてのリソースをAWS上で実行する方式はどれですか
+1. RETIRE
+2. RETAIN
+3. ALL-IN
+4. ハイブリッド
+<details><div>
+    答え：3
+</div></details>
+
+### Q16. オンプレミスとAWSの両方を使う設計方式はどれですか
+1. RETIRE
+2. RETAIN
+3. ALL-IN
+4. ハイブリッド
+<details><div>
+    答え：4
+</div></details>
+
+## モニタリング問題
+### Q1. CloudWatchで独自のカスタムメトリクスをモニタリングしたいです。どれが必要でしょうか
+1. PutLogEvents APIアクションを使用してログを送信する
+2. GetMetricData APIアクションを使用してログを取得する
+3. PutMetricData APIアクションを使用してログを送信する
+4. CloudWatchでは、標準メトリクス以外はモニタリングできない
+<details><div>
+    答え：3
+</div></details>
+
+### Q2. EC2の標準メトリクスはどれですか。２つ
+1. FreebleMemory
+2. CPUUltization
+3. VolumeReadOps
+4. VolumeWriteOps
+5. StatusCheckFailed
+<details><div>
+    答え：2.5
+</div></details>
+
+### Q3. EBSの標準メトリクスはどれですか
+1. CPUUltization
+2. DatabaseConnections
+3. VolumeReadOps
+4. FreebleMemory
+<details><div>
+    答え：3
+</div></details>
+
+### Q4. RDSの標準メトリクスはどれですか
+1. ProcisionedReadCapacityUnits
+2. ProcisionedWriteCapacityUnits
+3. ThrottiedRequests
+4. FreebleMemory
+<details><div>
+    答え：4
+</div></details>
+
+### Q5. AWS SDKアプリケーションからDynamoDBへの書き込み遅延が発生しています。どのメトリクスを確認しますか
+1. TimeToLiveDeletedItemCount
+2. ReturnedItemcCount
+3. RetunedBytes
+4. ThrottiedRequests
+<details><div>
+    答え：4
+</div></details>
+
+### Q6. S3の標準メトリクスを２つ
+1. GetRequests
+2. BucketSizeBytes
+3. PutRequests
+4. DeleteRequests
+5. NumberOfObjects
+<details><div>
+    答え：2.5
+</div></details>
+
+### Q7. Lambdaの実行時間をCloudWatchメトリクスで確認するには、どのメトリクスを使用しますか
+1. Invocations
+2. Errors
+3. Duration
+4. Throttles
+<details><div>
+    答え：3
+</div></details>
+
+### Q8. サードパーティのAPIをさらに呼び出すAPIを API Gateway で構築しています。設定変更は一切していませんが、最近５ｘｘＥｒｒｏｒメトリクスの数が増えています。何を確認しますか
+1. 呼び出し元が呼び出し方を変えていないかヒアリングする
+2. サードパーティ製品に問題が起こっていないか確認する
+3. ＡＰＩ Gateway のリソースポリシーを調査する
+4. 調査のためにAPIを再デプロイする
+<details><div>
+    答え：2
+</div></details>
+
+### Q9. SQSの利用コストの見直しをすることになりました。先ず空の応答数を減らすことを検討したいです。どのメトリクスを確認しますか
+1. SentMessageSize
+2. NumberOfEmptyRecieves
+3. NumberOfMessageSent
+4. ApproximateNumberOfMessageVisible
+<details><div>
+    答え：2
+</div></details>
+
+### Q10. CloudWatchアラームjでSNSトピックからEメールエンドポイントにメール通知をしていますが、管理者にメールが届いていないようです。どのメトリクスを確認しますか
+1. NumberOfMessageDeleted
+2. NumberOfMessagePublished
+3. PublishSize
+4. NumberOfNotificationsFailed
+<details><div>
+    答え：4
+</div></details>
+
+### Q11. Step Functionsステートマシンの実行時間が異常に長い場合はCloudWatchアラームを設定することになりました。どのメトリクスを使用しますか
+1. ExecutionThrotted
+2. ExecutionFaild
+3. ExecutionTime
+4. ExecutionsSucceeded
+<details><div>
+    答え：3
+</div></details>
+
+### Q12.EC２インスタンスで動作しているアプリケーションのログをモニタリングしたいです。どうするのが最適ですか 
+1. EC2インスタンスにSSH接続してログふぃあるをコマンドでモニタリングする
+2. 別途ログサーバーを構築してログサーバーでモニタリングする
+3. CloudWatchLogsをセットアップしてモニタリングする
+4. CloudWatchイベントでモニタリングする
+<details><div>
+    答え：3
+</div></details>
+
+### Q13. CloudWatch Logsにログを送信するようにEC2をセットアップします。ログデータを送信する多面委最適な認証設定は次のどれですか
+1. 同じアカウント、同じリージョンのEC2からのログデータ送信なら認証は必要ない
+2. CloudWatch Logsのロググループポリシーに、許可設定を直接記述する
+3. IAMユーザーを作成しs手PutLogEventsなどのAPIアクションを許可するポリシーをアタッチし、アクセスキーIDとシークレットアクセスキーを発行して、EC2インスタンスでaws configureを実行する
+4. IAMロールにPutLogEventsなどのAPIアクションを許可するポリシーをアタッチして、EC2インスタンスに割り当てる
+<details><div>
+    答え：4
+</div></details>
+
+### Q14. CloudWatch Logsにログを送信するようにEC2をセットアップします。適切な方法を選択してください
+1. 何もしなくても固定のログが送信される
+2. PutLogEventsAPIを使って独自のコードを実装する
+3. CloudWatchエージェントをインストールしてセットアップする
+4. EC2起動時の詳細設定で、ログ取得パラメータを有効にする
+<details><div>
+    答え：3
+</div></details>
+
+### Q15. EC2インスタンスで起動しているアプリケーションからログファイルに出力されている情報で、定期的に発生しているイベントの回数をモニタリング指定です。次のどの方法を使えば、最も早く簡単に安定して実現できるでしょうか 
+1. アプリケーションから、イベントが発生するごとにＰｕｔＭｅｔｒｉｃＤａｔａＡＰＩを使ってカスタムメトリクスとして送信する
+2. ログでデータをCloudWatchLogsに送信するようにセットアップする。メトリクスフィルターのフィルターパターンに定期発生するイベントを特定する文字列を設定して、カスタムメトリクスでモニタリングする
+3. CloudWatch Logsにログが送信されたイベントによってLambdaを実行し、ログメッセージに特定文字列が含まれていれば、PutMetricData APIを使ってカスタムメトリクスとして送信する
+4. CloudWatch Logsにログ委が送信されたイベントによって、データをElasticSearch Serviceに格納して、Kibanaでモニタリングする
+<details><div>
+    答え：2
+</div></details>
+
+### Q16. EC2インスタンスで運用しているアプリケーションからログファイルに出力されている数値情報をモニタリングして、閾値を特定時間上回った場合に通知したいです。どの方法を使えば最も早く簡単に安定して実現できるでしょうか
+1. アプリケーションから数値情報をPutMetricDataAPIを使ってカスタムメトリクスとして送信する
+2. ログデータをCloudWatchLogsに送信するようにセットアップする。メトリクスフィルターのフィルターパターンに、変数を設定して、メトリクス地を該当変数にする。カスタムメトリクスでモニタリングする
+3. CloudWatchLogsにログが送信されたイベントによってLambdaを実行し、ログメッセージのファイトう数値をPutMetricDataAPIを使ってカスタムメトリクスとして送信する
+4. CloudWatchLogsにログが送信されたイベントによって、データをElasticSerchServiceに格納して、Kibanaでモニタリングする
+<details><div>
+    答え：2
+</div></details>
+
+### Q17. 企業のモニタリングルームで、各サービスのメトリクスを定期自動更新モニターで常時可視化表示したいです。どの方法を使えば、最も早く簡単に安定して実現できるでしょうか
+1. ElasticSearch Serviceにすべてのメトリクスを格納して、Kibanaでモニタリングする
+2. メトリクスをS3バケットに書き出して、Athena、QuickSightと連携してグラフで可視化する
+3. Redshiftにメトリクスを格納して、サードパーティＢＩ製品を使用して可視化する
+4. CloudWatchダッシュボードを構成する
+<details><div>
+    答え：4
+</div></details>
+
+### Q18. 複数のVPCとVPCエンドポイントで構築しているアプリケーションがあります。特定のサーバーからRDSデータベースに対するリクエストがタイムアウトします。どこまでの接続が許可されていて、どこで拒否されているかを調べたいです。どの機能を使うのが適切ですか
+1. CloudWatchLogs
+2. RDSイベントログ
+3. CloudTrail
+4. VPCフローログ
+<details><div>
+    答え：4
+</div></details>
+
+### Q19. VPCフローログの発行先を２つ選びなさい
+1. S3バケット
+2. DynamoDBテーブル
+3. CloudTrailログ
+4. CloudWatchLogs
+5. EBS
+<details><div>
+    答え：1.4
+</div></details>
+
+### Q20. VPCフローログをCloudWatchLogsに発行するためのIAMロール信頼ポリシーでは、Principalの設定は次のうちどれですか？
+1. ec2.amazonaws.com
+2. ec2.vpc.amazonaws.com
+3. vpc.amazonaws.com
+4. vpc-flow-logs.amazonaws.com
+<details><div>
+    答え：4
+</div></details>
+
+### Q21. VPCフローログをS3バケットに発行するためのIAMロール信頼ポリシーでは、Principalの設定は次のうちどれですか
+1. cloudwatch.amazonaws.com
+2. cloudwatch.logs.amazonaws.com
+3. deloveryu.logs.amazonaws.com
+4. logs.amazonaws.com
+<details><div>
+    答え：3
+</div></details>
+
+### Q22. EC2インスタンスを終了したユーザーや時間、リクエスト送信元を特定したいです。何を確認しますか?1つ選択してください。
+1. マネジメントコンソールのEC2メニュー
+2. aws ec2 describe-instances
+3. CloudTrail
+4. CloudWatch
+<details><div>
+    答え：3
+</div></details>
+
+### Q23. Lambdaで実装したアプリケーションで、処理に想定以上の時間がかかっています。どこがボトルネックになっているか確認するにはどうすればいいですか?1つ選択してください。
+1. CloudTrailを確認する。
+2. CloudWatchメトリクスを確認する。
+3. CloudWatchLogsを確認する。
+4. アクテイプトレースを有効にして、X-RaySDKを使ったコードを追加して、プービスマップとトレースを確認する。
+<details><div>
+    答え：4
+</div></details>
+
+### Q24. Pythonアプリケーションをx-rayによるモニタリングの対象とするために必要な設定は次のどれですか?2つ選択してください。
+1. アプリケーションにPutMetricDataを許可する。
+2. アプリケーションにputTracesegmentsを許可する。
+3. Boto3を使う。
+4. X-Ray SDKを使って送信する。
+5. X-rayで対象のアプリケーションとして選択する。
+<details><div>
+    答え：2.4
+</div></details>
+
+### Q25. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：2
+</div></details>
+
+### Q26. アプリケーションからのAWSAPIへの直接リクエストに対して、４ｘｘエラーメッセージが返されました。どう対応しますか
+1. アプリケーションのプログラムソースコードをデバッグします
+2. エクスぽねんしゃるバックオフアルゴリズムで再試行する
+3. リソースを再起動する
+4. 何もしない
+<details><div>
+    答え：1
+</div></details>
+
+### Q27. Lambda関数でスロットリングエラーが発生しました。何を確認しますか
+1. IAMロールにアタッチされているIAMポリシー
+2. アクティブトレースの設定
+3. Lambda関数の同時実行する
+4. Lambda関数のメモリを減少する
+<details><div>
+    答え：3
+</div></details>
+
+### Q28. KMSへのAPIリクエストでスロットリングエラーが発生しました。何を確認しますか
+1. クォータ引き上げリクエスト
+2. APIリクエストの並列処理
+3. キーのローテーション
+4. SecretsManagerの使用
+<details><div>
+    答え：1
+</div></details>
+
+### Q29. 開発ユーザーにリザーブドインスタンスの購入は許可したくありません。そして、EC２のほとんどの権限は許可しています。本当にこのユーザーでリザーブドインスタンスの購入アクションがブロックされているか、確認しておきたいです。どうすればいいですか
+1. 開発ユーザーにパスワードを教えてもらって、マネジメントコンソールにログインして操作する
+2. 開発ユーザーにアクセスキーを教えてもらって、CLIで試してみる
+3. 開発ユーザー自身にリザーブドインスタンスの購入を試してもらう。万が一のことを考えて一番コストの低いインスタンスにしておく
+4. IAMポリシーシミュレーターで確認する
+<details><div>
+    答え：4
 </div></details>
 
 ### Q. 
