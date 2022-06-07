@@ -15,5 +15,12 @@
 
 ## Bigtable を使いこなす！KARTE で秒間 13 万イベントを 0.x 秒以内に捌く秘訣
 
+# Google Cloud Data Analytics
+## 6/7：Database OnAir
+### BigQueryで始めるSQL
+* 初級のSQLな話
+    
+### データ分析におけるデータガバナンス
 
-## 
+### BigQuery の強みを活かしたエンタープライズ基盤のクラウド化実践
+* ブレインパッドのプレゼン
