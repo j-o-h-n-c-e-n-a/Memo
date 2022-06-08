@@ -51,6 +51,8 @@
 #### RDS
 
 ### 1.1.b.リリースプロセス
+* Lambda関数
+    + Node.jsの場合、パラメータ：ZipFileを設定
 ### 1.1.c.CI/CDパイプライン
 ### 1.1.d.デプロイパターン
 #### In-Place
@@ -111,6 +113,7 @@
     + Outputs：リソースのプロパティの値
 #### AWS SAM
     CloudFormationの拡張機能で、サーバーレスアプリケーションの開発とデプロイを素早く開始できる
+* CloudFormationテンプレートにおいて、AWS::Serverless Transform設定で使用する
 #### OpsWorks
 
 ### 1.3.デプロイサービス
@@ -197,6 +200,9 @@
 * Active Directory 連携
 * 外部 ID プロバイダー連携
 #### シークレット情報の管理
+* Secrets Manager
+    + 資格情報の保持
+    + 定期的にローテーション
 * Security Token Service：一時的な認証情報の提供
 
 ### データおよびアプリケーションのセキュリティ、暗号化
@@ -233,6 +239,8 @@
 * リソースやAPIを直接公開することは避け、AWSエッジサービスやAPIゲートウェイを使用する
 * サーバーにセッション状態を保存していては優れたアーキテクチャにならない
 * インフラストラクチャを疎結合化する
+* 動的変数
+    + IAMポリシーの設定に使用する
 #### AWS API
 #### SDK
     認証情報を参照する順番   
@@ -242,6 +250,9 @@
 4. コンテナのcredentials
 5. EC2のInstance profile credentials
 #### Toolkit
+* CLI
+    + aws-cli
+        - --dry-run：IAMポリシーの引数など、設定が問題ないかを確認
 #### AWS Cloud9
 
 ### ストレージ
@@ -259,8 +270,9 @@
 #### Amazon DynamoDB
     NoSQL。トランザクションが不要で結果整合性が担保されていればよいデータが対象
 * 読み込みキャパシティユニット
-    + 結果整合性なら最大4KBで2回/s
-    
+    + 結果整合性なら最大4KBで[2回]/s
+* 大容量データの暗号化
+    + 暗号化SDKを使用して暗号化されたファイルをLambda関数でエンベロープする必要がある
 * グローバルセカンダリインデックスでは一貫性のある読み取りをサポートしていない
 * 一貫性のある読み取りをDAXクラスターにリクエストした場合、結果はキャッシュされない
 * DynamoDBストリームとLambdaトリガーの併用はベストプラクティス
@@ -274,10 +286,14 @@
 
 ### コンピューティング、API
 #### Lambda
-* タイムアウトは最大15分
+* タイムアウトは最大15分（デフォルト30秒）
 * 環境変数は最大4KB
 * 関数をスケジューリングするベストプラクティスはCloudWatch Iventを使用すること
 * エイリアス機能
+* 暗号化：ヘルパーを使用
+    + 環境変数を使用する
+    + KMSを使用する
+* オーソライザー：トークンベース、リクエストパラメータベース
 #### API Gateway
 * Cognito設定
     + IDプール
@@ -317,6 +333,9 @@
 * オンプレミスからAWSへのブリッジ
 * サードパーティクラウドとのコネクタ
 #### Kinesis Streams 
+* Kinesisシャードが不十分な場合
+    + シャードを分割
+    + インスタンスサイズを増強
 #### StepFunctions
 * Lambda関数、SNS Publish、ETL
 * モニタリング
@@ -346,6 +365,7 @@
     + 2つの制約
         1. distinctInstance - それぞれのタスクは異なるコンテナインスタンスに配置する
         2. memberOf - クラスタークエリ言語を使用して制約を定義可能     example:t2のインスタンスにのみタスクを配置する
+* ポートマッピングとタスク定義
 #### EKS
 
 ## 4.リファクタリング
@@ -402,6 +422,8 @@
 * API Gateway のモニタリング
     + Latency：API Gateway がクライアントからリクエストを受け取ってから、クライアントにレスポンスを返すまでの時間
     + IntegrationLatency：API Gateway がバックエンドにリクエストを中継してから、レスポンスを受け取るまでの時間。
+* S3との統合
+    + CodeBuildによってS3にアップロードされた事項データのログを確認できる
 
 #### VPCフローログ
 * CloudWatch Logsへの発行する場合は、IAMロールが必要
@@ -413,6 +435,7 @@
     + インターセプター コードに追加して受信 【HTTP リクエストをトレース】する
     + クライアントハンドラー アプリケーションが他の AWS サービスの呼び出しに使用する AWS SDK クライアントを計測する
     + An HTTP クライアント 別の内部および外部 HTTP ウェブサービス呼び出しを計測する
+    + Annotation（注釈）を使用して、リクエスト、環境、またはアプリケーションに関する追加情報を記録できます
 * EC2・ECS・Lambda・ElasticBeanstalkなどど連携可能
 * セグメント：動作に関するデータ（リソース名、リクエスト詳細など）
 * サブセグメント：呼び出しに関する追加の詳細な情報（AWSサービス、データベースなど）
@@ -1818,7 +1841,7 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
     答え：3
 </div></details>
 
-### Q11. CLIやSDKでリクエストが実行されているリージョンは、何によって決定されますか
+### !Q11. CLIやSDKでリクエストが実行されているリージョンは、何によって決定されますか
 1. オプションやコードで指定した場合はそれが優先され、指定がない場合は、.aws/configに設定されているデフォルトリージョンで実行される
 2. .aws/configが設定されていれば、オプションやコードで指定しても.aws/configが優先される
 3. CLI、SDKを使うクライアントの地域によって決定される
@@ -1827,7 +1850,7 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
     答え：1
 </div></details>
 
-### Q12. 次のIAMポリシーは意図したとおりに動作しません。何を変更すればよいですか
+### !Q12. 次のIAMポリシーは意図したとおりに動作しません。何を変更すればよいですか
 1. EffectをDenyにする
 2. Actionの[]を外す
 3. Conditionを追加する
@@ -1946,7 +1969,7 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
     答え：3
 </div></details>
 
-### Q25. EC2インスタンスからDynamoDBに対して書き込みと読み込みを行うアプリケーションがあります。土の設定がセキュアな方法でしょうか
+### Q25. EC2インスタンスからDynamoDBに対して書き込みと読み込みを行うアプリケーションがあります。どの設定がセキュアな方法でしょうか
 1. アクセスキーIDとシークレットアクセスキーをコードに含める
 2. アクセスキーIDとシークレットアクセスキーを.aws/credentialsに含める
 3. アクセスキーIDとシークレットアクセスキーを環境変数に含める
@@ -1964,7 +1987,7 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
     答え：2
 </div></details>
 
-### Q27. マネジメントコンソールからEC2用のIAMロールを作成したときに自動で作成されるものはどれですか？２つ
+### !Q27. マネジメントコンソールからEC2用のIAMロールを作成したときに自動で作成されるものはどれですか？２つ
 1. ec2.amazonaws.comからのsts:AssumeRoleを許可した信頼ポリシー
 2. CloudWatch Logsにログを書き込むデフォルトの実行ポリシー
 3. メタデータで確認できるアクセスキーID,シークレットアクセスキー、トークン
@@ -2562,7 +2585,7 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
 
 ## 模擬問題
 
-### Q1. 企業はコーポレートサイトをAWSに移行しました。画像、HTML,CSS、JavaScriptは、S3に配置しました。サイトには資料請求フォームがあります。顧客が情報を入力して、送信ボタンを押下した後、情報をDynamoDBに格納し、担当者に通知するPythonのプログラムがあります。JavaScriptからはREST APIにリクエストすることができます。どのサービスを使えば、、素早く構築し、コスト効率よく運用できますか
+### Q1. 企業はコーポレートサイトをAWSに移行しました。画像、HTML、CSS、JavaScriptは、S3に配置しました。サイトには資料請求フォームがあります。顧客が情報を入力して、送信ボタンを押下した後、情報をDynamoDBに格納し、担当者に通知するPythonのプログラムがあります。JavaScriptからはREST APIにリクエストすることができます。どのサービスを使えば、素早く構築し、コスト効率よく運用できますか
 1. CloudWatch
 2. APIGateway
 3. Glue
@@ -2601,7 +2624,7 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
 
 ### Q5. アプリケーションの開発時に、AWS Key Management Service のカスタマーマスターキーへのリクエストでスロットリングエラーが発生していることを確認しました。対応として何を検討しますか。
 1. 暗号化・複合化のバッチ処理
-2. クォータのalき上げ申請リクエスト
+2. クォータの引き上げ申請リクエスト
 3. CloudHSMの利用
 4. 暗号化処理の削減
 <details><div>
@@ -2621,7 +2644,7 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
 1. 再試行ロジックを実装する
 2. エクスポネンシャルバックオフアルゴリズムで再試行ロジックを実装する
 3. AWSサポートへ連絡する
-4. クォータalき上げ申請をリクエストする
+4. クォータ引き上げ申請をリクエストする
 <details><div>
     答え：2
 </div></details>
@@ -2671,7 +2694,7 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
     答え：4
 </div></details>
 
-### Q13. ユーサーをバーティションキーとして個人文書を管理しているDynamoDBテーブルがあります。自分がオーナーになっている文書しか表示させてはいけません。アプリケーション上でもこの仕様に沿って開発を行っていますが、企業はさらにAINSのAPIレベルでの制御も要件に追加しました。どのようにして実現しますか?1つ選択してください。
+### Q13. ユーサーをパーティションキーとして個人文書を管理しているDynamoDBテーブルがあります。自分がオーナーになっている文書しか表示させてはいけません。アプリケーション上でもこの仕様に沿って開発を行っていますが、企業はさらにAINSのAPIレベルでの制御も要件に追加しました。どのようにして実現しますか?1つ選択してください。
 1. ユーザーIDごとにDynamoDBテーブルを分けて、ResourceARNのテーブル名にポリシー変数を使用する。リクエストごとに認証情報を切り替える
 2. DynamoDBのリソースベースのテーブルポリシーで制御する
 3. アプリケーションに適用するIAMポリシーにConditionを追加してdynamodb:LeadingKeysを含める
@@ -2681,17 +2704,17 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
 </div></details>
 
 ### Q14. オフラインストアの商品売り上げ記録を管理しているDynamoDBテーブルがあります。パーティションキーは商品ID、ソートキーは伝票明細No.です。このDynamoDBテーブルはすでに運用中です。属性の販売地域軸で販売日時明細No.の範囲での検索を、アプリケーションから迅速に行えるようにしたいと考えています。
-1. 販売地域をバーティシンキー、販売日時明細Noをソートキーとしたローカルセカンダリインデックスを作成する。
-2. 販売地域をバーティシンキー、販売日時明細Noをソートキーとしたグローバルセカンダリインデックスを作成する。
-3. 商品旧をバーティションキー、販売日時明細Noをソートキーとしたローカルセカンダリインデックスを作成する。
-4. グローバルテープレを作成する。
+1. 販売地域をパーティションキー、販売日時明細Noをソートキーとしたローカルセカンダリインデックスを作成する。
+2. 販売地域をパーティションキー、販売日時明細Noをソートキーとしたグローバルセカンダリインデックスを作成する。
+3. 商品IDをパーティションキー、販売日時明細Noをソートキーとしたローカルセカンダリインデックスを作成する。
+4. グローバルテーブルを作成する。
 <details><div>
     答え：2
 </div></details>
 
-### Q15. プロフィール写真の情報を管理しているDynamoDBテーブルを新規作成します。プロフィール写真はバケットに格納しています。パーティションキーはユーザー旧、画像ファイル旧がソートキーです。このDynamoDBテーブルには日ekognitionで解析した結果を属性として保管します。人事部門がユーサーIDごとにSmⅱe値のレンジで検索をします。どのようにしますか?1つ選択してください。
-1. ユーサーIDをバーティションキー、Smileをソートキーとしたグローバルセカンダリインデックスを作成する。
-2. ユーサーIDをバーティションキー、smileをソートキーとしたローカルセカンダリインデックスを作成する。
+### Q15. プロフィール写真の情報を管理しているDynamoDBテーブルを新規作成します。プロフィール写真はバケットに格納しています。パーティションキーはユーザーID、画像ファイルIDがソートキーです。このDynamoDBテーブルにはRekognitionで解析した結果を属性として保管します。人事部門がユーサーIDごとにsmile値のレンジで検索をします。どのようにしますか?1つ選択してください。
+1. ユーサーIDをパーティションキー、smileをソートキーとしたグローバルセカンダリインデックスを作成する。
+2. ユーサーIDをパーティションキー、smileをソートキーとしたローカルセカンダリインデックスを作成する。
 3. 画像ファイルIDをパーティションキー、smileをソートキーとしたグローバルセカンダリインデックスを作成します
 4. 画像ファイルIDをパーティションキー、smileをソートキーとしたローカルセカンダリインデックスを作成します
 <details><div>
@@ -2699,10 +2722,10 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
 </div></details>
 
 ### Q16. 注文を管理するDynamoDBテーブルを設計しています。パーティションキーは注文日にする必要が要件としてあります。注文ID属性をソートキーにします。しかし、このままでは当日の注文記録の項目が頻繁に書き込まれるので、特定のパーティションに書き込みが集中することが想定されます。複数のパーティションに効率よく分散させながら、特定の項目を簡単にGetItemするためにはどのようにすればいいでしょうか?1つ選択してください。
-1. 注文IDをバーティションキーにする。
-2. ランダムなサフィックス値1~200を注文日の後ろに付加して、パーアイションが均一に分散されるようにする。
-3. 注文をもとに計算したサフィックス値1~200を注文日の後ろに付加して、バーティションが均一に分散されるようにする。
-4. ソートキーに注文IDー商品IDとして連結する。
+1. 注文IDをパーティションキーにする。
+2. ランダムなサフィックス値1~200を注文日の後ろに付加して、パーティションが均一に分散されるようにする。
+3. 注文をもとに計算したサフィックス値1~200を注文日の後ろに付加して、パーティションが均一に分散されるようにする。
+4. ソートキーに注文ID-商品IDとして連結する。
 <details><div>
     答え：3
 </div></details>
@@ -2725,7 +2748,7 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
     答え：4
 </div></details>
 
-### Q19. AGatewayのGETメソッドリクエストのステージでキャッシュを有効にしています。ほとんどのクライアントからはキャッシュされた特定時点のデータが得られますが、特定のクライアントからはクライアント側のリクエストにより最新の結果を取得する必要があります。どうすれば実現できますか?1つ選択してください。
+### Q19. APIGatewayのGETメソッドリクエストのステージでキャッシュを有効にしています。ほとんどのクライアントからはキャッシュされた特定時点のデータが得られますが、特定のクライアントからはクライアント側のリクエストにより最新の結果を取得する必要があります。どうすれば実現できますか?1つ選択してください。
 1. マネジメントコンソールより、ステージ設定でキャッシュ全体のフラッシュを実行する。
 2. APIGatewayのキーごとのキャッシュの無効化で認可を設定し、クライアントアプリケーションにはexecute-api:lnvalidateCacheを許可する。クライアントからCache-Control:max-age=Oヘッダーを含むリクエストを送信する。
 3. APIGatewayのキーごとのキャッシュの無効化で認可を設定し、クライアントからCache-Control:max-age=Oヘッダーを含むリクエストを送信する。
@@ -2734,12 +2757,12 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
     答え：2
 </div></details>
 
-### Q20. EC2で構築している日TTPS^曰サーバーたとになりました。EC2へのアクセスはノG日tow日Y設定後は直接的なリクエストアクセ=を制限00要00
+### Q20. EC2で構築しているHTTPSサーバーになりました。EC2へのアクセスはAPI Gateway設定後は直接的なリクエストアクセスを制限します
 1. APIキーを有効化する。
 2. IAM認証を有効化する。
 3. APIGatewayでクライアント証明書を作成する。
 4. Lammbdaオーソライザーを設定する。
-5. APIステージで作成した証明書を選択する。八ックエンドサーバー証明書を検証するよう設定する。apiのテストでクライアント証明書を指定してテストする
+5. APIステージで作成した証明書を選択する。バックエンドサーバー証明書を検証するよう設定する。apiのテストでクライアント証明書を指定してテストする
 <details><div>
     答え：3.5
 </div></details>
@@ -2801,8 +2824,8 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
 ### Q27. 開発者は東京リージョンとシンガポールリージョンにデプロイするLambda関数を開発しています。デプロイパッケージをZIPで作成したところ、50mbをこえることがわかりました。どうやってデプロイしますか
 1. それぞれのリージョンのLambda関数を作成して、マネジメントコンソールでローカルのZIPファイルをそれぞれアップロードする。
 2. それぞれのリージョンのLambda関数を作成して、東京リージョンのS3バケットにアップロードしたZIPファイルを、それぞれのLambda関数にアップロードする
-3. それぞれのリージョンのLambda関数を作成して、AWSCLIでローカルのZIPファイルをそれぞれアップロードする。
-4. それぞれのリージョンのLambda関数を作成して、それぞれのリージョンのS3バケットにアップロードしたZIPファイルを、それぞれのLabda関数にアップロードする。
+3. それぞれのリージョンのLambda関数を作成して、AWS CLIでローカルのZIPファイルをそれぞれアップロードする。
+4. それぞれのリージョンのLambda関数を作成して、それぞれのリージョンのS3バケットにアップロードしたZIPファイルを、それぞれのLambda関数にアップロードする。
 <details><div>
     答え：4
 </div></details>
@@ -2810,8 +2833,8 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
 ### Q28. アプリケーションからにアップロードされた分析情報について、アップロードされるごとに判定・加工処理をする必要があります。どの選択肢が最もコスト効率がいいでしようか?1つ選択してください。
 1. S3のイベントでSNSに通知して、サブスクリプションのSQSにメッセージを送信する。SQSメッセージを受信するEC2コンシューマーアプリケーションで判定・加工処理をする。
 2. 10分おきにS3バケットを見に行くLambda関数を開発して、判定・加工処理をする。
-3. s3のイベントでSQSにメッセージを送信する。SQSメッセージを受信するEC2コンシューマーアプリケーションで判定・加工処理をする。
-4. s3のイベントでLambda関数に通知して、Lambda関数で判定・加工処理をする。
+3. S3のイベントでSQSにメッセージを送信する。SQSメッセージを受信するEC2コンシューマーアプリケーションで判定・加工処理をする。
+4. S3のイベントでLambda関数に通知して、Lambda関数で判定・加工処理をする。
 <details><div>
     答え：4
 </div></details>
@@ -2836,14 +2859,14 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
 
 ### Q31. 開発者は、Lambda関数が継続的に実行されているときと、時間が空いてから実行されたときの実行時間の違いがあることに気がつきました。このようなことか発生する原因は次のどれでしようか?1つ選択してください。
 1. ランダムに発生する。
-2. コー丿レドスタートによって発生する。
+2. コールドスタートによって発生する。
 3. リージョンによって発生する。
 4. アベイラビリティーゾーンによって発生する。
 <details><div>
     答え：2
 </div></details>
 
-### Q32. Application Load Balancerから、複数のEc2イスタスで構成されるオートスケーリングにリクエストを分散しています。セッション情報はEC2インスタンスのローカルで保持しています。CIOUdWatchダッシュボードでEC2インスタンスごとのリクエスト状況をモニタリングしていると、負荷が特定のインスタンスに偏っていることがわかりました。このままでは起動テンプレートのインスタンスサイズを大きくしなければなりません。どのように対応しますか?1つ選択してください。
+### Q32. Application Load Balancerから、複数のEc2インスタンスで構成されるオートスケーリングにリクエストを分散しています。セッション情報はEC2インスタンスのローカルで保持しています。CIOUdWatchダッシュボードでEC2インスタンスごとのリクエスト状況をモニタリングしていると、負荷が特定のインスタンスに偏っていることがわかりました。このままでは起動テンプレートのインスタンスサイズを大きくしなければなりません。どのように対応しますか?1つ選択してください。
 1. ApplicationLoadBalancerのスティッキーセッションを無効にする。
 2. ApplicationLoadBalancerをNetworkLoadBalancerに変更する。
 3. ApplicationLoadBalancerのスティッキーセッションを無効にして、セッション情報をElastiCacheに保存する。
@@ -2852,7 +2875,7 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
     答え：3
 </div></details>
 
-### Q33. S3バケットをユーザー管理のKMSのCMK(カスタムマスターキー)でデフォルト暗号化設定しています。このS8バケットに他のアカウントのMユーサーがオブジェクトをダウンロード、アップロードするには、次のうちどのポリシー設定が必要でしようか?1つ選択してください。
+### Q33. S3バケットをユーザー管理のKMSのCMK(カスタムマスターキー)でデフォルト暗号化設定しています。このS3バケットに他のアカウントのMユーサーがオブジェクトをダウンロード、アップロードするには、次のうちどのポリシー設定が必要でしようか?1つ選択してください。
 1. 対象リソースに対してkms:Decryptとkms:GenerateDataKey、s3:GetObject、s3.PutObject、s3:ListBucketを許可したIDべースのボリシーを対象のIAMユーサーにアタッチする。
 2. キーポリシーで対象IAMユーサーに対してkms:Decryptとkms:GenerateDataKeyを許可、バケットボリシーで対象IAMユーザーに対してs3:GetObject、s3:PutObject、s3:ListBucketを許可。
 3. このデフォルト暗号化にポリシー設定は必要ない。
@@ -2861,20 +2884,20 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
     答え：4
 </div></details>
 
-### Q34. s3バケットでSSE-Saのデフォルトの暗号化を設定しました。ユーザーがバケットに保存するオブジ,クトを確実に暗号化したいと考えています。どのようなバケットボリシーを設定する必要がありますか?
+### Q34. s3バケットでSSE-S3のデフォルトの暗号化を設定しました。ユーザーがバケットに保存するオブジ,クトを確実に暗号化したいと考えています。どのようなバケットボリシーを設定する必要がありますか?
 1. バケットボリシーには何も設定する必要はない。
 2. Conditionのs3:x-amz-server-side-encryptionにaws:kmsを指定する
-3. Conditionのs3:x-amz-server-side-encrYptionにtrueを指定する。
-4. Conditionのsax-amz-server-side-encrYPtionにAES256を指定する
+3. Conditionのs3:x-amz-server-side-encryptionにtrueを指定する。
+4. Conditionのs3:x-amz-server-side-encryptionにAES256を指定する
 <details><div>
     答え：1
 </div></details>
 
 ### Q35. S3バケットにSSE-KMSでのユーサー管理のCMKを使ったデフォルト暗号化を設定しました。設定したCMKで暗号化されたオフシェクトのみをバケットにアップロード許可したいです。どうすればいいですか?
 1. バケットボリシーには何も設定する必要はない。
-2. Conditionのs8:x-amz-server-side-encryptionでAES256のPutObjectリクエストを拒否する。
-3. Conditionのs8:x-amz-server-side-encryption-aws-kms-key-idで指定したCMK以外のPutObjectリクエストを拒否する。
-4. Conditionのs8:x-amz-server-side-encryptionで、AES256とs8:x-amz-server-side-encryption-aws-kms-key-idで指定したCMK以外のPutObjectリクエストを拒否する。
+2. Conditionのs3:x-amz-server-side-encryptionで、AES256のPutObjectリクエストを拒否する。
+3. Conditionのs3:x-amz-server-side-encryption-aws-kms-key-idで指定したCMK以外のPutObjectリクエストを拒否する。
+4. Conditionのs3:x-amz-server-side-encryptionで、AES256とs3:x-amz-server-side-encryption-aws-kms-key-idで指定したCMK以外のPutObjectリクエストを拒否する。
 <details><div>
     答え：4
 </div></details>
@@ -2888,7 +2911,7 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
     答え：2
 </div></details>
 
-### Q37. 本社が東京にある企業のシンガポールブランチがあります。基幹システムのデータベースは本社の日DSforMySQLで管理しています。シンガポールフランチでは、データベースのデータを使って読み込み専用のアプリケーションを運用しています。このアプリケーションではデータベースへのクエリの結果を画面上に表示します。ユーザーからアプリケーション、アプリケーションサーバーからデータベースへのレイテンシーを抑えるためにはどのような構成にしますか?1つ選択してください。
+### Q37. 本社が東京にある企業のシンガポールブランチがあります。基幹システムのデータベースは本社の RDS for MySQL で管理しています。シンガポールフランチでは、データベースのデータを使って読み込み専用のアプリケーションを運用しています。このアプリケーションではデータベースへのクエリの結果を画面上に表示します。ユーザーからアプリケーション、アプリケーションサーバーからデータベースへのレイテンシーを抑えるためにはどのような構成にしますか?1つ選択してください。
 1. RDSのクロスリージョンスナップショットコピーから毎日リストアしたデータベースに接続する。
 2. シンガポールリージョンのアプリケーションサーバーから東京リージョンのデータベースに接続する。
 3. RDSのクロスリージョンリードレプリカをシンガポールリージョンに作成して接続する。
@@ -2898,9 +2921,9 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
 </div></details>
 
 ### Q38. 企業ではPub/Sub機能を使ってチャットツールを開発中です。応答を高速にするためにインメモリデータベースを使用することを検討しています。どのデータベースサービスが適していますか
-1. ROSforMYSQL
-2. ElastiCacheforMemcached
-3. ElastiCacheforRedis
+1. ROS for MYSQL
+2. ElastiCache for Memcached
+3. ElastiCache for Redis
 4. AuroraforPostgreSQL
 <details><div>
     答え：3
@@ -2924,7 +2947,7 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
     答え：2
 </div></details>
 
-### Q41. モバイルとWebから江尾久インできるアプリケーションを計画しています。エンドユーザーはサインアップとサインインをアプリケーション独自の炉訃音情報として登録して認証することも、ソーシャルネットワークサービスの認証を使うこともできるようにします。どのようにして実装すると開発効率を高めることができますか
+### Q41. モバイルとWebからサインインできるアプリケーションを計画しています。エンドユーザーはサインアップとサインインをアプリケーション独自のログイン情報として登録して認証することも、ソーシャルネットワークサービスの認証を使うこともできるようにします。どのようにして実装すると開発効率を高めることができますか
 1. 独自の認証基盤を開発する
 2. CognitoIDプールを使用してサインアップ、サインインを実装する
 3. Cognitoユーザープールを使用してサインアップ、サインインを実装する
@@ -2954,16 +2977,16 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
 ### Q44. 工ンドユーザーがサインインするフォームのデザインにはこだわりませんが、企業のロゴだけは表示しておきたいです。ウェブアプリケーションの開発はほぼ完了していますが、サインインフォームはまだ開発していません。1日も早く開発を完了するためにはどうすればいいですか?1つ選択してください。
 1. S3バケットの静的なサインインフォームを開発し、企業ロゴをアップロードする。
 2. EC2インスタンスにPHPで開発したサインインフォームをデブロイし、企業ロゴはS3バケットにアップロードする。
-3. EC2インスタンスにPHPで開発したサインインフォームをデブロイする。企業ロゴはs3バケットにアップロードしてCloudFront経由で配信し、ACMで証明書を設定してHTTPS接続を強制する。
+3. EC2インスタンスにPHPで開発したサインインフォームをデブロイする。企業ロゴはS3バケットにアップロードしてCloudFront経由で配信し、ACMで証明書を設定してHTTPS接続を強制する。
 4. Cognitoユーザープールの組み込みログインフォームに企業ロゴファイルをアップロードして使用する。
 <details><div>
     答え：4
 </div></details>
 
-### Q45. 開発者はVPCフローログをCudWatchLogsに書き込むためにIAMロールを作成しています。IAMロールの信頼ポリシーはどのような設定が必要でしようか?1つ選択してください。
-1. vpc-flow-logs.amazonaws.comにlogs PutLogEventsを許可する
+### Q45. 開発者はVPCフローログをCloudWatchLogsに書き込むためにIAMロールを作成しています。IAMロールの信頼ポリシーはどのような設定が必要でしようか?1つ選択してください。
+1. vpc-flow-logs.amazonaws.comに logs PutLogEventsを許可する
 2. vpc.amazonaws.comにlogs PutLogEventsを許可する
-3. vpc-flow-logs.amazonaws.comにsts PutLogEventsを許可する
+3. vpc-flow-logs.amazonaws.comに sts PutLogEventsを許可する
 4. vpc.amazonaws.comにlogs sts.AssumeRoleを許可する
 <details><div>
     答え：3
@@ -2971,9 +2994,9 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
 
 ### Q46. 企業で個人向けオブジェクトをS3バケットcorpbucketで管理しています。IAMユーザーは自分の名前がプレフィックスのついたオブジェクトのみにしかアクセスできないよう制限されます。IAMユーザーにアタッチするポリシーの効率的な設定はつぎのどれでしょうか
 1. ListBucketを許可するResourceにcorpbucketを指定して、PutObjectとGetObjectを許可するResourceにarn:aws:s3::corpbucket/*を設定する
-2. ListBucketを許可するResourceにcorpbucketを指定してConditionにS3:prefix:$laws;username/*を設定し、PutObjectとGetObjectを許可するResourceにarn:aws:s3::corpbucket/*を設定する
-3. ListBucketを許可するResourceにcorpbucketを指定し、PutObjectとGetObjectを許可するResourceにcorpbucket/&laws:username/*を設定する
-4. ListBucketを許可するResourceにcorpbucketを指定してConditionにS3:prefix:$laws;username/*を設定し、PutObjectとGetObjectを許可するResourceにcorpbucket/&laws:username/*を設定する
+2. ListBucketを許可するResourceにcorpbucketを指定して、ConditionにS3:prefix:$laws;username/*を設定し、PutObjectとGetObjectを許可するResourceにarn:aws:s3::corpbucket/*を設定する
+3. ListBucketを許可するResourceにcorpbucketを指定して、PutObjectとGetObjectを許可するResourceにcorpbucket/&laws:username/*を設定する
+4. ListBucketを許可するResourceにcorpbucketを指定して、ConditionにS3:prefix:$laws;username/*を設定し、PutObjectとGetObjectを許可するResourceにcorpbucket/&laws:username/*を設定する
 <details><div>
     答え：4
 </div></details>
@@ -2987,11 +3010,11 @@ https://dev.classmethod.jp/articles/awssummit-aws-27/
     答え：4
 </div></details>
 
-### Q48. 稼働中のサービスに機能を追加することになり、起動中のEC2インスタンスにIAMロールを割り当てることになりました。以下から必要なものつ選択してください。
+### Q48. 稼働中のサービスに機能を追加することになり、起動中のEC2インスタンスにIAMロールを割り当てることになりました。以下から必要なもの２つ選択してください。
 1. 起動中のEC2インスタンスにIAM口一ルを割り当てることはできないので、新規のEC2インスタンスを起動する。
-2. EC2インスタンスにIAMロールを割り当てるIAMユーザーに、GetRoleとPassROIeアクションを許可。
-3. ec2.amazonaWScomからのSts.assumeRoleを許可をした信頼ポリン一が設定されているIAMロールとインスタンスプロファイル。
-4. ec2、amazonawscomからのSts.AssumeROloを許可をした信頼ポリン一が設定されているIAMロール。
+2. EC2インスタンスにIAMロールを割り当てるIAMユーザーに、GetRoleとPassRoleアクションを許可。
+3. ec2.amazonawscomからのSts.AssumeRoleを許可をした信頼ポリン一が設定されているIAMロールとインスタンスプロファイル。
+4. ec2.amazonawscomからのSts.AssumeRoleを許可をした信頼ポリン一が設定されているIAMロール。
 5. インスタンスプロファイル。
 <details><div>
     答え：2.3

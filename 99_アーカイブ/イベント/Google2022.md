@@ -16,7 +16,7 @@
 ## Bigtable を使いこなす！KARTE で秒間 13 万イベントを 0.x 秒以内に捌く秘訣
 
 # Google Cloud Data Analytics
-## 6/7：Database OnAir
+## 6/7～8：Database OnAir
 ### BigQueryで始めるSQL
 * 初級のSQLな話
     
@@ -24,3 +24,11 @@
 
 ### BigQuery の強みを活かしたエンタープライズ基盤のクラウド化実践
 * ブレインパッドのプレゼン
+
+### AlloyDB for PostgreSQL 概要とアーキテクチャ
+* マルチリージョンは未対応（プレビュー中のため）
+* BigQueryのキャッシュ機能との比較
+    + 製品としての機能ですみわけ
+    + 機能比、性能比：OLTPはAlloy、大容量の分析はBQ
+* pg_hint_plan
+    + PostgreSQLの拡張機能モジュールは基本的に使用できる（対応一覧有）
