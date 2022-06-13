@@ -1,0 +1,236 @@
+﻿Building a content project.
+
+We already saw.
+
+You can guess.
+
+Looking at you know the name all the charges for your project is associated to the billing account.
+
+If I go to billing you can find for your current project.
+
+There is an associated billing account right.
+
+If I click on manage
+
+you can the name billing account you can close billing on but you can go ahead and create new billing
+
+account for your purpose and then you can associate the new billing account to you are a project so
+
+you can provide or pay the charges from that particular billing back on so you can create multiple billing
+
+account for multiple are different kind of projects are different kinds of resources but just keeping
+
+in mind that the resources are accumulated to the project and you will get the bill based on the project
+
+and you need to define the billing account which will be one active in one point in time to pay from
+
+that particular billing account so you can find this particular billing account has gone to four projects
+
+in it.
+
+If you click inside click on the billing account you can get the reports for your cloud charges
+
+you can identify cost table you can find the breakdown of your charges what you can do is and that this
+
+is very much important.
+
+You can go ahead and create the alerts for your billings.
+
+An example you can create alert which says a cloud bill goes to 500 dollars right.
+
+I need to get an alert and I want applied for all the projects and all the services
+
+I can't say I can specify the amount that is 500 dollars right.
+
+Either you can specify more or you can see less money spent next and then you can define dollars like
+
+the first to lose its values on purity percent of the amount.
+
+Second alert is on 90 percent of the amount and third is on the third is on the undead percent up your
+
+amount.
+
+So trigger is on actual forecasted actual and forecasted.
+
+This is very good for you to manage or control your billing or the spend on Google cloud services.
+
+You can create cloud pops up topic for these notifications or you can create e-mail alerts so send an
+
+email alert notification on billing it means users for these ones so all the billing I mean if you create
+
+say three or four billing admins for this particular billing account then you will be.
+
+So all those for billing administrator will get an ism as my sentiments hinting that you are crossing
+
+this particular limit.
+
+So usually what I do is I create an alert that is ten dollars of spend and you also can do it right.
+
+That so I will get to know that if at all I am going beyond certain limit are from my trial period.
+
+This was happened when I was trying to do the demos for my earlier causes and in one point in time I
+
+enabled from trial to the actual account and then Google charged me around fifty six dollars on my account.
+
+So if you want to award that you just put the ten dollars as a target amount and this will just inform
+
+you if at all you are crossing those limit and you will get an email message.
+
+So I'm just creating that alert now.
+
+So I have this particular alert and this will tell me.
+
+So what they do happen is after the hundred dollar credit if I'm going beyond that 300 Google will start
+
+charging me and then you will get an alert accordingly.
+
+You can do billing export.
+
+You can take the data and then export the transactions into big city and you can do analysis there you
+
+can find if there aren't any transactions.
+
+I don't have any because I have created the new service here so you can find there are some things which
+
+we have created right API calls and all that and they charged me but all of that those charges went
+
+inside the free tier and Google is not charging me.
+
+And then you can do a payment setting and then you can do a payment method if at all you want to create
+
+the new one.
+
+This is my credit card which is there on the account.
+
+And these are like account management you can what you can do is for each and every project there is
+
+a enable disable or change billing.
+
+I can go ahead and say my test user I want to disable billing so that Google will not charge me.
+
+I can say disable billing will will not charge me.
+
+If you look at the hierarchy the way it works is you have access or control on these resources and project
+
+is your container and that's where you will get charged.
+
+Let's go out and look at the cloud resources quarter and limits in the next lecture.
+
+
+コンテンツプロジェクトの構築
+
+すでに見た。
+
+あなたは推測することができます。
+
+あなたは、プロジェクトのすべての料金は、課金アカウントに関連付けられている名前を知っている見てください。
+
+課金にアクセスすると、現在のプロジェクトが表示されます。
+
+関連する課金アカウントがありますね。
+
+管理]をクリックすると
+
+課金アカウント名をクリックすると、課金アカウントを閉じることができます。
+
+新しい請求先アカウントを作成し、そのアカウントをプロジェクトに関連付けることで、プロジェクトからの請求や支払いを行うことができます。
+
+また、新しい課金アカウントはプロジェクトに関連付けることができますので、その特定の課金アカウントから課金を行うことができます。
+
+複数の課金アカウントを作成することもできます。
+
+リソースはプロジェクトに蓄積され、プロジェクトに基づいた請求書が発行されることを念頭に置き、請求先アカウントを定義する必要があります。
+
+そして、ある時点でアクティブになる請求先口座を定義し、その口座から支払う必要があります。
+
+そのため、この特定の請求先には4つのプロジェクトがあります。
+
+になっています。
+
+請求先アカウントをクリックすると、クラウド料金のレポートが表示されます。
+
+コストテーブルを確認し、料金の内訳を確認することができます。
+
+は非常に重要です。
+
+先に進み、請求書に対するアラートを作成することができます。
+
+例えば、クラウドの請求が500ドルになったというアラートを作成することができます。
+
+すべてのプロジェクト、すべてのサービスに適用されるアラートが必要です。
+
+500ドルという金額を指定することはできません。
+
+もっと多く指定するか、次に使われる金額を少なくして、ドルを定義するか、どちらかです。
+
+1番目のアラートは、金額の純度パーセントで値を失います。
+
+2番目のアラートは金額の90パーセント、3番目のアラートはアンデッドパーセントで値が上がります。
+
+を設定します。
+
+このように、トリガーは実績と予測に基づきます。
+
+これは、Googleのクラウド・サービスでの課金や支出を管理するのに非常に有効である。
+
+このような通知用にクラウドポップアップトピックを作成したり、メールアラートを作成したりすることができます。
+
+課金に関するアラート通知をメールで送ることもできます。
+
+例えば、この特定の課金アカウントに3～4人の課金管理者を作成した場合、あなたはそうなります。
+
+つまり、課金管理者のすべてに、私の感情としてismが送られ、あなたがこの特定の制限を越えていることをほのめかすのです。
+
+ということです。
+
+通常、私が行うのは、10ドルの支出をするアラートを作成することで、あなたもそれを行うことができます。
+
+そのため、私はすべての場合、私は私の試用期間からである特定の制限を超えて行っていることを知るようになる。
+
+これは、私が以前の原因のためにデモをしようとしていたときに起こったもので、ある時点で私はトライアルから実際のアカウントに有効にし
+
+を有効にすると、Googleは私のアカウントに約56ドルを請求した。
+
+だから、もしあなたが表彰したい場合は、目標金額として10ドルを入れて、これはちょうどあなたがそれらを越えている場合、通知されます。
+
+もし制限を超えたら、メールで知らせてくれます。
+
+今、このアラートを作成しているところです。
+
+この特別なアラートを設定すると、これが教えてくれます。
+
+100ドルのクレジットの後、300ドルを超えると、Googleは私に課金しはじめます。
+
+そして、それに応じてアラートが表示されます。
+
+課金のエクスポートができます。
+
+課金データをエクスポートして、そのトランザクションをビッグシティにエクスポートして、そこで分析を行うことができます。
+
+トランザクションがないかを調べることができます。
+
+私はここで新しいサービスを作ったので、何もありません。
+
+APIコールなどを行い、課金されましたが、その課金はすべて無料層で行われました。
+
+Googleは私に課金していません。
+
+そして、支払い設定と、支払い方法を設定することができます。
+
+新しいものを作成することができます。
+
+これは私のクレジットカードで、アカウントに登録されています。
+
+これらはアカウント管理のようなもので、各プロジェクトに対して、請求の有効化、無効化、変更などを行うことができます。
+
+課金を有効にしたり、無効にしたり、変更したりすることができます。
+
+私は先に進み、私のテストユーザーは課金を無効にして、Googleが私に課金しないようにしたい、と言うことができます。
+
+課金を無効にすると、課金されなくなります。
+
+階層構造を見てみると、リソースへのアクセスやコントロールが可能で、プロジェクトはコンテナです。
+
+があなたのコンテナで、そこが課金される場所です。
+
+次回の講義では、クラウドリソースの四半期ごとの使用量と制限について見ていきましょう。

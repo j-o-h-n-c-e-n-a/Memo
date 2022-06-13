@@ -1,0 +1,172 @@
+﻿Identity and Access Management are if you look at the public cloud involvement either you can actually
+
+treat this as your own on premises right.
+
+There are some people who are trying to access your resources whether it is Web site whether it is your
+
+server whether it is your database right.
+
+So you need to provide permissions or manage the permissions for those users.
+
+There are some users who are accessing your resources or there are some applications accessing your
+
+databases right.
+
+So you need to manage the permissions and that is the case for cloud as well.
+
+So in cloud you have either the individual users are you have a group of users you can either go to
+
+individual permissions or you can go to group or permissions which are bundled inside the rules.
+
+So that is the concept of you know the rules.
+
+So there are group up users who are managing some specific infrastructure you can create a group and
+
+you can assign either the rule or permissions to that particular group.
+
+So as men imply comes our goes you can just manage that particular group and the permissions are the
+
+rules are associated to the group which will be applicable to that particular use it.
+
+If there are some special provision users you can provide access to users directly in stood up instead
+
+of the groups and that's how you can manage the permissions or the rules to that particular user.
+
+But besides the users or group if at all there is an application trying to access your cloud resources
+
+what you can do is you can limit or give permissions to that particular application using the service
+
+account.
+
+It's a new concept altogether.
+
+Inside Google Cloud Platform and the similar concept is used in multiple other cloud platforms notably
+
+as sorry as you are.
+
+But you can restrict the permissions off your Google cloud resources based on the service account to
+
+the application in a high level if you look at the Hitachi it goes.
+
+Same with the resource manager.
+
+If you look at the resource hierarchy the way it is organized in a high level you how organization admin
+
+organization we work for the admin pool where we work and this is managed inside your g suite account
+
+and not in Google Cloud Platform in Google Cloud Platform you can have it that the project creator or
+
+project I mean the resource rules like individual resource look someone trying to create a bucket inside
+
+cloud storage bucket or someone is launching App Engine or someone is managing say computing resources
+
+right.
+
+So this is typical hierarchy.
+
+Same applies to IAM hierarchy as well.
+
+Typically if you look at the policies which are set at the organization level gets replicated up until
+
+the individual resources resourcing it it all the policies parliaments parents policies are a union
+
+of parent as well as the resource individual policies.
+
+If the parent has elastic to do or write more restrictive policies at the resource level as an example
+
+say if you create and group are the user which has got you know one of the project we would access and
+
+then if you go ahead and enable the policy to create a computer engine right you can do that or vice
+
+versa that's it guy as I am it is the way you can restrict and provide access to some users or the users
+
+or I would say application in the context of Google Cloud Platform.
+
+Let's go ahead and look at the billing account and the project and its relation in the next lecture.
+
+
+アイデンティティとアクセス管理は、パブリッククラウドの関与に注目した場合、実際にオンプレミスとして扱うことができます。
+
+これは、自社に存在する権利として扱われます。
+
+Webサイトであれ、サーバーであれ、データベースであれ、あなたのリソースにアクセスしようとする人がいます。
+
+Webサイトであれ、サーバーであれ、データベースであれ。
+
+ですから、そのようなユーザーに対して、アクセス許可を与えたり、アクセス許可を管理したりする必要があります。
+
+リソースにアクセスするユーザーもいれば、データベースにアクセスするアプリケーションもあります。
+
+データベースにもアクセスします。
+
+クラウドの場合も同様です。
+
+クラウドでは、個々のユーザーもいれば、ユーザー・グループもいます。
+
+クラウドでは、個人ユーザーやユーザーグループに対して、個別のパーミッションを設定することもできますし、グループやルールにバンドルされているパーミッションを設定することもできます。
+
+これがルールのコンセプトです。
+
+特定のインフラを管理するグループ・ユーザーがいる場合、グループを作成し、ルールや権限を割り当てることができます。
+
+そのグループにはルールや権限を割り当てることができます。
+
+グループを作って、そのグループにルールや権限を割り当てることができます。
+
+ルールは、そのグループに関連付けられ、特定の用途に適用されます。
+
+特別なユーザがいる場合は、グループの代わりに直接ユーザへのアクセスを提供することができます。
+
+グループではなく、直接ユーザーにアクセスを提供することができますし、その特定のユーザーへのアクセス権やルールを管理することができますどのようにだ。
+
+しかし、ユーザーやグループ以外にも、クラウドのリソースにアクセスしようとするアプリケーションがある場合、そのアプリケーションのアクセス権を制限することができます。
+
+サービスアカウントを使って、そのアプリケーションに制限をかけたり、権限を与えたりすることができます。
+
+アカウントで制限することができます。
+
+これは全く新しいコンセプトです。
+
+Google Cloud Platformでは、同様のコンセプトが他の複数のクラウドプラットフォームでも使われています。
+
+のように、申し訳ありません。
+
+しかし、あなたは、サービスアカウントに基づいて、Googleクラウドのリソースをオフに許可を制限することができます。
+
+日立を見れば、高いレベルでアプリケーションの権限を制限することができます。
+
+リソースマネージャーも同じです。
+
+リソース階層を見ると、高レベルで組織化されている方法ですどのように組織管理者。
+
+組織、私たちが働く管理者プールのために働く、そしてこれはあなたのgスイートアカウントで管理されます。
+
+Google Cloud Platformではなく、Google Cloud Platformで、プロジェクト作成者またはプロジェクト
+
+プロジェクト、つまりリソースのルールです。
+
+クラウドストレージのバケットを作ろうとしている人、App Engineを起動しようとしている人、コンピューティングリソースを管理しようとしている人などです。
+
+といった具合です。
+
+これが典型的な階層です。
+
+同じことがIAMの階層にも当てはまります。
+
+一般的に、組織レベルで設定されたポリシーは、個々のリソースまでレプリケートされます。
+
+個々のリソースのリソースまで複製され、すべてのポリシーは親ポリシーの連合である。
+
+親とリソースの個々のポリシーの連合です。
+
+親が行うには弾性を持っているか、または例として、リソースレベルでより制限のポリシーを書き込む場合
+
+例えば、あなたが作成し、グループは、あなたが知っているプロジェクトの一つを持っているユーザーである場合、我々はアクセスすると言う。
+
+その後に、コンピュータエンジンを作成するポリシーを有効にすると、そのようにすることができますし、その逆も可能です。
+
+その逆もまた然りです。このように、あるユーザーやユーザーへのアクセスを制限することができます。
+
+またはGoogle Cloud Platformの文脈で言うところのアプリケーションにアクセスを制限する方法です。
+
+次の講義では、課金アカウントとプロジェクト、そしてその関連性について見ていきましょう。

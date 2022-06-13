@@ -1,0 +1,216 @@
+﻿GSP resources are cloud resources.
+
+What are those resources when you go here and launch any provision any service any service I would say
+
+any service right.
+
+That becomes the resource for you right.
+
+If you lie and say I've been Jane computing gene that is your resource when you create a network like
+
+VPC inside Google Cloud Platform that is your resource.
+
+All of those are resource and all those resources are related to a project like that.
+
+Keep that as an understanding.
+
+If you look at as a hierarchy if you want to understand resources sources you just need to look at hierarchy.
+
+Typically if you look at there is a company and company has got multiple departments are a group of
+
+are.
+
+I would say business units and those big business units has gotten multiple initiatives out of the project
+
+inside it and that is how you can organize a project or organized project inside the company.
+
+I feel look at this organization and folder where you can mimic the Department of Business Unit or any
+
+other kind of product right.
+
+These two are g suite products and this is not visible.
+
+You can see you can assign the project to an organization but it is not a document usable inside Google
+
+Cloud Platform.
+
+So if at all you want to play around with organization and folders you can go to G suite account and
+
+you can manage it there and we are having one example wherein we are creating shared VPC which will
+
+be shared across multiple project inside it.
+
+But for that particular time you can just hold on to organization and folders understanding you just
+
+need to make an understanding that when you log into a Google Cloud Platform you can only see project
+
+and the resources onwards or you can control only project and resources.
+
+You cannot control the upper part which is like organization and folders
+
+if I proceed further and try to understand what are the resources and what are those categories.
+
+There are global resources which is accessible available anywhere in Google Cloud Platform look look
+
+like network disk images snapshot and networks.
+
+There are some regional resources very specific to that particular region that is static IP address
+
+and the zonal resource that is only accessible inside the zone that is virtual machines VM disk and
+
+all that.
+
+Those are like zonal resources which are these which resides inside that particular zone because if
+
+you look at these are the physical things right.
+
+William discard virtual machines and those are the instances which you launch it inside a particular
+
+zone.
+
+And those are residing in a particular physical data center and those are like zonal resources.
+
+So there are global resources regional resources and donor resources.
+
+The billing happens for the project.
+
+If you create a multiple project inside an account all the resources in that particular project gets
+
+a billing based on the project and not based on the way it is provision.
+
+So you do not have the donor resource having a different billing account or a regional resource having
+
+a different billing account or something like that.
+
+You get charged or you get a bill cloud bill based on the project and you can launch any kind of resources
+
+inside a poorer project.
+
+So in a high level if you look at the resource manager help you to centralize manage Iraqi centralized
+
+managed track all your projects manage an exit exit access across organization manage organization and
+
+organization policy create and manage and policies Cloud Control and I am access and manage cloud folders.
+
+That's it right.
+
+So that is the resource managers work.
+
+It is not.
+
+There is no concept of resource manager as search in the console.
+
+But when you create those resources the resource manager help you to create it in the the hierarchy.
+
+That's it guys as a resource manager Let's go in and look at some part of identity and access management
+
+in the next lecture.
+
+
+GSPのリソースはクラウドのリソースです。
+
+ここで、どんなサービスでも提供できるようにするためのリソースとは何でしょうか？
+
+どんなサービスでもいいんです。
+
+それがあなたのリソースになります。
+
+もしあなたが嘘をついて、私はJaneのコンピューティング遺伝子を持っていると言えば、それがあなたのリソースになります。
+
+Google Cloud PlatformのVPCのようなネットワークを作れば、それはあなたのリソースになります。
+
+これらはすべてリソースであり、これらのリソースはすべてこのようなプロジェクトに関連しています。
+
+それを理解しておいてください。
+
+リソースのソースを理解するには、階層構造を見る必要があります。
+
+典型的な例として、ある会社に複数の部署があり、その部署はグループ化されています。
+
+です。
+
+ビジネスユニットとでも言いましょうか、そういった大きなビジネスユニットでは、プロジェクトの中から複数のイニシアティブを
+
+このように社内でプロジェクトや組織化されたプロジェクトを整理することができます。
+
+この組織とフォルダを見て、ビジネスユニットや他の種類の製品の部門を模倣することができると感じています。
+
+この組織とフォルダを見ると、事業部や他の種類の製品を模倣することができますね。
+
+この2つはgスイート製品で、これは見えません。
+
+プロジェクトを組織に割り当てることができますが、Google Cloud Platformの内部で使用できるドキュメントではないことがわかります。
+
+Cloud Platformで使えるドキュメントではありません。
+
+ですから、もし組織やフォルダで遊びたいのであれば、G suiteのアカウントに行き、そこで管理することができます。
+
+この例では、共有VPCを作成し、その中で複数のプロジェクトを共有します。
+
+その中の複数のプロジェクトで共有されます。
+
+しかし、そのような場合は、組織やフォルダーを理解した上で保持することができます。
+
+Google Cloud Platformにログインすると、プロジェクトとリソースしか見ることができないことを理解する必要があります。
+
+とリソースのみ見ることができます。
+
+組織やフォルダのような上部はコントロールできない。
+
+さらに進んで、リソースとは何か、そのカテゴリとは何かを理解しようとしたとき。
+
+Google Cloud Platformのどこからでもアクセス可能なグローバルリソースがある。
+
+ネットワークディスクイメージスナップショットやネットワークのようなものです。
+
+地域リソースは特定の地域に特化したもので、静的IPアドレスです。
+
+ゾーンリソースはゾーン内でのみアクセス可能なリソースで、仮想マシンのVMディスクなどです。
+
+などがあります。
+
+これらはゾーンリソースと呼ばれるもので、特定のゾーン内に存在するものです。
+
+これらは物理的なものです。
+
+ウィリアムは仮想マシンを破棄して、特定のゾーン内で起動したインスタンスです。
+
+ゾーンに存在します。
+
+これらは特定の物理データセンターに置かれており、ゾーン・リソースと呼ばれるものです。
+
+グローバル・リソース、リージョナル・リソース、ドナー・リソースがあります。
+
+課金はプロジェクトに対して行われます。
+
+アカウント内に複数のプロジェクトを作成した場合、そのプロジェクト内のすべてのリソースは、プロジェクトに基づいて課金されます。
+
+プロジェクトに課金され、提供方法には関係ありません。
+
+そのため、寄付者のリソースが別の課金アカウントを持っていたり、地域のリソースが別の課金アカウントを持っていたりすることはありません。
+
+というようなことはありません。
+
+プロジェクトに基づいて請求書が発行され、どのような種類のリソースでも利用することができます。
+
+貧弱なプロジェクトの内部で、あらゆる種類のリソースを起動することができます。
+
+リソース・マネージャーは、イラクの集中管理を支援します。
+
+イラクの集中管理、すべてのプロジェクトの追跡、組織横断的な出口アクセス、組織と組織のポリシーの作成と管理、クラウドのポリシーを管理することができます。
+
+組織ポリシー作成と管理およびポリシークラウドコントロールと私はアクセスし、クラウドフォルダを管理しています。
+
+その通りです。
+
+つまり、それがリソースマネージャーの仕事です。
+
+そうではありません。
+
+コンソールで検索するようにリソースマネージャの概念はありません。
+
+しかし、リソースを作成するとき、リソース・マネージャーはそれを階層的に作成するのを助けてくれます。
+
+以上、リソースマネージャーについてでした。
+
+次回の講義では

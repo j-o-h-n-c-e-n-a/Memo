@@ -1,0 +1,409 @@
+﻿There are multiple certifications which are available out of Google Cloud Platform.
+
+Let's look at those.
+
+These are the applications ranging from requirement assessment design build and operate features of
+
+your SDL sees the first certifications which is available is the associate level certification and that
+
+is cloud in year which works on our plate frees up your SDC.
+
+The second certification that you have is the cloud architect.
+
+It's a professional level certification.
+
+Then you have cloud developer cloud that engineer cloud network engineer and cloud security engineer.
+
+Besides cloud engineer which is Associate Law all certifications all other certifications are at professional
+
+level certifications and you get the actual certificate according to it.
+
+Let's go down understand some of the rules and responsiblity for individual certifications.
+
+The first one is associate cloud engineer the person or the role in which he or she manages the cloud
+
+resources inside Google Cloud Platform.
+
+The responsibilities include setting up the cloud solution environment planning and configuring cloud
+
+solutions deploy and implement cloud solutions ensuring successful operation of cloud solution and contributing
+
+access and maintaining the security.
+
+You can think of the person who understand in and out of individual services how to provision it how
+
+to manage it and how to monitor it right and how to provide access permissions for those cloud resources.
+
+And this is in terms of platform as a service or infrastructure as a service.
+
+Other similar certifications on other cloud platforms you can find is like sis up system operations
+
+engineer are the cloud engineer.
+
+Each set up the next one is the professional cloud developer you can develop deploy and manage applications
+
+inside Google Cloud Platform and you can find similar certification on the cloud platform as well.
+
+The response rate includes design highly scalable available and reliable cloud native applications build
+
+and test applications deploy applications integrate the applications with Google Cloud Platform manage
+
+the application performance and do the monitoring.
+
+This kind of certification is.
+
+This is not a core you can think of one of the programming language certification.
+
+This is when you know how to program it and how to develop your application.
+
+How to take advantage of Google Cloud Platform right.
+
+And this is the core essence of this particular sector which is not to teach you any programming model
+
+but if at all you are say our developer are by turn developer right.
+
+Our darknet will operate how you can go ahead and use different capabilities of Google Cloud Platform.
+
+How those platform like qualities is different when you have it in on premises.
+
+When you deploy that in Google Cloud Platform or how you can take advantage like a pain management how
+
+you can take advantage of the logging mechanism or monitoring mechanism which is available readily in
+
+Google Cloud Platform the third one is professional cloud architect BCA you can design the cloud solution
+
+or hybrid cloud solution environment and that is the essence of this particular exam it starts with
+
+design and planning cloud solutions manage and provision cloud solution infrastructure design for security
+
+and compliance analyze and optimize technical and business processes manage implement our cloud architecture
+
+and ensure solution operations and reliability.
+
+The depth of this particular certification if you look at it starts with understanding the requirement
+
+for your cloud solution whether you're deploying your cloud application or the application in the cloud
+
+environment as an alternate to application or you are designing application in hybrid mode.
+
+So sum up your States is lying in your own infrastructure and some of the you know the computing environment
+
+which will be used by you or for your application depends on the scaling needs or taking advantage of
+
+the public cloud environment.
+
+So you are starting with the planning.
+
+Understanding the existing infrastructure understanding the cloud infrastructure creating a migration
+
+plan understanding on you know the bits and pieces are differences of different services which will
+
+be used for the same purpose and identify clear core differentiation which service you want to use it
+
+or the one you will need to understand the security and compliance mechanism what our security parameters
+
+are you need to make sure that you are optimizing it for the cloud maybe it is technical requirement
+
+or the business process requirement of in your taking your applications.
+
+If you're suggesting any modifications to the application or you are taking as is depends on what the
+
+goal is and what the requirement is you are making those tradeoffs.
+
+So all of that constitutes as an architect requirement and you can think of cloud architect is no different.
+
+But having understanding of the landscape cloud landscape as well as your own on premises landscape
+
+and then making your first move like taking your application into Google Cloud Platform or your designing
+
+applications which will use your own data center as well as Google Cloud Platform if you look at the
+
+roles and responsibilities there are some you can think of emerging roles and responsibilities like
+
+for all those certifications you need a complete understanding of the purpose of each and every service
+
+how to provision it how to use and monitor those particular services if you look at cloud in unit and
+
+cloud developer you need to manage the application performance on the cloud and this is much more than
+
+their job for these guys will do a cloud architect will go out and use some of the mattresses but not
+
+necessarily managing the application proponents.
+
+He can guide those teams but these are the team were actually responsible looking at the application
+
+performance and making changes into the application.
+
+If you look at cloud in unit and cloud the dark cloud architect is like setting up the cloud services.
+
+How do you design and plan individual services and making sure that security is in place and making
+
+sure that access permissions are you know in place.
+
+Cloud developer and cloud architect making sure that you understand CIC pipelines cloud API is performance
+
+testing and all other testing requirement for your application to perform better in you know Google
+
+cloud environment.
+
+So those are like overlapping requirements.
+
+More importantly you know understanding opens up each service and provision and use and monitor it.
+
+This is the core essence of for all those are duplications which are here like cloud and you know developer
+
+and architect.
+
+And then there are different focuses based on which certain applications who you are going to pursue
+
+but besides these 330 applications as we understand data engineer data engineer is focused on storage
+
+part of your application database Big Data noise school EDL jobs like how you can design your retail
+
+pipeline our database pipelines.
+
+Machine learning aspect of we will flower platform and this is where this spatial certification which
+
+is only towards the data and this is the only certification on the data professional network engineer.
+
+And this is very focused towards understanding you are setting up the VPC strategies firewall rollouts
+
+VPN interconnect the connection between your own datacenter and Google Cloud Platform setting up the
+
+load balancer.
+
+Looking at the network security aspect of we will cloud like enabling the logs monitoring the logs and
+
+not doing the audit on the traffic which is flowing between the between cloud resources the laser division
+
+that we have is professional security engineer and you can think looking at the name it is very focused
+
+towards the security aspect of cloud environment and when you are taking that application into any public
+
+cloud platform security and unions rule is becoming like very important because you are taking your
+
+data out of your datacenter and putting that in the environment where anyone can access that particular
+
+environment if there are security breaches.
+
+So this particular person not the rule should have detailed knowledge about how you can protect a different
+
+cloud resources and how to protect the data inside those services.
+
+And that is very important how you do how to use and how to use came as how to use the keys how to encrypt
+
+the data decrypt the data all of the security aspect but besides the core security you need to make
+
+sure that you are compliant your application is compliant in public cloud environment and you are providing
+
+security for all those cloud resources.
+
+So that's it guys as a certification if you have any questions let us know otherwise you can move to
+
+the next lecture.
+
+
+Google Cloud Platformから取得できる認定資格は複数あります。
+
+それらを見てみましょう。
+
+これらは、要件評価から設計、構築、SDLの機能の運用に至るまで、さまざまなアプリケーションで利用できます。
+
+SDLで利用できる最初の認定資格は、アソシエイトレベルの認定資格です。
+
+SDCを解放してくれます。
+
+2つ目の認定は、クラウドアーキテクトです。
+
+これはプロフェッショナルレベルの認定資格です。
+
+そして、クラウドデベロッパー、クラウドエンジニア、クラウドネットワークエンジニア、クラウドセキュリティエンジニアがある。
+
+クラウドエンジニアはアソシエイト・ローの資格ですが、他の資格はすべてプロフェッショナルレベルの資格です。
+
+その資格に応じた証明書が発行されます。
+
+では、それぞれの資格のルールと責任を理解していきましょう。
+
+まず、アソシエイトクラウドエンジニアとは、Google Cloud Platform内のクラウドリソースを管理する人、またはその役割のことです。
+
+Google Cloud Platform内のクラウドリソースを管理する人、またはその役割です。
+
+クラウドソリューションの環境構築、クラウドソリューションの計画・設定、クラウドソリューションの導入・実装、クラウドソリューションの安全性確保など、さまざまな業務を担当する。
+
+クラウドソリューションの導入と実装を行い、クラウドソリューションの正常な運用を確保し、クラウドソリューションへのアクセスやセキュリティの維持に貢献します。
+
+アクセスやセキュリティの維持
+
+個々のサービスに対して、どのようにプロビジョニングし、どのように管理し、どのように監視するかを理解する人と考えてよいでしょう。
+
+クラウドリソースへのアクセス許可を提供する方法などです。
+
+これは、Platform as a ServiceやInfrastructure as a Serviceの観点からのものです。
+
+他のクラウドプラットフォームに関する同様の資格としては、システム運用技術者（SIS）、クラウドエンジニア（Engineer）がある。
+
+エンジニアは、クラウドエンジニアです。
+
+その次に、プロフェッショナルクラウドデベロッパーは、Google Cloud Platformの中でアプリケーションを開発し、デプロイし、管理することができる資格です。
+
+Google Cloud Platform内のアプリケーションの開発、デプロイ、管理を行うことができます。
+
+回答率には、拡張性、可用性、信頼性の高いクラウドネイティブアプリケーションを設計し、アプリケーションを構築し、テストし、アプリケーションを統合する。
+
+アプリケーションの構築とテスト、アプリケーションのデプロイ、アプリケーションとGoogle Cloud Platformの統合、アプリケーションのパフォーマンスとモニタリングの管理
+
+アプリケーションのパフォーマンスを管理し、監視することです。
+
+このような資格です。
+
+これは、プログラミング言語の資格の1つを考えることができるコアではありません。
+
+プログラミングの方法とアプリケーションの開発方法を知っている場合です。
+
+Google Cloud Platformをどう活用するか。
+
+そして、これがこの分野の核となるエッセンスで、どんなプログラミングモデルも教えるものではありません。
+
+しかし、もしあなたが、私たちの開発者が右の開発者であると言うならば。
+
+私たちのダークネットは、あなたが先に行くことができ、Google Cloud Platformのさまざまな機能を使用する方法を動作します。
+
+オンプレミスにあるプラットフォームは、どのように違うのでしょうか？
+
+Google Cloud Platformにデプロイしたとき、あるいは疼痛管理のようにどのように活用できるのか。
+
+ログの仕組みやモニタリングの仕組みなど、Google Cloud Platformですぐに利用できるものを活用することができます。
+
+3つ目は、プロフェッショナルクラウドアーキテクトBCAで、クラウドソリューションやハイブリッドクラウドソリューションの環境を設計することができます。
+
+クラウドソリューションやハイブリッドクラウドソリューションの環境を設計することができます。
+
+クラウドソリューションの設計と計画 クラウドソリューションのインフラストラクチャの管理とプロビジョニング セキュリティの設計
+
+技術やビジネスプロセスの分析、最適化、クラウドアーキテクチャの実装、ソリューションの運用と信頼性の確保など
+
+そしてソリューションの運用と信頼性を確保することです。
+
+この資格の深さは、クラウドソリューションの要件を理解することから始まります。
+
+クラウドアプリケーションやアプリケーションをクラウド環境で展開する場合、またはアプリケーションの代替として
+
+アプリケーションの代替としてクラウド環境でアプリケーションを展開するのか、それともハイブリッドモードでアプリケーションを設計するのか。
+
+つまり、あなたの国は、あなた自身のインフラストラクチャと、あなたが使用するコンピューティング環境の一部に存在しているのです。
+
+アプリケーションに使用されるコンピューティング環境は、スケーリング・ニーズやパブリック・クラウド環境を活用することに依存します。
+
+パブリック・クラウド環境を利用することもできます。
+
+ですから、まず計画から始めることになります。
+
+既存のインフラストラクチャを理解する クラウドインフラストラクチャを理解する 移行計画を作成する
+
+同じ目的で使用されるさまざまなサービスの違いを理解し、移行計画を立てます。
+
+同じ目的で使用される各サービスの違いを理解し、どのサービスを使用したいのか、またはどのサービスが必要なのかを明確にします。
+
+または、セキュリティとコンプライアンスのメカニズムを理解する必要があります。
+
+クラウドに最適化されていることを確認する必要があります。
+
+あるいは、アプリケーションのビジネス・プロセスの要件などです。
+
+アプリケーションに修正を加えるか、そのまま使用するかは、その目的や要件によって異なります。
+
+アプリケーションに修正を加えるか、そのまま使うかは、目標と要件に応じてトレードオフを行うことになります。
+
+クラウドアーキテクトも同じだと考えてください。
+
+しかし、クラウドのランドスケープを理解し、オンプレミスのランドスケープも理解する必要があります。
+
+そして、Google Cloud Platformにアプリケーションを導入したり、自社のデータセンターを使用するアプリケーションを設計するなど、最初の一歩を踏み出すのです。
+
+Google Cloud Platformと同様に自社のデータセンターを使用するアプリケーションを設計する場合など、その役割と責任について考えてみましょう。
+
+役割と責任を見ると、次のような新たな役割と責任があると思います。
+
+これらの資格の取得には、各サービスの目的を完全に理解する必要があります。
+
+クラウドインユニットやクラウドデベロッパーであれば、それぞれのサービスの目的を完全に理解し、プロビジョニングし、使用し、監視する必要があります。
+
+クラウド開発者であれば、クラウド上のアプリケーションのパフォーマンスを管理する必要があり、これは彼らの仕事よりもはるかに重要です。
+
+クラウドアーキテクトはマットレスの一部を使用することはあっても、アプリケーションの提案者を管理することはないでしょう。
+
+アプリケーションの提案者を管理する必要はありません。
+
+クラウドアーキテクトはアプリケーションの提案者を管理するわけではありませんが、そのチームを指導することはできます。
+
+アプリケーションのパフォーマンスを見て、アプリケーションに変更を加えるのは、このチームです。
+
+クラウドを単位とした場合、ダーククラウド・アーキテクトは、クラウドサービスを設定するようなものです。
+
+個々のサービスをどのように設計し、計画するのか、また、セキュリティを確保し、アクセス権を設定するのか。
+
+クラウド開発者とクラウド・アーキテクトは、それぞれのサービスをどのように設計し、計画し、セキュリティを確保し、アクセス権を設定するのか。
+
+クラウド開発者とクラウドアーキテクトは、CICパイプラインやクラウドAPI、パフォーマンステスト、その他のテスト要件を理解していることを確認する。
+
+テストなど、Googleのクラウド環境でアプリケーションをより良く動作させるために必要なすべてのテストを行う。
+
+クラウド環境でのアプリケーションのパフォーマンスを向上させるために必要なテストです。
+
+つまり、これらは重複する要件です。
+
+さらに重要なのは、各サービスのオープン化、プロビジョニング、使用、モニタリングについて理解していることです。
+
+これが、クラウドと開発者、アーキテクトのような重複する要件の核心となるものです。
+
+とアーキテクトのように重複しています。
+
+そして、どのアプリケーションを追い求めるかによって、焦点が異なります。
+
+データエンジニア データエンジニアはアプリケーションのストレージに焦点を当てます。
+
+アプリケーションのデータベースビッグデータノイズスクールEDLジョブ、例えば小売店のパイプラインを設計する方法
+
+パイプライン、データベースパイプラインを設計することができます。
+
+機械学習の側面は、我々は花プラットフォームと、これは、この空間認証は、データに向かっているところです。
+
+この資格はデータに関するもので、データプロフェッショナルネットワークエンジニアの資格はこれだけです。
+
+この資格は、VPC戦略やファイアウォールの設定について理解することに重点を置いています。
+
+VPNによるデータセンターとGoogle Cloud Platformの相互接続、ロードバランサーのセットアップ
+
+ロードバランサーの設定
+
+ネットワーク・セキュリティの面では、ログを有効にし、ログを監視し、トラフィックの監査を行わないといったクラウドを目指す。
+
+クラウドリソース間を流れるトラフィックの監査は行っていません。
+
+プロフェッショナル・セキュリティ・エンジニアという名前の通り、クラウド環境のセキュリティに特化しています。
+
+クラウド環境のセキュリティの側面に焦点を当てたものです。
+
+クラウドプラットフォームのセキュリティとユニオンルールは、非常に重要なものになりつつあります。
+
+データセンターからデータを持ち出し、誰でもアクセスできる環境に置くわけですから。
+
+というのも、データをデータセンターから持ち出して、誰でもアクセスできる環境に置くわけですから、セキュリティ違反があれば、その環境にはアクセスできなくなります。
+
+そのため、このルールではない特定の人物は、さまざまなクラウドリソースを保護する方法と、データを保護する方法についての詳細な知識を持っている必要があります。
+
+クラウドのリソースをどのように保護するか、そしてそのサービス内のデータをどのように保護するか。
+
+これは非常に重要なことで、どのように使用するか、どのように鍵を使うか、どのようにデータを暗号化するか、どのようにデータを復号化するか。
+
+データの暗号化、データの復号化など、あらゆるセキュリティの側面がありますが、コア・セキュリティだけでなく、コンプライアンスも確認する必要があります。
+
+また、パブリッククラウド環境において、アプリケーションがコンプライアンスに準拠しているかどうか、クラウドのリソースにセキュリティを提供しているかどうかも確認する必要があります。
+
+セキュリティを提供する必要があります。
+
+ということで、今回はここまでです。
+
+次の講義に進んでください。
+
