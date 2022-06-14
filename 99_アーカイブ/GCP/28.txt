@@ -1,0 +1,476 @@
+﻿Computing and computing is a virtual machine learning in Google Cloud Platform and we already saw this
+
+it is a part of computing platform and virtual machine is one of the three computing platform which
+
+are available in Google Cloud Platform.
+
+It's the same virtual machine on the cloud and the virtual machine on the cloud is available in Amazon.
+
+It is called That's easy too.
+
+And again virtual machine on as your as well some of the basic properties of compute machine.
+
+It is actually infrastructure service it is you have full control on what operating system which is
+
+running you can go and customize the virtual machine you can undo SSA which you can connect to the virtual
+
+machine you can do so many things inside the virtual machines.
+
+So this is like fully controlled the virtual machine.
+
+The machines are a competent platform which you can have it on Google Cloud Platform.
+
+Some of the use cases are high.
+
+I would say a high level use cases for the compute engine.
+
+Are there other applications which can be containerized using an existing VM images that are application
+
+news or is level changes or do you want to you know host your applications without rewriting it.
+
+All you can think of.
+
+You know you want to have full control of infrastructure direct access to network and other compute
+
+resources.
+
+So you want to have that flexibility.
+
+That's where you use compute engine.
+
+Some other features but before we get into features of computing engine let's go in and see how complex
+
+it is or how tough it is to launch the virtual machine on Google Cloud Platform.
+
+So here I am in the cloud console.
+
+We already saw this and I can go to the computer engine which is a part of compute family and then I
+
+can go to VM instances
+
+and once I go to VM instances you have multiple options which you can do.
+
+The first thing is you can create the virtual machine directly.
+
+You can import the image you can take a quick start to it.
+
+If you do not have any you know the VM you will be presented with all three options.
+
+I'm going to just go ahead and click on Create
+
+so once you click on Create again you will have multiple options.
+
+You can have the VM created out of template you can just launch.
+
+So this is like cloud launcher you can just launch a virtual machine with installed software in it from
+
+the marketplace.
+
+But we are going to see that later.
+
+If you look at the barometer which are required if we want to say you want to build your own virtual
+
+machine you need a name.
+
+We need a region in which you want to launch a virtual machine.
+
+You need to select a particular tune because this is a physical entity right.
+
+So we'll keep you posted in one of the data centers and then you need to choose the machine family.
+
+The general purpose are mainly optimized.
+
+I'm just going to select know general purpose.
+
+You can have the first generation processors or you can have second generation processors I'm just going
+
+to keep as is if you choose different generations you will have different options.
+
+So the full generation will have shared core machines and the second generations will have I will not
+
+have shared code machines.
+
+So as of now so you can just go ahead and do this or you can select a custom CPE use here.
+
+So you can select custom memory as well right.
+
+So if I choose say to appeals to do with memory or you can keep on excellent so you can go up to say
+
+16 G before to use but you can.
+
+You can click on extended memory and then you can go up to six hundred and forty jeebies of RAM for
+
+two CPO machines.
+
+I don't want to do that right now.
+
+I'm just going to go out and select to be of memory.
+
+If I had to deploy say containers I can do that if I need GP use again.
+
+Select and CPO platform and GP use.
+
+I do not want to do that right now
+
+I need to select a body image and this is an operating system image.
+
+You can so I can go in and click change and these are the options which you have you can have Debian
+
+S.O.S Ubuntu container optimised images called line mixed images.
+
+Are you going to have you know s girls who were custom.
+
+Imagine if you have it any snapshot.
+
+If you have it all day you can have existing disk and yeah you can using that particular description
+
+and logic.
+
+We are going to I love that option in subsequent lectures I'm just going to go ahead and select a very
+
+simple option here
+
+so I can choose what disc.
+
+This is magnetic disk standard persistent desk where says you can you can choose SSD and you can go
+
+up to 65 terabytes of memory.
+
+The standard here is 10 G.B. and not changing that here.
+
+Select
+
+than you can how identity and access management that you can have computing in default savings account
+
+or you can choose different service account and we're going to see this in I am going to firewall safe
+
+at all you are installing virtual machines with the web server in it and you want to enable states to
+
+is always to debate traffic.
+
+Then you can choose appropriate firewalls.
+
+I'm not going to select anything here you will how.
+
+Any other options like security you can turn on the securities are there search keys you can choose
+
+a different encryption for the disk you're going to have networking configuration I will I will solve
+
+tendency if you want to have your own hardware like full machine you want to rent it then you can choose
+
+your tenancy and disk you can have by default one day Scottish but you can have at least not a disk
+
+attached to your RAM as well if you want to run start ups clip an escape to which you want to when the
+
+machine is getting started to go on to then the script you can have it here you can create different
+
+meta data tags you can have predictability maintenance at the time of maintenance what do you want to
+
+do.
+
+You can automatically start as well and I'm not choosing are getting into details of all of these yet
+
+I'm just going to go in and click Create instance
+
+it took some moment to create the virtual machine.
+
+Now we had the washing machine you have internal IPR there's an external IP address I can just call
+
+and click on SSL.
+
+And this is how you can go ahead and connect the virtual machine using the console itself you can connect
+
+to virtual machine using putty as well and we are going to see that different ways to connect virtual
+
+machines but yeah.
+
+So your virtual machine is ready and you can just go ahead and get started.
+
+So this is how you can launch in virtual machine going back to the features of the computing in some
+
+of the features is like it provides a minute billing the minimum charge level encryption beyond one
+
+minute it's one second.
+
+It has got a globally scoped images you can use image which are scoped in global so you cannot have
+
+you made like regional image and you can.
+
+You need to migrate those so all the images are globally scoped you make it supports cloud the end you
+
+can have disk performance you can choose locally as DRM disk you can have network performance defined
+
+based on the CPE use and we are going to see that it supports live migration or transport and maintenance
+
+it supports early start you can help right size machine so you can customize the machine something which
+
+is not flexible in some of the cloud vendors right now you can however dramatic discount and we are
+
+going to get into a different kind of discount in this section itself you can have committed sustained
+
+use discounting for discount our premium table William it supports Linux and Windows you have predefined
+
+and custom virtual machine types we need supports global load balancing and supports auto scaling some
+
+of the components especially if we need to talk about it the disk and this got actual storage disk which
+
+is attached to a computer are the virtual machine you have images you have network components which
+
+is connected to your virtual machine you have firewall configurations IP addresses regions and zones
+
+which you select and you deploy your virtual machine instance you have actually instances which is running
+
+load balancer and auto scaling configuration you can have instant template instance group to configure
+
+those you can connect different ways the line X and windows.
+
+If there are any license cost it is already included you can use standard you know SSL connections you
+
+can have desktop or third Cloud Party clients like putty but you need to open the firewall which is
+
+like on 22 port windows same support RTP are declines by what shell but you need to set the password
+
+and the firewall should be open on thirty three eighty nine that's it guys are the basics of the compute
+
+engine how we are going to see machine types in the next lecture.
+
+Thank you.
+
+コンピューティングとコンピューティングは、Google Cloud Platformの仮想マシン学習であり、我々はすでにこれを見た。
+
+コンピューティングプラットフォームの一部であり、仮想マシンはGoogle Cloud Platformで利用可能な3つのコンピューティングプラットフォームのうちの1つである。
+
+仮想マシンは、Google Cloud Platformで利用可能な3つのコンピューティング・プラットフォームの1つです。
+
+クラウド上の仮想マシンも同じで、クラウド上の仮想マシンはAmazonで利用できます。
+
+これもThat's easyと呼ばれています。
+
+そしてまた、仮想マシンをあなたのものとして、コンピュート・マシンの基本的な特性のいくつかを提供します。
+
+これはインフラストラクチャー・サービスであり、どのようなオペレーティング・システムを動かすかを完全にコントロールすることができます。
+
+仮想マシンをカスタマイズすることもできますし、SSAを解除して仮想マシンに接続することもできます。
+
+仮想マシンの中で様々なことができます。
+
+このように、仮想マシンを完全にコントロールすることができるのです。
+
+このマシンは、Google Cloud Platform上で利用できる有能なプラットフォームです。
+
+ユースケースの中には、高度なものもあります。
+
+コンピュート・エンジンのユースケースは、ハイレベルと言えるでしょう。
+
+既存のVMイメージを使ってコンテナ化できる他のアプリケーションはありますか？
+
+ニュースやレベルの変更、あるいはアプリケーションを書き換えることなくホストしたい場合などです。
+
+思いつくままに考えてみてください。
+
+インフラストラクチャを完全にコントロールしたい。
+
+リソースに直接アクセスしたい。
+
+そのような柔軟性が必要なのです。
+
+そこで、コンピュート・エンジンを使うのです。
+
+他にもいくつかの機能がありますが、コンピューティング・エンジンの機能を説明する前に、どれだけ複雑か、どれだけ大変かを見てみましょう。
+
+Google Cloud Platformで仮想マシンを起動するのがどれだけ複雑か、どれだけ大変かを見てみましょう。
+
+ここでは、クラウドコンソールにいます。
+
+コンピュート・ファミリーの一部であるコンピュータ・エンジンに移動し、VMインスタンスに移動します。
+
+VMインスタンスに行くことができます。
+
+VMインスタンスに移動すると、複数のオプションがあります。
+
+まず第一に、仮想マシンを直接作成することができます。
+
+イメージをインポートして、すぐに始められます。
+
+仮想マシンを持っていない場合は、3つのオプションが表示されます。
+
+先に進んで、Createをクリックします。
+
+もう一度Createをクリックすると、複数のオプションが表示されます。
+
+テンプレートからVMを作成することもできますし、そのまま起動することもできます。
+
+これはクラウドランチャーのようなもので、マーケットプレイスからソフトウェアをインストールした仮想マシンを起動することができます。
+
+マーケットプレイスから起動することができます。
+
+しかし、それは後で見ることになります。
+
+バロメーターを見てみると、もし自分の仮想マシンを作りたいのであれば、名前が必要です。
+
+自分の仮想マシンを作りたいなら、名前が必要です。
+
+仮想マシンを起動する地域が必要です。
+
+これは物理的なものなので、特定のチューンを選択する必要があります。
+
+データセンターの1つをお知らせしますので、マシン・ファミリーを選択してください。
+
+汎用は主に最適化されています。
+
+私は汎用を選択するつもりです。
+
+第一世代のプロセッサーを搭載することもできますし、第二世代のプロセッサーを搭載することもできます。
+
+第1世代と第2世代を選択した場合、それぞれ異なるオプションがあります。
+
+第1世代は共有コアマシン、第2世代は共有コードマシンではありません。
+
+共有コードマシンはありません。
+
+ですから、今のところ、このまま進めてもいいですし、ここでカスタムCPEの使用を選択することもできます。
+
+カスタムメモリも選択できます。
+
+このように、メモリをアピールするために選択した場合、あるいは優れた状態を維持することができますので、最大で16Gまで使用することができます。
+
+16Gの前に使用することができますが、することができます。
+
+拡張メモリをクリックすると、2台のCPOマシンで最大640ジービーのRAMを使うことができます。
+
+2台のCPOマシンがあります。
+
+今はそんなことしたくない。
+
+今はそんなことはしたくないので、記憶の中にあるものを選択するだけです。
+
+もし、コンテナというデプロイが必要なら、またGPユースが必要ならそうすればいいんです。
+
+CPOプラットフォームとGPユースを選択します。
+
+今はそんなことしたくない
+
+ボディ・イメージを選択する必要がありますが、これはOSのイメージです。
+
+これはOSのイメージなのですが、この中に入って変更をクリックすると、以下のようなオプションがあります。
+
+S.O.S Ubuntuのコンテナに最適化されたイメージ、ラインミックスイメージと呼ばれるものです。
+
+カスタムメイドの女の子がいるんですね。
+
+スナップショットを撮ったときのことを想像してみてください。
+
+一日中持っていれば、既存のディスクを持つこともできますし、そのような特定の説明や論理を使うこともできます。
+
+とロジックを使うことができます。
+
+この後の講義では、このオプションが大好きな私は、先に進んで、非常にシンプルなオプションを選択するつもりです。
+
+この簡単なオプションで
+
+ディスクを選択することができます。
+
+これは磁気ディスクの標準的な永続的なデスクで、SSDを選ぶことができ、最大65テラバイトのメモリを搭載することができると書いてあります。
+
+メモリは最大65テラバイトまで。
+
+この標準は10Gbで、これは変更しません。
+
+選択
+
+アイデンティティとアクセス管理は、デフォルトの預金口座でコンピューティングを行うことができます。
+
+また、別のサービスアカウントを選択することもできます。
+
+は、Webサーバを搭載した仮想マシンをインストールし、状態を有効にするために、すべてで
+
+は、常にトラフィックを議論することです。
+
+その後、適切なファイアウォールを選択することができます。
+
+私はあなたがどのようになりますここで何かを選択するつもりはない。
+
+他のオプションは、セキュリティをオンにすることができますし、検索キーを選択することができます。
+
+ディスクの暗号化など ネットワークの設定も可能です
+
+もしあなたがフルマシンのような自分のハードウェアを持ちたいなら、それをレンタルしたいならば、あなたは自分のテナントとディスクを選択することができます。
+
+ディスクはデフォルトで1日1台ですが、少なくともRAMにはディスクをつけないことも可能です。
+
+起動時にエスケープクリップを使用したい場合は、RAMにもディスクを装着できます。
+
+マシンが起動した時にスクリプトを実行することができます。
+
+メタデータタグを作成し、メンテナンス時に予測可能なメンテナンスを行うことができます。
+
+を行うことができます。
+
+自動的に起動することもできます。
+
+インスタンスの作成」をクリックします。
+
+仮想マシンの作成に少し時間がかかりました。
+
+これで洗濯機ができました。内部IPRがあり、外部IPアドレスがあります。
+
+をクリックし、SSLをクリックします。
+
+このように、コンソールを使って仮想マシンに接続することができます。
+
+パテを使ってもいいし、これからいろいろな方法で仮想マシンに接続するのを見ることになります。
+
+を使うこともできます。
+
+仮想マシンの準備ができたので、さっそく始めてみましょう。
+
+このようにして、仮想マシンを起動することができます。
+
+最低充電量の請求は1分、1分を超えると1秒になります。
+
+1分を超えると1秒になります。
+
+グローバルにスコープされたイメージを使用することができます。
+
+地域ごとのイメージを作成し、それを使うことができます。
+
+すべてのイメージをグローバルにスコープして、クラウドをサポートするように移行する必要があります。
+
+ディスク性能はローカルでDRMディスクとして選択できますし、ネットワーク性能はCPEの使用状況に応じて定義できます。
+
+また、ライブ・マイグレーションやトランスポート、メンテナンスにも対応しています。
+
+早期立ち上げに対応し、適切なサイズのマシンを提供できるため、マシンをカスタマイズすることができます。
+
+クラウドベンダーの中には、今のところ柔軟性に欠けるところもありますが、劇的なディスカウントが可能です。
+
+このセクションで別の種類の割引を紹介します。
+
+プレミアムテーブルWilliamはLinuxとWindowsをサポートし、事前定義された仮想マシンとカスタム仮想マシンをサポートします。
+
+をサポートし、カスタム仮想マシンをサポートします。
+
+をサポートしています。
+
+コンピュータに接続された仮想マシン、イメージ、ネットワークコンポーネントがあります。
+
+ファイアウォールの設定、IPアドレス、地域、ゾーン。
+
+そして、仮想マシンをデプロイすると、ロードバランサーやオートスケーリング設定が行われるインスタンスになります。
+
+ロードバランサーやオートスケーリングの設定、インスタンスグループをテンプレートとして設定することができます。
+
+X回線やWindowsなど様々な方法で接続することができます。
+
+
+もし、ライセンス費用が発生しても、それはすでに含まれています。
+
+デスクトップやパテのようなサードクラウドパーティクライアントが使えますが、ファイアウォールを開く必要があります。
+
+22番ポートにあるようなWindowsと同じRTPをサポートするシェルで、パスワードを設定する必要があります。
+
+ファイアウォールは338.9番で開いておく必要があります。
+
+エンジンの基本ですが、次の講義ではマシンの種類を紹介します。
+
+ありがとうございました。

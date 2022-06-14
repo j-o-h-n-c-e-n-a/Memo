@@ -1,0 +1,108 @@
+﻿Foreign missions are I would say DCP one to one.
+
+So what is the purpose of this particular section.
+
+This section is dedicated to get an understanding or I would say overall understanding about Google
+
+Cloud Platform.
+
+This is not specific to any certifications but this is the syllabus you can think of it is like coding
+
+almost 70 or more than 70 percent of your certification syllabus and it is uncommon to all the certifications.
+
+So what we are going to cover here.
+
+We are going to cover all the services offered on the computing platform networking services data was
+
+in storage service even all the infrastructure component resource management and automation.
+
+And if you look at all.
+
+If you want to understand if you remember the certification course certification is to understand the
+
+pope was up each and every services and provision and use them and monitor.
+
+So all of those sea levels content is here in this particular section and it is majorly applicable to
+
+cloud engineer around 50 or 60 percent applicable to cloud developer and almost a hundred percent applicable
+
+to cloud architecture.
+
+But this is covering almost 70 percent of your syllabus.
+
+So what we are going to do we are going to get started on Google Cloud Platform.
+
+We are going to understand 10000 feet or view up GC businesses.
+
+We are going to set a free trial and account ah you can think of get an understanding about the regions
+
+zones and all of it understand the core services like virtual machine communities you know cloud secure
+
+and all that.
+
+What we'll do is we'll just get an understanding the core understanding of the services and then we'll
+
+get into detail and follow to that.
+
+There are labs which you need to perform.
+
+So if you look at the core service understanding we are lending the background.
+
+We are going to the demo and then you practice yourself.
+
+So let's go ahead and get started on DCP.
+
+
+海外宣教はDCP1対1と言っていい。
+
+このセクションの目的は何でしょうか。
+
+このセクションは、Google Cloud Platformの全体像を理解することに特化しています。
+
+Cloud Platformを理解することです。
+
+これはどの資格にも当てはまることではありませんが、シラバスのようなもので、コーディングのようなものだと考えてください。
+
+資格のシラバスのほぼ7割、もしくはそれ以上を占めており、すべての資格に共通するものではありません。
+
+では、ここで何をカバーするのか。
+
+コンピューティングプラットフォームで提供されるすべてのサービスをカバーするつもりです ネットワークサービス データは
+
+ストレージサービス、さらにはインフラストラクチャコンポーネントのリソース管理と自動化まで。
+
+そして、すべてを見ていただければと思います。
+
+もしあなたが理解したいのであれば、認定コースの認定を覚えているのであれば、理解することです。
+
+法王はそれぞれのサービスを立ち上げ、プロビジョニングし、使用し、監視していました。
+
+そのため、このセクションでは、これらの海面レベルのコンテンツがすべて含まれており、主に次のことに適用されます。
+
+クラウドエンジニアには50～60％、クラウドデベロッパーにはほぼ100％、クラウドアーキテクチャーにはほぼ100％適用されます。
+
+クラウドアーキテクチャに適用できます。
+
+しかし、これはシラバスのほぼ7割をカバーしています。
+
+では、これから何をするかというと、Google Cloud Platformを始めましょう。
+
+10000フィート（約1.5メートル）の高さからGCのビジネスを理解します。
+
+無料トライアルやアカウントを設定し、地域やゾーンについて理解することができます。
+
+仮想マシンコミュニティやクラウドセキュアのようなコアサービスを理解することができます。
+
+などを理解することができます。
+
+これから行うのは、サービスのコアとなる部分を理解することです。
+
+詳細とフォローアップを行います。
+
+ラボも用意されています。
+
+サービスのコアとなる部分を理解するために、私たちは背景を貸しました。
+
+これからデモを行い、自分で練習することになります。
+
+それでは、DCPを始めましょう。

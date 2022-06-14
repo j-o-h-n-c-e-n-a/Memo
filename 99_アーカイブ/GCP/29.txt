@@ -1,0 +1,303 @@
+﻿トランスクリプション
+Did you see much in types.
+
+There are first generation machine tape and second generation machine types.
+
+If you look at earlier this was not that I think they launched it sometime back in full generation you
+
+had the traditional custom machine type.
+
+You can choose pre-defined machine time with shared core as well.
+
+Mega ultra and the machine with the GP use in second generation though you have only custom and predefined.
+
+As of now and they may add actually shared core or may go to a GP you are type of machines so if I go
+
+back to console and click on say create museum you can find a different kind of machine types here so
+
+you can choose machine family general purpose machines or memory optimized machines.
+
+So if I chose memory optimized it is showing only for generation for the gender you how how the first
+
+generation or second generation.
+
+If I look at or click on first generation machines you can find shared core which are very very small
+
+our tiny machines you can our standard machine Hi CPO Hi memory Mega and ultra memory as well but if
+
+I choose say second generation you how either the custom or the standard high memory high you machines
+
+but not mega an ultra but you can go ahead and choose a custom VM and then you can define your own you
+
+know simple use as well as the memory and you can you can extend the memories going back to the machine
+
+time you face to say a different kind of or different machine types you can choose a different CPO families
+
+here.
+
+So the only option which is giving it in this particular region and this zone is the intel cascade out
+
+later so that you do not have choice.
+
+If I choose say first generation machines I would not do that if I don't need GP use then I can go ahead
+
+and choose my leg Broadwell has will and preach on that and you can go in and attach the machine as
+
+a GP use as well and this number of GP again depends on how much sleep you select and all that all those
+
+other parameters right.
+
+You can enable virtual workstation and really agreed as well.
+
+If I choose the the second generation then you are not allowed to choose or you cannot have GP use attached
+
+I'm not sure why they are doing they just launched the second edition which in times are probably it's
+
+because of that and you can see the GP your added in you the late 2020 but as of now are you going to
+
+choose that so that first generation and second generation machine types.
+
+And if I how to get into details of those individual machine types the standard machine type if you
+
+look at you can how for once EPO you can have three point seventy five jeebies of memory you can attach
+
+one discard more disk and depend on your requirement you can go up to 64 our 96 ACP use depends on your
+
+need.
+
+So this is standard machine type typically it is to be presented with this particular N1 logo and typically
+
+if you look at the way the computer engine is you know representing come GC world this is the way it
+
+is presented.
+
+So that the standard machine the next machine is you can have shared core machines which is really small
+
+if you look at the CPE you added zero point two CPE you and zero point six jeebies of RAM.
+
+So it's like 20 percent of the you and six hundred megabytes of RAM for F1 type of machines and you
+
+can have you know 10 GP persistent disk attached or you can add many other disk as well 4G one kind
+
+of machines you can have up to 60 percent of the CPE you it's like 0 1 6 CB it's again a small machine
+
+and you can how up to one point seven jeebies of ram into it if one allows micro busting and what does
+
+that mean is you know if the political hardware is available at that particular point in time then based
+
+on the load which you are running inside if one machine it can you go beyond this 20 percent of the
+
+CPO and this is based on the availability of resources in that particular machine the next one is high
+
+speed machines and this is where you can have more CPE you as compared to our corresponding to the ram
+
+now you have it you can think of in all a if you're processing high computing you know algorithms or
+
+requirements or reports then that's where you need high sleep you high memory machines and this is where
+
+you are caching much more memory and then processing it later and this is what the high memory or more
+
+memory machines that are available it's like poor persecuted like six point five bees up around and
+
+you can always choose your own CPE use so you can have one sip you and you can go to six point five
+
+as a standard but you can keep on as we saw extend a memory right and you can go up to let me see what
+
+is current configuration right now if I choose on custom so far to use I can go up to 640 jeebies if
+
+you click on extend memories and if you do not click it you can go up to sixteen g with a memory so
+
+that's the configuration guys that are high you know I'll try and make a memory machines as well and
+
+which are there for you to select it has like four four TVC pews you can have 961 so these are like
+
+standard missions which are available you can go up to 64 terabytes and this is standard for almost
+
+all the machines which you can use that you cannot attach jeep used to outline memory optimized machines
+
+if I go back again and if I select say first to generation and I can go to Megan memory you can add
+
+instance in really it as large must have at least eight used either to change the machine type are increase
+
+OK
+
+so you can not have these one are safe if I change this to hate instance we must now add the most 64
+
+we CPO so this is not possible because of the CPS which are there.
+
+Let me choose our time memory and if this is the case and
+
+okay I can see choose 4.
+
+So I have 40.
+
+That is the least one I need to extend the memory
+
+okay so you can not.
+
+So it is based on the configuration you can think of.
+
+It is not allowed for you to choose the the GP use it is the limitation towards you can think of because
+
+of the because of the configuration which they have it.
+
+That's the machine type guys.
+
+If you have any questions let me know are there ways you can move to the next one which is like a GP
+
+you and compute engine.
+
+Thank you.
+
+トランスクリプション
+種類をよくご覧になりましたか？
+
+第一世代のマシンテープと第二世代のマシンタイプがあります。
+
+それ以前は、フルジェネレーションの時に発売されたと思うのですが、その時は伝統的なカスタムマシンタイプでした。
+
+従来のカスタムマシンのタイプもありました。
+
+また、共有コアのマシンタイムもあります。
+
+第2世代では、メガウルトラやGPユースのマシンは、カスタムと事前定義しかありませんでしたが。
+
+今のところ、そして実際に共有コアを追加したり、GPに移行したりする可能性があります。
+
+コンソールに戻って、ミュージアムの作成をクリックすると、様々な種類のマシンが表示されます。
+
+マシン・ファミリーとして、汎用マシンかメモリー最適化マシンを選ぶことができます。
+
+メモリに最適化されたマシンを選ぶと、世代が表示され、性別は第一世代か第二世代かがわかります。
+
+第一世代か第二世代か。
+
+第一世代のマシンをクリックすると、共有コアのマシンが表示されますが、これは非常に小さいものです。
+
+標準的なマシンであるHi CPO Hiメモリ Megaやウルトラメモリもあります。
+
+第二世代のマシンを選ぶと、カスタム・マシンや標準のハイメモリ・マシン、ハイユー・マシンがあります。
+
+しかし、メガやウルトラではなく、カスタムVMを選択することができます。
+
+メモリはもちろんのこと、メモリを拡張することもできます。
+
+を拡張することもできます。また、異なる種類のマシンに直面した場合、異なるCPOファミリーを選択することもできます。
+
+を選ぶことができます。
+
+そのため、この地域、このゾーンでは、インテル・カスケード・アウトという唯一の選択肢を与えています。
+
+そのため、選択肢はありません。
+
+もし私が第一世代のマシンを選んだら、GPを使う必要がないのなら、私はそれをしないでしょう、私は先に行くことができます。
+
+その上で、私の足であるBroadwellを選び、その上で説教をすれば、そのマシンをGPユースとして取り付けることができる。
+
+このGPの数は、睡眠時間やその他のパラメータに依存します。
+
+GPの数は、スリープやその他のパラメータに依存します。
+
+仮想ワークステーションを有効にすることもできますし、本当に同意しています。
+
+もし私が第二世代を選択したら、あなたは選択することができないか、あるいはGP使用はできないことになります。
+
+なぜ、第2世代を出したのかは分かりませんが、時代的にそうなっているのでしょう。
+
+2020年後半にはGPが追加されるようですが、今のところ、第1世代と第2世代を
+
+その第一世代と第二世代のマシンの種類を選択します。
+
+そして、その個々のマシンタイプの詳細に入るにはどうしたらいいかというと、もしあなたが標準的なマシンタイプなら
+
+EPOは3.75GBのメモリを搭載し、さらにディスクを1枚装着することができます。
+
+ディスクはもう一枚、64枚、96枚のACPを使うこともできます。
+
+使用することができます。
+
+これは標準的なマシンのタイプで、典型的なのはこのN1のロゴを付けて紹介することです。
+
+コンピュータ・エンジンは、GCの世界を表現するために、このような見せ方をしています。
+
+提示されています。
+
+これが標準的なマシンです。次のマシンは、共有コアのマシンです。
+
+CPEを見ると、0.2ポイントのCPEと0.6ポイントのRAMが追加されています。
+
+つまりF1タイプのマシンの60メガバイトのRAMと20パーセントのRAMです。
+
+10GPの永続ディスクを取り付けることもできるし、他のディスクを追加することもできる。
+
+のマシンの場合、CPEの60パーセントまで、つまり0 1 6 CBのような小さなマシンです。
+
+マイクロバスを使えば、1ポイント7ジービーのラムを入れることができます。
+
+これはどういう意味かというと、政治的なハードウェアがその時点で利用可能かどうかということです。
+
+これはどういうことかというと、もしその時点で政治的なハードウェアが利用可能であれば、1台のマシンの中で実行されている負荷に基づいて、この20パーセントを超えることができるのです。
+
+これはそのマシンのリソースを利用できるかどうかということです。
+
+これは、そのマシンのリソースを利用することができます。
+
+ームと比較して、より多くのCPEを持つことができます。
+
+を処理するのであれば、ハイ・スリープ、ハイ・メモリ・マシンが必要です。
+
+より多くのメモリをキャッシュし、それを後で処理するのですが、これがハイメモリやより多くのメモリを搭載したマシンです。
+
+このように、高メモリマシンや高メモリマシンは、まるで貧乏人のように迫害され、6ポイント5バチが当たり前のように存在します。
+
+CPEは自分で選んで使うことができるので、1台持っていれば、6ポイント5を標準にすることもできます。
+
+標準的な6ポイント5にすることもできますが、メモリを拡張して、現在の構成がどうなっているかを見ることができます。
+
+今現在の構成はというと、カスタムを選べば640ジーヴィーまで行くことができます。
+
+もし
+
+クリックするとメモリの拡張、クリックしない場合は16Gまでメモリを搭載することができます。
+
+メモリは16GBまで増やせます。
+
+これは961のTVCMを流すことができる標準的なミッションです。
+
+これは標準的なミッションで、最大で64テラバイトまで可能です。
+
+ジープはメモリに最適化されたマシンのアウトラインに使用することができませんが、すべてのマシンで使用できます。
+
+もし私がもう一度戻って、第一世代と言うのを選択すれば、Meganのメモリに追加することができます。
+
+インスタンスを追加することができます。これは、マシンの種類を変更するために使用される少なくとも8つの大規模なものでなければなりませんが、増加します。
+
+OK
+
+だから、これらの1つを持っていないことができます 私はインスタンスを憎むようにこれを変更した場合、我々は今、最も64を追加する必要があり、安全です。
+
+私たちはCPOので、これはそこにあるCPSのために可能ではありません。
+
+私たちの時間のメモリを選択してみましょう、そして、これがそうである場合、そして
+
+4を選択します。
+
+だから私は40を持っています。
+
+これは、私がメモリを拡張するために必要な最小のものです。
+
+そうです。
+
+だから、あなたが考えることができる構成に基づいています。
+
+GPの使用方法を選択することはできませんが、それはあなたが考えることのできる範囲の制限です。
+
+というのも、彼らが持っている構成のせいです。
+
+それがマシンタイプの人たちです。
+
+もし質問があれば、私に教えてください。
+
+のようなものです。
+
+ありがとうございました。

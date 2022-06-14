@@ -1,0 +1,170 @@
+﻿トランスクリプション
+Pre-emptive William.
+
+So what are these preemptive William so preemptive Williams are the reasons which you can use it.
+
+But there is no guarantee there is no SLA that you are going to keep it for 24 hours.
+
+You get to use those instances for up to 24 hours.
+
+And this is you can think of a slick bidding process.
+
+So you say you are in in one of the region and zone and then you need to compute resources for one of
+
+the job.
+
+Right.
+
+It is not the continents running job.
+
+It is one of the job maybe we do coding maybe a PDA creation or any of that kind of activities or machine
+
+learning activities and you need you know the Computer Associates instead up using standard compute
+
+engine you probably will end up in using plain table VM.
+
+So these BMW Williams are like you can get up to 80 percent discount and I'll show you that.
+
+But there is no guarantee that you are going to keep it.
+
+So the only workload where you can restart the only workload where you do not need a continuous like
+
+running back around process is continuously.
+
+That's where you use broom devil VM machines.
+
+Let me go to instance creation.
+
+So I mean for instance creation new VM creation.
+
+Right.
+
+So if I go here there is a switch which says predictability off and from duplicate on right.
+
+So currently by default it is off which means if you look at the charges is like twenty four dollars
+
+and let me just increase that to the bigger machine.
+
+So 388 dollars charge him the dream abilities off if I switch it on.
+
+That's where it comes back to say online.
+
+I don't 70 percent discount on the actual charges.
+
+So if you switch it on you can get this up to 24 hours.
+
+But there is no guaranteed.
+
+Can you win.
+
+Your machine will be taken from you within a short notice of 30 seconds.
+
+If there is a higher demand in that particular region.
+
+So that's a preemptively and it is used for one of you know activities for your workload going back
+
+again some of the properties of predictability.
+
+You cannot let you migrate are to restart we and you get up to 24 hours Max use and not governmentally
+
+SLA charges.
+
+It is started for 10 minutes less use will not be built when you attach the GPO to plain table we ends
+
+your code will be used so you need to make sure that you are monitoring quarter compute engines send
+
+signal to preemption to VM 30 seconds before average apprehension rate varies from 5 percent to 15 percent
+
+for 7 days per project which is very less as compared to the saving which you get it.
+
+That's the predictability guys if you have any questions on it let me know otherwise you can move to
+
+the next lecture.
+
+Thank you.
+
+トランスクリプション
+先制のウィリアム
+
+このプリエンプティブ・ウィリアムとは何でしょうか プリエンプティブ・ウィリアムとは、あなたがそれを使うことができる理由です。
+
+しかし、24時間使えるという保証はありませんし、SLAもありません。
+
+インスタンスは最大24時間まで使用できます。
+
+そして、これは巧妙な入札プロセスを考えることができます。
+
+例えば、ある地域とゾーンにいるとして、ある仕事のためにコンピューティング・リソースが必要だとします。
+
+とします。
+
+そうです。
+
+大陸の仕事ではありません。
+
+例えば、コーディングやPDAの作成、機械学習などの仕事です。
+
+コンピュータ・アソシエイツは、標準的なコンピュート・エンジンの代わりに使うことができます。
+
+を使うことになるでしょう。
+
+このBMW Williamsは、最大80パーセントの割引を受けることができますので、それをお見せしましょう。
+
+しかし、それを維持できる保証はありません。
+
+ですから、再稼働できる唯一のワークロードは、継続的なバックアラウンド処理が不要なワークロードだけです。
+
+を必要としない唯一のワークロードです。
+
+そこで、ブルームデビルVMマシンを使用するのです。
+
+インスタンス作成について説明します。
+
+つまり、インスタンスの作成は新しいVMの作成ということですね。
+
+そうです。
+
+ここに予測可能性オフ、複製可能性オンのスイッチがあります。
+
+現在デフォルトではオフになっているので、料金を見てみると24ドルになっています。
+
+で、これを大きなマシンに上げてみます。
+
+これをオンにすると、夢の能力はオフのまま388ドル請求されるわけです。
+
+そこで、オンラインと言うことになるのです。
+
+実際の料金の70％割引はないんです。
+
+だから、あなたがそれをオンに切り替える場合は、24時間までこれを得ることができます。
+
+しかし、保証はない。
+
+あなたは勝つことができます。
+
+あなたのマシンは、30秒の短い通知内であなたから取られます。
+
+その特定の地域でより高い需要がある場合。
+
+これは先取りで、ワークロードのアクティビティの一つに使われるわけです。
+
+また、予測可能性の特性の一部です。
+
+マイグレーションをさせることはできませんが、再起動することで最大24時間使用することができ、政府によるSLAもありません。
+
+SLA料金です。
+
+GPOをプレーンテーブルに貼り付けると、10分間は使用しないように開始され、終了します。
+
+あなたのコードが使用されるので、四半期コンピュートエンジンの監視を確認する必要があります。
+
+平均捕捉率が5%から15%に変化する30秒前にVMに先取りする信号を送る
+
+プロジェクトあたり7日間で、5%から15%です。
+
+これが予測可能性の話です。もし質問があれば教えてください。
+
+次の講義に進んでください。
+
+ありがとうございました。
+
