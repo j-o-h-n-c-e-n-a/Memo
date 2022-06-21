@@ -168,3 +168,12 @@
 8. ボットがアクセシビリティの基準を満たしていることを確認する
 9. ボットのアクションに対する説明責任を想定する
 
+## 
+
+https://www.microsoft.com/en-us/haxtoolkit/library/
+https://docs.microsoft.com/ja-jp/learn/paths/get-started-with-artificial-intelligence-on-azure/
+https://docs.microsoft.com/ja-jp/learn/modules/use-automated-machine-learning/
+https://docs.microsoft.com/ja-jp/learn/paths/explore-computer-vision-microsoft-azure/
+https://docs.microsoft.com/ja-jp/learn/modules/create-language-model-with-language-understanding/
+https://docs.microsoft.com/ja-jp/learn/paths/explore-natural-language-processing/
+https://docs.microsoft.com/ja-jp/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/
