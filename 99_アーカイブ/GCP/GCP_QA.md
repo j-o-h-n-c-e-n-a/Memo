@@ -1401,6 +1401,90 @@
     答え：１
 </div></details>
 
+## Q. サービス アカウントは手動操作を必要としないシナリオに使用するべきである
+1. TRUE
+2. FALSE
+3. 
+4. 
+<details><div>
+    答え：1
+</div></details>
+
+## Q. カスタムのIAMロールに割り当てられている権限を確認する必要があります。どのように対応しますか
+1. GCP ConsoleのIAMセクションを使用して情報を表示する
+2. gcloud init コマンドを使用して情報を表示する
+3. GCP Consoleのセキュリティセクションを使用して情報を表示する
+4. GCP ConsoleのAPIセクションを使用して情報を表示する
+<details><div>
+    答え：1
+</div></details>
+
+## Q. １箇所で作成したIAMの役割を、複数のプロジェクトにまたがって使うことができる
+1. TRUE
+2. FALSE
+<details><div>
+    答え：1
+</div></details>
+
+## Q. IAMの権限管理に関して、管理の手間をなるべく少なくするため、商用環境でも基本の役割を積極的に利用するべきである
+1. TRUE
+2. FALSE
+<details><div>
+    答え：2
+</div></details>
+
+## Q. プロジェクトのすべてのCompute Engine リソースがeurope-west1リージョンにあります。europe-west1 を gcloud コマンドのデフォルトのリージョンとして設定したい場合、どうすればよいですか
+1. europe-west1 リージョン内のリソースに移動してからCloudShellを起動する
+2. "gcloud config set compute/region europe-west1" にてgcloudコマンドのデフォルトリージョンを設定
+3. "gcloud config set compute/zone europe-west1" にてgcloudコマンドのデフォルトリージョンを設定
+4. オンプレミスから europe-west1のサブネットへのVPNを作成し、その接続をgcloudコマンドの実行時に使用する
+<details><div>
+    答え：2
+</div></details>
+
+## Q. 特定のプロジェクトのすべてのリソースを特定のユーザーが表示できるようにする必要があります。Googleが推奨する方法で権限付与を行いたいと考えています。どのように対応しますか
+1. 組織に対してプロジェクト閲覧者の役割を全ユーザーに付与する
+2. 組織に対してプロジェクト閲覧者の権限を特定ユーザーを含む新しいGoogleグループを作成して付与する
+3. 特定プロジェクトに対してプロジェクト閲覧者の権限を特定ユーザーを含む新しいGoogleグループを作成して付与する
+4. 特定プロジェクトに対してプロジェクト閲覧者の役割を全ユーザー個別に付与する
+<details><div>
+    答え：3
+</div></details>
+
+## Q. 組織内でmy-projectという名前のプロジェクトに対するオーナーアクセス権を持つユーザーを特定する必要があります。どのよう対応しますか
+1. Google Cloud Platform Consoleで組織のIAMページに移動、「Role:Owner」というフィルタを適用する
+2. Google Cloud Platform ConsoleでプロジェクトのIAMページに移動、「Role:Owner」というフィルタを適用する
+3. ターミナルから”gcloud iam list-grantable-role-project my-project”を実行する
+4. プロジェクトページでCloudShellから”gcloud iam list-grantable-role”を実行する
+<details><div>
+    答え：2
+</div></details>
+
+## Q. 組織リソースの中で最も下位のリソースは次の内どれですか
+1. フォルダ
+2. プロジェクト
+3. ファイル
+4. VMインスタンス
+<details><div>
+    答え：2
+</div></details>
+
+## Q. Google Cloudおリソースに余剰があれば、プリエンプティブルVMは24時間以上継続して利用できる
+1. TRUE
+2. FALSE
+<details><div>
+    答え：2
+</div></details>
+
+## Q. コマンドラインからApp Engine アプリケーションをデプロイするには、どのコマンドを使用するべきですか
+1. gcloud components app deploy
+2. gcloud app deploy
+3. gcloud components instances deploy
+4. gcloud app instance deploy
+<details><div>
+    答え：2
+</div></details>
+
 ## Q. 
 1. 
 2. 
