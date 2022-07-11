@@ -1485,6 +1485,90 @@
     答え：2
 </div></details>
 
+## Q. Google Compute Engineのパフォーマンスに関する考察 有効でないパラメータは何ですか？
+1. VM がホストされているハードウェア
+2. Network Performance
+3. Disk IOPS
+4. Number of vCPU
+<details><div>
+    答え：1
+</div></details>
+
+## Q. google Compute Engine（VM）への接続について、次の記述のうち誤っているものはどれか。
+1. Windows VMへの接続にrdpを使用することができます。
+2. サードパーティのsshクライアントはLinuxのVMに接続することはできません。
+3. Linux VMへの接続にsshを使用することができます。
+4. クラウドコンソールからrdpまたはsshで接続できます。
+<details><div>
+    答え：2
+</div></details>
+
+## Q. Google Compute Engineでは、サードパーティクライアントからのSSH接続のために、デフォルトでファイアウォールが開放されています。
+1. true
+2. false
+<details><div>
+    答え：2
+</div></details>
+
+## Q. 外部IPアドレスは、Google Cloud Compute Engineの内部で見ることができます。
+1. true
+2. false
+<details><div>
+    答え：2
+</div></details>
+
+## Q. Compute Engineから外部IPアドレスを確認するには、どのコマンドを使用すればよいですか？
+1. gcloud
+2. ipconfig
+3. ipaddress external
+4. gsutil
+<details><div>
+    答え：1
+</div></details>
+
+## Q. 以下のマシンタイプではGPUを取り付けることができません。
+1. Shared Core
+2. Custom machine
+3. Standard
+4. High Memory
+5. High CPU
+<details><div>
+    答え：1
+</div></details>
+
+## Q. VMのネットワーク性能は、以下のパラメータに依存します。
+1. Number of vCPUs
+2. GBs of RAM
+3. Number of disks attached
+4. Network Interface attached
+<details><div>
+    答え：1
+</div></details>
+
+## Q. ローカルSSDを選択する際の注意点は？
+1. LocalSSD is ephemeral
+2. ローカルSSDを搭載したVMは、ローカルSSDに保存されたデータでライブマイグレーションができない
+3. Local SSD can be upto 3TB
+4. 1つのVMにつき、1つのローカルディスクしか使用できない
+5. Local disk size is fixed size
+<details><div>
+    答え：4
+</div></details>
+
+## Q. カスタムVMは、同等の事前定義されたVMよりもコストが高くなる場合があります。
+1. TRUE
+2. FALSE
+<details><div>
+    答え：1
+</div></details>
+
+## Q. Google Compute EnginesのvCPU数は、CPUプラットフォームに依存します。
+1. TRUE
+2. FALSE
+<details><div>
+    答え：1
+</div></details>
+
 ## Q. 
 1. 
 2. 
