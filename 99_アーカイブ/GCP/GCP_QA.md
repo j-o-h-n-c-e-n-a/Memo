@@ -1569,6 +1569,74 @@
     答え：1
 </div></details>
 
+## Q. GAEは、次の1つを除くすべての機能を備えています。
+1. Traffic Splitting
+2. Application Versioning
+3. Standard and Flexible env.
+4. Monitoring, Logging, Error Reporting
+5. DNS
+<details><div>
+    答え：5
+</div></details>
+
+## Q. GAEはVMを管理し、GCPはハードウェアとネットワークを管理するマネージドサービスです。
+1. TRUE
+2. FALSE
+<details><div>
+    答え：2
+</div></details>
+
+## Q. GAEはコンテナのオーケストレーションを提供します。
+1. TRUE
+2. FALSE
+<details><div>
+    答え：
+</div></details>
+
+## Q. App Engineは、以下のスケーリング方法のうち、1つを除いたすべての方法を使用します。
+1. Manual
+2. Automatic
+3. Hybrid
+4. Basic
+<details><div>
+    答え：3
+</div></details>
+
+## Q. App Engineの構成は、次のうち1つを除いてすべて選択可能です。
+1. Choose different machines
+2. Configure scalling
+3. Choose custom VM
+4. Number of Instances
+<details><div>
+    答え：4
+</div></details>
+
+## Q. App Engine standard env.に関する次の記述のうち、誤っているものはどれか。
+1. Docker Container Support
+2. Preconfigured Sandbox
+3. Google supply SDK for standard env.
+<details><div>
+    答え：1
+</div></details>
+
+## Q. App Engine Flexible env. に関する次の記述のうち、正しくないものはどれか。
+1. Flexible env. is preconfigured Sandbox runtime
+2. You can configure CPU and Memory
+3. You can customize env. with dokerfile
+4. You have root access to VM
+<details><div>
+    答え：1
+</div></details>
+
+## Q. App Engineは、次の1つを除くすべてのパラメータに基づいて課金されます。
+1. Type of machine instance used
+2. Network egress
+3. Other used service based on requirements
+4. Network ingress
+<details><div>
+    答え：4
+</div></details>
+
 ## Q. 
 1. 
 2. 
