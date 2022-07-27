@@ -1,11 +1,14 @@
 ﻿# 参考
 https://eng-entrance.com/lpic_level1_howto
 
-https://eng-entrance.com/lpic101#LPIC101-3
-
+https://www.infraeye.com/study/studyz4.html
 
 https://www.ai-plus.com/it%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E9%96%A2%E9%80%A3%E8%AC%9B%E5%BA%A7/lpic-%E3%83%AC%E3%83%99%E3%83%AB1-%E5%8F%97%E9%A8%93%E5%AF%BE%E7%AD%96%E8%AC%9B%E5%BA%A7
 
+https://ping-t.com/
+
+https://learning.lpi.org/en/learning-materials/102-500/108/108.2/
+https://learning.lpi.org/en/learning-materials/102-500/109/109.2/109.2_02/
 
 # トピック 101: システム・アーキテクチャー
 ## 101.1 ハードウェア設定の決定と構成
@@ -22,7 +25,8 @@ https://www.ai-plus.com/it%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC
 * /sys/
 * /プロシージャ/
 * /開発/
-* モッドプローブ
+* modprobe
+    + デバイスドライバのロード
 * lsmod
 * lspci
 * lsusb
@@ -71,8 +75,6 @@ https://www.ai-plus.com/it%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC
 * /etc/systemd/
 * /usr/lib/systemd/
 * 壁
- 
-
 
 
 # トピック 102: Linux のインストールとパッケージ管理
@@ -95,7 +97,6 @@ https://www.ai-plus.com/it%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC
 * マウントポイント
 * パーティション
 
- 
 ## 102.2 ブートマネージャのインストール
     重さ: 2
 ### 形容：候補者は、ブートマネージャを選択、インストール、および設定できる必要があります。
@@ -123,7 +124,6 @@ https://www.ai-plus.com/it%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC
 * /etc/ld.so.conf
 * LD_LIBRARY_PATH
 
- 
 ## 102.4 Debian パッケージ管理の使用
     重さ: 3
 ### 形容：受験者は Debian パッケージツールを使用してパッケージ管理を実行できる必要があります。
@@ -185,9 +185,9 @@ https://www.ai-plus.com/it%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC
     コマンド履歴を使用および編集します。
     定義されたパスの内側と外側でコマンドを呼び出します。
     以下は、使用されるファイル、用語、およびユーティリティの部分的なリストです。
-* バッシュ
-* エコー
-* 環境
+* bash
+* echo
+* envirment
 * 輸出
 * ティッカー
 * セット
@@ -447,162 +447,28 @@ https://www.ai-plus.com/it%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC
 * /種類
 * //etc/updatedb.conf
 
+# ポイント
+* GRUB2のインストールコマンド
+* GRUBの設定ファイル一式
+* GRUBの説明
+* mkfs
+* BIOS
+* XFS (問題多かった)
+* tarのtzvオプション
+* vimのコマンド(問題多かった)
+* ファイルストリーム: cat, cut, tr, wc etc
+* dmesg --clean
+* リダイレクトの構文(問題多かった)
+* yum, rpm, agt-get, rpkg (問題多かった)
+* /etc/ld.so.conf
+* mount関連(問題多かった)
+* 複数選択は2個の選択のみで、3個以上はなかった
+* 記述問題はオプション無しのものみであった
+* 複数行にまたがる記述はなかった
+* 設定ファイルに書くべき文を記述する問題はなかった
+
 
 # Q&A
-
-## Q. lspci コマンド で表示される情報として適切なものを4つ選択してください。
-1. デバイス の ベンダー ID
-2. バス の 速度 C
-3. CPU の 速度
-4. デバイス 名
-5. IRQ 情報
-<details><div>
-    答え：1.2.4.5
-</div></details>
-
-## Q. 通常、必要なモジュールはカーネルに自動的にロードされますが、手動でロードするコマンドを以下から選択してください。
-1. modiinstall
-2. lsmod
-3. modprobe
-4. modmanual
-<details><div>
-    答え：3
-</div></details>
-
-## Q. マスストレージデバイスとして適切なものを２つ選択してください
-1. キーボード
-2. USBメモリ
-3. マイク
-4. ハードディスクドライブ
-<details><div>
-    答え：2.4
-</div></details>
-
-## Q. USBデバイスの階層構造をツリー上に表示するコマンドを以下から選択してください
-1. lspci -k
-2. lspci -t
-3. lsusb -v
-4. lsusb -t
-<details><div>
-    答え：4
-</div></details>
-
-## Q. システムにロードされているカーネルモジュールを確認するコマンドを記述してください
-<details><div>
-    答え：lsmod
-</div></details>
-
-## Q. メモリに関する情報が記述されているファイルとして適切なものを以下から選択してください
-1. /proc/meminfo
-2. /proc/ioports
-3. /proc/cpuinfo
-4. /proc/bus/pci/*/
-5. /proc/interrupts
-<details><div>
-    答え：1
-</div></details>
-
-## Q. udevの説明として適切なものを２つ選択してください。
-1. デバイスが接続されると、/devにデバイスファイルを作成する
-2. デバイスが接続されると、/sysにデバイス情報を作成する
-3. 動的にデバイスファイルを作成することができない
-4. /etc/udev/rules.d ディレクトリ以下の設定ファイルを使用してデバイスファイルを作成する
-<details><div>
-    答え：1.4
-</div></details>
-
-## Q. デバイスファイルがおかれているディレクトリを以下以下から選択してください
-1. /sys
-2. /bin
-3. /dev
-4. /devices
-<details><div>
-    答え：3
-</div></details>
-
-## Q. D-Bus の説明として適切なものを以下から選択してください
-1. アプリケーション間でやり取りを行うためのプロセス間通信機構
-2. コンピュータ内の回路がデータを交換するための経路
-3. ハードウェアの変更をアプリケーションへ通知するソフトウェア
-4. インターネットで利用される通信プロトコル
-<details><div>
-    答え：1
-</div></details>
-
-## Q. システムに電源を入れてからOSが起動するまでの流れとして適切なものを以下から選択してください
-1. BIOS/UEFI カーネル ブートローダ inti/systemd
-2. BIOS/UEFI ブートローダ カーネル inti/systemd
-3. ブートローダ BIOS/UEFI カーネル inti/systemd
-4. ブートローダ BIOS/UEFI inti/systemd カーネル
-<details><div>
-    答え：2
-</div></details>
-
-## Q. システム起動時の処理内容を確認するコマンドを記述してください
-<details><div>
-    答え：dmesg
-</div></details>
-
-## Q. systemd のUnitの説明として適切なものを３つ選択してください
-1. service は各種サービスを管理する
-2. mount は指定のファイルシステムをマウントする
-3. path は複数のサービスをグループ化する
-4. device はデバイスを管理する
-5. target はスワップ領域を管理する
-<details><div>
-    答え：1.2.4
-</div></details>
-
-## Q. systemd においてサービスの自動起動を設定するコマンドを以下から選択してください
-1. sysemctl start サービス名
-2. sysemctl restart サービス名
-3. sysemctl enable サービス名
-4. sysemctl in-active サービス名
-<details><div>
-    答え：3
-</div></details>
-
-## Q. BIOD/UEFI の役割として適切なものを２つ選択してください
-1. OSを起動するプログラムの読み込み
-2. 基本的な入出力の制御
-3. パッケージの管理
-4. カーネルをメモリに読み込む
-<details><div>
-    答え：1.2
-</div></details>
-
-## Q. Linuxの起動処理およびシステム管理を行う仕組み説明として適切なものを２つ選択してください
-1. SysVinitはサービスを並列に起動する
-2. Upstatはイベント駆動型という特徴を持つ
-3. systemdはサービスを順番に起動する
-4. SysVinitの最初のユーザープロセスはinitである
-<details><div>
-    答え：2.4
-</div></details>
-
-## Q. systemd 環境下のシステムで使用されるログ管理サービスのログを確認するコマンドを記述してください
-<details><div>
-    答え：jornalctl
-        systemd-jornalにログ管理プロセスがある。
-</div></details>
-
-## Q. systemctl コマンドでサービスの設定を再読み込みするサブコマンドを以下から選択してください
-1. restat
-2. reload
-3. reset
-4. reboot
-<details><div>
-    答え：2
-</div></details>
-
-## Q. initramfs の説明として適切なものを２つ選択してください
-1. ブートローダの読み込みを行う
-2. init または systemd プロセスを実行する
-3. システム起動時に使用される一時的なルートファイルシステムである
-4. ルートファイルシステムをマウントするためのスクリプトが格納されている
-<details><div>
-    答え：3.4
-</div></details>
 
 ## Q. 
 1. 
