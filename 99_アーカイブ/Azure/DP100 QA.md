@@ -581,6 +581,266 @@
 </div></details>
 
 ### Q. 
+    1. Alice は、Azure Databricks 上にノートブックを作成して、データセットを Spark ML で使用する前にトレーニングします。 ノートブックでそれを行うためにサポートされている言語は次のうちどれですか?
+1. Java
+2. Python
+3. C#
+<details><div>
+    答え：2
+     Azure Databricks は、実行可能なノートブック セルで、Python、Scala、SQL、および R プログラミング言語をサポートしています。
+</div></details>
+
+### Q. 
+    2. TensorFlow を使用してニューラル ネットワークをトレーニングしたいと考えています。 余分なオーバーヘッドを避けるため、ライブラリの手動インストールは行いたくありません。 何をする必要がありますか?
+1. Databricks Runtime for Machine Learning を使用してクラスターを作成する。
+2. 単一ノード クラスターを作成する。
+3. Python ノートブックを作成する。
+<details><div>
+    答え：1
+     Databricks Runtime for Machine Learning により、TensorFlow を含む複数のライブラリが追加されます。
+</div></details>
+
+### Q. 
+    3. DBFS の説明として正しいのはどれですか?
+1. UI を使用して DBFS にファイルをアップロードできる。
+2. Azure Databricks のデータにアクセスできるのは、DBFS に格納されている場合のみである。
+3. DBFS にアップロードされたデータは、クラスターが実行されている間のみ保存される。
+<details><div>
+    答え：1
+    DBFS にファイルをアップロードするには、UI を使用するほか、ノートブック内でもできます。
+</div></details>
+
+### Q. 
+    1. Bob は複数のデータソースで生成されたデータを Azure Databricks に取り込む必要があります。 次に、いくつかの ETL を実行してデータをデータ レイクに移動します。 DBFS にマウントできるデータソースはどれですか。
+1. FTP
+2. Azure Data Lake Store
+3. SMB
+<details><div>
+    答え：2
+     Azure Databricks では、複数のデータ ソース (Azure Blob Storage、Azure Data Lake、Cassandra、JDBC、Apache Kafka、Redis、Elasticsearch)、DBFS 経由でアップロードされ、マウントされたファイル、およびその他のさまざまな製品やデータベースとのデータ統合を使用できます。
+</div></details>
+
+### Q. 
+    2. ビジネスユーザーに結果を表示できるように、データフレーム df を視覚化する必要があります。 データを横棒グラフやその他の種類のグラフとしてプロットするには、どの関数を使用する必要がありますか。
+1. df.show()
+2. df.describe()
+3. df.display()
+<details><div>
+    答え：3
+    display 関数を使用すると、データをテーブルとして、または選択したグラフとして視覚化できます。
+</div></details>
+
+### Q. 
+    3. Logan はモデルをトレーニングするために使用されるデータセットを準備しています。 テーブル df に各レコードが 2 回表示されているように見えます。 各観測値が 1 回だけ含まれるように、行の半分を削除しようとしています。 どの関数を使用する必要がありますか。
+1. df.fillna(2)
+2. df.dropna
+3. df.dropDuplicates
+<details><div>
+    答え：3
+    この操作では、重複する行がドロップされます。
+</div></details>
+
+### Q. 
+    1. John は初めて機械学習モデルをトレーニングしようとしています。 入力の 1 つには、T シャツのサイズ (入力可能な値は XS、S、M、L、XL) が含まれています。 T シャツのサイズの入力特徴を前処理するために、John が採用できる最適なアプローチは何ですか。
+1. 標準化
+2. One Hot エンコード
+3. 正規化
+<details><div>
+    答え：2
+    多くの場合、One Hot エンコードは、T シャツのサイズなどのカテゴリ特徴をエンコードするための推奨されるアプローチです。 一方、標準化および正規化は、数値特徴をスケーリングするためのアプローチです。
+</div></details>
+
+### Q. 
+    2. 1000 行のデータセットがあり、数回の調査後に、欠損値があることが確認されました。 値が含まれていないレコードは 5 つのみです。 この欠損データを処理するための最適な戦略は何ですか。
+1. レコードを複製する。
+2. レコードをスケーリングする。
+3. レコードをドロップする。
+<details><div>
+    答え：3
+     削除されるレコードが少ない場合は、このデータセットを使用してトレーニングするモデルの精度が影響を受けない可能性が高くなります。
+</div></details>
+
+### Q. 
+    1. Daniel は Azure Databricks を新しく使うことになり、Apache Spark に対してネイティブな機械学習用のライブラリを使おうとしています。 どのライブラリを使用すべきでしょうか?
+1. MLLib
+2. Spark ML
+3. RDD
+<details><div>
+    答え：2
+    Spark ML は、Apache Spark の機械学習開発用の主要なライブラリです。
+</div></details>
+
+### Q. 
+    2. 次のオプションの中で、Spark ML のモデル トレーニングの主要な抽象的概念はどれですか?
+1. Iterator
+2. プロセッサ
+3. トランスフォーマー
+<details><div>
+    答え：3
+    変換器、推定器、パイプラインが、Spark ML の 3 つの主要な抽象的概念です。 変換器は DataFrame の形状を変更し、推定器は DataFrame をトレーニング済みのモデルなどのオブジェクトに変換し、パイプラインは変換器と推定器のチェーンを接続します。
+</div></details>
+
+### Q. 
+    3. Alexandra は、lrModel という名前の線形回帰モデルをトレーニングし、それを検証したいと思っています。 実行すべきコードは次のうちどれですか?
+1. predictions = lrModel.transform(testData)
+2. predictons = lrModel.fit(testData)
+3. predictions = lrModel.fit(trainingData)
+<details><div>
+    答え：1
+    モデルの transform() 関数は、検証データセットに対して使用する必要があります。
+</div></details>
+
+### Q. 
+    1. 次のオプションのうち、MLflow コンポーネントの名前はどれですか?
+1. MLflow Framework
+2. MLflow Tracking
+3. MLflow Training
+<details><div>
+    答え：2
+    MLflow は、モデルを形成するための標準を提供する Models コンポーネント、モデルの登録とバージョン管理を可能にする Model Registry、データ サイエンス コードをパッケージ化する Projects、データ サイエンス コードの実行に関する情報を保持する Tracking の 4 つの主要コンポーネントで構成されています。
+</div></details>
+
+### Q. 
+    2. 次の記述のうち、実験を最も適切に定義しているのはどれですか?
+1. テストのコレクション
+2. 実行のコレクション
+3. ノートブックのコレクション
+<details><div>
+    答え：2
+     実験は、実行のコレクションとして定義されます。 実行は、データ サイエンス タスクのコードの実行として定義されます。
+</div></details>
+
+### Q. 
+    3. MLflow プロジェクトに含める必要がある 2 つの資産とは何ですか?
+1. モデルとそのメトリック。
+2. Python スクリプトと実験。
+3. Python スクリプトと環境。
+<details><div>
+    答え：3
+     プロジェクトはデータ サイエンス コードをパッケージ化する方法であり、これには、Python スクリプトなどのファイルである少なくとも 1 つのエントリ ポイントと、環境に関する詳細が含まれます。
+</div></details>
+
+### Q. 
+    1. Lucas は Azure Databricks を使用してモデルをトレーニングし、リアルタイム スコアリング用に提供しようとしています。 次に何をする必要がありますか。
+1. モデルのバージョンを管理する。
+2. モデルをアーカイブ済みステージに切り替える。
+3. モデルを登録します。
+<details><div>
+    答え：3
+    Mlflow を使用してモデルを登録すると、リアルタイム スコアリング用にモデルを提供できます。 サービス プロセスで自動的にラッパーが構築され、スコアリング用の REST API が公開されるため、トレーニング済みモデルを簡単に使用できます。
+</div></details>
+
+### Q. 
+    2. MLflow の実行時に、モデルをトレーニングする Python スクリプトが実行されます。 モデルは実行時にログに記録されますが、登録する必要もあります。 実行時にモデルを登録するには、何をコードに含める必要がありますか。
+1. register_model
+2. registered_model_name
+3. log_model
+<details><div>
+    答え：2
+     実行時に registered_model_name という名前を付けると、モデルを登録できます。
+</div></details>
+
+### Q. 
+    3. Hanna は読み取りアクセス許可を持っていて、Azure Databricks の UI を使用してモデルをステージングから運用に切り替えようとしています。 読み取りアクセス許可を持っているユーザーは何を実行できますか。
+1. 切り替えを実行する。
+2. 切り替えを要求する。
+3. 現在のステージのみを読み取ることができる。
+<details><div>
+    答え：2
+     読み取り以上のアクセス許可を持っているユーザーは切り替えを要求できます。
+</div></details>
+
+### Q. 
+    1. MLflow でモデルのメトリック _rmse をログする正しい方法は何ですか?
+1. mlflow.log("RMSE", _rmse)
+2. mlflow.log_artifact("RMSE", _rmse)
+3. mlflow.log_metric("RMSE", _rmse)
+<details><div>
+    答え：3
+    MLflow モジュールでは "fluent" API が提供されるため、log_metric() がモデル メトリックをログするための正しい方法です。
+</div></details>
+
+### Q. 
+    2. Leon は Azure Databricks で Azure Machine Learning の実験を実行したいと考えています。 MLflow 実験が構成され、Leon はそれを実行しようとしています。 彼はステップを忘れたことに気付きました。 最初に何を行う必要がありましたか?
+1. Azure Machine Learning でモデルを登録する。
+2. MLflow を使用して実験メトリックをログする。
+3. Azure Machine Learning を使用するために MLflow の追跡 URI を構成する。
+<details><div>
+    答え：3
+    最初に、AML を使用するために MLflow の追跡 URI を構成する必要があります。
+</div></details>
+
+### Q. 
+    3. あなたは、Azure Machine Learning パイプラインを実行することを検討しています。 パイプラインの最初の手順は、Azure Databricks コンピューティングで Python スクリプトを実行してデータを前処理することです。 構成が定義されたので、コンピューティングを作成する必要があります。 どの種類のオブジェクトを使用する必要がありますか?
+1. DatabricksAttachConfiguration
+2. ComputeTarget
+3. DatabricksCompute
+<details><div>
+    答え：2
+    構成を定義した後、ComputeTarget を使用してコンピューティングを作成する必要があります。
+</div></details>
+
+### Q. 
+    1. 運用環境のアプリケーションでのリアルタイムの推論をサポートする場合、スコアリング Web サービスのデプロイ ターゲットとして最適な選択肢はどれですか?
+1. Azure Kubernetes Service (AKS)。
+2. Azure Container Instances (ACI)。
+3. Azure Machine Learning コンピューティング クラスター。
+<details><div>
+    答え：1
+    AKS は、大規模な運用環境のデプロイに推奨されます。 AKS では、高速な応答時間と、デプロイされたサービスの自動スケールを提供します。
+</div></details>
+
+### Q. 
+    2. あなたは、モデルを Azure Container Instances にデプロイする必要があります。 トレーニング済みのモデルを登録し、エントリ スクリプトと環境を作成しました。 エントリ スクリプトと環境を組み合わせる必要があります。 どの種類のオブジェクトを使用する必要がありますか?
+1. InferenceConfig
+2. WebserviceDeploymentConfiguration
+3. ComputeTarget
+<details><div>
+    答え：1
+     InferenceConfig は、デプロイに使用するカスタム環境の構成設定を表し、入力パラメーターとしてエントリ スクリプトと環境を使用します。
+</div></details>
+
+### Q. 
+    1. モデルをトレーニングするための Python スクリプトが Azure Databricks で作成され、Databricks Runtime for Machine Learning でクラスターにアタッチされます。 ハイパーパラメーターをチューニングするときにコードを実行して自動 MLflow を有効にするには、どのメソッドを使う必要がありますか?
+1. ParamGridBuilder()
+2. CrossValidator
+3. RegressionEvaluator()
+<details><div>
+    答え：2
+    自動 MLflow でハイパーパラメーターをチューニングするには、CrossValidator または TrainValidationSplit を使用できます。
+</div></details>
+
+### Q. 
+    2. Hyperopt の関数 fmin() を実行するには、どの引数が必要ですか?
+1. 評価メトリック、モデル、データ。
+2. 目的関数、検索空間、モデル。
+3. 目的関数、検索空間、検索アルゴリズム。
+<details><div>
+    答え：3
+    目的関数 fn、検索空間 space、検索アルゴリズム algo が、fmin() 関数に対する引数です。
+</div></details>
+
+### Q. 
+    1. HorovodRunner を使用するには、np パラメーターを指定してプロセスの数を設定する必要があります。 1 つのノードでトレーニングする場合、np をどのような値にする必要がありますか?
+1. np=2
+2. np=-1
+3. np=1
+<details><div>
+    答え：2
+     このようにすると、ドライバー ノード上の 1 つのプロセスを使用してモデルがトレーニングされます。
+</div></details>
+
+### Q. 
+    2. Horovod トレーニング スクリプトに含まれる hvd.callbacks.BroadcastGlobalVariablesCallback(0) コールバックの主な目的は何ですか?
+1. ランダムな重みでトレーニングが開始されたとき、またはチェックポイントから復元されたときに、すべての worker の一貫した初期化を確保するため。
+2. 各エポックの終わりに worker 間のメトリックを平均化するため。
+3. プラトーをトレーニングする場合に学習率を下げるため。
+<details><div>
+    答え：1
+    すべての worker を同じ初期状態で開始することが重要です。
+</div></details>
+
+### Q. 
 1. 
 2. 
 3. 
@@ -1089,5 +1349,3 @@ D:チューニング
 <details><div>
     答え：
 </div></details>
-
-## Udemiy
