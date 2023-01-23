@@ -192,10 +192,11 @@ Microsoft Machine Leaarning for Apache Spark をインストールします。
     オープンソースの深層学習フレームワークであるCaffe2とPyTorchでデータサイエンスバーチャルマシン（DSVM）を使用する予定があります。
     フレームワークをサポートするために、事前に設定されたDSVMを選択する必要があります。
     何を作成する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. DataScience Virtual Machine for windows 2012
+2. DataScience Virtual Machine for Linux(Cent OS)
+3. Geo AI DataScience Virtual Machine with ArcGIS
+4. DataScience Virtual Machine for windows 2016
+5. DataScience Virtual Machine for Linux(Ubuntu)
 <details><div>
     答え：5
     Caffe2、PyTorchはData Science Virtual Machine for Linuxでサポートされています。
@@ -209,10 +210,10 @@ Microsoft Machine Leaarning for Apache Spark をインストールします。
     Azure Machine Learning サービスを使用するデータサイエンスワークスペースを開発中です。
     あなたは、ワークスペースをデプロイするために計算ターゲットを選択する必要があります。
     何を使用する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. Azure Data Lake Analytics
+2. Azure Databricks
+3. Azure Container Service
+4. Apache Spark for HDInsight
 <details><div>
     答え：2
     Azure Container Instancesは、テストや開発用のコンピュートターゲットとして使用できます。48GB以下のRAMを必要とする、CPUベースの低スケールなワークロードに使用します。
@@ -239,10 +240,10 @@ Microsoft Machine Leaarning for Apache Spark をインストールします。
         ディープニューラルネットワーク(DNN)モデルの構築
         インタラクティブなデータ探索と可視化の実行
     どのツールとフレームワークを推奨する必要がありますか？回答するには、適切なツールを正しいタスクにドラッグします。各ツールは、1回、2回以上、または全く使用されないかもしれません。ペイン間の分割バーをドラッグしたり、コンテンツを表示するためにスクロールする必要がある場合があります。
-1. 
-2. 
-3. 
-4. 
+1. Task, Build DNN model, Tool, Vowpal Wabbit
+2. Task, Build DNN model, Tool, PowerBI Desktop
+3. Task, Enable interactive data exploration and visualization, Tool, PowerBI Desktop
+4. Task, Enable interactive data exploration and visualization, Tool, Microsoft Cognitive Toolkit
 <details><div>
     答え：1,3
 ボックス1：Vowpal Wabbit
@@ -279,7 +280,7 @@ Microsoft Machine Leaarning for Apache Spark をインストールします。
     この設定を使用して、ランダムフォレストモデルをトレーニングし、検証データでそれをテストするスクリプトを実行する予定です。検証データのラベル値はy_test変数という変数に格納され、モデルから予測される確率はy_predictedという変数に格納されます。
     HyperdriveがAUCメトリックのハイパーパラメータを最適化できるようにするために、スクリプトにロギングを追加する必要があります。
     解決策 次のコードを実行します。
-    
+        logging.info("メッセージ")
     解決策は目標を達成しましたか?
 1. はい
 2. いいえ
@@ -298,6 +299,7 @@ Microsoft Machine Leaarning for Apache Spark をインストールします。
     この設定を使用して、ランダムフォレストモデルをトレーニングし、検証データでそれをテストするスクリプトを実行する予定です。検証データのラベル値はy_test変数という変数に格納され、モデルから予測される確率はy_predictedという変数に格納されます。
     HyperdriveがAUCメトリックのハイパーパラメータを最適化できるようにするために、スクリプトにロギングを追加する必要があります。
     解決策 次のコードを実行します。
+
     解決策は目標を達成しましたか?
 1. はい
 2. いいえ
@@ -316,6 +318,7 @@ Microsoft Machine Leaarning for Apache Spark をインストールします。
     この設定を使用して、ランダムフォレストモデルをトレーニングし、検証データでそれをテストするスクリプトを実行する予定です。検証データのラベル値はy_test変数という変数に格納され、モデルから予測される確率はy_predictedという変数に格納されます。
     HyperdriveがAUCメトリックのハイパーパラメータを最適化できるようにするために、スクリプトにロギングを追加する必要があります。
     解決策 次のコードを実行します。
+
     解決策は目標を達成しましたか?
 1. はい
 2. いいえ
@@ -332,8 +335,16 @@ Microsoft Machine Leaarning for Apache Spark をインストールします。
     あなたは、Azure Machine Learningワークスペースのデータストアとしてコンテナを登録し、コンテナが存在しない場合にエラーが発生することを確認する必要があります。
     どのようにコードを完成させるべきですか？回答するには、回答領域で適切なオプションを選択します。
     OPTION:A
-
+        datastore = Datastore.[register_azure_blob_container](
+            workspace = ws,
+            datastore_name = '',
+            container_name = '',
+            account_name = '',
+            account_key = '',
+            [create_if_not_exists = False]
+        )
     OPTION:B
+
 1. A
 2. B
 <details><div>
@@ -366,6 +377,10 @@ Microsoft Machine Leaarning for Apache Spark をインストールします。
     OPTION:A
 
     OPTION:B
+        import azireml.core
+        from azureml.core import Workspace,Datastore
+        ws = Workspace.from_config()
+        datastore = [Datastore].get([ws], '[demo_datastore]')
 1. A
 2. B
 <details><div>
@@ -417,8 +432,9 @@ Microsoft Machine Leaarning for Apache Spark をインストールします。
 ### Q. 23
     ある組織がAzure Machine Learningサービスを使用しており、機械学習の利用を拡大したいと考えています。
     次のコンピュート環境があります。組織は、別のコンピュート環境を作成することを望んでいません。
-
-
+        nb_server: Compute Instance
+        aks_cluster: Azure Kubernetes Service
+        mlc_cluster: Machine Learning Compute
     あなたは、次のシナリオのためにどのコンピュート環境を使用するかを決定する必要があります。
     どのコンピュートタイプを使用する必要がありますか？答えとしては、適切な計算環境を適切なシナリオにドラッグしてください。各コンピュート環境は、1回だけ使うことも、2回以上使うことも、全く使わないこともできます。ペイン間でスプリットバーをドラッグしたり、コンテンツを表示するためにスクロールする必要がある場合があります。
 1. シナリオ：azure機械学習デザイナーのトレーニングパイプラインを実行します。環境：nb_server
@@ -433,8 +449,16 @@ Microsoft Machine Leaarning for Apache Spark をインストールします。
 ### Q. 24
     STANDARD_D1仮想マシンイメージを使用して、ComputeOneというAzure Machine Learningコンピュートターゲットを作成します。
     Azure Machine Learningのワークスペースを参照するwasというPython変数を定義する。以下のPythonコードを実行する。
-
-
+        from azureml.core.compute import ComputeTarget, AmlCompute
+        from azureml.core.compute_target import ComputeTargetException
+        the_cluster_name = "ComputeOne"
+        try:
+            the_cluster = ComputeTarget(workspace=ws, name=the_cluster_name)
+            print('Step1')
+        except ComputeTargetException:
+            config = AmlCompute.provisioning_configuration(vm_size='STANDARD_DS12_V2', max_nodes=4)
+            the_cluster = ComputeTarget.create(ws, the_cluster, config)
+            print('Step2')
     次の各ステートメントについて、そのステートメントが真である場合は、[はい]を選択します。そうでない場合は、[いいえ]を選択します。
 1. 新しい機械学習用コンピューターリソースが作成され、仮想マシンのサイズは standard_ds12_v2 で、最大 4 ノードが使用できます。
 2. 新しい機械学習用コンピューターリソースが作成され、仮想マシンのサイズは standard_ds12_v2 で、最大 4 ノードが使用できません。
@@ -460,8 +484,9 @@ Microsoft Machine Leaarning for Apache Spark をインストールします。
         あなたは、Compute Instanceをプロビジョニングする必要があります。
     どの2つの仮想マシンサイズを使用することができますか？回答するには、回答領域で適切な仮想マシンのサイズを選択します。
     OPTION:A
-
+        GPU なし
     OPTION:B
+        GPU あり
 1. A
 2. B
 <details><div>
@@ -476,10 +501,11 @@ Microsoft Machine Leaarning for Apache Spark をインストールします。
     実験の実行によって生成される出力ファイルを特定する必要があります。
     あなたは、出力ファイル名を取得するためのコードを追加する必要があります。
     どのコードセグメントをスクリプトに追加する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. files = run.get_properties()
+2. files = run.get_file_names()
+3. files = run.get_details_with_logs()
+4. files = run.get_metrics()
+5. files = run.get_details()
 <details><div>
     答え：2
     run.get_file_names() を呼び出すと、このランレコードに関連するすべてのファイルを一覧表示することができます。
@@ -492,8 +518,9 @@ Microsoft Machine Leaarning for Apache Spark をインストールします。
     あなたは、示されたパイプラインを作成する必要があります。すべての関連するインポートが行われたと仮定してください。
     どのPythonコードセグメントを使うべきですか？
     OPTION:A
-
+        p = Pipeline(ws, steps=[[[[step_1_a, step_1_b], step_2_a], step_2_b], step3])
     OPTION:B
+
 1. A
 2. B
 <details><div>
@@ -503,7 +530,16 @@ Microsoft Machine Leaarning for Apache Spark をインストールします。
 
 ### Q. 28
     Azure ML SDKを使った実験の準備中で、computeを作成する必要があります。次のコードを実行します。
-
+        from azureml.core.compute import ComputeTarget, AmlCompute
+        from azureml.core.compute_target import ComputeTargetException
+        ws = Workspace.from_config()
+        cluster_name = 'aml-cluster'
+        try:
+            training_compute = ComputeTarget(workspace=ws, name=cluster_name)
+        except ComputeTargetException:
+            compute_config = AmlCompute.provisioning_configuration(vm_size='STANDARD_D2_V2', vm_priority='lowpriority', max_nodes=4)
+            training_compute = ComputeTarget.create(ws, cluster_name, compute_config)
+            trainnig_compute.wait_for_completion(show_output=True)
 
     以下の各ステートメントについて、そのステートメントが真である場合は、Yes を選択します。そうでない場合は、「いいえ」を選択します。
 1. ワークスペースにaml-clusterという名前のトレーニングクラスタが既に存在する場合、それは削除され置き換えられます。
@@ -537,7 +573,13 @@ Microsoft Machine Leaarning for Apache Spark をインストールします。
     このスクリプトでは、training_dataデータストアにあるcsv_filesフォルダを参照するdata_refというデータ参照からデータを読み込むように、実験用のestimatorを構成する必要があります。
     推定器を設定するために、どのコードを使用すべきか。
     OPTION:A
-
+        script_params = {
+            '--data-folder': [data_ref.as_mount()]
+        }
+        estimator = SKLearn(source_directory='./script',
+        script_params=script_params,
+        compute_target='local',
+        entry_script='train.py')
     OPTION:B
 1. A
 2. B
@@ -575,10 +617,10 @@ Step 3: EstimatorStep()を構成し、gpu_computeの計算機ターゲットで�
         RESTエンドポイントはスケーラブルであり、複数のエンドユーザーがモバイルアプリケーションを使用する場合に、大量のリクエストを処理する能力を備えている必要があります。
         有効な REST リクエストが送信されたときに、Web サービスが期待される JSON 形式で予測値を返すことを確認する必要があります。
     どの計算リソースを使用する必要がありますか？回答するには、回答領域で適切なオプションを選択してください。
-1. 
-2. 
-3. 
-4. 
+1. Context, Test, Resource, ds-workstation notebook VM
+2. Context, Test, Resource, gpu-compute cluster
+3. Context, Test, Prduction, gpu-compute cluster
+4. Context, Test, Prduction, ds-workstation notebook VM
 <details><div>
     答え：1,3
 Box 1: ds-workstation ノートブック型VM
@@ -593,10 +635,10 @@ Box 2: GPU計算機クラスタ
     あなたは、リアルタイムでGPUベースの推論を可能にするコンテキストにモデルをデプロイする必要があります。
     あなたは、モデルの推論のための計算機リソースを構成する必要があります。
     どのコンピュートタイプを使用する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. Azure Container Instance
+2. Azure Kubernetes Service
+3. Field Programmable Gate Array
+4. Machine Learining Compute
 <details><div>
     答え：2
     Azure Machine Learningを使って、GPU対応モデルをWebサービスとしてデプロイすることができます。Azure Kubernetes Service（AKS）上にモデルをデプロイすることも選択肢の一つです。AKSクラスタは、推論にモデルが使用するGPUリソースを提供します。
@@ -624,10 +666,9 @@ Box 2: GPU計算機クラスタ
 
     OPTION:D
         機械学習ワークスペースのAzureポータルのアクティビティログを使用する。
-1. 
-2. 
-3. 
-4. 
+1. A
+2. B
+3. C
 <details><div>
     答え：1,2
     バッチ推論ジョブは終了までに長い時間がかかることがあります。この例では、Jupyterのウィジェットを使って進捗を監視しています。また、ジョブの進捗を管理することもできます。
@@ -643,26 +684,26 @@ Box 2: GPU計算機クラスタ
     クライアントアプリケーションがバッチ推論にモデルを使用できるように、パイプラインを公開する必要があります。入力データから予測を得るために Python 推論スクリプトを実行する、単一の ParallelRunStep ステップを持つパイプラインを使用する必要があります。
     ParallelRunStepパイプライン・ステップの推論スクリプトを作成する必要があります。
     あなたはどの2つの関数を含めるべきですか？各正解は、ソリューションの一部を提示します。
-1. 
-2. 
-3. 
-4. 
+1. run(mini_batch)
+2. main()
+3. batch()
+4. init()
+5. score(mini_batch)
 <details><div>
     答え：1,4
-
 </div></details>
 
 ### Q. 35
     次のコードを使用して、Azure Machine Learning リアルタイム Web サービスとしてモデルをデプロイします。
-
-
+        service = Model.deploy(ws, 'classification-service', [model], inference_config, deployment_config)
+        service.wait_for_deployment(True)
     デプロイは失敗します。
     あなたは、デプロイ中に実行されたアクションを決定し、失敗した特定のアクションを識別することによって、デプロイの失敗をトラブルシュートする必要があります。
     あなたはどのコードセグメントを実行する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. service.get_logs()
+2. service.state
+3. service.serialize()
+4. service.update_deployment_state()
 <details><div>
     答え：1
 サービスオブジェクトから詳細なDockerエンジンのログメッセージを印刷することができます。ACI、AKS、および Local デプロイメントのログを表示することができます。次の例は、ログを印刷する方法を示しています。
@@ -680,10 +721,12 @@ Box 2: GPU計算機クラスタ
     OPTION:A
 
     OPTION:B
-1. 
-2. 
-3. 
-4. 
+        from azureml.core import Workspace 
+        from azureml.core.webservice import Webservice
+
+        predictions = service.run(input_json)
+1. A
+2. B
 <details><div>
     答え：2
 Box 1: from azureml.core.webservice import Webservice
@@ -790,13 +833,18 @@ deployment_config <- aci_webservice_deployment_config(cpu_cores = 1,
     あなたは、カンマ区切り値（CSV）ファイル内のデータを処理するPythonスクリプトを作成します。
     このスクリプトは、Azure Machine Learningの実験として実行する予定です。
     スクリプトは、データをロードし、次のコードを使用して、それが含む行数を決定します。
+        from azureml.core import Run
+        import pandas as pd
 
+        run = pd.read_csv()
+        rows = (len(data))
     実験の実行が完了した後、Runオブジェクトのget_metricsメソッドを使用して返すことができるrow_countという名前のメトリックとして、行数を記録する必要があります。
     どのようなコードを使用すればよいでしょうか？
-1. 
-2. 
-3. 
-4. 
+1. run.upload_file()
+2. run.log()
+3. run.tag()
+4. run.log_table()
+5. run.log_row()
 <details><div>
     答え：2
 log(name, value, description=''）を使用して、指定された名前のランに数値または文字列値をログに記録します。ランにメトリックを記録すると、そのメトリックは実験のランレコードに保存されます。一つのランの中で同じ測定値を複数回記録することができ、その結果はその測定値のベクトルとみなされます。
@@ -851,10 +899,9 @@ log(name, value, description=''）を使用して、指定された名前のラ�
     モデルは、公共のWebポータルからフェッチされた新しい画像データで毎月再トレーニングする必要があります。あなたは、新しいデータをフェッチし、画像のサイズを標準化し、モデルを再トレーニングするためにAzure Machine Learningパイプラインを作成します。
     あなたは、Azure Machine Learning SDKを使用して、パイプラインのスケジュールを構成する必要があります。
     どの4つのアクションを順番に実行する必要がありますか？回答するには、アクションのリストから適切なアクションを回答領域に配置し、それらを正しい順序で並べます。
-1. 
-2. 
-3. 
-4. 
+1. パイプライン ID の取得、scheduleRecurrence() オブジェクトの作成、定義された再帰指定による schedule.create.create メソッドによる azure 機械学習パイプラインのスケジュール定義、パイプラインの公開。
+2. パイプラインの公開, パイプライン ID の取得、scheduleRecurrence() オブジェクトの作成、定義された再帰指定による schedule.create.create メソッドによる azure 機械学習パイプラインのスケジュール定義
+3. scheduleRecurrence() オブジェクトの作成、定義された再帰指定による schedule.create.create メソッドによる azure 機械学習パイプラインのスケジュール定義, パイプラインの公開, パイプライン ID の取得
 <details><div>
     答え：2
 ステップ1：パイプラインを公開する。
@@ -876,13 +923,14 @@ log(name, value, description=''）を使用して、指定された名前のラ�
 
 ### Q. 45
     Azure Machine Learningデザイナーを使用して、リアルタイムサービスエンドポイントを作成します。単一のAzure Machine Learningサービスのコンピュートリソースを持っています。
-    あなたは、モデルを訓練し、デプロイのためのリアルタイムパイプラインを準備します。
-    あなたは、推論パイプラインをWebサービスとして公開する必要があります。
+    あなたは、モデルを訓練し、デプロイのための[リアルタイム]パイプラインを準備します。
+    あなたは、[推論]パイプラインをWebサービスとして公開する必要があります。
     どのコンピュートタイプを使用する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. a new Machine Learning Compute resource
+2. Azure Kubernetes Services
+3. HDInsight
+4. the existing Machine Learning Compute resouece
+5. Azure Databricks
 <details><div>
     答え：2
     Azure Kubernetes Service（AKS）は、リアルタイム推論を利用することができます。
@@ -893,10 +941,11 @@ log(name, value, description=''）を使用して、指定された名前のラ�
 
     あなたは、パイプラインの実行から出力を取得する必要があります。
     あなたはどこで出力を見つけるのだろうか？
-1. 
-2. 
-3. 
-4. 
+1. the digit_identification.py script
+2. the debug log
+3. the Activity Log in the Azure portal for the Machine Learning
+4. the Inference Clusters tab in Machine Learning studio
+5. a file named parallel_run_step.txt located in output folder
 <details><div>
     答え：5
     output_action (str)。出力をどのように構成するか。現在サポートされている値は 'append_row' と 'summary_only' です。
@@ -909,10 +958,9 @@ log(name, value, description=''）を使用して、指定された名前のラ�
     ソフトウェアエンジニアリングチームは、夏の間、予測ウェブサービスに大きな推論負荷がかかっていることを報告しました。このモデルの本番ウェブサービスは、ウェブサービスが配備されている計算クラスタを完全に利用しているにもかかわらず、需要を満たすことができません。
     あなたは、最小限のダウンタイムと最小限の管理作業で、画像分類Webサービスのパフォーマンスを向上させる必要があります。
     あなたは、IT運用チームに何をするよう助言すべきですか？
-1. 
-2. 
-3. 
-4. 
+1. ノードに大きな VM サイズを使用して新しい計算クラスタを作成し、そのクラスタに Web サービスを再展開し、サービスのエンドポイントの DNS 登録を更新して、新しいクラスタを指すようにします。
+2. ウェブサービスが配置されているコンピュートクラスタのノード数を増やす
+3. ウェブサービスが配置されている計算クラスタの最小ノード数を増やす。
 <details><div>
     答え：2
     Azure Machine Learning SDKは、AKSクラスタのスケーリングをサポートしていません。クラスター内のノードをスケールするには、Azure Machine LearningスタジオでAKSクラスターのUIを使用します。クラスターのVMサイズではなく、ノード数のみを変更することができます。
@@ -927,6 +975,8 @@ log(name, value, description=''）を使用して、指定された名前のラ�
     OPTION:A
 
     OPTION:B
+        deploy_target = AksCompute(ws, "service-compute")
+        deployment_config = AksWebservice.deploy_configuration(cpu_cores=1,memory_gb=1,token_auth_enabled=false)
 1. A
 2. B
 <details><div>
@@ -953,17 +1003,19 @@ Azure Active Directory Authentication Library（ADAL）は、ユーザーのAzur
     新しい Azure サブスクリプションを作成します。サブスクリプションにリソースはプロビジョニングされていません。
     あなたは、Azure Machine Learningワークスペースを作成する必要があります。
     この目標を達成するための3つの可能な方法は何ですか？各正解は完全な解決策を提示します。
-1. 
-2. 
-3. 
-4. 
+1. Azure ML SDKライブラリを使用し、名前、subscription_id、resource_group、およびlocationパラメータでWorkspace.createメソッドを呼び出すPythonコードを実行します。
+2. crosoft.MachineLearningServices/ワークスペース資源とその依存関係を含むAzureリソース管理テンプレートを使用します。
+3. Azure Command Line Interface（CLI）をAzure Machine Learning extensionと一緒に使用して、-nameと-locationパラメーターでaz group create関数を呼び出し、次にaz ml workspace create関数でワークスペース名とリソースグループにCwとCgパラメーターを指定する。
+4. Azure Machine Learning studioに移動し、ワークスペースを作成します。
+5. Azure ML SDK ライブラリを使用し、名前、subscription_id、resource_group パラメータを指定して Workspace.get メソッドを呼び出す Python コードを実行する。
 <details><div>
     答え：1,2,3
     回答はこちら ABC 正しい選択肢です。
     A . Azure ML SDKライブラリを使用し、名前、subscription_id、resource_group、およびlocationパラメータでWorkspace.createメソッドを呼び出すPythonコードを実行します。
-    B . Microsoft.MachineLearningServices/ワークスペース資源とその依存関係を含むAzureリソース管理テンプレートを使用します。C
-     . Azure Command Line Interface（CLI）をAzure Machine Learning extensionと一緒に使用して、-nameと-locationパラメーターでaz group create関数を呼び出し、次にaz ml workspace create関数でワークスペース名とリソースグループにCwとCgパラメーターを指定する。
-     D . Azure Machine Learning studioに移動し、ワークスペースを作成します。E . Azure ML SDK ライブラリを使用し、名前、subscription_id、resource_group パラメータを指定して Workspace.get メソッドを呼び出す Python コードを実行する。
+    B . Microsoft.MachineLearningServices/ワークスペース資源とその依存関係を含むAzureリソース管理テンプレートを使用します。
+    C . Azure Command Line Interface（CLI）をAzure Machine Learning extensionと一緒に使用して、-nameと-locationパラメーターでaz group create関数を呼び出し、次にaz ml workspace create関数でワークスペース名とリソースグループにCwとCgパラメーターを指定する。
+    D . Azure Machine Learning studioに移動し、ワークスペースを作成します。
+    E . Azure ML SDK ライブラリを使用し、名前、subscription_id、resource_group パラメータを指定して Workspace.get メソッドを呼び出す Python コードを実行する。
 </div></details>
 
 ### Q. 50
@@ -972,10 +1024,18 @@ Azure Active Directory Authentication Library（ADAL）は、ユーザーのAzur
     以下のコードを実行します。
 
     以下の各ステートメントについて、そのステートメントが真である場合は、[はい]を選択します。そうでない場合は、[いいえ]を選択します。
-1. 
-2. 
-3. 
-4. 
+1. myDataset_1 データセットは、以下の方法で pandas データフレームに変換することができます。mydataset_1.to_pandas_dataframe() を使用します。
+    はい
+2. myDataset_1 データセットは、以下の方法で pandas データフレームに変換することができます。mydataset_1.to_pandas_dataframe() を使用します。
+    いいえ
+3. mydataset_1.to_path() メソッドは、データセット内のすべての tsv のファイルパスの配列を返します。
+    はい
+4. mydataset_1.to_path() メソッドは、データセット内のすべての tsv のファイルパスの配列を返します。
+    いいえ
+5. myDataset_2 データセットは、以下の方法で pandas データフレームに変換することができます。mydataset_2.to_pandas_dataframe() を使用します。
+    はい
+6. myDataset_2 データセットは、以下の方法で pandas データフレームに変換することができます。mydataset_2.to_pandas_dataframe() を使用します。
+    いいえ
 <details><div>
     答え：2,3,5
 ボックス1：なし
@@ -997,10 +1057,11 @@ Azure Active Directory Authentication Library（ADAL）は、ユーザーのAzur
         最大ノード数：8
     あなたは、コンピュートリソースを再構成する必要があります。
     この目標を達成するために可能な3つの方法は何ですか？各正解は完全な解決策を提示します。
-1. 
-2. 
-3. 
-4. 
+1. Use the Azure Machine Learning studio
+2. Run the update method of the AmlCompute class in the Pyton SDK
+3. Use the Azure portal
+4. use the Azure Machine Lratning designer
+5. Run the refresh_state() method of the BatchCompute class in the Python SDK
 <details><div>
     答え：1,2,3
 A: Azure Machine Learning studioでアセットとリソースを管理することができます。
@@ -1013,10 +1074,12 @@ C: クラスタ内のノードを変更するには、Azure ポータルのク�
     次の Python コードを実行します。
 
     次の各ステートメントについて、ステートメントが真である場合は、[はい]を選択します。そうでない場合は、「いいえ」を選択します。
-1. 
-2. 
-3. 
-4. 
+1. コンピュートは、他のユーザーと共有できるリソースとして、ワークスペース領域内に作成されます。：はい
+2. コンピュートは、他のユーザーと共有できるリソースとして、ワークスペース領域内に作成されます。：いいえ
+3. コードによって作成されたコンピュータリソースは、Azure Machine Learning Studioにコンピュータクラスタとして表示されます。：はい
+4. コードによって作成されたコンピュータリソースは、Azure Machine Learning Studioにコンピュータクラスタとして表示されます。：いいえ
+5. 最小ノード数は0になります：はい
+6. 最小ノード数は0になります：いいえ
 <details><div>
     答え：1,3,5
 ボックス1: はい
@@ -1037,15 +1100,14 @@ C: クラスタ内のノードを変更するには、Azure ポータルのク�
     以下のようなconfig.jsonファイルを作成します。
 
 
-
-
     ワークスペースのデータや実験を操作するには、Azure Machine Learning SDK を使用する必要があります。
     あなたは、Python環境からワークスペースに接続するためにconfig.jsonファイルを構成する必要があります。
     ワークスペースに接続するために、どの2つの追加パラメータをconfig.jsonファイルに追加する必要がありますか？各正解は、ソリューションの一部を提示します。
-1. 
-2. 
-3. 
-4. 
+1. login
+2. resource_group
+3. subscription_id
+4. key
+5. region
 <details><div>
     答え：2,3
 同じワークスペースを複数の環境で使用する場合は、JSON設定ファイルを作成します。設定ファイルには、サブスクリプション（subscription_id）、リソース（resource_group）、ワークスペース名を保存し、簡単にロードできるようにします。
@@ -1070,10 +1132,10 @@ from azureml.core import Workspace
         4つのCPUおよびGPUベースのノードを持つgpu-clusterという名前のAzure Machine Learningコンピュートターゲット
     モデルのトレーニング時間を最短にするために、実験を提出するコードの実行とスクリプトの実行に使用する計算リソースを指定する必要があります。
     データサイエンティストはどのリソースを使うべきでしょうか？回答するには、回答欄で適切な選択肢を選択してください。
-1. 
-2. 
-3. 
-4. 
+1. resource type, run code to submit the experiment, option, the microsoft surface device
+2. resource type, run code to submit the experiment, option, the ds-workstaion notebook vm
+3. resource type, tun the traning script, option, the gpu-computer target
+4. resource type, tun the traning script, option, the microsoft surface device
 <details><div>
     答え：2,3
 箱1: ds-workstationノートブックVM
@@ -1086,10 +1148,10 @@ from azureml.core import Workspace
     展開されたモデルは、ビジネスクリティカルなアプリケーションをサポートしており、Webサービスに送信されたデータと、そのデータが生成する予測を監視できることが重要です。
     あなたは、最小限の管理作業で、配備されたモデルの監視ソリューションを実装する必要があります。
     どうすればよいでしょうか。
-1. 
-2. 
-3. 
-4. 
+1. azure ml studio で登録されたモデルの説明を見る。
+2. サービスエンドポイントの azure application insight を有効にし、azure ポータルでログを表示する。
+3. モデルをトレーニングするために使用した実験によって生成されたログファイルを表示します。
+4. エンドポイントを参照する ml flow tracking url を作成し、ml flow によって記録されたデータを閲覧する。
 <details><div>
     答え：2
 Azure Machine Learningスタジオでロギングを設定する
@@ -1107,10 +1169,12 @@ Azure Machine Learning studio からも Azure Application Insights を有効に�
     Hyperdriveを使用して、モデルのトレーニング時に選択されたハイパーパラメータを最適化することを計画しています。ハイパーパラメータ実験のオプションを定義するために、以下のコードを作成します。
 
     以下の各ステートメントについて、そのステートメントが真である場合はYesを選択します。そうでない場合は、「いいえ」を選択します。
-1. 
-2. 
-3. 
-4. 
+1. このハイパーパラメータチューニング実験では、50回の実行が必要です。：はい
+2. このハイパーパラメータチューニング実験では、50回の実行が必要です。：いいえ
+3. hyperparamenterconfigクラスのpolicy paramenterを使用して、セキュリティポリシーを指定することができます。：はい
+4. hyperparamenterconfigクラスのpolicy paramenterを使用して、セキュリティポリシーを指定することができます。：いいえ
+5. この実験では、学習率パラメータを 0.5 から 0.15 の間のあらゆる値に設定したランが作成される。：はい
+6. この実験では、学習率パラメータを 0.5 から 0.15 の間のあらゆる値に設定したランが作成される。：いいえ
 <details><div>
     答え：2,3,6
 ボックス1：なし
@@ -1131,10 +1195,10 @@ Azure Machine Learning studio からも Azure Application Insights を有効に�
     バッチ推論パイプラインは、ファイルデータセット内のファイルを処理するためにParallelRunStepステップを使用する必要があります。スクリプトは、推論関数が呼び出されるたびに6つの入力ファイルを処理するParallelRunStepステップを実行する必要があります。
     パイプラインを構成する必要があります。
     PralleRunStepステップのParallelRunConfigオブジェクトで指定すべき構成設定はどれですか？
-1. 
-2. 
-3. 
-4. 
+1. process_count_per_node=6
+2. node_count=6
+3. mini_batch_size=6
+4. error_threschold=6
 <details><div>
     答え：2
 node_countは、ParallelRunStepの実行に使用されるコンピュートターゲットのノード数です。
@@ -1151,10 +1215,10 @@ node_countは、ParallelRunStepの実行に使用されるコンピュートタ�
     機械学習モデルを学習させる。
     そのモデルをテスト用のリアルタイム推論サービスとして配備する必要があります。このサービスでは、CPU使用率が低く、48MB未満のRAMが必要です。配備されたサービスの計算ターゲットは、コストと管理オーバーヘッドを最小限に抑えながら、自動的に初期化する必要があります。
     どのコンピュート・ターゲットを使うべきでしょうか？
-1. 
-2. 
-3. 
-4. 
+1. azure container instance
+2. atatched azure databricks cluster
+3. azure lubernetes service inference cluster
+4. azure machine learning compute cluster
 <details><div>
     答え：1
 Azure Container Instances (ACI) は、1 GB 未満の小規模なモデルにのみ適しています。
@@ -1222,10 +1286,10 @@ VMをコンピュート・ターゲットとして使用します。
     Azure Machine Learning SDK for Python を使用して、store1 のコンテンツにアクセスできるようにする必要があります。Azure Machine Learning studio を使用して、store1 のコンテンツをプレビューできる必要があります。
     store1 を構成する必要があります。
     あなたは何をする必要がありますか？回答するには、回答領域で適切な選択肢を選択します。
-1. 
-2. 
-3. 
-4. 
+1. 要件、azure machine learning sdk for python を使用して store1 のコンテンツにアクセス、アクション: store1 をデフォルトデータストアとして設定。
+2. 要件、azure machine learning sdk for python を使用して store1 のコンテンツにアクセス、 action: regunerate the keys of account1
+3. 要件、Azure機械学習スタジオを使用してstore1のコンテンツをプレビューする、アクション：store1をdefultデータストアとして設定する。
+4. 要件は、Azureマシンラーニングスタジオを使用してstore1の内容をプレビューし、アクション：store1の認証を更新します。
 <details><div>
     答え：2,4
 Box 1: account1 のキーを再生成します。
