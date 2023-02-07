@@ -1368,10 +1368,10 @@ Box 1: account1 のキーを再生成します。
     k-foldクロスバリデーションを用いて、限られたデータサンプルでモデルを評価する必要があります。あなたは、分割数としてkパラメータを設定することから始めます。
     あなたは、クロスバリデーションのためにkパラメータを設定する必要があります。
     どの値を使うべきですか？
-1. 
-2. 
-3. 
-4. 
+1. K=0.5
+2. K=0.01
+3. K=5
+4. K=1
 <details><div>
     答え：3
     リーブ・ワン・アウト（LOO）クロスバリデーション
@@ -1384,10 +1384,10 @@ Box 1: account1 のキーを再生成します。
     Azure Machine Learning Studioを使用して、機械学習実験を構築します。
     あなたは、データを2つの異なるデータセットに分割する必要があります。
     あなたはどのモジュールを使用する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. Assgin Data to Clusters
+2. Load Trained Model
+3. Partition and Sample
+4. Tune Model=Hyperparametaers
 <details><div>
     答え：3
     Partition and SampleでStratified splitオプションを指定すると、指定したルールで分割された複数のデータセットが出力されます。
@@ -1399,10 +1399,9 @@ Box 1: account1 のキーを再生成します。
     あなたは実験を生成するための適切な方法を選択する必要があります。
     どの3つのモジュールを順番に実行する必要がありますか？回答するには、アクションのリストから適切なアクションを回答エリアに移動し、正しい順番で並べます。
     注意: 回答の選択肢の順番は1つ以上あってもかまいません。あなたが選択した正しい順序のいずれかが単位となります。
-1. 
-2. 
-3. 
-4. 
+1. Clean Missing Data, Partition and sample, Import Data
+2. Import Data, Clean Missing Data, Partition and sample
+3. Clean Missing Data, Import Data, Partition and sample
 <details><div>
     答え：2
     Azure Machine Learning StudioのClean Missing Dataモジュールで、欠損値を削除、置換、または推論するためのものです。
@@ -1446,10 +1445,12 @@ Box 1: account1 のキーを再生成します。
     あなたは、機械学習モデルを作成している。あなたは、NULL行を含むデータセットを持っています。
     あなたは、Azure Machine Learning StudioのClean Missing Dataモジュールを使用して、データセット内のNULLおよび欠損データを識別して解決する必要があります。
     あなたはどのパラメータを使用する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. Replace with mean
+2. Remove entine column
+3. Remove entire row
+4. Hot Deck
+5. Custom substitution vaule
+6. replace with mode
 <details><div>
     答え：3
     行全体を削除する。データセット内の1つ以上の欠損値を持つ任意の行を完全に削除します。これは、欠損値がランダムに欠損していると考えられる場合に有効です。
@@ -1462,10 +1463,14 @@ Box 1: account1 のキーを再生成します。
     あなたはどのモジュールを選択する必要がありますか？回答するには、適切なモジュールを正しいシナリオにドラッグします。各モジュールは、1回、2回以上、または全く使用されないかもしれません。
     ペイン間の分割バーをドラッグしたり、コンテンツを表示するためにスクロールする必要があるかもしれません。
     注：正しい選択には1点ずつ価値があります。
-1. 
-2. 
-3. 
-4. 
+1. 1.シナリオ：行と列を削除して欠損値を置き換える、モジュール：欠損データを消去する。
+2. シナリオ：行と列を削除することによって、不足している値を置き換える、モジュール：SMOTE
+3. シナリオ：データセット内の低頻度例を増加させる、モジュール：SMOTE
+4. シナリオ：データセット内の低頻度例を増やす、モジュール：指標値に変換する
+5. 5.シナリオ：カテゴリ特徴をバイナリ指標に変換、モジュール：指標に変換
+6. シナリオ：カテゴリ特徴をバイナリ指標に変換、モジュール：重複行を削除
+7. シナリオ：データセットから重複する可能性のある行を削除する、モジュール：重複する行を削除する
+8. シナリオ：データセットから潜在的な重複を取り除く、モジュール：閾値フィルター
 <details><div>
     答え：1,3,5,7
     ボックス1：欠落データのクリーニング
@@ -1506,13 +1511,12 @@ Box 1: account1 のキーを再生成します。
     あなたは、変数をタイプによって分類する必要があります。
     どの変数を各カテゴリに追加すべきですか? 答えるには、解答欄で適切な選択肢を選んでください。
     注意: 正しい選択にはそれぞれ 1 ポイントの価値があります。
-1. 
-2. 
-3. 
-4. 
+1. カテゴリ、cateforical変数、変数、isplaysoccer
+2. カテゴリ、連続変数、変数、性別/isplaysoccer
+3. カテゴリ、連続変数、変数、isplaysoccer
+4. カテゴリ、連続変数、変数、prevexammarks/height/weight
 <details><div>
     答え：2,4
-
 </div></details>
 
 ### Q. 13
@@ -1610,10 +1614,11 @@ Box 1: account1 のキーを再生成します。
     あなたは、データ中の外れ値を識別する必要がある。
     あなたはどの2つの可視化を使うことができますか？各正解は完全な解決策を提示します。
     注：各正解の選択は1点の価値があります。
-1. 
-2. 
-3. 
-4. 
+1. venn diagram
+2. box plot
+3. roc curve
+4. random forest diagram
+5. scatter plot
 <details><div>
     答え：2,5
     箱ひげ図アルゴリズムは、外れ値を表示するために使用することができます。
@@ -1625,10 +1630,11 @@ Box 1: account1 のキーを再生成します。
     あなたは、各特徴列のp値およびユニークカウントを含む統計的要約を生成する必要があります。
     あなたはどの2つのモジュールを使用することができますか？各正解は完全な解決策を提示します。
     注：各正解の選択は1点の価値があります。
-1. 
-2. 
-3. 
-4. 
+1. computer linear correlation
+2. export count table
+3. execute python script
+4. convert to indicator values
+5. summarize data
 <details><div>
     答え：2,5
     Export Count Tableモジュールは、Build Count Table（非推奨）およびCount Featurizer（非推奨）モジュールを使用する実験との後方互換性のために提供されています。
@@ -1650,10 +1656,10 @@ Box 1: account1 のキーを再生成します。
     あなたは、完成した二値分類の機械学習モデルを評価しています。
     あなたは評価指標として精度を使用する必要があります。
     どの可視化を使うべきですか？
-1. 
-2. 
-3. 
-4. 
+1. violin plot
+2. gradient descent
+3. box plot
+4. binary classification confusion matrix
 <details><div>
     答え：4
     A: バイオリンプロットは、伝統的にボックスプロットとカーネル密度プロットを組み合わせたビジュアルである。
@@ -1681,9 +1687,24 @@ Box 1: account1 のキーを再生成します。
     あなたは、Azure Machine Learning StudioのPermutation Feature Importanceモジュールを使用して、データセットの特徴重要度スコアのセットを計算する必要があります。
     どの順序でアクションを実行する必要がありますか？回答するには、アクションのリストからすべてのアクションを回答領域に移動し、正しい順序でそれらを配置します。
 1. 
+実験にデータセットを追加する。
+データ分割モジュールを追加し、トレーニングデータセットとテストデータセットを作成する。
+permutation feature importance モジュールを追加し、学習済みモデルとテストデータセットを接続する。
+性能測定の指標であるclassification-accuracyを設定し、実験を実行する。
+2クラスサポートベクターマシンモジュールを追加し、snm分類器を起動する。
 2. 
+2クラスサポートベクターマシンモジュールを追加し、snm分類器を起動する。
+実験にデータセットを追加する。
+データ分割モジュールを追加し、トレーニングデータセットとテストデータセットを作成する。
+permutation feature importance モジュールを追加し、学習済みモデルとテストデータセットを接続する。
+性能測定の指標であるclassification-accuracyを設定し、実験を実行する。
 3. 
-4. 
+データ分割モジュールを追加し、トレーニングデータセットとテストデータセットを作成する。
+permutation feature importance モジュールを追加し、学習済みモデルとテストデータセットを接続する。
+性能測定の指標であるclassification-accuracyを設定し、実験を実行する。
+2クラスサポートベクターマシンモジュールを追加し、snm分類器を起動する。
+実験にデータセットを追加する。
+
 <details><div>
     答え：2
     ステップ1：2クラスサポートベクトルマシンモジュールを追加し、SVM分類器を初期化します。
@@ -1721,10 +1742,10 @@ Box 1: account1 のキーを再生成します。
     データセットには、出力ラベルカラムと高い相関を持つカテゴリ特徴が含まれています。
     あなたは、主要な予測因子を識別するために、適切な特徴スコアリング統計手法を選択する必要があります。
     あなたはどの方法を使用する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. ケンドール相関
+2. スピアマン相関
+3. カイ二乗
+4. ピアソン相関
 <details><div>
     答え：4
     ピアソンの相関統計量、またはピアソンの相関係数は、統計モデルではr値としても知られています。任意の2つの変数について、相関の強さを示す値を返します。
@@ -1738,10 +1759,14 @@ Box 1: account1 のキーを再生成します。
     あなたは、起こりうる分類の誤りを検出する必要があります。
     それぞれの記述に対して、どのエラータイプを選択すべきですか？回答するには、回答欄で適切な選択肢を選択してください。
     注：正しい選択にはそれぞれ1点の価値があります。
-1. 
-2. 
-3. 
-4. 
+1. 記述:a person has a disease. the model classifies the case as having a disease., errortype: true
+2. 記述:a person has a disease. the model classifies the case as having a disease., errortype: false
+3. 記述:a person does not has a disease. the model classifies the case as having no disease., errortype: true
+4. 記述:a person does not has a disease. the model classifies the case as having no disease., errortype: false
+5. 記述:a person does not has a disease. the model classifies the case as having a disease., errortype: true
+6. 記述:a person does not has a disease. the model classifies the case as having a disease., errortype: false
+7. 記述:a person has a disease. the model classifies the case as having no disease., errortype: true
+8. 記述:a person has a disease. the model classifies the case as having no disease., errortype: false
 <details><div>
     答え：1,3,6,7
     ボックス 1: True Positive
@@ -1782,10 +1807,10 @@ Box 1: account1 のキーを再生成します。
     生徒のデバイスは、Pythonの開発用に設定されていません。学生は、デバイスにソフトウェアをインストールするための管理者アクセス権を持っていません。Azureのサブスクリプションは、学生には利用できません。
     あなたは、学生がPythonベースのデータ可視化コードを実行できることを確認する必要があります。
     あなたはどのAzureツールを使用する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. anaconda data science platform
+2. azure batchai
+3. azure notebooks
+4. azure machine learning service
 <details><div>
     答え：3
 </div></details>
@@ -1837,10 +1862,10 @@ Box 1: account1 のキーを再生成します。
     Azure Machine Learning Studioで新しい実験を作成しているところです。あなたは、多くの列で欠損値を持つ小さなデータセットを持っています。このデータでは、各列に予測器を適用する必要はありません。あなたは、欠落データのクリーニングを使用する予定です。
     あなたは、データクリーニングの方法を選択する必要があります。
     どの方法を使用すべきですか？
-1. 
-2. 
-3. 
-4. 
+1. replace using probabilistic PCA
+2. normalization
+3. synthetic minority oversampling technique(STOME)
+4. replace using MICE
 <details><div>
     答え：1
     確率的PCAによる置換：連鎖方程式を用いたマルチプルインピュテーション（MICE）などの他のオプションと比較して、このオプションは、各列の予測変数の適用を必要としないという利点があります。その代わりに、それは全データセットの共分散を近似します。したがって、多くの列で欠損値を持つデータセットに対して、より良いパフォーマンスを提供することができます。
@@ -1850,10 +1875,10 @@ Box 1: account1 のキーを再生成します。
     あなたは、完成した二値分類の機械学習モデルを評価しています。
     あなたは評価指標として精度を使用する必要があります。
     どの可視化を使うべきですか？
-1. 
-2. 
-3. 
-4. 
+1. violin plot
+2. gradient descent
+3. scatter plot
+4. receiver operation characteristic(ROC) curve
 <details><div>
     答え：4
     受信者動作特性（ROC）とは，特定のモデルについて，正しく分類されたラベルと誤って分類されたラベルをプロットしたものである．
@@ -1868,10 +1893,10 @@ Box 1: account1 のキーを再生成します。
     k-foldクロスバリデーションを用いて、限られたデータサンプルでモデルを評価する必要があります。あなたは、分割数としてkパラメータを設定することから始めます。
     あなたは、クロスバリデーションのためにkパラメータを設定する必要があります。
     どの値を使うべきですか？
-1. 
-2. 
-3. 
-4. 
+1. k=1
+2. K=10
+3. k=0.5
+4. k=0.9
 <details><div>
     答え：2
     リーブ・ワン・アウト（LOO）クロスバリデーション
@@ -1884,10 +1909,10 @@ Box 1: account1 のキーを再生成します。
     Azure Machine Learning Studioを使用して、機械学習実験を構築します。
     あなたは、データを2つの異なるデータセットに分割する必要があります。
     あなたはどのモジュールを使用する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. split data 
+2. load trained model
+3. assign data to clusters 
+4. group data into bins
 <details><div>
     答え：3
 </div></details>
@@ -1897,10 +1922,11 @@ Box 1: account1 のキーを再生成します。
     あなたは鳥の写真100,000枚を持っています。すべての写真はJPG形式を使用し、AzureサブスクリプションのAzure blobコンテナに格納されています。
     深層学習モデルのトレーニングに使用されるAzure Machine Learningサービスのワークスペースから、Azure blobコンテナ内の鳥の写真ファイルにアクセスする必要があります。あなたは、データの移動を最小限に抑える必要があります。
     あなたは何をする必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. azure データレイクストアを作成し、鳥の写真をストアに移動する。
+2. Azure Cosmos dbデータベースを作成し、鳥の写真ストレージを含むazure blobをデータベースにアタッチします。
+3. tabulardataset クラスを使用して、鳥の写真を含む azure blob ストレージを参照するデータセットを作成し、登録する。
+4. 鳥の写真が保存されているazure blobストレージを、azure mashine learning sercviceのデータストアとして登録する。
+5. azure machine learning service workspaceで作成したblobデータストアに、鳥の写真をコピーする。
 <details><div>
     答え：4
     Azure Blob コンテナ用のデータストアを作成することを推奨します。ワークスペースを作成すると、Azure Blob コンテナと Azure ファイル共有が自動的にワークスペースに登録されます。
@@ -1950,10 +1976,10 @@ Box 1: account1 のキーを再生成します。
     スクリプトを実行するための推定量を定義します．
     スクリプトがtraining_dataデータセットにアクセスできるように、estimatorに正しいプロパティを設定する必要があります。
     どのプロパティを設定する必要がありますか。
-1. 
-2. 
-3. 
-4. 
+1. envionment_definition=
+2. inputs=
+3. script_params=
+4. souce_directory=
 <details><div>
     答え：2
 </div></details>
@@ -1965,10 +1991,10 @@ Box 1: account1 のキーを再生成します。
 
     スクリプトが参照するファイルを確実に読み取ることができるように、データセットを渡す必要があります。
     コードコメントを置き換えるために、どのコードセグメントを挿入する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. inputs=[file_dataset.as_named_input('training_files')]
+2. inputs=[file_dataset.as_named_input('training_files').as_mount()]
+3. inputs=[file_dataset.as_named_input('training_files').to_pandas_dataframe()]
+4. scripts_params=
 <details><div>
     答え：2
 </div></details>
@@ -1978,10 +2004,10 @@ Box 1: account1 のキーを再生成します。
     パイプラインは、Web サイトで公開されているカンマ区切り値（CSV）ファイルのデータを使用してモデルをトレーニングする必要があります。このファイルのデータセットは作成されていません。
     あなたは、最小限の管理作業を使用して、CSVファイルからデザイナーのパイプラインにデータを取り込む必要があります。
     Designerのパイプラインに追加すべきモジュールはどれですか？
-1. 
-2. 
-3. 
-4. 
+1. convert to csv
+2. enter data manualy
+3. import data
+4. dataset
 <details><div>
     答え：4
     パイプラインにデータを提供する方法として、データセットオブジェクトを使用することが推奨されています。Datasetオブジェクトは、データストアやWeb URLに存在するデータ、またはそこからアクセス可能なデータを指します。Datasetクラスは抽象クラスなので、FileDataset（1つまたは複数のファイルを参照）またはTabularDataset（データの区切り列を持つ1つまたは複数のファイルから作成）のいずれかのインスタンスを作成することになります。
@@ -2048,10 +2074,10 @@ Box 1: account1 のキーを再生成します。
 ### Q. 43
     ローカルペナルティ検出データのスケーリング戦略を実装する必要があります。
     どの正規化タイプを使用する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. streaming
+2. weight
+3. batch
+4. cosine
 <details><div>
     答え：2
     Post batch normalization statistics (PBN) は、推論に利用できる Batch Normalization の母平均と分散を評価する方法の Microsoft Cognitive Toolkit (CNTK) 版である Original Paper.
@@ -2138,10 +2164,9 @@ Box 1: account1 のキーを再生成します。
 ### Q. 47
     あなたは、データの可視化の要件に従って、診断テスト評価のための可視化を作成する必要があります。
     どの 3 つのモジュールを順番に使用することを推奨しますか？回答するには、モジュール一覧から該当するモジュールを回答エリアに移動し、正しい順序で並べる。
-1. 
-2. 
-3. 
-4. 
+1. train model. evaluate model. sweep clustering.
+2. sweep clustering. train model. evaluate model. 
+3. evaluate model. sweep clustering. train model.
 <details><div>
     答え：2
     ステップ1：スイープクラスタリング
@@ -2157,10 +2182,11 @@ Box 1: account1 のキーを再生成します。
     Age列に外れ値が存在するかどうかを視覚的に識別し、外れ値を除去する前に外れ値を定量化する必要があります。
     あなたはどの3つのAzure Machine Learning Studioモジュールを使用する必要がありますか？各正解は、ソリューションの一部を提示します。
     注：各正解の選択には1点の価値があります。
-1. 
-2. 
-3. 
-4. 
+1. create scatterplot
+2. summarize data
+3. clip values
+4. replace discrete values
+5. build counting transform
 <details><div>
     答え：1,2,3
     B: 全体像を把握するために、summarize data モジュールを使用することができます。モジュールを追加し、視覚化する必要があるデータセットに接続します。
@@ -2300,10 +2326,11 @@ Box 1: account1 のキーを再生成します。
     Hyperdrive実験のための探索空間を設定する必要があります。
     どの2つのパラメータ式を使うべきですか？各正解は解決策の一部を提示する。
     注：各正解は1ポイントに相当します。
-1. 
-2. 
-3. 
-4. 
+1. learning_rateに関する選択式実験
+2. learning_rateに関する一様な試験
+3. batch_sizeに関する通常実験
+4. batch_sizeに関する選択式実験
+5. batch_sizeに関する一様な実験
 <details><div>
     答え：2,4
     B: 連続ハイパーパラメータは、連続した値の範囲に渡る分布として指定されます。サポートされている分布は以下の通りです。
@@ -2322,10 +2349,8 @@ Box 1: account1 のキーを再生成します。
     OPTION:A
     OPTION:B
     注：各正解の選択は1点の価値があります。
-1. 
-2. 
-3. 
-4. 
+1. A
+2. B
 <details><div>
     答え：1
     ボックス 1: training_data
@@ -2451,10 +2476,12 @@ Box 1: account1 のキーを再生成します。
     RESTリクエストで要求され、公開パイプラインから応答として返される情報を特定する必要があります。
     RESTリクエストでどの値を使用し、レスポンスでどの値を期待するか？回答するには、回答領域で適切な選択肢を選択します。
     注：正しい各選択肢は1点の価値があります。
-1. 
-2. 
-3. 
-4. 
+1. rest request. request header. value. json containing the run id.
+2. rest request. request header. value. json containing an oauth bearer token.
+3. rest request. request body. value. json containing experiment name.
+4. rest request. request body. value. json containing the run id.
+5. rest request. response. value. json containing the run id.
+6. rest request. response. value. json containing a list of predictions.
 <details><div>
     答え：2,3,5
     Box 1: OAuthベアラートークンを含むJSON
@@ -2471,10 +2498,11 @@ Box 1: account1 のキーを再生成します。
     試してみたいバッチサイズと学習率の値のセットを特定します。
     Azure Machine Learning を使用して、検証損失が最も小さいモデルをもたらすバッチサイズと学習率の組み合わせを見つける必要があります。
     どうすればよいでしょうか？
-1. 
-2. 
-3. 
-4. 
+1. automlconfigオブジェクトを元に、実験でスクリプトを実行する。
+2. スクリプトの pythonscriptstep オブジェクトを作成し、パイプラインで実行する。
+3. azure machine learning studioの自動機械学習インターフェースを使用する。
+4. scripotrunconfigオブジェクトに基づく実験でスクリプトを実行する。
+5. hyperdriveconfig オブジェクトに基づく実験でスクリプトを実行する。
 <details><div>
     答え：5
 </div></details>
