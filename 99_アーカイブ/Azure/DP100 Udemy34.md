@@ -5,10 +5,11 @@
     あなたは、特徴値がポアソン回帰モデルを構築するための条件を達成しているかどうかを判断する必要があります。
     特徴量セットにはどの2つの条件が含まれていなければならないか？各正解は、ソリューションの一部を提示します。
     注：各正解の選択は1点の価値があります。
-1. 
-2. 
-3. 
-4. 
+1. the label data must be a negative value
+2. the label data must be whole numbers
+3. the label data must be non-discrete
+4. the label data must be a positive value
+5. the label data must be positice or negative
 <details><div>
     答え：2,4
     ポアソン回帰は、数値（通常はカウント）を予測するために使用される回帰モデルでの使用を意図しています。したがって、予測しようとする値が以下の条件に適合する場合のみ、このモジュールを使用して回帰モデルを作成する必要があります。
@@ -22,10 +23,10 @@
     CityName という名前のフィーチャーを追加して、列の値に London というテキストを入力する必要があります。
     あなたは、データセットに新しいフィーチャーを追加する必要があります。
     どのAzure Machine Learning Studioモジュールを使用する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. extract n-gram features from text
+2. edit metadata
+3. preprocess text
+4. apply sql transformation
 <details><div>
     答え：2
     典型的なメタデータの変更には、カラムをフィーチャーとしてマークすることが含まれるかもしれません。
@@ -36,10 +37,12 @@
 
     以下の各ステートメントについて、そのステートメントが真である場合はYesを選択します。そうでない場合は、「いいえ」を選択します。
     注：各正解の選択は1点の価値があります。
-1. 
-2. 
-3. 
-4. 
+1. [yes] ハイパーパラメータの組み合わせは、前の実験がどのように行われたかに基づいて選択される。
+2. [no]  ハイパーパラメータの組み合わせは、前の実験がどのように行われたかに基づいて選択される。
+3. [yes] モデル学習時に学習率0.9が使用される可能性があります。
+4. [no]  モデル学習時に学習率0.9が使用される可能性があります。
+5. [yes] このハイパーパラメータの早期終了ポリシーを定義することができます。
+6. [no]  このハイパーパラメータの早期終了ポリシーを定義することができます。
 <details><div>
     答え：1,3,5
     ボックス1: はい
@@ -69,10 +72,11 @@
     Azure Machine Learning studio の Automated Machine Learning インターフェイスを使用して、分類モデルを学習します。タスクの種類を分類に設定します。
     自動機械学習プロセスが、線形モデルのみを評価することを確認する必要があります。
     あなたは何をする必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. 線形以外のすべてのアルゴリズムをブロックされたアルゴリズムに追加する。
+2. 終了基準オプションをメトリックスコア閾値に設定する。
+3. 自動特徴づけを行うオプションをオフにする。
+4. ディープラーニングを有効にするオプションをオフにする
+5. タスクの種類を回帰に設定
 <details><div>
     答え：1
 </div></details>
@@ -82,10 +86,11 @@
     あなたは、モデルがどのように選択を行っているかを理解したい。また、モデルが、申請者の居住地に基づく融資の拒否などの政府の規制に違反しないことを確認する必要がある。
     顧客データの各特徴が予測にどの程度影響を及ぼしているかを判断する必要があります。
     どうすればいいのでしょうか？
-1. 
-2. 
-3. 
-4. 
+1. モデルとそのトレーニングデータセットのデータドリフトモニタリングを有効にする。
+2. 既知のラベル値を持つテストデータに対してモデルをスコアリングし、その結果を使用して混同行列を計算する。
+3. hyperdrive ライブラリを使用して、複数のハイパーパラメータ値でモデルをテストする。
+4. interpretability パッケージを使用して、モデルの説明文を生成する。
+5. モデル登録に、学習データセットの特徴量の名前を示すタグを追加する。
 <details><div>
     答え：4
     モデルの説明を計算して可視化する場合、自動化されたMLモデルに対する既存のモデルの説明に限定されるわけではありません。また、異なるテストデータでモデルの説明を得ることもできます。このセクションのステップでは、テストデータに基づいてエンジンの特徴量の重要度を計算し、視覚化する方法を紹介します。
@@ -101,10 +106,12 @@
     最高の精度スコアを持つモデルをもたらすハイパーパラメータ値を決定するために、主要なメトリックを定義する必要があります。
     どの3つのアクションを実行する必要がありますか？各正解はソリューションの一部を提示します。
     注：各正解の選択は1点の価値があります。
-1. 
-2. 
-3. 
-4. 
+1. bird_classifier_train.pyスクリプトの実行に使用するestimatorのprimary_metric_goalを最大化するように設定する。
+2. bird_classifer_train.py スクリプトに、モデルの評価損を計算するコードを追加し、キーロスと共に float calue としてログに記録する。
+3. bird_classifier_train.pyスクリプトの実行に使用する推定値のprimary_metric_goalをminimizeに設定する。
+4. bird_classifier_train.pyスクリプトの実行に使用されたestimatorのprimary_metrix_nameをaccuracyに設定する。
+5. bird_classifier_train.pyスクリプトを実行するために使用されるestimatorがlossの場合、primary_metrix_nameをセットする。
+6. bird_classifer_train.py スクリプトに、モデルの評価精度を計算するコードを追加し、accuracy をキーに float calue としてログに記録します。
 <details><div>
     答え：1,4,6
     ADです。
@@ -152,10 +159,14 @@
 
     次の各ステートメントについて、そのステートメントが真である場合は [はい] を選択します。そうでない場合は、[いいえ] を選択します。
     注：正しい選択にはそれぞれ 1 ポイントの価値があります。
-1. 
-2. 
-3. 
-4. 
+1. [yes]このようにサンプリングを定義することで、パラメータのすべての可能な組み合わせがテストされます。
+2. [no] このようにサンプリングを定義することで、パラメータのすべての可能な組み合わせがテストされます。
+3. [yes]learning_rateパラメータのランダムな値は、平均20、標準偏差3の正規分布から選択される。
+4. [no] learning_rateパラメータのランダムな値は、平均20、標準偏差3の正規分布から選択される。
+5. [yes]keep_probabilityパラメータは常に0.05または0.1のどちらかにする。
+6. [no] keep_probabilityパラメータは常に0.05または0.1のどちらかにする。
+7. [yes]number_of_hidden_layersパラメータのランダムな値は、平均が3、標準偏差が5の正規分布から選択される。
+8. [no]number_of_hidden_layersパラメータのランダムな値は、平均が3、標準偏差が5の正規分布から選択される。
 <details><div>
     答え：1,3,6,8
     ボックス 1: はい
@@ -172,10 +183,11 @@
     あなたは、自動機械学習を用いて回帰モデルを学習することを計画している。データには、欠損値を持つ特徴量と、明確な値がほとんどないカテゴリ特徴量がある。
     あなたは、学習タスクの一部として、自動的に欠損値をインプットし、カテゴリ特徴をエンコードするために自動化された機械学習を設定する必要があります。
     AutoMLConfigクラスでどのパラメータと値のペアを使用する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. featurization=auto
+2. enable_voting_ensemble=true
+3. task=classification
+4. exclude_nan_labes=true
+5. enable_tf=true
 <details><div>
     答え：1
     Featurization str または FeaturizationConfig
@@ -234,9 +246,17 @@
     あなたは、群集心理モデルの評価戦略を定義する必要があります。
     どの3つのアクションを順番に実行する必要がありますか？回答するには、アクションのリストから適切なアクションを回答エリアに移動し、それらを正しい順序で並べます。
 1. 
+    スーパーサイジングされたモデルの再トレーニングのための新機能の追加
+    モデルのエラー率とセントロイドの距離の相関の変化を評価する
+    セントロイドの最短距離を用いて再トレーニングのためのラベル付けされたケースをフィルタリングする
 2. 
+    モデルのエラー率とセントロイドの距離の相関の変化を評価する
+    セントロイドの最短距離を用いて再トレーニングのためのラベル付けされたケースをフィルタリングする
+    スーパーサイジングされたモデルの再トレーニングのための新機能の追加
 3. 
-4. 
+    セントロイドの最短距離を用いて再トレーニングのためのラベル付けされたケースをフィルタリングする
+    スーパーサイジングされたモデルの再トレーニングのための新機能の追加
+    モデルのエラー率とセントロイドの距離の相関の変化を評価する
 <details><div>
     答え：1
 シナリオ
@@ -249,10 +269,10 @@
 ### Q. 13
     群衆感情ローカルモデルのための特徴量エンジニアリング戦略を実装する必要があります。
     どうすればいいのでしょうか？
-1. 
-2. 
-3. 
-4. 
+1. 分散分析(ANOVA)の適用
+2. パーソン相関係数の適用
+3. スピアマン相関係数の適用
+4. 線形判別分析を適用する
 <details><div>
     答え：4
     線形判別分析法は、連続変数にのみ作用し、カテゴリー変数や順序変数には作用しない。
@@ -332,44 +352,28 @@ Box 1: 相互情報量。
 ### Q. 17
     特徴抽出の方法を選択する必要があります。
     どの方法を使うべきでしょうか？
-1. 
-2. 
-3. 
-4. 
+1. mutual information
+2. moods median test
+3. kendall correlation
+4. permutation feature importance
 <details><div>
     答え：1
-    Box 1: 相互情報量。
-        相互情報量スコアは、多次元のデータセットにおいて、結合分布と対象変数の相互情報量を最大化するため、特徴選択において特に有用である。
-    ボックス2: MedianValue
-        MedianValueは特徴列、 、データセットの予測値である。
-    シナリオ MedianValue と AvgRoomsinHouse 列は、両方とも数値形式のデータを保持する。あなたは、2つの列の間の関係をより詳細に分析するために、特徴選択アルゴリズムを選択する必要がある。
-</div></details>
-
-### Q. 18
-    モデルのトレーニング要件に合わせて、Permutation Feature Importance モジュールを設定する必要があります。
-    どうすればよいでしょうか？回答するには、回答エリアにあるダイアログボックスで適切なオプションを選択してください。
-    注：正しい選択にはそれぞれ1点の価値があります。
-1. 
-2. 
-3. 
-4. 
-<details><div>
-    答え：3
     統計学において、Kendall順位相関係数、一般的にKendallのタウ係数（ギリシャ文字のτから）と呼ばれ、2つの測定量間の順序の関連を測定するために使用される統計量である。
     これは、Azure Machine Learning の特徴選択でサポートされている方法である。
 注：SpearmanのものもKendallのものも、より一般的な相関係数の特殊なケースとして定式化することができ、このシナリオではどちらも適切である。
     シナリオ MedianValue列とAvgRoomsInHouse列は、両方とも数値形式のデータを保持しています。あなたは、2つの列の間の関係をより詳細に分析するために、特徴選択アルゴリズムを選択する必要があります。
 </div></details>
 
-### Q. 19
-    特徴抽出の方法を選択する必要があります。
-    どの方法を使うべきでしょうか？
-1. 
-2. 
-3. 
-4. 
+### Q. 18
+    モデルのトレーニング要件に合わせて、Permutation Feature Importance モジュールを設定する必要があります。
+    どうすればよいでしょうか？回答するには、回答エリアにあるダイアログボックスで適切なオプションを選択してください。
+    注：正しい選択にはそれぞれ1点の価値があります。
+1. random seed 500
+2. random seed 0
+3. regression mean absolute error
+4. regression r squared
 <details><div>
-    答え：1,3
+    答え：3
     ボックス1：500
         Random seedには、ランダム化のための種として使用する値を入力します。0（デフォルト）を指定すると、システムクロックに基づいた数値が生成されます。
         seedの値は任意であるが、同じ実験の実行間で再現性を持たせたい場合は、値を指定した方がよい。
@@ -377,6 +381,22 @@ Box 1: 相互情報量。
     ボックス2：平均絶対誤差
         シナリオ 学習済みモデルとテストデータセットがあるとき、特徴変数のPermutation Feature Importance スコアを計算する必要があります。あなたは、モデルの精度を調査し、発見を再現するために、正しいメトリックを選択するために Permutation Feature Importance モジュールをセットアップする必要があります。
     回帰。次のいずれかを選択します。Precision, Recall, Mean Absolute Error , Root Mean Squared Error, Relative Absolute Error, Relative Squared Error, Coefficient of Determination（決定係数）。
+</div></details>
+
+### Q. 19
+    特徴抽出の方法を選択する必要があります。
+    どの方法を使うべきでしょうか？
+1. mutual information
+2. pearsons correalation
+3. spearman correlattion
+4. fisher liner discriminant analysis
+<details><div>
+    答え：1,3
+スピアマンの順位相関係数は、2つの変数間の関係が単調な関数を用いてどの程度記述できるかを評価します。
+注：スピアマンの相関係数もケンドールの相関係数も、より一般的な相関係数の特殊なケースとして定式化でき、このシナリオではどちらも適切である。
+シナリオ MedianValue列とAvgRoomsInHouse列は、両方とも数値形式のデータを保持しています。あなたは、2つの列の間の関係をより詳細に分析するために、特徴選択アルゴリズムを選択する必要がある。
+不正解です。
+    B: 2つの変数間のスピアマン相関は、それら2つの変数のランク値間のピアソン相関に等しい。ピアソン相関が線形関係を評価するのに対し、スピアマン相関は単調関係（線形かどうかにかかわらず）を評価する。
 </div></details>
 
 ### Q. 20
@@ -451,9 +471,23 @@ Box 3: DataSetのカラムを選択する
     あなたは、Azure Machine Learning studioのAutomated Machine Learningユーザーインターフェイスを使用して実験を実行し、最高のパフォーマンスを発揮するモデルを見つける必要があります。
     あなたはどの5つのアクションを順番に実行する必要がありますか？
 1. 
+    ペンギンデータのカンマ区切りファイルをアップロードして、新しいデータセットを作成し、選択する。
+    分類タスクの種類を選択する
+    主要な構成設定をaccuracyに設定する
+    実験名、ターゲットカラム、コンピュータターゲットを選択し、自動機械学習の実行を設定する。
+    自動機械学習実験を実行し、結果を確認する。
 2. 
+    分類タスクの種類を選択する
+    主要な構成設定をaccuracyに設定する
+    実験名、ターゲットカラム、コンピュータターゲットを選択し、自動機械学習の実行を設定する。
+    自動機械学習実験を実行し、結果を確認する。
+    ペンギンデータのカンマ区切りファイルをアップロードして、新しいデータセットを作成し、選択する。
+    分類タスクの種類を選択する
 3. 
-4. 
+    主要な構成設定をaccuracyに設定する
+    実験名、ターゲットカラム、コンピュータターゲットを選択し、自動機械学習の実行を設定する。
+    自動機械学習実験を実行し、結果を確認する。
+    ペンギンデータのカンマ区切りファイルをアップロードして、新しいデータセットを作成し、選択する。
 <details><div>
     答え：1
 Step 1:ペンギンデータのコマンド区切りファイルをアップロードし、新しいデータセットを作成・選択します。
@@ -471,10 +505,10 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     モデルの学習に使用されるデータは、データストア内のフォルダから読み取られます。
     あなたは、フォルダ内のデータが変更されるたびに、パイプラインが自動的に実行されるようにする必要があります。
     あなたは何をする必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. パイプラインの regenerate_outputs プロパティを true に設定します。
+2. schedulerecuttanceオブジェクトを作成し、頻度をautoに設定します。
+3. デフォルト値でパイプラインパラメータを作成し、トレーニングデータの保存場所を参照する。
+4. パイプラインのスケジュールを作成する datastoereプロパティにデータストアを、path_on_datastoreプロパティにトレーニングデータのあるフォルダを指定します。
 <details><div>
     答え：4
 
@@ -486,10 +520,10 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     データセット引数には、適切なモードを指定する必要があります。
     あなたはどの2つのモードを使用することができますか？各正解は完全な解答を提示します。
     注：各正解は 1 ポイントに相当します。
-1. 
-2. 
-3. 
-4. 
+1. to_pandas_dataframe
+2. as_download
+3. as_upload
+4. as_mount
 <details><div>
     答え：2
 </div></details>
@@ -499,10 +533,10 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     スクリプトによって生成されたログと出力の名前を取得するステートメントを追加する必要があります。
     あなたは、文のためにSDKからPythonクラスオブジェクトを参照する必要があります。
     あなたはどのクラスオブジェクトを使用する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. run
+2. scriptrunconfig
+3. workspace
+4. experiment
 <details><div>
     答え：1
     ランは、実験の単一の試行を表す。ランは、トライアルの非同期実行を監視し、トライアルのメトリクスを記録し、出力を保存し、トライアルの結果を分析し、トライアルの生成物にアクセスするために使用される。
@@ -518,10 +552,11 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     あなたは、レビューのためにログファイルをローカルフォルダにダウンロードする必要があります。
     この目標を達成するために、あなたはどの 2 つのコードセグメントを実行することができますか？各正解は完全な解決策を提示します。
     注：各正解は1ポイントに相当します。
-1. 
-2. 
-3. 
-4. 
+1. run.get_details
+2. run.get_file_names
+3. run.get_metrics
+4. run.download_diles
+5. run.get_all_logs
 <details><div>
     答え：1,5
     run クラス get_all_logs メソッドは、ランのすべてのログをディレクトリにダウンロードします。
@@ -536,10 +571,10 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     実験はローカルコンピュータでデフォルトの環境を使って実行されなければならない。
     実験を開始し、スクリプトを実行するためのコードを追加する必要がある。
     どのコードセグメントを使うべきだろうか？
-1. 
-2. 
-3. 
-4. 
+1. run=scriot_experiment.start_logging
+2. run=run()
+3. ws.get_run()
+4. run=script_experiment.submit()
 <details><div>
     答え：4
     実験クラスの submit メソッドは、実験を投稿し、アクティブに作成された run を返します。
@@ -562,10 +597,10 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     ステップを実行するためのコードを追加する必要があります。
     この目標を達成するために、どの2つのコードセグメントを使用することができますか？各正解は完全な解決策を提示します。
     注：各正解の選択は1点の価値があります。
-1. 
-2. 
-3. 
-4. 
+1. experiment=
+2. run=
+3. pipeline=pipeline()
+4. pipeline=pipeline()
 <details><div>
     答え：3,4
     ステップを定義したら、そのステップの一部または全部を使ってパイプラインを構築します。
@@ -579,30 +614,33 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
 ### Q. 31
     Azure Databricks ワークスペースと、リンクされた Azure Machine Learning ワークスペースを作成します。
     Azure Machine Learning ワークスペースに、次の Python コードセグメントがあります。
-        インポート mlflow
-        インポート mlflow.azureml
-        インポートazureml.mlflow
-        インポート azureml.core
+        import mlflow
+        import mlflow.azureml
+        import azureml.mlflow
+        import azureml.core
+
         from azureml.core import Workspace
 
-        subscription_id = 'サブスクリプションID'
-        resourse_group = 'リソースグループ名(resource_group_name)'
-        workspace_name = 'ワークスペース名'
+            subscription_id = 'subscription_id'
+            resourse_group = 'resource_group_name'
+            workspace_name = 'workspace_name'
+            ws = Workspace.get(name=workspace_name,
+                subscription_id=subscription_id,
+                resource_group=resource_group)
 
-        ws = Workspace.get(name=workspace_name,
-            サブスクリプション_id=subscription_id,
-            resource_group=resource_group)
-        experimentName = "/Users/{user_name}/{experiment_folder}/{experiment_name}".
-        
-        mlflow.set_experiment(experimentName)を実行します。
-        uri = ws.get_mlflow_tracking_uri()
-        mlflow.set_tracking_uri(uri)を指定します。
+            experimentName = "/Users/{user_name}/{experiment_folder}/{experiment_name}"
+            mlflow.set_experiment(experimentName)
+            uri = ws.get_mlflow_tracking_uri()
+            mlflow.set_tracking_uri(uri)
+
     指示 以下の各ステートメントについて、ステートメントが真である場合はYesを選択します。そうでない場合は、「いいえ」を選択してください。
     注：各正解の選択は1点の価値があります。
-1. 
-2. 
-3. 
-4. 
+1. [yes]リソースグループと azure machine learning workspace が作成される。
+2. [no] リソースグループと azure machine learning workspace が作成される。
+3. [yes]azure datavricks experimentは、azure machine learning workspaceでのみ追跡される。
+4. [no] azure datavricks experimentは、azure machine learning workspaceでのみ追跡される。
+5. [yes]エポックロス指標を追跡するように設定されています。
+6. [no] エポックロス指標を追跡するように設定されています。
 <details><div>
     答え：2,3,5
 ボックス1：なし
@@ -622,10 +660,10 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     Azure Machine Learning SDK を使用して、ParallelRunStep を使用して、モデルを使用して入力データをスコアリングするバッチ推論パイプラインを実装する必要があります。パイプラインステップの ParallelRunConfig compute_target 設定に値を指定する必要があります。
     あなたは、計算ターゲットを作成する必要があります。
     どのクラスを使用する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. batchcompute
+2. adlacoimpute
+3. AMLcompute
+4. akscompute
 <details><div>
     答え：3
     ParallelRunStepに使用する計算ターゲットです。このパラメータは、計算ターゲットオブジェクト、またはワークスペース内の計算ターゲットの文字列名として指定することができます。
@@ -639,10 +677,10 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     モデルのトレーニング以降に変化した特徴データの傾向を特定するために、データドリフトモニタを作成する必要があります。これを実現するには、データドリフトモニターに必要なデータセットを定義する必要があります。
     データドリフトモニターを構成するために、どのデータセットを使うべきですか？回答するには、適切なデータセットを正しいデータドリフトモニタのオプションにドラッグします。
     注：正しい選択にはそれぞれ1点ずつ価値があります。
-1. 
-2. 
-3. 
-4. 
+1. baseline datase: training-dataset
+2. baseline datase: features-dataset
+3. baseline datase: training-dataset
+4. baseline datase: predictions-dataset
 <details><div>
     答え：1,3
     Box 1: トレーニングデータセット
@@ -659,10 +697,10 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     スクリプトの入力として、ファイルデータセットを指定する必要があります。データセットは、複数の大きな画像ファイルから構成されており、そのソースから直接ストリーミングする必要があります。
     実験用の ScriptRunConfig オブジェクトを定義し、引数として ds データセットを渡すコードを記述する必要があります。
     どのコードセグメントを使うべきだろうか？
-1. 
-2. 
-3. 
-4. 
+1. arguments=[input-data, ds.to_pandas?dataframe()]
+2. arguments=[input-data, ds.as_mount]
+3. arguments=[data-data, ds]
+4. arguments=[input-data, ds.as_download]
 <details><div>
     答え：1
     まだデータセットとして登録されていない構造化データがある場合、TabularDatasetを作成し、ローカルまたはリモート実験のトレーニングスクリプトで直接使用します。
@@ -676,10 +714,10 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     あなたは、以下の画像に示すように、コンピュートクラスタ上で混合負荷で長時間実行するタスクのための新しいクラスタを構成する。
     グラフィックに表示された情報に基づいて、各ステートメントを完了する回答の選択肢を選択します。
     注：各正解の選択は、1ポイントに値する。
-1. 
-2. 
-3. 
-4. 
+1. [yes]各ユーザーのコードは別プロセスとして実行されます。
+2. [no] 各ユーザーのコードは別プロセスとして実行されます。
+3. [yes]作業者の数はジョブの全期間にわたって固定される
+4. [no] 作業者の数はジョブの全期間にわたって固定される
 <details><div>
     答え：2,4
 ボックス1：いいえ
@@ -693,10 +731,10 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     あなたは、本番展開のためのPythonスクリプトを作成する必要があります。このソリューションは、コードのメンテナンスを最小限に抑える必要があります。
     あなたはどの2つのアクションを実行する必要がありますか？各正解は、ソリューションの一部を提示します。
     注：各正解の選択は1点の価値があります。
-1. 
-2. 
-3. 
-4. 
+1. jupyter notebookのコードを関数にリファクタリングする。
+2. 各関数を個別の Python ファイルに保存する。
+3. Python スクリプトにメイン関数を定義する。
+4. Pythonスクリプトからすべてのコメントと関数を削除します。
 <details><div>
     答え：1,3
 
@@ -726,10 +764,10 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     バッチ推論パイプラインは、毎晩実行するようにスケジュールできるサービスとして公開する必要があります。
     あなたは、推論サービスのために適切な計算ターゲットを選択する必要があります。
     どのコンピュート・ターゲットを使うべきですか？
-1. 
-2. 
-3. 
-4. 
+1. azure machine learning compute instance
+2. azure machine learning compute cluster
+3. azure kubernetes service-based infernece cluster
+4. azure container instance compute target
 <details><div>
     答え：2
     Batch推論にはAzure Machine Learning compute clustersを使用。サーバーレスコンピュート上でバッチスコアリングを実行。通常のVMと低優先度のVMをサポート。リアルタイム推論をサポートしない。
@@ -741,9 +779,15 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     サービスを実稼働環境にデプロイする前に、ローカルのワークステーションでサービスをデバッグする必要があります。
     どの4つのアクションを順番に実行する必要がありますか？回答するには、アクションのリストから適切なアクションを回答領域に移動し、それらを正しい順序で並べます。
 1. 
+    docker をワークステーションにインストールします。
+    サービス用に akswebservice のデプロイメント構成を作成し、モデルをそこにデプロイします。
+    localwebserviceを作成し、そこにモデルをデプロイします。
+    スコアリングスクリプトをデバッグし、必要に応じて修正します。
 2. 
-3. 
-4. 
+    サービス用に akswebservice のデプロイメント構成を作成し、モデルをそこにデプロイします。
+    localwebserviceを作成し、そこにモデルをデプロイします。
+    スコアリングスクリプトをデバッグし、必要に応じて修正します。
+    docker をワークステーションにインストールします。
 <details><div>
     答え：1
 ステップ1：ワークステーションにDockerをインストールする
@@ -775,9 +819,20 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     あなたは、モデルをデプロイするためにAzure Pipelinesを構成する必要があります。
     あなたはどの4つのアクションを順番に実行する必要がありますか？
 1. 
+    create an azure devops project
+    create a release pipeline
+    install the machine extension for azure pipelines
+    create a servidce connection
 2. 
+    create a release pipeline
+    install the machine extension for azure pipelines
+    create a servidce connection
+    create an azure devops project
 3. 
-4. 
+    create a release pipeline
+    create a servidce connection
+    create an azure devops project
+    install the machine extension for azure pipelines
 <details><div>
     答え：1
 </div></details>
@@ -787,10 +842,10 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     パイプラインは、大量のファイルから予測値を推論するために毎晩実行する必要があります。ファイルが格納されるフォルダは、データセットとして定義されます。
     パイプラインは、毎晩の推論実行に使用できるRESTサービスとして公開する必要があります。
     どうすればいいのでしょうか？
-1. 
-2. 
-3. 
-4. 
+1. create a batch ingerence pipeline
+2. set the compute target for the pipeline to an inference cluster
+3. create a real-time inference pipeline
+4. clone the pipeline
 <details><div>
     答え：1
     Azure Machine Learning Batch Inferenceは、時間的制約のない大規模な推論ジョブを対象としています。Batch Inferenceは、コスト効率の良い推論コンピュートスケーリングと、非同期アプリケーションの比類ないスループットを提供します。大規模データに対する高スループットの推論、fire-and-forgetに最適化されています。
@@ -802,10 +857,10 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     個人のデータを安全かつ非公開にするために、差分プライバシーパラメータを使用する必要があります。
     あなたは、集計結果に対するユーザデータの影響を軽減する必要があります。
     どうすればよいでしょうか？
-1. 
-2. 
-3. 
-4. 
+1. イプシロンパラメータの値を小さくして、データに加わるノイズの量を減らす。
+2. イプシロンパラメータの値を大きくすることで、プライバシを減らし、精度を上げる。
+3. イプシロンパラメータの値を小さくすると、プライバシーが増加し、精度が低下します。
+4. イプシロンパラメータの値を 1 に設定すると、プライバシーの最大値を確保できます。
 <details><div>
     答え：3
     差分プライバシーは、ユーザーが不特定多数のレポートを作成し、最終的に機密データを明らかにすることができる可能性から保護しようとするものである。イプシロンと呼ばれる値は、レポートがどの程度ノイズであるか、またはプライベートであるかを測定します。イプシロンはノイズやプライバシーと逆相関の関係にあります。イプシロンが低いほど、データはよりノイズが多い（そしてプライベートである）ことを意味します。
@@ -816,10 +871,10 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     CityName という名前のフィーチャーを追加して、列の値に London というテキストを入力する必要があります。
     あなたは、データセットに新しいフィーチャーを追加する必要があります。
     どのAzure Machine Learning Studioモジュールを使用する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. edit metadata
+2. filter based feature selection
+3. execute python script
+4. latent dirichlet allocation
 <details><div>
     答え：3
     典型的なメタデータの変更には、カラムをフィーチャーとしてマークすることが含まれるかもしれません。
@@ -856,10 +911,10 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
 
     図に示された情報に基づいて、各質問の答えとなる選択肢を選択しなさい。
     注：各正解の選択肢は 1 ポイントに相当します。
-1. 
-2. 
-3. 
-4. 
+1. what is the r-value for the correlation of y to z? 1
+2. what is the r-value for the correlation of y to z? 0.859122
+3. which type of relationschip exists between z and y the feature set? a positice linear relationship
+4. which type of relationschip exists between z and y the feature set? no linear relationship
 <details><div>
     答え：2,3
 
@@ -870,10 +925,12 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     元のデータとスケーリングされたデータは、次の画像に示されている。
     図に示された情報に基づいて、各質問に対応する回答の選択肢を選択します。
     注：各正解の選択肢は1ポイントに相当します。
-1. 
-2. 
-3. 
-4. 
+1. 質問：which scaler is used in graph a?, 答え：min max scale
+2. 質問：which scaler is used in graph a?, 答え：standard scaler
+3. 質問：which scaler is used in graph b?, 答え：min max scale
+4. 質問：which scaler is used in graph b?, 答え：nomalizer
+4. 質問：which scaler is used in graph c?, 答え：nomalizer
+4. 質問：which scaler is used in graph c?, 答え：min max scale
 <details><div>
     答え：2,3,5
 ボックス1：StandardScaler
@@ -890,10 +947,10 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     一方のデータセットにおける推定値は、他方のデータセットにおける参照値以上または以下である可能性があります。あなたは、相関の関数として一定のタイプIエラーを持つ分布を生成する必要があります。
     あなたは、分布を作成する必要があります。
     あなたはどのタイプの分布を作成する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. unpaired t-test with a two-tail option
+2. unpaired t-test with a one-tail option
+3. paired t-test with a one-tail option
+4. paired t-test with a two-tail option
 <details><div>
     答え：4
     片側検定または両側検定を選択します。デフォルトは両側検定です。これは最も一般的なタイプの検定で、期待される分布がゼロを中心に対称である。
@@ -906,9 +963,17 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     あなたは、すべてのデータに対して効果的な特徴エンジニアリングを実施するための適切な方法を選択する必要があります。
     あなたはどの3つのアクションを順番に実行する必要がありますか？回答するには、アクションのリストから適切なアクションを回答エリアに移動し、正しい順序でそれらを配置します。
 1. 
+    build a counting transform
+    test the hypothesis sing t-test
+    use the filter based feature selection module
 2. 
+    use the filter based feature selection module
+    build a counting transform
+    test the hypothesis sing t-test
 3. 
-4. 
+    test the hypothesis sing t-test
+    use the filter based feature selection module
+    build a counting transform
 <details><div>
     答え：2
 ステップ1: Filter Based Feature Selection モジュールの使用
@@ -921,10 +986,10 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
 
 ### Q. 49
     ローカルの機械学習パイプラインのパフォーマンスの問題を解決する必要があります。どうすればいいのでしょうか？
-1. 
-2. 
-3. 
-4. 
+1. increase graphic propcessing units(gpu)
+2. increase the learning rate
+3. increase the learning iterations
+4. increase central proccessing units(cpu)
 <details><div>
     答え：1
 </div></details>
