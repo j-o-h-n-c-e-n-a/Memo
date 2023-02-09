@@ -1002,10 +1002,12 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     run が送信され、完了した後、次のコードを実行します。
     以下の各ステートメントについて、そのステートメントが真である場合は、Yes を選択します。そうでない場合は、「いいえ」を選択します。
     注：正しい選択には 1 点の価値があります。
-    1. 
-2. 
-3. 
-4. 
+1. [yes]保存されたモデルを上書きする場合、以前のバージョンを使用する。
+2. [no] 保存されたモデルを上書きする場合、以前のバージョンを使用する。
+3. [yes]バージョン番号は 4 になります。
+4. [no] バージョン番号は 4 になります。
+5. [yes]保存されたモデルの最新バージョンは、value: 87.43のプロパティを持つ。
+6. [no] 保存されたモデルの最新バージョンは、value: 87.43のプロパティを持つ。
 <details><div>
     答え：2,3
 
@@ -1016,10 +1018,11 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     使用しているトレーニングデータセットは、非常にアンバランスです。
     あなたは、分類モデルを評価する必要があります。
     どの主要なメトリックを使用する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. normalized_mean_absolute_error
+2. auc_weighted
+3. accuracy
+4. normalized_root_mean_squared_error
+5. spearman_corerlation
 <details><div>
     答え：2
     AUC_weightedは、分類指標である。
@@ -1077,9 +1080,17 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     広告レスポンスのモデリング戦略を定義する必要があります。
     どの3つのアクションを順番に実行する必要がありますか？回答するには、アクションのリストから適切なアクションを回答エリアに移動し、正しい順序で並べます。
 1. 
+    決定ジャングルモデルでクラスタを特徴量として使用する。
+    score matchbox 推薦モデルで生スコアを特徴量として利用する。
+    k-meansクラスタリングモデルを実装する
 2. 
+    k-meansクラスタリングモデルを実装する
+    クラスタを特徴量とする決定ジャングルモデル
+    マッチボックス・レコメンダーで生スコアを特徴量として利用する。
 3. 
-4. 
+    クラスターをディシジョンジャングルの特徴量として利用する
+    k-meansクラスタリングモデルを実装する
+    マッチボックス・レコメンダーモデルで生得点を特徴量として使う
 <details><div>
     答え：2
 ステップ1: K-Meansクラスタリングモデルの実装
@@ -1098,9 +1109,17 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     あなたは、群集心理モデルの評価戦略を定義する必要があります。
     どの3つのアクションを順番に実行する必要がありますか？回答するには、アクションのリストから適切なアクションを回答エリアに移動し、正しい順序でそれらを配置します。
 1. 
+    クロスエントロピー関数の活性化を定義する
+    各ターゲット状態に対するコスト関数を追加
+    距離エラーメトリクスの評価
 2. 
+    各ターゲット状態に対してコスト関数を追加
+    距離誤差を評価する
+    クロスエントロピーの活性化関数を定義する
 3. 
-4. 
+    各ターゲット状態に対するコスト関数を追加
+    クロスエントロピー関数の活性化を定義する
+    距離誤差の評価
 <details><div>
     答え：1
 ステップ1：クロスエントロピー関数の活性化を定義する
@@ -1112,10 +1131,10 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
 ### Q. 6
     あなたは、広告に反応するユーザーの傾向を判断するために、モデル開発戦略を実行する必要があります。
     あなたはどの手法を使うべきでしょうか？
-1. 
-2. 
-3. 
-4. 
+1. 相対表現分割モジュールを使用して、セントロイドの距離に基づいてデータを分割する。
+2. 相対式分割モジュールを使用して、イベントまでの移動距離に基づいてデータを分割する。
+3. 行分割モジュールを使用して、イベントまでの移動距離に基づいてデータを分割する。
+4. 行分割モジュールを使用して、セントロイドの距離に基づいてデータを分割する。
 <details><div>
     答え：1
     データ分割は、データセットの行を2つの異なるセットに分割します。
@@ -1129,10 +1148,10 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
 ### Q. 7
     パフォーマンス曲線に示されているように、広告レスポンスモデルに新しいコスト要因のシナリオを実装する必要があります。
     どの手法を使うべきでしょうか？
-1. 
-2. 
-3. 
-4. 
+1. set the threshold to 0.5 and retrain if weighted kappa deviates +-0.5% from 0.45
+2. set the threshold to 0.05 and retrain if weighted kappa deviates +-0.5% from 0.5
+3. set the threshold to 0.2 and retrain if weighted kappa deviates +-0.5% from 0.6
+4. set the threshold to 0.75 and retrain if weighted kappa deviates +-0.5% from 0.15
 <details><div>
     答え：1
 シナリオ
@@ -1177,9 +1196,13 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     その解決策を開発するために、どの 3 つのコードセグメントを使うべきですか？回答するには、コードセグメントのリストから適切なコードセグメントを回答エリアに移動し、正しい順番で並べます。
     注意: 回答の選択肢の順番は1つ以上でも正解です。あなたが選択した正しい順序のいずれかが評価されます。
 1. 
+    import truncationselectuionpolicy
+    early_termination_policy=()
+    from azureml. train.hyperdrive
 2. 
-3. 
-4. 
+    from azureml. train.hyperdrive
+    import truncationselectuionpolicy
+    early_termination_policy=()
 <details><div>
     答え：2
     有望なジョブを終了させることなく節約できるような、モデルに対する早期停止基準を実装する必要があります。
@@ -1195,9 +1218,17 @@ Step 1:ペンギンデータのコマンド区切りファイルをアップロ�
     あなたはモデルの適合の問題を修正する必要があります。
     どの 3 つのアクションを順番に実行する必要がありますか? 回答するには、アクションのリストから適切なアクションを回答エリアに移動し、正しい順番に並べます。
 1. 
+    augument the data
+    add the bayesian linear regression module
+    configure the regularization weight
 2. 
+    add the bayesian linear regression module
+    configure the regularization weight
+    augument the data
 3. 
-4. 
+    configure the regularization weight
+    augument the data
+    add the bayesian linear regression module
 <details><div>
     答え：1
 ステップ1：データの補強
@@ -1222,9 +1253,13 @@ L-BFGS。
     その解決策を開発するために、どの 3 つのコードセグメントを使うべきですか？回答するには、コードセグメントのリストから適切なコードセグメントを回答エリアに移動し、正しい順番で並べます。
     注：回答の選択肢の順序は1つ以上が正しいです。あなたが選択した正しい順序のいずれかが単位となります。
 1. 
+    from azureml.train.hyperdrive
+    import trucationselectionpolicy
+    early_termination_policy=
 2. 
-3. 
-4. 
+    import trucationselectionpolicy
+    early_termination_policy=
+    from azureml.train.hyperdrive
 <details><div>
     答え：1
 ステップ1： azureml.train.hyperdriveから
@@ -1248,9 +1283,33 @@ Slack
     どのようにコードを完成させるべきですか？回答するには、回答欄で適切な選択肢を選択してください。
     注：正しい選択にはそれぞれ1点ずつ価値があります。
 1. 
+    import numpy as np
+    #import library to log metrics
+    import mlflow
 2. 
+    import numpy as np
+    #import library to log metrics
+    import logging
 3. 
+    #start logging for this run 
+    mlflow.start_run()
 4. 
+    #start logging for this run 
+    run=run.get_context()
+5. 
+    reg_reate=0.01
+    #log the reg_rate metric
+    mlflow.log_metric()
+6. 
+    reg_reate=0.01
+    #log the reg_rate metric
+    looger.info()
+7. 
+    #stop logging for this run
+    mlflow.end_run()
+8. 
+    #stop logging for this run
+    run.complete()
 <details><div>
     答え：1,3,5,7
 ボックス1：mlflowのインポート
@@ -1269,9 +1328,17 @@ Slack
     あなたは、Azure Machine Learningデザイナーを使用して、クライアントアプリケーションが新しいデータを送信し、応答として即時の予測を得ることによって分類モデルを消費することができるWebサービスを作成する必要があります。
     どの3つのアクションを順番に実行する必要がありますか？回答するには、アクションのリストから適切なアクションを回答領域に移動し、それらを正しい順序で並べます。
 1. 
+    コンピュータクラスタ上でデータを準備し、分類モデルを学習する学習パイプラインを作成し、実行する。
+    コンピュータクラスタ上でリアルタイムの推論パイプラインを作成し、実行する。
+    コンピュータインスタンスの作成と起動
 2. 
+    コンピュータインスタンスの作成と起動
+    コンピュータクラスタ上でデータを準備し、分類モデルを学習させる学習パイプラインを作成し、実行する。
+    コンピュータクラスタ上でリアルタイムの推論パイプラインを作成し、実行する。
 3. 
-4. 
+    コンピュータクラスタ上でデータを準備し、分類モデルを学習させる学習パイプラインを作成し、実行する。
+    コンピュータインスタンスの作成と起動
+    コンピュータクラスタ上でリアルタイム推論パイプラインを作成し、実行する。
 <details><div>
     答え：2
 ステップ1：コンピュートインスタンスの作成と起動
@@ -1293,10 +1360,10 @@ Slack
     あなたは、使用する適切な推定量と適切なトレーニング計算ターゲット構成を選択する必要があります。
     どのような値を使用すればよいのでしょうか？回答するには、回答欄で適切な選択肢を選択してください。
     注：正しい選択肢を1つ選ぶごとに1ポイント加算されます．
-1. 
-2. 
-3. 
-4. 
+1. paramenter, estimator, value, estimator
+2. paramenter, estimator, value, tendorflow
+3. paramenter, training computer, value, cpu memory ssd gpu
+4. paramenter, training computer, value, cpu memory ssd
 <details><div>
     答え：1,2,3
 ボックス1：Tensorflow
@@ -1310,10 +1377,11 @@ Slack
     実験は失敗します。
     あなたは失敗した実験をトラブルシュートする必要があります。
     この目標を達成するための2つの可能な方法は何ですか？各正解は完全な解決策を提示します。
-1. 
-2. 
-3. 
-4. 
+1. run オブジェクトの get_metrics メソッドを使用して、実験実行ログを取得する。
+2. run オブジェクトの get_details_with_logs メソッドを使用して、実験フォルダを表示する。
+3. experiment フォルダにある実験実行のログファイルを見る。
+4. azure machine learning studio で実行された実験のログを表示する。
+5. run オブジェクトの get_output メソッドを使用して、実験実行ログを取得する。
 <details><div>
     答え：2,4
 get_details_with_logs() を使用して、実行の詳細と実行によって作成されたログを取得します。
@@ -1328,10 +1396,11 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
     このサイトへのトラフィックはかなり変化する。このサイトは月曜日と金曜日にアクセスが集中し、それ以外の日はアクセスが大幅に減少する。また、休日もトラフィックが多い日です。
     このモデルは、Azure Machine Learning リアルタイム Web サービスエンドポイントとして、需要に応じて動的にスケールアップおよびスケールダウンできるコンピューティング上に展開する必要があります。
     どのデプロイメントコンピュートオプションを使用する必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. attached azure databriclks cluster
+2. azure container instance
+3. azure kubernetes seivece infernce cluster
+4. azure machine learning compute instance
+5. attached virtual machine in a different region
 <details><div>
     答え：4
     Azure Machine Learningのコンピュートクラスタは、単一ノードまたは複数ノードのコンピートを簡単に作成できるマネージドコンピュートインフラストラクチャです。コンピュートは、ワークスペース内の他のユーザーと共有可能なリソースとして、ワークスペース・リージョン内に作成されます。ジョブが投入されるとコンピュートは自動的にスケールアップし、Azure Virtual Networkに配置することができます。
@@ -1342,10 +1411,10 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
     あなたは、サービスの開始時にモデルがロードされ、それが受信されると新しいデータをスコアリングするために使用されることを保証するサービスのためのエントリスクリプトを作成する必要があります。
     スクリプトにはどの関数を含めるべきですか？回答するには、適切な関数を正しいアクションにドラッグしてください。各関数は、1回だけ使うことも、2回以上使うことも、全く使わないこともできます。ペイン間でスプリットバーをドラッグしたり、コンテンツを表示するためにスクロールする必要がある場合があります。
     注：正しい選択には1点ずつ価値があります。
-1. 
-2. 
-3. 
-4. 
+1. action, load the model when the service starts, function, run()
+2. action, load the model when the service starts, function, init()
+3. action, use the model to score new data, function, run()
+4. action, use the model to score new data, function, predict()
 <details><div>
     答え：2,3
 ボックス1：init()
@@ -1358,10 +1427,11 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
     Azure Machine Learning SDK の Model.deploy メソッドを使用して、Azure Machine Learning リアルタイム Web サービスとしてモデルをデプロイする必要があります。デプロイされた Web サービスは、トランザクション データの入力に基づいて、不正行為のリアルタイムの予測を返す必要があります。
     モデルをデプロイするために使用する InferenceConfig クラスの entry_script パラメータとして指定されるスクリプトを作成する必要があります。
     エントリスクリプトは何を行うべきですか？
-1. 
-2. 
-3. 
-4. 
+1. モデルを適切なタグとプロパティで登録する。
+2. Webサービス計算のためにconda環境を作成し、必要なpythonパッケージをインストールする。
+3. モデルをロードし、それを使って入力データからラベルを推定する。
+4. Webサービスが配置された推論クラスタ上でノードを起動する。
+5. 推論計算に必要なコア数とメモリ容量を指定する。
 <details><div>
     答え：3
     エントリースクリプトは、デプロイされたウェブサービスに送信されたデータを受け取り、それをモデルに渡します。そして、モデルから返されたレスポンスを受け取り、それをクライアントに返します。スクリプトはモデルに固有のものです。スクリプトは、モデルが期待するデータと返すデータを理解する必要があります。
@@ -1372,10 +1442,10 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
 
 ### Q. 19
     ある都市の住宅販売データを含むデータセットがある。このデータセットには、以下のカラムが含まれています。
-1. 
-2. 
-3. 
-4. 
+1. setting, prediction task, value, outlier
+2. setting, prediction task, value, regression
+3. setting, target cloumn, value, price
+4. setting, target cloumn, value, size
 <details><div>
     答え：2,3
 </div></details>
@@ -1385,10 +1455,12 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
     あなたは、モデルをレビューし、各モデルがどのように意思決定を行うかを説明する必要があります。
     あなたはどの説明モジュールを使用する必要がありますか？回答するには、解答欄で適切な選択肢を選択してください。
     注：各正解の選択は1点の価値があります。
-1. 
-2. 
-3. 
-4. 
+1. model type, a random forest model for predicting the alcohol content in wine given a set of covariates, explainer, tabular
+2. model type, a random forest model for predicting the alcohol content in wine given a set of covariates, explainer, han 
+3. model type, a natural lanfuage processing model for analyzing field reports, explainer, text
+4. model type, a natural lanfuage processing model for analyzing field reports, explainer, image
+5. model type, an image classfier tjat determines the quality of the grapw based upon its physical characteristics, explainer, image
+6. model type, an image clasfier tjat determines the quality of the grapw based upon its physical characteristics, explainer, kernel
 <details><div>
     答え：1,3,5
 メタ説明器は、与えられたモデルやデータセットに基づき、適切な直接説明器を自動的に選択し、最適な説明情報を生成します。メタ説明器は、弊社が統合・開発した全てのライブラリ（SHAP、LIME、Mimicなど）を活用します。以下は、SDKで利用可能なメタ説明器です。
@@ -1411,10 +1483,10 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
     現在の実行を、これまでで最も性能の良い実行と比較することを避ける。
     どの2つの早期終了ポリシーを使うべきですか？各正解は、解答の一部を示しています。
     注：各正解は1ポイントに相当します。
-1. 
-2. 
-3. 
-4. 
+1. median stopping
+2. bandit
+3. default
+4. ttruncation selection
 <details><div>
     答え：1,3
 中央値停止ポリシーは、すべての実行の実行平均を計算し、実行平均の中央値よりもパフォーマンスが悪い実行はキャンセルされます。
@@ -1434,10 +1506,10 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
     ハイパードライブ実験のサンプリング方法を設定する必要があります。
     あなたはどの2つのサンプリング方法を使用することができますか？各正解は完全な解答である。
     注：各正解は 1 ポイントに相当します。
-1. 
-2. 
-3. 
-4. 
+1. no sampling
+2. grid sampling
+3. bayesian sampling
+4. random sampling
 <details><div>
     答え：3,4
     C: ベイズサンプリングは、ベイズ最適化アルゴリズムに基づき、次にサンプリングするハイパーパラメータ値をインテリジェントに選択します。新しいサンプルが報告された主要な指標を改善するように、前のサンプルがどのように実行されたかに基づいてサンプルを選択する。
@@ -1454,10 +1526,11 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
     モデルを登録し、その後の再トレーニング実験によって作成されたモデルの精度が、現在登録されているモデルよりも高い場合にのみ、そのモデルが登録されるようにする必要があります。
     この目標を達成するために可能な2つの方法は何ですか？各正解は完全な解答を提示する。
     注：各正解は1点の価値があります。
-1. 
-2. 
-3. 
-4. 
+1. モデルを登録するたびに、異なる名前を指定する。
+2. 精度に関係なく毎回同じ名前でモデルを登録し、常に最新バージョンのモデルをバッチ推論パイプラインで使用する。
+3. 精度に関係なく毎回同じ名前でモデルを登録し、常に最新バージョンのモデルをバッチ推論パイプラインで使用する。
+4. 後続のモデルを登録する際、現在登録されているモデルのaccuracyプロパティの値よりも精度が高い場合、accuracyというプロパティを指定し、その値を精度指標として指定する。
+5. モデルの登録時にaccuracyというタグをaccuracyメトリクスの値として指定し、後続のモデルの精度が現在登録されているモデルのaccuracyタグの値より高い場合のみ登録する。
 <details><div>
     答え：3,5
     E: タグを使用すると、モデルの学習に使用した機械学習ライブラリの名前やバージョンなど、有用な情報を追跡することができます。タグは英数字でなければならないことに注意してください。
@@ -1468,10 +1541,10 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
     あなたは、次のコードで実験を提出します。
     あなたは、自動化された機械学習タスクによって生成された最良のモデルを返す Python コードを作成する必要があります。
     あなたはどのコードセグメントを使うべきですか？
-1. 
-2. 
-3. 
-4. 
+1. best_model=automl_run.get_details()
+2. best_model=automl_run.get_metrics()
+3. best_model=automl_run.get_file_names()[]
+4. best_model=automl_run.get_output()[]
 <details><div>
     答え：4
     get_outputメソッドは、最適なランと適合したモデルを返します。
@@ -1484,10 +1557,12 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
     あなたは、すべての特徴量の重要性を決定することによって、すべてのクラスに対してモデルによってなされた予測を説明する必要があります。
     以下の各記述について、その記述が真であれば、Yes を選択します。そうでなければ、No を選択します。
     注：各正解の選択は1点の価値があります。
-1. 
-2. 
-3. 
-4. 
+1. [yes]シャップツリーエクスプローラは、モデルのインナーパートに使用される。
+2. [no] シャップツリーエクスプローラは、モデルのインナーパートに使用される。
+3. [yes]tabularexplaioner のインスタンス化において、features と lasses パラメータを省略しても、説明器は経験通りに動作する。
+4. [no] tabularexplaioner のインスタンス化において、features と lasses パラメータを省略しても、説明器は経験通りに動作する。
+5. [yes]表形式説明器の代わりにミニ説明器を使って、モデルを解釈することができる。
+6. [no] 表形式説明器の代わりにミニ説明器を使って、モデルを解釈することができる。
 <details><div>
     答え：1,3,6
 ボックス1：はい
@@ -1524,10 +1599,8 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
     あなたは、この線形回帰モデルを評価する必要があります。
     解決策 次の測定基準を使用する。精度、プレシジョン、リコール、F1スコア、およびAUC。
     解答は目標を達成しているか？
-1. 
-2. 
-3. 
-4. 
+1. はい
+2. いいえ
 <details><div>
     答え：2
     これらは分類モデルを評価するための指標であり、代わりに使用します。平均絶対誤差、ルート平均絶対誤差、相対絶対誤差、相対2乗誤差、決定係数。
@@ -1539,10 +1612,8 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
     あなたは、この線形回帰モデルを評価する必要があります。
     解決策 次の測定基準を使用します。相対2乗誤差，決定係数，精度，プレシジョン，リコール，F1スコア，およびAUC．
     解答は目標を達成しているか？
-1. 
-2. 
-3. 
-4. 
+1. はい
+2. いいえ
 <details><div>
     答え：2
     相対二乗誤差、決定係数などは線形回帰モデルを評価するのに適した指標ですが、その他は分類モデル用の指標です。
@@ -1552,10 +1623,11 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
     あなたは、線形回帰モデルを作成するデータサイエンティストです。
     あなたは、データが回帰線にどれだけ近いかを判断する必要があります。
     あなたはどの指標をレビューすべきですか？
-1. 
-2. 
-3. 
-4. 
+1. root mean square error
+2. coefficient of determination
+3. recall
+4. precision
+5. mean absolute error
 <details><div>
     答え：2
     決定係数（R2）は、モデルの予測力を0と1の間の値で表し、0はモデルがランダムであること（何も説明しない）、1は完全に適合していることを意味する。しかし、R2 値の解釈には注意が必要です。低い値は完全に正常であり、高い値は疑わしい可能性があるからです。
@@ -1570,10 +1642,12 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
     あなたは、2クラスロジスティック回帰モデルを使用して、バイナリ分類を作成しています。
     あなたは、アンバランスのためにモデル結果を評価する必要があります。
     あなたはどの評価指標を使うべきですか？
-1. 
-2. 
-3. 
-4. 
+1. relative absolute error
+2. auc curve
+3. mean absolute error
+4. relative squared error
+5. accuracy
+6. root mean square error
 <details><div>
     答え：2
 真陽性率と偽陽性率の関係は，ROC（Receiver Operating Characteristic）曲線とそれに対応するAUC（Area Under the Curve）値で見ることができます．この曲線が左上隅に近いほど，分類器の性能が優れていることを意味します（つまり，偽陽性率を最小にしながら真陽性率を最大にすることです）．プロットの対角線に近い曲線は，ランダムな推測に近い予測をする傾向のある分類器から生じます．
@@ -1585,10 +1659,10 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
 
     画像に表示された情報に基づいて、各質問の答えとなる選択肢を選択します。
     注：各正解の選択は1点の価値があります。
-1. 
-2. 
-3. 
-4. 
+1. 実測値と予測値の差を最小にするアルゴリズムはどれか？ ベイズアン線形回帰
+2. 実測値と予測値の差を最小化するアルゴリズムはどれか？ ブースト・デシジョン・ツリー回帰
+3. オンライン勾配降下法の線形回帰モデルの最適なパラメータを見つけるには、どのアプローチを使用する必要がありますか？ create trainer mode オプションをパラメータ範囲に設定します。
+4. オンライン勾配降下法の線形回帰モデルの最適なパラメータを見つけるには、どのアプローチを使用する必要がありますか？ エポック数を減らす
 <details><div>
     答え：2,3
 ボックス1：ブーストされた決定木回帰
@@ -1601,10 +1675,10 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
     あなたは決定木アルゴリズムを使用しています。あなたは、木の深さが10でうまく汎化するモデルを訓練しました。
     あなたは、木の深さを変化させたモデルのバイアスと分散のプロパティを選択する必要があります。
     各樹木の深さに対して、どの特性を選択する必要がありますか？回答するには、回答欄で適切なオプションを選択してください。
-1. 
-2. 
-3. 
-4. 
+1. tree depth, 5, bias, high, variance, low
+2. tree depth, 5, bias, high, variance, high
+3. tree depth, 15, bias, low, variance, high
+4. tree depth, 15, bias, indentical, variance, high
 <details><div>
     答え：1,3
 決定木では、木の深さが分散を決定する。複雑な決定木（例えば深い）は、バイアスが低く、分散が高い。
@@ -1617,10 +1691,14 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
     Azure Machine Learning Studioを使用して、新しいモデルのパラメータセットを特定する必要があります。
     各ステップでどのモジュールを使用する必要がありますか？答えるために、適切なモジュールを正しいステップにドラッグします。各モジュールは、1回または複数回使用することができ、全く使用しないこともできます。ペイン間の分割バーをドラッグしたり、コンテンツを表示するためにスクロールする必要がある場合があります。
     注：正しい選択には1点ずつ価値があります。
-1. 
-2. 
-3. 
-4. 
+1. step, define the parameter scope, module, two-class boosted decision tree
+2. step, define the parameter scope, module, partition and sample
+3. step, define the cross-validation settings, module, partition and sample
+4. step, define the cross-validation settings, module, two-class boosted decision tree
+5. step, define the metric, module, two-class boosted decision tree
+6. step, define the metric, module, tune model hyoperparameters
+7. step, train, evalute, and compare, module, tune model hyoperparameters
+8. step, train, evalute, and compare, module, split data
 <details><div>
     答え：1,3,6,7
 
@@ -1632,10 +1710,10 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
 
 ### Q. 34
     C-Support Vector分類を使用して、アンバランスな学習データセットでマルチクラス分類を行う場合です。C-Support Vectorによる分類をPythonのコードで表すと以下のようになります。
-1. 
-2. 
-3. 
-4. 
+1. code segment, class_weighht=balanced,evalution statement,automatically select the performance metrics for the classification
+2. code segment, class_weighht=balanced,evalution statement,automatically adjust weights inversely proportional to class frequencied in the input data
+3. code segment, c parameter,evalution statement,penalty parameter
+4. code segment, c parameter,evalution statement,size of the kernek cache
 <details><div>
     答え：2,3
 ボックス1：入力データのクラス頻度に反比例した重みの自動調整
@@ -1649,10 +1727,10 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
     あなたは、英語のテキストコンテンツをフランス語のテキストコンテンツに翻訳するための機械学習モデルを構築している。
     あなたは、テキストコンテンツの順序を学習するために、機械学習モデルを構築し、訓練する必要があります。
     どのタイプのニューラルネットワークを使うべきですか？
-1. 
-2. 
-3. 
-4. 
+1. mlps
+2. cnns
+3. rnns
+4. gans
 <details><div>
     答え：3
     英語テキストのコーパスをフランス語に翻訳するために、リカレントニューラルネットワーク（RNN）を構築する必要がある。
@@ -1664,10 +1742,11 @@ Azure Machine Learningの実行を監視し、Azure Machine Learningスタジオ
     あなたはモデルの性能を評価する必要があります．
     あなたはどの2つの測定基準を使うことができますか？各正解は完全な解決策を提示します。
     注：各正解の選択は1点の価値があります。
-1. 
-2. 
-3. 
-4. 
+1. relative absolute error
+2. precision
+3. accuracy
+4. mean absolute error
+5. coefficient of determination
 <details><div>
     答え：2,3
 バイナリ分類モデルで利用可能な評価指標は以下の通りである。Accuracy, Precision, Recall, F1 Score, and AUC.
