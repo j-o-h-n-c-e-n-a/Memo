@@ -4,7 +4,7 @@
     マルチクラス画像分類ディープラーニングモデルを作成した後、パブリックWebポータルから取得した新しい画像データで、モデルが月に一度再トレーニングされることを確認する必要があります。あなたは、新しいデータを取得し、画像のサイズを正規化し、モデルを再トレーニングするためのAzure Machine Learningパイプラインを作成しました。パイプラインのスケジュールを構成するには、Azure Machine Learning SDKを使用する必要があります。次のどのアクションを最初に取るべきですか？
 1. 
 2. 
-3. 
+3. publish the pipeline
 4. 
 <details><div>
     答え：3
@@ -34,7 +34,7 @@
     あなたは、2つのデータセットがかなり異なるかどうかを確認することを課されました。あなたは、タスクを完了するためにAzure Machine Learning Studioを使用します。あなたは、ペアのt検定を実行することを計画しています。次のうち、ペアのt検定を使用するために適用する必要がある条件はどれですか（該当するものをすべて選択してください）。
 1. 
 2. 
-3. 
+3. the samplinf distribution of d is normal
 4. 
 <details><div>
     答え：1,3
@@ -59,7 +59,7 @@
 
 ### Q. 6
     Azure Machine Learningデザイナーを使用して、リアルタイムサービスエンドポイントを作成します。モデルをトレーニングし、指定されたAzure Machine Learningコンピュートリソースにデプロイするためのリアルタイムパイプラインを準備した後、推論パイプラインをWebサービスとして公開することが要求されます。あなたは、あなたの目標を達成するために、正しい計算ターゲットを利用する必要があります。使用すべきコンピュートターゲットは次のうちどれですか？
-1. 
+1. aks
 2. 
 3. 
 4. 
@@ -72,9 +72,9 @@
     あなたは、2つのデータセットがかなり異なるかどうかを確認することを課されました。あなたは、タスクを完了するためにAzure Machine Learning Studioを使用します。
     あなたは、ペアのt検定を実行することを計画しています。
     次のうち、ペアのt検定を使用するために適用する必要がある条件はどれですか（該当するものをすべて選択してください）。
-1. 
+1. the sampling distribution of d is normal
 2. 
-3. 
+3. you have a matched pairs of scores
 4. 
 <details><div>
     答え：1,3
@@ -96,7 +96,7 @@
 1. 
 2. 
 3. 
-4. 
+4. pearson correlation
 <details><div>
     答え：4
 説明 ピアソンの相関係数は、2つの変数の共分散をとり、それらの標準偏差の積で割ることによって計算されます。この係数は、2つの変数のスケールの変化には影響されない。    
@@ -107,7 +107,7 @@
 1. 
 2. 
 3. 
-4. 
+4. you should add the dataset object to the pipeline
 <details><div>
     答え：4
 説明 パイプラインにデータを提供する好ましい方法は、Datasetオブジェクトです。Datasetオブジェクトは、データストアやWeb URLに存在する、あるいはそこからアクセス可能なデータを指し示します。Datasetクラスは抽象的なので、FileDataset（1つ以上のファイルを参照する）かTabularDataset（データの区切り列を持つ1つ以上のファイルから作成する）のインスタンスを作成することになります。例： from azureml.core import Dataset iris_tabular_dataset = Dataset.Tabular.from_delimited_files([(def_blob_store, 'train-dataset/iris.csv')]) 
@@ -126,7 +126,7 @@
     あなたは、Azure Machine Learning Studioを使用して、バイナリ分類モデルを作成します。ハイパーパラメータを調整するために、モデルのパラメータスイープを実行する準備をします。掃引では、ハイパーパラメータのすべての可能な組み合わせを反復できるようにする必要があります。また，掃引を実行するために必要な計算機資源を削減する必要があります．次のどの行動を取るべきでしょうか？
 1. 
 2. 
-3. 
+3. you should consider making use of the random grid sweep mode
 4. 
 <details><div>
     答え：3
@@ -138,7 +138,7 @@
 1. 
 2. 
 3. 
-4. 
+4. you should make use of the featurizattion parameter with the 'auto' value pair
 <details><div>
     答え：4
 説明 Featurization str または FeaturizationConfig 値を指定する。auto' / 'off' / FeaturizationConfig 特徴付けを自動的に行うかどうか、あるいはカスタマイズした特徴付けを行うかどうかの指示子。列の種類は自動的に検出される。検出されたカラムタイプに基づき、以下のように前処理/特徴づけが行われる。カテゴリー：ターゲットエンコーディング、1つのホットエンコーディング、高カーディナリティカテゴリーの削除、欠損値のインピュートを行います。Numeric: 欠損値のインプット、クラスタ距離、証拠の重み付け。DateTime: 日、秒、分、時間など、いくつかの特徴。テキスト Bag of words, 事前学習済みWord embedding, テキストターゲットエンコーディング。
@@ -155,7 +155,7 @@
 ### Q. 15
     あなたは最近、二値分類の機械学習モデルの構築を完了しました。あなたは現在、そのモデルを評価しています。あなたは、評価のための測定値として精度を使用することができる可視化を利用したいと思います。あなたは次のどのアクションを取るべきですか？
 1. 
-2. 
+2. you should consider using the binary classification confusion matrix cisualization
 3. 
 4. 
 <details><div>
@@ -184,7 +184,7 @@
 1. 
 2. 
 3. 
-4. 
+4. train, score, evaluate
 <details><div>
     答え：4
 </div></details>
@@ -195,7 +195,7 @@
     下線部が正確な場合は、「調整不要」を選択します。下線部が不正確な場合は、「正確な」オプションを選択します。
 1. 
 2. 
-3. 
+3. no adujustment required
 4. 
 <details><div>
     答え：3
@@ -208,8 +208,8 @@ Azure Machine Learning StudioのSMOTEモジュールを使用すると、機械�
     ML-workspaceを使用して、DB-cluster上で実行される実験によって生成されるMLflowメトリックと成果物を追跡する必要があります。ソリューションは、カスタムコードの必要性を最小限に抑える必要があります。
     あなたは何をする必要がありますか？
 1. 
-2. 
-3. 
+2. from db-workspace, configure the link azure ml worksoace option
+3. from db-workspace, create a comppute cluster
 4. 
 <details><div>
     答え：2
@@ -244,7 +244,7 @@ ADB ワークスペースの [Overview] ページに移動します。
 ### Q. 23
     Azure Machine Learning Studioを使用して機械学習実験を構築します。あなたは、データを2つの別々のデータセットに分割したいと思います。次のどのアクションを実行する必要がありますか？
 1. 
-2. 
+2. you should make use of the group data into bins module
 3. 
 4. 
 <details><div>
@@ -270,7 +270,7 @@ ADB ワークスペースの [Overview] ページに移動します。
 1. 
 2. 
 3. 
-4. 
+4. no adjustment required
 <details><div>
     答え：4
 Azure Machine Learning StudioのSMOTEモジュールを使用すると、機械学習に使用するデータセット内の未対象のケースを増やすことができます。SMOTEは、既存のケースを単純に複製するよりも、レアケースの数を増やすのに有効な方法です。
@@ -303,7 +303,7 @@ Azure Machine Learning StudioのSMOTEモジュールを使用すると、機械�
     カテゴリカルフィーチャーをバイナリ指標に変換するには、Clean Missing Data モジュールを使用する必要があります。
     下線部が正確な場合は、「調整不要」を選択します。下線部が不正確な場合は、「正確」オプションを選択します。
 1. 
-2. 
+2. convert to indicator values
 3. 
 4. 
 <details><div>
@@ -328,7 +328,7 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
 
 ### Q. 30
     Azure Machine Learning Studioを使用して、線形回帰モデルを開発します。あなたは、様々なアルゴリズムを評価するために実験を行います。次のうち、実際の値と予測値の間のばらつきを小さくするアルゴリズムはどれですか？
-1. 
+1. boosted decision tree regression
 2. 
 3. 
 4. 
@@ -344,7 +344,8 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
 1. 
 2. 
 3. 
-4. 
+    it must be whole numbers
+    it must be a positive value
 <details><div>
     答え：3
 ポアソン回帰は、数値（通常はカウント）を予測するために使用される回帰モデルでの使用を意図しています。したがって、予測しようとする値が以下の条件に適合する場合のみ、このモジュールを使用して回帰モデルを作成する必要があります。
@@ -366,7 +367,7 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
 1. 
 2. 
 3. 
-4. 
+4. you should disable automatic featurization
 <details><div>
     答え：4
 </div></details>
@@ -375,7 +376,7 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
     あなたは、機械学習モデルによるインテリジェントなソリューションの構築を任されています。データサイエンティストがクラウド環境でノートブックを構築し、機械学習パイプラインで自動フィーチャーエンジニアリングとモデル構築を行えるような環境を構築しなければなりません。また、ノートブックは、動的なワーカーの割り当てが可能なSparkインスタンスを介して再トレーニングのためにデプロイできる環境である必要があります。さらに、ノートブックは、ローカルのバージョン管理のためにエクスポート可能である必要があります。あなたは、Apache Spark Mlibライブラリを含むAzure HDInsightクラスターを作成しました。次のうち、あなたが次に取らなければならないアクションはどれですか？
 1. 
 2. 
-3. 
+3. install microsoft machine learning for apoache spark
 4. 
 <details><div>
     答え：3
@@ -413,7 +414,7 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
     あなたは、Azure Machine Learning Studioを使用して、データセットを解析しています。あなたは、以下を含む統計的要約を作成したいと思います。p 値。すべての特徴カラムのユニークカウント。あなたは次のどのアクションを取るべきですか？
 1. 
 2. 
-3. 
+3. export count table
 4. 
 <details><div>
     答え：3
@@ -422,7 +423,7 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
 
 ### Q. 38
     Pythonを使ったデータビジュアライゼーションの作成を学ぶ実習を開催する予定です。学習者用端末はインターネットに接続可能です。学習者の端末は、現在Pythonの開発用に設定されていません。また、学習者のデバイスには管理者権限がないため、ソフトウェアをインストールすることができません。さらに、Azure のサブスクリプションにアクセスすることもできません。学習者がPythonベースのデータ可視化コードを実行できるようにすることが急務です。あなたは次のどのアクションを取るべきですか？
-1. 
+1. you should consider configuring the use of azure notebooks
 2. 
 3. 
 4. 
@@ -458,7 +459,9 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
 1. 
 2. 
 3. 
-4. 
+    random number seed
+    the initial learing weights diameter
+    number of learning iterations
 <details><div>
     答え：3
 </div></details>
@@ -470,9 +473,8 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
     どのコンピュートターゲットを使うべきですか？回答するには、回答領域で適切なオプションを選択してください。
     注：正しい選択にはそれぞれ1点の価値があります。
 1. 
-2. 
-3. 
-4. 
+2. production, computer target, aks
+3. testing, cmputer target, local web service
 <details><div>
     答え：2,3
 Box 1: ローカルウェブサービス
@@ -487,7 +489,7 @@ Box 1: ローカルウェブサービス
     あなたは、Caffe2深層学習フレームワークをサポートするデータサイエンスバーチャルマシン（DSVM）を実装する必要があります。次のDSVMのうち、どれを作成する必要がありますか？
 1. 
 2. 
-3. 
+3. ubuntu 16.04
 4. 
 <details><div>
     答え：3
@@ -525,7 +527,7 @@ PostgreSQLは、以下のOSで利用可能です。Linux（最近のすべての
     ハイパーパラメータを調整するために、モデルのパラメータスイープを実行する準備をします。掃引では、ハイパーパラメータのすべての可能な組み合わせを反復できるようにする必要があります。また，掃引を実行するために必要な計算機資源を削減する必要があります．
     次のどの行動を取るべきでしょうか？
 1. 
-2. 
+2. you should consider making use of the random grid sweep mode
 3. 
 4. 
 <details><div>
@@ -539,8 +541,7 @@ C: グリッド全体。このオプションを選択すると、モジュー�
     下線部が正確かどうかを判断する必要があります。
 1. 
 2. 
-3. 
-4. 
+3. the bocx plot visualization can be used to reveal outliers in you data
 <details><div>
     答え：3
 説明
@@ -569,7 +570,7 @@ C: グリッド全体。このオプションを選択すると、モジュー�
 ### Q. 50
     あなたは、Windows用のDeep Learning Virtual Machineを設定しました。ディープニューラルネットワーク(DNN)モデルを構築するために、ツールとフレームワークを使用する必要があります。どのツールとフレームワークを使用する必要がありますか？
 1. 
-2. 
+2. the microsoft cognitive toolkit
 3. 
 4. 
 <details><div>
@@ -598,7 +599,7 @@ C: グリッド全体。このオプションを選択すると、モジュー�
 
 ### Q. 53
     あなたは、2クラス・ロジスティック回帰モデルを利用して、2値分類を作成しています。あなたは、不釣り合いについて、モデルの結果を評価したい。あなたは適切な評価メトリックの使用を設定する必要があります。 あなたが選択すべきメトリックは次のうちどれですか？
-1. 
+1. auc
 2. 
 3. 
 4. 
@@ -629,7 +630,7 @@ C: グリッド全体。このオプションを選択すると、モジュー�
 1. 
 2. 
 3. 
-4. 
+4. you have to add l1/l1 refularization, and reduce the amount of training data
 <details><div>
     答え：4
 解説をお願いします。B：重み正則化は、トレーニングデータ上での深層学習ニューラルネットワークモデルのオーバーフィットを減らし、ホールドアウトテストセットなどの新しいデータ上でのモデルのパフォーマンスを向上させるためのアプローチを提供します。Kerasは重み正則化のAPIを提供しており、損失関数に重みの大きさのペナルティを追加することができます。3種類の正則化インスタンスが提供されており、それらは以下の通りです。L1: 絶対重みの総和。L2: 2乗重みの総和 L1L2: 絶対値と2乗の重みの和。完全連結層はパラメータの大部分を占めるため、オーバーフィッティングを起こしやすい。オーバーフィッティングを抑制する方法の一つとしてドロップアウトがある。各訓練段階において、個々のノードは確率1-pでネットから「ドロップアウト」されるか、確率pで維持され、縮小されたネットワークが残る。ドロップアウトされたノードへの入出力エッジも削除される。すべての学習データに対してすべてのノードを学習させないことで、ドロップアウトはオーバーフィッティングを減少させる。
@@ -646,7 +647,7 @@ C: グリッド全体。このオプションを選択すると、モジュー�
 ### Q. 58
     あなたは、言語を認識するために、Pythonの最新版に対応した深層学習モデルを設計することを課せられました。あなたは、データサイエンスバーチャルマシン（DSVM）に適切な深層学習フレームワークを含める必要があります。あなたは次のどのアクションを取るべきですか？
 1. 
-2. 
+2. you should consider including tensorflow
 3. 
 4. 
 <details><div>
@@ -696,7 +697,9 @@ C: グリッド全体。このオプションを選択すると、モジュー�
 1. 
 2. 
 3. 
-4. 
+    random number seed
+    the inital learning weights diameter
+    number of learning iteraions
 <details><div>
     答え：3
 </div></details>
@@ -706,9 +709,11 @@ C: グリッド全体。このオプションを選択すると、モジュー�
     スタッフのデバイスは、Dockerのインストールをサポートする必要があります。
     このインストールのための要件は次のうちどれですか？
 1. 
+    4gb ram
+    bios
+    windows 10 64bit
 2. 
 3. 
-4. 
 <details><div>
     答え：1
 </div></details>
@@ -729,9 +734,8 @@ C: グリッド全体。このオプションを選択すると、モジュー�
 ### Q. 2
     Azure Machine Learningに関する説明で、正確なものはどれですか？
 1. 
-2. 
+2. a cloud-based platform for operationg machine learning solutins at scale
 3. 
-4. 
 <details><div>
     答え：2
     Azure Machine Learningは、機械学習モデルのデータ準備、トレーニング、検証、およびデプロイメントの管理を可能にします。Scikit-Learn、PyTorch、Tensorflowなどの既存のフレームワークをサポートし、クラウドで機械学習を運用するためのクロスプラットフォームプラットフォームを提供します。
@@ -742,8 +746,7 @@ C: グリッド全体。このオプションを選択すると、モジュー�
     どの方法を使うべきでしょうか？
 1. 
 2. 
-3. 
-4. 
+3. kendall correlation
 <details><div>
     答え：3
     "統計学において、ケンドール順位相関係数は、一般にケンドールのタウ係数（ギリシャ文字のÏ "にちなんで）と呼ばれ、2つの測定量間の順序的な関連を測定するために用いられる統計量である。これは、Azure Machine Learning の特徴選択でサポートされている方法です。注：SpearmanのものもKendallのものも、より一般的な相関係数の特殊なケースとして定式化することができ、このシナリオではどちらも適切である。シナリオ MedianValue列とAvgRoomsInHouse列は、両方とも数値形式のデータを保持しています。あなたは、2つの列の間の関係をより詳細に分析するために、特徴選択アルゴリズムを選択する必要があります。
@@ -758,8 +761,7 @@ C: グリッド全体。このオプションを選択すると、モジュー�
     データサイエンス環境を選択する必要があります。
 1. 
 2. 
-3. 
-4. 
+3. azure machine learning service
 <details><div>
     答え：3
     データサイエンスバーチャルマシン（DSVM）は、データサイエンスに特化したMicrosoft Azureクラウド上のカスタマイズされたVMイメージである。Caffe2とChainerはDSVMでサポートされています。
@@ -768,10 +770,9 @@ C: グリッド全体。このオプションを選択すると、モジュー�
 ### Q. 5
     群衆感情ローカルモデルのための特徴量エンジニアリング戦略を実装する必要があります。
     どうすればいいのでしょうか？
-1. 
+1. apply a liner discriminant analysis
 2. 
 3. 
-4. 
 <details><div>
     答え：1
 「線形判別分析法は、連続変数にのみ作用し、カテゴリー変数や順序変数には作用しません。線形判別分析は、変数の平均を比較することによって動作するという点で、分散分析（ANOVA）に似ています。シナリオ データサイエンティストは、機械学習パイプラインの自動特徴エンジニアリングとモデル構築を使用して、ローカル環境でノートブックを構築する必要があります。ローカル群衆感情モデルの実験では、ローカルペナルティ検出データを組み合わせる必要があります。ローカルモデルの共有特徴は全て連続変数である。"
@@ -817,7 +818,7 @@ C: グリッド全体。このオプションを選択すると、モジュー�
     あなたはどのAzureツールを使用する必要がありますか？
 1. 
 2. 
-3. 
+3. azure noteboks
 4. 
 <details><div>
     答え：3
@@ -840,7 +841,7 @@ C: グリッド全体。このオプションを選択すると、モジュー�
     Webサービスとしてデプロイされる必要がある学習済みモデルがあります。ユーザーはAzure Active Directoryを使用して認証する必要があります。
     あなたは何をする必要がありますか？
 1. 
-2. 
+2. deploy the model to aks. during deployment, set the token_auth_enabled parameter of the target configuration object to true
 3. 
 4. 
 <details><div>
@@ -864,8 +865,7 @@ C: グリッド全体。このオプションを選択すると、モジュー�
     どの環境を使用すべきでしょうか？
 1. 
 2. 
-3. 
-4. 
+3. azure cognitive service
 <details><div>
     答え：3
     Azure Cognitive Servicesは、Microsoftの機械学習APIの進化したポートフォリオを拡張し、開発者が感情やビデオの検出、顔、音声、視覚認識、音声や言語の理解などの認知機能をアプリケーションに簡単に追加できるようにするものです。Azure Cognitive Servicesの目標は、開発者が見たり、聞いたり、話したり、理解したり、さらには推論を始めることができるアプリケーションを作成するのを支援することです。Azure Cognitive Services内のサービスカタログは、ビジョン、スピーチ、言語、検索、ナレッジの5つの主要な柱に分類されます。
@@ -882,7 +882,7 @@ C: グリッド全体。このオプションを選択すると、モジュー�
         7. 潜在的ディリクレ変換
         8. パーティションとサンプル
 1. 
-2. 
+2. 6-4-8
 3. 
 4. 
 <details><div>
@@ -894,10 +894,10 @@ C: グリッド全体。このオプションを選択すると、モジュー�
     あなたは、K-means アルゴリズムを使用してクラスタリングを実行しています。
     あなたは可能な終了条件を定義する必要がある。
     どの3つの条件を使うことができますか？
-1. 
-2. 
-3. 
-4. 
+1. the residual sum of squares falls below a threshould
+2. centroids do not change between iterations
+3. the sum of distances between centroids reaches a maximum
+4. a fixed number of iterations is executed
 <details><div>
     答え：1,2,4
     セントロイドがクラスタのメンバーをどれだけよく表しているかの尺度は，残差平方和またはRSSであり，すべてのベクトルにわたって合計したセントロイドからの各ベクトルの2乗距離である．RSSは目的関数であり，我々の目標はそれを最小化することである．
@@ -905,10 +905,8 @@ C: グリッド全体。このオプションを選択すると、モジュー�
 
 ### Q. 12
     機械学習モデルのトレーニングにグラフィカルデザイナーツールのみを使用する予定の場合、Azure Machine Learningワークスペースのどのエディションをプロビジョニングする必要がありますか？
-1. 
-2. 
-3. 
-4. 
+1. basic
+2. enterprise
 <details><div>
     答え：2
     ビジュアルデザイナーツールはBasic版のワークスペースでは使用できないため、使用するにはEnterprise版のワークスペースを作成する必要があります。
@@ -928,7 +926,7 @@ C: グリッド全体。このオプションを選択すると、モジュー�
     3. メトリックの定義
     4. 学習、評価、比較
 1. 
-2. 
+2. b-1,c-3,d-3,a-4
 3. 
 4. 
 <details><div>
@@ -939,7 +937,7 @@ C: グリッド全体。このオプションを選択すると、モジュー�
     あなたは自動機械学習を使って、花びらとがく片の寸法から花菖蒲の品種を予測するモデルを訓練しようとしている。
     自動機械学習に指定すべきタスクの種類はどれか。
 1. 
-2. 
+2. classification
 3. 
 4. 
 <details><div>
@@ -955,7 +953,7 @@ C: グリッド全体。このオプションを選択すると、モジュー�
     パイプラインが完了したときに、STDOUT出力に書き込まれたパイプラインの実行の詳細を表示する必要があります。
     どのコードセグメントをテストスクリプトに追加する必要がありますか？
 1. 
-2. 
+2. pipeline_run.wait_for_completion()
 3. 
 4. 
 <details><div>
@@ -973,8 +971,8 @@ wait_for_completion: このランの完了を待つ。待ちの後、ステー�
     どのパラメータを使用する必要がありますか？
 1. 
 2. 
-3. 
-4. 
+3. tags
+4. properties
 <details><div>
     答え：4
     azureml.core.Model.properties:
@@ -988,7 +986,7 @@ wait_for_completion: このランの完了を待つ。待ちの後、ステー�
     次のうち正しいものはどれか？
 1. 
 2. 
-3. 
+3. the training loss decreases while the caliddation loss increases when training the model
 4. 
 <details><div>
     答え：3
@@ -999,7 +997,7 @@ wait_for_completion: このランの完了を待つ。待ちの後、ステー�
     GPUを必要とするトレーニング実験のために、コンピュートターゲットを作成する必要があります。
     必要に応じて複数のノードが自動的に起動するように、コンピュートをスケールできるようにしたいと思います。
     どのような種類のコンピュート・ターゲットを作成すべきですか？
-1. 
+1. computer cluster
 2. 
 3. 
 4. 
@@ -1014,7 +1012,7 @@ wait_for_completion: このランの完了を待つ。待ちの後、ステー�
     ステップ1からステップ2へデータを渡し、これらのステップ間の依存関係を作成するために、どのようなタイプのオブジェクトを使用する必要がありますか？
 1. 
 2. 
-3. 
+3. pipeline data
 4. 
 <details><div>
     答え：3
@@ -1029,7 +1027,7 @@ wait_for_completion: このランの完了を待つ。待ちの後、ステー�
     3. azureml.train.hyperdrive からのインポート
     4. バンディットポリシーをインポートする
     5. early_termination_policy = truncationSelectionPolicy(evaluation_interval=1, truncation_percentage=20, delay_evaluation=5)
-1. 
+1. 3-2-5
 2. 
 3. 
 4. 
@@ -1058,7 +1056,7 @@ wait_for_completion: このランの完了を待つ。待ちの後、ステー�
     どうすればいいのでしょうか？
 1. 
 2. 
-3. 
+3. register the model in the workspace
 4. 
 <details><div>
     答え：3
@@ -1071,7 +1069,7 @@ wait_for_completion: このランの完了を待つ。待ちの後、ステー�
     あなたは何をする必要がありますか？
 1. 
 2. 
-3. 
+3. use the log methods of the run class to record named metrics
 4. 
 <details><div>
     答え：3
@@ -1081,7 +1079,7 @@ wait_for_completion: このランの完了を待つ。待ちの後、ステー�
     あなたは、Python SDk for Azure Machine Learningを使用して自動機械学習実行を提出しました。
     実行が完了したとき、最適なモデルを取得するために、実行オブジェクトのどのメソッドを使用する必要がありますか？
 1. 
-2. 
+2. get_output
 3. 
 4. 
 <details><div>
@@ -1094,7 +1092,7 @@ wait_for_completion: このランの完了を待つ。待ちの後、ステー�
     このサービスのエントリースクリプトには、どのような機能を含めなければなりませんか？
 1. 
 2. 
-3. 
+3. init() amd run()
 4. 
 <details><div>
     答え：3
@@ -1105,7 +1103,7 @@ wait_for_completion: このランの完了を待つ。待ちの後、ステー�
     実験要件とデータセットに基づいて、Feature Based Feature Selection モジュールを設定する必要があります。
     モジュールのプロパティはどのように設定すればよいでしょうか。回答するには、回答エリアのダイアログボックスで適切なオプションを選択してください。
 1. 
-2. 
+2. 1: mutual information,2:medianvalue
 3. 
 4. 
 <details><div>
@@ -1121,7 +1119,7 @@ wait_for_completion: このランの完了を待つ。待ちの後、ステー�
     どうすればよいでしょうか。
 1. 
 2. 
-3. 
+3. create a data reference for the datastore location and pass it to the script as a parameter
 4. 
 <details><div>
     答え：3
@@ -1134,7 +1132,7 @@ wait_for_completion: このランの完了を待つ。待ちの後、ステー�
     あなたは、Azure Machine Learning SDK for Pythonを使用して、データセット1とデータセット2を比較する必要があります。
     あなたはDataDriftDetectorクラスのどのメソッドを使用する必要がありますか？
 1. 
-2. 
+2. backfill
 3. 
 4. 
 <details><div>
@@ -1147,7 +1145,7 @@ wait_for_completion: このランの完了を待つ。待ちの後、ステー�
     このモデルは、最新バージョンのPythonをサポートする必要があります。
     データサイエンスバーチャルマシン（DSVM）に含める音声認識用の深層学習フレームワークを推奨する必要があります。
     何を推奨すべきですか？
-1. 
+1. tensorflow
 2. 
 3. 
 4. 
@@ -1165,6 +1163,7 @@ wait_for_completion: このランの完了を待つ。待ちの後、ステー�
 2. 
 3. 
 4. 
+5. remove entire row
 <details><div>
     答え：5
     行全体を削除する。データセット内の1つ以上の欠損値を持つ任意の行を完全に削除します。これは、欠損値がランダムに欠損していると考えられる場合に有効です。
@@ -1175,10 +1174,12 @@ wait_for_completion: このランの完了を待つ。待ちの後、ステー�
     カスタムロールは、次のJSON定義を持っています。
     説明 次の各ステートメントについて、そのステートメントが真である場合は、[はい]を選択します。そうでない場合は、[いいえ]を選択します。
 注：各正解の選択は、1点の価値があります。
-1. 
+1. the user can delete a computer resource in the workspace[いいえ]
 2. 
 3. 
-4. 
+4. the user can perform all actions in the workspace[いいえ]
+5. the user can write metrics to the workspace[いいえ]
+6. 
 <details><div>
     答え：1,4,5
 ボックス1：禁止
@@ -1197,7 +1198,9 @@ wait_for_completion: このランの完了を待つ。待ちの後、ステー�
 1. 
 2. 
 3. 
-4. 
+ generate a public/private key pair
+ add the public key to the git account
+ clone the git repository by using an ssh repository url
 <details><div>
     答え：3
 Git アカウントを SSH で認証する。
@@ -1224,7 +1227,7 @@ Git アカウントを SSH で認証する。
     あなたは、高いスケーラビリティとセキュリティを備えたコンテナ化されたリアルタイムサービスとして、モデルをデプロイしたい。
     このサービスをホストするために、どのようなコンピューティングを作成する必要がありますか？
 1. 
-2. 
+2. an aks inferenccing cluster
 3. 
 4. 
 <details><div>
@@ -1235,7 +1238,7 @@ Git アカウントを SSH で認証する。
 ### Q. 34
     "データセットの構造が一致するように、Edit Metadata モジュールを設定する必要があります。
     どの構成オプションを選択する必要がありますか？回答するには、回答欄で適切なオプションを選択してください。"
-1. 
+1. 1: floating point,2:unchanged
 2. 
 3. 
 4. 
@@ -1247,10 +1250,9 @@ Git アカウントを SSH で認証する。
     あなたは、英語のテキストコンテンツをフランス語のテキストコンテンツに翻訳するための機械学習モデルを構築している。
     あなたは、テキストコンテンツの順序を学習するために、機械学習モデルを構築し、訓練する必要があります。
     どのタイプのニューラルネットワークを使うべきですか？
-1. 
-2. 
-3. 
-4. 
+1. mlps
+2. rnns
+3. cnns
 <details><div>
     答え：2
     英語テキストのコーパスをフランス語に翻訳するためには、リカレントニューラルネットワーク（RNN）を構築する必要があります。
@@ -1259,10 +1261,9 @@ Git アカウントを SSH で認証する。
 ### Q. 36
     あなたは、Scikit-Learnフレームワークを使用して、モデルを訓練するスクリプトを書きました。
     このスクリプトを実験として実行する場合、どのフレームワーク固有の推定量を使用する必要がありますか？
-1. 
+1. sklearn
 2. 
 3. 
-4. 
 <details><div>
     答え：1
 </div></details>
@@ -1284,7 +1285,7 @@ Git アカウントを SSH で認証する。
     ワークスペースにデータセットが登録されました。
     そのデータセットを、ある推定量を使って実行される実験スクリプトで使用したいと思います。
     どうすればよいでしょうか。
-1. 
+1. pass the dataset as a named input to the estimator
 2. 
 3. 
 4. 
@@ -1297,7 +1298,7 @@ Git アカウントを SSH で認証する。
 回答欄から正しい選択肢を選び、文章を完成させてください。
 1. 
 2. 
-3. 
+3. to move a large dataset from azire machine learning studio to a weke enviroment, the data must be converted to arff format
 4. 
 <details><div>
     答え：3
@@ -1326,6 +1327,7 @@ Git アカウントを SSH で認証する。
 2. 
 3. 
 4. 
+5. create a data science virtual machine linux edition
 <details><div>
     答え：5
 </div></details>
@@ -1333,7 +1335,7 @@ Git アカウントを SSH で認証する。
 ### Q. 42
     "テスト要件に応じたデータの分割方法を特定する必要があります。
     どのプロパティを選択すべきですか？回答するには、解答欄の適切な選択肢を選択してください。"
-1. 
+1. 1: assign to fols,2:partition evenly
 2. 
 3. 
 4. 
@@ -1364,7 +1366,7 @@ Git アカウントを SSH で認証する。
     どのAzure Machine Learning Studioモジュールを使用する必要がありますか？
 1. 
 2. 
-3. 
+3. edit metadata
 4. 
 <details><div>
     答え：3
@@ -1389,8 +1391,8 @@ Git アカウントを SSH で認証する。
     ハイパーパラメーター モジュールを使用して、モデルの精度をチューニングします。
     Tune Model Hyperparameters モジュールを構成する必要があります。
     どの 2 つの値を使用する必要がありますか?
-1. 
-2. 
+1. number of learning iterations
+2. hidden layer specification
 3. 
 4. 
 <details><div>
@@ -1404,7 +1406,7 @@ Git アカウントを SSH で認証する。
     あなたはどの評価指標を使うべきですか？
 1. 
 2. 
-3. 
+3. auc
 4. 
 <details><div>
     答え：3
@@ -1422,7 +1424,7 @@ Git アカウントを SSH で認証する。
     環境を構築する必要があります。
     どうすればいいのでしょうか？
 1. 
-2. 
+2. build the environment in azure databricks and use azure data factoru for orchestration
 3. 
 4. 
 <details><div>
@@ -1437,7 +1439,7 @@ Azure Databricksは、Azure Data Factoryと完全に統合されています。
 ### Q. 49
     "データの可視化の要件に従って、診断テスト評価のための可視化を制作する必要があります。
     どの3つのモジュールを順番に使用することを推奨しますか？回答するには、モジュールのリストから適切なモジュールを回答エリアに移動し、正しい順序で並べます。"Select and Place:"
-1. 
+1. 1: sweep clusteringstep,2: train model step,3:evaluate model
 2. 
 3. 
 4. 
@@ -1465,8 +1467,8 @@ MICE（Multiple Imputation by Chained Equations）方式を使用します。
     k-foldクロスバリデーションを用いて、限られたデータサンプルでモデルを評価する必要があります。あなたは、分割数としてkパラメータを設定することから始めます。
     クロスバリデーションのためにkパラメータを設定する必要があります。
     どの値を使うべきですか？
-1. 
-2. 
+1. 5
+2. 0.5
 3. 
 4. 
 <details><div>
@@ -1481,8 +1483,8 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
     あなたは、Docker for Windowsを参加者に紹介するためのハンズオンワークショップを開発しています。
     あなたは、ワークショップの参加者が自分のデバイスにDockerをインストールできることを保証する必要があります。
     参加者はどの2つの前提条件コンポーネントをデバイスにインストールする必要がありますか？
-1. 
-2. 
+1. windows 10 64bit
+2. bios
 3. 
 4. 
 <details><div>
@@ -1494,7 +1496,7 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
     Azure Machine Learning StudioからWeka環境に大きなデータセットを移動します。
     あなたは、Weka環境用にデータをフォーマットする必要があります。
     どのモジュールを使用する必要がありますか？
-1. 
+1. convert to arff
 2. 
 3. 
 4. 
@@ -1508,9 +1510,9 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
     開発者は、APIを使用してデータベースのデータにアクセスする必要があります。
     あなたは、データベースのモデルとタイプに使用するAPIを決定する必要があります。
     あなたはどの2つのAPIを使用する必要がありますか？
-1. 
+1. mongodb api
 2. 
-3. 
+3. cassandra api
 4. 
 <details><div>
     答え：1,3
@@ -1524,7 +1526,7 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
     Environmentクラスのどのメソッドを使用する必要がありますか？
 1. 
 2. 
-3. 
+3. create_from_conda_specification
 4. 
 <details><div>
     答え：3
@@ -1540,7 +1542,7 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
     データサイエンス環境を選択する必要があります。
     どの環境を使用する必要がありますか？
 1. 
-2. 
+2. azure machine learning service
 3. 
 4. 
 <details><div>
@@ -1555,9 +1557,9 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
     あなたは、特徴値がポアソン回帰モデルを構築するための条件を達成しているかどうかを判断する必要があります。
     特徴量セットにはどの2つの条件が含まれていなければなりませんか？
 1. 
-2. 
+2. the label data must be whole numbers
 3. 
-4. 
+4. the label data must be a positice value
 <details><div>
     答え：2,4
     ポアソン回帰は、数値（通常はカウント）を予測するために使用される回帰モデルでの使用を意図しています。したがって、予測しようとする値が以下の条件に適合する場合のみ、このモジュールを使用して回帰モデルを作成する必要があります。
@@ -1575,7 +1577,7 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
         - スポーツイベント中に取得された、関連するソーシャルメディアフィードのログ
     モデルを作成するための環境を選択する必要があります。
     どの環境を使用すべきでしょうか？
-1. 
+1. azure cognitive service
 2. 
 3. 
 4. 
@@ -1589,9 +1591,11 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
     あなたはAzure Blob Storageにデータを転送する必要があります。
     目標を達成するための3つの可能な方法は何ですか？
 1. 
-2. 
+2. python script
 3. 
-4. 
+4. azure storage explorer
+5. 
+6. az copy
 <details><div>
     答え：2,4,6
     Azure Blobストレージとの間で、さまざまなテクノロジーを使ってデータを移動することができます。
@@ -1605,7 +1609,7 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
 ### Q. 60
     "AccessibilityToHighway "列の欠損データを置換する必要があります。
     Clean Missing Data モジュールをどのように構成する必要がありますか？回答するには、回答領域で適切なオプションを選択します。"
-1. 
+1. 1: replace using mice, 2:propagate
 2. 
 3. 
 4. 
@@ -1632,7 +1636,7 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
     毎週実行するパイプラインを公開しました。
     スケジュールを作成するために、Schedule.createメソッドを使用する予定です。
     パイプラインの実行頻度を設定するために、最初にどのようなオブジェクトを作成する必要がありますか？
-1. 
+1. schedulerecurrance
 2. 
 3. 
 4. 
@@ -1648,7 +1652,7 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
         - 掃引の実行に必要なコンピューティングリソースを最小化すること。
     モデルのパラメータ掃引を実行する必要があります。
     どのパラメータ掃引モードを使用すべきですか？
-1. 
+1. random grid
 2. 
 3. 
 4. 
@@ -1661,7 +1665,7 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
     あなたは、線形回帰モデルを作成するデータサイエンティストです。
     あなたは、データが回帰線にどれだけ近いかを判断する必要があります。
     あなたはどの指標をレビューすべきですか？
-1. 
+1. root mean square error
 2. 
 3. 
 4. 
@@ -1674,8 +1678,8 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
     あなたは、2値分類モデルを作成します。
     あなたは、モデルの性能を評価する必要があります。
     メトリクスを使用できますか？
-1. 
-2. 
+1. precision
+2. accuracy
 3. 
 4. 
 <details><div>
@@ -1686,10 +1690,10 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
 ### Q. 66
     "Age "列に外れ値が存在するかどうかを視覚的に確認し、外れ値を除去する前に外れ値を定量化する必要があります。
     あなたはどの3つのAzure Machine Learning Studioモジュールを使用する必要がありますか？各正解は、ソリューションの一部を提示します。"
-1. 
+1. summarize data
 2. 
-3. 
-4. 
+3. clip values
+4. create scatterplot
 <details><div>
     答え：1,3,4
     "Azure MLで外れ値を扱う最も簡単な方法は、Clip Valuesモジュールを使用することです。これは、指定した閾値以上または以下のデータ値を識別し、オプションで置き換えることができます。Azure Machine Learning StudioのClip Valuesモジュールを使用すると、指定した閾値以上または以下のデータ値を識別し、オプションで置き換えることができます。これは、外れ値を削除したり、平均値、定数、または他の代替値に置き換えたりしたい場合に便利です。"
@@ -1714,7 +1718,7 @@ LOO CVは有用な場合もありますが、一般的にはデータを十分�
     あなたは何を実装する必要がありますか？
 1. 
 2. 
-3. 
+3. gpu
 4. 
 <details><div>
     答え：3
