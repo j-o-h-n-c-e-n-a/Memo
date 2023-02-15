@@ -1,4 +1,4 @@
-# AZ-104
+# AZ-204
 ## Azure 上の Java の概要
 ### はじめに
 ### Microsoft での Java
