@@ -670,6 +670,14 @@ INSUFFICURENT_DATA—アラームが開始されたばかりか、メトリク�
 * Code/deployment management
   + CodeCommit
   + CodePipeline
+    - 承認プロセス：SNS
+      1. 承認アクションの承認または拒否に必要な IAM のアクセス許可を組織内の IAM ユーザーに付与します。
+      2. Amazon SNS 通知を使用している場合、CodePipeline オペレーションで使用しているサービスロールには、Amazon SNS リソースにアクセスするためのアクセス許可が含まれます。
+      3. Amazon SNS 通知を使用している場合は、Amazon SNS トピックを作成し、1 人以上の受信者または 1 つ以上のエンドポイントを追加します。
+      4. AWS CLI を使用してパイプラインを作成するか、CLI またはコンソールを使用してパイプラインを作成したら、承認アクションをパイプラインのステージに追加します。
+      5. 承認アクションに到達するとパイプラインは停止します。Amazon SNS トピックの ARN がアクション設定に含まれている場合、通知は Amazon SNS トピックメッセージが通知されます。
+      6. 承認者は、必要に応じてターゲット URL およびコメントを確認します。
+      7. 承認者は、コンソール、CLIまたはSDK を使用して、概要コメントを確認して、承認または拒否となるレスポンスを送信します。承認がされるとパイプラインの実行が再開されます。拒否されるとステージステータスが「失敗」に変更され、パイプラインの実行は再開されません。
   + Beanstalk
 * Infrastructure deployment
   + OpsWorks
@@ -734,6 +742,7 @@ INSUFFICURENT_DATA—アラームが開始されたばかりか、メトリク�
 1. 運用
 ##### スタッフのトレーニング
 ##### モニタリング
+* Elastic Beanstalk の X-Ray 統合
 ##### インシデント管理
 ##### プロビジョニング
 2. 最適化
@@ -809,6 +818,12 @@ INSUFFICURENT_DATA—アラームが開始されたばかりか、メトリク�
     - UnHealthyHostCountはロードバランサーに登録された異常なインスタンス数
     - RequestCountは指定された間隔 (1 分または 5 分) の間に完了したリクエスト数、または接続数
   + Lambda
+* 構成管理
+  + Systems Manager
+    - エンドポイント
+    - エージェント
+    - API
+      * IAMロール
 * 進化
   + Elasticsearch
   + CodeCommit
@@ -840,6 +855,8 @@ INSUFFICURENT_DATA—アラームが開始されたばかりか、メトリク�
 * SSE-C 
 * SSE-S3
 * SSE-KMS
+#### EFS
+
 #### DynamoDB
 * 暗号化クライアント
 * SSE-KMS
