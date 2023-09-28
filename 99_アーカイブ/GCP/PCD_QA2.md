@@ -2306,3 +2306,309 @@ https://cloud.google.com/architecture/migrating-a-monolithic-app-to-microservice
 <details><div>
     答え：
 </div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
+
+## Q. 
+1. 
+2. 
+3. 
+4. 
+<details><div>
+    答え：
+</div></details>
