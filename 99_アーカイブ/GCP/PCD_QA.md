@@ -2718,10 +2718,10 @@ Cloud Run にデプロイされ、Cloud Functions を使用する新しいアプ
 ENV 変数を使用してサービスを追跡し、サービス間通信を有効にしますが ENV 変数のメンテナンスが難しくなっています。
 スケーラブルな方法で動的検出を実装したいと考えています。
 どうすればいいでしょうか？
-1. 
-2. 
-3. 
-4. 
+1. CloudRunAdminApiとCloudFunstionsAPIを使用してマイクロサービスを構成し、GoogleCloudプロジェクトにデプロイされたCloudRunサービスとCloudFunstionsをクエリします
+2. ServiceDirectoryn甘え空間を作成します。API呼び出しを使用してデプロイ時にサービスを登録し、実行時にクエリを実行します
+3. FunctionsとRunサービスエンドポイントの名前を変更するには十分に文書化された命名規則を使用します
+4. 単一のComputeEngineインスタンスにHashicorpコンソールをデプロイします。デプロイ時にサービスをコンソールに登録し、実行時にクエリを実行します
 <details><div>
     答え：2
 説明
@@ -2739,10 +2739,11 @@ Referenceの資料をご参照ください。
 Google Kubernetes Engine（GKE）で実行するマイクロサービス ベースのアプリケーションを開発しているとします。
 一部のサービスは、さまざまな Google Cloud API にアクセスする必要があります。
 Google 推奨のベスト プラクティスに沿ってクラスタでこれらのサービスの認証を設定するには、どうすればよいですか（2 つ選択してください）。
-1. 
-2. 
-3. 
-4. 
+1. GKEノードに関連付けられたサービスアカウントを使用する
+2. gcloudコマンドラインツールを経由して、クラスタでWorkloadIdentityを有効にする
+3. SercretManagerからGoogleサービスアカウントキーにアクセスします
+4. GoogleサービスアカウントキーをSercretManagerに登録する
+5. gcloudでroles/iam.workloadidentityuserを使用して、googleサービスアカウントとK8sサービスアカウントをバインドする
 <details><div>
     答え：2,5
 説明
@@ -2762,12 +2763,12 @@ C, D は不正解です。
 最近、アプリケーションに影響を与える政府規制が可決されました。
 コンプライアンスの目的で特定のアプリケーションログの複製をアプリケーションのプロジェクトからセキュリティチームに限定されたプロジェクトに送信する必要があります。
 どうすればいいでしょうか？
-1. 
-2. 
-3. 
-4. 
+1. セキュリティチームのプロジェクトでユーザー定義のログバケットを作成します。CloudLoggingシンクを構成してアプリケーションのログをセキュリティチームのプロジェクトのログバケットにルーティングします
+2. _rewuiredログバケットからプロジェクト内のセキュリティチームのログバケットにコピーするジョブを作成します
+3. _defaultログバケットシンクルールを変更してログをセキュリティチームのログバケットに再ルーティングします
+4. システムイベントログを_rewuiredログバケットからプロジェクトのセキュリティチームのログバケットにコピーするジョブを作成します
 <details><div>
-    答え：
+    答え：1
 説明
 解説：
 ログの受け渡しは sync で出来るので、わざわざコピーしている選択肢は除外です。
@@ -2782,12 +2783,12 @@ A, C の２択となります。
 コンテナ インスタンスは、構造化ログを標準出力（stdout）ストリームと標準エラー（stderr）ストリームに書き込みます。
 自動的に作成されたリクエストログをコンテナログに相互に関連付けたいと考えています。
 どうすればよいですか。
-1. 
-2. 
-3. 
-4. 
+1. CloudTraceにトレースを送信するためにアプリケーションを計測可能にする
+2. リクエストごとに一意のIDをランダムに生成して、Snapshotdebuggerを使用してログポイントを追加する
+3. ヘッダー値をX-Cloud-Trace-Contextとして、ログステートメントにlogging-googleapis.com/traceフィールドを追加する
+4. リクエストごとに一意のIDをランダムに生成して、ログステートメントにlogging-googleapis.com/traceフィールドを追加する
 <details><div>
-    答え：
+    答え：3
 説明
 Reference:
 (1) ログの記録と表示
@@ -2811,12 +2812,12 @@ Google Kubernetes Engine での Deployment の更新中にアプリケーショ�
 アプリケーションが終了する前にデータベース接続を閉じませんでした。
 アプリケーションを更新して正常なシャットダウンを確実に完了したいと考えています。
 どうすればいいでしょうか？
-1. 
-2. 
-3. 
-4. 
+1. コードを更新して受信したsigtermシグナルを処理し、データベースから正常に切断します
+2. PodDisruptionBudgetを構成してPdが強制的にシャットダウンされないようにします
+3. アプリケーションのterminationGracePeriodSecondsを増やします
+4. アプリケーションをシャットダウンするPreStopフックを構成します
 <details><div>
-    答え：
+    答え：1
 説明
 Reference:
 (1) Kubernetes best practices: terminating with grace
@@ -2832,12 +2833,12 @@ C, D に関してはデータベース接続が閉じられなかった事に対
 ## Q. 5-6
 あなたは、Cloud Run で Java アプリケーションを実行しています。
 アプリケーションのエラー メッセージが Error Reporting コンソールに表示されません。どうすればよいですか。
-1. 
-2. 
-3. 
-4. 
+1. そのJavaアプリケーションにCloudMonitoringクライアントライブラリがバンドルされていることを確認する
+2. アプリケーションログが正しいRegionalStorageバケットに書き込まれていることを確認する
+3. アプリケーションエラーがstderrに書き込まれていることを確認する
+4. system.out.printinを使用して例外をログに記録する
 <details><div>
-    答え：
+    答え：3
 説明
 Reference:
 (1) トラブルシューティング
@@ -2861,12 +2862,12 @@ Web アプリケーションを Google Kubernetes Engine (GKE) にデプロイ�
 DevOps チームは Cloud Deploy を使用してアプリケーションを GKE の Dev、Test、Prod クラスタにデプロイする CI/CD パイプラインを構築しました。
 Cloud DeployがDevクラスタにアプリケーションを正常にデプロイした後、それをTestクラスタに自動的に昇格させたいと考えています。
 Google が推奨するベスト プラクティスに従って、このプロセスをどのように構成するべきでしょうか？
-1. 
-2. 
-3. 
-4. 
+1. clouddeploy-operationsトピックからのsucceeded Pub/SubメッセージをリスんするCloudBuildトリガーを作成します。CloudBuildを構成して、アプリケーションをテストクラスタに昇格されるステップを含めます
+2. DeployAPIを呼び出してアプリケーションをテストクラスタに昇格させるCloudFunctionsを作成します。cloud-buildsトピックからのSuccededPub/Subメッセージによってトリガーされるようにこの関数を構成します
+3. DeployAPIを呼び出してアプリケーションをテストクラスタに昇格させるCloudFunctionsを作成します。clouddeploy-operationsトピックからのSuccededPub/Subメッセージによってトリガーされるように関数を構成します
+4. gke-deployビルダーを使用するCloudBuildパイプラインを作成します。cloud-buildsトピックからのSuccededPub/SubメッセージをリスんするCloudBuildトリガーを作成します。このパイプラインを構成してテストクラスタへのデプロイ手順を実行します
 <details><div>
-    答え：
+    答え：1
 説明
 Reference:
 (1) Google Cloud Deploy と他のシステムとの統合
@@ -3413,49 +3414,755 @@ Kubernetes上のデプロイ単位となるPodの上位リソースとして、D
 最近の実務では Cloud Run等のマネージドサービスの利用が主流に感じていますが、Google Cloudを勉強する上では GKE を中心に勉強するとそこから全体の知識が集まってくるような感じがしますので、GKEは勉強のし所だと思います。
 </div></details>
 
-## Q. 
-1. 
-2. 
-3. 
-4. 
+## Q. 6-1
+Google Kubernetes Engine (GKE) で実行されているアプリケーションがあります。
+アプリケーションは現在ロギングライブラリを使用しており、標準出力に出力しています。
+ログをCloud Logging にエクスポートする必要があり、ログに各リクエストに関するメタデータを含める必要があります。
+これを実現するには最も簡単な方法を使用します。
+どうすればいいでしょうか？
+1. アプリケーションのログライブラリをCloudLoggingライブラリに変更し、ログをCloudLoggingにエクスポートするようにアプリケーションを構成します
+2. JSON形式でログを出力するようにアプリケーションを更新し、必要なメタデータをJSONに追加します
+3. アプリケーションを更新してログをCSV形式で出力し、必要なメタデータをCSＶに追加します
+4. 各GKEノードにFluentBitエージェントをインストールし、エージェントが/var/logからすべてのログをエクスポートするようにします
 <details><div>
-    答え：
+    答え：2
+説明
+Reference:
+(1) GKE ログの管理
+https://cloud.google.com/stackdriver/docs/solutions/gke/managing-logs?hl=ja#best_practices
+解説：
+Reference (1)の記述と、「もっとも簡単な方法」とメタデータの出力に言及している事からB を正解とします。
+A はソースコードの変更が大きいと考え「最も簡単な方法」には反していると考えられます。
+ログデーターはJson形式なので、Cは除外。
+D は回りくどくこのような方法を取る必要がありません。
+一般に Fluent は AWSやAZURE等の別なクラウドを使っているがログ解析だけはBigQueryで行いたいといった場合にログを集めてloggingに出力する等を行いますが、Google Cloud 環境では直接 Cloud Loggingに出力できるので、あまり必要性はないのではないかと思われます。
+正解は B となります。
 </div></details>
 
-## Q. 
-1. 
-2. 
-3. 
-4. 
+## Q. 6-2
+アプリケーションが Google Kubernetes Engine（GKE）クラスタのコンテナとして実行されています。
+Kubernetes API サーバーへの呼び出しによって Secret が公開されることを防ぐ、安全なアプローチを使用して、アプリケーションに Secret を追加する必要があります。
+どうすればよいですか。
+1. kubernetesシークレットを作成し、そのシークレットを環境変数としてコンテナに渡す
+2. CloudKeyManagementServiceを使用して、GKEアプリケーションレイヤのシークレットの暗号化をクラスタで有効にする
+3. CloudKMSにシークレットを格納する。CloudKMSからシークレットを読み取るためにGoogleサービスアカウントを作成する。サービスアカウントキーをJSON形式でエクスポートしてそのJSONファイルをCloudKMSからシークレットを読み取ることができるConfigMapVolumeとしてコンテナにマウントする
+4. シークレットをSercretManagerに格納する。SercretManagerからシークレットを読み取るためのGoogleサービスアカウントを作成する。コンテナを実行するためのK8sサービスアカウントを作成する。WorkloadIdentityを使用してGoogleサービスアカウントとして認証する
 <details><div>
-    答え：
+    答え：４
+説明
+Reference:
+(1) Workload Identity を使用する
+https://cloud.google.com/kubernetes-engine/docs/how-to/workload-identity?hl=ja
+(2) Cloud Key Management Service のドキュメント
+https://cloud.google.com/kms/docs?hl=ja
+(3) Secret
+https://kubernetes.io/docs/concepts/configuration/secret/
+(4) Secret Manager のコンセプトの概要
+https://cloud.google.com/secret-manager/docs/overview?hl=ja
+解説：
+A は不正解です。
+Kubernetes Secret は文字列をエンコードするのみであるため、Secret を読み取ることができる誰もがそれをデコードできます。
+B は不正解です。
+GKE アプリケーションレイヤで Secret を暗号化しても、Secret はやはり Kubernetes API サーバーからの base64 エンコードされた文字列として提示されます。
+C は不正解です。
+Cloud KMS は実際の Secret ではなく暗号鍵の格納に使用されます。また、Google サービス アカウント キーを Volume として渡すとしていますが、Secret を読み取ることができる誰もがこれを読み取ることができます。
+D は正解です。
+これにより、Secret を安全に格納するサービスと、Workload Identity で安全に Secret を取得するアプローチが提供されます。
 </div></details>
 
-## Q. 
-1. 
-2. 
-3. 
-4. 
+## Q. 6-3
+プロジェクト A とプロジェクト B という 2 つの Google Cloud プロジェクトがあります。
+プロジェクト B の Cloud Storage バケットに出力を保存する Cloud Functions をプロジェクト A に作成する必要があります。
+最小権限の原則に従う必要があります。
+どうすればいいでしょうか？
+1. プロジェクトBにGoogleサービスアカウントを作成します。このサービスアカウントにプロジェクトBにあるストレージバケットに対するroles/storage.objectcreaterのロールを割り当てます。プロジェクトBのサービスアカウントでプロジェクトAにFunctionsをデプロイします。
+2. プロジェクトAでGoogleサービスアカウントを作成します。このサービスアカウントにプロジェクトBにあるストレージバケットに対するroles/storage.objectcreaterのロールを割り当てます。プロジェクトAのサービスアカウントでFunctionsをデプロイします。
+3. プロジェクトAのデフォルトのAppEngineサービスアカウントを決定します。プロジェクトAでデフォルトのAppEngineサービスアカウントを使用してFunctionsをデプロイします。デフォルトのAppEngineサービスアカウントにプロジェクトBにあるストレージバケットのroles/storage.objectcreaterのロールを割り当てます
+4. プロジェクトBのデフォルトのAppEngineサービスアカウントを決定します。プロジェクトAでデフォルトのAppEngineサービスアカウントを使用してFunctionsをデプロイします。デフォルトのAppEngineサービスアカウントにプロジェクトBにあるストレージバケットのroles/storage.objectcreaterのロールを割り当てます
 <details><div>
-    答え：
+    答え：２
+説明
+Reference:
+(1) サービス アカウントの概要
+https://cloud.google.com/iam/docs/service-account-overview?hl=ja
+(2) Cloud Storage に適用される IAM のロール
+https://cloud.google.com/storage/docs/access-control/iam-roles?hl=ja
+(3) 最小限の権限
+https://cloud.google.com/iam/docs/using-iam-securely?hl=ja#least_privilege
+解説：
+プロジェクトAのCloud FunctionsはプロジェクトAのサービスアカウントで作成します。
+プロジェクトAで作成したサービスアカウントにロールを追加することで、プロジェクトAのサービスアカウントで作られたCloud Functions にもロールが追加されます。
+このサービスアカウントにプロジェクトBのCloud Storageに書き込みが行える最低限のロールがあればいいわけです。
+これを踏まえて見ていくと。
+異なる Google Cloud プロジェクトにあるサービス アカウントで Cloud Functions の関数を実行することはできませんので A は不正解です。
+BはプロジェクトAで作成したサービス アカウントにプロジェクトBのCloud Storage のroles/storage.objectCreator ロールが付与されたので、FunctionsはStorageの objectCreatorになれました。
+C, DはAppEngineのサービスアカウントに何やらやっているので無関係です。
+正解は B となります。
 </div></details>
 
-## Q. 
-1. 
-2. 
-3. 
-4. 
+## Q. 6-4
+ローカルテストでは問題がなく、Compute Engine インスタンスにデプロイするとパフォーマンスが大幅に低下するアプリケーションがあります。
+変更は最小限にして問題を診断する必要があります。どうすればよいですか。
+1. Cloudサポートにチケットを提出し、アプリケーションがローカルでは高速に動作することを説明する
+2. Cloudデバッガのスナップショットを使用して、特定時点でのアプリケーション野実行を確認する
+3. CloudProfilerを使用して、アプリケーションのどの関数に最も時間がかかっているのかを判断する
+4. アプリケーションにロギングコマンドを追加し、CloudLoggingを使用して、レイテンシの問題がどこで発生しているのかを確認する
 <details><div>
-    答え：
+    答え：３
+説明
+Reference:
+(1) Cloud Profiler のドキュメント
+https://cloud.google.com/profiler/docs?hl=ja
+解説：
+A は不正解です。
+自分のマシンでは動作したのに Google Cloud では動作しないと主張しても有用性はありません。
+B は不正解です。
+デバッガのスナップショットでは、ある時点のアプリケーションの状況を確認できるのみです。
+C は正解です。
+関数ごとのレイテンシと、レイテンシの履歴情報が提供されます。
+D は不正解です。
+有効ではありますが、必要な作業量が多くなり、明確で最適な選択肢ではありません。
 </div></details>
 
-## Q. 
-1. 
-2. 
-3. 
-4. 
+## Q. 6-5
+API呼び出し元の認証、過剰なリクエストの制御、メトリックのレポートを行うパブリックAPI を構築する必要があります。
+このアーキテクチャを完成させるにはどのツールを使用しますか？
+1. AppEngine
+2. CloudEndpoints
+3. Identity-AwareProxy
+4. HTTP負荷分散のためのGKEIngress
 <details><div>
-    答え：
+    答え：2
+説明
+Reference:
+(1) Cloud Endpoints
+https://cloud.google.com/endpoints?hl=ja
+(2) 割り当てについて
+https://cloud.google.com/endpoints/docs/openapi/quotas-overview?hl=ja
+解説：
+「API呼び出し元の認証、過剰なリクエストの制御、メトリックのレポートを行う」を満たすのは Cloud Endpoints です。
+これら3つの機能（認証、割り当て / レート制限、指標）はすべて、Cloud Endpoints のコア機能です。
+(Reference参照)
+AはApp Engineはアプリケーションの実行環境ですので、通常要求されているような機能を行うことはありません。
+Cは認証機能しか持ちません。
+Ingressは選択肢にも書いているように分散機能があります。
+主な役割は外部URLをクラスタ内のURLに変換しL7ロードバランシングを提供します。
+SSL認証などは行いますが要求されているような機能は持ちません。
+正解は B となります。
+</div></details>
+
+## Q. 6-6
+あなたのチームが管理しているウェブ アプリケーションは、現在、ユーザー セッションの情報をオンプレミスの PostgreSQL データベースに保存しています。
+このデータベースをオンプレミスに残して、ウェブ アプリケーションを Google Cloud に移行することになりました。
+移行後に高いレイテンシが検出されたため、クイックテストを何件か実施してデータポイントを収集し、パフォーマンスを改善する費用対効果の高い解決策をテクニカル リーダーに提案する必要があります。
+まず、スキーマを変更せずにデータベースを Google Cloud に移行して、レイテンシが低減されるかを確認します。
+次に、PostgreSQLの代わりにクラウド上のマネージド NoSQL データベースを使用してユーザーセッションの情報を保存します。
+マネージドサービスを使用して効率的にデータポイントを収集するにはどうすればよいですか。
+1. データベースをCloudSQLに移行し、データをCloudStorageにインポートする
+2. データベースをBigQueryに移行し、データをネイティブモードのFilestoreにインポートする
+3. データベースをCloudSQLに移行し、データをネイティブモードのFilestoreにインポートする
+4. GoogleCloudでComputeEngineインスタンスを作成して、PostgreSQLとMongoDBのサーバーソフトウェアをインストールし、データベースをPostgreSQLに、データをMongoDBにそれぞれ移行する
+<details><div>
+    答え：3
+説明
+Reference:
+(1) Bigtable の概要
+https://cloud.google.com/bigtable/docs/overview?hl=ja
+(2) Firestore エクスポートからのデータの読み込み
+https://cloud.google.com/bigquery/docs/loading-data-cloud-firestore?hl=ja
+(3) オンプレミスの PostgreSQL クラスタを Google Cloud に移行する
+https://cloud.google.com/architecture/migrating-postgresql-to-gcp?hl=ja
+解説：
+A は不正解です。
+Cloud Storage は、ユーザー セッション情報の保存に効果的な NoSQL データベースではありません。
+B は不正解です。
+BigQuery は、データ ウェアハウスです。挿入された行を更新 / 削除する機能が限定的であるため、セッションの進行状況に応じて変化するユーザー セッション データには不適切です。
+C は正解です。
+Cloud SQL はマネージド PostgreSQL データベースで、移行時にスキーマの変更は不要です。
+ネイティブ モードの Firestore は、ユーザー セッション情報の保存用途に推奨されており、こうしたテストに最適です。
+D は不正解です。
+マネージド サービスが使用されておらず、データベース サーバーの管理が必要になるため、テストにかかる時間が増加します。
+</div></details>
+
+## Q. 6-7
+Cloud Run を使用して新しい Web アプリケーションを開発し、コードを Cloud Source Repositories にコミットしています。
+可能な限り最も効率的な方法で新しいコードをデプロイしたいと考えています。
+コンテナをビルドしてコマンド gcloud run deploy を実行する Cloud Build の YAML ファイルをすでに作成しています。
+次に何をすべきですか？
+1. コードがリポジトリにプッシュされたときに通知されるようにPub/Subトピックを作成します。イベントがトピックに発行されたときにビルドファイルを実行するPub/Subトリガーを作成します
+2. 開発ブランチにプッシュされるリポジトリコードに応答してビルドファイルを実行するビルドトリガーを作成します
+3. WebhookURLへのHTTPPOST呼び出しに応答してビルドファイルを実行するWebhookビルドトリガーを作成します
+4. 次のコマンドを24時間ごとに実行するcronジョブを作成します
+<details><div>
+    答え：2
+説明
+解説：
+Cloud Build を使うことで、Cloud Source Repositories(CSR)へのコミットやタグの作成等のフックで、作成した yaml ファイルを実行する事が簡単に行うことができます。
+本問題での要求であれば、A, C のような回りくどい仕組み(Cloud Build 以外にも他のtoolを利用するような仕組み)の作成は不要です。
+Cronジョブも特定の時間にならないと実行されないので非効率です。
+ソースの更新をフックしてすぐにビルドスクリプトを実行できます。
+従って、正解は B となります。
+</div></details>
+
+## Q. 6-8
+Deployment リソースを使用して新しいアプリケーションリビジョンを本番環境の Google Kubernetes Engine (GKE) にデプロイする予定です。
+コンテナが正しく機能しない可能性があります。
+リビジョンのデプロイ後に問題が発生した場合のリスクを最小限に抑える必要があります。
+Google が推奨するベストプラクティスに従います。
+どうすればいいでしょうか？
+1. 80%のPodDisruptionBudgetでローリングアップデートを実行します
+2. HorizontalPodAutoscalerスケールダウンポリシーの値を0にし、ローリングアップデートを実行します
+3. DeploymentをStatfulsetに変換し、80%のPodDisruptionBudgetでローリングアップデートを実行します
+4. DeploymentをStatfulsetnに変更し、HorizontalPodAutoscalerスケールダウンポリシーの値を0にしてローリングアップデートを実行します
+<details><div>
+    答え：1
+説明
+Reference:
+(1) ローリングアップデートの実行
+https://kubernetes.io/ja/docs/tutorials/kubernetes-basics/update/update-intro/
+(2) PodDisruptionBudgets を使用して Kubernetes クラスターの停止を回避する方法
+https://blog.knoldus.com/how-to-avoid-outages-in-your-kubernetes-cluster-using-pdb/
+(3) GKE best practices: Day 2 operations for business continuity
+https://cloud.google.com/blog/products/containers-kubernetes/ensuring-reliability-and-uptime-for-your-gke-cluster
+解説：
+特に Deployment を Stateful にする必要性はないので、C, D は選択肢から除外できます。
+StatefulSetの特徴としては、
+(1) 作成される Pod 名のサフィックスは数字のインデックスが付与されたものになる
+sample-statefulset-0、sample-statefulset-1、...、sample-statefulset-N
+(2) Pod 名が変わらない
+(3) データを永続化するための仕組みを有している
+というもので、問題で述べられている更新で、これらの特徴が必要である必要性がありません。
+講師の実務経験では、Redisを複数のPodとして構成した際にPod名が変わらなかったり、データの永続性の特徴の為に StatefulSetのPodを利用したことがあります。
+A, Bを見ていきましょう。
+PodDisruptionBudget(RDB)を80%に設定したローリングアップデートは、GKEの本番環境に新しいリビジョンをデプロイした後の問題のリスクを最小化するのに役立ちます。
+PDB は、アップデート中に利用可能な状態を維持する必要がある配備のポッド数を指定し、トラフィックや需要の増加に対処するための十分な容量を確保します。
+PDB を 80% に設定することで、アップデート中に少なくとも 80% のポッドが利用できるようになり、アプリケーションに障害が発生するリスクを軽減することができます。
+Aが正解のようです。
+B はスケールダウンのポリシーの設定を行っており、アップデートの戦略には関係のない設定です。
+従って本問題の正解は A となります。
+</div></details>
+
+## Q. 6-9
+チームは Cloud Functions コードの単体テストを開発しています。
+コードは Cloud Source Repositories リポジトリに保存されます。
+テストの実施は顧客の責任です。
+コードを Cloud Functions にデプロイするために必要な権限を持っているのは特定のサービス アカウントだけです。
+最初にテストに合格しないとコードをデプロイできないようにする必要があります。
+単体テスト プロセスをどのように構成する必要がありますか？
+1. CloudBuildを構成してCloudFunstionsをデプロイします。コードがテストに合格すると、デプロイの承認が送信されます
+2. 特定のサービスアカウントをビルドエージェントとして使用してCloudFunstionsをデプロイするようにCloudBuildを構成します。デプロイが成功したら単体テストを実行します
+3. CloudBuildを構成して単体テストを実行します。コードがテストに合格すると開発者はCloudFunstionsをデプロイします
+4. 特定のサービスアカウントをビルドエージェントとして使用して単体テストを実行するようにCloudBuildを構成します。コードがテストに合格するとCloudBuildはCloudFunstionsをデプロイします
+<details><div>
+    答え：4
+説明
+解説：
+A, Bは単体テストとデプロイの順番が逆なので除外です。
+Cは自動化されていないので、Dに劣ります。
+Dは全てが自動化されています。正解は D となります。
+</div></details>
+
+## Q. 6-10
+Cloud Shell から kubectl を使用して Google Kubernetes Engine (GKE) クラスタに接続しようとしています。
+パブリック エンドポイントを使用して GKE クラスタをデプロイしました。
+Cloud Shell から次のコマンドを実行します。
+gcloud container clusters get-credentials <cluster-name> ---zone <none> --project <project-name>
+kubectlコマンドがエラーメッセージを返さずにタイムアウトすることに気付きました。
+この問題の最も可能性の高い原因は何でしょうか？
+1. ユーザーアカウントにはkubectlを使用してクラスタとやり取りする権限がありません
+2. CloudShellの外部IPアドレスはクラスタの承認済ネットワークの一部ではありません
+3. CloudShellはGKEクラスタと同じVPCの一部ではありません
+4. VPCファイアウォールがクラスタのエンドポイントへのアクセスをブロックしている
+<details><div>
+    答え：2
+説明
+Reference:
+(1) トラブルシューティング(GKE)
+https://cloud.google.com/kubernetes-engine/docs/troubleshooting?hl=ja#connection_refused
+(2) 限定公開クラスタの作成
+https://cloud.google.com/kubernetes-engine/docs/how-to/private-clusters?hl=ja#cloud_shell
+解説：
+Aの場合は「権限がない」というエラーがかえってくるでしょう。
+現象として通信がブロックされてGKEクラスタに到達していないようです。
+同一VPC内での話となるので、C, Dは除外できます。
+このエラーの原因として考えられるのは、B です。
+</div></details>
+
+## Q. 6-11
+それぞれの Cloud Storage バケット内のユーザーオブジェクトのメタデータ内の特定のプロパティを取得する必要がある新しい公開アプリケーションを開発しています。
+プライバシーとデータレジデンシーの要件により、オブジェクトデータではなく、メタデータのみを取得する必要があります。
+取得プロセスのパフォーマンスを最大化する必要があります。
+どのようにメタデータを取得しますか？
+1. バッチ方式を使用します
+2. compose方式を使用します
+3. コピー方式を使用します
+4. fieldsリクエストパラメータを使用します
+<details><div>
+    答え：4
+説明
+Reference:
+(1)バケットのサイズとメタデータを取得する
+https://cloud.google.com/storage/docs/getting-bucket-size-and-metadata?hl=ja
+解説：
+Reference (1)で示した資料から D が正解です。
+(REST API例)
+curl -X GET -H "Authorization: Bearer OAUTH2_TOKEN" "https://storage.googleapis.com/storage/v1/b/BUCKET_NAME?fields=location%2CstorageClass"
+(結果例)
+{
+  "location": "US",
+  "storageClass": "STANDARD"
+}
+</div></details>
+
+## Q. 6-12
+分散マイクロサービス アーキテクチャを使用するアプリケーションを構築しています。
+Java で記述されたマイクロサービスの 1つでパフォーマンスとシステムリソースの使用率を測定したいと考えています。
+どうすればいいでしょうか？
+1. CloudProfilerを使用してサービスを計測し、サービスのCPU使用率とメソッドレベルでの実行時間を測定します
+2. Debuggerを使用してサービスを計測し、サービスエラーを調査します
+3. CloudTraceを使用してサービスを計測し、リクエストのレイテンシを測定します
+4. OpenCensusを使用してサービスを計測し、サービスレイテンシを測定し、カスタム指標をCloudMonitoringに書き込みます
+<details><div>
+    答え：１
+説明
+Reference:
+(1) Cloud Trace
+https://cloud.google.com/trace?hl=ja
+(2) Cloud Profiler の概要
+https://cloud.google.com/profiler/docs/about-profiler?hl=ja
+(3) 分散トレースを使用して OpenCensus と Cloud Trace でマイクロサービスのレイテンシを監視する
+https://cloud.google.com/architecture/using-distributed-tracing-to-observe-microservice-latency-with-opencensus-and-stackdriver-trace?hl=ja
+解説：
+OpenCensusはサービスメッシュ全体のトレースと指標を収集できるツールですが、ここでは
+「マイクロサービスの 1つでパフォーマンスと・・・」ということなので、これを使う必要はないでしょう。
+パフォーマンスに関する事なので、Profilerか Traceになります。
+Traceはレイテンシーの測定分析を行うのに使用します。
+ProfilerではCPU使用率、ヒープメモリーの使用率、スレッド数、経過時間等のリソースの使用率やパフォーマンスが測定できます。
+ということで正解は A となります。
+</div></details>
+
+## Q. 6-13
+静的コンテンツをユーザーに提供する高可用性でグローバルにアクセス可能なアプリケーションを構築しています。
+ストレージとサービスコンポーネントを構成する必要があります。
+ユーザーの信頼性を最大限に高めながら管理のオーバーヘッドと待ち時間を最小限に抑える必要があります。
+どうすればいいでしょうか？
+1. マネージドインスタンスグループを作成し、VM間で静的コンテンツをレプリケートします。外部ロードバランサを作成します。CloudCDNを有効にし、マネージドインスタンスグループにトラフィックを送信します
+2. 非マネージドインスタンスグループを作成し、VM間で静的コンテンツをレプリケートします。外部ロードバランサを作成します。CloudCDNを有効にし、非マネージドインスタンスグループにトラフィックを送信します
+3. StandardストレージクラスのリージョンCloudStorageバケットを作成します。静的コンテンツをバケットに入れます。外部IPアドレスを予約し、外部ロードバランサを作成します。CloudCDNを有効にし、トラフィックをバックエンドバケットに送信します
+4. StandardストレージクラスのマルチリージョンCloudStorageバケットを作成します。静的コンテンツをバケットに入れます。外部IPアドレスを予約し、外部ロードバランサを作成します。CloudCDNを有効にし、トラフィックをバックエンドバケットに送信します
+<details><div>
+    答え：4
+説明
+Reference:
+(1) Cloud CDN の概要
+https://cloud.google.com/cdn/docs/overview?hl=ja
+解説：
+静的サービスなので、データが配信出来ればＯＫですので、C, Dに絞られます。
+「グローバルにアクセス可能なアプリケーション」「オーバーヘッドと待ち時間を最小限に抑える」
+という事で、正解は D となります。
+Cloud CDNにデータがまだキャッシュされていない場合、オリジンサーバーであるCloud Storageからデータを取得してキャッシュします。
+その際に、Cloud Storageがマルチリージョンの方が低レイテンシーとなります。
+アクセス元に近いCDNが同じくそのCDNに近い Cloud Storageからデータを取得することができます。
+これが C と D の違いです。
+（静的サービスの内容が完全にCDNにキャッシュされた状態では、CとDに差は出ません。）
+</div></details>
+
+## Q. 6-14
+最近、オンプレミスのモノリシック アプリケーションを Google Kubernetes Engine (GKE) のマイクロサービスアプリケーションに移行しました。
+このアプリケーションは CRM システムや個人を特定できる情報 (PII) を含む MySQLデータベースなど、オンプレミスのバックエンドサービスに依存しています。
+バックエンドサービスは規制要件を満たすためにオンプレミスのままにしておく必要があります。
+オンプレミスデータセンターと GCPの間に Cloud VPN 接続を確立しました。
+GKE上のマイクロサービスアプリケーションからバックエンドサービスへの一部のリクエストが帯域幅の変動によるレイテンシの問題が原因で失敗し、アプリケーションがクラッシュしていることに気付きました。
+レイテンシの問題にどのように対処しますか？
+1. Memorystoreを使用し、頻繫にアクセスされるPIIデータをオンプレミスのMySQLデータベースからキャッシュします
+2. Istioを使用し、GKE上のマイクロサービスとオンプレミスサービスを含むサービスメッシュを作成します
+3. GoogleCloudとオンプレミス間の接続用にCloudVPNトンネルの数を増やします
+4. CloudVPNのデフォルト値から最大転送単位の値を減らし、ネットワーク層のパケットサイズを減らします
+<details><div>
+    答え：3
+説明
+解説：
+Aは有効な場合もありますが、全てのデーターがキャッシュ可能かどうか分かりません。
+Bはもともとオンプレミスのバックエンドと通信するマイクロサービスは限られていると考えられるので解決にはつながらないと思います。
+Cは単純に帯域幅が増える解決策なので有効です。
+Dは逆にレイテンシーがさらに悪くなる可能性があります。
+従って、本問の正解は C となります。
+</div></details>
+
+## Q. 6-15
+Google Kubernetes Engine クラスタで実行される複数のマイクロサービスで構成されるアプリケーションを開発しています。
+1つのマイクロサービスはオンプレミスで実行されているサードパーティデータベースに接続する必要があります。
+資格情報をデータベースに保存し、セキュリティのベストプラクティスに従ってこれらの資格情報をローテーションできるようにする必要があります。
+どうすればいいでしょうか？
+1. 認証情報をサイドカーコンテナプロキシに保存し、それを使用してサードパーティデータベースに接続します
+2. サービスメッシュを構成し、マイクロサービスのPodからデータベースへのトラフィックを許可または制限します
+3. 認証情報を暗号化されたボリュームマウントに保存し、PersistentVolumeClaimをクライアントPodに関連付けます
+4. 資格情報をK8Sシークレットとして保存し、CloudKMSプラグインを使用して暗号化と復号化を処理します
+<details><div>
+    答え：4
+説明
+Reference:
+(1) アプリケーション レイヤで Secret を暗号化する
+https://cloud.google.com/kubernetes-engine/docs/how-to/encrypting-secrets?hl=ja#reencrypt-secrets
+解説：
+A, Cは例え暗号化されているにしても（Aに至ってはその記述もありません）簡単にアクセス出来る状態は避けたいです。
+B.は、トラフィックの許可、制限に関する内容になっていますので、アクセス資格とは無関係な内容となっています。
+という事で、正解は D です。
+Dの記述内容にも問題はありません。
+</div></details>
+
+## Q. 6-16
+階層データ構造をデータベースに格納するモバイルアプリケーションを構築しています。
+このアプリケーションにより、オフラインで作業しているユーザーはオンラインに戻ったときに変更を同期できます。
+バックエンド サービスは、サービス アカウントを使用してデータベース内のデータを強化します。
+このアプリケーションは非常に人気があると予想され、シームレスかつ安全にスケーリングする必要があります。
+どのデータベースと IAM ロールを使用しますか？
+1. CloudSQLを使用してroles/cloudsql.edoterロールをサービスアカウントに割り当てます
+2. CloudBigtableを使用し、roles/bigtable.viwerロールをサービスアカウントに割り当てます
+3. Firestoreをネイティブモードで使用し、roles/datastore.userロールをサービスアカウントに割り当てます
+4. FirestoreをDatastoreモードで使用し、roles/datastore.viwerロールをサービスアカウントに割り当てます
+<details><div>
+    答え：3
+説明
+Reference:
+(1) Firestore を使用したスケーラブルなアプリケーションの構築
+https://cloud.google.com/architecture/building-scalable-apps-with-cloud-firestore?hl=ja
+解説：
+「安全にスケーリングする必要があります」という事からまずはスケーリングに強いリソースを見ます。
+この点では A だけ除外できます（もっと削れると良かったですが）。
+残りは大容量かつスケールに強い製品なので、ゲームで起こりがちな急激なスパイクには耐えられます。
+B, Cのロールが viewerなので書き込みが出来ないことが分かるので、C が正解です。
+</div></details>
+
+## Q. 6-17
+Knative で実行されているオンプレミス コンテナを Google Cloud に移行したいと考えています。
+移行がアプリケーションのデプロイ戦略に影響を与えないようにする必要があり、マネージドサービスを使用したいと考えています。
+コンテナをデプロイするには、どの Google Cloud サービスを使用しますか？
+1. CloudRun
+2. ComputeEngine
+3. GKE
+4. AppEngine
+<details><div>
+    答え：1
+説明
+Reference:
+(1) マネージド Knative サービスの Cloud Run を一般提供開始
+https://cloud.google.com/blog/ja/products/serverless/knative-based-cloud-run-services-are-ga/
+(2) サーバーレス
+https://cloud.google.com/serverless?hl=ja
+(3) App Engine 環境を選択する
+https://cloud.google.com/appengine/docs/the-appengine-environments?hl=ja
+(4) Knative
+https://cloud.google.com/knative?hl=ja
+(5) Google Kubernetes Engine と Cloud Run: どちらを使用する必要がありますか?
+https://cloud.google.com/blog/products/containers-kubernetes/when-to-use-google-kubernetes-engine-vs-cloud-run-for-containers
+解説：
+「マネージドサービスを使用」ということで、A, D の２択となります。
+App Engine フレキシブル環境ではコンテナを実行できるものの、アプリケーションのデプロイ戦略に重大な変更を加えることが必要になります。
+マネージドKnative サービスが Cloud Run ですので、A が正解となります。
+</div></details>
+
+## Q. 6-18
+あなたの会社のプロダクトチームでは、Google Kubernetes Engine（GKE）クラスタで稼働しているステートレスな分散型サービスを自動でスケーリングしてほしいという依頼をお客様から受けています。
+この機能を 2週間以内にリリースするために、最小限の変更で実現できるソリューションを求めています。
+どうすればよいですか。
+1. 垂直Pod自動スケーリングをデプロイし、CPU負荷に基づいてスケーリングします
+2. 垂直Pod自動スケーリングをデプロイし、カスタム指標に基づいてスケーリングします
+3. 水平Pod自動スケーリングをデプロイし、CPU負荷に基づいてスケーリングします
+4. 水平Pod自動スケーリングをデプロイし、カスタム指標に基づいてスケーリングします
+<details><div>
+    答え：3
+説明
+Reference:
+(1) コンテナ リソースのリクエストと制限のスケール
+https://cloud.google.com/kubernetes-engine/docs/how-to/vertical-pod-autoscaling?hl=ja
+(2) 垂直 Pod 自動スケーリング
+https://cloud.google.com/kubernetes-engine/docs/concepts/verticalpodautoscaler?hl=ja
+(3) 指標に基づいて Pod の自動スケーリングを最適化する
+https://cloud.google.com/kubernetes-engine/docs/tutorials/autoscaling-metrics?hl=ja
+解説：
+分散サービスとの記載より、負荷に応じて分散度合いをスケールする事になるので、ここでのスケールは水平分割と判断できるため、C, D の２択となります。
+カスタム指標の必要性が分かりません。
+Podの数が増えれば、それぞれがCPUを消費する為、Podの増加につれて、CPU負荷が上がり、一定水準を越えた場合、ノードのスケールアップが必要となります。
+CPU負荷に基づいたスケーリングは最低限必要です。
+Cの方法により最小限のコード変更で要件を満たすことができます。
+Dの方法は機能しますが、Cloud Monitoring のインテグレーションと、場合によってはアプリケーションの変更が必要になります。
+従って本問題の正解は C であることが分かります。
+</div></details>
+
+## Q. 6-19
+会社の開発チームは Docker ビルドでさまざまなオープン ソース オペレーティング システムを使用したいと考えています。
+会社の環境で公開されたコンテナでイメージが作成された場合、それらをスキャンして Common Vulnerabilities and Exposures (CVE) を探す必要があります。
+スキャン プロセスがソフトウェア開発の俊敏性に影響を与えてはなりません。
+可能な限りマネージド サービスを使用したいと考えています。
+どうすればいいでしょうか？
+1. ContainerRegistryで脆弱性スキャン設定を有効にします
+2. コードのチェックインでトリガーされるCloudFunctionsを作成し、CVEのコードをスキャンします
+3. 開発環境で非商用ベースイメージの使用を禁止します
+4. CloudMonitoringを使用してCloudbuildの出力を確認し、脆弱なバージョンが使用されているかどうかを判断
+します
+<details><div>
+    答え：1
+説明
+解説：
+Container Registry (Artifact Registry)に脆弱性スキャンの機能があるので、これを有効にすればOKです。
+他の選択肢にあるような余計な処理を行う必要はありません。
+正解は A となります。
+</div></details>
+
+## Q. 6-20
+一部のアプリケーションを Google Cloud に移行しました。
+オンプレミスとクラウドにデプロイされたアプリケーションの両方にオンプレミスにデプロイされた従来の監視プラットフォームを使用しています。
+クラウドアプリケーションのタイムクリティカルな問題に対する通知システムの応答が遅いことがわかりました。
+どうすればいいでしょうか？
+1. モニタリングプラットフォームをCloudMonitoringに置き換えます
+2. ComputeEngineインスタンスにCloudMonitoringエージェントをインストールします
+3. 一部のトラフィックを古いプラットフォームに戻します。2rつのプラットフォームで同時にA/Bテストを実行します
+4. CloudLoggingとCloudMonitoringを使用してログを取得して監視し、アラートを送信します。それらを既存のプラットフォームに送信します
+<details><div>
+    答え：1
+説明
+解説：
+A. 全体を Cloud Monitoring に置き換えることは、通知システムの応答の改善につながります。
+B. 特に「Compute Engine インスタンス」を使っているとの記載はありませんので誤りです。
+C. 「通知システムの応答が遅い」事の解決を説明する内容になっていません。
+D. 既存のプラットフォームを使い続けている点で全体的な問題の改善となるかは不明です。
+Cloud Logging も通常はアラート指標には関与しません。
+正解は A です。
+</div></details>
+
+## Q. 6-21
+チームは Google Cloud で実行されるサービスを開発しています。
+データ処理サービスを構築する必要があり、Cloud Functions を使用します。
+関数によって処理されるデータは機密情報です。
+呼び出しが許可されたサービスからのみ行われるようにし、機能を保護するために Google が推奨するベストプラクティスに従う必要があります。
+どうすればいいでしょうか？
+1. プロジェクトでIdentity-AwareProxyを有効にし、権限を使用しいて機能アクセスを保護します
+2. Functionsビューアーの役割を持つサービスアカウントを作成し、そのサービスアカウントを使用して関数を呼び出します
+3. FunctionsInvokerロールを盛るサービスアカウントを作成し、そのサービスアカウントを使用して関数を呼び出します
+4. 保護する関数と同じプロジェクトで呼び出し元サービスのOAuth2.0クライアントIDを作成し、これらの資格情報を使用して関数を呼び出します
+<details><div>
+    答え：3
+説明
+Reference：
+(1) How to securely invoke a Cloud Functions from Google Kubernetes Engine running on another GCP project
+https://medium.com/google-cloud/how-to-securely-invoke-a-cloud-function-from-google-kubernetes-engine-running-on-another-gcp-79797ec2b2c6
+解説：
+許可されたサービスからの呼び出しに対する許可であり、ユーザー認証は必要ないのでA, Dは選択肢から外れます。
+データ処理を行うので B のビューアー権限では役割不足と考えられるので B も選択肢から外れ、結果 C が正解と判断できます。
+C の記述自体にも特に問題はありません。
+これでＯＫです。
+</div></details>
+
+## Q. 6-22
+新しいアプリケーションを Google Kubernetes Engine にデプロイしましたがパフォーマンスが低下しています。
+ログは Cloud Logging に書き込まれ、Prometheus サイドカーモデルを使用して指標を取得しています。
+ログからのメトリックとデータを関連付けてパフォーマンスの問題をトラブルシューティングし、コストを最小限に抑えながらリアルタイムのアラートを送信する必要があります。
+どうすればいいでしょうか？
+1. CloudLoggingログからカスタム指標を作成し、Promethusを使用して、CloudMonitoringRESTAPIを使用して結果をインポートします
+2. CloudLoggingのログとPromethus指標をCloudBigtableにエクスポートします。クエリを実行して結果を結合し、Googleデータポータルで分析します
+3. Loggingのログをエクスポートし、Promethus指標をBigQueryにストリーミングします。繰り返しクエリを実行して結果を結合し、CloudTasksを使用して通知を送信します
+4. Promethus指標ををエクスポートし、CloudMonitoringを使用してそれらを外部指標として表示します。CloudMonitoringを構成してログからログベースの指標を作成し、それらをPromethusデータと関連付けます
+<details><div>
+    答え：4
+説明
+Reference：
+(1) Cloud Logging のモニタリング データによる GKE アプリのトラブルシューティング迅速化
+  https://cloud.google.com/blog/ja/products/operations/troubleshoot-gke-faster-with-monitoring-data-in-your-logs
+(2) Prometheus 指標の使用
+  https://cloud.google.com/stackdriver/docs/solutions/slo-monitoring/sli-metrics/prometheus?hl=ja
+解説：
+「アラートを送信する必要があります」という記載内容から、Cloud Monitoring を利用している選択肢が正解となるでしょう。A, D の２択問題です。
+問題文から、既にPrometheus指標は作成されているので、それを利用している D が正解と見なせます。
+どちらもアラートの通知までの明記はありませんが、Dの方がよりアラートを通知できる条件が記載されています。
+</div></details>
+
+## Q. 6-23
+次の設計要件を持つ新しいアプリケーションを開発しています。
+アプリケーションインフラストラクチャの作成と変更はバージョン管理され、監査可能です。
+アプリケーションおよびデプロイインフラストラクチャは Googleマネージドサービスを可能な限り使用します。
+アプリケーションはサーバレスコンピューティングプラットフォームで実行されます。
+アプリケーションのアーキテクチャをどのように設計する必要がありますか？
+1. アプリケーションとインフラストラクチャのそーそコードをGitリポジトリに保存します。CloudBuildを使用してTrraformでアプリケーションインフラストラクチャをデプロイします。アプリケーションをパイプラインステップとしてFunctionsにデプロイします
+2. GoogleCloudMarketplaceからJenkinsをデプロイし、Jenkinsで継続的インテグレーションパイプラインを定義します。パイプラインステップを構成してGitリポジトリからアプリケーションソースコードをプルします。アプリケーションソースコードをパイプラインステップとしてAppEngineにデプロイします
+3. CloudBuildで継続的インテグレーションパイプラインを作成し、DeploymentManagerテンプレートを使用してアプリケーションインフラストラクチャをデプロイするようにパイプラインを構成します。パイプラインステップを構成して最新のアプリケーションソースコードを含むコンテナを作成します。コンテナをパイプラインステップとしてComputeEngineインスタンスにデプロイします
+4. gcloudコマンドを使用してアプリケーションインフラストラクチャをデプロイします。CloudBuildを使用してアプリケーションソースコードを変更するための継続的インテグレーションパイプラインを定義します。Gitリポジトリからアプリケーションソースコードをプルするパイプラインステップを構成し、コンテナ化されたアプリケーションを作成します。新しいコンテナをパイプラインステップとしてCloudRunにデプロイします
+<details><div>
+    答え：1
+説明
+Reference：
+(1) Google Cloud での CI/CD
+https://cloud.google.com/docs/ci-cd?hl=ja
+解説：
+インフラストラクチャの作成もバージョン管理したいことから、設定ファイルでインフラストラクチャの構成できるTerramformの利用が真っ先に頭に浮かびます。
+（この時点で正解はほぼAであろう事が分かります）
+これが記載されているのはAで、その他もマネージドサービスの利用(Cloud Build)、サーバーレスコンピューティングの利用(Cloud Functions)を行っており、全ての要件を満たしています。
+BはJenkinsを利用している点で条件に少し外れます（「可能な限り使用」なので完全に誤りではないですが、Aには劣ります）
+CはComputeEngineを使うという事で、「サーバレス コンピューティング プラットフォームで実行されます」に完全に反しているので真っ先に除外。
+Dは文面からはインフラストラクチャーのデプロイメントのバージョン管理を行っていない（行いにくい）と判定できます。
+実際にはどこかに実行するコマンドラインが記録されており、そのドキュメントをバージョン管理すれば良いと思いますが、少し原始的な感じがしますし、あくまで「そうだろうな」という想像で明記はされていないのでDはアウトとみなします。
+A.はかなり記載が端折られてはいますが、とくに大きな間違いが見当たりません。
+「インフラストラクチャの作成と変更はバージョン管理され、監査可能」が決め手でしょう。
+従ってこの問題の正解は A となります。
+CI/CDの問題で利用されるテクノロジーは(1)で「注目のプロダクト」として挙げ荒れれている、
+Cloud Build, Artifact Regisitry, Cloud Source Repositories でこれらの３つを利用している環境が正解であることが多いです。
+Artifact Registry は 以前は GoogleContainerRegistry (gcr) が良く使われていました（今でもつかわれています）が、現在はgcrの上位プロダクトであるArtifact Registryの利用が薦められています。
+Artifact Registryにまだ馴染みが無い方もおられるかもしれませんが gcr <= Artifact Registry と覚えておいてください。
+新しい試験問題では、gcr の記載は無くなって行くでしょう。
+</div></details>
+
+## Q. 6-24
+ユーザーがニュース記事のコメントを読んだり投稿したりできるアプリケーションを開発しています。
+Cloud Firestore を使用してユーザーが送信したコメントを保存および表示するようにアプリケーションを構成したいと考えています。
+不明な数のコメントと記事をサポートするにはスキーマをどのように設計するべきでしょうか？
+1. 各コメントを記事のサブコレクションに保存します
+2. 各コメントを記事の配列プロパティに追加します
+3. 各コメントをドキュメントに保存し、コメントのキーを記事の配列プロパティに追加します
+4. 各コメントをドキュメントに保存し、コメントのキーをユーザープロファイルの配列プロパティに追加します
+<details><div>
+    答え：4
+説明
+解説：
+Cloud Firestoreにはドキュメントという単位でデータが保存されるので、正解をC, Dに絞り込みます。
+ユーザーキーをデータに保存しておけば、そのユーザーのコメントを検索する事ができるので、要件に合っています。
+A, B, C いずれもユーザーとコメントを紐づける情報が不明なので、「ユーザーが送信したコメントを（保存および）表示する」
+することが出来ない、と判断することもできると思います。
+ちなみにFirestoreでは、単一キーに対しては自動的にインデックスが付加されるため、ユーザーID等をキーにした検索は特に何もしなくても高速です。
+正解はDとなります。
+</div></details>
+
+## Q. 6-25
+Linux を実行している Compute Engine インスタンスでホストされているパッケージ化されたアプリケーションと社内で開発されたアプリケーションが混在しています。
+これらのアプリケーションは、ログレコードをテキストとしてローカルファイルに書き込み、ログを Cloud Logging に書き込む必要があります。
+どうすればいいでしょうか？
+1. ファイルの内容をLinuxSyslogデーモンにパイプします
+2. googleバージョンのfluentdをComputeEngineインスタンスにインストールします
+3. ComputeEngineインスタンスにGoogleバージョンのcollectedをインストールします
+4. cronを使用して1日1回ログファイルをCloudstorageにコピーするジョブをスケジュールします
+<details><div>
+    答え：2
+説明
+Reference：
+(1) Logging エージェントを構成する
+https://cloud.google.com/logging/docs/agent/logging/configuration?hl=ja
+解説：
+Reference (1)の通り、fluentd が利用できます。
+A はログレコードの在りかが定まらないので、B の方法に劣るでしょう。
+C のcollectdはサーバーの統計情報を収集するツールです。
+D はCloud Loggingに書き込む記載が一切ありませんので、誤りです。
+正解は B となります。
+</div></details>
+
+## Q. 6-26
+他の Google Cloud リソースにアクセスする Cloud Functions を作成しました。
+最小権限の原則を使用して環境を保護したいと考えています。
+どうすればいいでしょうか？
+1. リソースにアクセスするための編集者権限を持つ新しいサービスアカウントを作成します。デプロイ担当者にはアクセストークンを取得するためのアクセス許可が与えられます
+2. リソースにアクセスするためのカスタムIAMロールを持つ新しいサービスアカウントを作成します。デプロイ担当者にはアクセストークンを取得するためのアクセス許可が与えられます
+3. リソースにアクセスするための編集者権限を持つ新しいサービスアカウントを作成します。デプロイ担当者には、新しいサービスアカウントとして機能する権限が与えられます
+4. リソースにアクセスするためのカスタムIAMロールを持つ新しいサービスアカウントを作成します。デプロイ担当者には新しいサービスアカウントとして機能する権限が与えられます
+<details><div>
+    答え：4
+説明
+Reference：
+(1) Least privilege for Cloud Functions using Cloud IAM
+https://cloud.google.com/blog/products/application-development/least-privilege-for-cloud-functions-using-cloud-iam?hl=en
+解説：
+「最小権限の原則」から過剰な権限の付与が行われていないか考えます。
+A, B は権限の利用の仕方の違いはありますが、「編集者権限」が過剰と思えます。
+特定のリソースの利用が明記されており、そこに「読み書きする」等の状況が特定されていればあり得ますが、そのリソースに対する編集者ロールの利用は可能であると思いますが、本問題では不特定多数のリソースと考えるしかありません。
+その場合、全てのリソースに対して編集者ロールは過剰であると考えるべきでしょう。
+本問題ではB, D の必要に応じたカスタムロールの利用の方が「最小権限の原則」に即していると考えます。
+デプロイ担当者はCloud Functionsにこのサービスアカウントを適用してCloud Functionsを生成すればよいので、アクセストークンを使う必要はありません。
+したがって正解は D となります。
+</div></details>
+
+## Q. 6-27
+小さなスタートアップ企業のWeb開発チームで働いています。
+チームは Cloud Storage や Cloud Build などの Google Cloud サービスを使用して Node.js アプリケーションを開発しており、バージョン管理に Gitリポジトリを使用しています。
+上司から週末に電話があり、会社の Webサイトの 1つを緊急に更新するように指示されました。
+開発者はあなただけです。
+仕事用のラップトップを持っておらず、会社以外のコンピュータにソースコードをローカルに保存することは許可されていません。
+開発者環境をどのように設定しますか？
+1. テキストエディタとGitコマンドラインを使用して公共のコンピュータからソースコードの更新をプルリクエストとして送信します
+2. テキストエディタとGitコマンドラインを使用して公共のコンピュータで実行されている仮想マシンからソースコードの更新をプルリクエストとして送信します
+3.CloudShellと組み込みのコードエディタを開発に使用してソースコードの更新をプルリクエストとして送信します 
+4. CloudStorageバケットを使用して編集が必要なソースコードを保存します。バケットを公共のコンピュータにドライブとしてマウントし、コードエディタを使用してコードを更新します。バケットのバージョニングを有効にしてチームのGitリポジトリを参照します
+<details><div>
+    答え：3
+説明
+解説：
+A, B は会社以外のコンピュータでソースコードを使っていると取れますので、その点で問題の条件から消去することができます。
+D も一旦公共のコンピュータにソースコードを持ってきて編集する事になるでしょう。
+Cloud ShellはCloud コンソール内で利用できるShell (プロジェクト内のVM上で稼働）ですので、ここにソースコードを持ってきてもOKです。
+Cloudコンソールへのアクセス（明確に記載はないですが、C, Dの対応には必要、休日対応を想定して、Cloudコンソールにアクセスできる状況は作ってあると考えて良いと思います）という面では同じですが、
+行う内容をC, Dで比較した場合、D は特殊でC は自然な作業内容です。
+(Dはあっさりと「編集が必要なソースコードを保存します」と書いてありますが、Cloud Shellに一旦 cron なり pullした上での保存になりますので、Cloud Shellに持ってきた時点でCの対応を行えば良いです)
+正解はCとなります。
+</div></details>
+
+## Q. 6-28
+本番環境にデプロイされたアプリケーションがあります。
+新しいバージョンがデプロイされたらすべての本番トラフィックがアプリケーションの新しいバージョンにルーティングされるようにする必要があります。
+また、新しいバージョンに問題が発生した場合に元に戻せるように以前のバージョンをデプロイしたままにしておくことも必要です。
+どのデプロイ戦略を使用するべきでしょうか？
+1. Blue/Greenデプロイ戦略
+2. カナリアテスト
+3. ローリングデプロイ
+4. 再作成デプロイ
+<details><div>
+    答え：1
+説明
+解説：
+まず、C, D が選択肢から外れることはすぐに分かるでしょう。
+Cは徐々に新バージョンがデプロイしていくので、「以前のバージョンをデプロイしたままにしておくことも必要」に反します。
+Dは全てのPodを削除してから新しいPodが作られるので、これも「以前のバージョンをデプロイしたままにしておくことも必要」に反します。
+「元に戻せる」、「以前のバージョンをデプロイしたままにしておく」という記述から Blue/Greenデプロイを選択するのが正解となります。
+B の可能性も考えられますが、旧バージョンの一部を新バージョンに置き換えるデプロイ戦略ですので、「以前のバージョンをデプロイしたままにしておく」
+という記述に反していると考えられます。
+本問題は A が正解です。
+</div></details>
+
+## Q. 6-29
+あなたは、給与処理用の内部アプリケーションに取り組んでいる開発者です。
+従業員がタイムシートを送信できるようにするアプリケーションのコンポーネントを構築しています。
+これにより、いくつかの手順が開始されます。
+タイムシートが送信されたことを通知する電子メールが従業員とマネージャーに送信されます。
+ベンダーの API の給与処理にタイムシートが送信されます。
+人数計画のためにタイムシートがデータ ウェアハウスに送信されます。
+これらの手順は相互に依存しておらず、任意の順序で完了することができます。
+新しいステップが検討されており、異なる開発チームによって実装されます。
+各開発チームは、それぞれのステップに固有のエラー処理を実装します。
+どうすればいいでしょうか？
+1. 対応するダウンストリームシステムを呼び出して必要なアクションを完了するステップ府ごとに、Functionsをデプロイします。
+2. 各ステップのPub/Subトピックを作成します。ダウンストリーム開発チームごとにサブスクリプションを作成して、ステップのトピックをサブスクライブします
+3. タイムシート提出用のPub/Subトピックを作成する。下流の開発チームごとにサブスクリプションを作成して、トピックをサブスクライブします 
+4. GKEにデプロイされるタイムシートマイクロサービスを作成します。マイクロサービスは、各ダウンストリームステップを呼び出し、正常な応答を待ってから次のステップを呼び出します
+<details><div>
+    答え：3
+説明
+解説：
+A, D は任意の順序での処理ではなく特定の順番による呼び出しが行われると考えられるため、除外します。
+タイムシートの送信をトピックとすればよく、複数のトピックを使う必要性がありません。
+従って、この問題の正解は C となります。
+</div></details>
+
+## Q. 6-30
+会社では Cloud Logging を使用して大量のログデータを管理しています。
+ログをサードパーティアプリケーションにプッシュして処理するリアルタイムのログ分析アーキテクチャを構築する必要があります。
+どうすればいいでしょうか？
+1. CloudLoggingのログエクスポートをPub/Subに作成します
+2. BigQueryへのCloudLoggingログエクスポートを作成します
+3. CloudStorageへのCloudLoggingログエクスポートを作成します
+4. CloudLoggingのログエントリを読み取り、サードパーティアプリケーションに送信するFunctionsを作成します
+<details><div>
+    答え：1
+説明
+解説：
+まずは、Pub/Subに送信し、サービス外でそれを処理するのが良いでしょう。
+B, Cはリアルタイム性が低いと思えます。
+DもCloud Functions の呼び出しロジックが不明なのでリアルタイム性が低いと思います。
+正解は A です。
 </div></details>
 
 ## Q. 
