@@ -310,6 +310,7 @@ Hadoop クラスタをクラウドに移行した企業が、データセンタ�
 3. スケジュール設定済みクエリを作成して、レポート作成の数分前にそのクエリを実行します。
 4. 多数のスロットを事前に予約して、クエリの実行のためのコンピューティング能力を最大化します。
 <details><div>
+    答え：１
 正解
 1. テーブルに基づくマテリアライズド ビューを作成して、そのビューをクエリします。
 フィードバック
@@ -332,6 +333,7 @@ https://cloud.google.com/bigquery/docs/materialized-views
 3. 過去 30 日間のデータを使用してモデルを再トレーニングします。1 年経過したら、古いモデルに戻します。
 4. 過去 30 日間のデータを使用してモデルを再トレーニングします。モデルの入力データに変更がないか継続的にモニタリングするステップを追加してから、モデルを再トレーニングします。
 <details><div>
+    答え：４
 フィードバック
 A: 選択肢 A は不正解です。ロックダウンの最初の 30 日間のデータに基づく再トレーニングは同様のロックダウン中の予測にのみ有効で、通常の期間には有効ではありません。
 B: 選択肢 B は不正解です。使用パターンの変化は恒久的である可能性があり、今後も変化し続けることが考えられます。
@@ -346,9 +348,9 @@ https://cloud.google.com/blog/topics/developers-practitioners/monitor-models-tra
 1. デベロッパーにノートパソコンの IP アドレスを尋ねて、承認済みネットワーク リストに追加します。
 2. 外部 IP アドレスを削除して、内部 IP アドレスに置き換えます。承認済みのリストには、リモートで作業するデベロッパーのノートパソコンの IP アドレスのみを追加します。
 3. Identity and Access Management（IAM）のインスタンスのアクセス権限を付与し、デベロッパーが Cloud SQL Auth Proxy を実行して MySQL インスタンスに接続するようにします。
-<details><div>
-    答え：
 4. Identity and Access Management（IAM）のインスタンスのアクセス権限を付与し、セキュリティのためにアクセスを「プライベート サービス アクセス」に変更して、デベロッパーがノートパソコンから Cloud SQL にアクセスできるようにします。
+<details><div>
+    答え：３
 フィードバック
 A: 選択肢 A は不正解です。承認済みネットワーク リストへの追加は可能ですが、追跡作業が増え、安全性も低下します。
 B: 選択肢 B は不正解です。外部 IP アドレスを削除すると、リモートで作業するユーザーにとってアクセスがさらに複雑になります。これは、リモートのユーザーが限定公開の RFC 1918 アドレス空間内にも存在する必要があるためです。
@@ -373,6 +375,7 @@ Cloud Spanner データベースには、マーケティング チームが頻�
 3. 既存のアーキテクチャを維持しながら、国と州に短い 2 文字のコードを使用します。
 4. 国を 1 つのセルのテキストに結合します。たとえば、「country:state1,state2, …」などです。必要な場合はデータを分割します。
 <details><div>
+    答え：１
 正解
 1. インターリーブされたテーブルを作成して、国の下に州を保存します。
 フィードバック
@@ -391,6 +394,7 @@ https://cloud.google.com/spanner/docs/schema-and-data-model#creating-interleaved
 3. Cloud SQL for PostgreSQL インスタンスに移行します。
 4. PostgreSQL がインストールされているベアメタル マシンに移行します。
 <details><div>
+    答え：２
 正解
 2. Cloud Spanner に移行します。
 フィードバック
@@ -409,7 +413,7 @@ https://cloud.google.com/spanner/docs/migrating-postgres-spanner
 3. キーを timestamp#device-id#activity-id#user-id として作成します。
 4. キーを user-id#timestamp#device-id#activity-id として作成します。
 <details><div>
-    答え：
+    答え：１
 フィードバック
 A: 選択肢 A は正解です。設計が単調に増加しないため、ホットスポットを回避します。
 B: 選択肢 B は不正解です。設計が単調に増加するため、ホットスポットが生じます。
@@ -426,6 +430,7 @@ https://cloud.google.com/bigtable/docs/schema-design
 3. クエリ検証ツールまたは --dry_run を使用して費用を見積もれるようにアナリストをトレーニングし、アナリストが使用量を自身で制御できるようにします。
 4. 各アナリストに対し BigQuery の 1 日あたりの費用をエクスポートして Looker でデータを可視化し、アナリストが使用量を自身で制御できるようにします。
 <details><div>
+    答え：１
 正解
 1. プロジェクト レベルまたはユーザーレベルでカスタマイズした 1 日の割り当てを許容できる値に設定します。
 フィードバック
@@ -444,6 +449,7 @@ https://cloud.google.com/bigquery/docs/custom-quotas
 3. ログ ステートメントをコードに追加して、どの挿入が遅延の原因か調べます。
 4. クラスタにノードをさらに追加して、パフォーマンスの問題が解消されるか確認します。
 <details><div>
+    答え：１
 フィードバック
 A: 選択肢 A は正解です。Bigtable 用の Key Visualizer により、テーブルに関する視覚的なレポートが生成されます。このレポートは、アクセスする行キーに基づき使用を詳細に説明し、どのように Bigtable が動作しているかを示し、パフォーマンス問題のトラブルシューティングに役立ちます。
 B: 選択肢 B は不正解です。Cloud Trace は、アプリケーションのレイテンシのデバッグに使用されます。
@@ -460,6 +466,7 @@ https://cloud.google.com/bigtable/docs/keyvis-overview
 3. Transfer Appliance を使用して既存データを Google Cloud に移動します。VPC ネットワーク ピアリングを使用して、データを毎日転送します。
 4. Transfer Appliance を使用して既存データを Google Cloud に移動します。毎日の転送用に、Dedicated Interconnect または Partner Interconnect を設定します。
 <details><div>
+    答え：４
 フィードバック
 A: 選択肢 A は不正解です。一般的にインターネットは安定性と速度が低く、大量のデータの転送には向きません。
 B: 選択肢 B は不正解です。Cloud VPN は数 Gbps（1.5～3 Gbps）のレートでのデータ転送に有効です。
@@ -480,6 +487,7 @@ https://cloud.google.com/network-connectivity/docs/interconnect/concepts/overvie
 3. Dataflow での処理を書き換えて、同一データのストリーム処理を使用します。
 4. 各ワーカーノードの vCPU の数を増やして処理完了までの時間を短縮します。
 <details><div>
+    答え：１
 正解
 1. 正常なデコミッションのタイムアウトを 45 分より大きく設定します。
 フィードバック
@@ -500,6 +508,7 @@ https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/autoscaling
 3. SQL Server を Compute Engine VM にインストールします。
 4. データベースを Cloud SQL の SQL Server に移行します。
 <details><div>
+    答え：４
 フィードバック
 A: 選択肢 A は不正解です。Bigtable は NoSQL データベースであるため、SQL Server ソースには適切ではありません。
 B: 選択肢 B は不正解です。Cloud Spanner は Cloud SQL より費用がかかります。Spanner はグローバルな可用性がありますが、このアプリケーション要件には不要です。
@@ -522,6 +531,7 @@ IT チームは構造化データの保存に BigQuery を使用しています�
 3. BigQuery でクエリを実行して、データを CSV にエクスポートし、そのファイルを Cloud Storage バケットにアップロードして財務チームと共有します。
 4. BigQuery でクエリを実行して、財務チームがアクセスして分析できる Google スプレッドシートの共有スプレッドシートに結果を保存します。
 <details><div>
+    答え：４
 正解
 4. BigQuery でクエリを実行して、財務チームがアクセスして分析できる Google スプレッドシートの共有スプレッドシートに結果を保存します。
 フィードバック
@@ -544,6 +554,7 @@ https://www.youtube.com/watch?v=rkimIhnLKGI
 3. Kubernetes を使用して、重複データと異常データを削除できるマイクロサービス アプリケーションを作成します。その後に、データを BigQuery に挿入します。
 4. マネージド インスタンス グループで Compute Engine に重複データと異常データを削除できるアプリケーションを作成します。その後に、データを BigQuery に挿入します。
 <details><div>
+    答え：２
 フィードバック
 A: 選択肢 A は不正解です。BigQuery にデータを直接保存するとデータが上書きされる可能性があり、異常データが削除されるまで存在することになります。このような懸念を防ぐ回避策を BigQuery で実現しようとすると労力、時間、費用が増大します。
 B: 選択肢 B は正解です。Dataflow は、ストリーミング データのための推奨データ処理プロダクトです。Dataflow をプログラミングして重複を削除し、空白フィールドを削除して、他のカスタムデータ処理を実行できます。
@@ -560,6 +571,7 @@ https://cloud.google.com/architecture/building-production-ready-data-pipelines-u
 3. Dataflow でタンブリング ウィンドウを使用します。
 4. Dataflow SQL を使用して、時間でグループ化された平均を計算します。
 <details><div>
+    答え：１
 正解
 1. Dataflow でホッピング ウィンドウを使用します。
 フィードバック
@@ -578,6 +590,7 @@ https://cloud.google.com/dataflow/docs/concepts/streaming-pipelines
 3. Cloud SQL を使用します。
 4. Memorystore を使用します。
 <details><div>
+    答え：１
 正解
 1. Bigtable を使用します。
 フィードバック
@@ -596,6 +609,7 @@ https://cloud.google.com/bigtable/docs/overview#what-its-good-for
 3. Dataproc を使用して Hadoop と Spark のジョブを実行します。永続ディスクが接続された Compute Engine VM でデータを保持します。
 4. Dataflow を使用して、サーバーレス アプローチでジョブを再作成します。永続ディスクが接続された Compute Engine VM でデータを保持します。
 <details><div>
+    答え：１
 フィードバック
 A: 選択肢 A は正解です。Dataproc は、Apache Spark、Presto、Apache Flink、Apache Hadoop など、オープンソースの分散処理プラットフォームを Google Cloud でホストするためのフルマネージド サービスです。Google Storage は、永続ストレージのあらゆるニーズに対応できる、おすすめのストレージ オプションです。
 B: 選択肢 B は不正解です。Dataflow を使用するには、すべてのジョブを書き換える必要があります。
@@ -616,6 +630,7 @@ https://cloud.google.com/blog/topics/developers-practitioners/dataproc-best-prac
 3. BigQuery のデータを AutoML に接続し、AutoML でモデルを構築します。
 4. AI Notebooks を使用してデータに接続して、モデルをインタラクティブに構築します。
 <details><div>
+    答え：３
 正解
 3. BigQuery のデータを AutoML に接続し、AutoML でモデルを構築します。
 フィードバック
@@ -634,6 +649,7 @@ https://cloud.google.com/vertex-ai/docs/start/automl-model-types#tabular
 3. 新しい列を追加する特徴クロスを作成して、データ量を増やします。
 4. データを 2 回複製してデータを増やし、モデル構築プロセスを再度実行します。
 <details><div>
+    答え：２
 フィードバック
 A: 選択肢 A は不正解です。このモデルは学習不足ではありません。
 B: 選択肢 B は正解です。このモデルは過学習と思われます。交差検証によりデータを複数回使用して検証が実行され、過学習が軽減されます。
@@ -650,6 +666,7 @@ https://developers.google.com/machine-learning/crash-course/generalization/peril
 3. Cloud Data Loss Prevention（DLP）API を使用してセンシティブ データを削除します。
 4. センシティブ データを含む行を特定し、SQL クエリを使用してこれらの行だけを削除します。
 <details><div>
+    答え：３
 フィードバック
 A: 選択肢 A は不正解です。テーブル全体などデータを削除すると、作成したモデルの効果が低くなる可能性があります。
 B: 選択肢 B は不正解です。機械学習モデルを単体のパソコンに構築することは、大量のデータを扱う場合、現実的な方法ではありません。
@@ -666,6 +683,7 @@ https://cloud.google.com/dlp/docs/concepts-de-identification
 3. Pub/Sub を push モードで使用します。
 4. Cloud Scheduler を一定の間隔で実行します。
 <details><div>
+    答え：２
 フィードバック
 A: 選択肢 A は不正解です。Kafka は Google Cloud のマネージド ソリューションではありません。Google 推奨のオプションは、フルマネージドのサーバーレス ソリューションである Pub/Sub です。
 B: 選択肢 B は正解です。pull モードにより、前のデータの処理時に、新規イベントデータをオンデマンドでの処理に pull できます。その間、Pub/Sub は新規イベントを失うことなく吸収して保持します。
@@ -684,6 +702,7 @@ https://cloud.google.com/pubsub/docs/push
 3. 未処理のメッセージ キューを使用して、リクエストされたレポートを収集します。
 4. 毎晩スナップショットを作成して、最後のスナップショット以降に作成されたすべてのレポート リクエストを取得します。
 <details><div>
+    答え：１
 フィードバック
 A: 選択肢 A は正解です。レポート アプリケーションがオンラインでないときもあるため、pull メカニズムを使用する必要があります。
 B: 選択肢 B は不正解です。データを受信するエンドポイントは、受信できるオンライン状態にない可能性があります。
@@ -700,6 +719,7 @@ https://cloud.google.com/pubsub/docs/subscriber#push_pull
 3. VM を Compute Engine にプロビジョニングし、オンプレミスのデータセンターと同様に MongoDB Atlas をインストールします。
 4. オンプレミスの MongoDB を最初に Firestore に移行し、Firestore アプリケーションが安定したら Firestore を MongoDB Atlas に移行します。
 <details><div>
+    答え：１
 フィードバック
 A: 選択肢 A は正解です。Marketplace には、Google Cloud によって精査された、簡単にデプロイできる統合ソリューションがあります。
 B: 選択肢 B は不正解です。MongoDB Atlas のインストールには多大な労力が必要です。
@@ -716,6 +736,7 @@ https://console.cloud.google.com/marketplace/product/mongodb/atlas-pro
 3. Pandas と SciPy を使用してレシート画像から情報を抽出できるモデルを構築して、情報をデータベースに追加します。
 4. Cloud Natural Language API を使用してレシート画像からテキストを抽出し、データベースに追加します。
 <details><div>
+    答え：１
 正解
 1. Document AI をワークフローに統合し、レシート画像の情報をキャプチャしてデータベースに追加します。
 フィードバック
@@ -736,6 +757,7 @@ https://cloud.google.com/document-ai/docs/processors-list#processor_expense-pars
 3. BigQuery テーブルを使用して同僚にビューを提供します。
 4. BigQuery を使用して、データを Looker で可視化します。ダッシュボードを同僚と共有します。
 <details><div>
+    答え：１
 正解
 1. Vertex AI Workbench ノートブックを使用して、ノートブックを同僚と共有します。
 フィードバック
@@ -757,6 +779,7 @@ https://cloud.google.com/vertex-ai/docs/workbench/introduction
 4. カスタムのより低コストの VM を Compute Engine にプロビジョニングして、必要に応じてデータベースをインストールします。
 その他:
 <details><div>
+    答え：１
 正解
 1. 米国リージョンの確約利用割引（CUD）を利用します。開発チームの割り当て方法をそのまま保持します
 フィードバック
