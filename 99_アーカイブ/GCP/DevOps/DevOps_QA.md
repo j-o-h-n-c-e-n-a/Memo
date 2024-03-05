@@ -1,0 +1,44 @@
+## 1.1
+### Q. 問題7: 未回答
+あなたはクライアントのために新しいGoogle Cloudの組織を設計しています。クライアントは、Google Cloudで作成された長期間のクレデンシャルに関連するリスクを懸念しています。あなたは、運用上のオーバーヘッドを最小限に抑えながら、JSONサービスアカウントキーの使用に関連するリスクを完全に排除するソリューションを設計する必要があります。
+この要件を満たすために、どうすればよいですか？
+
+1. 組織管理者のみにroles/iam.serviceAccountKeyAdmin IAMロールを付与します
+2. constraints/iam.disableServiceAccountKevCreation制約を組織に適用します
+3. 定義済みロールのカスタムバージョンを使用して、すべてのiam.serviceAccountKeys.*サービスアカウントロールパーミッションを除外します
+4. constraints/iam.disableServiceAccountKeyUpload制約を組織に適用します
+<details><div>
+    答え：2
+説明
+この問題では、新しいGoogle Cloudの組織を設計する中で、JSON形式のサービスアカウントキー使用をリスクと見なし、そのリスクを無くす方法を設計することが求められています。同時に、運用上のオーバーヘッドを最小限に抑える必要も要求されています。したがって、この問題を解くためには、これらの要件を満たすためのIAMポリシーや制約の適用について理解することが重要で、選択肢間で細かな違いに注目しながらその影響を評価することが求められます。
+基本的な概念や原則：
+Service Account：Google Cloudのサービスを利用するエンティティで、特定の権限が付与されまます。これを利用して、アプリケーションやユーザーがGoogle Cloudのリソースにアクセスします。
+JSON Service Account Key：Service Accountを認証するための暗号化キーで、JSONフォーマットで提供されます。キーが漏洩するとService Accountによる不正アクセスのリスクが発生します。
+組織ポリシー制約：Google Cloudのあるリソース(tree, folder, project)で適用可能な特定のポリシーです。これを設定することによって、そのリソースに対するアクションを制約します。
+constraints/iam.disableServiceAccountKeyCreation：Service Accountのキー作成を禁止する制約です。これを設定することで、新規にService Accountのキーを作成することを防ぎます。
+IAMロール：Google Cloudリソースへのアクセスの許可を集めたものです。仕事のロールに基づいてユーザーに権限を付与するために使用します。ロールは1つ以上のパーミッションで構成されます。
+カスタムIAMロール：プロジェクトや組織で定義したIAMロールのことで、必要に応じて特定のパーミッションを組み合わせて作成します。ただし、管理に手間がかかったり落とし穴があるため注意が必要です。
+正解についての説明：
+（選択肢）
+・constraints/iam.disableServiceAccountKevCreation制約を組織に適用します
+この選択肢が正解の理由は以下の通りです。
+まず、Google Cloudのプロジェクト設計でセキュリティを確保するためには、JSONサービスアカウントキーの利用リスクを制御することが重要です。JSONサービスアカウントキーはクレデンシャルとして使用され、不当に取得されるとシステムに大きなリスクをもたらす可能性があります。
+ここで提案されている"constraints/iam.disableServiceAccountKeyCreation"という制約は、組織全体に新たなJSONサービスアカウントキーの作成を禁止するものであり、これによりリスクを排除することができます。この制約を適用することで、サービスアカウントキー作成が無効化され、長期間のクレデンシャルに関連するリスクを軽減することができます。
+また、この制約を適用すれば、それぞれのプロジェクトやサービスで個別に設定を変更するという運用上のオーバーヘッドを大幅に減らすことが可能となり、効率的な運用が可能となります。
+不正解についての説明：
+選択肢：定義済みロールのカスタムバージョンを使用して、すべてのiam.serviceAccountKeys.*サービスアカウントロールパーミッションを除外します
+この選択肢が正しくない理由は以下の通りです。
+定義済みロールのカスタムバージョンを使用して特定のパーミッションを除外するだけでは、JSONサービスアカウントキーに関連するリスクを完全に排除することはできません。
+また、制約を使用する方が操作のオーバーヘッドを最小限に抑えられます。
+選択肢：constraints/iam.disableServiceAccountKeyUpload制約を組織に適用します
+この選択肢が正しくない理由は以下の通りです。
+まず、制約constraints/iam.disableServiceAccountKeyUploadは、既に作成されたキーのアップロードを制限しますが、新たなJSONサービスアカウントキーの作成を防ぐものではありません。これはクライアントが懸念しているリスクを排除するためには不適切です。対照的に正解の選択肢は、新規キー作成を無効化し、問題を根本的に解決します。
+選択肢：組織管理者のみにroles/iam.serviceAccountKeyAdmin IAMロールを付与します
+この選択肢が正しくない理由は以下の通りです。
+組織管理者のみにroles/iam.serviceAccountKeyAdmin IAMロールを付与するだけでは、JSONサービスアカウントキーの作成を完全に防ぐことができません。新たな管理者が登場した場合や権限が変わった場合等、インシデンとを引き起こす可能性がまだ残ってしまいます。
+逆に、制約を組織全体に適用することで、管理者のロールにかかわらずサービスアカウントキーの作成を無効にする事が出来ます。
+参考リンク：
+https://cloud.google.com/resource-manager/docs/organization-policy/org-policy-constraints
+https://cloud.google.com/identity/docs/how-to/setup#auth
+https://cloud.google.com/iam/docs/understanding-service-accounts
+</div></details>
