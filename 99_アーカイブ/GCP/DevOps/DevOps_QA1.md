@@ -1365,7 +1365,7 @@ https://sre.google/workbook/implementing-slos/
 3. これらのメンバーにのみログのエクスポートを許可するように、Access Context Managerを構成します
 4. Cloud IAMで組織ポリシーを作成し、これらのメンバーにのみログエクスポートの作成を許可します
 <details><div>
-    答え：3
+    答え：2
 説明
 この問題では、Cloud Loggingからログをエクスポートする能力を特定のチームメンバーに付与する方法を探しています。それを行うためには、特定のIAMロールやポリシーの付与、リソースに対するパーミッションの設定といった操作が考えられます。選択肢を検討するにあたっては、それぞれのメソッドの特性とCloud Loggingのエクスポート操作に必要な権限について理解を深めることが必要です。
 基本的な概念や原則：
@@ -2058,7 +2058,7 @@ https://cloud.google.com/pubsub/docs/overview
 https://cloud.google.com/monitoring/support/notification-options#webhooks
 </div></details>
 
-### Q. 問題47: 未回答
+### Q. 問題47: 不正解
 あなたはPythonで書かれ、App Engineフレキシブル環境でホストされているトレーディングアプリケーションをサポートしています。Google Cloud Operation Suite Error Reportingに送信されるエラー情報をカスタマイズしたいと考えています。
 あなたはこの要件を満たすために、どうすればよいですか？
 
@@ -2196,7 +2196,7 @@ https://cloud.google.com/profiler/docs
 3. "URLによるチャートの共有"をクリックし、SREチームにURLを提供します。ワークスペースプロジェクトのダッシュボードビューアーIAMロールをSREチームに割り当てます
 4. "URLによるチャートの共有"をクリックし、SREチームにURLを提供します。ワークスペースプロジェクトで、SREチームにMonitoring Viewer IAMロールを割り当てます
 <details><div>
-    答え：
+    答え：4
 説明
 この問題では、Google CloudのIAMの権限管理と最小権限の原則に関する理解が必要です。特定のユーザー（この場合はSREチーム）に対し、特定のリソース（この場合はワークスペース内のCPU使用率チャート）に対する最小限の権限を付与する方法を問いています。ここでは、ユーザーが受け取るべき具体的な権限、その権限がどのリソースに対して効果を発揮するのか、そしてその権限が付与される方法を、適切に理解して選択する必要があります。具体的な権限やその付与方法について正確に理解していることが求められる問題です。
 基本的な概念や原則：
@@ -2790,20 +2790,24 @@ https://cloud.google.com/solutions/secrets-management
 ### Q. 問題13: 未回答
 現在、仮想マシン（VM）の利用ログをGoogle Cloud Operation Suiteに保存しています。リアルタイムで更新され、四半期ごとに集計された情報を含む、共有しやすいインタラクティブなVM利用ダッシュボードを提供する必要があります。Google Cloudのソリューションを使用したいと考えています。
 あなたはこの要件を満たすために、どうすればよいですか？
-1. 1.Google Cloud Operation SuiteからBigQueryにVM利用ログをエクスポートします
-2.Data Studioでダッシュボードを作成します
-3.ダッシュボードを関係者と共有します
-2. 1.VM利用ログをGoogle Cloud Operation SuiteからCloud Pub/Subにエクスポートします
-2.Cloud Pub/Subから、ログをセキュリティ情報およびイベント管理（SIEM）システムに送信します
-3.SIEMシステムでダッシュボードを構築し、関係者と共有します
-3. 1.VM利用ログをGoogle Cloud Operation SuiteからCloud Storageバケットにエクスポートします
-2.Cloud Storage APIを有効にして、プログラムでログを引き出します
-3.カスタムデータ可視化アプリケーションを構築します
-4.取り出したログをカスタムダッシュボードに表示します
-4. 1.Google Cloud Operation SuiteからBigQueryにVM利用ログをエクスポートします
-2.BigQueryからログをCSVファイルにエクスポートします
-3.CSVファイルをGoogle Sheetsにインポートします
-4.Google Sheetsでダッシュボードを作成し、関係者と共有します
+1. 
+    1.Google Cloud Operation SuiteからBigQueryにVM利用ログをエクスポートします
+    2.Data Studioでダッシュボードを作成します
+    3.ダッシュボードを関係者と共有します
+2. 
+    1.VM利用ログをGoogle Cloud Operation SuiteからCloud Pub/Subにエクスポートします
+    2.Cloud Pub/Subから、ログをセキュリティ情報およびイベント管理（SIEM）システムに送信します
+    3.SIEMシステムでダッシュボードを構築し、関係者と共有します
+3. 
+    1.VM利用ログをGoogle Cloud Operation SuiteからCloud Storageバケットにエクスポートします
+    2.Cloud Storage APIを有効にして、プログラムでログを引き出します
+    3.カスタムデータ可視化アプリケーションを構築します
+    4.取り出したログをカスタムダッシュボードに表示します
+4. 
+    1.Google Cloud Operation SuiteからBigQueryにVM利用ログをエクスポートします
+    2.BigQueryからログをCSVファイルにエクスポートします
+    3.CSVファイルをGoogle Sheetsにインポートします
+    4.Google Sheetsでダッシュボードを作成し、関係者と共有します
 <details><div>
     答え：1
 説明
