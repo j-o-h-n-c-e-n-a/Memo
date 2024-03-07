@@ -4530,7 +4530,7 @@ https://cloud.google.com/kubernetes-engine/docs/how-to/binary-authorization
 ### Q. 問題3: 未回答
 Compute Engine上でアプリケーションを実行し、Google Cloud Operation Suiteを通してログを収集しています。あなたは、個人を特定できる情報（PII）が特定のログエントリフィールドに漏洩していることを発見しました。すべてのPIIエントリはuserinfoというテキストで始まります。これらのログエントリを後で確認できるように安全な場所にキャプチャし、Cloud Loggingへの漏洩を防ぎたいとします。
 あなたはこの要件を満たすために、どうすればよいですか？
-1. oogle Cloud Operation SuiteエージェントでFluentdフィルタープラグインを使い、userinfoを含むログエントリーを削除し、エントリーをCloud Storageバケットにコピーします
+1. Google Cloud Operation SuiteエージェントでFluentdフィルタープラグインを使い、userinfoを含むログエントリーを削除し、エントリーをCloud Storageバケットにコピーします
 2. Google Cloud Operation SuiteエージェントでFluentdフィルタープラグインを使い、userinfoを含むログエントリーを削除し、userinfoにマッチする高度なログフィルターを作成し、Google Cloud Operation SuiteコンソールでCloud Storageをシンクとしてログエクスポートを設定します
 3. userinfoにマッチする基本的なログフィルターを作成し、Google Cloud Operation SuiteコンソールでCloud Storageをシンクとしてログエクスポートを設定します
 4. userinfoに一致する高度なログフィルターを作成し、Google Cloud Operation SuiteコンソールでCloud Storageをシンクとしてログエクスポートを構成し、userinfoをフィルターとしてログ除外を構成します
@@ -5557,7 +5557,7 @@ https://cloud.google.com/architecture/framework/resilience/redundancy-design
 3. Cloud Storageバケットを作成し、そのバケットに直接ログを送信するアプリケーションを開発します
 4. Google Cloud Operation Suiteでエクスポートを作成し、Cloud Pub/Subを構成してログを7年間永久保存します
 <details><div>
-    答え：
+    答え：2
 説明
 この問題では、Google Cloud Operation Suiteを使用してアプリケーションログをアーカイブし、その一方で保管コストを最小限に抑える方法が求められています。問題文の要点は、アーカイブの長期間な要件とコストの抑制という二つの要素を平行して満たす必要がある点です。ログのエクスポートについての理解と、Google Cloudの各サービスが提供する機能とそのコスト構造について知識をもっていればより良い答えを出すことが可能です。また、適切なログ保管場所と、エクスポートとアーカイブの方法を選択することが重要です。
 基本的な概念や原則：
@@ -5601,7 +5601,7 @@ https://cloud.google.com/logging/docs/storage#storage-location
 3. Cloud Pub/Subを使用してSpinnakerパイプラインをトリガーします
 4. Cloud Pub/Subを使用して、Google Kubernetes Engine（GKE）で実行されているカスタムデプロイメントサービスをトリガーします
 <details><div>
-    答え：
+    答え：3
 説明
 この問題では、アプリケーションの自動デプロイメントパイプラインの作成要件に対する理解が求められています。ここでは、アプリケーションイメージが更新されたときに、開発工数を最小限に抑えつつアプリケーションの再デプロイを行いたいという要件に注目します。その上で、選択肢を確認するときには、どの選択肢がイメージの更新をトリガーにして自動的にデプロイを行うかを理解することが重要です。
 基本的な概念や原則：
